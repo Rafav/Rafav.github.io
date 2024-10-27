@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Histórico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Relaciones de sucesos</h1>
+    </header>
+    
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar en la columna 'Título'">
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Edición ID</th>
+                        <th>Título</th>
+                        <th>Ejemplar ID</th>
+                        <th>Biblioteca</th>
+                        <th>Signatura</th>
+                        <th>Digitalizado</th>
+                        <th>URL</th>
+                        <th>PDF</th>
+                        <th>ID Página</th>
+                        <th>URL Página</th>
+                        <th>Orden Página</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Table content will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <button id="prev-btn">Anterior</button>
+            <button id="next-btn">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
