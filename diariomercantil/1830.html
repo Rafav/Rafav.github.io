@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario Mercantil Viewer</title>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #3182ce;
+            --text-color: #2d3748;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --tag-positive: #c6f6d5;
+            --tag-positive-text: #22543d;
+            --tag-negative: #fed7d7;
+            --tag-negative-text: #822727;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;  /* Changed from max-width: 1200px */
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .content-panel {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .year-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .entry-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .entry-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .entry-title {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pdf-link {
+            background: var(--bg-color);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pdf-link:hover {
+            background: var(--border-color);
+        }
+
+        .metadata {
+            margin-top: 10px;
+            color: #666;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .tag-true {
+            background: var(--tag-positive);
+            color: var(--tag-positive-text);
+        }
+
+        .tag-false {
+            background: var(--tag-negative);
+            color: var(--tag-negative-text);
+        }
+
+        .content-section {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            margin: 0 0 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-reference {
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .page-content {
+            white-space: pre-wrap;
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            margin-top: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+        }
+
+        .article-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .article-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .article-metadata {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .article-content {
+            margin-top: 10px;
+        }
+
+        .pdf-panel {
+            flex: 0;
+            transition: all 0.3s ease;
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: none;
+        }
+
+        .pdf-panel.expanded {
+            flex: 1;
+            display: block;
+        }
+
+        .pdf-controls {
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: calc(100vh - 100px);
+            border: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .context {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .page-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .page-link:hover {
+            text-decoration: underline;
+        }
+
+        details {
+            margin-bottom: 10px;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 8px;
+            background: var(--bg-color);
+            border-radius: 4px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        summary:hover {
+            background: var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="app" class="content-panel">
+            <div class="loading">Cargando datos...</div>
+        </div>
+        <div id="pdfPanel" class="pdf-panel">
+            <!-- PDF viewer will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        function formatValue(value) {
+            if (value === null) return '<span class="null-value">No especificado</span>';
+            if (typeof value === 'boolean') return value ? 'Sí' : 'No';
+            if (typeof value === 'number') return value.toString();
+            return value;
+        }
+
+        function createPageLink(pdfName, pageNum) {
+            return `
+                <a href="#" class="page-link" onclick="showPdfPage('${pdfName}', ${pageNum})">
+                    📄 Ver página ${pageNum}
+                </a>
+            `;
+        }
+
+        function showPdfPage(pdfName, pageNum) {
+            const pdfPanel = document.getElementById('pdfPanel');
+            pdfPanel.innerHTML = `
+                <div class="pdf-controls">
+                    <span>${pdfName} - Página ${pageNum}</span>
+                    <button class="btn" onclick="closePdfViewer()">✕</button>
+                </div>
+                <embed class="pdf-frame" src="pdfs/${pdfName}#page=${pageNum}" type="application/pdf">
+            `;
+            pdfPanel.classList.add('expanded');
+        }
+
+        function closePdfViewer() {
+            const pdfPanel = document.getElementById('pdfPanel');
+            pdfPanel.innerHTML = '';
+            pdfPanel.classList.remove('expanded');
+        }
+
+        function renderArticle(article) {
+            const pageLinks = article.paginas?.map(p => 
+                `<a href="#" onclick="showPdfPage('${article.pdfName}', ${p.pdf})">Página ${p.pdf}</a>`
+            ).join(', ') || '';
+
+            return `
+                <div class="article-card">
+                    <div class="article-title">${article.obra.titulo}</div>
+                    <div class="article-metadata">
+                        ${article.tipo ? `<div>Tipo: ${article.tipo}</div>` : ''}
+                        ${article.autor ? `<div>Autor: ${article.autor}</div>` : ''}
+                        ${article.obra.genero ? `<div>Género: ${article.obra.genero}</div>` : ''}
+                        ${article.obra.actos ? `<div>Actos: ${article.obra.actos}</div>` : ''}
+                        ${article.obra.lugar_de_representación ? 
+                            `<div>Lugar: ${article.obra.lugar_de_representación}</div>` : ''
+                        }
+                        ${pageLinks ? `<div>Páginas: ${pageLinks}</div>` : ''}
+                    </div>
+                    ${article.contexto ? `<div class="context">${article.contexto}</div>` : ''}
+                </div>
+            `;
+        }
+
+        function renderEntry(entry) {
+            return `
+                <div class="entry-card">
+                    <div class="entry-header">
+                        <h2 class="entry-title">
+                            ${entry.Título}
+                            <a href="#" class="pdf-link" onclick="showPdfPage('${entry.PDF}', 1)">
+                                📄 Ver PDF
+                            </a>
+                        </h2>
+                        <div class="metadata">
+                            <span>Fecha: ${entry.Fecha}</span>
+                            <span>Número: ${entry.Número}</span>
+                            <span class="tag tag-${entry.LITERATURA}">
+                                Literatura: ${entry.LITERATURA ? 'Sí' : 'No'}
+                            </span>
+                            <span class="tag tag-${entry.MUSICA}">
+                                Música: ${entry.MUSICA ? 'Sí' : 'No'}
+                            </span>
+                        </div>
+                    </div>
+
+                    ${entry.PAGINAS_LITERATURA?.length ? `
+                        <div class="content-section">
+                            <h3 class="section-title">Páginas de Literatura</h3>
+                            ${entry.PAGINAS_LITERATURA.map(pagina => `
+                                <div class="page-reference">
+                                    <div class="page-header">
+                                        <span>Página ${pagina.periodico} (PDF: ${pagina.pdf})</span>
+                                        ${createPageLink(entry.PDF, pagina.pdf)}
+                                    </div>
+                                    ${pagina.contenido ? `
+                                        <div class="page-content">${pagina.contenido}</div>
+                                    ` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+
+                    ${entry.ARTICULOS_LITERATURA?.length ? `
+                        <div class="content-section">
+                            <h3 class="section-title">Artículos de Literatura</h3>
+                            ${entry.ARTICULOS_LITERATURA.map(articulo => 
+                                renderArticle({...articulo, pdfName: entry.PDF})
+                            ).join('')}
+                        </div>
+                    ` : ''}
+
+                    ${entry.OTRAS_REFERENCIAS_CULTURALES?.length ? `
+                        <div class="content-section">
+                            <h3 class="section-title">Otras Referencias Culturales</h3>
+                            ${entry.OTRAS_REFERENCIAS_CULTURALES.map(ref => `
+                                <div class="article-card">
+                                    <div class="article-title">${ref.tema}</div>
+                                    <div class="article-content">${ref.descripcion}</div>
+                                    ${ref.conexiones?.length ? `
+                                        <div class="context">
+                                            Conexiones: ${ref.conexiones.join(', ')}
+                                        </div>
+                                    ` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const app = document.getElementById('app');
+
+            try {
+                const response = await fetch('combined.json');
+                if (!response.ok) throw new Error('Error al cargar el archivo JSON');
+                const data = await response.json();
+
+                app.innerHTML = `
+                    <div class="year-header">Año ${data.Año}</div>
+                    ${data.datos.map(entry => renderEntry(entry)).join('')}
+                `;
+
+            } catch (error) {
+                app.innerHTML = `
+                    <div class="error">
+                        Error al cargar los datos: ${error.message}
+                    </div>
+                `;
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
