@@ -28,14 +28,20 @@
         }
 
         .container {
-            width: 90%;  /* Changed from max-width: 1200px */
+            width: 90%;
             margin: 0 auto;
-            display: flex;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 0;
             gap: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .container.with-pdf {
+            grid-template-columns: 1fr 1fr;
         }
 
         .content-panel {
-            flex: 1;
             min-width: 0;
         }
 
@@ -60,7 +66,6 @@
         .entry-header {
             padding: 20px;
             border-bottom: 1px solid var(--border-color);
-            position: relative;
         }
 
         .entry-title {
@@ -82,6 +87,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            cursor: pointer;
         }
 
         .pdf-link:hover {
@@ -123,9 +129,6 @@
             font-size: 1.1em;
             color: var(--primary-color);
             margin: 0 0 15px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         .page-reference {
@@ -176,17 +179,17 @@
         }
 
         .pdf-panel {
-            flex: 0;
-            transition: all 0.3s ease;
-            background: var(--card-bg);
+            display: none;
+            background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            height: calc(100vh - 40px);
             overflow: hidden;
-            display: none;
         }
 
         .pdf-panel.expanded {
-            flex: 1;
             display: block;
         }
 
@@ -201,14 +204,14 @@
 
         .pdf-frame {
             width: 100%;
-            height: calc(100vh - 100px);
+            height: calc(100vh - 80px);
             border: none;
         }
 
         .btn {
             background: none;
             border: none;
-            color: inherit;
+            color: white;
             cursor: pointer;
             padding: 6px 12px;
             border-radius: 4px;
@@ -232,77 +235,87 @@
             display: inline-flex;
             align-items: center;
             gap: 4px;
+            cursor: pointer;
         }
 
         .page-link:hover {
             text-decoration: underline;
         }
 
-        details {
-            margin-bottom: 10px;
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            color: #666;
         }
 
-        summary {
-            cursor: pointer;
-            padding: 8px;
-            background: var(--bg-color);
-            border-radius: 4px;
-            color: var(--primary-color);
-            font-weight: 500;
-        }
-
-        summary:hover {
-            background: var(--border-color);
+        .error {
+            background: #fee;
+            color: #c00;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="app" class="content-panel">
+    <div id="app" class="container">
+        <div class="content-panel">
             <div class="loading">Cargando datos...</div>
-        </div>
-        <div id="pdfPanel" class="pdf-panel">
-            <!-- PDF viewer will be inserted here -->
         </div>
     </div>
 
     <script>
-        function formatValue(value) {
-            if (value === null) return '<span class="null-value">No especificado</span>';
-            if (typeof value === 'boolean') return value ? 'Sí' : 'No';
-            if (typeof value === 'number') return value.toString();
-            return value;
+        function showPdfPage(pdfName, pageNum) {
+            const container = document.querySelector('.container');
+            const existingPanel = document.getElementById('pdfPanel');
+            
+            if (existingPanel) {
+                if (existingPanel.getAttribute('data-pdf') === pdfName) {
+                    container.classList.remove('with-pdf');
+                    existingPanel.remove();
+                    return;
+                }
+                existingPanel.remove();
+            }
+
+            const pdfPanel = document.createElement('div');
+            pdfPanel.id = 'pdfPanel';
+            pdfPanel.className = 'pdf-panel expanded';
+            pdfPanel.setAttribute('data-pdf', pdfName);
+            pdfPanel.innerHTML = `
+                <div class="pdf-controls">
+                    <span>${pdfName}</span>
+                    <button class="btn" onclick="closePdfViewer()">✕</button>
+                </div>
+                <embed class="pdf-frame" src="pdfs/${pdfName}" type="application/pdf">
+            `;
+
+            container.classList.add('with-pdf');
+            container.appendChild(pdfPanel);
+        }
+
+        function closePdfViewer() {
+            const container = document.querySelector('.container');
+            const pdfPanel = document.getElementById('pdfPanel');
+            
+            container.classList.remove('with-pdf');
+            if (pdfPanel) {
+                pdfPanel.remove();
+            }
         }
 
         function createPageLink(pdfName, pageNum) {
             return `
-                <a href="#" class="page-link" onclick="showPdfPage('${pdfName}', ${pageNum})">
+                <a class="page-link" onclick="showPdfPage('${pdfName}', ${pageNum})">
                     📄 Ver página ${pageNum}
                 </a>
             `;
         }
 
-        function showPdfPage(pdfName, pageNum) {
-            const pdfPanel = document.getElementById('pdfPanel');
-            pdfPanel.innerHTML = `
-                <div class="pdf-controls">
-                    <span>${pdfName} - Página ${pageNum}</span>
-                    <button class="btn" onclick="closePdfViewer()">✕</button>
-                </div>
-                <embed class="pdf-frame" src="pdfs/${pdfName}" type="application/pdf">
-            `;
-            pdfPanel.classList.add('expanded');
-        }
-
-        function closePdfViewer() {
-            const pdfPanel = document.getElementById('pdfPanel');
-            pdfPanel.innerHTML = '';
-            pdfPanel.classList.remove('expanded');
-        }
-
         function renderArticle(article) {
             const pageLinks = article.paginas?.map(p => 
-                `<a href="#" onclick="showPdfPage('${article.pdfName}', ${p.pdf})">Página ${p.pdf}</a>`
+                `<a class="page-link" onclick="showPdfPage('${article.pdfName}', ${p.pdf})">Página ${p.pdf}</a>`
             ).join(', ') || '';
 
             return `
@@ -329,7 +342,7 @@
                     <div class="entry-header">
                         <h2 class="entry-title">
                             ${entry.Título}
-                            <a href="#" class="pdf-link" onclick="showPdfPage('${entry.PDF}', 1)">
+                            <a class="pdf-link" onclick="showPdfPage('${entry.PDF}', 1)">
                                 📄 Ver PDF
                             </a>
                         </h2>
@@ -371,6 +384,23 @@
                         </div>
                     ` : ''}
 
+                    ${entry.ARTICULOS_MUSICA?.length ? `
+                        <div class="content-section">
+                            <h3 class="section-title">Artículos de Música</h3>
+                            ${entry.ARTICULOS_MUSICA.map(articulo => `
+                                <div class="article-card">
+                                    <div class="article-title">${articulo.tipo}</div>
+                                    <div class="article-metadata">
+                                        ${articulo.obra ? `<div>Obra: ${articulo.obra}</div>` : ''}
+                                        ${articulo.interprete ? `<div>Intérprete: ${articulo.interprete}</div>` : ''}
+                                        ${articulo.lugar ? `<div>Lugar: ${articulo.lugar}</div>` : ''}
+                                    </div>
+                                    ${articulo.contexto ? `<div class="context">${articulo.contexto}</div>` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+
                     ${entry.OTRAS_REFERENCIAS_CULTURALES?.length ? `
                         <div class="content-section">
                             <h3 class="section-title">Otras Referencias Culturales</h3>
@@ -392,7 +422,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', async () => {
-            const app = document.getElementById('app');
+            const app = document.querySelector('.content-panel');
 
             try {
                 const response = await fetch('combined.json');
