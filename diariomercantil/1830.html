@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +59,7 @@
         .entry-card {
             background: var(--card-bg);
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             overflow: hidden;
         }
@@ -182,7 +183,7 @@
             display: none;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 20px;
             height: calc(100vh - 40px);
@@ -219,7 +220,7 @@
         }
 
         .btn:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .context {
@@ -258,6 +259,7 @@
         }
     </style>
 </head>
+
 <body>
     <div id="app" class="container">
         <div class="content-panel">
@@ -269,9 +271,9 @@
         function showPdfPage(pdfName, pageNum) {
             const container = document.querySelector('.container');
             const existingPanel = document.getElementById('pdfPanel');
-            
+
             if (existingPanel) {
-                if (existingPanel.getAttribute('data-pdf') === pdfName) {
+                if (existingPanel.getAttribute('data-pdf') === pdfName && existingPanel.getAttribute('data-page') === String(pageNum)) {
                     container.classList.remove('with-pdf');
                     existingPanel.remove();
                     return;
@@ -283,13 +285,15 @@
             pdfPanel.id = 'pdfPanel';
             pdfPanel.className = 'pdf-panel expanded';
             pdfPanel.setAttribute('data-pdf', pdfName);
+            pdfPanel.setAttribute('data-page', pageNum);
+            const pdfUrl = `pdfs/${pdfName}#page=${pageNum}`;
             pdfPanel.innerHTML = `
-                <div class="pdf-controls">
-                    <span>${pdfName}</span>
-                    <button class="btn" onclick="closePdfViewer()">✕</button>
-                </div>
-                <embed class="pdf-frame" src="pdfs/${pdfName}" type="application/pdf">
-            `;
+        <div class="pdf-controls">
+            <span>${pdfName} - Página ${pageNum}</span>
+            <button class="btn" onclick="closePdfViewer()">✕</button>
+        </div>
+        <embed class="pdf-frame" src="${pdfUrl}" type="application/pdf">
+    `;
 
             container.classList.add('with-pdf');
             container.appendChild(pdfPanel);
@@ -298,7 +302,7 @@
         function closePdfViewer() {
             const container = document.querySelector('.container');
             const pdfPanel = document.getElementById('pdfPanel');
-            
+
             container.classList.remove('with-pdf');
             if (pdfPanel) {
                 pdfPanel.remove();
@@ -314,7 +318,7 @@
         }
 
         function renderArticle(article) {
-            const pageLinks = article.paginas?.map(p => 
+            const pageLinks = article.paginas?.map(p =>
                 `<a class="page-link" onclick="showPdfPage('${article.pdfName}', ${p.pdf})">Página ${p.pdf}</a>`
             ).join(', ') || '';
 
@@ -326,9 +330,9 @@
                         ${article.autor ? `<div>Autor: ${article.autor}</div>` : ''}
                         ${article.obra.genero ? `<div>Género: ${article.obra.genero}</div>` : ''}
                         ${article.obra.actos ? `<div>Actos: ${article.obra.actos}</div>` : ''}
-                        ${article.obra.lugar_de_representación ? 
-                            `<div>Lugar: ${article.obra.lugar_de_representación}</div>` : ''
-                        }
+                        ${article.obra.lugar_de_representación ?
+                    `<div>Lugar: ${article.obra.lugar_de_representación}</div>` : ''
+                }
                         ${pageLinks ? `<div>Páginas: ${pageLinks}</div>` : ''}
                     </div>
                     ${article.contexto ? `<div class="context">${article.contexto}</div>` : ''}
@@ -378,9 +382,9 @@
                     ${entry.ARTICULOS_LITERATURA?.length ? `
                         <div class="content-section">
                             <h3 class="section-title">Artículos de Literatura</h3>
-                            ${entry.ARTICULOS_LITERATURA.map(articulo => 
-                                renderArticle({...articulo, pdfName: entry.PDF})
-                            ).join('')}
+                            ${entry.ARTICULOS_LITERATURA.map(articulo =>
+                renderArticle({ ...articulo, pdfName: entry.PDF })
+            ).join('')}
                         </div>
                     ` : ''}
 
@@ -445,4 +449,5 @@
         });
     </script>
 </body>
+
 </html>
