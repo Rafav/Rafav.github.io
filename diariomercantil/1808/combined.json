@@ -1,0 +1,1585 @@
+{
+  "Año": 1808,
+  "datos": [
+    {
+      "PDF": "2044421.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "VIERNES 15 DE JULIO DE 1808",
+      "Número": "199",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 783
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia de RR. PP. de Ntra. Sra. del Carmen, con horarios específicos de manifestación y ocultamiento.",
+          "conexiones": [
+            "Festividad de San Enrique Emperador y S. Camilo"
+          ]
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 783
+            },
+            {
+              "pdf": 2,
+              "periodico": 784
+            },
+            {
+              "pdf": 3,
+              "periodico": 785
+            }
+          ],
+          "descripcion": "Proclama Nacional que discute la situación política de España, crítica a Napoleón Bonaparte y llamamiento a la unidad nacional contra la invasión francesa.",
+          "conexiones": [
+            "Referencias a la resistencia española",
+            "Crítica al gobierno francés",
+            "Mención a la organización militar"
+          ]
+        },
+        {
+          "tema": "Administración y comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 786
+            }
+          ],
+          "descripcion": "Avisos oficiales sobre concurso de acreedores y venta de publicaciones periódicas",
+          "conexiones": [
+            "Documentos administrativos",
+            "Publicaciones disponibles"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044463.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIERCOLES 3 DE AGOSTO DE 1808",
+      "Número": "218",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 859
+            }
+          ],
+          "descripcion": "Mención del jubileo de las XL horas en la Iglesia del Rosario y la festividad de La Invención de San Esteban",
+          "conexiones": [
+            "Horarios de culto religioso",
+            "Calendario litúrgico"
+          ]
+        },
+        {
+          "tema": "Política y Guerra",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 859
+            }
+          ],
+          "descripcion": "Carta dirigida a la Suprema Junta que relata acontecimientos relacionados con la Guerra de Independencia contra los franceses, incluyendo movimientos de tropas y lealtad al rey Fernando VII",
+          "conexiones": [
+            "Referencias a Fernando VII",
+            "Conflicto con Napoleón",
+            "Patriotismo español"
+          ]
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 859
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones Astronómicas de hoy\\' con datos precisos sobre salida y puesta del sol, fases lunares y mareas",
+          "conexiones": [
+            "Información náutica",
+            "Calendario"
+          ]
+        },
+        {
+          "tema": "Comercio/Publicidad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 862
+            }
+          ],
+          "descripcion": "Sección de venta de papeles y caricaturas patrióticas en la imprenta del periódico",
+          "conexiones": [
+            "Propaganda antifrancesa",
+            "Comercio local"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044491.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 22 DE AGOSTO DE 1808",
+      "Número": "227",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 938,
+          "contenido": "Teatro. — En el de esta Ciudad se executará la función siguiente: dará principio el Sainete titulado el Novelero: cantarán un duo la Señora Maria Puy y el Sr. Juan Pau ; seguirá el Melodrama en un acto titulado: Armida y Reynaldo, primera parte: baylará el Ole la Señora Olivares, se finalizará con el Saynete El picaro castigado."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El Novelero",
+            "genero": "Sainete",
+            "actos": 1,
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 938
+            }
+          ],
+          "contexto": "Obra teatral presentada como parte de una función teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Armida y Reynaldo",
+            "genero": "Melodrama",
+            "actos": 1,
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 938
+            }
+          ],
+          "contexto": "Melodrama representado como parte central del programa teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El picaro castigado",
+            "genero": "Sainete",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 938
+            }
+          ],
+          "contexto": "Sainete que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 938
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "duo",
+          "interprete": "Maria Puy y Juan Pau",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 938
+            }
+          ],
+          "contexto": "Dúo musical como parte de la función teatral"
+        },
+        {
+          "tipo": "danza",
+          "interprete": "Señora Olivares",
+          "obra": "Ole",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 938
+            }
+          ],
+          "contexto": "Baile tradicional español como parte del espectáculo"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 935
+            }
+          ],
+          "descripcion": "Mención al Jubileo de las XL horas en la Iglesia Auxiliar de S. Lorenzo y celebración de San Sinforiano Mártir",
+          "conexiones": [
+            "La función teatral está dedicada al beneficio del culto a María Santísima de la Novena"
+          ]
+        },
+        {
+          "tema": "Política",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 936
+            }
+          ],
+          "descripcion": "Proclama a los Austríacos y Rusos sobre la situación política europea y las acciones de Napoleón",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2044523.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SABADO 17 DE SEPTIEMB. DE 1808",
+      "Número": "253",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 746,
+          "contenido": "TEATRO. = En el de esta Ciudad se executará la Comedia en quatro actos titulada: Los Viages de Josef II à los confines de Alemania con la Italia, seguirá un intermedio de música, finalizándose con un divertido Saynete.\\A LAS SIETE Y MEDIA."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los Viages de Josef II à los confines de Alemania con la Italia",
+            "genero": "Comedia",
+            "actos": 4,
+            "lugar de representación": "Teatro de la Ciudad"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 746
+            }
+          ],
+          "contexto": "Anuncio de representación teatral en la sección de DIVERSION PUBLICA"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 746
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "intermedio musical",
+          "lugar": "Teatro de la Ciudad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 746
+            }
+          ],
+          "contexto": "Intermedio musical entre la comedia principal y el sainete final"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 743
+            }
+          ],
+          "descripcion": "Referencia a Las Llagas de S. Francisco y S. Pedro Arbues, y al Jubileo de las XL horas en la Iglesia de San Pablo",
+          "conexiones": []
+        },
+        {
+          "tema": "patriotismo",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 744
+            }
+          ],
+          "descripcion": "Ensayo titulado \\'EL AMOR A LA PATRIA\\' que discute las virtudes cívicas y el deber patriótico",
+          "conexiones": []
+        },
+        {
+          "tema": "economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 745
+            }
+          ],
+          "descripcion": "Lista detallada de precios de víveres en la Plaza, incluyendo carnes, cereales y otros productos básicos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2044547.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "7 DE OCTUBRE DE 1808",
+      "Número": "273",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 828,
+          "contenido": "TEATRO.= En el de esta Ciudad se executará la funcion titulada: El Vano humillado, Comedia moderna en 5 actos; á la que seguirá una Cavatina y una graciosa Cantinela del célebre Maestro Constantino Fioravanti, y despues del bolero se cantará una grande Aria del célebre Maestro Domenico Chimarosa; todo esto lo cantará el Sr. Ubaldo Lunati, Profesor de Música y de nacion Italiana; se ballarán unas nuevas boleras á tres la Sra. Margarita Olivares, el Sr. Moreti, y el Sr. Josef Roxo, composicion de este; y se concluirá con el Saynete titulado: La duda satisfecha."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "El Vano humillado",
+            "genero": "Comedia",
+            "actos": 5,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 828
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral principal anunciada en la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "La duda satisfecha",
+            "genero": "Sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 828
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 828
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Cavatina y Cantinela",
+          "interprete": "Ubaldo Lunati",
+          "compositor": "Constantino Fioravanti",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 828
+            }
+          ],
+          "contexto": "Piezas musicales interpretadas como parte del espectáculo teatral"
+        },
+        {
+          "tipo": "Aria",
+          "interprete": "Ubaldo Lunati",
+          "compositor": "Domenico Chimarosa",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 828
+            }
+          ],
+          "contexto": "Aria interpretada después del bolero"
+        },
+        {
+          "tipo": "Boleras",
+          "interprete": "Margarita Olivares, Sr. Moreti, y Sr. Josef Roxo",
+          "compositor": "Josef Roxo",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 828
+            }
+          ],
+          "contexto": "Danza española interpretada por tres bailarines"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 827
+            }
+          ],
+          "descripcion": "Artículo crítico titulado \\'Errores de Napoleon\\' que analiza la política de Bonaparte respecto a los territorios conquistados",
+          "conexiones": [
+            "Contexto histórico de la Guerra de Independencia española"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044571.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "25 DE OCTUBRE DE 1808",
+      "Número": "291",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 900,
+          "contenido": "DIVERSION PUBLICA.\\TEATRO. = En el de esta Ciudad se executará la Comedia en tres actos: El Fruto de un mal Consejo contra el mismo que lo dá y Prisionero de Guerra; sigue un intermedio de Música y se finaliza con el Saynete El Médico y los Cautivos.\\A LAS SIETE."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El Fruto de un mal Consejo contra el mismo que lo dá y Prisionero de Guerra",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de la Ciudad de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 900
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para representación pública"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El Médico y los Cautivos",
+            "genero": "Saynete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de la Ciudad de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 900
+            }
+          ],
+          "citas": [],
+          "contexto": "Pieza corta que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 900
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "intermedio musical",
+          "interprete": "No especificado",
+          "lugar": "Teatro de la Ciudad de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 900
+            }
+          ],
+          "contexto": "Intermedio musical entre la comedia principal y el sainete final"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 897
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia de Santiago",
+          "conexiones": [
+            "Festividad religiosa de San Crispin y San Crispiniano"
+          ]
+        },
+        {
+          "tema": "Vida social y entretenimiento",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 900
+            }
+          ],
+          "descripcion": "Sección de diversión pública que incluye programación teatral",
+          "conexiones": [
+            "Teatro",
+            "Música"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044607.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "27 DE NOVIEMB. DE 1808",
+      "Número": "324",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 1032,
+          "contenido": "X Definicion de Bonaparte:\\DECIMA.\\Quando un tuno de un lugar\\Se disfraza de fantasma,\\A uno asusta, à otro pasma,\\Y à muchos hace temblar:\\Lléganlo pues à pillar\\De alguaciles una tropa,\\Y hallan baxo aquella ropa\\Un cobarde farfarron:\\¿Pues es mas Napoleon\\Que el fantasma de la Europa?"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Los Patriotas de Aragon",
+            "genero": "Comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1032
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la sección de \\'DIVERSION PUBLICA\\'"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los viejos fingidos",
+            "genero": "Saynete",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1032
+            }
+          ],
+          "contexto": "Sainete anunciado como parte de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 1032
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Intermedio musical",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1032
+            }
+          ],
+          "contexto": "Intermedio musical entre obras teatrales"
+        },
+        {
+          "tipo": "Tonadilla",
+          "interprete": "Sr. Hermosilla",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1032
+            }
+          ],
+          "contexto": "Cebatina (tonadilla) interpretada como parte del sainete"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1029
+            }
+          ],
+          "descripcion": "Celebración religiosa del Jubileo de las XL horas en la Iglesia de San Juan de Dios",
+          "conexiones": [
+            "Hermandad de nuestra Señora de los Remedios"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1032
+            }
+          ],
+          "descripcion": "Anuncio de venta de Casimires en la Tienda de Don Josef Calvo",
+          "conexiones": []
+        },
+        {
+          "tema": "Servicios profesionales",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1032
+            }
+          ],
+          "descripcion": "Aviso del dentista Don Pedro Seminara sobre cambio de ubicación de su consulta",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2044629.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE DICIEMB. DE 1808",
+      "Número": "347",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 1024,
+          "contenido": "DIVERSION PUBLICA.\\TEATRO.= Se executará la Funcion siguiente: Se dará principio con la Comedia nueva en tres actos titulada: LOS PATRIOTAS DE ARAGON; y se dará fin con la Opera titulada: EL TIO Y LA TIA. A LAS SIETE EN PUNTO."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "LOS PATRIOTAS DE ARAGON",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1024
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral presentada como parte de la programación cultural del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "EL TIO Y LA TIA",
+            "genero": "Opera",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1024
+            }
+          ],
+          "contexto": "Obra presentada como cierre de la función teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 1024
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera",
+          "interprete": "No especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1024
+            }
+          ],
+          "contexto": "Representación de la ópera \\'El Tio y la Tia\\' como parte de la programación cultural"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1021
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia de San Antonio y culto al Santísimo Sacramento",
+          "conexiones": []
+        },
+        {
+          "tema": "Información astronómica",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1021
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones Astronómicas de hoy\\' con datos precisos sobre movimientos solares y lunares",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2051470.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "13 DE ENERO DE 1808",
+      "Número": "13",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 52,
+          "contenido": "TEATRO.= En el de esta ciudad, se dará principio esta noche con la Comedia en tres actos, titulada: El Mayor Palmer; seguirá una tonadilla á duo que cantarán la Sra. Juana Palomera y el Sr. Guillermo Fernández; y se concluirá con el Saynete los Peluqueros. A las siete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Mayor Palmer",
+            "genero": "Comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro de la ciudad [Cádiz]"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 52
+            }
+          ],
+          "contexto": "Obra teatral programada para la noche"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los Peluqueros",
+            "genero": "Sainete",
+            "lugar de representación": "Teatro de la ciudad [Cádiz]"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 52
+            }
+          ],
+          "contexto": "Sainete que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 52
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "Sra. Juana Palomera y Sr. Guillermo Fernández",
+          "lugar": "Teatro de la ciudad [Cádiz]",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 52
+            }
+          ],
+          "contexto": "Tonadilla a dúo interpretada entre la comedia principal y el sainete"
+        },
+        {
+          "tipo": "espectáculo",
+          "interprete": "Compañía Italiana y Francesa",
+          "lugar": "Salon de la Posada de la Academia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 52
+            }
+          ],
+          "contexto": "Espectáculo de bailarines de cuerda con diferentes equilibrios, baile de maroma, bolteo y pantomima"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Entretenimiento público",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 52
+            }
+          ],
+          "descripcion": "FIGURAS DE CERA - Se continúan manifestando en la casa acostumbrada sita en la plazuela del Cañon. La entrada á real de vellon.",
+          "conexiones": [
+            "Forma parte de la sección DIVERSIONES PUBLICAS junto con el teatro y los bailarines"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 51
+            }
+          ],
+          "descripcion": "Referencia a la Academia en la dirección \\'Posada de la Academia\\'",
+          "conexiones": [
+            "Aparece en el contexto de anuncios y avisos"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 49
+            }
+          ],
+          "descripcion": "EL BAUTISMO DE SAN JUAN. El Jubiléo de las XL horas está en el Sagrario de la Santa Iglesia Catedral.",
+          "conexiones": [
+            "Encabeza el diario junto con información astronómica"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2051491.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIERCOLES 3 DE FEBRERO DE 1808",
+      "Número": "34",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 136,
+          "contenido": "TEATRO.= En el de esta ciudad, se dará principio esta noche con la Comedia en tres actos, titulada: El Aguador de Paris; cantará el Sr. Gomara; y se concluirá con el Saynete: El Señorito Tonto.\\A las seis."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "desconocido",
+          "obra": {
+            "titulo": "El Aguador de Paris",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 136
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral presentada como parte de la programación del teatro de la ciudad"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Señorito Tonto",
+            "genero": "Saynete",
+            "actos": 1,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 136
+            }
+          ],
+          "contexto": "Pieza corta que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 136
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "interpretación musical",
+          "interprete": "Sr. Gomara",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 136
+            }
+          ],
+          "contexto": "Interpretación musical intercalada entre la comedia principal y el sainete"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Comercio e Industria",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 133
+            }
+          ],
+          "descripcion": "Extenso análisis sobre el impacto de la mecanización en el trabajo y la industria",
+          "conexiones": [
+            "Debate sobre progreso tecnológico y social"
+          ]
+        },
+        {
+          "tema": "Industria textil",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 135
+            }
+          ],
+          "descripcion": "Descripción detallada de una fábrica textil en Ávila y sus productos",
+          "conexiones": [
+            "Desarrollo industrial español",
+            "Comercio local"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 133
+            }
+          ],
+          "descripcion": "Referencia a S. BLAS OBISPO Y EL BEATO NICOLAS DE LONGOBARDO y ceremonias religiosas",
+          "conexiones": [
+            "Vida social y religiosa de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2051515.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "27 DE FEBRERO DE 1808",
+      "Número": "58",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 232,
+          "contenido": "TEATRO.= En el de esta ciudad, se dará principio esta noche con el Saynete: El Matrimonio secreto; seguirá la Opera titulada: El Médico Turco; y se concluirá con el sainete. El boletin de entrada 30 quartos. A las seis."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El Matrimonio secreto",
+            "genero": "Sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 232
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral como parte de la programación del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El Médico Turco",
+            "genero": "Ópera",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 232
+            }
+          ],
+          "citas": [],
+          "contexto": "Parte central del programa teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 2,
+          "periodico": 230,
+          "contenido": "En todos tiempos permitirá el Gobierno las diversiones de música y bayle y demás honestas entre qualesquiera clase de personas proporcionalmente..."
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "regulación",
+          "interprete": "No especificado",
+          "lugar": "Cádiz",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 230
+            }
+          ],
+          "contexto": "Decreto que regula las diversiones musicales durante el Carnaval"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Regulación social",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 230
+            }
+          ],
+          "descripcion": "Decreto que regula las diversiones y comportamientos durante el Carnaval, prohibiendo excesos y estableciendo multas",
+          "conexiones": [
+            "Música",
+            "Teatro",
+            "Costumbres sociales"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 219
+            }
+          ],
+          "descripcion": "Información sobre el jubileo de las XL horas en la Iglesia de PP. Capuchinos",
+          "conexiones": [
+            "Vida social",
+            "Calendario religioso"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2051537.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE MARZO DE 1808",
+      "Número": "86",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 320
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "espectáculo_musical_teatral",
+          "interprete": "Compañía Italiana y Francesa",
+          "lugar": "Posada de la Academia, detrás del Pópulo",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 320
+            }
+          ],
+          "contexto": "Espectáculo de \\'BAYLARINES DE CUERDA\\' que incluye ejercicios acrobáticos, pantomima titulada \\'arlequín muerto y vivo\\', bailes nacionales y presentaciones con efectos especiales (\\'Espejo mágico\\'). Precio: 2 reales vellón entrada y 2 reales lunetas. Hora: siete y media en punto."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 320
+            }
+          ],
+          "descripcion": "SOMBRAS CHINESCAS - Espectáculo en la calle del Jardinillo num. 121 que incluye vistas de sombras, recreación de corrida de toros de Madrid, fuegos líricos, acrobacias y representación de la batalla de Austerlitz. Precio: 3 rs. vn. con asiento, lunetas 1 más, en pie 2. Hora: siete de la noche.",
+          "conexiones": [
+            "Forma parte de las diversiones públicas ofrecidas ese día junto con los baylarines"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 317
+            }
+          ],
+          "descripcion": "Extensa sección sobre comercio con noticias de Francfort y datos sobre importaciones/exportaciones",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 319
+            }
+          ],
+          "descripcion": "Aviso del Ayuntamiento sobre nuevo sistema de venta libre de tocino y regulaciones asociadas",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2051559.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "12 DE ABRIL DE 1808",
+      "Número": "107",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 409
+            }
+          ],
+          "descripcion": "Referencia al jubileo de las XL horas en la Capilla de los Terceros de San Francisco Descalzos, con horarios específicos de 5:30 de la mañana a 7 de la tarde",
+          "conexiones": [
+            "Calendario litúrgico",
+            "San Zenon Obispo"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 411
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de diferentes géneros y frutos de Indias, incluyendo productos como cacao, azúcar, especias y drogas medicinales",
+          "conexiones": [
+            "Comercio colonial",
+            "Mercado internacional"
+          ]
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 410
+            }
+          ],
+          "descripcion": "Aviso sobre el Fondo Vitalicio y la Real Junta de Fortificaciones, relacionado con la gestión de escrituras y pagos",
+          "conexiones": [
+            "Gestión administrativa",
+            "Finanzas públicas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2051571.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "24 DE ABRIL DE 1808",
+      "Número": "119",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 460,
+          "contenido": "TEATRO:—En el de esta Ciudad se executará esta noche la funcion siguiente: se dará principio con el divertido Saynete titulado: Los Hombres solos; seguirá la Opera titulada: La Esclava Persiana; y se dará fin con el zapateado."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "desconocido",
+          "obra": {
+            "titulo": "Los Hombres solos",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 460
+            }
+          ],
+          "citas": [],
+          "contexto": "Parte de una función teatral que incluye además una ópera y un baile"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 460
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "no especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 460
+            }
+          ],
+          "contexto": "Representación de \\'La Esclava Persiana\\' como parte de una función teatral junto con un sainete y un baile"
+        },
+        {
+          "tipo": "danza",
+          "interprete": "no especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 460
+            }
+          ],
+          "contexto": "Zapateado como número final de la función teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "entretenimiento público",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 460
+            }
+          ],
+          "descripcion": "Sección \\'DIVERSION PUBLICA\\' que anuncia una función teatral completa con tres partes: sainete, ópera y baile. El precio del boleto se establece en \\'veinte y quatro quartos y el otro seis\\'. Horario: \\'A las siete y media\\'",
+          "conexiones": [
+            "Teatro",
+            "Música",
+            "Danza"
+          ]
+        },
+        {
+          "tema": "comercio y economía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 457
+            }
+          ],
+          "descripcion": "Extensa sección de precios y productos comerciales en diferentes plazas españolas y europeas, mostrando la actividad mercantil de la época",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2051593.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 16 DE MAYO DE 1808",
+      "Número": "141",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 548,
+          "contenido": "TEATRO. — En el de esta Ciudad, se representará un Melodrama nuevo en tres actos, titulado: Las Minas de Polonia, adornado con todo su aparato teatral hecho nuevo al intento; seguirá un duo que cantarán la Sra. Maria Puy y el Sr. Juan Pau; y se dará fin con el divertido Saynete nuevo titulado: Mala noche y parir hija.\\\\A las ocho"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Las Minas de Polonia",
+            "genero": "Melodrama",
+            "actos": 3,
+            "lugar de representación": "Teatro de la Ciudad de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 548
+            }
+          ],
+          "contexto": "Obra teatral presentada como parte de la programación cultural"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Mala noche y parir hija",
+            "genero": "Saynete",
+            "lugar de representación": "Teatro de la Ciudad de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 548
+            }
+          ],
+          "contexto": "Sainete presentado como cierre de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 548
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "duo musical",
+          "interprete": "Sra. Maria Puy y Sr. Juan Pau",
+          "lugar": "Teatro de la Ciudad de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 548
+            }
+          ],
+          "contexto": "Interpretación musical como parte intermedia del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 545
+            }
+          ],
+          "descripcion": "Referencias a San Ubaldo y San Juan Nepomuceno, con información sobre el jubileo en la Iglesia de San Josef Extramuros",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 545
+            }
+          ],
+          "descripcion": "Extensa información sobre comercio internacional, precios y productos entre Europa y América",
+          "conexiones": [
+            "Aspectos económicos y sociales de la época"
+          ]
+        },
+        {
+          "tema": "Vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 548
+            }
+          ],
+          "descripcion": "Anuncio de sirviente buscando trabajo, mostrando aspectos de la vida cotidiana y estructura social",
+          "conexiones": [
+            "Aspectos laborales y sociales de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2051615.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "9 DE JUNIO DE 1808",
+      "Número": "163",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 637
+            }
+          ],
+          "descripcion": "Mención del jubileo de las XL horas en la Iglesia de RR. PP. Capuchinos con horarios específicos de manifestación y ocultación",
+          "conexiones": [
+            "Festividad de San Primo y San Feliciano"
+          ]
+        },
+        {
+          "tema": "Política y Sociedad",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 638
+            },
+            {
+              "pdf": 3,
+              "periodico": 639
+            },
+            {
+              "pdf": 4,
+              "periodico": 640
+            }
+          ],
+          "descripcion": "Bandos y proclamas políticas de Valencia y Cartagena relacionados con el contexto de 1808, incluyendo órdenes de alistamiento y llamamientos a la tranquilidad pública",
+          "conexiones": [
+            "Gobierno local",
+            "Situación militar",
+            "Administración pública"
+          ]
+        },
+        {
+          "tema": "Comercio Marítimo",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 637
+            }
+          ],
+          "descripcion": "Noticias sobre actividad comercial y marítima, incluyendo capturas de barcos ingleses y ventas de embarcaciones",
+          "conexiones": [
+            "Actividad económica",
+            "Conflictos navales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2051628.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "23 DE JUNIO DE 1808",
+      "Número": "177",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 693
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las XL horas en la Iglesia Catedral, con horarios específicos de manifestación (5:30 mañana a 7 tarde). También menciona la festividad de San Juan Presbítero.",
+          "conexiones": [
+            "Conecta con el contexto religioso y social de la época"
+          ]
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 693
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas de hoy\\' con datos precisos sobre salida y puesta del sol, posición lunar y mareas.",
+          "conexiones": [
+            "Información práctica para navegación y vida cotidiana"
+          ]
+        },
+        {
+          "tema": "Política y Sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 693
+            }
+          ],
+          "descripcion": "Proclamas patrióticas contra Napoleón Bonaparte y la ocupación francesa, llamando a la resistencia del pueblo español. Incluye proclamas dirigidas a Alicante y a los castellanos.",
+          "conexiones": [
+            "Contexto histórico de la Guerra de Independencia española"
+          ]
+        },
+        {
+          "tema": "Vida Social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 696
+            }
+          ],
+          "descripcion": "Anuncio de nodriza: \\'Una joven de edad de 20 años solicita entrar a criar en una casa decente\\'",
+          "conexiones": [
+            "Refleja costumbres sociales y laborales de la época"
+          ]
+        }
+      ]
+    }
+  ]
+}
