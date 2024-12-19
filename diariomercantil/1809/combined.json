@@ -1,0 +1,1648 @@
+{
+  "Año": 1809,
+  "datos": [
+    {
+      "PDF": "2043977.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "21 DE ENERO DE 1809",
+      "Número": "21",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 84,
+          "contenido": "TEATRO. = En el Coliseo de esta Ciudad se executará la Funcion siguiente. Se dará principio con un divertido Saynete, al que seguirá la Opera en dos actos: La Travesura, en la que executará el papel del Caballero Cerverti, el Señor Pedro de Cuvas; con la que se dará fin. \\A LAS SIETE."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La Travesura",
+            "genero": "Opera",
+            "actos": 2,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 84
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de \\'DIVERSION PUBLICA\\'"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 84
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Opera",
+          "interprete": "Señor Pedro de Cuvas",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 84
+            }
+          ],
+          "contexto": "Representación de ópera como parte de la programación teatral del día"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 81
+            }
+          ],
+          "descripcion": "Referencia a Santa Inés Virgen y al Jubileo de las XL horas en la Tercera Orden de San Francisco Observantes",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y precios",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 83
+            }
+          ],
+          "descripcion": "Extensa lista de precios de víveres en la plaza de Cádiz",
+          "conexiones": []
+        },
+        {
+          "tema": "Política",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 81
+            }
+          ],
+          "descripcion": "Artículo titulado \\'REFLEXIONES POLITICAS. El Anti Napoleon\\' que discute la situación política española",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2044001.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "14 DE FEBRERO DE 1809",
+      "Número": "45",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 180,
+          "contenido": "TEATRO = En el Coliseo de esta Ciudad se executarán las dos Funciones siguientes. En la primera se dará principio con la Comedia nueva en tres actos titulada: Los Patriotas de Aragon, segunda parte. Seguirá la pieza en un acto: El Juego de las Provincias, en la que ademas de las canciones patrioticas que ella tiene se cantará una nueva de la opera El saquéo ó los franceses en España, música de Don Manuel Corral, profesor de los teatros de la Corte. A LAS QUATRO Y MEDIA.\\\\En la segunda se dará principio con la Comedia en 2 actos titulada: El perfecto Amigo, ó sea Viage de Josef II à Munich. Seguirá la Opera en un acto titulada: El Medico Turco; que concluirá con una cancion patriotica; y se dará fin con el Bayle del Abate chasqueado. A LAS SIETE Y MEDIA."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Los Patriotas de Aragon",
+            "genero": "Comedia",
+            "actos": 3,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 180
+            }
+          ],
+          "contexto": "Obra teatral patriótica representada durante la Guerra de Independencia"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El perfecto Amigo, ó sea Viage de Josef II à Munich",
+            "genero": "Comedia",
+            "actos": 2,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 180
+            }
+          ]
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 180
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera",
+          "obra": "El saquéo ó los franceses en España",
+          "compositor": "Don Manuel Corral",
+          "interprete": "profesor de los teatros de la Corte",
+          "lugar": "Coliseo de Cádiz",
+          "contexto": "Ópera patriótica con música compuesta por un profesor de los teatros de la Corte"
+        },
+        {
+          "tipo": "opera",
+          "obra": "El Medico Turco",
+          "lugar": "Coliseo de Cádiz"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 180
+            }
+          ],
+          "descripcion": "Programación teatral completa del Coliseo de Cádiz incluyendo comedias, óperas, canciones patrióticas y bailes",
+          "conexiones": [
+            "Contexto histórico de la Guerra de Independencia",
+            "Temática patriótica predominante",
+            "Mezcla de géneros teatrales y musicales"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 177
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Real Capilla del Populo",
+          "conexiones": [
+            "Vida religiosa en Cádiz durante la guerra"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044023.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "8 DE MARZO DE 1809",
+      "Número": "67",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 365
+            }
+          ],
+          "descripcion": "Menciona la celebración religiosa del día de San Juan de Dios Fundador y un Jubileo de 40 horas en la Iglesia de Santa María por la Cofradía de Jesús Nazareno",
+          "conexiones": [
+            "Bendición Papal",
+            "Horarios de culto"
+          ]
+        },
+        {
+          "tema": "Historia y Política",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 365
+            },
+            {
+              "pdf": 2,
+              "periodico": 366
+            },
+            {
+              "pdf": 3,
+              "periodico": 367
+            }
+          ],
+          "descripcion": "Narra eventos históricos relacionados con la resistencia catalana contra las tropas francesas, mencionando milagros religiosos y batallas",
+          "conexiones": [
+            "Referencias a la Virgen de Montserrat",
+            "Batallas históricas",
+            "Aspectos militares"
+          ]
+        },
+        {
+          "tema": "Información militar",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 367
+            },
+            {
+              "pdf": 4,
+              "periodico": 368
+            }
+          ],
+          "descripcion": "Extracto de la Gazeta extraordinaria de Gobierno sobre operaciones militares del General Duque de Alburquerque",
+          "conexiones": [
+            "Conflicto contra los franceses",
+            "Estrategia militar"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044045.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "30 MARZO DE 1809",
+      "Número": "89",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": 456,
+          "contenido": "La fábula no dixo mas de Hércules limpiando las selvas de bestias fieras."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_indirecta",
+          "autor": "Clásico",
+          "obra": {
+            "titulo": "Los doce trabajos de Hércules",
+            "genero": "Mitología clásica",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 456
+            }
+          ],
+          "citas": [
+            "La fábula no dixo mas de Hércules limpiando las selvas de bestias fieras"
+          ],
+          "contexto": "Se usa como símil para criticar la situación política española"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 455
+            }
+          ],
+          "descripcion": "Menciona \\'San Juan Climaco\\' y \\'Absolución general en la Trinidad y la Merced\\'",
+          "conexiones": [
+            "Contexto de Jueves Santo"
+          ]
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 455
+            }
+          ],
+          "descripcion": "Crítica a los afrancesados y la invasión napoleónica, con extenso análisis de la situación política española",
+          "conexiones": [
+            "Referencias a decretos imperiales",
+            "Crítica al feudalismo",
+            "Situación de Madrid"
+          ]
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 455
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones Astronómicas de hoy\\' con datos precisos sobre movimientos solares y lunares",
+          "conexiones": [
+            "Información práctica sobre mareas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044068.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Sábado 22 de Abril de 1809",
+      "Número": "712",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 550,
+          "contenido": "DIVERSION PUBLICA. = TEATRO.\\En el Coliseo de esta Ciudad se executará la funcion siguiente,\\En debido obsequio de la Serenísima Señora Condesa de Altamira, se dará principio con la pieza de El Esquileo. Se baylará la Inglesa. Seguirá la Opera de La Gitanilla fingida por amor, la que dá fin con una Marcha Nacional; finalizándose con el Saynete de La oposicion á las Fiestas, en el que se baylará un Terceto por las Sras. Olivares y Martinez, y el Sr. Joaquin Gonzalez. El Teatro estará iluminado, y la entrada será sin aumento."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El Esquileo",
+            "genero": "pieza teatral",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 550
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra presentada como parte de una función teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La Gitanilla fingida por amor",
+            "genero": "ópera",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 550
+            }
+          ],
+          "citas": [],
+          "contexto": "Ópera presentada en la función teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La oposicion á las Fiestas",
+            "genero": "sainete",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 550
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 550
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sras. Olivares y Martinez, y el Sr. Joaquin Gonzalez",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 550
+            }
+          ],
+          "contexto": "Terceto bailado como parte del sainete"
+        },
+        {
+          "tipo": "marcha",
+          "interprete": "No especificado",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 550
+            }
+          ],
+          "contexto": "Marcha Nacional interpretada al final de la ópera"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y sociedad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 550
+            }
+          ],
+          "descripcion": "Función teatral dedicada a la Condesa de Altamira con iluminación especial del teatro",
+          "conexiones": [
+            "Obras teatrales",
+            "Danza",
+            "Música"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044090.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "14 DE MAYO DE 1809",
+      "Número": "133",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 638,
+          "contenido": "DIVERSION PUBLICA.= TEATRO.\\En el Coliseo de esta Ciudad se executará la funcion siguiente.\\Se dará principio con la Opera en dos actos titulada: Ramona y Roselio. Seguirá el Zapateado, por la Sra. Luisa Valdés; y se dará fin con el Saynete Los Majos embidiosos.\\A LAS OCHO."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Ramona y Roselio",
+            "genero": "Opera",
+            "actos": 2,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 638
+            }
+          ],
+          "contexto": "Parte de la programación teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los Majos embidiosos",
+            "genero": "Saynete",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 638
+            }
+          ],
+          "contexto": "Pieza final de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 638
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. Luisa Valdés",
+          "obra": "Zapateado",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 638
+            }
+          ],
+          "contexto": "Intermedio musical-dancístico entre la ópera y el sainete"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 638
+            }
+          ],
+          "descripcion": "Anuncio de función teatral completa que incluye ópera, danza y sainete, mostrando la variedad de entretenimientos públicos disponibles en el Cádiz de principios del XIX",
+          "conexiones": [
+            "Combina elementos musicales, dramáticos y populares en una misma función"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 635
+            }
+          ],
+          "descripcion": "Menciona el Jubileo de las XL Horas en la Iglesia de Padres Franciscos Descalzos y la festividad de San Bonifacio Mártir",
+          "conexiones": [
+            "Muestra la importancia de la vida religiosa en la sociedad de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044112.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 5 DE JUNIO DE 1809",
+      "Número": "155",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 726,
+          "contenido": "DIVERSION PUBLICA. = TEATRO.\\En el Coliseo de esta Ciudad se executará la funcion siguiente.\\Se dará principio con el Drama nuevo en 3 actos titulado: Una fineza de Inglaterra, ó La libertad de las tropas españolas que estaban en el Norte. Seguirá una pieza de Música, análoga al Drama, en la que se baylarán las Boleras á seis; y se dará fin con una Cancion inglesa y nuestras Marchas nacionales."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Una fineza de Inglaterra, ó La libertad de las tropas españolas que estaban en el Norte",
+            "genero": "Drama",
+            "actos": 3,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 726
+            }
+          ],
+          "contexto": "Obra teatral patriótica que celebra la liberación de tropas españolas, contextualizada en el período de la Guerra de Independencia"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 726
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza y música popular",
+          "interprete": "No especificado",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 726
+            }
+          ],
+          "contexto": "Programa musical que incluye Boleras bailadas a seis, una canción inglesa y marchas nacionales españolas como parte del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos públicos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 726
+            }
+          ],
+          "descripcion": "Anuncio de función teatral con elementos patrióticos que combina drama, música y danza, reflejando el ambiente político-cultural de la época durante la Guerra de Independencia",
+          "conexiones": [
+            "Relación entre cultura y política",
+            "Influencia británica en la cultura española del momento",
+            "Expresiones artísticas patrióticas"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 723
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL Horas en la Santa Iglesia Catedral y celebración de San Bonifacio Obispo y Mártir",
+          "conexiones": [
+            "Vida religiosa cotidiana en Cádiz"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2044134.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "27 DE JUNIO DE 1809",
+      "Número": "175",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 814,
+          "contenido": "DIVERSION PUBLICA. = TEATRO.\\En el Coliseo de esta Ciudad se executará la funcion siguiente:\\Se dará principio con la Comedia en tres actos titulada: el Solteron y su Criada. Seguirá un Duo por la Señora Fornier, y el Señor Pau y se dará fin con el Saynete el mudo fingido.\\A LAS OCHO.\\CON REAL PERMISO."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Solteron y su Criada",
+            "genero": "Comedia",
+            "actos": 3,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 814
+            }
+          ],
+          "contexto": "Obra teatral principal de la función del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El mudo fingido",
+            "genero": "Sainete",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 814
+            }
+          ],
+          "contexto": "Pieza corta para finalizar la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 814
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Dúo musical",
+          "interprete": "Señora Fornier y Señor Pau",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 814
+            }
+          ],
+          "contexto": "Interpretación musical entre las obras teatrales"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y entretenimiento público",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 814
+            }
+          ],
+          "descripcion": "Anuncio de función teatral completa que incluye comedia principal, intermedio musical y sainete final, siguiendo la estructura típica de las representaciones teatrales de la época",
+          "conexiones": [
+            "Combina teatro y música en una misma función",
+            "Mantiene el formato tradicional de espectáculo teatral de principios del XIX"
+          ]
+        },
+        {
+          "tema": "Institucional",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 814
+            }
+          ],
+          "descripcion": "La función cuenta con \\'REAL PERMISO\\', indicando el control institucional sobre los espectáculos públicos",
+          "conexiones": [
+            "Aspectos administrativos y legales del teatro"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2045835.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "19 DE JULIO DE 1809",
+      "Número": "197",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 899
+            }
+          ],
+          "descripcion": "Referencia a celebración religiosa: \\'El Jubileo de las XL Horas está en la Iglesia RR. PP. Carmelitas. Se manifiesta á las cinco y media de la mañana y se oculta á las siete de la tarde.\\'",
+          "conexiones": [
+            "Santos del día: Sta. Justa y Rufina Martires y San Vicente á Paulo"
+          ]
+        },
+        {
+          "tema": "Política y Guerra",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 899
+            }
+          ],
+          "descripcion": "Noticias sobre las guerras napoleónicas, incluyendo informes de batallas, movimientos de tropas y la situación en diferentes territorios europeos",
+          "conexiones": [
+            "Reportes militares",
+            "Comunicaciones diplomáticas"
+          ]
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 902
+            }
+          ],
+          "descripcion": "Real Resolución concerniente al Arzobispo de Santiago y la Junta Suprema Central",
+          "conexiones": [
+            "Gobierno",
+            "Iglesia"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2045902.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "11 DE AGOSTO DE 1809",
+      "Número": "218",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1003
+            }
+          ],
+          "descripcion": "Menciona la celebración religiosa del día: \\'San Tiburcio y Susana Mártires\\' y el Jubileo de las XL Horas en la Iglesia de Madres Descalzas",
+          "conexiones": [
+            "Horarios de culto y celebraciones religiosas"
+          ]
+        },
+        {
+          "tema": "Comercio y precios",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 1005
+            }
+          ],
+          "descripcion": "Lista detallada de precios corrientes de varios artículos en Londres, incluyendo productos coloniales como azúcar de la Habana, cochinilla, añil de Guatemala, etc.",
+          "conexiones": [
+            "Comercio internacional",
+            "Productos coloniales"
+          ]
+        },
+        {
+          "tema": "Guerra y política",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 1004
+            }
+          ],
+          "descripcion": "Noticias sobre enfrentamientos con los franceses, estado de las tropas y movimientos militares en Castilla",
+          "conexiones": [
+            "Guerra de Independencia española",
+            "Resistencia contra los franceses"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2046047.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "2 de septiembre de 1809",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia a San Esteban Rey de Ungría y al Jubileo de XL Horas en la Iglesia de MM. de Sta. María",
+          "conexiones": [
+            "Calendario religioso",
+            "Festividades católicas"
+          ]
+        },
+        {
+          "tema": "Astronomía y Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones Astronómicas de hoy\\' con datos precisos sobre salida/puesta del sol, posición lunar y mareas",
+          "conexiones": [
+            "Calendario",
+            "Navegación marítima"
+          ]
+        },
+        {
+          "tema": "Administración y Gobierno",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Real orden sobre el suministro de víveres al ejército combinado y correspondencia oficial",
+          "conexiones": [
+            "Política",
+            "Guerra de Independencia"
+          ]
+        },
+        {
+          "tema": "Economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Información sobre el papel moneda, renovación de vales y pagos de intereses",
+          "conexiones": [
+            "Administración pública",
+            "Sistema financiero"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2046069.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "24 DE SEPTIEMBRE DE 1809",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "sin número visible",
+          "contenido": "Teatro. Se principiará con la Comedia en tres actos titulada: Obras son amores y no buenas razones, en la que se presentará la Sra. Agustina Torres, como primera dama que es de la compañía á ocupar el papel que le corresponde. Seguirá un Intermedio de Música y el Zapateado; y se dará fin con un saynete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "Obras son amores y no buenas razones",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (Cádiz)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de avisos"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "sin número visible"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Intermedio musical y danza",
+          "interprete": "No especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "contexto": "Parte del programa teatral que incluye un intermedio musical y el Zapateado"
+        },
+        {
+          "tipo": "bayle en maroma",
+          "interprete": "Compañía Alemana",
+          "lugar": "No especificado",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "contexto": "Volatines. Continuará esta tarde à las cinco la Compañía Alemana las diferentes suertes de bayle en la maroma tirante, floxa y alambre."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Celebración religiosa de Nuestra Señora de las Mercedes con Jubileo de XL Horas en la Iglesia de Padres Mercenarios",
+          "conexiones": []
+        },
+        {
+          "tema": "Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones Astronómicas de hoy\\' con datos precisos sobre movimientos solares y lunares",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2046091.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "16 DE OCTUBRE DE 1809",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "sin número visible",
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la funcion siguiente. Se dará principio con la comedia en tres actos titulada: La Mogigata. Seguirá un Intermedio de música; y se dará fin con el Saynete Los Estudiantes petardistas. A las siete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Leandro Fernández de Moratín",
+          "obra": {
+            "titulo": "La Mogigata",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "no especificado en el texto",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra programada para representación teatral en el Coliseo de la ciudad"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los Estudiantes petardistas",
+            "genero": "sainete",
+            "actos": "no especificado",
+            "autor_obra": "no especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete programado como cierre de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "sin número visible"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Intermedio musical",
+          "interprete": "no especificado",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "contexto": "Intermedio musical programado entre la comedia principal y el sainete"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Mención del Jubileo de XL Horas en la Iglesia de Santo Domingo y celebración de San Florentin Obispo y San Galo",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de diferentes géneros y frutos de Indias, incluyendo tintes, cacaos, azúcares, algodones, drogas medicinales y otros productos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2046103.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE OCTUBRE DE 1809",
+      "Número": "",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "",
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la funcion siguiente. Se dará principio con la Comedia titulada: El vergonzoso en palacio. Seguirá un intermedio de música, y se dará fin con un buen Saynete. A las siete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Tirso de Molina",
+          "obra": {
+            "titulo": "El vergonzoso en palacio",
+            "genero": "Comedia",
+            "actos": null,
+            "autor_obra": "Tirso de Molina",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de Teatro"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": ""
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "intermedio musical",
+          "interprete": "No especificado",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "contexto": "Intermedio musical entre la comedia principal y el sainete final"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Programa completo de espectáculo teatral que incluye una comedia principal, un intermedio musical y un sainete final",
+          "conexiones": [
+            "Comedia \\'El vergonzoso en palacio\\', intermedio musical, sainete"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Menciones religiosas al inicio del diario: \\'SAN SIMON Y SAN JUDAS APOSTOLES (MISA)\\' y \\'El Jubileo de XL Horas está en la Iglesia de San Lorenzo\\'",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2046125.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "19 DE NOVIEMBRE DE 1809",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la función siguiente. Se dará principio con la Pieza en un acto Los Rechazos. Seguirán la Opera en dos actos La Isabela, las Boleras á seis, y las Marchas nacionales, y entre ellas una nueva. El Teatro estará iluminado, sin que por este motivo haya aumento."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "D. Francisco de Layglesia y Darrac",
+          "obra": {
+            "titulo": "Cancion guerrera del soldado español en el campo de batalla",
+            "genero": "canción",
+            "actos": null,
+            "autor_obra": "D. Francisco de Layglesia y Darrac",
+            "lugar de representación": "teatro de esta ciudad"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Canción interpretada en una función teatral en celebridad del recibimiento del Gobernador"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los Rechazos",
+            "genero": "Pieza teatral",
+            "actos": 1,
+            "autor_obra": null,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Obra programada para representación teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Isabela",
+            "genero": "Opera",
+            "actos": 2,
+            "autor_obra": null,
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Opera programada para representación teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Canción",
+          "interprete": "No especificado",
+          "lugar": "teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se vende la música correspondiente para piano, guitarra ó flauta"
+        },
+        {
+          "tipo": "Boleras y Marchas nacionales",
+          "interprete": "No especificado",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de función teatral en el Coliseo de Cádiz con programa variado incluyendo teatro, ópera y danza",
+          "conexiones": [
+            "Música",
+            "Literatura"
+          ]
+        },
+        {
+          "tema": "Comercio y manufactura",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso artículo sobre las manufacturas y comercio de Holanda",
+          "conexiones": [
+            "Economía",
+            "Historia"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2046136.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "30 DE NOVIEMBRE DE 1809",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "no especificado",
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la funcion siguiente. Se dará principio con la Comedia en tres actos Vida y muerte del Cid Campeador, y noble Martin Pelaez. Seguirá una Tonadilla por la Sra. Gamborino y Cubas; y se dará fin con el Saynete La Embarazada ridicula."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Vida y muerte del Cid Campeador, y noble Martin Pelaez",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "citas": [],
+          "contexto": "Parte de la programación teatral del día, obra principal de la función"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La Embarazada ridicula",
+            "genero": "Sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "citas": [],
+          "contexto": "Pieza corta que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "no especificado"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Tonadilla",
+          "interprete": "Sra. Gamborino y Cubas",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "contexto": "Pieza musical interpretada entre la comedia principal y el sainete"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Referencia a San Andrés Apóstol y al Jubileo de XL Horas en la Iglesia de San Antonio",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periódico": "no especificado"
+            }
+          ],
+          "descripcion": "Extensa descripción de la situación de Gerona durante el asedio napoleónico, mostrando el patriotismo y resistencia de sus habitantes",
+          "conexiones": [
+            "Referencias a Fernando VII y la resistencia contra la ocupación francesa"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2046147.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "11 DE DICIEMBRE DE 1809",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "no numerado",
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la funcion siguiente. Se dará principio con la Comedia en tres actos Las tres Sultanas, en la que la Sra. Fornier cantará dos Arias nuevas, y habrá en el último acto un Baylecito análogo; y se dará fin con el Saynete El hombre sensato sin serlo. A las siete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "Las tres Sultanas",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no numerado"
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para representación pública"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El hombre sensato sin serlo",
+            "genero": "Sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no numerado"
+            }
+          ],
+          "contexto": "Sainete programado como cierre de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "no numerado"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Arias",
+          "interprete": "Sra. Fornier",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no numerado"
+            }
+          ],
+          "contexto": "Dos arias nuevas interpretadas durante la comedia Las tres Sultanas"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Danza",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no numerado"
+            }
+          ],
+          "descripcion": "Se menciona un \\'Baylecito análogo\\' en el último acto de la comedia",
+          "conexiones": [
+            "Forma parte de la función teatral completa junto con la comedia y el sainete"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no numerado"
+            }
+          ],
+          "descripcion": "Mención de \\'SAN DAMASO PAPA Y MARTIR\\' y referencia al Jubileo de XL Horas en la Santa Iglesia Catedral",
+          "conexiones": [
+            "Parte del encabezado y datos religiosos del día"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2046160.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "24 DE DICIEMBRE DE 1809",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la funcion siguiente. Se dará principio con la Comedia en tres actos El Católico Recaredo. Seguirá una Tonadilla titulada Los Regalos de Pascua, por la Sra. Illot y los Sres. Morales é Illot. La Sra. Olivares baylará el Zapateado; y se dará fin con el Saynete La Fantasma del Lugar."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "El Católico Recaredo",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra principal de la función teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Fantasma del Lugar",
+            "genero": "Sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Pieza final de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Tonadilla",
+          "titulo": "Los Regalos de Pascua",
+          "interprete": "Sra. Illot y los Sres. Morales é Illot",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Pieza musical interpretada entre la comedia principal y el sainete"
+        },
+        {
+          "tipo": "Danza",
+          "titulo": "Zapateado",
+          "interprete": "Sra. Olivares",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile ejecutado como parte de la función teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Función teatral completa que incluye comedia, tonadilla, baile y sainete, mostrando la variedad de entretenimiento típica de la época",
+          "conexiones": [
+            "Combina teatro, música y danza en una misma función"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Gregorio Presbítero y al Jubileo de XL Horas en la Iglesia de PP. Carmelitas",
+          "conexiones": []
+        }
+      ]
+    }
+  ]
+}
