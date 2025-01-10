@@ -1,0 +1,1062 @@
+{
+  "Año": 1810,
+  "datos": [
+    {
+      "PDF": "2526472.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "24 DE ENERO DE 1810",
+      "Número": "no especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO. En el Coliseo de esta ciudad se executará la funcion siguiente. Se dará principio con la Opera en dos actos Una Travesura. Seguirán las Boleras por la Sra. Valdes y el Sr. Gonzalez; y se dará fin con el Sainete El triunfo del Interes."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "no especificado",
+          "obra": {
+            "titulo": "Una Travesura",
+            "genero": "Opera",
+            "actos": 2,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra presentada como parte de la programación teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El triunfo del Interes",
+            "genero": "Sainete",
+            "actos": null,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Coliseo de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete presentado como cierre de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. Valdes y Sr. Gonzalez",
+          "lugar": "Coliseo de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Interpretación de Boleras como parte intermedia del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Libertad de prensa",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la importancia y los desafíos de la libertad de imprenta, mencionando ejemplos históricos como José II y Federico II",
+          "conexiones": [
+            "Educación",
+            "Política",
+            "Sociedad"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Lista detallada de precios corrientes de varios artículos comerciales en Tarragona",
+          "conexiones": [
+            "Economía",
+            "Comercio internacional"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención al Jubileo de XL Horas en la Capilla de San Francisco Observantes",
+          "conexiones": [
+            "Vida social",
+            "Costumbres religiosas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526494.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "21 DE FEBRERO DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Menciona el Jubileo de XL Horas en la Iglesia de Santiago y la festividad de San Felix Obispo",
+          "conexiones": []
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Incluye datos astronómicos precisos sobre salida y puesta del sol, fases lunares y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Defensa",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Edicto de la Junta Superior sobre medidas contra la comunicación con enemigos y defensa de la plaza",
+          "conexiones": [
+            "Se relaciona con las noticias militares posteriores sobre enfrentamientos"
+          ]
+        },
+        {
+          "tema": "Arquitectura religiosa",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención del Altar mayor de la Iglesia de San Antonio en la sección de pérdidas",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526516.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE MARZO DE 1810",
+      "Número": "",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Mención del Jubileo de XL Horas en la Iglesia de San Antonio y referencias a Santa Eufemia y San Niceto",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Guerra",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Extensa sección \\'INGLESES\\' que discute la alianza anglo-española contra Francia durante la Guerra de la Independencia, mencionando el apoyo británico y criticando las acciones francesas",
+          "conexiones": [
+            "Se relaciona con las noticias militares posteriores"
+          ]
+        },
+        {
+          "tema": "Vida Social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Anuncio de pérdida de un brazalete con detalles sobre su búsqueda y recompensa, lo que refleja aspectos de la vida cotidiana en Cádiz",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Sección de \\'Seguros\\' con listado de precios para diferentes puertos como Bahía, Rio Janeiro, Pernambuco, etc.",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526538.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 16 DE ABRIL DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no numerado"
+            }
+          ],
+          "descripcion": "Mención del Jubileo de XL Horas en la Iglesia de los Terceros de San Francisco Descalzos y celebración de Santo Toribio",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no numerado"
+            }
+          ],
+          "descripcion": "Referencia a la Universidad de Coimbra, mencionando que el mariscal Beresford se alojó en el palacio de la universidad",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "no numerado"
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de Veracruz incluyendo telas, sedas, algodón y abarrotes",
+          "conexiones": []
+        },
+        {
+          "tema": "Política internacional",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no numerado"
+            }
+          ],
+          "descripcion": "Noticias sobre el matrimonio de Napoleón con la archiduquesa María Luisa y referencias a relaciones diplomáticas entre varios países europeos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526561.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE MAYO DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Anuncio de academia de idiomas dirigida por D. Pascual Antonio Castellanos, donde se ofrece la enseñanza de español para extranjeros y otros idiomas (inglés, latín, italiano, francés y griego). Se detalla el método, precios y condiciones.",
+          "conexiones": [
+            "Vinculado a las necesidades educativas y comerciales de Cádiz como puerto internacional",
+            "Refleja el ambiente multicultural de la ciudad"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Mención del jubileo en la parroquia del Sr. S. José, extramuros, y referencia a San Bernardino de Sena",
+          "conexiones": [
+            "Vida religiosa en Cádiz"
+          ]
+        },
+        {
+          "tema": "Comercio y vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Anuncio de almoneda de efectos y adornos de casa en la plazuela de las Viudas",
+          "conexiones": [
+            "Actividad comercial y vida cotidiana en Cádiz"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526583.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "11 DE JUNIO DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Referencia a la festividad de San Bernabé Apóstol y el jubileo en la iglesia de Santo Domingo",
+          "conexiones": []
+        },
+        {
+          "tema": "Vida militar y política",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Aviso del mariscal O-Donnell sobre disposiciones de navegación costera en Cataluña y medidas contra el contrabando",
+          "conexiones": [
+            "Se conecta con las noticias posteriores sobre conflictos militares"
+          ]
+        },
+        {
+          "tema": "Ciencia/Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' con datos precisos sobre horarios solares y mareas",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526936.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 DE JULIO DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención del santo del día y ubicación del jubileo: \\'S. Laureano, arzobispo, y el beato Gaspar Bono. El jubileo está en la iglesia de San Pablo.\\'",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Guerra",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Artículo \\'Muerte del valiente verdugo\\' que narra un episodio de resistencia española contra los franceses durante la Guerra de Independencia",
+          "conexiones": [
+            "Relacionado con las noticias militares posteriores"
+          ]
+        },
+        {
+          "tema": "Economía y comercio",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Lista detallada de precios corrientes de Valencia incluyendo productos como arroz, seda, trigo y aceite",
+          "conexiones": []
+        },
+        {
+          "tema": "Política internacional",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Noticias sobre movimientos diplomáticos y militares en Europa, incluyendo información sobre Napoleon, cambios en el gabinete de San Petersburgo y movimientos de tropas",
+          "conexiones": [
+            "Relacionado con el contexto bélico del primer artículo"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526959.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "27 DE JULIO DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona la festividad de San Pantaleón Mártir y el jubileo en la real capilla del Pópulo",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Documento detallado sobre elecciones de diputados a cortes con listas de electores y votos por parroquias (Santa Cruz, Santiago, Rosario, San Antonio y San Lorenzo)",
+          "conexiones": [
+            "Se relaciona con el proceso constitucional de 1810"
+          ]
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' con datos precisos sobre salida y puesta del sol, ecuación del tiempo y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Militar",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Noticias del Reino sobre operaciones militares en Aragón y acciones del partidario Espoz Mina",
+          "conexiones": [
+            "Contexto de la Guerra de Independencia"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526983.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "19 DE AGOSTO DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Referencia a festividad religiosa: \\'SAN JOAQUIN, PADRE DE NUESTRA SEÑORA. El jubileo está en la iglesia de la Pastora.\\'",
+          "conexiones": [
+            "Conecta con la vida religiosa cotidiana de Cádiz"
+          ]
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Discurso pronunciado por el canónigo lectoral D. Antonio Trianes sobre las próximas cortes y elecciones de diputados",
+          "conexiones": [
+            "Se relaciona con el proceso constituyente y la organización política durante la Guerra de Independencia"
+          ]
+        },
+        {
+          "tema": "Vida social y administrativa",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Detalles sobre la celebración de elecciones en el hospital de nuestra Señora del Carmen, incluyendo procedimientos y ceremonias religiosas asociadas",
+          "conexiones": [
+            "Vincula aspectos religiosos, políticos y administrativos de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527006.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 10 DE SETIEMBRE DE 1810",
+      "Número": "",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Referencia al santo del día (San Nicolás de Tolentino) y mención del jubileo en la iglesia auxiliar de san Antonio",
+          "conexiones": []
+        },
+        {
+          "tema": "Ciencia/Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' que detalla información sobre salida y puesta del sol, posición lunar y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio marítimo",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Aviso de subasta pública de la fragata titulada la Castilla, con información sobre procedimientos legales y comerciales",
+          "conexiones": []
+        },
+        {
+          "tema": "Vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Anuncio de una señora viuda buscando colocación como ama de llaves o acompañante, reflejo de las estructuras sociales y laborales de la época",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2527029.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "MIERCOLES 3 DE OCTUBRE DE 1810",
+      "Número": "",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Economía política",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Artículo extenso sobre Fr. Tomás Mercado, religioso Dominico del siglo XVI, y su obra \\'Suma de tratos y contratos\\' comparándolo con Adam Smith en temas de economía política. Se destaca su contribución temprana a teorías económicas.",
+          "conexiones": [
+            "Relación con el desarrollo histórico del pensamiento económico español"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención del jubileo en la iglesia de S. Pablo y la festividad de San Cándido, Mártir",
+          "conexiones": [
+            "Vida religiosa cotidiana en Cádiz"
+          ]
+        },
+        {
+          "tema": "Educación y Academia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Discusión sobre la admisión de papeles anónimos para obras didácticas en las Cortes",
+          "conexiones": [
+            "Política educativa",
+            "Administración pública"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527051.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 29 DE OCTUBRE DE 1810",
+      "Número": "",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Himno",
+          "interprete": "No especificado",
+          "lugar": "No especificado",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncia la venta de \\'HIMNO A LAS CORTES\\' por J.A. para fortepiano y guitarra, disponible en la imprenta de Don Manuel Carreño."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención del día de San Narciso Obispo y el jubileo en la iglesia de San Lorenzo",
+          "conexiones": []
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' con información detallada sobre salida y puesta del sol, posición lunar y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Proclama militar del comandante general del ejército de Aragón a sus tropas, referencias a Fernando VII y la situación política",
+          "conexiones": [
+            "Conecta con el contexto histórico de la Guerra de Independencia española"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527073.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "22 DE NOVIEMBRE DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención del día de Santa Cecilia Virgen y Mártir, y referencia al jubileo en la iglesia de San Juan de Dios",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Edicto de la Junta superior de gobierno sobre obras de fortificación, incluyendo regulaciones laborales y multas",
+          "conexiones": []
+        },
+        {
+          "tema": "Justicia y Derecho",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Aviso al público sobre la celebración de una visita general extraordinaria de cárceles acordada por las Cortes, incluyendo un discurso sobre indultos y justicia",
+          "conexiones": [
+            "Conexión con el sistema político y administrativo de la época"
+          ]
+        },
+        {
+          "tema": "Defensa militar",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Noticia sobre actividad militar en el castillo del Puntal y baterías de tierra",
+          "conexiones": [
+            "Relacionado con el contexto bélico de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527085.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 DE DICIEMBRE DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "AVISO. En el despacho de la Gazeta, plazuela del Palillero, se venden la Relacion circunstanciada del sitio de Ciudad-Rodrigo y la Constitucion de España forjada en Bayona, puesta en canciones de música conocida."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Constitucion de España forjada en Bayona",
+            "genero": "Canciones",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Se anuncia la venta de una versión musicalizada de la Constitución de Bayona, lo que representa una forma de difusión cultural y política a través de la música"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "canciones",
+          "interprete": "No especificado",
+          "lugar": "Despacho de la Gazeta, plazuela del Palillero",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se vende una adaptación musical de un texto político-constitucional"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona \\'SANTA BARBARA VIRGEN Y MARTIR\\' y \\'El jubileo está en la iglesia de San Antonio\\'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Navegación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Incluye información sobre movimientos de buques comerciales y militares",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Decreto de indulto y noticias sobre administración militar y política",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2527096.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "17 DE DICIEMBRE DE 1810",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "no especificado",
+          "contenido": "LIBRO - Tratado de las diferencias de calenturas, su conocimiento, causas y método curativo, que conmunmente se hallan en España y las que suelen acaecer en el exército, para que no se confundan con la voz de tabardillo, y se curen baxo de una misma regla, causando muchos perjuicios á la nacion. Por el doctor D. Julian de Diego Martin Garci-Taso de la Vega.-- Se hallará en la librería de Cerezo, junto al café del Correo. En la misma se vende la comedia nueva titulada Don Juan Martin el Empecinado."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Don Juan Martin el Empecinado",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "No especificado"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "citas": [],
+          "contexto": "Mencionada como obra nueva en venta en la librería de Cerezo"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Comercio y censura",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Decreto de Bonaparte ordenando la confiscación y quema de mercaderías inglesas en diversos territorios",
+          "conexiones": [
+            "Política internacional",
+            "Guerra económica"
+          ]
+        },
+        {
+          "tema": "Medicina/Ciencia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Anuncio de un tratado médico sobre calenturas y sus tratamientos",
+          "conexiones": [
+            "Literatura científica",
+            "Salud pública"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención del jubileo en la iglesia de MM. Descalzas y referencias a San Lázaro Obispo",
+          "conexiones": [
+            "Vida religiosa",
+            "Calendario litúrgico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527107.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Viernes 28 de diciembre de 1810",
+      "Número": "",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Menciona la festividad de Los Santos Inocentes y el jubileo en la iglesia de PP. Descalzos",
+          "conexiones": []
+        },
+        {
+          "tema": "Prensa y libertad de imprenta",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Debate sobre la libertad de imprenta y las responsabilidades de los autores y editores en la publicación de cartas y artículos. Incluye una discusión sobre el uso de iniciales y pseudónimos en publicaciones.",
+          "conexiones": [
+            "Política",
+            "Debate público"
+          ]
+        },
+        {
+          "tema": "Política y administración",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Discusión sobre el juramento al rey y debates sobre la naturaleza del poder absoluto, incluyendo referencias a leyes históricas y la constitución.",
+          "conexiones": [
+            "Debate público",
+            "Historia de España"
+          ]
+        },
+        {
+          "tema": "Noticias militares",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": ""
+            }
+          ],
+          "descripcion": "Noticias sobre acciones militares en El Puntal, Gibraltar y Ronda durante la Guerra de Independencia",
+          "conexiones": [
+            "Política"
+          ]
+        }
+      ]
+    }
+  ]
+}
