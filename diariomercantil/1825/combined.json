@@ -1,4 +1,1350 @@
 {
   "Año": 1825,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2527435.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "23 DE SETIEMBRE DE 1825",
+      "Número": "3331",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "papel_musical",
+          "interprete": null,
+          "lugar": "almacén de comestibles calle de las Descalzas, num. 62",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Venta de papel de música: 'papel de música escelente á 5 qtos. cada pliego, y por partida á 4½.'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia de la Merced y mención de festividades religiosas (San Lino, Papa, y Santa Tecla, Virgen)",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Real decreto creando una Junta auxiliar del Consejo de Ministros, denominada Real Junta consultiva de Gobierno",
+          "conexiones": [
+            "Administración pública",
+            "Gobierno"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de vacunación pública: 'VACUNA PUBLICA. Con arreglo á real orden se administrará por la Junta Superior de Sanidad el dia 24 del corriente á las 5 de la tarde en las casas Capitulares'",
+          "conexiones": [
+            "Administración pública",
+            "Salud"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527457.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "15 DE OCTUBRE DE 1825",
+      "Número": "3357",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            },
+            {
+              "pdf": 2,
+              "periodico": 2
+            },
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "El documento contiene una extensa orden real y disposiciones sobre la purificación de maestros de primeras letras, que era un proceso de control ideológico-político sobre los docentes tras el periodo constitucional. El texto detalla el procedimiento administrativo que debían seguir los maestros para ser 'purificados' y poder ejercer la enseñanza tanto pública como privada.",
+          "conexiones": [
+            "Política y control social del periodo absolutista",
+            "Sistema educativo de primeras letras",
+            "Administración pública de la época"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención a Santa Teresa de Jesús, Virgen y Fundadora, y referencia al Jubileo de las 40 horas en la Iglesia de Santo Domingo",
+          "conexiones": [
+            "Calendario litúrgico",
+            "Vida religiosa en Cádiz"
+          ]
+        },
+        {
+          "tema": "Administración y gobierno",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            },
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Incluye documentos administrativos, órdenes reales y avisos oficiales que reflejan la estructura burocrática y gubernamental de la época",
+          "conexiones": [
+            "Sistema educativo",
+            "Control social",
+            "Administración local y nacional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527479.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "6 DE NOVIEMBRE DE 1825",
+      "Número": "3378",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—El gran bandido Serrallonga y asombro de Cataluña (comedia en 3 actos, adornada de vistosa comparsa y de un baile de máscaras ).—El bolero.—La no menos oportunidad fingida y gracioso chasco de la liebre (sainete).—A las 7.Tercer abono: funcion 15.—Blanca y Falliero (ópera italiana, en dos actos, música del celebre maestro Rossini, adornada de todo su aparato teatral).—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El gran bandido Serrallonga y asombro de Cataluña",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para representación pública"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "No especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de la ópera 'Blanca y Falliero' de Rossini"
+        },
+        {
+          "tipo": "partituras",
+          "interprete": null,
+          "lugar": null,
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Venta de colecciones de obras de Mozart, Rossini, Weber y Winter"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia/Física",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la naturaleza de los rayos y las precauciones contra tormentas",
+          "conexiones": []
+        },
+        {
+          "tema": "Espectáculos gimnásticos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Función de gimnasia y acrobacia por el profesor José De-Stefani",
+          "conexiones": []
+        },
+        {
+          "tema": "Salud pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de vacunación pública en las casas Capitulares",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2527501.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE NOVIEMBRE DE 1825",
+      "Número": "3406",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia y Botánica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            },
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Artículo sobre un método científico para conservar flores, basado en experimentos de la academia de Bolonia por José de Monti. Incluye descripción detallada del procedimiento y sus aplicaciones botánicas.",
+          "conexiones": [
+            "Relacionado con la actividad académica y científica de la época"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            },
+            {
+              "pdf": 2,
+              "periodico": null
+            },
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la geografía comercial de Hamburgo, describiendo sus actividades comerciales, manufacturas, importaciones y exportaciones.",
+          "conexiones": [
+            "Vinculado a las actividades mercantiles y económicas de la época"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención a San Gregorio III y al Jubileo de las 40 horas en la iglesia de Candelaria",
+          "conexiones": [
+            "Aspectos religiosos de la vida cotidiana"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527523.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE DICIEMBRE DE 1825",
+      "Número": "3422",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación/Medicina",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de material educativo de anatomía: 'Estudio de la anatomía de la cabeza del cuerpo humano' con referencias a anatomistas célebres como Haller, Walter, Fife y Mekel. Se vende en librerías de varias ciudades españolas.",
+          "conexiones": [
+            "Desarrollo científico y educativo de la época"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo de las 40 horas' en la iglesia de los Descalzos y mención a Santo Domingo de Silos",
+          "conexiones": [
+            "Vida religiosa cotidiana en Cádiz"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos diversos en la plaza, incluyendo productos ultramarinos, comestibles y efectos varios",
+          "conexiones": [
+            "Actividad mercantil",
+            "Comercio internacional"
+          ]
+        },
+        {
+          "tema": "Desarrollo Urbano",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Real orden sobre la edificación de diez poblaciones en Sierramorena, mostrando el desarrollo urbanístico y colonización de la época",
+          "conexiones": [
+            "Política de colonización",
+            "Desarrollo territorial"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528281.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIERCOLES 11 DE MAYO DE 1825",
+      "Número": "3205",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Arqueología y Egiptología",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "3205"
+            }
+          ],
+          "descripcion": "Noticia sobre el descubrimiento y análisis de papiros egipcios por Champollion el joven, incluyendo documentos del ritual fúnebre y planos de catacumbas del Rey Ranses-Metamonn, datados hacia 1437 a.C.",
+          "conexiones": [
+            "Historia antigua",
+            "Investigación académica"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "3205"
+            }
+          ],
+          "descripcion": "Artículo sobre el método de enseñanza de lenguas de Mr. Ordinaire, implementado en varias instituciones educativas francesas, incluyendo la academia de Besanzon y el colegio de Santa Bárbara. Se destaca su carácter práctico y beneficencia al admitir estudiantes gratuitos.",
+          "conexiones": [
+            "Pedagogía",
+            "Reforma educativa",
+            "Beneficencia social"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "3205"
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las 40 horas en la iglesia de Capuchinos y celebración de San Mamerto, Obispo",
+          "conexiones": [
+            "Vida religiosa",
+            "Calendario litúrgico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528303.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "2 DE JUNIO DE 1825",
+      "Número": "3228",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—Funcion 20.—El esposo de Provincia (opera bufa en dos actos, musica del maestro Jacobo Cordella, intermediada del fandango.)=A las 8."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Jacobo Cordella",
+          "obra": {
+            "titulo": "El esposo de Provincia",
+            "genero": "opera bufa",
+            "actos": 2,
+            "autor_obra": "Jacobo Cordella",
+            "lugar de representación": "Teatro [de Cádiz]"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de función teatral en la sección de espectáculos"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "compañía de volatines dirigida por Emilio Siviloli",
+          "lugar": "PLAZA DETRAS DEL JUEGO DEL BALON",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Espectáculo que incluye baile en la maroma, boleras, cachuchas y baile de los negros de Santo Domingo"
+        },
+        {
+          "tipo": "ópera y fandango",
+          "interprete": "No especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de ópera bufa con intermedio de fandango"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Espectáculos acrobáticos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Función de volatines que incluye ejercicios militares de fuego y diversos bailes",
+          "conexiones": [
+            "Se combina con elementos de danza y espectáculo popular"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Celebración del Corpus Christi y San Marcelino Mártir, con procesión general y jubileo en la Catedral",
+          "conexiones": [
+            "Se relaciona con el orden de la plaza para la procesión"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528325.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "24 DE JUNIO DE 1825",
+      "Número": "3250",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "PLAZA DETRAS DEL JUEGO DEL BALON.—La compañía de volatines del Sr. Emilio Siviloti dará hoy la funcion siguiente.—Principiará con el baile en la maroma tirante por todos los individuos de la compañía.—Se bailarán las manchegas.—La niña hará varios equilibrios sobre mesa, silla y candelero.—Se presentará un aficionado á ejecutar una escena vocal con el payaso.—Concluyendo con la pantomima de Arlequin protegido por la magia —Concluida la funcion se sorteará un becerro que será entregado al que tenga el numero de los que al recibir el boletin de entrada se dará à cada uno—A las 5½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Arlequin protegido por la magia",
+            "genero": "pantomima",
+            "actos": 1,
+            "autor_obra": null,
+            "lugar de representación": "Plaza detrás del juego del balón"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra presentada como parte de un espectáculo de volatines y entretenimiento popular"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile tradicional",
+          "interprete": "Compañía de Emilio Siviloti",
+          "lugar": "Plaza detrás del juego del balón",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Interpretación de 'las manchegas' como parte de un espectáculo de variedades"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de espectáculo que combina acrobacia (volatines), baile, música y teatro popular en forma de pantomima",
+          "conexiones": [
+            "Incluye elementos de cultura popular española (manchegas) junto con formas teatrales internacionales (pantomima, arlequinada)"
+          ]
+        },
+        {
+          "tema": "Censura y control cultural",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso de la Intendencia de Policía sobre la prohibición de un impreso de la compañía cómica del Puerto de Santa María por considerarse indecoroso a la religión",
+          "conexiones": [
+            "Muestra el control institucional sobre las manifestaciones culturales y teatrales de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528347.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "16 DE JULIO DE 1825",
+      "Número": "3272",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": null,
+          "contenido": "Se ha abierto una suscricion bajo los auspicios del obispo de Arcangel para elevar un monumento al poeta ruso Lomonossoff. La academia rusa venerando la memoria del padre de nuestra literatura ha suscrito por mil rublos."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Lomonossoff",
+          "obra": {
+            "titulo": null,
+            "genero": null,
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Mención del poeta ruso Lomonossoff en relación a un monumento conmemorativo"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera",
+          "interprete": "Sras. Ercolina Bressa, Señora Julien, Sres. Luis Debezzy, Pablo Lembi, Joaquin Edo",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de la ópera 'Eduardo y Cristina' de Rossi"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "arqueología",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Descubrimiento de ruinas romanas y artefactos antiguos en Lillebonne, incluyendo estatuas, medallones y elementos religiosos",
+          "conexiones": []
+        },
+        {
+          "tema": "educación pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de vacuna pública administrada por la Junta Superior de Sanidad",
+          "conexiones": []
+        },
+        {
+          "tema": "comercio y productos culturales",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de pomadas francesas y productos de belleza importados",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528369.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "7 DE AGOSTO DE 1825",
+      "Número": "3204",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "no especificado",
+          "obra": "Belleza y corazón de hierro",
+          "compositor": "Rossini",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Ópera en 2 actos programada para las 8 de la noche"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Espectáculo en la Plaza detrás del Juego del Balón que incluye baile, acrobacias (salto del tonel, saltos mortales), danza (boleras) y una pantomima titulada 'El perro fingido o sea la cárcel mágica'",
+          "conexiones": [
+            "Se menciona junto a la programación operística del día"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia de los Descalzos y celebración de San Cayetano",
+          "conexiones": []
+        },
+        {
+          "tema": "educación religiosa",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Establecimiento de un seminario en China con 12 alumnos que estudian latín bajo la dirección de un sacerdote chino",
+          "conexiones": [
+            "Relacionado con el extenso artículo sobre la misión católica en China"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528391.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 DE AGOSTO DE 1825",
+      "Número": "3316",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación Superior",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3316
+            }
+          ],
+          "descripcion": "Extensa descripción de la Universidad greco-jónica en Corfú, incluyendo detalles sobre su funcionamiento, profesorado y alumnado. Menciona que cuenta con 135 alumnos en su escuela preparatoria (ephebion) y 76 filólogos o estudiantes. Detalla las cátedras de matemáticas, teología, filosofía e historia natural.",
+          "conexiones": [
+            "Referencias a la biblioteca universitaria que cuenta con 80 volúmenes"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3316
+            }
+          ],
+          "descripcion": "Menciona 'LA DEGOLLACION DE SAN JUAN BAUTISTA' y el 'Jubileo de las 40 horas' en la iglesia de S. Lorenzo, mostrando la importancia de las celebraciones religiosas en la vida social",
+          "conexiones": []
+        },
+        {
+          "tema": "Ciencia y Meteorología",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3316
+            }
+          ],
+          "descripcion": "Incluye una tabla detallada de observaciones meteorológicas con mediciones de barómetro, termómetro, vientos y estado atmosférico, además de información astronómica y mareas",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2532619.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE ENERO DE 1825",
+      "Número": "3094",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Sra. Casimira Delgado",
+          "obra": "La esclava en Bagdad",
+          "compositor": "Paccini",
+          "lugar": "Teatro",
+          "horario": "A las 7",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncia la representación de una ópera en dos actos con música del maestro Paccini"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Detallado anuncio sobre una academia dirigida por D. Manuel Millan, que ofrece diversas materias incluyendo primeras letras, humanidades, ortología, doctrina cristiana, caligrafía, aritmética, gramática, matemáticas, francés, latín, dibujo, música, geografía y taquigrafía",
+          "conexiones": [
+            "Incluye referencias a profesores de música: D. Guillermo Suyar y D. José Benedid"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona la celebración religiosa del día: San Fabian, Papa y San Sebastian, Mártir, así como el Jubileo de las 40 horas en la iglesia de Santo Domingo",
+          "conexiones": []
+        },
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Se anuncia función teatral en la sección 'TEATRO'",
+          "conexiones": [
+            "Relacionado con la representación de la ópera"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532670.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "11 DE FEBRERO DE 1825",
+      "Número": "3116",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "TEATRO.—Eduardo y Cristina (opera seria en dos actos, música del maestro Rossini.)—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Rossini",
+          "obra": {
+            "titulo": "Eduardo y Cristina",
+            "genero": "opera seria",
+            "actos": 2,
+            "autor_obra": "Rossini",
+            "lugar de representación": "Teatro (sin especificar)"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de avisos del periódico"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera",
+          "interprete": "No especificado",
+          "lugar": "Teatro no especificado en Cádiz",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de ópera de Rossini como parte de la programación teatral del día"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Saturnino, presbítero y mártir, y al jubileo de 40 horas en la iglesia de Candelaria",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en la plaza de diversos productos y mercancías",
+          "conexiones": [
+            "Aspectos económicos y mercantiles de la ciudad"
+          ]
+        },
+        {
+          "tema": "Navegación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso a capitanes y prácticos de buques sobre boyas en el puerto de Hamburgo",
+          "conexiones": [
+            "Comercio marítimo"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532703.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SABADO 5 DE MARZO DE 1825",
+      "Número": "3738",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "El mar, dice el cardenal Richelieu, es una de las herencias sobre que todos ó los mas de los soberanos tienen sus derechos..."
+        },
+        {
+          "pdf": 3,
+          "periodico": null,
+          "contenido": "Si faltasen á España los dos polos del mar Mediterraneo y Oceano, decia el insigne D. Diego Saavedra en sus maximas políticas dirigidas al principe D. Baltasar Carlos, luego caeria su grandeza..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Diego Saavedra Fajardo",
+          "obra": {
+            "titulo": "Maximas políticas",
+            "genero": "prosa política",
+            "actos": null,
+            "autor_obra": "Diego Saavedra",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [
+            "Si faltasen á España los dos polos del mar Mediterraneo y Oceano [...] luego caeria su grandeza"
+          ],
+          "contexto": "Se cita la obra para argumentar sobre la importancia estratégica del mar para España"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Historia y política",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencias históricas a Carlos V, Felipe II, el duque de Alba y otros gobernantes discutiendo la importancia naval de España",
+          "conexiones": [
+            "Se relaciona con el artículo principal sobre navegación y poder marítimo"
+          ]
+        },
+        {
+          "tema": "Comercio y sociedad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Análisis del comercio marítimo español y su impacto en la riqueza nacional",
+          "conexiones": [
+            "Conecta con el tema principal de navegación y la importancia estratégica del mar"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención a San Eusebio y compañeros mártires, y al jubileo en la iglesia de San Francisco",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533112.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "27 DE MARZO DE 1825",
+      "Número": "3169",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "¿Somos nosotros mas sabios que los antiguos? He aquí una cuestion que si no la profundizamos y no nos despojamos al mismo tiempo de nuestro amor propio, decidiremos luego y fallaremos á nuestro favor..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Hipócrates",
+          "obra": {
+            "titulo": "Obras de Hipócrates",
+            "genero": "Tratado médico",
+            "actos": null,
+            "autor_obra": "Hipócrates",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Se menciona como referencia en un ensayo sobre el conocimiento antiguo vs moderno"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia y filosofía",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso ensayo que compara el conocimiento científico antiguo con el moderno, mencionando campos como química, física, matemática, anatomía. Debate sobre el progreso científico y el valor del conocimiento clásico.",
+          "conexiones": [
+            "Menciones a Galeno, Teofrasto, Dioscórides como autoridades clásicas"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Lista detallada de precios corrientes de diversos productos coloniales en Gibraltar",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención al Jubileo de las 40 horas en la iglesia de los Descalzos y referencia a San Ruperto",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533207.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "8 DE ABRIL DE 1825",
+      "Número": "3173",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Real orden sobre purificación de escolares en la universidad de Alcalá. Establece procedimientos para evaluar la conducta política de estudiantes y seminaristas.",
+          "conexiones": [
+            "Política",
+            "Religión"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona el jubileo de 40 horas en la iglesia del Pópulo y la festividad de San Dionisio, Obispo y Santa Casilda, Virgen.",
+          "conexiones": [
+            "Vida social"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y otros efectos comerciales en la plaza de Cádiz.",
+          "conexiones": [
+            "Vida social",
+            "Política"
+          ]
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Varias órdenes reales sobre purificaciones políticas, pagos de atrasos a empleados y establecimiento de nuevas poblaciones.",
+          "conexiones": [
+            "Educación",
+            "Economía"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533224.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "19 de Abril de 1825",
+      "Número": "3184",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de establecimiento de un estudio de latinidad, retórica y poética por D. Bartolomé Melendez Mata. Se detalla el método de enseñanza, horarios y honorarios: 'En la calle de la Portería de Capuchinos, se ha establecido un estudio de latinidad, retorica y poetica por D. Bartolomé Melendez Mata. No se admiten mas discípulos que treinta. Habrá tres horas de clase por la mañana y otras tres en cada tarde...'",
+          "conexiones": [
+            "Formación académica",
+            "Enseñanza de lenguas clásicas"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo de las 40 horas' en la iglesia del Carmen y la festividad de 'SAN HERMOGENES, MARTIR'",
+          "conexiones": [
+            "Calendario litúrgico",
+            "Festividades religiosas"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa sección de precios corrientes y productos comerciales, incluyendo frutos ultramarinos, comestibles y otros efectos",
+          "conexiones": [
+            "Actividad mercantil",
+            "Comercio internacional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533246.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "26 DE ABRIL DE 1825",
+      "Número": "3191",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": "sin número visible"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "teatro_mecanico",
+          "interprete": "Sr. Bertrand",
+          "lugar": "calle de la Compañía",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": "sin número visible"
+            }
+          ],
+          "contexto": "TEATRO MECANICO.—En la calle de la Compañía el Sr. Bertrand dará una funcion compuesta de fuegos píricos, manejo de caballos por varios automatas, juegos de agua hidraulicos y fuegos artificiales.=Entrada 1 real. Sillas 2 id. Lunetas 1½ id. Asientos comunes 1 id.=A las 7½."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Referencia a festividad religiosa y jubileo: 'SAN CLETO Y SAN MARCELINO, PAPAS. El Jubileo de las 40 horas está en la iglesia de San José.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de diversos productos en la plaza, incluyendo frutos ultramarinos, comestibles y otros efectos",
+          "conexiones": [
+            "Relacionado con las noticias comerciales y marítimas de otras páginas"
+          ]
+        },
+        {
+          "tema": "Navegación y Comercio Marítimo",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Información sobre llegadas de barcos, sus capitanes y cargas",
+          "conexiones": [
+            "Vinculado a los precios corrientes y actividad comercial"
+          ]
+        }
+      ]
+    }
+  ]
 }

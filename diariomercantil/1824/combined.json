@@ -1,4 +1,1572 @@
 {
   "Año": 1824,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2525266.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "24 de setiembre de 1824",
+      "Número": "2976",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "TEATRO.—Marta la piadosa. (comedia en 5 actos.)—Fandango—Los palos deseados (sainete.)—A las 7½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Tirso de Molina",
+          "obra": {
+            "titulo": "Marta la piadosa",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "Tirso de Molina (1615)",
+            "lugar de representación": "Teatro (no especificado) de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de avisos teatrales del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los palos deseados",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro (no especificado) de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra corta que acompaña a la comedia principal"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "no especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Fandango como intermedio entre la comedia principal y el sainete"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a 'Nuestra Señora de las Mercedes' y al Jubileo de las 40 horas en la iglesia de la Merced",
+          "conexiones": []
+        },
+        {
+          "tema": "comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes y mercancías en el puerto de Cádiz",
+          "conexiones": [
+            "actividad económica",
+            "comercio marítimo"
+          ]
+        },
+        {
+          "tema": "navegación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre mareas y movimientos de barcos en la bahía",
+          "conexiones": [
+            "comercio"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525288.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "16 DE OCTUBRE DE 1824",
+      "Número": "2998",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO = La gaceta (ópera en dos actos, música del maestro Rosini.) - A las 7½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Gioachino Rossini",
+          "obra": {
+            "titulo": "La gaceta",
+            "genero": "ópera",
+            "actos": 2,
+            "autor_obra": "Rossini",
+            "lugar de representación": "Teatro (sin especificar)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de avisos teatrales al final del periódico"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "no especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de una ópera de Rossini programada para las 7:30"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de una escuela gratuita en el callejón del Tinte para niños pobres entre 5 y 10 años, ofreciendo enseñanza básica y materiales sin costo",
+          "conexiones": [
+            "Sociedad económica de amigos del país"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencias a San Florentino, Obispo y San Galo. Mención del Jubileo de 40 horas en la iglesia de S. Lorenzo",
+          "conexiones": []
+        },
+        {
+          "tema": "vida social y comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncios de venta de una caja fuerte francesa y vino de Burdeos, mostrando el comercio local y las importaciones de la época",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2525310.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "7 DE NOVIEMBRE DE 1824",
+      "Número": "3020",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—La bella tabernera (opera en 2 actos, música del célebre maestro Paccini, será intermediada de las boleras.)—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Paccini",
+          "obra": {
+            "titulo": "La bella tabernera",
+            "genero": "ópera",
+            "actos": 2,
+            "autor_obra": "Paccini",
+            "lugar de representación": "Teatro (sin especificar)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de avisos"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera y boleras",
+          "interprete": "No especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de ópera italiana con intermedios de bailes españoles (boleras)"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación/Literatura comercial",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de libro: 'Curso teórico de aritmética mercantil por D. Antonio Francisco Casals, obra interesante para los que quieran emprender la carrera del comercio como para los que se hallan en ella'",
+          "conexiones": []
+        },
+        {
+          "tema": "Ciencia/Tecnología",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Artículo sobre globos aerostáticos y accidentes relacionados, mostrando el desarrollo tecnológico de la época",
+          "conexiones": []
+        },
+        {
+          "tema": "Transporte marítimo",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Horarios del Banco de vapor de la Real Compañía del Guadalquivir entre Sevilla, Sanlúcar y Cádiz",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2525333.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 DE NOVIEMBRE DE 1824",
+      "Número": "3042",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—El tiempo de la barbarie ó los jueces invisibles (comedia de espectaculo, en 4 actos.)—Boleras—El astuto madrileño (sainete.)—A las 7½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El tiempo de la barbarie ó los jueces invisibles",
+            "genero": "comedia de espectáculo",
+            "actos": 4,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de teatro como parte de la programación del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El astuto madrileño",
+            "genero": "sainete",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece como parte de la programación teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "No especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se menciona 'Boleras' como parte del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "comercio y vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Incluye varios avisos comerciales y anuncios de servicios, como el establecimiento de un depósito de jabón y ofertas de trabajo",
+          "conexiones": []
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona la festividad de San Saturnino, mártir y el Jubileo de las 40 horas en la iglesia de Candelaria",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2525366.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "21 DE DICIEMBRE DE 1824",
+      "Número": "3064",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "TEATRO.—La bella tabernera (opera bufa en dos actos, música del maestro Paccini, intermediada de las boleras. —A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Giovanni Pacini",
+          "obra": {
+            "titulo": "La bella tabernera",
+            "genero": "ópera bufa",
+            "actos": 2,
+            "autor_obra": "Pacini",
+            "lugar de representación": "Teatro (sin especificar)"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de avisos teatrales como la obra a representar ese día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera bufa",
+          "interprete": "No especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de 'La bella tabernera' con intermedios de boleras"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "La casa de educacion establecida en la ciudad de Sanlucar de Barrameda, á cargo de D. José Sanchez, celebra el 23 de este mes unos ejercicios literarios para manifestar al público los adelantos de los alumnos de aquel establecimiento en todos los ramos que constituyen la primera educacion.",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "El Jubileo de las 40 horas está en la iglesia de S. Francisco. SANTO TOMAS APOSTOL.—Misa.",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2527129.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "LUNES 12 DE ENERO DE 1824",
+      "Número": "2722",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON.—Francisco Suarez, primer apuntador de este teatro, ofrece la funcion siguiente.=Coligacion de España, Francia y Alemania, para la conquista de Palestina, ó toma de Jerusalen por Gofredo de Bullon (comedia en tres actos.)=Boleras alemandadas.=El sacristan y el gallego, o de tres ninguno (tonadilla)=La boda del tio Toribio Carcoma, ó la tragedia de la tragedia (sainete.)TEATRO PRINCIPAL.—El barbero de Sevilla (opera bufa en dos actos, musica de Rossini.)=A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Coligacion de España, Francia y Alemania, para la conquista de Palestina, ó toma de Jerusalen por Gofredo de Bullon",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral anunciada como parte de la programación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera bufa",
+          "interprete": null,
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de 'El barbero de Sevilla' de Rossini"
+        },
+        {
+          "tipo": "tonadilla",
+          "interprete": null,
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "'El sacristan y el gallego, o de tres ninguno'"
+        },
+        {
+          "tipo": "boleras",
+          "interprete": null,
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Boleras alemandadas como parte del programa"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programación completa de dos teatros de Cádiz: Teatro del Balon y Teatro Principal, incluyendo obras dramáticas, musicales y piezas breves",
+          "conexiones": [
+            "Música",
+            "Literatura dramática"
+          ]
+        },
+        {
+          "tema": "Artes plásticas",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención a la fundación de un Instituto de pintura y escultura bajo el nombre de Escuela polonesa por el Príncipe de Poniatowsky en Italia",
+          "conexiones": [
+            "Educación artística",
+            "Relaciones culturales internacionales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527160.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "3 DE FEBRERO DE 1824",
+      "Número": "2745",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": null,
+          "contenido": "TEATRO DEL SALON.—El profesor D. Manuel Silva tiene el honor de ofrecer la funcion siguiente.—El inconstante engañando, ú ojo avisor con las hembras. (comedia nueva en dos actos).—El profesor interesado tocará un escelente alegro de concierto obligado de violin del Maestro Róde.—Un terceto bufo, por la Sra. Josefa Garcia y los Sres Ugalde y Martinez.—Boleras.—La venganza del Zurdillo, y tandos del avapies, (sainete).—A las 4½.TEATRO PRINCIPAL.—Beneficio de la Sra. Josefa Romero.—El enfermo por aprehension (comedia en 3 actos).—Un duo de la Zoraida (por la Sra. Lavigne y el Sr. Valencia).—Las mollares.—Un aria de bajo (por el Sr. Molas).—De tres ninguna (sainete).—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El inconstante engañando, ú ojo avisor con las hembras",
+            "genero": "comedia",
+            "actos": 2,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Salón"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral presentada como parte de una función"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El enfermo por aprehension",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra presentada como beneficio de la actriz Josefa Romero"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "concierto_violin",
+          "interprete": "Manuel Silva",
+          "lugar": "Teatro del Salón",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Alegro de concierto del Maestro Róde"
+        },
+        {
+          "tipo": "terceto_bufo",
+          "interprete": "Sra. Josefa Garcia, Sres Ugalde y Martinez",
+          "lugar": "Teatro del Salón",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Parte de función teatral"
+        },
+        {
+          "tipo": "dúo_opera",
+          "interprete": "Sra. Lavigne y Sr. Valencia",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Fragmento de la ópera Zoraida"
+        },
+        {
+          "tipo": "aria",
+          "interprete": "Sr. Molas",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Aria de bajo como parte del programa"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "danza",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención a 'Boleras' y 'Las mollares' como piezas de baile tradicional español",
+          "conexiones": [
+            "Forman parte del programa teatral"
+          ]
+        },
+        {
+          "tema": "comercio",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de productos comerciales y sus existencias en el puerto",
+          "conexiones": [
+            "Refleja la actividad mercantil de Cádiz"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527199.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "25 DE FEBRERO DE 1824",
+      "Número": "2767",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON.—Mañana Jueves 26 á beneficio del Sr. Manuel Lopez se dará la funcion siguiente: la comedia nueva la mas honrosa venganza del valeroso Wifredo y muerte de Salomon, tirano de Cataluña; el baile ingles; seguidillas mallares; la tonadilla el ingles y la gaditana; y el sainete los piris chasqueados.TEATRO PRINCIPAL.—Beneficio de la Sra. Casimira Delgado.—El criado fingido (opera en un acto del célebre Manuel Garcia.)—Un recreo de baile (dirigido por el Sr. Cayron.)—El tio y la tia (opera en un acto del maestro Cristiani.)—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La mas honrosa venganza del valeroso Wifredo y muerte de Salomon, tirano de Cataluña",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral anunciada como parte de una función de beneficio"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera",
+          "interprete": "Sra. Casimira Delgado",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Función de beneficio que incluye las óperas 'El criado fingido' de Manuel García y 'El tio y la tia' de Cristiani"
+        },
+        {
+          "tipo": "baile",
+          "interprete": "Sr. Cayron",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Recreo de baile como parte de la función de beneficio"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "El documento incluye la programación teatral de dos importantes teatros de Cádiz (Teatro del Balon y Teatro Principal), mostrando una activa vida cultural con diversos géneros de espectáculo: comedias, óperas, bailes y sainetes",
+          "conexiones": [
+            "Funciones de beneficio",
+            "Géneros teatrales diversos",
+            "Artistas locales"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anécdota sobre un impostor que se hacía pasar por comisario real para las escuelas en Zumarshausen",
+          "conexiones": [
+            "Administración educativa",
+            "Control social"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527369.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "18 DE MARZO DE 1824",
+      "Número": "2789",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2789
+            }
+          ],
+          "descripcion": "Referencias religiosas en el encabezado: 'SAN GABRIEL ARCANGEL' y 'El Jubileo de las 40 horas está en la iglesia de Candelaria.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 2789
+            }
+          ],
+          "descripcion": "Mención a la Universidad de Lovayna en el contexto de un caso judicial contra un estudiante de derecho.",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Vida Social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 2789
+            }
+          ],
+          "descripcion": "Anuncios de alquileres, ventas y servicios que reflejan la vida cotidiana en Cádiz, incluyendo ofertas de nodrizas y alquileres de viviendas.",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración Pública",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 2789
+            }
+          ],
+          "descripcion": "Decreto extenso sobre el uso de diferentes tipos de papel sellado para documentos oficiales y administrativos.",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2527391.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "9 DE ABRIL DE 1824",
+      "Número": "2811",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2811
+            }
+          ],
+          "descripcion": "Referencia a celebración religiosa: 'LOS DOLORES DE NUESTRA SEÑORA, Y Sta. Maria Cleofe. El Jubileo de las 40 horas está en la iglesia de los Descalzos'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 2811
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en la plaza de diversos productos y mercancías, incluyendo frutos ultramarinos y comestibles",
+          "conexiones": [
+            "Conecta con las actividades mercantiles propias de Cádiz como puerto comercial"
+          ]
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2811
+            }
+          ],
+          "descripcion": "Orden de la Plaza y comunicaciones oficiales sobre procedimientos administrativos y judiciales",
+          "conexiones": [
+            "Se relaciona con el sistema de gobierno y administración de la época"
+          ]
+        },
+        {
+          "tema": "Meteorología",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2811
+            }
+          ],
+          "descripcion": "Tabla de 'AFECCIONES METEOROLÓGICAS DE ANTES DE AYER' con datos de barómetro, termómetro, vientos y estado atmosférico",
+          "conexiones": [
+            "Relacionado con la navegación y el comercio marítimo"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528148.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SABADO 1.° DE MAYO DE 1824",
+      "Número": "833",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 833
+            }
+          ],
+          "descripcion": "Referencia a festividad religiosa: 'SAN FELIPE Y SANTIAGO, APOSTOLES.- Misa. El Jubileo de las 40 horas está en la Iglesia de las Descalzas.'",
+          "conexiones": [
+            "Calendario litúrgico",
+            "Instituciones religiosas"
+          ]
+        },
+        {
+          "tema": "Instituciones benéficas",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 833
+            }
+          ],
+          "descripcion": "Extensa orden real sobre el estado de los hospicios y casas de expósitos, detallando la creación de una junta para su supervisión y mejora",
+          "conexiones": [
+            "Administración pública",
+            "Asistencia social"
+          ]
+        },
+        {
+          "tema": "Gastronomía y vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 833
+            }
+          ],
+          "descripcion": "Anuncio detallado del café de Buena-vista con menú bilingüe español-francés, mostrando influencias culinarias europeas y precios",
+          "conexiones": [
+            "Comercio",
+            "Sociabilidad urbana"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528170.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "23 DE MAYO DE 1824",
+      "Número": "2855",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO=Una travesura (opera en dos actos, música del célebre Mehul, intermediada de las boleras); será desempeñada por las Sras. Victoria Burés, Maria Anigot (nueva en este teatro), y Casimira Delgado, y por los Sres. Julian Muñoz, Francisco de Paula Dominguez, Pedro Alcantara y Pascual Aceitun =A las 8."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Étienne Nicolas Méhul",
+          "obra": {
+            "titulo": "Una travesura",
+            "genero": "ópera",
+            "actos": 2,
+            "autor_obra": "Mehul",
+            "lugar de representación": "Teatro no especificado de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de Teatro"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera y boleras",
+          "interprete": "Victoria Burés, Maria Anigot, Casimira Delgado, Julian Muñoz, Francisco de Paula Dominguez, Pedro Alcantara, Pascual Aceitun",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de una ópera francesa adaptada con intermedios de bailes españoles (boleras)"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de D. Manuel Octavio, profesor de geografía, ofreciendo lecciones particulares",
+          "conexiones": []
+        },
+        {
+          "tema": "medicina",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio del Periódico de la Sociedad médico-quirúrgica de Cádiz, Tomo 4º número 3º",
+          "conexiones": []
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a 'LA APARICION DE SANTIAGO' y el Jubileo de 40 horas en la iglesia de San Agustín",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528192.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "14 DE JUNIO DE 1824",
+      "Número": "2877",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "El Sr. J. V. Leclerc, nombrado ultimamente para la cátedra de elocuencia latina de la facultad de letras, hizo el 18 de Mayo la apertura de su clase. Despues de haber rendido un justo homenage á la memoria de sus respetables y sabios predecesores [...] pasó á consideraciones de un orden muy notable sobre toda la literatura latina, y en particular sobre aquel orador, que parece que él solo reune todas las cualidades de los oradores latinos."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Cicerón",
+          "obra": {
+            "titulo": "obras de Ciceron recien descubiertas",
+            "genero": "oratoria",
+            "actos": null,
+            "autor_obra": "Cicerón",
+            "lugar de representación": "Sorbona"
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Mencionado en el contexto de estudios académicos sobre literatura latina"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación académica",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Detalla la apertura de cursos académicos en la Sorbona y nombramientos de profesores, especialmente relacionados con la enseñanza de literatura latina y historia literaria",
+          "conexiones": [
+            "Literatura clásica",
+            "Sistema universitario francés"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona 'SAN BASILIO EL MAGNO' y 'El Jubileo de las 40 horas está en la iglesia del Rosario'",
+          "conexiones": []
+        },
+        {
+          "tema": "Vida académica francesa",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Describe las actividades académicas de profesores como Leclerc y Laya en instituciones francesas",
+          "conexiones": [
+            "Educación",
+            "Literatura clásica"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528214.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "6 DE JULIO DE 1824",
+      "Número": "2899",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2899
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las 40 horas en la iglesia de San Antonio y referencia a Santa Lucía y compañeros mártires",
+          "conexiones": [
+            "Orden de la Plaza",
+            "Avisos oficiales"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 2899
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de diversos productos en la plaza, incluyendo frutos ultramarinos, comestibles y otros efectos",
+          "conexiones": [
+            "Avisos comerciales",
+            "Banco de vapor"
+          ]
+        },
+        {
+          "tema": "Asuntos militares",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2899
+            }
+          ],
+          "descripcion": "Orden de la Plaza sobre revista de oficiales de infantería, caballería, artillería, ingenieros y zapadores",
+          "conexiones": [
+            "Noticias políticas",
+            "Orden militar"
+          ]
+        },
+        {
+          "tema": "Política colonial",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 2899
+            }
+          ],
+          "descripcion": "Informes sobre situación política en Puerto Rico, Santa Fe y provincia de Maracaibo, incluyendo movimientos militares y conflictos",
+          "conexiones": [
+            "Noticias internacionales",
+            "Asuntos militares"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528236.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "28 DE JULIO DE 1824",
+      "Número": "2619",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las 40 horas en la iglesia de la compañía de Jesús y referencia a Santos Nasario, Celso y Victor",
+          "conexiones": []
+        },
+        {
+          "tema": "Ciencia y Tecnología",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso artículo sobre destilación y seguridad en el uso de aparatos de vapor, incluyendo advertencias técnicas y casos de accidentes",
+          "conexiones": [
+            "Se relaciona con el desarrollo industrial y la seguridad laboral de la época"
+          ]
+        },
+        {
+          "tema": "Comercio y Navegación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre el Barco de Vapor de la Real Compañía del Guadalquivir y sus horarios entre Cádiz, Sanlúcar y Sevilla",
+          "conexiones": [
+            "Vinculado a las innovaciones tecnológicas en transporte"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso del Consulado sobre cuarentenas y medidas sanitarias relacionadas con la fiebre amarilla",
+          "conexiones": [
+            "Relacionado con la gestión de epidemias y salud pública"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528248.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 9 DE AGOSTO DE 1824",
+      "Número": "2930",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": null,
+          "contenido": "El publico debe saber con el mayor placer que la pérdida de las memorias autografas de lord Byron no es del todo irreparable. Un amigo, desde la infancia de aquel noble poeta, M. C. Dallas, depositario de su correspondencia con su madre y sus hijos, va á publicar sus preciosos manuscritos bajo el titulo de Memorias y correspondencia de lord Byron. Notas interesantes ocuparán los claros y completarán esta especie de autobiografia familiar. La obra se publicará en Paris casi al tiempo que en Londres en casa del Sr. Carlos Gosselin, editor de las obras completas de Sir Walter Scott. Está encargado de la traduccion el literato á quien debemos la de las novelas del Bardo de Escocia."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Lord Byron",
+          "obra": {
+            "titulo": "Memorias y correspondencia de lord Byron",
+            "genero": "autobiografía",
+            "actos": null,
+            "autor_obra": "M. C. Dallas (editor)",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Noticia sobre la publicación póstuma de las memorias y correspondencia de Byron"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Walter Scott",
+          "obra": {
+            "titulo": "Novelas del Bardo de Escocia",
+            "genero": "novela",
+            "actos": null,
+            "autor_obra": "Walter Scott",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Mención a la traducción de sus obras"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Medicina/Ciencia",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "El barón Dupuytren presenta en la academia Real de medicina una memoria sobre la operación de la piedra, comparándola con el método de Celso",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Bando del gobernador interino de Barcelona prohibiendo el uso de cachuchas por su asociación con el sistema constitucional",
+          "conexiones": []
+        },
+        {
+          "tema": "Innovación científica",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Noticia sobre un teniente que logró crear un tejido especial con orugas similar a la seda",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528259.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "VIERNES 20 DE AGOSTO DE 1824",
+      "Número": "2941",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "maestro Paccini",
+          "obra": "La bella tabernera",
+          "lugar": "Teatro",
+          "horario": "A las 8",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncia en la sección de Teatro la representación de una 'opera nueva en dos actos, música del célebre maestro Paccini, adornada de su correspondiente aparato teatral'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Se menciona el Jubileo de las 40 horas en la iglesia de la Pastora y la festividad de San Bernardo Abad",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación/Sanidad",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de vacunación pública: 'Con arreglo á Real orden se administrará por la Junta superior de Sanidad el dia 20 del corriente, en las casas Capitulares á la 5 de la tarde'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Sociedad",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos, cambios monetarios y seguros marítimos que refleja la actividad comercial de Cádiz",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528267.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE AGOSTO DE 1824",
+      "Número": "2949",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.=La Dama labradora (comedia en 2 actos)=El robo de Dofila (baile jocoso de la composicion del Sr. Cayron que concluirá con un terceto grotesco nuevo.)=El recibo del Page (sainete) A las 8"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La Dama labradora",
+            "genero": "comedia",
+            "actos": 2,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro [de Cádiz]"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece como parte de la cartelera teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Sr. Cayron",
+          "obra": {
+            "titulo": "El robo de Dofila",
+            "genero": "baile jocoso",
+            "actos": null,
+            "autor_obra": "Sr. Cayron",
+            "lugar de representación": "Teatro [de Cádiz]"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Baile jocoso que incluye un terceto grotesco nuevo como cierre"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "interprete": "No especificado",
+          "lugar": "Teatro [de Cádiz]",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile jocoso como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Agustín y el Jubileo de las 40 horas en la iglesia de S. Lorenzo",
+          "conexiones": []
+        },
+        {
+          "tema": "vida social y entretenimiento",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programa completo de entretenimiento teatral que incluye comedia, baile y sainete",
+          "conexiones": [
+            "Se relaciona con las referencias literarias y musicales identificadas"
+          ]
+        }
+      ]
+    }
+  ]
 }
