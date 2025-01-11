@@ -1,0 +1,1546 @@
+{
+  "Año": 1818,
+  "datos": [
+    {
+      "PDF": "2528799.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Miércoles 22 de Julio de 1818",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención a Santa María Magdalena y el Jubileo de las XL horas en la Iglesia de RR. PP. de Nra. Sra. del Carmen",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Aviso de un profesor nativo inglés que ofrece clases de idioma",
+          "conexiones": []
+        },
+        {
+          "tema": "Academia",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Referencia a la Real Academia de buenas letras de Barcelona y una memoria sobre las batallas del Bruch leída por D. Juan Francisco Bahí",
+          "conexiones": []
+        },
+        {
+          "tema": "Historia y política",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Extensa narración sobre las batallas del Bruch contra las tropas napoleónicas en 1808",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528872.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "13 DE AGOSTO DE 1818",
+      "Número": "742",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Publicación musical periódica",
+          "interprete": null,
+          "lugar": "Librería de Picardo, calle de la Carne núm. 186",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncia la llegada del noveno número del periódico filarmónico 'La Lira de Apolo' correspondiente a julio"
+        },
+        {
+          "tipo": "Concierto vocal e instrumental",
+          "interprete": null,
+          "lugar": "Calle de la Verónica núm. 157",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncia un gran concierto con diez piezas escogidas, con entradas a 15 rvn para una persona y 20 rs para dos, comenzando a las ocho de la noche"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona el Jubileo de las XL horas en la Iglesia del Hospital Real y la festividad de San Hipólito y San Casiano",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y navegación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Incluye información meteorológica, mareas y movimientos de embarcaciones",
+          "conexiones": []
+        },
+        {
+          "tema": "Agricultura",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Contiene artículos sobre técnicas agrícolas para viñedos y cultivo de patatas",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528902.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "VIERNES 4 DE SETIEMBRE DE 1818",
+      "Número": "764",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 764
+            }
+          ],
+          "descripcion": "Referencias a festividades religiosas y culto: 'SANTA CÁNDIDA, SANTA ROSA DE VITERBO Y SANTA Rosalía Vírgenes. El Jubileo de las XL horas está en la Iglesia de Antonio, por un devoto de la Virgen de Regla. Se manifiesta á las 8 de la mañana, y se oculta á las 6 de la tarde.'",
+          "conexiones": [
+            "Calendario litúrgico",
+            "Prácticas devocionales"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 764
+            }
+          ],
+          "descripcion": "Extenso informe sobre fallecimientos y medidas sanitarias contra la peste en Tánger, incluyendo registro diario de muertes y tratamientos médicos aplicados.",
+          "conexiones": [
+            "Administración colonial",
+            "Medicina"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 764
+            },
+            {
+              "pdf": 8,
+              "periodico": 764
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de diversos productos comerciales, incluyendo frutos ultramarinos, comestibles y cambios monetarios.",
+          "conexiones": [
+            "Navegación comercial",
+            "Relaciones internacionales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528924.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "26 DE SETIEMBRE DE 1818",
+      "Número": "786",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": null,
+          "contenido": "El obispo Ladislao de Lilienfeld trata de publicar un grande poema épico intitulado La Lusiada (ó la espedicion de Carlos V. á Tunez en 1535.)"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Ladislao de Lilienfeld",
+          "obra": {
+            "titulo": "La Lusiada",
+            "genero": "poema épico",
+            "actos": null,
+            "autor_obra": "Ladislao de Lilienfeld",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Se menciona como una obra nueva en preparación, basada en la expedición histórica de Carlos V"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "TEATRO": true,
+      "PAGINAS_TEATRO": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—Los Horacios y Curiacios (ópera en 3 actos, en la que desempeñará el papel principal la Sra. Francisca Moreno; será exornada de todas las decoraciones que le son propias.)=A las 7½."
+        }
+      ],
+      "ARTICULOS_TEATRO": [
+        {
+          "tipo": "representación",
+          "obra": {
+            "titulo": "Los Horacios y Curiacios",
+            "genero": "ópera",
+            "actos": 3,
+            "interprete_principal": "Francisca Moreno",
+            "horario": "7½"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ]
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Periodismo y Literatura",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Sección sobre periódicos y publicaciones en Viena, mencionando 'Los archivos de Geografia, Historia, Politica y Arte militar' y 'Los anales de literatura'",
+          "conexiones": [
+            "Menciona al Príncipe de Metternich como protector de estas publicaciones"
+          ]
+        },
+        {
+          "tema": "Historia",
+          "paginas": [
+            {
+              "pdf": "3-4",
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a obras históricas recientes, incluyendo la historia de los tiempos modernos desde la muerte de Federico el Grande hasta 1815",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528946.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "18 DE OCTUBRE DE 1818",
+      "Número": "808",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—El parecido en la corte (com. de gracioso en 3 actos original del célebre Moreto.)—El Fandango (por la Sra. Lopez y el Sr. Burés).—El Señorito enamorado (sainete).—A las 4½.La Griselda ó examen de la virtud (gran ópera en dos actos, en la que desempeñará la parte principal la Sra. Francisca Moreno.)="
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Agustín Moreto",
+          "obra": {
+            "titulo": "El parecido en la corte",
+            "genero": "comedia de gracioso",
+            "actos": 3,
+            "autor_obra": "Moreto",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra representada como parte de la programación teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Sra. Francisca Moreno",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de la ópera 'La Griselda ó examen de la virtud' en dos actos"
+        },
+        {
+          "tipo": "baile",
+          "interprete": "Sra. Lopez y Sr. Burés",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de 'El Fandango'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de clases nocturnas de aritmética mercantil por D. Marco Daccarrette",
+          "conexiones": []
+        },
+        {
+          "tema": "Vida social y espectáculos",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa crítica social sobre el comportamiento del público en el teatro, especialmente durante los bailes",
+          "conexiones": [
+            "Se relaciona con las representaciones teatrales anunciadas"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre transacciones comerciales y movimiento de embarcaciones",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2528969.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "10 DE NOVIEMBRE DE 1818",
+      "Número": "831",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "Teatro - La inocencia y la intriga ó el robo (com. en 3 actos traducida del francés).—La dama soldado (baile nuevo de medio carácter de la composicion del Sr. Cozzer.)—El chasco del ratón (saynete.)—A las siete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo (traducción del francés)",
+          "obra": {
+            "titulo": "La inocencia y la intriga ó el robo",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral anunciada en la cartelera del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile teatral",
+          "interprete": "No especificado",
+          "lugar": "Teatro (no especificado)",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile nuevo titulado 'La dama soldado' compuesto por Sr. Cozzer, presentado como parte de la programación teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia de S. Antonio, por la Hermandad de Ntra. Sra. del Patrocinio",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensas listas de precios corrientes de productos ultramarinos y locales, así como cambios monetarios",
+          "conexiones": []
+        },
+        {
+          "tema": "Navegación y puertos",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Listado detallado de buques y sus destinos, reflejando la actividad marítima comercial de Cádiz",
+          "conexiones": [
+            "Comercio y economía"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2528991.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "2 DE DICIEMBRE DE 1818",
+      "Número": "853",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "teatro",
+          "interprete": "No especificado",
+          "lugar": "Teatro (no especificado)",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se menciona brevemente al final del periódico: 'TEATRO.—La misma funcion de ayer. Producto de ayer 4103 rvn. y 17 mrs.'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a Santa Bibiana Vírgen y celebración religiosa: 'El Jubileo de las XL horas está en la Iglesia de S. Juan de Dios, por los devotos del Sr. de la Humildad y Paciencia'",
+          "conexiones": []
+        },
+        {
+          "tema": "Ciencia/Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Incluye secciones de 'Afecciones Astronómicas' y 'Afecciones Meteorológicas' con datos precisos sobre el clima y posiciones solares",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y navegación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa sección sobre movimientos de buques y comercio marítimo, incluyendo detalles de cargamentos y destinos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2529016.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "24 DE DICIEMBRE DE 1818",
+      "Número": "875",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": null,
+          "contenido": "...digno à la verdad de un Merlin, que ha dado con la masa filosofal, ya que no ha podido dar con la piedra; sin embargo de que la piedra tambien es masa."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_indirecta",
+          "autor": "Merlín",
+          "obra": {
+            "titulo": null,
+            "genero": "Referencia alegórica",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Se usa la figura de Merlín en sentido irónico para criticar un argumento filosófico sobre la regulación del pan"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Sección 'TEATRO.—Hoy no hay comedia. Producto de ayer 590 rvn.'",
+          "conexiones": [
+            "Parte de la vida cultural y de entretenimiento de Cádiz"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona 'SAN GREGORIO PRESBITERO' y el 'Jubileo de las XL horas' en la Iglesia de RR. PP. Carmelitas",
+          "conexiones": [
+            "Refleja la importancia de la vida religiosa en la sociedad de la época"
+          ]
+        },
+        {
+          "tema": "Economía y comercio",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa discusión sobre el gremio de panaderos, precios y regulación del pan",
+          "conexiones": [
+            "Debate económico sobre regulación del comercio local"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532851.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "15 DE ENERO DE 1818",
+      "Número": "502",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 502,
+          "contenido": "ARTÍCULO REMITIDO.Sr. Antipiri.—Muy Sr. mio: ha de saber vd. que yo aunque zapatero remendon, soy un poco aficionado á ver comedias, y gasto mis cuartejos en tomar una luneta los dias festivos, y oir leer los de ta-"
+        },
+        {
+          "pdf": 2,
+          "periodico": 503,
+          "contenido": "[Continúa la discusión sobre comedias modernas vs clásicas, listando obras como 'La Urraca Ladrona', 'El perro de Montargis', 'El sepulturero', etc.]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Maestro Cascafuerte",
+          "obra": {
+            "titulo": "La Urraca Ladrona",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": "Teatro principal"
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 503
+            }
+          ],
+          "contexto": "Aparece en un listado de obras defendidas como ejemplos de buen teatro"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 505
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "melodrama trágico",
+          "interprete": null,
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 505
+            }
+          ],
+          "contexto": "Fatme y Celima (melodrama trágico en dos actos) junto con 'Diana y Endimion' (baile mitológico)"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 505
+            }
+          ],
+          "descripcion": "Anuncio de representaciones teatrales incluyendo melodrama, baile mitológico y sainete",
+          "conexiones": [
+            "Sección de literatura que debate sobre el teatro moderno vs clásico"
+          ]
+        },
+        {
+          "tema": "Libros",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 505
+            }
+          ],
+          "descripcion": "Anuncio de venta de libros incluyendo novelas y obras técnicas como 'La Amelia', 'Pablo y Virginia', 'La Matilde' y un curso de taquigrafía",
+          "conexiones": [
+            "Librería de Picardo mencionada en varias secciones"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532907.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "VIERNES 6 DE FEBRERO DE 1818",
+      "Número": "524",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 524
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia de Ntra. Sra. de Candelaria, con horarios específicos de celebración religiosa",
+          "contexto": "El texto menciona: 'El Jubileo de las XL horas está en la Iglesia de Ntra. Sra. de Candelaria dotado por la Religiosa Comunidad. Se manifiesta á las 7 de la mañana, y se oculta á las 5 de la tarde.'",
+          "conexiones": [
+            "Santa Dorotea Virgen y Mártir - festividad del día"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 524
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y locales, incluyendo especias, alimentos y materias primas",
+          "contexto": "Presenta una detallada lista de precios de productos como azúcar, café, cacao, especias y otros bienes comerciales de la época",
+          "conexiones": [
+            "Información mercantil",
+            "Rutas comerciales",
+            "Puertos mencionados"
+          ]
+        },
+        {
+          "tema": "Educación y Cultura",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 524
+            }
+          ],
+          "descripcion": "Anuncio de suscripciones a la Guía de Forasteros y de Comercio",
+          "contexto": "Se anuncia: 'Se admiten suscripciones á la Guia de Forasteros y de Comercio de esta Plaza desde hoy hasta el dia 20 del corriente'",
+          "conexiones": [
+            "Comercio",
+            "Vida social de la ciudad"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532951.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE FEBRERO DE 1818",
+      "Número": "576",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 576
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia de RR. MM. de Santa María por la cofradía de Ntro. Padre Jesus Nazareno, con horarios específicos de manifestación y ocultación.",
+          "conexiones": [
+            "Se relaciona con la festividad de San Roman Abad mencionada en el encabezado"
+          ]
+        },
+        {
+          "tema": "Medicina y Salud Pública",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 576
+            }
+          ],
+          "descripcion": "Extenso 'Estado analítico de las enfermedades' que detalla las principales afecciones médicas del mes, tratamientos y estadísticas de mortalidad.",
+          "conexiones": [
+            "Se relaciona con los datos meteorológicos presentados anteriormente que podrían afectar la salud pública"
+          ]
+        },
+        {
+          "tema": "Demografía",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 576
+            }
+          ],
+          "descripcion": "Estadísticas demográficas de nacimientos, muertes y matrimonios en la ciudad durante enero: 221 nacidos (109 hombres, 112 mujeres), 210 muertos y 47 matrimonios.",
+          "conexiones": [
+            "Relacionado con el informe médico y las causas de muerte"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532982.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "22 DE MARZO DE 1818",
+      "Número": "598",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 598,
+          "contenido": "Oda á la Resurreccion de nuestro Señor [poema completo que ocupa páginas 1-2]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "D.A.L. y A.",
+          "obra": {
+            "titulo": "Oda á la Resurreccion de nuestro Señor",
+            "genero": "poesía religiosa",
+            "actos": null,
+            "autor_obra": "D.A.L. y A.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 598
+            },
+            {
+              "pdf": 2,
+              "periodico": 599
+            }
+          ],
+          "citas": [
+            "¡Qué venturoso dia,/Mostrando celestial su lumbre pura..."
+          ],
+          "contexto": "Poema religioso extenso celebrando la Resurrección, apropiado para la fecha (Pascua)"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Del Rey abajo ninguno y labrador mas honrado García del Castañar",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 601
+            }
+          ],
+          "contexto": "Obra teatral programada para representación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 601
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "boleras",
+          "interprete": "Sra. Rosa Gonzalez y Sr. Luis Alonso",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 601
+            }
+          ],
+          "contexto": "Pieza musical programada como parte de la función teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 598
+            }
+          ],
+          "descripcion": "Referencias a celebraciones religiosas: 'PASCUA DE RESURRECCION Y SAN DEOGRACIAS OBISPO.—Bendicion Papal en S. Agustin y en los Mínimos.'",
+          "conexiones": [
+            "Se relaciona con el poema religioso sobre la Resurrección"
+          ]
+        },
+        {
+          "tema": "ciencia",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 600
+            }
+          ],
+          "descripcion": "Extenso artículo sobre el alumbrado por gas y avances científicos",
+          "conexiones": [
+            "Parte de la 'Crónica científica y literaria'"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533027.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "13 DE ABRIL DE 1818",
+      "Número": "620",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—Si una vez llega á querer la mas firme es la muger (com. en 3 actos.)=Valoé y Florinda, ó el feliz naufragio (baile nuevo asiático de la composicion del Sr. Pautret, exôrnado segun pide su argumento.)—Los maridos engañados y desengañados (sainete.)—A las siete y media.Producto de ayer tarde 2776 rvn y 17 mrs.Idem de la noche 4756 rvn. y 17 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Si una vez llega á querer la mas firme es la muger",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (no especificado, presumiblemente en Cádiz)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para representación"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Sr. Pautret",
+          "obra": {
+            "titulo": "Valoé y Florinda, ó el feliz naufragio",
+            "genero": "baile asiático",
+            "actos": null,
+            "autor_obra": "Sr. Pautret",
+            "lugar de representación": "Teatro (no especificado, presumiblemente en Cádiz)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Baile nuevo programado en el teatro"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Los maridos engañados y desengañados",
+            "genero": "sainete",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (no especificado, presumiblemente en Cádiz)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete programado para representación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile teatral",
+          "interprete": "No especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile nuevo asiático como parte de la programación teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Hermenegildo Mártir y celebración del Jubileo",
+          "conexiones": []
+        },
+        {
+          "tema": "Sanidad pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Nota sobre vacunación: 'Han sido vacunadas en las casas Capitulares, hoy dia de la fecha, ocho criaturas. Cádiz 11 de Abril de 1818.'",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533067.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MARTES 5 DE MAYO DE 1818",
+      "Número": "642",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": 642,
+          "contenido": "TEATRO.—El Aguador de Paris (com. en 3 actos)—Boleras (por la Sra. Lopez y el Sr. Alonso.)—El periático fingido (sainete.)—A las 8"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Aguador de Paris",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 642
+            }
+          ],
+          "contexto": "Obra teatral presentada como parte de la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El periático fingido",
+            "genero": "sainete",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 642
+            }
+          ],
+          "contexto": "Sainete presentado como parte de la programación teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": 642
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "obra": "Boleras",
+          "interprete": "Sra. Lopez y Sr. Alonso",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 642
+            }
+          ],
+          "contexto": "Interpretación de boleras como parte del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 642
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia de RR. MM. de Candelaria",
+          "conexiones": []
+        },
+        {
+          "tema": "comercio",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 642
+            }
+          ],
+          "descripcion": "Extenso tratado sobre el comercio de esclavos entre Portugal y Gran Bretaña",
+          "conexiones": []
+        },
+        {
+          "tema": "transporte",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 642
+            }
+          ],
+          "descripcion": "Aviso sobre coche de Vitoria que admite pasajeros",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533113.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIÉRCOLES 27 DE MAYO DE 1818",
+      "Número": "664",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 664,
+          "contenido": "TEATRO. — La muger de dos maridos (com. en 3 actos.)— Julio César en Egipto (gran baile heróico pantomímico de la composicion del Sr. Juan Bautista Cozzer.)—A las ocho."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La muger de dos maridos",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 664
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la cartelera del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 664
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile heroico pantomímico",
+          "titulo": "Julio César en Egipto",
+          "interprete": "composición de Juan Bautista Cozzer",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 664
+            }
+          ],
+          "contexto": "Representación de baile programada junto a la comedia principal"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Historia de la danza",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 664
+            },
+            {
+              "pdf": 2,
+              "periodico": 664
+            },
+            {
+              "pdf": 3,
+              "periodico": 664
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la antigüedad del baile, su origen, tipos y evolución histórica. Incluye referencias a la danza en diferentes civilizaciones antiguas, menciona a filósofos como Sócrates y Platón, y describe tres tipos principales de baile: cubístico, esferístico y orchéstico.",
+          "conexiones": [
+            "Se relaciona con la programación teatral que incluye un baile heroico",
+            "Menciona fuentes clásicas y filosóficas",
+            "Describe la evolución del baile desde lo ritual hasta lo artístico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533144.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "LUNES 8 DE JUNIO DE 1818",
+      "Número": "676",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "He leído con sumo gusto la tragedia titulada Eliezer y Nephtali, compuesta por una dama gaditana que honra mi amada patria, y segun entiendo está perfectamente desempeñada, y debe causar muy bella ilusión si se representa con destreza."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Tirso de Molina",
+          "obra": {
+            "titulo": "La villana de la Sagra y fingido Colmenero",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "maestro Tirso de Molina",
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de teatro como parte de la programación del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónima (dama gaditana)",
+          "obra": {
+            "titulo": "Eliezer y Nephtali",
+            "genero": "tragedia",
+            "actos": null,
+            "autor_obra": "una dama gaditana",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Se hace una crítica literaria de esta obra, alabando su calidad y ejecución"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. Lopez y el Sr. Burés",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de 'El Fandango' como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programación teatral completa con obras, horarios y precios de las entradas",
+          "conexiones": [
+            "música",
+            "literatura dramática"
+          ]
+        },
+        {
+          "tema": "Tauromaquia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Detallada descripción de una corrida de toros incluyendo toreros, picadores y procedencia de los toros",
+          "conexiones": [
+            "entretenimiento público",
+            "cultura popular"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Heraclio Obispo y actividades religiosas en la Iglesia de RR. PP. Descalzos de S. Francisco",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533171.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "18 DE JUNIO DE 1818",
+      "Número": "686",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "Por servir á varios suscritores, que lo han solicitado, insertamos el siguiente artículo remitido á la Crónica científica y literaria de Madrid é inserto en su núm. 66..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Lope de Vega",
+          "obra": {
+            "titulo": "general",
+            "genero": "teatro",
+            "actos": null,
+            "autor_obra": "Lope de Vega",
+            "lugar de representación": "Madrid"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Mencionado junto a Calderón como genio que debería ser venerado en la escena teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Calderón",
+          "obra": {
+            "titulo": "general",
+            "genero": "teatro",
+            "actos": null,
+            "autor_obra": "Calderón",
+            "lugar de representación": "Madrid"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Referencia a los grandes dramaturgos españoles"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 2,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": null,
+          "lugar": "Madrid",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "contexto": "Crítica al estado de la música vocal y la danza en los teatros de Madrid"
+        },
+        {
+          "tipo": "ballet",
+          "interprete": null,
+          "lugar": "Madrid",
+          "paginas": [
+            {
+              "pdf": "3-5",
+              "periodico": null
+            }
+          ],
+          "contexto": "Extensa crítica sobre el estado de la danza y el ballet en los teatros madrileños"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "crítica teatral",
+          "paginas": [
+            {
+              "pdf": "2-6",
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa crítica sobre el estado de las artes escénicas en Madrid, particularmente la danza y el teatro musical",
+          "conexiones": [
+            "música vocal",
+            "ballet",
+            "teatro"
+          ]
+        },
+        {
+          "tema": "educación artística",
+          "paginas": [
+            {
+              "pdf": "3-5",
+              "periodico": null
+            }
+          ],
+          "descripcion": "Discusión sobre la necesidad de reforma en la formación de bailarines y la importancia de seguir modelos franceses e italianos",
+          "conexiones": [
+            "danza",
+            "teatro",
+            "crítica cultural"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533191.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "26 DE JUNIO DE 1818",
+      "Número": "694",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": 694
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "teatro",
+          "interprete": "no especificado",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 694
+            }
+          ],
+          "contexto": "Al final del diario se indica: 'TEATRO.—Hoy no hay comedia. Producto de ayer 370 rvn. y 17 mrs.'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 694
+            }
+          ],
+          "descripcion": "Referencia a celebración religiosa: 'SAN JUAN Y SAN PABLO MÁRTIRES. El Jubileo de las XL horas está en la Iglesia de Santiago, dotado por la congregacion de S. Eloy. Se manifiesta á las 8 de la mañana, y se oculta á las 6 de la tarde.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 694
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y otros efectos comerciales",
+          "conexiones": [
+            "Actividad portuaria",
+            "Comercio internacional"
+          ]
+        },
+        {
+          "tema": "Navegación y comercio marítimo",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 694
+            }
+          ],
+          "descripcion": "Listado detallado de buques que están a la carga para los puertos de América y Europa",
+          "conexiones": [
+            "Comercio internacional",
+            "Actividad portuaria"
+          ]
+        }
+      ]
+    }
+  ]
+}

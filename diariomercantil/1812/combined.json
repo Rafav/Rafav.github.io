@@ -1,0 +1,1334 @@
+{
+  "Año": 1812,
+  "datos": [
+    {
+      "PDF": "2525093.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "JUEVES 23 DE ENERO DE 1812",
+      "Número": "234",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 100,
+          "contenido": "TEATRO—La tragedia en tres actos: El duque de Viseo; seguirá un intermedio de música; y se dará fin con el sainete: Los maridos engañados y desengañados—á las 7.—"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El duque de Viseo",
+            "genero": "tragedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 100
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los maridos engañados y desengañados",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 100
+            }
+          ],
+          "citas": [],
+          "contexto": "Pieza corta para finalizar la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 100
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "intermedio musical",
+          "interprete": "No especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 100
+            }
+          ],
+          "contexto": "Intermedio musical entre la tragedia principal y el sainete final"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 100
+            }
+          ],
+          "descripcion": "Anuncio de clases particulares de matemáticas por un discípulo de la Real Academia de S. Fernando de Madrid, incluyendo aritmética, geometría, trigonometría y matemáticas comerciales",
+          "conexiones": [
+            "Refleja la actividad académica y comercial en Cádiz durante el periodo"
+          ]
+        },
+        {
+          "tema": "Imprenta y publicación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 100
+            }
+          ],
+          "descripcion": "Aviso de venta de una imprenta de campaña portátil en la librería de Niel hijo",
+          "conexiones": [
+            "Muestra la importancia de la actividad impresora en tiempo de guerra"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525115.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "15 DE FEBRERO DE 1812",
+      "Número": "46",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 189,
+          "contenido": "¡Que desgracia podrá compararse con la mia! [...] y se cree transformado en otro D. Quixote: su mortal abatimiento llega al extremo;"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Miguel de Cervantes",
+          "obra": {
+            "titulo": "Don Quijote de la Mancha",
+            "genero": "novela",
+            "actos": null,
+            "autor_obra": "Miguel de Cervantes",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 189
+            }
+          ],
+          "citas": [
+            "y se cree transformado en otro D. Quixote"
+          ],
+          "contexto": "Se usa como referencia comparativa para describir el estado mental alterado del personaje Iro"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Periodismo y libertad de prensa",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 190
+            },
+            {
+              "pdf": 3,
+              "periodico": 191
+            }
+          ],
+          "descripcion": "Diálogo satírico sobre el estado del periodismo y la libertad de imprenta, criticando el plagio y la falta de originalidad en las publicaciones",
+          "conexiones": [
+            "Debate sobre ética periodística",
+            "Referencias a la Constitución"
+          ]
+        },
+        {
+          "tema": "Política y legislación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 192
+            }
+          ],
+          "descripcion": "Soneto al Censor General que critica el antiguo régimen y defiende la soberanía nacional y la Constitución",
+          "conexiones": [
+            "Libertad de imprenta",
+            "Reforma política"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525137.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "JUEVES 12 DE MARZO DE 1812",
+      "Número": "72",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 293
+            }
+          ],
+          "descripcion": "Referencia a San Gregorio papa y al jubileo en la iglesia de San Pablo",
+          "conexiones": [
+            "Menciones posteriores a frailes, inquisidores y teología"
+          ]
+        },
+        {
+          "tema": "Política y Constitución",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 293
+            }
+          ],
+          "descripcion": "Debate sobre el juramento a la Constitución y crítica al liberalismo constitucional. El texto presenta una postura anti-constitucional y tradicionalista.",
+          "conexiones": [
+            "Referencias a la Inquisición",
+            "Menciones al absolutismo"
+          ]
+        },
+        {
+          "tema": "Inquisición y pensamiento religioso",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 294
+            },
+            {
+              "pdf": 3,
+              "periodico": 295
+            }
+          ],
+          "descripcion": "Referencias al papel de la Inquisición, los confesores reales y la persecución del pensamiento liberal. Menciona 'tormentos, horcas, garrotes, hogueras' como instrumentos de control ideológico.",
+          "conexiones": [
+            "Crítica al constitucionalismo",
+            "Defensa del absolutismo"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525159.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SABADO 4 DE ABRIL DE 1812",
+      "Número": "95",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": 384,
+          "contenido": "Epigrama:Panés defiende con servil furorde la negra el frailesco tribunal;opónese á su rabia el liberalsilvando al padre Rancio y al Censor;si me toman á mi por mediador;les diré con franqueza, quiero, sí,vuelva la inquisicion; pues nunca vídel gusto, y la razon guia mejor;ni sé á que libros me podré aplicar,desde que ella los dexa de expurgar."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "El Duque de Pentiebre",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 384
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección TEATRO"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": 384
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "rondó",
+          "interprete": "Sr. Segura",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 384
+            }
+          ],
+          "contexto": "Parte del programa teatral de la noche"
+        },
+        {
+          "tipo": "boleras",
+          "interprete": "Sra. Victoriana Lopez con el Sr. García Franco",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 384
+            }
+          ],
+          "contexto": "Baile como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 377
+            }
+          ],
+          "descripcion": "Referencia a San Isidoro arzobispo y al Jubileo en la Real capilla del Pópulo",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 384
+            }
+          ],
+          "descripcion": "Sección de Secretaría de Policía y Gobierno con multas y disposiciones administrativas",
+          "conexiones": []
+        },
+        {
+          "tema": "Censura e Inquisición",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 384
+            }
+          ],
+          "descripcion": "Epigrama satírico sobre la Inquisición y la censura de libros",
+          "conexiones": [
+            "Referencia al padre Rancio y al Censor como figuras de autoridad religiosa"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525181.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "DOMINGO 26 DE ABRIL DE 1812",
+      "Número": "117",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación y Academia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 478
+            }
+          ],
+          "descripcion": "Referencia a la Real Sociedad de Valencia y otras academias que premiaron una memoria sobre arbolados en 1800",
+          "conexiones": [
+            "Agricultura",
+            "Sociedades patrióticas"
+          ]
+        },
+        {
+          "tema": "Política y Sociedad",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 479
+            },
+            {
+              "pdf": 4,
+              "periodico": 480
+            }
+          ],
+          "descripcion": "Denuncia sobre desórdenes públicos en Cádiz, referencias a la Constitución y problemas de jurisdicción entre autoridades",
+          "conexiones": [
+            "Seguridad pública",
+            "Reforma constitucional"
+          ]
+        },
+        {
+          "tema": "Administración y Gobierno",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 480
+            }
+          ],
+          "descripcion": "Informe de la Secretaría de Gobierno sobre impresión y distribución de ejemplares oficiales",
+          "conexiones": [
+            "Documentos administrativos",
+            "Gestión pública"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525203.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "JUEVES 21 DE MAYO DE 1812",
+      "Número": "142",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 573
+            }
+          ],
+          "descripcion": "Referencia al Jubileo en la iglesia de PP. Capuchinos y mención a Santa María de Socors",
+          "conexiones": []
+        },
+        {
+          "tema": "Historia y Moral",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 573
+            }
+          ],
+          "descripcion": "Artículo sobre 'El militar virtuoso no se dexa corromper' que incluye ejemplos históricos de virtud y moral militar, con referencias a personajes clásicos como Alejandro, Darío, Epaminondas, Xenocrates y otros",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración eclesiástica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 575
+            }
+          ],
+          "descripcion": "Discusión sobre nombramientos de canongías y la intervención del mariscal Suchet en asuntos eclesiásticos",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y administración",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 575
+            }
+          ],
+          "descripcion": "Referencias a la administración francesa en territorio español, juramentos al rey José Bonaparte ('rey Pepe') y la situación política en Valencia",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2525226.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "14 DE JUNIO DE 1812",
+      "Número": "165",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": 668,
+          "contenido": "Desde que se principió la temporada han sido muy pocas ó ningunas las tonadillas que se han cantado, que no fuesen repetidas, ó que no mereciesen una completa bufa [...] la opera cómica, los dos Presos, el Relox de Madera, el Tio y la Tia, y en fin otras muchas operetas que hay reducidas á tres, quatro ó cinco personas"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": null,
+          "obra": {
+            "titulo": "Casa con dos puertas mala es de guardar",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": "Calderón de la Barca",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 670
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de TEATRO como la obra a representar ese día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 2,
+          "periodico": 668
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadillas y operetas",
+          "interprete": "Varios cantantes mencionados indirectamente",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 668
+            }
+          ],
+          "contexto": "Crítica sobre la calidad y repetición de las tonadillas representadas en la temporada teatral"
+        },
+        {
+          "tipo": "dúo musical",
+          "interprete": "Sra. Morales y Sr. Galindo",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 670
+            }
+          ],
+          "contexto": "Parte del programa teatral del día"
+        },
+        {
+          "tipo": "boleras",
+          "interprete": "Sra. Valdés y Sr. García Franco",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 670
+            }
+          ],
+          "contexto": "Parte del programa teatral del día"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 668
+            }
+          ],
+          "descripcion": "Extensa crítica sobre la gestión del teatro, sus intérpretes y el repertorio",
+          "conexiones": [
+            "Sección de avisos teatrales",
+            "Referencias musicales"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 667
+            }
+          ],
+          "descripcion": "Menciones a San Basilio el Magno y el Jubileo en la iglesia de S. Antonio",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526625.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 6 DE JULIO DE 1812",
+      "Número": "6",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": 22,
+          "contenido": "AL BOMBEO, LIRAS.Amada patria miaNo te abatas así, del vil tiranoDesprecia la osadia,Con que ha querido en vanoHacer esclavo el libre pueblo Hispano.Muéstrale á sus legiones,Que nada humilla tu valor altivo.Firme en tus intenciones;Y el tiempo sucesivo,Tu frente ceñirá de verde olivo. = J. G."
+        },
+        {
+          "pdf": 4,
+          "periodico": 24,
+          "contenido": "TEATRO: Comedia nueva original en 2 actos: lo que puede un Empleo: bayle: los Corsarios Argelinos; y el sainete la Boda del Tio Carcoma."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "J.G.",
+          "obra": {
+            "titulo": "Al bombeo, liras",
+            "genero": "poesía lírica",
+            "actos": null,
+            "autor_obra": "J.G.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 22
+            }
+          ],
+          "citas": [
+            "Amada patria mia..."
+          ],
+          "contexto": "Poema patriótico en forma de liras que exalta la resistencia contra la invasión francesa"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Lo que puede un Empleo",
+            "genero": "comedia",
+            "actos": 2,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 24
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral anunciada en la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La Boda del Tio Carcoma",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 24
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete anunciado en la cartelera teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 24
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "interprete": "No especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 24
+            }
+          ],
+          "contexto": "Baile titulado 'los Corsarios Argelinos' como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Economía política",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 21
+            }
+          ],
+          "descripcion": "Artículo comunicado sobre la obra de economía de D. Alvaro Florez Estrada, especialmente sobre papel-moneda y deudas nacionales",
+          "conexiones": [
+            "Referencias a economistas clásicos y filosofía económica"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 21
+            }
+          ],
+          "descripcion": "Mención al Jubileo en la Parroquia de Santiago",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526647.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MARTES 28 DE JULIO DE 1812",
+      "Número": "28",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 109,
+          "contenido": "Predicaba V. el septenario de S. José en la iglesia de S. Lorenzo, criticando todas las tardes el diccionario crítico-burlesco, de un modo tal que no pude menos de remitir al diario una carta propia de mi caracter, manifestando mis recelos acerca de su conducta."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Diccionario crítico-burlesco",
+            "genero": "Obra satírica",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 109
+            }
+          ],
+          "citas": [],
+          "contexto": "El documento discute una controversia sobre la crítica pública de esta obra satírica desde el púlpito de una iglesia"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 109
+            }
+          ],
+          "descripcion": "Referencias a actividades religiosas como el Jubileo en la real capilla del Pópulo y el septenario de San José",
+          "conexiones": [
+            "Debate sobre uso del púlpito para crítica literaria"
+          ]
+        },
+        {
+          "tema": "Censura y crítica",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 109
+            },
+            {
+              "pdf": 2,
+              "periodico": 110
+            }
+          ],
+          "descripcion": "Debate sobre la censura del 'Diccionario crítico-burlesco' y los límites del discurso religioso",
+          "conexiones": [
+            "Junta de censura",
+            "Predicación religiosa"
+          ]
+        },
+        {
+          "tema": "Educación/Academia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 110
+            }
+          ],
+          "descripcion": "Referencias a la 'cátedra del Espíritu Santo' y debates sobre la autoridad académica y religiosa",
+          "conexiones": [
+            "Censura",
+            "Religión"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526669.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "VIERNES 21 DE AGOSTO DE 1812",
+      "Número": "52",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación y Comercio",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 206
+            },
+            {
+              "pdf": 3,
+              "periodico": 207
+            }
+          ],
+          "descripcion": "El texto incluye una extensa crítica sobre el estado del comercio en España y propone reformas educativas, incluyendo la creación de cátedras de comercio en universidades y la traducción de libros extranjeros. Se lamenta el atraso mercantil español y el desprecio social hacia la profesión comercial.",
+          "conexiones": [
+            "Referencias a la Gran Bretaña como modelo comercial",
+            "Crítica a la educación existente",
+            "Propuestas de reforma institucional"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 205
+            }
+          ],
+          "descripcion": "Menciona santos del día (S. Bonoso y S. Maximiano) y un Jubileo en la iglesia de la Pastora",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración y Gobierno",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 207
+            },
+            {
+              "pdf": 4,
+              "periodico": 208
+            }
+          ],
+          "descripcion": "Incluye noticias oficiales de la Secretaría de Policía y lista de multas y donativos, además de un aviso sobre contratas militares británicas",
+          "conexiones": [
+            "Aspectos económicos",
+            "Administración colonial"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526691.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SABADO 12 DE SETIEMBRE DE 1812",
+      "Número": "73",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 296,
+          "contenido": "EPIGRAMA.Tal calor, Napoleon,¿hace en ese pais fiero?pues, no seas majadero;y aprovecha la ocasionguardandole para enero. = P. J. y C."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "P. J. y C.",
+          "obra": {
+            "titulo": "Epigrama a Napoleón",
+            "genero": "epigrama satírico",
+            "actos": null,
+            "autor_obra": "P. J. y C.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 296
+            }
+          ],
+          "citas": [
+            "Tal calor, Napoleon,¿hace en ese pais fiero?pues, no seas majadero;y aprovecha la ocasionguardandole para enero."
+          ],
+          "contexto": "Epigrama satírico dirigido a Napoleón sobre el clima en Rusia, en referencia a las quejas del Corso sobre el calor"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 296
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "teatro",
+          "interprete": null,
+          "lugar": "coliseo de esta ciudad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 296
+            }
+          ],
+          "contexto": "Anuncio de alquiler de un palco principal en el coliseo de la ciudad"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 293
+            }
+          ],
+          "descripcion": "Extensa reflexión sobre economía política, matrimonio y población en España",
+          "conexiones": [
+            "Leyes",
+            "Demografía",
+            "Costumbres sociales"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 293
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo está en la capilla de la Palma' y mención a S. Eulogio Obispo",
+          "conexiones": [
+            "Calendario religioso",
+            "Iglesia católica"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 296
+            }
+          ],
+          "descripcion": "Mención a 'escuela de primeras letras de Vianco, plaza de S. Antonio'",
+          "conexiones": [
+            "Instituciones educativas",
+            "Vida urbana"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526713.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 5 DE OCTUBRE DE 1812",
+      "Número": "96",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 389,
+          "contenido": "DIÁLOGO 5ºD. Agustín.—D. Blas.[Transcripción completa del diálogo que ocupa varias páginas]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": null,
+          "obra": {
+            "titulo": "Diálogo 5º",
+            "genero": "diálogo satírico",
+            "actos": 1,
+            "autor_obra": "Anónimo",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 389
+            }
+          ],
+          "citas": [],
+          "contexto": "Diálogo satírico que critica la burocracia y el sistema de solicitud de empleos públicos, utilizando la forma clásica del diálogo como género literario"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Arte pictórico",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 386
+            }
+          ],
+          "descripcion": "Aviso de venta de pinturas de Murillo, Velázquez y otros autores, que se pueden adquirir por dinero o a cambio de géneros",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 389
+            }
+          ],
+          "descripcion": "Referencias al Jubileo en la iglesia del Rosario y debate sobre el papel de los frailes en la sociedad española",
+          "conexiones": [
+            "Se relaciona con el diálogo principal donde se discute la reforma del clero"
+          ]
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 389
+            }
+          ],
+          "descripcion": "Crítica al sistema burocrático y la solicitud de empleos públicos a través del diálogo entre D. Agustín y D. Blas",
+          "conexiones": [
+            "Forma parte central del diálogo satírico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526735.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE OCTUBRE DE 1812",
+      "Número": "18",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 90
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "teatro",
+          "interprete": "no especificado",
+          "lugar": "Teatro propio de esta ciudad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 90
+            }
+          ],
+          "contexto": "Anuncio de alquiler de un palco principal en el teatro de la ciudad"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "vida claustral y religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 87
+            }
+          ],
+          "descripcion": "Extensa reflexión sobre la vida religiosa en clausura y los problemas de las vocaciones forzadas",
+          "conexiones": [
+            "Relato sobre consecuencias trágicas de vocaciones religiosas forzadas"
+          ]
+        },
+        {
+          "tema": "política y administración",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 89
+            }
+          ],
+          "descripcion": "Artículo sobre reforma administrativa y sus consecuencias en la gestión de la hacienda nacional",
+          "conexiones": [
+            "Noticias del Reino",
+            "Guerra de Independencia"
+          ]
+        },
+        {
+          "tema": "vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 90
+            }
+          ],
+          "descripcion": "Avisos sobre servicios domésticos y alquiler de palco teatral",
+          "conexiones": [
+            "Referencias al teatro como actividad social"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526757.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "23 DE NOVIEMBRE DE 1812",
+      "Número": "43",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 203,
+          "contenido": "EL VOTO DE UN PATRIOTA. [...] como Neron vió arder á Roma."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "Referencia histórica a Nerón",
+            "genero": "Histórico",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 203
+            }
+          ],
+          "citas": [
+            "como Neron vió arder á Roma"
+          ],
+          "contexto": "Se utiliza como referencia histórica para comparar la destrucción propuesta de Madrid ante la invasión francesa con el incendio de Roma durante el gobierno de Nerón"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 203
+            }
+          ],
+          "descripcion": "El Jubileo está en la iglesia de San Juan de Dios. S. Clemente P. y M.",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Sociedad",
+          "paginas": [
+            {
+              "pdf": "1-2",
+              "periodico": "203-204"
+            }
+          ],
+          "descripcion": "Extenso texto patriótico sobre la resistencia contra los franceses y la propuesta de destruir Madrid antes que entregarlo al enemigo. Incluye referencias a la lucha contra la tiranía y llamados al patriotismo.",
+          "conexiones": [
+            "Referencias históricas a Nerón",
+            "Menciones religiosas"
+          ]
+        },
+        {
+          "tema": "Administración colonial",
+          "paginas": [
+            {
+              "pdf": "3-4",
+              "periodico": "205-206"
+            }
+          ],
+          "descripcion": "Detallada organización del Tribunal mayor de Cuentas de Lima, incluyendo estructura administrativa y salarios.",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526779.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "19 de diciembre de 1812",
+      "Número": "69",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 313,
+          "contenido": "SONETOComo á su parecer la bruja vuela,y untada por los ayres sube lista;asi Panés, insigne periodista,esto soñaba, quando estaba en vela:'Hónrome con la Cruz de la Candela;soi el mas celebérrimo Diarista,del Francmason y Ateo y Jansenistasoi á un tiempo contrario y centinela.Al Redactor impido que repose;de serviles y frailes soi buscado;¿quien mas feliz que yo?...' Vino, y llegósea él un Procurador: le habló azorado:vuelve en esto del éxtasis, y hallóseun Marques tonto con su sable al lado.J.E."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "J.E.",
+          "obra": {
+            "titulo": "Soneto satírico",
+            "genero": "poesía",
+            "actos": null,
+            "autor_obra": "J.E.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 313
+            }
+          ],
+          "citas": [
+            "Como á su parecer la bruja vuela..."
+          ],
+          "contexto": "Soneto satírico que critica al periodista Panés, utilizando elementos de la sátira tradicional española"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 311
+            }
+          ],
+          "descripcion": "Menciona el Jubileo en la iglesia de MM. Descalzas y la festividad de San Nemesio, Mártir",
+          "conexiones": []
+        },
+        {
+          "tema": "educación y política",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 312
+            }
+          ],
+          "descripcion": "Referencias a la Constitución y debate sobre la influencia de los frailes y el tribunal de la Inquisición",
+          "conexiones": [
+            "Conecta con el tema religioso y la reforma institucional"
+          ]
+        },
+        {
+          "tema": "prensa y periodismo",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 312
+            }
+          ],
+          "descripcion": "Mención del 'Peruano' y su editor, así como referencias a la prensa en el contexto colonial",
+          "conexiones": [
+            "Se relaciona con el soneto satírico sobre el periodista Panés"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526784.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "26 DE DICIEMBRE DE 1812",
+      "Número": "76",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 341,
+          "contenido": "EL MONO VICTORIOSO.FÁBULA 15.ª\\\"Oh qué grato es vencer! nunca se inclinaEl alma grande á la feliz holganzaQue al guerrero afemina.El bruto á quien el cieloDotó de intrepidez y de pujanzaDebe rendir á su contrario fuerte,Y despreciar la muerte,Y ceñirse el laurel de la victoria,Para que siempre el tiempoRespete de sus hechos la memoria.\\\"Esto decia un MonoCon enfático tonoPorque en los vidrios aplastó un mosquito.Los animales al continuo gritoConfusos acudieron,Y él mostraba el cadáver con jactancia.[continúa la fábula completa]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "F.P.U.",
+          "obra": {
+            "titulo": "El Mono Victorioso",
+            "genero": "Fábula",
+            "actos": 1,
+            "autor_obra": "F.P.U.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 341
+            },
+            {
+              "pdf": 4,
+              "periodico": 342
+            }
+          ],
+          "citas": [
+            "Oh qué grato es vencer! nunca se inclina..."
+          ],
+          "contexto": "Fábula moralizante que utiliza la figura de un mono presumido para criticar la vanidad y las falsas victorias"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 339
+            }
+          ],
+          "descripcion": "Menciona el Jubileo en la iglesia de PP. Carmelitas y la festividad de S. Estevan Mr.",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación/Literatura",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 342
+            }
+          ],
+          "descripcion": "Anuncio de la 'Historia filosófica de la sociedad humana', traducida del italiano al español, disponible en la librería de Salcedo",
+          "conexiones": [
+            "Se relaciona con el ambiente intelectual y editorial de Cádiz"
+          ]
+        },
+        {
+          "tema": "Política e Inquisición",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 339
+            }
+          ],
+          "descripcion": "Discusión sobre las facultades del tribunal de la Inquisición y bulas apostólicas",
+          "conexiones": []
+        }
+      ]
+    }
+  ]
+}

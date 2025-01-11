@@ -1,0 +1,678 @@
+{
+  "Año": 1816,
+  "datos": [
+    {
+      "PDF": "2531653.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "12 DE SETIEMBRE DE 1816",
+      "Número": "12",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "HIMNO¡Oh que augustos enlaces!¡Oh que anuncios de bien!¡De Carlos es María!¡De Fernando Isabel![Transcripción completa del himno incluida]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Himno de celebración nupcial",
+            "genero": "Poesía lírica / Himno",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [
+            "¡Oh que augustos enlaces!¡Oh que anuncios de bien!¡De Carlos es María!¡De Fernando Isabel!"
+          ],
+          "contexto": "Himno celebratorio de enlaces reales, estructurado en estrofas con estribillo, de carácter festivo y ceremonial"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 3,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Música militar",
+          "interprete": "músicas de los regimientos",
+          "lugar": "Cádiz",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "contexto": "Mencionado en el contexto de las celebraciones y despedida de la familia real"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ceremonial real",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Detallada descripción de la despedida de la familia real de Cádiz, incluyendo salvas de artillería, repique de campanas, formación militar y actos protocolarios",
+          "conexiones": [
+            "Música militar",
+            "Himno ceremonial"
+          ]
+        },
+        {
+          "tema": "Vida social y comercial",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Listado detallado de transacciones comerciales y movimientos portuarios que refleja la actividad mercantil de la ciudad",
+          "conexiones": [
+            "Información meteorológica",
+            "Mareas"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Capilla de nuestra Señora de la Palma",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531675.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 DE OCTUBRE DE 1816",
+      "Número": "34",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON:= Aradin Barba-roja (com. en 3 actos.) La paya inocente (tonadilla á duo.)= La cura de los deseos (sainete.)= A las 5."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "Aradin Barba-roja",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral presentada como parte de la programación del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "La paya inocente",
+            "genero": "tonadilla a dúo",
+            "actos": null,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ]
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "La cura de los deseos",
+            "genero": "sainete",
+            "actos": null,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ]
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "no especificado",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Tonadilla a dúo 'La paya inocente' como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia del Hospital Real y celebración de San Francisco de Asís",
+          "conexiones": []
+        },
+        {
+          "tema": "Salud Pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso sobre administración de la Vacuna en las Casas Capitulares",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531698.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "26 DE OCTUBRE DE 1816",
+      "Número": "56",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALÓN.—La conquista de Jerusalen por Gofredo de Bullon, ó el jóven Eustaquio de Lorena (com. en 3 actos).—La nueva en la fonda (tonadilla á tres por la Sra. Díaz y los Sres. Ugalde y Vazquez.—Boleras por la Sra. Petra Martinez, que se presenta en clase de aficionada, y el Sr. Prudencio Hidalgo.)—De tres ninguna (sainete).—A las 4½.TEATRO CÓMICO.—La viuda generosa (com. en 3 actos)—Boleras (por la Sra. Luisa Lopez y el Sr. José Gonzalez.)—La Dama resuelta y el Marqués de Torre-gorda (sainete.)—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "La conquista de Jerusalen por Gofredo de Bullon, ó el jóven Eustaquio de Lorena",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Balón"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral principal en la programación del Teatro del Balón"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "La viuda generosa",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro Cómico"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral principal en la programación del Teatro Cómico"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "Sra. Díaz, Sres. Ugalde y Vazquez",
+          "lugar": "Teatro del Balón",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Tonadilla titulada 'La nueva en la fonda' interpretada como parte del programa teatral"
+        },
+        {
+          "tipo": "boleras",
+          "interprete": "Sra. Petra Martinez y Sr. Prudencio Hidalgo",
+          "lugar": "Teatro del Balón",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile popular español interpretado entre las piezas teatrales"
+        },
+        {
+          "tipo": "boleras",
+          "interprete": "Sra. Luisa Lopez y Sr. José Gonzalez",
+          "lugar": "Teatro Cómico",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile popular español interpretado en el programa del Teatro Cómico"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al santo del día (San Florencio Mártir) y al Jubileo de las XL horas en la Iglesia de Santiago",
+          "conexiones": []
+        },
+        {
+          "tema": "comercio",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso listado de mercancías y transacciones comerciales del puerto de Cádiz",
+          "conexiones": [
+            "actividad portuaria",
+            "comercio internacional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531742.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "17 DE NOVIEMBRE DE 1816",
+      "Número": "78",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 78,
+          "contenido": "Todo el intercambio epistolar sobre poética y géneros literarios entre El Solitario y el Defensor de las musas bucólicas, que discute sobre idilios, poesía piscatoria y pastoril, citando a autores como Gil Polo, Teócrito, Virgilio, Garcilaso, etc."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Gaspar Gil Polo",
+          "obra": {
+            "titulo": "Idilio",
+            "genero": "poesía pastoril",
+            "actos": null,
+            "autor_obra": "Gaspar Gil Polo",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 78
+            }
+          ],
+          "citas": [
+            "pescador zeloso"
+          ],
+          "contexto": "Se discute como modelo de poesía bucólica del siglo XVI"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Pedro Calderón de la Barca",
+          "obra": {
+            "titulo": "El Alcalde de Zalamea",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "Pedro Calderón de la Barca",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 78
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra programada para representación teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": 78
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Sr. Andrés Pautret, Sra. María Gertrudis Pautret",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 78
+            }
+          ],
+          "contexto": "Representación de 'El Delirio', ópera en un acto de Mr. Berton"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 78
+            }
+          ],
+          "descripcion": "Programación teatral completa con precios y horarios",
+          "conexiones": [
+            "obras literarias",
+            "música",
+            "danza"
+          ]
+        },
+        {
+          "tema": "entretenimiento público",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 78
+            }
+          ],
+          "descripcion": "Espectáculo de volatines en la Plaza de Toros",
+          "conexiones": [
+            "vida social",
+            "costumbres"
+          ]
+        },
+        {
+          "tema": "comercio",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 78
+            }
+          ],
+          "descripcion": "Aranceles de aduanas francesas",
+          "conexiones": [
+            "economía",
+            "relaciones internacionales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531778.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "7 DE DICIEMBRE DE 1816",
+      "Número": "98",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": null,
+          "contenido": "LETRILLASin pizca de seso,La loca fortuna,Por teatros corre,Por palacios cruza.Por mí, que se tienda,Que baxe ó que suba.[continúa el poema completo en página 2]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La novia y viuda en una noche",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": null,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral anunciada en la cartelera del Teatro Principal"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "fandango",
+          "interprete": "Sra. Perez y Sr. Gonzalez",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Pieza musical programada como parte del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Ambrosio y celebración religiosa del Jubileo",
+          "conexiones": [
+            "Orden de la Plaza",
+            "Afecciones Astronómicas"
+          ]
+        },
+        {
+          "tema": "comercio marítimo",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Listado detallado de embarcaciones entrando y saliendo de varios puertos españoles",
+          "conexiones": [
+            "Consulado",
+            "Comercio"
+          ]
+        },
+        {
+          "tema": "vida social",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncios de alquileres, ventas y avisos varios que reflejan la vida cotidiana en Cádiz",
+          "conexiones": [
+            "Teatro Principal",
+            "Comercio"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531794.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "21 DE DICIEMBRE DE 1816",
+      "Número": "112",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 112,
+          "contenido": "ARTÍCULO REMITIDOYa, en fin, espejo de la vida humana, exemplo de las costumbres, é imagen de la verdad, merece la comedia estar bien con todos los hombres sensatos; y por el mismo consiguiente deben ser apreciados los que las componen y los que las representan..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Varios",
+          "obra": {
+            "titulo": "Eduardo III en la plaza de Sisifort",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 112
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La correccion maternal",
+            "genero": "comedia",
+            "actos": 1,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 112
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la cartelera"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 112
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "escena lírica",
+          "interprete": "Sr. Marteni",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 112
+            }
+          ],
+          "contexto": "Profesor de música de paso para Lisboa que interpretará arias bufas y una cavatina con música de Cimarosa"
+        },
+        {
+          "tipo": "tonadilla",
+          "interprete": "Sra. Vazquez y Sr. Vazquez",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 112
+            }
+          ],
+          "contexto": "Interpretación de tonadilla a dúo como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y política cultural",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 112
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la importancia del teatro en las grandes poblaciones y la necesidad de su protección por parte del Gobierno",
+          "conexiones": [
+            "Cartelera teatral",
+            "Debate sobre política cultural"
+          ]
+        },
+        {
+          "tema": "Danza",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 112
+            }
+          ],
+          "descripcion": "Anuncio de 'La muerte del capitan Cook en su tercer viage al nuevo mundo' (baile trágico histórico) compuesto por Sr. Andres Pautret",
+          "conexiones": [
+            "Programación teatral",
+            "Referencias históricas"
+          ]
+        }
+      ]
+    }
+  ]
+}

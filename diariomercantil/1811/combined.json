@@ -1,0 +1,1151 @@
+{
+  "Año": 1811,
+  "datos": [
+    {
+      "PDF": "2525958.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Jueves 24 de enero de 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención al jubileo en la iglesia de Observantes de San Francisco y referencia a \\'Nuestra Señora de la Paz\\'",
+          "conexiones": []
+        },
+        {
+          "tema": "Ciencia/Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' con datos precisos sobre movimientos solares, lunares y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Guerra",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Extenso reporte militar sobre acciones en Cataluña, incluyendo detalles de batallas y movimientos de tropas",
+          "conexiones": [
+            "Se relaciona con las noticias posteriores sobre Wellington y la guerra contra los franceses"
+          ]
+        },
+        {
+          "tema": "Comercio y Avisos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Sección de avisos comerciales y ventas, incluyendo publicaciones disponibles y ofertas de servicio doméstico",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2525980.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "15 DE FEBRERO DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 1,
+          "periodico": 1
+        },
+        {
+          "pdf": 2,
+          "periodico": 2
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "música militar",
+          "interprete": "banda militar",
+          "lugar": "procesión fúnebre",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "contexto": "Música militar que tocó lúgubremente durante el cortejo fúnebre del marqués de la Romana"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención del jubileo en la iglesia de San Agustín y celebración de San Faustino y Jovita Mártires",
+          "conexiones": []
+        },
+        {
+          "tema": "Ceremonial militar y diplomático",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            },
+            {
+              "pdf": 2,
+              "periodico": 2
+            },
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Detallada descripción del protocolo funerario militar y diplomático en el entierro del marqués de la Romana, incluyendo honores militares, formación de tropas y ceremonial religioso",
+          "conexiones": [
+            "Se relaciona con las referencias musicales del cortejo fúnebre"
+          ]
+        },
+        {
+          "tema": "Vida social y comercial",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Anuncios de ventas, traspasos y avisos comerciales que reflejan la vida cotidiana en Cádiz",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2526003.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Martes 12 de marzo de 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención del día de San Gregorio Papa y celebración de jubileo en la iglesia de los Descalzos",
+          "conexiones": []
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Detallada información astronómica sobre salida y puesta del sol, posición lunar y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Diplomacia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Noticias sobre relaciones diplomáticas entre Brasil, Inglaterra y Persia, incluyendo la llegada de embajadores y encuentros diplomáticos",
+          "conexiones": []
+        },
+        {
+          "tema": "Asuntos militares y conflicto",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Referencias a conflictos militares, especialmente relacionados con las guerras napoleónicas y la situación en España",
+          "conexiones": [
+            "Conecta con las noticias políticas y la situación general del reino"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526025.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "MIERCOLES 3 DE ABRIL DE 1811",
+      "Número": "",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "VENTA. Un quaderno intitulado: respuesta que dá D. José Fernandez de Castro, á la exposicion del marques de Sobremonte, virrei que fue de Buenos-Aires, inserta en este diario el 20 de febrero último, baxo la denominacion de artículo comunicado. Se vende en los puestos de este diario, en los del Conciso, y en la plazuela del Palillero á dos reales."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al jubileo en la iglesia de San Lorenzo bajo la sección de SAN BENITO DE PALERMO",
+          "conexiones": []
+        },
+        {
+          "tema": "Periodismo/Publicaciones",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncios de venta de publicaciones incluyendo una respuesta a una exposición y una \\'Opinion de un Aldeano\\'",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Noticias extranjeras sobre relaciones diplomáticas y comerciales entre potencias europeas, especialmente relacionadas con Rusia y Francia",
+          "conexiones": [
+            "Se conecta con las tensiones políticas y comerciales de la época napoleónica"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso sobre rifa de topacios del Brasil organizada por el real Consulado",
+          "conexiones": [
+            "Relacionado con el comercio colonial y las actividades económicas de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526048.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "25 DE ABRIL DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin numerar"
+            }
+          ],
+          "descripcion": "Mención del día de San Marcos Evangelista y el jubileo en la real capilla del Pópulo",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin numerar"
+            }
+          ],
+          "descripcion": "Extensa discusión sobre la libertad de imprenta y su impacto en la opinión pública. Se argumenta sobre la importancia de la prensa libre para informar al pueblo y construir una opinión pública sólida.",
+          "conexiones": [
+            "Conecta con las reformas liberales y la libertad de expresión"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin numerar"
+            }
+          ],
+          "descripcion": "Anuncio de venta de cerveza Brown Stout en la plazuela de los Pozos de la Nieve",
+          "conexiones": [
+            "Muestra la presencia de productos extranjeros en Cádiz"
+          ]
+        },
+        {
+          "tema": "Vida cotidiana",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin numerar"
+            }
+          ],
+          "descripcion": "Anuncio sobre la pérdida de un rosario de color rosa en la plazuela del Rosario de San Carlos",
+          "conexiones": [
+            "Refleja aspectos de la vida cotidiana y religiosidad popular"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526074.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "Viernes 17 de Mayo de 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención al jubileo en la iglesia de San Francisco y San Pasqual Bailon",
+          "conexiones": []
+        },
+        {
+          "tema": "Astronomía/Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' con datos sobre salida/puesta del sol, luna y mareas",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la situación política española durante la ocupación francesa, incluyendo críticas a la propaganda y desinformación",
+          "conexiones": [
+            "Se relaciona con las noticias del reino en páginas posteriores"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526101.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "9 DE JUNIO DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "Tal fue el error de Chéreas al destruir á Caligula. ¿Lo hubiera hecho á preveer que Claudio le sucederia? En el estado actual de la Francia Buonaparte es execrado ¿Pero quién puede preveer si el feroz Murat ó el bandido Augerau no serán peores que él?"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Historiadores clásicos",
+          "obra": {
+            "titulo": "Referencias a la historia romana",
+            "genero": "Historia",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Se hace referencia a personajes históricos romanos como Calígula, Claudio y Chéreas para establecer paralelismos con la situación política contemporánea"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Menciona \\'LA SANTISIMA TRINIDAD\\' y el jubileo en la iglesia del Rosario",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso análisis sobre la situación política en Francia, el papel de Bonaparte y reflexiones sobre el patriotismo y el egoísmo nacional",
+          "conexiones": [
+            "Referencias históricas romanas como paralelismo"
+          ]
+        },
+        {
+          "tema": "Vida cotidiana",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncios sobre búsqueda de personal doméstico y venta de muebles",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2532196.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "1 de julio de 1811",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "...labor improbus omnia vincit... por estas asperezas se camina de la inmortalidad al alto asiento. Y que no tanto es digno de alabanza el que con ánimo esforzado entra en la carrera, como el que sigue con constancia hasta llegar á su fin."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Virgilio",
+          "obra": {
+            "titulo": "Geórgicas",
+            "genero": "Poesía didáctica",
+            "actos": null,
+            "autor_obra": "Virgilio",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "citas": [
+            "labor improbus omnia vincit"
+          ],
+          "contexto": "Se usa la cita latina como argumento retórico en un texto sobre perseverancia y esfuerzo en la defensa de las ideas liberales"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Política y prensa",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa reflexión sobre la libertad de imprenta y la necesidad de defenderla, utilizando metáforas militares y botánicas",
+          "conexiones": [
+            "Se relaciona con el debate sobre libertades civiles y reforma política de la época"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención a \\'San Castor y San Secundino Martires\\' y referencia al jubileo en la iglesia de las Recogidas",
+          "conexiones": [
+            "Sección de información religiosa diaria"
+          ]
+        },
+        {
+          "tema": "Ciencia/Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Sección \\'Afecciones astronómicas\\' con información precisa sobre horarios solares y lunares",
+          "conexiones": [
+            "Información práctica diaria"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532267.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "23 DE JULIO DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Referencias a santos del día (San Liborio y San Apolinar) y mención del jubileo en la iglesia del Hospital de mujeres",
+          "conexiones": []
+        },
+        {
+          "tema": "Prensa y opinión pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Incluye una carta del periódico inglés Times que discute las relaciones entre España y Gran Bretaña, criticando la postura de algunos periodistas británicos hacia España",
+          "conexiones": [
+            "Política internacional",
+            "Relaciones hispano-británicas"
+          ]
+        },
+        {
+          "tema": "Comercio y anuncios",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Sección de \\'NOTICIAS DE CADIZ\\' que incluye anuncios de venta de libros, pérdidas y avisos varios",
+          "conexiones": [
+            "Vida cotidiana en Cádiz"
+          ]
+        },
+        {
+          "tema": "Política y guerra",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Extenso análisis sobre las relaciones entre España, Portugal e Inglaterra durante la guerra contra los franceses",
+          "conexiones": [
+            "Relaciones internacionales",
+            "Guerra de Independencia"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532308.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "14 DE AGOSTO DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención de festividad religiosa y jubileo: \\'SAN EUCEBIO. (Vigilia.) El jubileo está en la iglesia de San Lorenzo.\\'",
+          "conexiones": []
+        },
+        {
+          "tema": "Costumbres funerarias",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Noticia sobre una viuda india y ritual funerario (sati) en Calcuta, describiendo las ceremonias bramínicas y la inmolación voluntaria de la viuda",
+          "conexiones": [
+            "Religión",
+            "Sociedad"
+          ]
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Proyecto patriótico para recaudar fondos mediante suscripciones para la guerra, incluyendo referencias a las provincias españolas y la organización social",
+          "conexiones": [
+            "Economía",
+            "Guerra"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532357.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Viernes 6 de Septiembre de 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención del santo del día (San Eugenio Mártir) y ubicación del jubileo en la iglesia de Candelaria",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Guerra",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Narrativa sobre resistencia portuguesa contra la ocupación napoleónica, incluyendo referencias a Junot y actividades patrióticas",
+          "conexiones": [
+            "Se conecta con las noticias militares posteriores sobre movimientos de tropas"
+          ]
+        },
+        {
+          "tema": "Educación/Academia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Anuncio sobre pérdida de láminas de una obra de Matemáticas cerca de San Francisco",
+          "conexiones": []
+        },
+        {
+          "tema": "Debate intelectual/religioso",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Carta remitida criticando la presencia de \\'filósofos, Jansenistas y Francmasones\\' en Cádiz, reflejando tensiones ideológicas de la época",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2532393.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE SEPTIEMBRE DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 3,
+          "periodico": "no especificado"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "celebración festiva",
+          "interprete": "no especificado",
+          "lugar": "Toledo",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "no especificado"
+            }
+          ],
+          "contexto": "El 15 hubo salva, gran misa, comida, baile, é iluminacion por los dias de Napoleon"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Menciona el jubileo en la iglesia de RR. PP. Mercenarios y San Wenceslao Mártir",
+          "conexiones": [
+            "Se relaciona con las discusiones sobre tribunales de Fe en el contenido principal"
+          ]
+        },
+        {
+          "tema": "Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Incluye una sección de \\'Afecciones astronómicas\\' con información sobre salida y puesta del sol y luna",
+          "conexiones": []
+        },
+        {
+          "tema": "Institucional/Religioso",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Extensa discusión sobre los tribunales de Fe y la jurisdicción eclesiástica",
+          "conexiones": [
+            "Se conecta con las referencias religiosas iniciales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532422.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE OCTUBRE DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos públicos",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Artículo comunicado sobre la apertura del teatro y sus precios, discutiendo la necesidad de que sea accesible para todas las clases sociales. Se menciona la legislación vigente (ley 12 recopilada lib. 7° tit. 33) sobre la gestión de teatros y la formación de juntas teatrales.",
+          "conexiones": [
+            "Administración pública",
+            "Economía social",
+            "Legislación cultural"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención a \\'SAN FELICIANO OBISPO\\' y jubileo en la Iglesia de Santiago",
+          "conexiones": [
+            "Vida religiosa de la ciudad",
+            "Calendario litúrgico"
+          ]
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Discusión sobre el papel del ayuntamiento y la junta particular en la gestión del teatro, incluyendo aspectos administrativos y económicos",
+          "conexiones": [
+            "Teatro",
+            "Economía municipal",
+            "Legislación"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532464.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "12 DE NOVIEMBRE DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Menciona la celebración religiosa del día: \\'SAN MARTIN PAPA Y MARTIR\\' y el jubileo en la Parroquia de Sr. S. Antonio",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Discusión sobre la gestión de recursos gubernamentales, las Cortes y la administración pública durante el período de guerra. Incluye debates sobre transparencia administrativa y gestión de recursos militares.",
+          "conexiones": [
+            "Referencias a la Regencia",
+            "Cortes",
+            "Administración militar"
+          ]
+        },
+        {
+          "tema": "Vida cotidiana y astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Incluye \\'Afecciones astronómicas\\' con horarios de salida y puesta del sol, fases lunares y mareas",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2532508.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "5 de diciembre de 1811",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "no especificado",
+          "contenido": "TEATRO.—Esta noche á las siete se representa la comedia en tres actos: el filósofo-enamorado. Concluida, cantarán la tonadilla la Papresa de la sortija la Sra. Concepcion Velasco, nueva en este teatro, y el Sr. Josef Segura. Cantarán las boleras la Sra. Valdés y el Sr. Gamborino, y se dará fin con el saynete Inesilla la de Pinto."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El filósofo enamorado",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra anunciada en la cartelera teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "no especificado"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "Sra. Concepcion Velasco y Sr. Josef Segura",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "contexto": "Tonadilla \\'La Papresa de la sortija\\' como parte del programa teatral"
+        },
+        {
+          "tipo": "boleras",
+          "interprete": "Sra. Valdés y Sr. Gamborino",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "contexto": "Baile como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Programa completo de espectáculos que incluye comedia, tonadilla, baile y sainete",
+          "conexiones": [
+            "Combina elementos teatrales y musicales en una misma función"
+          ]
+        },
+        {
+          "tema": "Anuncios culturales",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Anuncio de una obra satírica titulada \\'Los ceviles, ó el nuevo periódico\\' que ridiculiza al Censor general",
+          "conexiones": [
+            "Refleja el ambiente de debate político-cultural de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532527.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "17 DE DICIEMBRE DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": null,
+          "contenido": "Al Censor general.\\\\Habiendo visto un quadro en que los Angeles azotaban á S. Geronimo, por el gran placer con que leia á Ciceron, no pude menos de exclamar con este\\\\EPIGRAMA.\\Si à S. Geronimo azoten\\Porque leyó á Ciceron\\¡Qué de azotes no merecen\\Quantos lean el Censor!\\\\P. F. y C."
+        },
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—Esta noche á las siete se representa la comedia en tres actos: De donde tienen su origen los monteros de Espinosa. Seguirá la tonadilla tio y los sobrinos, por la Sra. Plaza, y los Srs. Segura y Pineda; y se finalizará con el saynete herir por los mismos filos."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Cicerón",
+          "obra": {
+            "titulo": "No especificada",
+            "genero": "Referencia general",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Mencionado en un epigrama satírico que hace referencia a San Jerónimo leyendo a Cicerón"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "De donde tienen su origen los monteros de Espinosa",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para la noche"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "Sra. Plaza, Srs. Segura y Pineda",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación musical titulada \\'tio y los sobrinos\\' como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al jubileo en la Iglesia de RR. MM. Descalzas y mención a San Jerónimo",
+          "conexiones": [
+            "Relacionado con el epigrama sobre San Jerónimo y Cicerón"
+          ]
+        },
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programación teatral completa incluyendo comedia, tonadilla y sainete",
+          "conexiones": [
+            "Incluye elementos tanto teatrales como musicales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532538.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "27 DE DICIEMBRE DE 1811",
+      "Número": "No especificado",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Mención al jubileo en la Iglesia de RR. PP. Carmelitas y referencia a San Juan Evangelista",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Discusión sobre patriotas y clasificación social durante la ocupación francesa. Menciona diferentes clases de ciudadanos y su relación con la resistencia contra los franceses.",
+          "conexiones": [
+            "Conexión con el contexto histórico de la Guerra de Independencia española"
+          ]
+        },
+        {
+          "tema": "Ciencia/Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "no especificado"
+            }
+          ],
+          "descripcion": "Información astronómica sobre salida y puesta del sol y la luna, además de datos sobre mareas",
+          "conexiones": []
+        }
+      ]
+    }
+  ]
+}
