@@ -1,4 +1,1472 @@
 {
   "Año": 1826,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2527556.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "22 DE SETIEMBRE DE 1826",
+      "Número": "3699",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera italiana",
+          "obra": "Mahomet 2º",
+          "compositor": "Gioachino Rossini",
+          "interpretes": [
+            "Ercolina Bressa",
+            "Josefina Julien",
+            "Alejandro Mombelli",
+            "José Perratoni",
+            "Francisco José de la Cámara",
+            "Juan Ugalde"
+          ],
+          "lugar": "Teatro Principal",
+          "fecha": "Sábado 23 del corriente",
+          "hora": "7 en punto",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Anuncio de función teatral en la sección de avisos del periódico"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo de las 40 horas' en la iglesia del Hospicio y celebración de San Mauricio Mártir",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y comestibles en la plaza",
+          "conexiones": [
+            "Información económica y mercantil"
+          ]
+        },
+        {
+          "tema": "Vida social",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio sobre perro extraviado y búsqueda de personas",
+          "conexiones": [
+            "Avisos públicos"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527580.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "14 DE OCTUBRE DE 1826",
+      "Número": "5722",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 5722,
+          "contenido": "SONETODeten tu veloz marcha, Febo hermoso,Y con rayos de luz mas refulgenteAnuncia desde Oriente hasta OccidenteEl dia mas felice y venturoso.Con dulces trinos y eco deliciosoCanten las aves hoy mas dulcemente,Por ser el cumpleaños del clementeDel mas inclito Rey justo y piadoso.Y nosotros con grata melodiaAl Soberano amado celebrando,Unidos con contento y alegriaHimnos por todas partes entonando,Como fieles vasallos este diaLevantemos la voz: VIVA FERNANDO."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Soneto de cumpleaños al Rey Fernando VII",
+            "genero": "poesía",
+            "actos": null,
+            "autor_obra": "V.G. (firma al final)",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 5722
+            }
+          ],
+          "citas": [
+            "Soneto completo transcrito arriba"
+          ],
+          "contexto": "Poema laudatorio por el cumpleaños del rey Fernando VII, siguiendo la estructura clásica del soneto"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 5722
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera italiana",
+          "interprete": "Sras. Bressa, Julien y Amigot, y los Sres. Mombelli, Cámara, Coggiola, Lembi y Ugalde",
+          "lugar": "TEATRO PRINCIPAL",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 5722
+            }
+          ],
+          "contexto": "Representación de 'Semiramis' de Rossini en celebración del cumpleaños del Rey"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 5722
+            }
+          ],
+          "descripcion": "Dos funciones teatrales diferentes:1. En el Teatro del Balón: 'El buen hijo ó María Teresa de Austria' (comedia en 3 actos), 'Fandango á cuatro' y 'El disfraz venturoso' (sainete)2. En el Teatro Principal: 'Semiramis' (ópera italiana)",
+          "conexiones": [
+            "Celebraciones por el cumpleaños real",
+            "Venta de argumentos y biografía de Rossini"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527603.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "5 DE NOVIEMBRE DE 1826",
+      "Número": "3744",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 3744,
+          "contenido": "EPIGRAMACon una vieja toparonZumbones, y al ver los rizos,Gala y colores postizosMuy curiosos se pararon:Y uno de estos calaverasDijo á los otros: »Señores,No es mucho abunden las floresDonde hay tantas primaveras.» B. Cap..."
+        },
+        {
+          "pdf": 3,
+          "periodico": 3746,
+          "contenido": "CARACTER DE LA CALUMNIA.APOLOGO.La calumnia es un asesinato; es el arma favorita de los cobardes que quieren hacer mal sin valor para hacerle á cara descubierta. Acerca de este vicio se lee en un escrito árabe el apólogo siguiente...[texto completo del apólogo]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "B. Cap.",
+          "obra": {
+            "titulo": "Epigrama",
+            "genero": "poesía satírica",
+            "actos": null,
+            "autor_obra": "B. Cap.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3744
+            }
+          ],
+          "citas": [
+            "Con una vieja toparon..."
+          ],
+          "contexto": "Epigrama satírico sobre una mujer mayor que usa cosméticos"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 3747
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": null,
+          "lugar": "TEATRO PRINCIPAL",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 3747
+            }
+          ],
+          "contexto": "Semiramis (ópera italiana en 2 actos, música de Rossini).=A las 6½."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 3747
+            }
+          ],
+          "descripcion": "Se anuncian dos obras teatrales:1. En el Teatro del Balón: 'La Moscovita sensible' (comedia en 3 actos) y 'El Sueño' (sainete)2. En el Teatro Principal: 'Semiramis' de Rossini",
+          "conexiones": [
+            "Programación cultural",
+            "Entretenimiento público"
+          ]
+        },
+        {
+          "tema": "moral y sociedad",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3746
+            }
+          ],
+          "descripcion": "Texto reflexivo sobre la calumnia, utilizando un apólogo árabe como ejemplo moralizante",
+          "conexiones": [
+            "Literatura didáctica",
+            "Moral pública"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527646.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "27 DE NOVIEMBRE DE 1826",
+      "Número": "3767",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON.—Funcion particular á beneficio de la Sra. Juana Marin.=El imperio de la verdad ó el sepulturero (comedia en 5 actos.)=La Solitaria (tonadilla por la agraciada y el Sr. Estevan del Rio, actor de la compañía del Puerto de Santa Maria.)=Un cuarteto serio de baile.=El aprendiz de torero (sainete, en el que se lidiará un novillo de la vacada de los herederos de D. Francisco Gallardo.—A las 5."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El imperio de la verdad ó el sepulturero",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra presentada como parte de una función teatral a beneficio"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El aprendiz de torero",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete con lidia de novillo como parte del programa teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "Sra. Juana Marin y Sr. Estevan del Rio",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Tonadilla 'La Solitaria' interpretada como parte de una función teatral"
+        },
+        {
+          "tipo": "baile",
+          "interprete": "No especificado",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Cuarteto serio de baile como parte del programa"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Medicina y Ciencia",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa descripción de un caso médico de asfixia por sumersión presentado en la Real Academia de Medicina de París",
+          "conexiones": [
+            "Debate científico",
+            "Medicina práctica"
+          ]
+        },
+        {
+          "tema": "Instituciones académicas",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención a la Real Academia de Medicina de París y sus sesiones científicas",
+          "conexiones": [
+            "Medicina",
+            "Ciencia"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527668.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "19 de Diciembre de 1826",
+      "Número": "3789",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3789
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las 40 horas en la iglesia de las Descalzas y la festividad de San Nemesio Mártir",
+          "conexiones": [
+            "Aviso posterior sobre contribuciones al Jubileo"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 3789
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y otros efectos comerciales en la plaza de Cádiz",
+          "conexiones": [
+            "Noticias mercantiles",
+            "Avisos comerciales"
+          ]
+        },
+        {
+          "tema": "Administración Pública",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 3789
+            }
+          ],
+          "descripcion": "Real Orden sobre la habilitación de puertos para el comercio extranjero en Mallorca",
+          "conexiones": [
+            "Sección de comercio",
+            "Avisos oficiales"
+          ]
+        },
+        {
+          "tema": "Meteorología y Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3789
+            }
+          ],
+          "descripcion": "Tabla de afecciones astronómicas y meteorológicas del día, incluyendo barómetro, termómetro, vientos y estado de la atmósfera",
+          "conexiones": [
+            "Mareas en la bahía"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527720.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "10 DE MAYO DE 1826",
+      "Número": "3562",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 3562,
+          "contenido": "DESCRIPCION GEOGRAFICA DEL REINO DE LA POESIALa Poesia es un reyno muy dilatado y poblado. Confina al oriente con la Elocuencia, al medio día con la Pintura y la Escultura y al occidente con la Música. Las costas del Norte las baña el oceano de la Erudicion..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "varios",
+          "obra": {
+            "titulo": "Referencias a Homero, Virgilio, Tasso, Ercilla, Camoens y Milton",
+            "genero": "épica",
+            "actos": null,
+            "autor_obra": "múltiples",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 3562
+            }
+          ],
+          "citas": [],
+          "contexto": "Mencionados como referentes de la poesía épica cuyos mausoleos y tumbas se muestran en la alegoría del Reino de la Poesía"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 2,
+          "periodico": 3562
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": null,
+          "lugar": "Palacio llamado Opera",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 3562
+            }
+          ],
+          "contexto": "Mencionado como un 'grandioso y magnífico palacio' en el Reino de la Poesía, donde 'todo lo hacen cantando hasta el morir'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Alegoría literaria",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3562
+            }
+          ],
+          "descripcion": "Extensa alegoría que representa la literatura como un reino geográfico, con diferentes géneros literarios representados como provincias y ciudades",
+          "conexiones": [
+            "poesía",
+            "teatro",
+            "música",
+            "bellas artes"
+          ]
+        },
+        {
+          "tema": "Teoría literaria",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 3562
+            }
+          ],
+          "descripcion": "Descripción de los diferentes géneros literarios (épica, tragedia, comedia, elegía, etc.) y sus características distintivas",
+          "conexiones": [
+            "poesía alta",
+            "poesía baja",
+            "crítica literaria"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527742.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "1 de junio de 1826",
+      "Número": "2583",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la Santa Iglesia Catedral y mención a San Segundo Mártir",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación/Comercio",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Sección de 'Geografia Comercial' sobre Trípoli, mostrando contenido educativo sobre comercio y geografía",
+          "conexiones": []
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Aviso sobre vacunación pública a realizarse en las casas Capitulares",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2527766.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "23 DE JUNIO DE 1826",
+      "Número": "3603",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "Reflexiones sobre la naturaleza, escritas en aleman por el célebre Sturm, y traducidas al castellano: cuarta edicion, en seis tomos en dozavo de marca; previniendo que los Sres. suscritores no abonarán interés alguno hasta no recibir toda la obra.=Se admiten suscripciones en la librería de Hortal y Compañía, plazuela de S. Agustin."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Sturm",
+          "obra": {
+            "titulo": "Reflexiones sobre la naturaleza",
+            "genero": "Ensayo filosófico",
+            "actos": null,
+            "autor_obra": "Sturm",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta/suscripción de una traducción al castellano de la obra alemana"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "enseñanza_musical",
+          "interprete": "D. Dionisio Aguado",
+          "lugar": null,
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Escuela de Guitarra teórica y practica, puesta en lecciones por el célebre maestro D. Dionisio Aguado, con una estampa que representa el discípulo dando leccion: un tomo en folio mayor. Se hallará en la librería de Zaragoza, plazuela de S. Agustin, á 130 rvn."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación musical",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de un método de enseñanza de guitarra por Dionisio Aguado, figura importante en la historia de la guitarra española",
+          "conexiones": [
+            "Educación",
+            "Música",
+            "Publicaciones"
+          ]
+        },
+        {
+          "tema": "Vacunación pública",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de vacunación pública por la Junta superior de Sanidad en las casas Capitulares",
+          "conexiones": [
+            "Sanidad pública",
+            "Administración"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensas listas de precios corrientes de diversos productos en la plaza",
+          "conexiones": [
+            "Economía",
+            "Comercio internacional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527797.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SABADO 15 DE JULIO DE 1826",
+      "Número": "3627",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO PRINCIPAL.—Elisa y Claudio ó el amor protegido por la amistad (ópera italiana, semi-seria en dos actos, música del maestro Mercadante.) Será desempeñada por las Sras. Josefina Julien, Maria Amigot y Josefa Estrella, y los Sres. Francisco José de la Cámara (nuevo), Pedro Coggiola, Luis Martinelli, Juan Ugalde y Pablo Lembi."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Mercadante",
+          "obra": {
+            "titulo": "Elisa y Claudio ó el amor protegido por la amistad",
+            "genero": "ópera italiana semi-seria",
+            "actos": 2,
+            "autor_obra": "Mercadante",
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en el Teatro Principal"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Josefina Julien, Maria Amigot, Josefa Estrella, Francisco José de la Cámara, Pedro Coggiola, Luis Martinelli, Juan Ugalde, Pablo Lembi",
+          "lugar": "Teatro Principal de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de una ópera italiana de Mercadante con elenco completo. Se menciona que es la primera actuación del Sr. de Cámara en teatro."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "comercio textil",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso de venta de cortinas y colchas de damasco, capotes de seda, capas y casacas de grana, guardapieses y sayas antiguas y loza de China y abanicos antiguos en la plazuela de Santiago",
+          "conexiones": []
+        },
+        {
+          "tema": "publicaciones",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Venta del argumento de la ópera y el Epítome de la vida de Rossini con su retrato",
+          "conexiones": [
+            "Se relaciona con la representación teatral anunciada"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527819.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "6 DE AGOSTO DE 1826",
+      "Número": "3651",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 3651,
+          "contenido": "TEATRO DEL BALON.—Del Rey abajo ninguno, y labrador mas honrado Garcia del Castañar (comedia en tres actos, en la que se presentará por primera vez el Sr. Miguel Hernandez, primer galan y director de la compañia.)—Boleras á cuatro.—El manchego en la Corte (sainete).—A las 5.TEATRO PRINCIPAL.—Blanca y Falliero (opera seria, italiana en dos actos, música de Rossini.)—Será intermediada del fandango.—A las 8."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Francisco de Rojas Zorrilla",
+          "obra": {
+            "titulo": "Del Rey abajo ninguno, y labrador mas honrado Garcia del Castañar",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "Francisco de Rojas Zorrilla (1607-1648)",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 3651
+            }
+          ],
+          "contexto": "Representación teatral programada para las 5 de la tarde"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 3651
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "opera",
+          "obra": "Blanca y Falliero",
+          "compositor": "Rossini",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 3651
+            }
+          ],
+          "contexto": "Ópera seria italiana en dos actos programada para las 8, con intermedio de fandango"
+        },
+        {
+          "tipo": "danza",
+          "obra": "Boleras y Fandango",
+          "lugar": "Teatros del Balon y Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 3651
+            }
+          ],
+          "contexto": "Piezas de baile español incluidas en la programación teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Tauromaquia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 3651
+            }
+          ],
+          "descripcion": "Función de becerros herales a beneficio del Hospital de Mujeres con detalles sobre ganaderías, picadores y banderilleros",
+          "contexiones": [
+            "Entretenimiento público",
+            "Beneficencia"
+          ]
+        },
+        {
+          "tema": "Comercio de perlas",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 3651
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la pesca de perlas en Ceylan, describiendo técnicas y costumbres locales",
+          "conexiones": [
+            "Comercio",
+            "Etnografía"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2527841.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "23 DE AGOSTO DE 1826",
+      "Número": "5673",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "Teodoro ó el huerfano agradecido: novela original en un tomo, escrita por una española. Esta obrita, donde está retratada la virtud con los colores mas interesantes, es la mejor leccion para una jóven que quiera conducirse en la sociedad con el debido acierto.=Se hallará en la librería de Navarro, frente á San Agustin, á 8 rs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónima (española)",
+          "obra": {
+            "titulo": "Teodoro ó el huerfano agradecido",
+            "genero": "novela",
+            "actos": null,
+            "autor_obra": "una española",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio publicitario de una novela de carácter moral y educativo dirigida principalmente a jóvenes lectoras"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensa sección sobre una sesión del Instituto de Francia donde se discuten avances en química y teorías científicas",
+          "conexiones": [
+            "Mención de científicos importantes como Cuvier, Davy, Gay-Lussac, etc."
+          ]
+        },
+        {
+          "tema": "Estadística histórica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Estudio demográfico detallado de la antigua Roma presentado por Mr. Dureau de Lemalle",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación/Academia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Descripción de una sesión académica del Instituto de Francia con la participación de las cuatro Academias",
+          "conexiones": [
+            "Vinculado con la sección de ciencias"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534208.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "JUEVES 19 DE ENERO DE 1826",
+      "Número": "3451",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO.—La compañía dramatica dará hoy la funcion siguiente.—El fiscal de su delito ó juez sordo y testigo ciego (comedia en 5 actos).—Las mollares de Sevilla.—Los maestros de la Raboso (tonadilla).—Los bentorrillos de Puerta de Tierra ó Funfarron (sainete).—A las 6½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El fiscal de su delito ó juez sordo y testigo ciego",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral principal de la función del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los bentorrillos de Puerta de Tierra ó Funfarron",
+            "genero": "sainete",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Pieza corta cómica que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "interprete": "Compañía dramática",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Los maestros de la Raboso (tonadilla) como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Se anuncia 'Reglamento general para las escuelas de latinidad y los colegios de humanidades: un cuaderno en 4.° Se hallará en la librería de Hortal y Compañía, plazuela de S. Agustin.'",
+          "conexiones": [
+            "Indica la presencia de instituciones educativas formales y la enseñanza del latín"
+          ]
+        },
+        {
+          "tema": "Vida social y comercial",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Incluye diversos anuncios de ventas, alquileres y servicios que reflejan la vida cotidiana en Cádiz",
+          "conexiones": [
+            "Se relaciona con los aspectos comerciales y sociales de la ciudad"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534268.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "VIERNES 10 DE FEBRERO DE 1826",
+      "Número": "3473",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3473
+            }
+          ],
+          "descripcion": "Menciona la celebración religiosa del día: 'SAN GUILLERMO Y SANTA ESCOLÁSTICA. El Jubileo de las 40 horas está en la iglesia de las Descalzas.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 3473
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en la plaza que incluye productos ultramarinos, comestibles y otros efectos, mostrando la actividad comercial de Cádiz como puerto importante.",
+          "conexiones": [
+            "Navegación comercial",
+            "Mercado internacional"
+          ]
+        },
+        {
+          "tema": "Navegación y comercio marítimo",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3473
+            },
+            {
+              "pdf": 2,
+              "periodico": 3473
+            }
+          ],
+          "descripcion": "Detallada información sobre movimientos de buques, entradas y salidas del puerto, con especificación de capitanes, rutas y cargas.",
+          "conexiones": [
+            "Comercio internacional",
+            "Economía"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 3473
+            }
+          ],
+          "descripcion": "Referencia indirecta a través de la mención de Santa Escolástica, patrona de los estudiantes",
+          "conexiones": [
+            "Religión"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534371.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 de marzo de 1826",
+      "Número": "3495",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "función teatral",
+          "interprete": "El joven Malavar",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncia una función que incluye varios ejercicios de equilibrio, incluyendo 'la suerte de la defensa indiana', 'la suerte del candelero romano' y concluye con el 'alambre flojo'. Entrada 21 cuartos, a las 7."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia/Academia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Sesión de la Real Academia de Ciencias de París sobre investigaciones químicas para papel inalterable y tinta indeleble",
+          "conexiones": [
+            "Desarrollo científico",
+            "Investigación química"
+          ]
+        },
+        {
+          "tema": "Medicina/Botánica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Descubrimiento médico sobre las propiedades de la digital obscura (digitalis hispana) para el tratamiento de hidropesía y úlceras escrofulosas",
+          "conexiones": [
+            "Investigación médica",
+            "Botánica española"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las 40 horas en la iglesia de Sta. María",
+          "conexiones": [
+            "Vida religiosa local"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534441.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "26 DE MARZO DE 1826",
+      "Número": "3517",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "LA RESURRECCION DE JESU-CRISTO[Poema completo transcrito en las páginas 2-3 del periódico, un extenso poema religioso sobre la Resurrección]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La resurreccion de Jesu-Cristo",
+            "genero": "Poema religioso",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            },
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Poema extenso de temática religiosa para conmemorar la Pascua de Resurrección"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Boleras y baile pantomímico",
+          "interprete": "Madama de Croix",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Espectáculo que incluye 'Sombras gigantescas' y el baile pantomímico 'el Pintor burlado por el maestro de danzar'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncios de dos teatros (Teatro del Balon y Teatro Principal) con espectáculos variados incluyendo física experimental, acrobacias, equilibrismo y bailes",
+          "conexiones": [
+            "Incluye espectáculos musicales y teatrales"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencias a la Pascua de Resurrección, San Braulio y San Montiano, además del Jubileo de 40 horas en la iglesia de S. Felipe Neri",
+          "conexiones": [
+            "Se relaciona con el poema sobre la Resurrección"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534465.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "VIERNES 7 DE ABRIL DE 1826",
+      "Número": "3529",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "Fábulas en verso castellano para uso de las escuelas por D. Felix María Samaniego, un tomo 8.° pergamino á 5 rvn. y en pasta á 6: Se hallará en la librería de Hortal y Compañía plazuela de S. Agustin núm. 201."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Félix María Samaniego",
+          "obra": {
+            "titulo": "Fábulas en verso castellano",
+            "genero": "Fábulas didácticas",
+            "actos": null,
+            "autor_obra": "Félix María Samaniego",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta de libro didáctico en librería local"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de libro didáctico para escuelas",
+          "conexiones": [
+            "Fábulas de Samaniego"
+          ]
+        },
+        {
+          "tema": "Medicina y Salud Pública",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de vacuna pública y baños terapéuticos",
+          "conexiones": [
+            "Junta superior de Sanidad",
+            "Casas Capitulares"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Lista extensa de precios corrientes de productos varios",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Ciriaco y Compañeros Mártires y el Jubileo en la iglesia de S. Francisco",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2534504.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "18 DE ABRIL DE 1826",
+      "Número": "3540",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al santo del día (SAN ELEUTERIO, OBISPO Y MARTIR) y al Jubileo de las 40 horas en la iglesia de San José",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en la plaza que incluye productos ultramarinos, comestibles y otros efectos, mostrando la actividad comercial de Cádiz como puerto importante",
+          "conexiones": [
+            "Conexión con las noticias marítimas y comerciales de las páginas anteriores"
+          ]
+        },
+        {
+          "tema": "Política Internacional",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Noticias sobre la situación política en Buenos Aires y las tensiones con Brasil, incluyendo información sobre el bloqueo del puerto",
+          "conexiones": [
+            "Se relaciona con las noticias comerciales y marítimas del resto del periódico"
+          ]
+        },
+        {
+          "tema": "Administrativa",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 5
+            }
+          ],
+          "descripcion": "Real orden sobre renovación de cartas de pago por la Tesorería general, mostrando aspectos de la administración pública de la época",
+          "conexiones": [
+            "Conecta con otros avisos oficiales y administrativos del periódico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534534.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "25 de abril de 1826",
+      "Número": "3547",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "El periódico comienza con referencias religiosas, incluyendo la celebración de San Marcos Evangelista y el Jubileo de las 40 horas en la iglesia de Capuchinos. Se publica un extenso edicto sobre el Jubileo del Año Santo firmado por el Obispo de Cádiz.",
+          "conexiones": [
+            "Administración eclesiástica",
+            "Vida social"
+          ]
+        },
+        {
+          "tema": "Administración y economía",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Contiene información sobre fondos públicos, vales reales y cambios monetarios. Se incluye una sección detallada sobre la Real Caja de Amortización y sorteos de vales no consolidados.",
+          "conexiones": [
+            "Política",
+            "Economía nacional"
+          ]
+        },
+        {
+          "tema": "Información marítima y comercial",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Incluye noticias sobre movimientos de barcos en el puerto, específicamente la entrada del quechemarin español Santa Ana desde Bayona de Galicia.",
+          "conexiones": [
+            "Comercio",
+            "Navegación"
+          ]
+        }
+      ]
+    }
+  ]
 }

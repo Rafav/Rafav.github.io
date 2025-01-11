@@ -1,4 +1,1464 @@
 {
   "Año": 1819,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2525381.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "21 DE ENERO DE 1819",
+      "Número": "903",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 903
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las XL horas en la capilla de RR. PP. Observantes de S. Francisco y celebración de Santa Inés Virgen",
+          "conexiones": [
+            "Se relaciona con los horarios de culto y la organización religiosa de la ciudad"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 903
+            }
+          ],
+          "descripcion": "Extensa lista de precios y aranceles para diferentes productos comerciales, incluyendo aceitunas, acero, agujas, etc.",
+          "conexiones": [
+            "Se relaciona con la actividad mercantil y económica de Cádiz"
+          ]
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": "Suplemento"
+            }
+          ],
+          "descripcion": "Real Decreto sobre un empréstito de 60 millones de reales para la pacificación de los dominios de Ultramar",
+          "conexiones": [
+            "Conecta con la situación política colonial y las finanzas públicas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525407.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "12 DE FEBRERO DE 1819",
+      "Número": "924",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 924
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las XL horas en la Iglesia de San Antonio y celebración de Santa Olalla Virgen y Mártir",
+          "conexiones": [
+            "Orden de la Plaza",
+            "Noticia del fallecimiento del Rey Carlos IV"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 924
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y otros efectos comerciales, incluyendo azúcar, café, cacao, especias y otros bienes coloniales",
+          "conexiones": [
+            "Sección de Comercio",
+            "Referencias a puertos comerciales"
+          ]
+        },
+        {
+          "tema": "Actividad Marítima",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 924
+            }
+          ],
+          "descripcion": "Información sobre mareas en la bahía y movimientos de barcos, incluyendo datos astronómicos y meteorológicos",
+          "conexiones": [
+            "Comercio",
+            "Reportes meteorológicos"
+          ]
+        },
+        {
+          "tema": "Administración y Gobierno",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 924
+            }
+          ],
+          "descripcion": "Comunicación oficial sobre el fallecimiento de Carlos IV y disposiciones de luto",
+          "conexiones": [
+            "Orden de la Plaza",
+            "Aspectos religiosos"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525429.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "6 DE MARZO DE 1819",
+      "Número": "945",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": null,
+          "contenido": "Poesía burlesca antigua.COPLAS DE UN VINOSO Á UNA BOTA.[Transcripción completa del poema burlesco que ocupa gran parte de la primera página]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Coplas de un vinoso a una bota",
+            "genero": "poesía burlesca",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "citas": [
+            "A una bota de Peralta / Un cofrade de la cepa / Con lengua roma le dijo / De esta manera..."
+          ],
+          "contexto": "Poema satírico que utiliza el formato de coplas tradicionales para crear una composición humorística sobre el tema del vino"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Tecnología/Ciencia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención de autómatas en Londres: un jugador de ajedrez y un intérprete de clarín",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a un niño prodigio en Inglaterra que realiza cálculos matemáticos complejos",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo en la Iglesia de S. Antonio y referencias a San Victor Mártir",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2525451.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE MARZO DE 1819",
+      "Número": "967",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": 967,
+          "contenido": "Son los Pirís, bien pintados,Un compuesto de dos sexos,Rizas cabezas sin sesos,Y holgazanes desatados;De puro andar apretadosSe salen por la tirilla,Son galanes de tablilla,Hablan mucho, ignoran todo,Y solo estudian el modoDe ponerse la toquilla."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Baltazar Rufo",
+          "obra": {
+            "titulo": "Definición de los Pirís",
+            "genero": "Poesía satírica",
+            "actos": null,
+            "autor_obra": "Baltazar Rufo",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 967
+            }
+          ],
+          "citas": [
+            "Son los Pirís, bien pintados..."
+          ],
+          "contexto": "Composición poética satírica en décima que define humorísticamente a los 'pirís', aparentemente un tipo social de la época"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 967
+            }
+          ],
+          "descripcion": "Aviso sobre abonos para el teatro cómico de la ciudad, incluyendo precios y condiciones de suscripción",
+          "conexiones": [
+            "Vida social y entretenimiento de la época"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 967
+            }
+          ],
+          "descripcion": "Extensa lista de productos textiles y mercancías a la venta en la tienda del Jardinillo",
+          "conexiones": [
+            "Vida económica y social de Cádiz"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 967
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Real Capilla del Pópulo y referencia a San Sixto Papa",
+          "conexiones": [
+            "Vida religiosa de la ciudad"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525473.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "19 DE ABRIL DE 1819",
+      "Número": "089",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia y Medicina",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "089"
+            }
+          ],
+          "descripcion": "Memoria científica sobre higiene laboral titulada 'Mémoire sur l'Hygiène des Professions insalubres' por el Dr. Gosse de Ginebra, publicada en un periódico suizo por M. Pictet. Discute métodos de protección contra emanaciones tóxicas en manufacturas.",
+          "conexiones": [
+            "Salud pública",
+            "Desarrollo industrial",
+            "Avances médicos"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "089"
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Real Capilla del Pópulo por la Hermandad de su Rosario, con horarios específicos de exposición y ocultación.",
+          "conexiones": [
+            "Vida social",
+            "Calendario religioso"
+          ]
+        },
+        {
+          "tema": "Comercio y Navegación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "089"
+            }
+          ],
+          "descripcion": "Detallado registro de embarcaciones entrando y saliendo del puerto, incluyendo origen, destino, carga y capitanes.",
+          "conexiones": [
+            "Economía",
+            "Transporte marítimo"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525495.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "11 de Mayo de 1819",
+      "Número": "1011",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "TEATRO.—Eteocle y Polinice ó los hijos de Edipo (trag. en 5 actos traducida del Italiano por D. Antonio Sabiñon.)—Seguidillas manchegas (por las Sras. Jimenez y Lamadrid, y los Sres. Burés y Alonso.)—El duelo y el baile á un tiempo (sainete.)—A las ocho.Entrada de ayer: Boletines 392.—Producto 2510 rvn. y 2 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Antonio Sabiñon",
+          "obra": {
+            "titulo": "Eteocle y Polinice ó los hijos de Edipo",
+            "genero": "tragedia",
+            "actos": 5,
+            "autor_obra": "traducida del Italiano",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para representación esa noche"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza tradicional",
+          "interprete": "Sras. Jimenez y Lamadrid, Sres. Burés y Alonso",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Seguidillas manchegas interpretadas como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Parroquia de S. José",
+          "conexiones": []
+        },
+        {
+          "tema": "sanidad pública",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso sobre administración de vacuna: 'Mañana 12 del corriente se administra la vacuna en las casas Capitulares, en la oficina destinada al intento, á las once de la mañana.'",
+          "conexiones": []
+        },
+        {
+          "tema": "comercio y economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso análisis del comercio marítimo y balance comercial del Puerto de Veracruz en 1817",
+          "conexiones": [
+            "Referencias a puertos y rutas comerciales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525517.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "2 DE JUNIO DE 1819",
+      "Número": "1033",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": null,
+          "contenido": "El dia 19 de Marzo se egecutó en el gran teatro de Burdeos una pieza nueva intitulada: El Tribunal invisible. El autor la habia honrado con el título de tragedia; pero el público no la calificó ni aun de melodrama; y aunque constaba de cinco actos, murió al tercero de una horrosa descarga de silvidos."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El Tribunal invisible",
+            "genero": "tragedia",
+            "actos": 5,
+            "autor_obra": "No especificado",
+            "lugar de representación": "gran teatro de Burdeos"
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Reseña de un fracaso teatral en Burdeos"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 2,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "música religiosa",
+          "interprete": "No especificado",
+          "lugar": "capilla de un Soberano",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "contexto": "Anécdota sobre un miserere ejecutado en una capilla real"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Establecimiento de un método de enseñanza mutua por Madama de Saillet en París, basado en el sistema del abate Gauthier",
+          "conexiones": [
+            "Religión como base del establecimiento"
+          ]
+        },
+        {
+          "tema": "Artes plásticas",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Descripción de un grupo escultórico del taller de Mr. Gois en París, representando un descendimiento de la Cruz",
+          "conexiones": [
+            "Arte religioso",
+            "Escultura moderna"
+          ]
+        },
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de representación teatral: 'Indulgencia para todos' de D. Manuel de Gorostiza, seguido de 'Seguidillas manchegas' y 'La familia de la criada'",
+          "conexiones": [
+            "Programación cultural",
+            "Entretenimiento público"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2525539.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "24 de junio de 1819",
+      "Número": "1055",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": "1055",
+          "contenido": "LAS COSAS DE MODA.—LETRILLA SATÍRICA.[Poema satírico completo que ocupa las páginas 1-2]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "M.E.B.",
+          "obra": {
+            "titulo": "Las cosas de moda",
+            "genero": "Letrilla satírica",
+            "actos": null,
+            "autor_obra": "M.E.B.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1055"
+            }
+          ],
+          "citas": [
+            "Observo en el mundo,/Ramon, muchas cosas,/Que nuestros abuelos/Tuvieron por locas..."
+          ],
+          "contexto": "Poema satírico sobre las costumbres modernas, publicado originalmente en el Diario de Barcelona"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Mogigata",
+            "genero": "Comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "1055"
+            }
+          ],
+          "contexto": "Obra teatral programada para representación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "1055"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Boleras",
+          "interprete": "Sra. María Dolores La-Madrid y el Sr. Luis Alonso",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "1055"
+            }
+          ],
+          "contexto": "Parte del programa teatral del día"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "1055"
+            }
+          ],
+          "descripcion": "TEATRO DEL BALON.—Función de física, química, mecánica, óptica, catóptrica y fantasmagoría",
+          "conexiones": [
+            "Programación cultural",
+            "Precios de entrada",
+            "Horarios"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1055"
+            }
+          ],
+          "descripcion": "LA NATIVIDAD DE S. JUAN BAUTISTA.—(Fiesta de precepto.) El Jubileo de las XL horas está en la Iglesia de S. Agustin",
+          "conexiones": [
+            "Calendario religioso",
+            "Festividades"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530920.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "16 DE JULIO DE 1819",
+      "Número": "1077",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "TEATRO. — La misma funcion de ayer, omitiendo la obertura la danza del joven Enrique.NOTA.—Hoy concluye la primera temporada cómica.Entrada de ayer: Boletines 1099.= Producto para la empresa 6125 rvn. y 4 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "joven Enrique",
+          "lugar": "Teatro (no especificado)",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se menciona una danza que fue omitida de la función teatral del día"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "EL TRIUNFO DE LA SANTA CRUZ Y NUESTRA SEÑORA del Carmen.—Indulgencia plenaria en el Carmen. El Jubileo de las XL horas está en la Iglesia de RR. PP. Carmelitas, dotado por un devoto. Se manifiesta á las 8 de la mañana, y se oculta á las 6 de la tarde.",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "El documento contiene extensas listas de precios, transacciones comerciales, movimientos de buques y cambios monetarios, evidenciando la importancia de Cádiz como puerto comercial.",
+          "conexiones": []
+        },
+        {
+          "tema": "Teatro comercial",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Se incluyen datos sobre la asistencia y recaudación del teatro: 1099 boletines vendidos con una recaudación de 6125 reales de vellón y 4 maravedís",
+          "conexiones": [
+            "Se relaciona con la actividad artística mencionada"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530955.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "SÁBADO 7 DE AGOSTO DE 1819",
+      "Número": "1099",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1099"
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Iglesia de RR. MM. Descalzas y celebración de San Cayetano Fundador y San Alberto",
+          "conexiones": [
+            "Orden religiosa",
+            "Festividad católica"
+          ]
+        },
+        {
+          "tema": "Educación/Traducción",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "1099"
+            }
+          ],
+          "descripcion": "Mención de Mr. Kieffer, Secretario de S.M. Cristianísima para lenguas orientales, presentando una traducción del Nuevo Testamento en lengua turca",
+          "conexiones": [
+            "Religión",
+            "Lenguas orientales"
+          ]
+        },
+        {
+          "tema": "Comercio y navegación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "1099"
+            }
+          ],
+          "descripcion": "Sección de COMERCIO con información sobre embarcaciones en Barcelona y valores reales",
+          "conexiones": [
+            "Economía",
+            "Transporte marítimo"
+          ]
+        },
+        {
+          "tema": "Sociedad y costumbres",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "1099"
+            }
+          ],
+          "descripcion": "Avisos sobre ofertas de trabajo doméstico, nodrizas y venta de una esclava, reflejando la estructura social de la época",
+          "conexiones": [
+            "Economía",
+            "Estructura social",
+            "Esclavitud"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530981.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 DE AGOSTO DE 1810",
+      "Número": "1121",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON.—Se egecutará la pieza de Juanito y Rosita; seguirán dos bailes de metamorfosis; un jóven aficionado bailará el baile inglés, el zapateado y los panaderos; se hará la pantomima nueva Engaños contra cautelas ó sea las tramas de Arlequin; concluyendo con la fantasmería.—A las cinco.TEATRO.—La Mogigata (com. en 3 actos.)—Seguidillas manchegas (por las Sras. Jimenez y La-Madrid, y los Sres. Burés y Alonso.)El estudiante chusqueado (sainete nuevo.)—A las ocho."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Leandro Fernández de Moratín",
+          "obra": {
+            "titulo": "La Mogigata",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "Leandro Fernández de Moratín",
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral representada como parte de la programación del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El estudiante chusqueado",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": null,
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete nuevo presentado como parte del programa teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "interprete": "jóven aficionado",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Presentación de varios bailes incluyendo baile inglés, zapateado y panaderos"
+        },
+        {
+          "tipo": "seguidillas",
+          "interprete": "Sras. Jimenez y La-Madrid, y los Sres. Burés y Alonso",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Seguidillas manchegas interpretadas como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "El documento incluye una detallada programación teatral con diferentes tipos de espectáculos, desde comedias formales hasta pantomimas y bailes populares",
+          "conexiones": [
+            "Programación en dos teatros diferentes: Teatro del Balon y Teatro",
+            "Mezcla de géneros cultos y populares",
+            "Datos sobre la gestión económica del teatro"
+          ]
+        },
+        {
+          "tema": "Gestión teatral",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Se incluye información sobre la venta de boletos y gestión de localidades, con datos específicos sobre ingresos y administración",
+          "conexiones": [
+            "Entrada del día 24: Boletines 566.",
+            "Producto para la empresa 5010 rvn. y 16 mrs."
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531003.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "20 DE SETIEMBRE DE 1819",
+      "Número": "1143",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1143
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia de RR. PP. de Observantes de S. Francisco y la festividad de San Eustaquio Mártir",
+          "conexiones": [
+            "Conecta con la vida religiosa cotidiana de Cádiz"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1143
+            }
+          ],
+          "descripcion": "Detallado informe sanitario que incluye estadísticas de enfermedades y fallecimientos en la ciudad, con especial atención a fiebres y otras dolencias",
+          "conexiones": [
+            "Se relaciona con los avisos posteriores sobre hospitales y medidas sanitarias"
+          ]
+        },
+        {
+          "tema": "Beneficencia",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 1143
+            }
+          ],
+          "descripcion": "Lista detallada de donaciones para el hospital de mujeres, mostrando la estructura social y la beneficencia en la ciudad",
+          "conexiones": [
+            "Vinculado a las medidas sanitarias y la gestión hospitalaria"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531026.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "12 de Octubre de 1819",
+      "Número": "1165",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1165"
+            }
+          ],
+          "descripcion": "Referencias a celebraciones religiosas: 'NUESTRA SEÑORA DEL PILAR, SAN FELIX, SAN CIPRIANO Obispo y S. Serafin. El Jubileo de las XL horas está en la Capilla de la Esclavitud de Ntra. Sra. de la Merced, sita en el mismo Convento, por un devoto del Señor de la Buena Muerte. Se manifiesta á las 8 de la mañana, y se oculta á las 6 de la tarde.'",
+          "conexiones": [
+            "Sanidad pública",
+            "Vida social"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1165"
+            }
+          ],
+          "descripcion": "Extensos reportes sobre la situación sanitaria en la ciudad, incluyendo estadísticas de enfermos y fallecidos por fiebre contagiosa. Se incluyen medidas sanitarias y bandos oficiales para el control de la epidemia.",
+          "conexiones": [
+            "Administración pública",
+            "Vida social"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": "1165"
+            }
+          ],
+          "descripcion": "Detallada lista de precios corrientes de diversos productos comerciales en Cádiz, incluyendo frutos ultramarinos, comestibles y efectos varios. También incluye información sobre cambios monetarios y premios de seguros.",
+          "conexiones": [
+            "Administración pública",
+            "Comercio internacional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531048.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "3 DE NOVIEMBRE DE 1819",
+      "Número": "1187",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 2,
+          "periodico": null,
+          "contenido": "ARTÍCULO REMITIDO.Sr. Editor del Diario. = Entre los varios versos publicados hasta el presente en Madrid con motivo de la llegada de la Reyna nuestra Señora me parece que los mas dignos de la luz pública son los adjuntos, que le remito à vd. por si tiene à bien insertarlos en su apreciable Periódico.=M. P. A.ODA.La destruccion fatal que al mundo aflige,Y la conservacion de los mortalesCon incesante accion luchan iguales...[transcripción completa del poema]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "M.P.A. (iniciales del autor)",
+          "obra": {
+            "titulo": "Oda a la llegada de la Reina",
+            "genero": "Oda",
+            "actos": null,
+            "autor_obra": "M.P.A.",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "citas": [
+            "La destruccion fatal que al mundo aflige..."
+          ],
+          "contexto": "Poema laudatorio escrito con motivo de la llegada de la reina a Madrid"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las XL horas en la Santa Escuela de Cristo",
+          "conexiones": []
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extensos reportes sobre enfermedades contagiosas y comunes en diferentes localidades",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre embarcaciones comerciales en Barcelona",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531070.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "25 DE NOVIEMBRE DE 1819",
+      "Número": "1208",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": "1208",
+          "contenido": "Extracto del Periódico Miscelanea de Comercio, Artes y Literatura. CRÓNICA DE LA PUERTA DEL SOL..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_indirecta",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "Crónica de la Puerta del Sol",
+            "genero": "crónica costumbrista",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1208"
+            }
+          ],
+          "citas": [
+            "No hay que cansarse, caminamos hácia atrás como los cangrejos..."
+          ],
+          "contexto": "Pieza satírica sobre las costumbres y modas de la época"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Moda y costumbres sociales",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1208"
+            }
+          ],
+          "descripcion": "Extensa descripción satírica de las modas y comportamientos de los petimetres, incluyendo detalles sobre vestimenta, accesorios y conducta social",
+          "conexiones": [
+            "Crítica social",
+            "Costumbrismo"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1208"
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las XL horas en la Iglesia de S. Juan de Dios",
+          "conexiones": [
+            "Vida social",
+            "Calendario religioso"
+          ]
+        },
+        {
+          "tema": "Sanidad pública",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": "1208"
+            }
+          ],
+          "descripcion": "Informes detallados sobre enfermedades contagiosas y comunes en varios hospitales",
+          "conexiones": [
+            "Estadísticas sanitarias",
+            "Administración pública"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531082.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "7 DE DICIEMBRE DE 1819",
+      "Número": "1220",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": null,
+          "contenido": "TEATRO.—El amor vencedor (com. en 4 actos, en la que se servirá una decoracion nueva de Plaza, obra del profesor D. Juan Lizasoain.) — El page inconstante (baile en 3 actos, que será precedido de la obertura de la ópera Juan de Paris.)—A las siete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": null,
+          "obra": {
+            "titulo": "El amor vencedor",
+            "genero": "comedia",
+            "actos": 4,
+            "autor_obra": null,
+            "lugar de representación": "Teatro (no especificado)"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral con decoración nueva"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "obertura_opera",
+          "interprete": null,
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se menciona la obertura de la ópera 'Juan de Paris' como preludio al baile 'El page inconstante'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Ambrosio Obispo y Doctor, y al Jubileo concedido por el Papa Clemente XIII",
+          "conexiones": []
+        },
+        {
+          "tema": "artes_plasticas",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención de una 'decoracion nueva de Plaza, obra del profesor D. Juan Lizasoain' para la representación teatral",
+          "conexiones": [
+            "Conecta con la representación teatral de 'El amor vencedor'"
+          ]
+        },
+        {
+          "tema": "vida_social",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre horarios de ceremonias religiosas, datos meteorológicos y actividades mercantiles que reflejan la vida cotidiana de Cádiz",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531094.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "19 DE DICIEMBRE DE 1819",
+      "Número": "1232",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1232,
+          "contenido": "ODALas bóvedas RealesAl blando son de dulces instrumentos,Resonaban con ecos celestiales;Y vivas mil, volando por los vientos[...][Poema completo que ocupa gran parte del ejemplar]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "F. de Laiglesia y Darrac",
+          "obra": {
+            "titulo": "Oda al casamiento del Rey",
+            "genero": "poesía laudatoria",
+            "actos": null,
+            "autor_obra": "F. de Laiglesia y Darrac",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1232
+            }
+          ],
+          "citas": [
+            "Las bóvedas Reales / Al blando son de dulces instrumentos..."
+          ],
+          "contexto": "Poema laudatorio dedicado al casamiento del Rey Fernando VII con María Josefa Amalia de Sajonia"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La presumida y la hermosa",
+            "genero": "comedia de gracioso",
+            "actos": 3,
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1232
+            }
+          ]
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 1232
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile cómico",
+          "interprete": "Sr. Pautret",
+          "obra": "Los vendimadores del Medoc",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1232
+            }
+          ],
+          "contexto": "Baile cómico nuevo en 3 actos precedido de la obertura Juanita y Celina del maestro Nicolo"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro mecánico",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1232
+            }
+          ],
+          "descripcion": "Función de física y mecánica desempeñada por autómatas de cinco cuartas de alto representando 'Marco Antonio y Cleopatra', bailes de metamorfosis y pantomima",
+          "conexiones": [
+            "Relacionado con las otras representaciones teatrales del día"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1232
+            }
+          ],
+          "descripcion": "Referencias al Jubileo de las XL horas en la Iglesia de RR. MM. Descalzas y celebración de San Nemesio Mártir",
+          "conexiones": [
+            "Conecta con el calendario litúrgico del día"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531102.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "27 DE DICIEMBRE DE 1819",
+      "Número": "1240",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": null,
+          "contenido": "TEATRO.—La novia impaciente (drama en un acto)—Pizarro en Quito gran baile histórico en 3 actos de la composicion del Sr. Pautret exhornado del aparato teatral que exige su argumento.) La familia de la criada (sainte)—A las siete.NOTA—Mañana por la tarde habrá funcion, en la que se repetirá el baile Los vendimiedores del Medoc ó los zámpas."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": null,
+          "obra": {
+            "titulo": "La novia impaciente",
+            "genero": "drama",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro (no especificado de Cádiz)"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra programada en la cartelera teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile histórico",
+          "interprete": "No especificado",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de 'Pizarro en Quito' y 'Los vendimiedores del Medoc'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Tauromaquia",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Corrida de toros en celebración del enlace real de Fernando VIII con María Josefa Amalia de Sajonia, detallando toreros y ganaderías",
+          "conexiones": [
+            "Eventos sociales",
+            "Celebraciones reales"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencias a San Juan Apóstol y Evangelista, y celebraciones religiosas en la Iglesia de RR. PP. Carmelitas",
+          "conexiones": [
+            "Vida social",
+            "Calendario religioso"
+          ]
+        },
+        {
+          "tema": "Salud pública",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Extenso artículo sobre la epidemia de 1819 en Cádiz y las medidas tomadas para combatirla",
+          "conexiones": [
+            "Política",
+            "Sociedad",
+            "Administración pública"
+          ]
+        }
+      ]
+    }
+  ]
 }

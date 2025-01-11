@@ -1,4 +1,1457 @@
 {
   "Año": 1828,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2532766.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIERCOLES 23 DE ENERO DE 1828",
+      "Número": "4190",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 3,
+          "contenido": "ESTADISTICA DE LOS TEATROS DE PARIS. Durante el año último se han representado en los teatros de esta capital 194 piezas nuevas, á saber: 24 óperas, 6 tragedias, 22 comedias, 3 dramas, 112 zarzuelas, 4 bailes pantomímicos y 23 melodramas..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "D. Nicolas Vaccay",
+          "obra": {
+            "titulo": "Julieta y Romeo",
+            "genero": "ópera heroica",
+            "actos": 2,
+            "autor_obra": "D. Nicolas Vaccay",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Anuncio de representación teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 3,
+          "periodico": 3
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "No especificado",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Representación de 'Julieta y Romeo' a las 7"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Exámenes públicos en la Academia de S. Fernando de Jerez, incluyendo discursos, recitaciones y demostraciones de conocimientos en diversas materias",
+          "conexiones": [
+            "Religión",
+            "Literatura",
+            "Gramática"
+          ]
+        },
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Estadística detallada de representaciones teatrales en París durante el año anterior, clasificando por géneros y teatros",
+          "conexiones": [
+            "Música",
+            "Literatura dramática"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532789.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "14 DE FEBRERO DE 1828",
+      "Número": "4212",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.=Funcion particular á beneficio del cuerpo de coristas.=Primera parte=Se ejecutará por ultima vez el acto primero de la opera El Cruzado en Egipto.=Segunda parte=Sinfonia de la Urraca.=1.° Aria de Rosina en el Barbero de Sevilla; en español, por el jóven corista Antonio Hernandez.=2.° Duo de Elisa y Claudio; en español, por los Sres. Bueno y Garcia, el corista.=3.° Aria de la Urraca, por el Sr. Garcia, bufo.=4.° Aria de Rossini, nueva en este teatro, por la Sra. Michelessi.=5.° Aria de la Urraca, en español, por la Sra. Amigot.=6.° Duo de Pipo y Nineta, de la misma ópera, por las Sras. Bressa y Schieroni.=A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Rossini",
+          "obra": {
+            "titulo": "El Barbero de Sevilla",
+            "genero": "ópera",
+            "actos": null,
+            "autor_obra": "Rossini",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Representación de un aria de la ópera como parte de una función benéfica"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Múltiples (Sras. Michelessi, Amigot, Bressa, Schieroni, Sres. Hernandez, Bueno, Garcia)",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Función benéfica para el cuerpo de coristas con fragmentos de varias óperas incluyendo 'El Cruzado en Egipto', 'La Urraca', 'El Barbero de Sevilla' y 'Elisa y Claudio'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Anuncio de un profesor de inglés que ofrece clases particulares, destacando su formación y experiencia en Inglaterra",
+          "conexiones": []
+        },
+        {
+          "tema": "Medicina",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Extenso artículo sobre avances en cirugía, específicamente sobre un nuevo método para tratar cálculos en la vejiga desarrollado por el Dr. Civiale",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2532811.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "7 DE MARZO DE 1828",
+      "Número": "4234",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": 6
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "música clásica y ópera",
+          "interprete": "Profesor D. G. Moya",
+          "lugar": "Almacén de música, calle Ancha, num. 142",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "contexto": "Anuncio de venta de partituras y obras musicales modernas, principalmente de Rossini, incluyendo métodos de enseñanza musical y arreglos para diversos instrumentos. Las obras provienen de Milán, París y Viena."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación musical",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Se mencionan los conservatorios de Milán, Nápoles, Bolonia, Francia e Italia, y sus métodos de enseñanza musical, especialmente para piano y canto.",
+          "conexiones": [
+            "Relacionado con la venta de partituras y métodos de enseñanza"
+          ]
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Detallado estado de entradas y salidas de caudales de las cajas matrices de la Habana en 1827, mostrando la actividad económica colonial.",
+          "conexiones": [
+            "Conecta con las secciones de precios corrientes y cambios monetarios"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención del Santo Tomás de Aquino y el Jubileo de las 40 horas en la iglesia de S. Lorenzo",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2532840.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 DE MARZO DE 1828",
+      "Número": "4256",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "BIBLIOGRAFIA ESPAÑOLA.Vega (José de la).Este escritor, no mencionado por D. Nicolas Antonio, publicó: Ideas posibles de que se compone un curioso ramillete de fragrantes flores. Amberes, 1692, en 8.º=Rumbos peligrosos por donde navega con titulo de novelas la zozobrante nave de la temeridad temiendo los peligrosos escollos de la censura. Amberes, 1684, en 8.º=T. J. Serrano."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "José de la Vega",
+          "obra": {
+            "titulo": "Ideas posibles de que se compone un curioso ramillete de fragrantes flores",
+            "genero": "prosa",
+            "actos": null,
+            "autor_obra": "José de la Vega",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la sección de Bibliografía Española como registro bibliográfico de obras publicadas"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "José de la Vega",
+          "obra": {
+            "titulo": "Rumbos peligrosos por donde navega con titulo de novelas la zozobrante nave de la temeridad",
+            "genero": "novela",
+            "actos": null,
+            "autor_obra": "José de la Vega",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Listado en la bibliografía como otra obra del mismo autor"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Bibliografía histórica",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Mención a Nicolás Antonio, importante bibliógrafo español del siglo XVII, indicando que el autor José de la Vega no aparece en su obra",
+          "conexiones": [
+            "Se relaciona con las obras literarias listadas en la bibliografía"
+          ]
+        },
+        {
+          "tema": "Imprenta",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Pie de imprenta que indica: 'En la imprenta Gaditana, calle de D. Carlos, num. 69.'",
+          "conexiones": [
+            "Documenta la producción editorial en Cádiz"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2532920.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 31 DE MARZO DE 1828",
+      "Número": "4258",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia a Santa Balbina, virgen y al jubileo de las 40 horas en la iglesia de los Descalzos",
+          "conexiones": []
+        },
+        {
+          "tema": "Tecnología y Desarrollo Urbano",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Extenso artículo sobre maquinaria contra incendios en ciudades como Londres, París y Nueva York, describiendo los sistemas y procedimientos de extinción de incendios",
+          "conexiones": [
+            "Modernización urbana",
+            "Seguridad pública"
+          ]
+        },
+        {
+          "tema": "Administración Eclesiástica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            },
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Bula papal sobre concesión de Subsidio, que detalla aspectos administrativos y financieros de la Iglesia",
+          "conexiones": [
+            "Religión",
+            "Administración pública"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533059.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 12 DE MAYO DE 1828",
+      "Número": "4.300",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "LITERATURA.Arte de hablar en prosa y verso, por D. José Gomez Hermosilla, secretario de la inspeccion general de instruccion pública. Madrid 1826, 2 tomos 8.ºEsta obra es enteramente nueva en España en cuanto al plan que ofrece un escogimiento juicioso de todo lo mejor que se ha escrito sobre la materia..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "José Gómez Hermosilla",
+          "obra": {
+            "titulo": "Arte de hablar en prosa y verso",
+            "genero": "tratado literario",
+            "actos": null,
+            "autor_obra": "José Gómez Hermosilla",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [],
+          "contexto": "Reseña crítica de un tratado sobre retórica y composición literaria"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Lope de Vega",
+          "obra": {
+            "titulo": null,
+            "genero": null,
+            "actos": null,
+            "autor_obra": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "contexto": "Mencionado como ejemplo negativo en el tratado de Hermosilla"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "TEATRO PRINCIPAL.=La compañía gimnastica bajo la direccion de D. José De-Stefani, ejecutará la funcion siguiente, dividida en siete partes...",
+          "conexiones": [
+            "Espectáculos públicos",
+            "Entretenimiento"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia a la Inspección general de instrucción pública",
+          "conexiones": [
+            "Literatura",
+            "Instituciones educativas"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "SANTO DOMINGO DE LA CALZADA.El Jubileo de las 40 horas está en la iglesia de la Pastora.",
+          "conexiones": [
+            "Vida social",
+            "Calendario religioso"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533126.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "3 DE JUNIO DE 1828",
+      "Número": "4.322",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 7,
+          "periodico": 7,
+          "contenido": "Suscrícion.—Acaba de publicarse en Madrid el prospecto de una nueva ediccion de la historia de España del Padre Mariana con la continuacion del Padre Miñana y la narracion de los sucesos principales desde el año de 1600 hasta el año de 1808. En el nombre de Mariana está comprendido todo cuanto puede decirse en elogio de esta obra. Al frente de esta nueva edicion se ha puesto un breve extracto de la vida del expresado Padre Mariana en que se da noticia de las ediciones antiguas y clásicas de su obra..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Juan de Mariana",
+          "obra": {
+            "titulo": "Historia de España",
+            "genero": "Historia",
+            "actos": null,
+            "autor_obra": "Padre Mariana y Padre Miñana",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de nueva edición de la obra histórica clásica, ampliada hasta 1808"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Anuncio de publicación académica dirigida a estudiosos de historia española",
+          "conexiones": [
+            "Vinculado a la publicación de Historia de España del Padre Mariana"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia del Rosario y mención de San Isaac Monge y Santa Clotilde",
+          "conexiones": []
+        },
+        {
+          "tema": "Beneficencia",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Cuenta detallada de limosnas y gastos de la parroquia del Rosario para hospitalidad doméstica",
+          "conexiones": [
+            "Conecta con las referencias religiosas iniciales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533179.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIERCOLES 25 DE JUNIO DE 1828",
+      "Número": "4,344",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 3,
+          "contenido": "TEATRO TURCOEl Egipto tiene ya un periodico con el titulo de Eco de las Piramides, y dentro de poco poseerá tambien un teatro. Una reunion de los principales comerciantes hebreos de Alejandria con el objeto de divertirse en los ratos de descanso formó el proyecto de establecer un teatro particular en que algunos aficionados representaban bien ó mal algunos dramas italianos. Varios comerciantes turcos y levantinos, que entendian algun poco aquel idioma, consiguieron el permiso de asistir á semejantes funciones..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los prisioneros de Montenegro",
+            "genero": "drama",
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro turco en Alejandría"
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "contexto": "Menciona la traducción de este drama italiano al turco como parte del establecimiento del teatro en Egipto"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 3,
+          "periodico": 3
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "música_clásica",
+          "interprete": "D. Telesforo de Trueba",
+          "lugar": "Inglaterra",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "contexto": "Se menciona como músico español que honra a su patria en Inglaterra junto con otros profesores de música españoles"
+        },
+        {
+          "tipo": "piano",
+          "interprete": "Sixto Perez",
+          "obra": "Fantasía para forte-piano sobre un gracioso romance frances",
+          "paginas": [
+            {
+              "pdf": "3-4",
+              "periodico": "3-4"
+            }
+          ],
+          "contexto": "Obra musical elogiada en la Gaceta literaria de Londres"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Desarrollo del teatro en territorios turcos y comparación con el teatro europeo, incluyendo detalles sobre salarios y condiciones de los actores",
+          "conexiones": [
+            "Relacionado con la sección de música y las artes escénicas en general"
+          ]
+        },
+        {
+          "tema": "periodismo",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Referencias a diversos periódicos europeos y la creación de nuevas publicaciones en Egipto",
+          "conexiones": [
+            "Vinculado al desarrollo cultural en territorios orientales"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534275.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "17 DE JULIO DE 1828",
+      "Número": "1366",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.—El Imperio de la verdad ó el ajuste sepulturero (comedia de espectaculo en tres actos).—Boleras de los arboles de Aranjuez.—La maja resuelta ó el marques de Torre-Gorda (sainete).—A las 8½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Imperio de la verdad ó el ajuste sepulturero",
+            "genero": "comedia de espectáculo",
+            "actos": 3,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La maja resuelta ó el marques de Torre-Gorda",
+            "genero": "sainete",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Sainete anunciado en la cartelera teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "obra": "Boleras de los arboles de Aranjuez",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Pieza de baile tradicional español programada entre las obras teatrales"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Arqueología",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Noticia sobre descubrimientos arqueológicos en Herculano, específicamente una casa de barbero completa con sus utensilios",
+          "conexiones": [
+            "Sección ANTIGÜEDADES"
+          ]
+        },
+        {
+          "tema": "Educación y Sanidad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Anuncio sobre vacunación pública organizada por la Junta Superior de Sanidad"
+        }
+      ]
+    },
+    {
+      "PDF": "2534325.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "VIERNES 8 DE AGOSTO DE 1828",
+      "Número": "4.888",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": 6,
+          "contenido": "En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta las obras siguientes.—Vida de la Virgen, escrita en verso por Mendoza, un tomo en 8.°, á 5 rvn. en pasta y 3 en rústica.—Catón en Utica, tragedia inglesa traducida por Collada, un cuaderno rústica á 2½ rvn.—Blanca é Isabela, novela traducida del francés, con una estampa á 3 rvn.—Verdadera idea de un Principe formada de las leyes del reino que tienen relacion al derecho público, por el licenciado Lopez, un tomo en 4.° pergamino á 10 rvn."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Mendoza",
+          "obra": {
+            "titulo": "Vida de la Virgen",
+            "genero": "poesía religiosa",
+            "actos": null,
+            "autor_obra": "Mendoza",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta de libros"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Collada (traductor)",
+          "obra": {
+            "titulo": "Catón en Utica",
+            "genero": "tragedia",
+            "actos": null,
+            "autor_obra": "Anónimo inglés",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta de libros"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación y Academia",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 5
+            }
+          ],
+          "descripcion": "Anuncio buscando un regente revalidado en farmacia para Manila, con detalles sobre condiciones laborales y requisitos",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia de los Descalzos y celebración de San Ciriaco, Mártir",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en la plaza el día 7 de agosto de 1828, incluyendo productos diversos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2534356.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "30 DE AGOSTO DE 1828",
+      "Número": "4.410",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia a Santa Rosa de Lima y al Jubileo de las 40 horas en la iglesia de Sta. María",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Orden de la plaza sobre procedimientos para tomar declaración a mujeres de Intendentes del Ejército",
+          "conexiones": []
+        },
+        {
+          "tema": "Asuntos internacionales",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Extensa cobertura sobre la guerra ruso-turca y la toma de Kars, incluyendo detalles militares y estratégicos",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Instrucciones sobre obligaciones y procedimientos de los Ayuntamientos en la recaudación de contribuciones",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2534386.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "21 DE SETIEMBRE DE 1828",
+      "Número": "4,433",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "LAS CINCO EDADES DE LA COQUETA[Poema completo en cinco partes que ocupa las páginas 1-2]"
+        },
+        {
+          "pdf": 2,
+          "periodico": 2,
+          "contenido": "VINDICIAS LITERARIAS DE ESPAÑA[Sección completa sobre obras españolas publicadas]"
+        },
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.=La Dido (tragedia en 5 actos, en la que saldrá por última vez la Sra. Rosa Peluffo)=Concluida se tocará la sinfonía de la Semiramis=Un intermedio de baile.=El tugareno en Cadiz (sainete).=A las 7½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Calderón de la Barca",
+          "obra": {
+            "titulo": "Comedias de Calderón de la Barca",
+            "genero": "Teatro",
+            "actos": null,
+            "autor_obra": "Juan Jorge Keil",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "contexto": "Edición crítica publicada en Leipzig"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Dido",
+            "genero": "Tragedia",
+            "actos": 5,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ]
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "sinfonía",
+          "obra": "Semiramis",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Interpretada como interludio teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Publicaciones académicas",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Listado de obras españolas publicadas en el extranjero, incluyendo gramáticas, tratados criminales y obras literarias",
+          "conexiones": [
+            "Vindicias Literarias de España",
+            "Difusión internacional de la cultura española"
+          ]
+        },
+        {
+          "tema": "Eventos taurinos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Descripción detallada de una corrida de becerros en la Plaza del Balón",
+          "conexiones": [
+            "Entretenimiento público",
+            "Cultura popular"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534416.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 13 DE OCTUBRE DE 1828",
+      "Número": "4,455",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "LITERATURA.Continúan publicandose los Anales de Ciencias y Agricultura de la Habana con grande utilidad de aquel pais contribuyendo á su ilustracion y prosperidad. El núm. 9 no menos interesante que los demas contiene varios artículos dignos de ser leídos. El terreno es el teatro de la agricultura: mientras no se conozca la topografía vegetal de un pais no puede saberse la estension de que es susceptible tal ó cual cultivo, tal ó cual genero de economia rural..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "P. Juan de Mariana",
+          "obra": {
+            "titulo": "Historia general de España",
+            "genero": "Historia",
+            "actos": null,
+            "autor_obra": "P. Juan de Mariana y P. Miñana",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Se anuncia una nueva edición de la obra histórica con adiciones hasta 1808"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Ciencia y Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Publicación de los Anales de Ciencias y Agricultura de la Habana, revista científica que contribuye a la ilustración y prosperidad de Cuba",
+          "conexiones": [
+            "Literatura científica",
+            "Desarrollo agrícola"
+          ]
+        },
+        {
+          "tema": "Ciencias Matemáticas",
+          "paginas": [
+            {
+              "pdf": "2-3",
+              "periodico": "2-3"
+            }
+          ],
+          "descripcion": "Discusión sobre el problema matemático de la cuadratura del círculo y un supuesto descubrimiento por un joven irlandés",
+          "conexiones": [
+            "Avances científicos",
+            "Geometría"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Anuncio de libro religioso 'Dia practico de retiro á los corazones de Jesus y de María'",
+          "conexiones": [
+            "Literatura religiosa",
+            "Vida espiritual"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534452.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 de noviembre de 1828",
+      "Número": "4477",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al santo del día 'SAN CARLOS BORROMEO, OBISPO' y mención del Jubileo: 'El Jubileo de las 40 horas está en la iglesia de los Descalzos.'",
+          "conexiones": [
+            "Calendario litúrgico católico"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 9,
+              "periodico": "Suplemento"
+            }
+          ],
+          "descripcion": "Informe detallado de la Junta Principal de Sanidad de Algeciras sobre muertes y medidas sanitarias: 'Consiguiente á nuestro establecido sistema armonioso, participo á V. E. que desde el correo anterior han muerto en esta ciudad solo tres personas...'",
+          "conexiones": [
+            "Administración pública",
+            "Salud pública"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": "7-8"
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y comestibles en la plaza de Cádiz, incluyendo cambios monetarios y equivalencias",
+          "conexiones": [
+            "Comercio internacional",
+            "Sistema económico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534490.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "Miércoles 26 de Noviembre de 1828",
+      "Número": "4499",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.=Mañana Jueves, á beneficio de la Sra. Rafaela Perez, primera actriz de caracter jocoso y caracteristica, se egecutará el drama nuevo D. Quijote y Sancho Panza en el castillo del Duque, ó el desencanto de Dulcinea del Toboso."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Miguel de Cervantes",
+          "obra": {
+            "titulo": "D. Quijote y Sancho Panza en el castillo del Duque, ó el desencanto de Dulcinea del Toboso",
+            "genero": "drama",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Adaptación teatral de un episodio del Quijote, específicamente el que transcurre en el castillo de los Duques. Se anuncia como obra de beneficio para una actriz cómica."
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y espectáculos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Anuncio de función teatral de beneficio para una actriz, indicando su especialidad en papeles cómicos y característicos",
+          "conexiones": [
+            "La obra anunciada es una adaptación del Quijote"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Menciona 'LOS DESPOSORIOS DE NUESTRA SEÑORA' y 'El Jubileo de las 40 horas está en la iglesia de San Antonio'",
+          "conexiones": []
+        },
+        {
+          "tema": "Beneficencia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Se menciona una rifa de alhajas a beneficio del santo hospital de Zaragoza",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2534503.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 8 DE DICIEMBRE DE 1828",
+      "Número": "4.511",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.= D. Quijote y Sancho Panza en el castillo del Duque ó el desencanto de Dulcinea del Toboso (comedia en tres actos).= La industria de los estudiantes ó lo que puede el hambre (sainete).= A las 4.Iluminacion.= Treinta años ó la vida de un jugador (comedia en seis actos, intermediada de boleras).= A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Miguel de Cervantes",
+          "obra": {
+            "titulo": "D. Quijote y Sancho Panza en el castillo del Duque ó el desencanto de Dulcinea del Toboso",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "Adaptación teatral del Quijote",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral basada en episodios del Quijote, específicamente los capítulos del castillo de los Duques"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "boleras",
+          "interprete": "No especificado",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Bailes intermedios durante la representación de 'Treinta años ó la vida de un jugador'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y entretenimiento",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Cartelera teatral completa con horarios de funciones, incluyendo una comedia principal, un sainete y otra comedia larga con intermedios musicales",
+          "conexiones": [
+            "Adaptación literaria del Quijote",
+            "Música (boleras)",
+            "Entretenimiento público"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Celebración de La Purísima Concepción de Nuestra Señora, patrona de España y de sus Indias - Fiesta. El Jubileo de las 40 horas está en la Santa Iglesia Catedral",
+          "conexiones": [
+            "Calendario religioso",
+            "Instituciones eclesiásticas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534518.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "VIERNES 19 DE DICIEMBRE DE 1828",
+      "Número": "4.532",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al santo del día 'SAN NEMESIO, MARTIR' y al 'Jubileo de las 40 horas' en la iglesia de las Descalzas",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            },
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Extenso listado de mercancías y productos en el depósito del puerto, incluyendo materiales como acero, café, cacao, telas y otros bienes comerciales de la época",
+          "conexiones": [
+            "Conecta con las actividades mercantiles propias de Cádiz como puerto comercial"
+          ]
+        },
+        {
+          "tema": "Medicina y Salud Pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Relación diaria de los casos de fiebre en la población militar y civil de Gibraltar, incluyendo estadísticas detalladas de hospitales y particulares",
+          "conexiones": [
+            "Se relaciona con la situación sanitaria de la región"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2534526.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "27 DE DICIEMBRE DE 1828",
+      "Número": "4.580",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 3,
+          "contenido": "LEÑA DESHUMADA O QUE NO HACE HUMO.El maestro Bartolomé Barrientos, profesor de letras humanas en la universidad de Salamanca, en una miscelanea que por los años de 1570 publicó en aquella ciudad con el título de Anno tationum Sylva, estampó un artículo breve y curioso acerca de la leña que los romanos llamaban cecha ó corada ('ligna cocta?'), objeto de varias ordenanzas y leyes, de que hace mencion el jurisconsulto Ulpiano..."
+        },
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.=El Marques de Forlipon, ó el enemigo de las mugeres (comedia de gracioso en tres actos, que será desempeñada por solo las actrices, como igualmente toda la funcion).=El zongo.=Los zapatos (sainete).=A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Bartolomé Barrientos",
+          "obra": {
+            "titulo": "Annotationum Sylva",
+            "genero": "miscelánea académica",
+            "actos": null,
+            "autor_obra": "Bartolomé Barrientos",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "citas": [],
+          "contexto": "Referencia a una obra académica del siglo XVI sobre un tema específico de la antigüedad romana"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Marques de Forlipon, ó el enemigo de las mugeres",
+            "genero": "comedia de gracioso",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la cartelera"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Mención a la Universidad de Salamanca y un profesor de letras humanas del siglo XVI",
+          "conexiones": [
+            "Vinculado al artículo sobre la leña deshumada"
+          ]
+        },
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Cartelera teatral con obras representadas exclusivamente por actrices",
+          "conexiones": [
+            "Incluye una comedia principal y un sainete"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención a San Juan Apóstol y Evangelista y el Jubileo de las 40 horas en la iglesia del Carmen",
+          "conexiones": []
+        }
+      ]
+    }
+  ]
 }

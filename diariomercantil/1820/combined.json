@@ -1,4 +1,1806 @@
 {
   "Año": 1820,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2526813.pdf",
+      "Título": "APENDICE AL DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 de Agosto de 1820",
+      "Número": "No. 25",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "No. 25"
+            }
+          ],
+          "descripcion": "Sesión de las Cortes del 29 de agosto donde se discuten diversos asuntos administrativos, legales y constitucionales. Incluye discusiones sobre ex-diputados, comisiones y representaciones.",
+          "conexiones": [
+            "Referencias a la Constitución",
+            "Sistema administrativo español"
+          ]
+        },
+        {
+          "tema": "Instituciones Religiosas",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 102
+            }
+          ],
+          "descripcion": "Discusión sobre la creación de una silla episcopal en la ciudad de Daroca y referencias a otros obispados como Albarracín, Jaca y Teruel.",
+          "conexiones": [
+            "Administración eclesiástica",
+            "Organización territorial religiosa"
+          ]
+        },
+        {
+          "tema": "Administración Colonial",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 102
+            }
+          ],
+          "descripcion": "Referencias a la administración de Ultramar y discusión sobre la separación de la secretaría de Hacienda de Ultramar de la Península.",
+          "conexiones": [
+            "Sistema administrativo colonial",
+            "Reformas administrativas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2526836.pdf",
+      "Título": "APÉNDICE AL DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "10-11 de Octubre de 1820",
+      "Número": "48",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "N.° 48"
+            }
+          ],
+          "descripcion": "Sesión de Cortes donde se discuten temas administrativos relacionados con aduanas, aranceles y contra-registros",
+          "conexiones": [
+            "Hacienda pública",
+            "Comercio"
+          ]
+        },
+        {
+          "tema": "Instituciones Eclesiásticas",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "186"
+            }
+          ],
+          "descripcion": "Referencias a la administración eclesiástica incluyendo Arzobispos, Obispos, Cabildos y comunidades religiosas",
+          "conexiones": [
+            "Administración civil",
+            "Papel sellado"
+          ]
+        },
+        {
+          "tema": "Milicia Nacional",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "188"
+            }
+          ],
+          "descripcion": "Fórmula de juramento para los milicianos nacionales, reflejando valores patrióticos y constitucionales",
+          "conexiones": [
+            "Política",
+            "Constitución",
+            "Defensa nacional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530456.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "5 DE JULIO DE 1820",
+      "Número": "1432",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": null,
+          "contenido": "En la primera pieza (las cuatro guirnaldas) cantó la actriz Benita Moreno un himno a Quiroga, con la música del de Riego, y en él llamaron la atencion las tres estofas siguientes:Pregónese el triunfo,Resuene el loorDel héroe de España,Del libertador.[...seguido por el resto de las estrofas del himno...]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "anónimo",
+          "obra": {
+            "titulo": "Las cuatro guirnaldas",
+            "genero": "pieza teatral con música",
+            "actos": 1,
+            "autor_obra": null,
+            "lugar de representación": "teatro [de Madrid]"
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "citas": [
+            "Pregónese el triunfo, Resuene el loor..."
+          ],
+          "contexto": "Representación teatral en honor al general Quiroga que incluye un himno patriótico"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 3,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "himno patriótico",
+          "interprete": "Benita Moreno",
+          "lugar": "teatro [de Madrid]",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "contexto": "Interpretación de un himno dedicado a Quiroga con la música del Himno de Riego durante una función teatral celebratoria"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "eventos sociales",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Banquete y función teatral en honor al general Quiroga organizados por la sociedad madrileña de los amigos del orden, con asistencia de autoridades civiles y militares",
+          "conexiones": [
+            "Vinculado con la representación teatral y musical posterior"
+          ]
+        },
+        {
+          "tema": "vida social y política",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Documentos oficiales y correspondencia militar relacionada con el regimiento de Valencey y la situación política del momento",
+          "conexiones": [
+            "Contexto histórico de los eventos culturales descritos"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530479.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "28 DE JULIO DE 1820",
+      "Número": "1455",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1455
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo de las XL horas' en la Iglesia de S. Antonio y mención de santos del día (San Nazario, San Celso y San Victor)",
+          "conexiones": [
+            "Orden de la plaza",
+            "Afecciones Astronómicas"
+          ]
+        },
+        {
+          "tema": "Ciencia y Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1455
+            }
+          ],
+          "descripcion": "Detallada información astronómica y meteorológica incluyendo horarios solares y mediciones barométricas",
+          "conexiones": [
+            "Mareas en esta Bahía"
+          ]
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1455
+            }
+          ],
+          "descripcion": "Felicitación dirigida a las Cortes por el Ayuntamiento Constitucional de Cádiz y carta al Rey Fernando VII, reflejando el periodo constitucional",
+          "conexiones": [
+            "Orden de la plaza",
+            "Comercio"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 1455
+            }
+          ],
+          "descripcion": "Extensa sección de precios corrientes de diversos productos ultramarinos y europeos, mostrando la actividad comercial de Cádiz como puerto importante",
+          "conexiones": [
+            "Capitanía del Puerto",
+            "Crédito público"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530502.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE AGOSTO DE 1820",
+      "Número": "1478",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 1478,
+          "contenido": "SONETO.Tú que de la opresion víctima fuiste,Y en infame destierro confinadoDe tu Patria miraste lastimadoLa acerba pena y la congoja triste,Y cual la firme roca que resisteEl continuo chocar del mar hinchado,Contrarrestar el despotismo osadoInalterable en tu opinion supiste:Recibe el parabien que hoy en tu diaCádiz te ofrece con verdad sencillaLibre ya de opresora tiranía:Descansa pues en la tribuna silla,Y en fiel balanza pesa á tus hermanosLa justicia que ponen en tus manos.Remitido."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Alfieri",
+          "obra": {
+            "titulo": "Roma libre",
+            "genero": "tragedia",
+            "actos": 5,
+            "autor_obra": "Alfieri, traducida por D. Antonio Saviñon",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1478
+            }
+          ],
+          "contexto": "Obra programada para representación teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 1478
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "interprete": "Sras. Quatrini y Raccoli y los Sres. Astolfi y Piatoli",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1478
+            }
+          ],
+          "contexto": "Bailarán un cuarteto de la composición del Sr. Astolfi"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1478
+            }
+          ],
+          "descripcion": "Programa teatral completo que incluye:- Teatro del Balon: 'Séneca y Paulina' (pieza en un acto), 'El bolero', 'El médico á palos' (comedia en 2 actos), 'El fandango', 'La virtud de virtudes' (sainete)- Teatro Principal: 'Roma libre' (tragedia) y baile general",
+          "conexiones": [
+            "Música (baile)",
+            "Literatura dramática"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1478
+            }
+          ],
+          "descripcion": "Referencias religiosas en el encabezado: 'SAN JOAQUIN, PADRE DE NUESTRA SEÑORA, Y S. BERNARDO, ABAD Y FUNDADOR' y mención al 'Jubileo de las 40 horas en la Capilla de la Divina Pastora'",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2530525.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "12 DE SETIEMBRE DE 1820",
+      "Número": "1501",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1501
+            }
+          ],
+          "descripcion": "Referencia al santo del día (San Eulogio, Obispo) y celebración religiosa: 'El Jubileo de las 40 horas está en la Capilla de Ntra. Sra. de la Palma'",
+          "conexiones": [
+            "Calendario litúrgico",
+            "Celebraciones religiosas locales"
+          ]
+        },
+        {
+          "tema": "Ciencia y Astronomía",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1501
+            }
+          ],
+          "descripcion": "Sección 'AFECCIONES ASTRONOMICAS DE HOY' con datos precisos sobre salida y puesta del sol, y ajuste del reloj. También incluye mediciones meteorológicas con barómetro y termómetro.",
+          "conexiones": [
+            "Observaciones científicas",
+            "Vida cotidiana"
+          ]
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1501
+            }
+          ],
+          "descripcion": "Extensa sección sobre órdenes militares, disposiciones constitucionales y comunicaciones oficiales que reflejan el periodo constitucional español de 1820.",
+          "conexiones": [
+            "Gobierno",
+            "Constitución de 1812",
+            "Ejército"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530549.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "5 DE OCTUBRE DE 1820",
+      "Número": "1524",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON.—El monstruo de la fortuna (comedia en 3 actos).—Intermedio de baile.—El fin del pabo (sainete).—A las 5.TEATRO PRINCIPAL.—El Rey D. Sebastian de Portugal ó el pastelero de Madrigal (comedia en 4 actos, refundida).—Boleras (por la Sra. Lopez y el Sr. Alonso.)—La cura de los deseos (sainete).—A las 7½.—Entrada de la funcion de ayer: boletines 267. — Producto 1.121 rs. y 32 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "El monstruo de la fortuna",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral presentada como parte de la programación diaria"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "El Rey D. Sebastian de Portugal ó el pastelero de Madrigal",
+            "genero": "comedia refundida",
+            "actos": 4,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral principal de la programación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "interprete": "Sra. Lopez y Sr. Alonso",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Interpretación de boleras como parte del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro y entretenimiento",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "El documento muestra la cartelera teatral de dos teatros principales de Cádiz (Teatro del Balon y Teatro Principal) con sus respectivas programaciones, horarios y recaudación",
+          "conexiones": [
+            "Se integran elementos de teatro, música y danza en las representaciones",
+            "Incluye datos económicos sobre la taquilla"
+          ]
+        },
+        {
+          "tema": "Vida social y costumbres",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Incluye información sobre celebraciones religiosas (Jubileo) y datos meteorológicos que afectaban la vida diaria",
+          "conexiones": [
+            "Aspectos religiosos",
+            "Información práctica para la ciudadanía"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530572.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "28 DE OCTUBRE DE 1820",
+      "Número": "1546",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON.—El nazareno Sanson (comedia en 3 actos.)—La venida del soldado (tonadilla.)—El médico poeta (sainete.) A las 4½.TEATRO PRINCIPAL.—La misma funcion de ayer.— A las 7½.—Entrada de la funcion de anoche : boletines 654. Producto 3.105 rvn."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "El nazareno Sanson",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral presentada como parte de la cartelera del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "El médico poeta",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete presentado como parte de la programación teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "canciones para piano",
+          "interprete": "D. Clemente Peichler",
+          "lugar": "Almacén de música e instrumentos de los Sres. Peichler",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Se anuncian dos canciones nuevas para piano: 'Recuerdos del infausto dia 10 de Marzo' y una 'cancion patriótica'"
+        },
+        {
+          "tipo": "tonadilla",
+          "titulo": "La venida del soldado",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Pieza musical presentada como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Comercio de música",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Venta de partituras y composiciones musicales en el almacén de los Sres. Peichler",
+          "conexiones": [
+            "Se relaciona con las actividades teatrales y musicales de la ciudad"
+          ]
+        },
+        {
+          "tema": "Vida social y entretenimiento",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programación de dos teatros principales de Cádiz con horarios y precios de entrada",
+          "conexiones": [
+            "Actividad cultural y artística de la ciudad",
+            "Música y teatro"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530595.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "20 DE NOVIEMBRE DE 1823",
+      "Número": "1568",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON—A beneficio de la Sra. Carlota Michelet, primera actriz de música.— La Urraca ladrona (comedia en 3 actos.)—Boleras (por los Sres. Maria y Manuel Requejo.)—El Califa de Bagdad ó el Bondocani (ópera en un acto.)TEATRO PRINCIPAL.= Las juventudes de Enrique V (comedia en 3 actos.)"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Urraca ladrona",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Parte de la programación teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Las juventudes de Enrique V",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Parte de la programación teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "titulo": "El Califa de Bagdad ó el Bondocani",
+          "interprete": "Sra. Carlota Michelet",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Función a beneficio de la primera actriz de música"
+        },
+        {
+          "tipo": "danza",
+          "titulo": "Boleras",
+          "interprete": "Sres. Maria y Manuel Requejo",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Parte del programa de la función teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "espectáculos científicos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Exhibición de experiencias de física y mecánica por la Sra. Rosalía Bretin y el Sr. Foret, incluyendo demostraciones como 'La pirámide egipcia', 'El Invisible á la vista', entre otros experimentos",
+          "conexiones": [
+            "Forma parte de la programación cultural y de entretenimiento del día"
+          ]
+        },
+        {
+          "tema": "vida social",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Descripción de un evento público patriótico con la participación de los batallones de voluntarios de la Milicia Nacional y los habitantes de Cádiz",
+          "conexiones": [
+            "Refleja el ambiente político y social de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530618.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "13 de diciembre de 1820",
+      "Número": "1591",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": null,
+          "contenido": "TEATRO PRINCIPAL.—Las lágrimas de una viuda (comedia en 3 actos.)—Boleras (por la Sra. La-madrid y el Sr. Alonso.)—El remendon y la prendera (sainete.)—A las 7.—Entrada de ayer: boletines 394. Producto 1.870 rs. y 32 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Las lágrimas de una viuda",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra representada en la cartelera teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El remendon y la prendera",
+            "genero": "sainete",
+            "actos": 1,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete representado como fin de fiesta"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. La-madrid y el Sr. Alonso",
+          "lugar": "Teatro Principal de Cádiz",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Interpretación de boleras como intermedio entre obras teatrales"
+        },
+        {
+          "tipo": "himno",
+          "interprete": "oficiales, soldados, milicianos y paisanos",
+          "lugar": "Calles de Cádiz",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "contexto": "Himnos patrióticos cantados en celebración de la llegada del batallón de Canarias"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Celebración religiosa del día de Santa Lucía y jubileos en la Catedral",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Decreto sobre regulación de reuniones y sociedades patrióticas, evidenciando el contexto político del Trienio Liberal",
+          "conexiones": [
+            "Referencias a la Constitución y al sistema liberal"
+          ]
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncios de subastas de productos textiles y otros bienes de consumo",
+          "conexiones": [
+            "Actividad mercantil del puerto de Cádiz"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533470.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "5 DE ENERO DE 1820",
+      "Número": "1249",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "última",
+          "contenido": "TEATRO.—El examen de maridos (com. en 3 actos de Frei Lope de Vega Carpio)—Boleras (por la Sra. González y el Sr. Alonso.)== El ladron burlado (sainete).—A las siete.Entrada de ayer: Boletines 226.—Producto para la empresa 750 rvn. y 8 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Lope de Vega",
+          "obra": {
+            "titulo": "El examen de maridos",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "Frei Lope de Vega Carpio",
+            "lugar de representación": "Teatro (sin especificar cual)"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "última"
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en la cartelera teatral del día como obra principal de la función"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": "última"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. González y Sr. Alonso",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "última"
+            }
+          ],
+          "contexto": "Boleras interpretadas como intermedio entre las obras teatrales"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "mecánica/tecnología",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1249
+            }
+          ],
+          "descripcion": "Extenso artículo sobre un autómata jugador de ajedrez creado por Wolfgang von Kempelen, detallando su construcción y funcionamiento",
+          "conexiones": [
+            "Innovación tecnológica",
+            "Entretenimiento público",
+            "Ciencia"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1249
+            }
+          ],
+          "descripcion": "Referencia a San Telesforo Papa y Mártir y al Jubileo de las XL horas en la Santa Iglesia Catedral",
+          "conexiones": [
+            "Vida religiosa",
+            "Calendario litúrgico"
+          ]
+        },
+        {
+          "tema": "entretenimiento popular",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "última"
+            }
+          ],
+          "descripcion": "Anuncio de 'un precioso nacimiento, adornado con figuras de movimiento, vuelos, transformaciones, vistas de palacios adornados con el mayor lujo'",
+          "conexiones": [
+            "Cultura popular",
+            "Espectáculos públicos"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533493.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "28 DE ENERO DE 1820",
+      "Número": "1272",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": 1272,
+          "contenido": "TEATRO.— Las travesuras del amor en una hora de ausencia (drama en un acto.)— El delirio ó las consecuencias del juego (opera en un acto, música del célebre maestro Werton, miembro del Conservatorio de Paris.)— El chasco de los estudiantes (sainete).— A las siete.El producto de esta función es para el Sr. Julian Muñoz.Entrada de ayer: Boletines 177.— Producto para la empresa 563 rvn, y 18 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Las travesuras del amor en una hora de ausencia",
+            "genero": "drama",
+            "actos": 1,
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 1272
+            }
+          ],
+          "contexto": "Obra programada para la función teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El chasco de los estudiantes",
+            "genero": "sainete",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 1272
+            }
+          ],
+          "contexto": "Sainete programado como cierre de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": 1272
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "obra": "El delirio ó las consecuencias del juego",
+          "compositor": "Werton",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 1272
+            }
+          ],
+          "contexto": "Ópera en un acto programada como parte de la función teatral, compuesta por Werton, miembro del Conservatorio de Paris"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1272
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo de las XL horas' en la Iglesia de RR. PP. Observantes de S. Francisco",
+          "conexiones": [
+            "Vida social y religiosa de Cádiz"
+          ]
+        },
+        {
+          "tema": "Vida social y comercial",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 1272
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en Cádiz de productos ultramarinos y locales",
+          "conexiones": [
+            "Comercio marítimo",
+            "Economía local"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533527.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "20 DE FEBRERO DE 1820",
+      "Número": "1295",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 2,
+          "periodico": null
+        },
+        {
+          "pdf": 3,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Música moderna vocal e instrumental",
+          "interprete": "Varios compositores",
+          "lugar": "Milán",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": null
+            }
+          ],
+          "contexto": "Anuncio de suscripción a 'Biblioteca de Música Moderna' que incluye obras de destacados compositores como Carafa, Mayer, Meyerbeer, Beethoven, Mozart, Paganini, entre otros. La publicación se divide en cuatro clases: piezas de canto, obras para pianoforte, obras para violín y obras para flauta."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Anuncio de un profesor francés que ofrece lecciones de idioma francés tanto en escuelas como de manera particular",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia de RR. MM. Descalzas y referencias a San León Obispo",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Noticias sobre comercio de granos en Amsterdam y medidas contra la especulación",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533577.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "14 DE MARZO DE 1820",
+      "Número": "1318",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1318
+            }
+          ],
+          "descripcion": "Mención del Jubileo de las XL horas en la Iglesia de RR. MM. de Candelaria, dotado por la Hermandad de S. José. Se detalla el horario de manifestación (7 de la mañana) y ocultamiento (5 de la tarde)",
+          "conexiones": [
+            "Santa Florentina y Santa Matilde - santos del día"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 1318
+            }
+          ],
+          "descripcion": "Extensas listas de mercancías y productos comerciales con sus precios y cantidades, reflejando la actividad mercantil de Cádiz como puerto comercial importante",
+          "conexiones": [
+            "Referencias a puertos comerciales internacionales",
+            "Listados de precios corrientes"
+          ]
+        },
+        {
+          "tema": "Política",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1318
+            }
+          ],
+          "descripcion": "Decreto real sobre la celebración de Cortes, comunicado por el marqués de Mataflorida, reflejando cambios políticos significativos en el periodo",
+          "conexiones": [
+            "Referencias a la administración y gobierno"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533629.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "6 DE ABRIL DE 1820",
+      "Número": "1341",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "Lo que puede un empleo: comedia de D. Francisco Martinez de la Rosa. - Se vende en la librería de Picardo, calle de la Carne."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Francisco Martínez de la Rosa",
+          "obra": {
+            "titulo": "Lo que puede un empleo",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": "Francisco Martínez de la Rosa",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta de la obra en librería"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Boleras y Seguidillas manchegas",
+          "interprete": "Sra. Quiarini, Sr. Piatoli (hijo), Sra. Jimenez, Sr. Alonso",
+          "lugar": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Parte del programa teatral de la noche junto con La Mogigata y El restablecimiento de la Constitución"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programa teatral completo que incluye 'La Mogigata' (comedia en 3 actos de Moratín), bailes y una pieza patriótica titulada 'El restablecimiento de la Constitución' con canciones patrióticas",
+          "conexiones": [
+            "Combina representación teatral, música y contenido político-patriótico"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Real Capilla del Pópulo y festividad de San Celestino Papa",
+          "conexiones": [
+            "Vinculado con las actividades sociales y culturales de la ciudad"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533692.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "SÁBADO 29 DE ABRIL DE 1820",
+      "Número": "N.° 1365",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO NACIONAL DEL BALON.= El triunfo del Ave María ó conquista de Granada (com. en 3 actos, en la que habrá salidas á caballo por el patio.)= La Sra. María del Rosario Palacios, de edad de doce años, se presentará por primera vez á bailar el zapateado y los panaderos.= El payo de la carta (sainete).= A las cinco.TEATRO.= El hipócrita (com. en 5 actos, mucho tiempo ha no representada en este teatro, escrita por el célebre Molier y traducida por D. José Mar[...])= Boleras (por la Sra. Lopez y el Sr. Piatoli, hijo).= El Labrador y el Usía (sainete).= A las siete y media."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Molière",
+          "obra": {
+            "titulo": "El hipócrita",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "Molière",
+            "lugar de representación": "Teatro"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral traducida al español por D. José Mar[...] que se representa en el teatro"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "María del Rosario Palacios",
+          "lugar": "Teatro Nacional del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Primera presentación de una bailarina de 12 años interpretando zapateado y panaderos (bailes tradicionales)"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Programación teatral del día que incluye obras dramáticas, bailes y sainetes en dos teatros diferentes: Teatro Nacional del Balon y Teatro",
+          "conexiones": [
+            "Mezcla de géneros teatrales: comedia seria, baile y sainete"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia de San José",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533714.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "12 de Mayo de 1820",
+      "Número": "1378",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": "1378",
+          "contenido": "TEATRO NACIONAL DEL BALON.—Las profecias de Daniel y Bruto de Babilonia (com. en 3 actos.)—La Cachucha—El casado por fuerza (sainete).—A las cinco.TEATRO PRINCIPAL = El aviso á los casados (com. en 5 actos)—Boleras (por la Sra. La-madrid y el Sr. Alonso)—Pancho y mendrugo (sainete).—A las ocho.—Entrada de ayer: Bolcanes 630.—Producto para la empresa 3179 rs. y 22 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Las profecias de Daniel y Bruto de Babilonia",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro Nacional del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": "1378"
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para las cinco de la tarde"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "El aviso á los casados",
+            "genero": "comedia",
+            "actos": 5,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": "1378"
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para las ocho de la noche"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": "1378"
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. La-madrid y Sr. Alonso",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": "1378"
+            }
+          ],
+          "contexto": "Interpretación de Boleras como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1378"
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia de RR. PP. Capuchinos",
+          "conexiones": []
+        },
+        {
+          "tema": "Política y Sociedad",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "1378"
+            }
+          ],
+          "descripcion": "Información sobre elecciones de Diputados de Cortes y justificación de individuos naturales de América",
+          "conexiones": [
+            "Referencias a la situación política en Buenos Aires en páginas posteriores"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533739.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "25 DE MAYO DE 1820",
+      "Número": "1391",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 1391,
+          "contenido": "TEATRO PRINCIPAL.—Orestes hijo de Agamenon (tragedia en 5 actos, traducida del francés por D. Dionisio Solis.)—Boleras (por la Sra. La-madrid y el Sr. Plateli, hijo.)—El Labrador y el Usía (sainete.)—A las ocho."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Dionisio Solís",
+          "obra": {
+            "titulo": "Orestes hijo de Agamenon",
+            "genero": "tragedia",
+            "actos": 5,
+            "autor_obra": "Traducción del francés por D. Dionisio Solís",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1391
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra programada para representación teatral esa noche"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 1391
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Sra. La-madrid y Sr. Plateli, hijo",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1391
+            }
+          ],
+          "contexto": "Representación de boleras como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro popular",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1391
+            }
+          ],
+          "descripcion": "El programa teatral incluye un sainete titulado 'El Labrador y el Usía', representativo del género costumbrista español",
+          "conexiones": [
+            "Forma parte de una velada teatral completa que combina tragedia clásica, danza tradicional y teatro costumbrista"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1391
+            }
+          ],
+          "descripcion": "Referencias a San Gregorio Papa y Santa María Magdalena de Pazzis, con información sobre jubileos y horarios de servicios religiosos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2533763.pdf",
+      "Título": "Diario Mercantil de Cádiz",
+      "Fecha": "7 de junio de 1820",
+      "Número": "1494",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": "sin número visible",
+          "contenido": "TEATRO NACIONAL DEL BALON.= La misma funcion del Domingo. = A las 5½.TEATRO PRINCIPAL.=Las citas (drama en un acto.)=Idalila (baile serio en 4 actos de la composicion del Sr. Santiago Piglia.)=El buen Juan (sainete.)=A las 8. =Entrada de ayer: Boletines 151.=Producto para la empresa 564 rs. y 24 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Santiago Piglia",
+          "obra": {
+            "titulo": "Idalila",
+            "genero": "baile serio",
+            "actos": 4,
+            "autor_obra": "Santiago Piglia",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra presentada como parte de la programación teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Las citas",
+            "genero": "drama",
+            "actos": 1,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ]
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El buen Juan",
+            "genero": "sainete",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": "sin número visible"
+            }
+          ]
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Periodismo",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Anuncio de un nuevo periódico constitucional llamado 'El Cetro', que promete mantener la idea de monarquía moderada y analizar la historia política española",
+          "conexiones": [
+            "Se relaciona con el contexto político y social de la época"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Referencias a catedráticos y profesores universitarios en el listado de Diputados a Cortes",
+          "conexiones": [
+            "Vinculado al contexto político e institucional"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": "sin número visible"
+            }
+          ],
+          "descripcion": "Información sobre el Jubileo de las XL horas en la Iglesia Catedral y referencias a San Pedro y compañeros mártires",
+          "conexiones": [
+            "Aspectos rituales y ceremoniales de la vida religiosa cotidiana"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533782.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "21 DE JUNIO DE 1820",
+      "Número": "1418",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 1418,
+          "contenido": "TEATRO PRINCIPAL.= El mayor contrario amigo y Diablo predicador (comedia en tres actos.)= La Constitucion vindicada (drama patriótico.)-A las ocho. Entrada anterior : boletines 375: Producto 2151 rs. y 22 mrs."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "desconocido",
+          "obra": {
+            "titulo": "El mayor contrario amigo y Diablo predicador",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1418
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral programada para la función del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Constitucion vindicada",
+            "genero": "drama patriótico",
+            "actos": null,
+            "autor_obra": "no especificado",
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1418
+            }
+          ],
+          "contexto": "Obra teatral de carácter político presentada junto a la comedia principal"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Publicaciones",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1418
+            }
+          ],
+          "descripcion": "Anuncio del 'Periódico de la ciudad de S. Fernando titulado Juegos de Vulcano y Prometéo con la antorcha Constitucional' que explica la nueva Constitución política de España por elementos filosóficos, teológicos y de derecho público",
+          "conexiones": [
+            "Relacionado con el drama patriótico 'La Constitucion vindicada' que se representa en el teatro"
+          ]
+        },
+        {
+          "tema": "Librerías y cultura impresa",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 1418
+            }
+          ],
+          "descripcion": "Menciones a librerías de Carreño, Picardo, Font, Closas, Hortal y compañía, donde se venden obras y se admiten suscripciones",
+          "conexiones": [
+            "Vinculado a la difusión de obras literarias y políticas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533789.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "27 DE JUNIO DE 1820",
+      "Número": "1424",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1424
+            }
+          ],
+          "descripcion": "Referencias religiosas en el encabezado: 'SAN ZOYLO Y COMPAÑEROS, MÁRTIRES, Y LOS SIETE DURMIENTES. El Jubileo de las XL horas está en la Iglesia de San Agustin.'",
+          "conexiones": [
+            "Instituciones religiosas",
+            "Calendario litúrgico"
+          ]
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1424
+            }
+          ],
+          "descripcion": "Extensa cobertura sobre una epidemia en Mallorca, con datos específicos sobre enfermos y fallecidos, medidas sanitarias y cordones sanitarios.",
+          "conexiones": [
+            "Administración pública",
+            "Crisis sanitaria",
+            "Medidas gubernamentales"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 1424
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en Cádiz de diversos productos ultramarinos y locales, incluyendo especias, telas y otros bienes comerciales.",
+          "conexiones": [
+            "Comercio marítimo",
+            "Economía local",
+            "Relaciones internacionales"
+          ]
+        },
+        {
+          "tema": "Navegación y Marina",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 1424
+            }
+          ],
+          "descripcion": "Listado detallado de buques, sus destinos y consignatarios, principalmente hacia puertos americanos.",
+          "conexiones": [
+            "Comercio marítimo",
+            "Relaciones coloniales"
+          ]
+        }
+      ]
+    }
+  ]
 }
