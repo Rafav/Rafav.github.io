@@ -1,4 +1,1645 @@
 {
   "Año": 1827,
-  "datos": []
+  "datos": [
+    {
+      "PDF": "2530657.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 21 DE MAYO DE 1827",
+      "Número": "3946",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "El Miercoles 23 se egecutará la comedia El sordo en la posada, y la pieza El novio en mangas de camisa."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El sordo en la posada",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "No especificado"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de avisos"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El novio en mangas de camisa",
+            "genero": "pieza teatral",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "No especificado"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral complementaria"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Historia y civilización",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Extensa 'NOTICIA HISTORICA DE LOS CORREOS' que analiza el desarrollo de los sistemas postales desde la antigüedad, mencionando civilizaciones como Persia, Grecia y Roma",
+          "conexiones": [
+            "Desarrollo de la civilización",
+            "Sistemas de comunicación"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Mención del 'Jubileo de las 40 horas' en la iglesia de Capuchinos bajo 'SANTA MARIA DE SOCORS'",
+          "conexiones": [
+            "Vida religiosa en Cádiz",
+            "Instituciones eclesiásticas"
+          ]
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Referencias a la Universidad de París y su sistema de mensajeros (nuntii volantes) para estudiantes",
+          "conexiones": [
+            "Historia postal",
+            "Instituciones educativas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530679.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "12 DE JUNIO DE 1827",
+      "Número": "3968",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia del Rosario y celebración de San Juan de Sahagún",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación/Publicaciones",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Anuncios de obras académicas: 'Manual del farmacéutico o compendio elemental de Farmacia' y 'Recreación filosófica del Padre Almeida'",
+          "conexiones": [
+            "Relacionado con el desarrollo académico y científico de la época"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes de productos ultramarinos y otros efectos comerciales",
+          "conexiones": [
+            "Refleja la actividad mercantil y económica de Cádiz como puerto comercial"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2530701.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 DE JULIO DE 1827",
+      "Número": "3990",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "Mañana se ejecutará la tragedia titulada El Pelayo; y el sainete El chasco del raton."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El Pelayo",
+            "genero": "tragedia",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "No especificado"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral programada para el día siguiente"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El chasco del raton",
+            "genero": "sainete",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "No especificado"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Sainete que acompaña a la tragedia principal en la programación teatral"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la Iglesia de San Pablo y mención de San Laureano, Arzobispo",
+          "conexiones": []
+        },
+        {
+          "tema": "Medicina y Sanidad",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            },
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Extenso artículo sobre sanidad, anatomía y enfermedades, incluyendo estadísticas de fallecimientos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2530723.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "26 DE JULIO DE 1827",
+      "Número": "4012",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "BIOGRAFIA BRITANO-HISPANA.15. Porter (Endymion).Nació en 1587, muy favorecido de los reyes Jacobo I.º y Carlos I.º, y gran protector de los sabios, particularmente de los poetas.Acompañó á Carlos, cuando era príncipe de los Gales, en su viage á España.=T. J. Serrano."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Endymion Porter",
+          "obra": {
+            "titulo": null,
+            "genero": "biografía",
+            "actos": null,
+            "autor_obra": "T. J. Serrano",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Entrada biográfica sobre Endymion Porter, mecenas literario del siglo XVII"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "instrumento musical",
+          "interprete": null,
+          "lugar": "calle Ahumada, núm. 4",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Anuncio de venta: 'Quien quisiere comprar un piano nuevo aleman, de seis octavas y media y cinco registros, su autor Miguel Rosemberger'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencias religiosas en el encabezado: 'SEÑORA SANTA ANA, MADRE DE NUESTRA Señora.—Misa. El Jubileo de las 40 horas está en la iglesia de Santiago.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Sanidad Pública",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Aviso sobre vacunación pública: 'Con arreglo á Real orden se administrará por la Junta Superior de Sanidad el dia 27 del corriente á las 5 de la tarde en las casas Capitulares'",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración y gobierno",
+          "paginas": [
+            {
+              "pdf": 3
+            }
+          ],
+          "descripcion": "Extensa normativa administrativa sobre Patronatos y gestión de documentos oficiales",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2530745.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "19 DE AGOSTO DE 1827",
+      "Número": "4035",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "BIOGRAFIA BRITANO-HISPANA24. Shelton (Tomas).Tradujo al ingles la historia de D. Quijote, cuya primera parte se imprimió en Londres, 1612 en 4.°, y la segunda en 1620, en 4.°En Londres año 1654 en folio se publicó otra obra de Cervantes con el tituloDelight in several Shapes &c. in six pleasant histories: recreo de diferentes formas en seis agradables novelas; cuyo traductor se ignora.= T. J. Serrano."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Miguel de Cervantes",
+          "obra": {
+            "titulo": "Don Quijote",
+            "genero": "novela",
+            "actos": null,
+            "autor_obra": "Miguel de Cervantes",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [],
+          "contexto": "Se menciona la primera traducción al inglés del Quijote por Thomas Shelton en 1612 (primera parte) y 1620 (segunda parte)"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Miguel de Cervantes",
+          "obra": {
+            "titulo": "Delight in several Shapes &c. in six pleasant histories",
+            "genero": "novelas",
+            "actos": null,
+            "autor_obra": "Miguel de Cervantes",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [],
+          "contexto": "Traducción al inglés de una colección de novelas de Cervantes publicada en Londres en 1654"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Bibliografia histórica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Detalla la adquisición por el Museo Británico en 1762 de una colección de 30,000 folletos sobre la historia de Inglaterra durante las guerras civiles",
+          "conexiones": []
+        },
+        {
+          "tema": "Etnografía",
+          "paginas": [
+            {
+              "pdf": "1-2",
+              "periodico": "1-2"
+            }
+          ],
+          "descripcion": "Extensa descripción de los indios Osages, sus costumbres, vestimenta, creencias y viaje a Francia",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531417.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "9 DE ENERO DE 1827",
+      "Número": "3810",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 6,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "teatro",
+          "interprete": "no especificado",
+          "lugar": "TEATRO DEL BALON",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "contexto": "Breve anuncio al final de la página: 'TEATRO DEL BALON.—La misma funcion de ayer.'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencias religiosas en el encabezado: 'SAN JULIAN Y SANTA BASILISA, MARTIRES. El Jubileo de las 40 horas está en la iglesia de S. Felipe.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Arte religioso/Celebración",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Mención de una exhibición navideña: 'NACIMIENTO.—En la calle de la Compañia se sigue manifestando el Nacimiento de figuras de movimiento, el que será adornado con varias decoraciones, y la adoracion de los SANTOS REYES.—Se dará una funcion á las 7.'",
+          "conexiones": [
+            "Conecta con el aspecto religioso y cultural de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531460.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "31 DE ENERO DE 1827",
+      "Número": "2892",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": null,
+          "contenido": "TEATRO DEL BALON—Mañana Jueves á beneficio de Maria Concepcion Roso se ejecutará la comedia de Pablo y Virginia: se bailarán las boleras, concluyendo con el sainete la boda del tio Corcoma.TEATRO PRINCIPAL—Mahomet 2.° (ópera italiana, en 2 actos, música del célebre Rossini.)=A las 7.El argumento de dicha opera está de venta en el despacho de boletines á 4 rvn."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": null,
+          "obra": {
+            "titulo": "Pablo y Virginia",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral como parte de función benéfica"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": null
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera italiana",
+          "interprete": null,
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Representación de la ópera Mahomet 2° de Rossini en 2 actos"
+        },
+        {
+          "tipo": "danza",
+          "interprete": null,
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": null
+            }
+          ],
+          "contexto": "Baile de boleras como parte del programa teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Economía doméstica",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Receta detallada para fabricar tinta superior de escritura",
+          "conexiones": []
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Decreto sobre la instrucción de Minas y su administración",
+          "conexiones": []
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": null
+            }
+          ],
+          "descripcion": "Referencia a San Pedro Nolasco y el Jubileo de las 40 horas en la iglesia de la Merced",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531482.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "22 DE FEBRERO DE 1827",
+      "Número": "3854",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO DEL BALON.—Se egecutará hoy la funcion siguiente.—La joven constante á toda prueba ó el contraste de la virtud y el poder (comedia nueva en tres actos).—En el intermedio del acto segundo se egecutará una escena de la ópera la Isabela, en la que se cantará una Aria bufa por el Sr. Pedro Alcantara, actor del teatro principal.—Las boleras agallegadas.—Casarse con sesenta mil duros (pieza joco-seria; nueva en este teatro).—A las 4½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "La joven constante á toda prueba ó el contraste de la virtud y el poder",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra teatral principal de la función del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "Casarse con sesenta mil duros",
+            "genero": "pieza joco-seria",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "Teatro del Balon"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Pieza corta que cierra la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Sr. Pedro Alcantara",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Aria bufa de la ópera 'La Isabela' interpretada en el intermedio"
+        },
+        {
+          "tipo": "danza",
+          "interprete": "No especificado",
+          "lugar": "Teatro del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Interpretación de 'Las boleras agallegadas' como parte del programa"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Antropología y etnografía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Extensa descripción de La-Cepede sobre los habitantes y bosques de las regiones glaciales, sus costumbres y modo de vida",
+          "conexiones": []
+        },
+        {
+          "tema": "Regulación social",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Edicto con normas para el Carnaval, regulando comportamientos y prohibiendo máscaras",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531504.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "16 DE MARZO DE 1827",
+      "Número": "3876",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia religiosa en el encabezado: 'SAN JULIAN. El Jubileo de las 40 horas está en la iglesia de Candelaria.'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            },
+            {
+              "pdf": 7,
+              "periodico": 7
+            },
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "descripcion": "Extensas listas de precios corrientes de diversos productos, importaciones y exportaciones, cambios monetarios y actividad mercantil en el puerto de Cádiz.",
+          "conexiones": [
+            "Navegación comercial",
+            "Productos coloniales",
+            "Mercado internacional"
+          ]
+        },
+        {
+          "tema": "Política y Administración",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Comunicación oficial dirigida a los 'Fieles habitantes de los Reynos de Granada y Jaen' sobre lealtad al Rey y formación de Cuerpos Voluntarios Realistas",
+          "conexiones": [
+            "Aspectos militares",
+            "Gobierno monárquico"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2531618.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "7 DE ABRIL DE 1827",
+      "Número": "3903",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "La muerte de Luis XVI; tragedia original: un cuaderno en 8.°=Se hallará en la libreria de Hortal y Compañía, plazuela de S. Agustin."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "La muerte de Luis XVI",
+            "genero": "tragedia",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta de una obra teatral en la sección de avisos"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "espectáculo variado",
+          "interprete": "compañía de las cuatro Naciones",
+          "lugar": "POSADA DE LA ACADEMIA",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Función que incluye volteo, grupos y equilibrios, baile, y alambre flojo. Concluyendo la funcion con las sombras impalpables.=A las 7½."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencias a San Ciriaco y compañeros mártires, Jubileo de 40 horas en la iglesia de los Descalzos",
+          "conexiones": []
+        },
+        {
+          "tema": "comercio y vida social",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Venta pública de sombreros y efectos de sombrerería en almoneda",
+          "conexiones": []
+        },
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Anuncio de recepción de pupilos con buena asistencia y comodidad de habitaciones",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "2531640.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 DE ABRIL DE 1827",
+      "Número": "9924",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.—La Urraca ladrona (comedia en cuatro actos, adornada con todo su teatro).—Manchegas á cuatro.—Los novios burlados (sainete).—A las 4½.El Viejo ó abate seductor (comedia en cinco actos).—Boleras á cuatro.—El chasco del manteo (sainete).—A las 8."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La Urraca ladrona",
+            "genero": "comedia",
+            "actos": 4,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para las 4½"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Los novios burlados",
+            "genero": "sainete",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Sainete que acompaña a la función principal"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Viejo ó abate seductor",
+            "genero": "comedia",
+            "actos": 5,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para las 8"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El chasco del manteo",
+            "genero": "sainete",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Sainete que acompaña a la función nocturna"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "danza",
+          "interprete": "Compañía de Volatines de Catalina Frascara",
+          "lugar": "Plaza del Balon",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Se anuncia una función que incluye 'Manchegas á cuatro' y 'Boleras á cuatro' como parte del espectáculo teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "espectáculos circenses",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "La compañía de Volatines de Catalina Frascara ofrece un espectáculo que incluye maroma tirante, grupos ingleses, volteos, alambre flojo, contradanza de arcos y una subida a la azotea con fuego artificial por una joven portuguesa",
+          "conexiones": [
+            "Se relaciona con las actividades de entretenimiento público de la época junto con el teatro"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Menciona 'SAN PEDRO, MARTIR É INQUISIDOR' y 'El Jubileo de las 40 horas está en la iglesia de las Descalzas'",
+          "conexiones": [
+            "Muestra la importancia de la religión en la vida cotidiana"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533454.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "21 DE SETIEMBRE DE 1827",
+      "Número": "4069",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": 8,
+          "contenido": "Mañana se egecutará la comedia titulada El Veleta."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El Veleta",
+            "genero": "comedia",
+            "lugar de representación": "No especificado"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "contexto": "Anuncio de representación teatral en la sección de avisos"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "descripcion": "Establecimiento de una Academia de primeros conocimientos en la calle Santo Domingo: 'En la calle de Santo Domingo, núm. 169, frente la de la Goleta, en la escuela de primeras letras se establecerá desde 1.° de Octubre una Academia de los primeros conocimientos de la infancia, gratis para los pobres de solemnidad'",
+          "conexiones": [
+            "Iniciativa educativa y social"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Celebración religiosa: 'SAN MATEO, APOSTOL Y EVANGELISTA.=Misa. El Jubileo de las 40 horas está en la iglesia del Hospicio.'",
+          "conexiones": [
+            "Calendario litúrgico",
+            "Vida social"
+          ]
+        },
+        {
+          "tema": "Administración pública",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Listado detallado de los miembros del Ayuntamiento y sus cargos, incluyendo regidores perpetuos, electivos, diputados y comisiones",
+          "conexiones": [
+            "Organización política local"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533525.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "13 DE OCTUBRE DE 1827",
+      "Número": "4090",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.=A la vejez viruelas (comedia en tres actos).=Un intermedio de baile.=El disfraz venturoso (sainete)= A las 7.Mañana Domingo á las 4 de la tarde se executará la comedia El tirano de Moscovia y Principe perseguido; y el sainete Felipa la Chilanera."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "A la vejez viruelas",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para la representación del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El tirano de Moscovia y Principe perseguido",
+            "genero": "comedia",
+            "lugar de representación": "Teatro Principal de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra programada para el día siguiente"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Intermedio de baile entre obras teatrales"
+        },
+        {
+          "tipo": "música en café",
+          "lugar": "Plaza del Hospital Real",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "En la plaza del Hospital Real se ha abierto un nuevo café con el antiguo nombre de la Cachucha, donde habrá también música algunos dias, y se servirá segun el gusto moderno."
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Arqueología/Antigüedades",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Sección 'ANTIGUEDADES GADITANAS' que describe el hallazgo de una lápida sepulcral romana dedicada a Lucio Bebio Hermes",
+          "conexiones": [
+            "Se relaciona con la circular del Consejo Real sobre conservación de antigüedades"
+          ]
+        },
+        {
+          "tema": "Instituciones culturales",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Menciona la Real Academia de la Historia y su papel en la conservación de antigüedades",
+          "conexiones": [
+            "Vinculado a la sección de antigüedades y patrimonio cultural"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533563.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 DE NOVIEMBRE DE 1827",
+      "Número": "4112",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "POESIA.Fragmento de una tragedia de Shakespeare.—Nada contribuye tanto á desfigurar los idiomas como las malas traducciones. Una triste esperiencia de esto tenemos en España, pues desde que por mezquinas especulaciones se hacen á destajo traducciones del frances al español por hombres que ignoran ambos idiomas la lengua castellana ha sufrido una notable alteracion, perdiendo mucho de aquella antigua pureza con que la emplearon tan hermosamente los Cervantes, los Granadas, los Saavedras, los Mendozas, los Rivadeneira &c. Si semejantes traductores estuviesen penetrados de los sentimientos que animaban al gran trágico ingles Shakespeare en favor de su idioma, seguramente estudiarían el suyo con mas cuidado, y se esforzarían por no adulterarle como lo hacen. Nos ha sugerido estas ideas una escena de la famosa tragedia del citado poeta ingles, intitulada Ricardo II..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "William Shakespeare",
+          "obra": {
+            "titulo": "Ricardo II",
+            "genero": "tragedia",
+            "actos": null,
+            "autor_obra": "Shakespeare",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [
+            "Severa por demas es mi sentencia,Y tal, Señor, cual no la esperaríaDe vuestra boca..."
+          ],
+          "contexto": "Se presenta un fragmento traducido de Ricardo II como ejemplo de buena literatura, contrastando con críticas a las malas traducciones del francés al español"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera bufa",
+          "interprete": null,
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Representación de 'La Cenicienta o sea el triunfo de la bondad' (ópera bufa en dos actos, música de Rossini) con intermedios de Boleras del Tripili"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Programación teatral que incluye obras como 'La Misantropia o el arrepentimiento' y 'El triunfo de las mugeres'",
+          "conexiones": [
+            "Se relaciona con la sección musical al formar parte del mismo programa de entretenimiento"
+          ]
+        },
+        {
+          "tema": "Crítica literaria",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Crítica a las malas traducciones y su impacto en el idioma español, con menciones a autores clásicos como Cervantes, Granada, Saavedra, Mendoza y Rivadeneira",
+          "conexiones": [
+            "Se vincula con la traducción de Shakespeare presentada posteriormente"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533634.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "LUNES 26 DE NOVIEMBRE DE 1827",
+      "Número": "4152",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 3,
+          "contenido": "Sigue el análisis de la España poetica.Uno de los sonetos mas justamente celebrados es el siguiente de Lupercio Argensola:[Soneto completo transcrito]Y dice el traductor rompiendo ufano todas las trabas con expedito desenfado:[Traducción al francés]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Lupercio Argensola",
+          "obra": {
+            "titulo": "Soneto a Doña Elvira",
+            "genero": "poesía",
+            "actos": null,
+            "autor_obra": "Lupercio Argensola",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "citas": [
+            "Yo os quiero confesar, D. Juan, primero..."
+          ],
+          "contexto": "Parte de una serie de análisis de la 'España poetica', donde se presenta un soneto de Argensola con su traducción al francés"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera heroica",
+          "interprete": "Sras. Ercolina Bressa, Florinda Michelessi, Teresa Schieroni y José Maria Ruiz y Teodoro Bueno",
+          "lugar": "TEATRO PRINCIPAL",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Representación de 'El Cruzado en Egipto', ópera heroica en dos actos de Jacobo Meyerbeer"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Cuento hebreo sobre el rabí Meir y la importancia de la educación en la ley judía",
+          "conexiones": []
+        },
+        {
+          "tema": "civilización",
+          "paginas": [
+            {
+              "pdf": "2-3",
+              "periodico": "2-3"
+            }
+          ],
+          "descripcion": "Proyecto de Mr. Drovetti para fomentar la civilización en África mediante educación de niños negros en Francia",
+          "conexiones": [
+            "educación",
+            "política colonial"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533666.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "8 DE DICIEMBRE DE 1827",
+      "Número": "4144",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "SONETO.Nace la Aurora, el Sol sale brillantePor las doradas puertas del Oriente,Al par que lo saluda alegrementeDel pueblo alado multitud errante,Del rústico patan el tosco canteSucede luego á la canora gente,Mientras del buey aviva diligenteEl paso tardo su aguijon punzante.La cima de los montes ya se dora:La noche viendo á Febo se ha ocultado;Huye el galan que en rejas enamora.Y yo, en mi blanda cama descuidado,Ni sé si sale el Sol, ni si la Aurora,Ni veo buey, ni patan, ni pueblo alado.Jacinto Clorindo."
+        },
+        {
+          "pdf": 3,
+          "periodico": 3,
+          "contenido": "BIBLIOGRAFIA ESPAÑOLA.Torre (Francisco de la):- Escribió: Entretenimiento de las Musas en esta baraja nueva de versos. Dividida en cuatro manjares de asuntos sacros, heroicos, líricos y burlescos. Zaragoza 1654, en 4.°"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Jacinto Clorindo",
+          "obra": {
+            "titulo": "Soneto [Nace la Aurora...]",
+            "genero": "poesía",
+            "actos": null,
+            "autor_obra": "Jacinto Clorindo",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [
+            "Soneto completo"
+          ],
+          "contexto": "Soneto de tema bucólico-amoroso publicado en la primera página del diario"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Francisco de la Torre",
+          "obra": {
+            "titulo": "Entretenimiento de las Musas",
+            "genero": "poesía",
+            "actos": null,
+            "autor_obra": "Francisco de la Torre",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "citas": [],
+          "contexto": "Referencia bibliográfica a obra publicada en Zaragoza en 1654"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": null,
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Representación de 'Tebaldo é Isolina' (ópera heroica en dos actos, música del caballero Morlacchi)"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "descripción urbana",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Extensa descripción de Viena por Madama de Staël, incluyendo arquitectura, costumbres y vida social",
+          "conexiones": [
+            "Conexión con las artes y la vida cultural vienesa"
+          ]
+        },
+        {
+          "tema": "teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Cartelera del Teatro Principal con obras dramáticas y líricas",
+          "conexiones": [
+            "Relacionado con la actividad musical y teatral de la ciudad"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia a la festividad de La Purísima Concepción y celebración del Jubileo",
+          "conexiones": [
+            "Vida religiosa y celebraciones"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533700.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "19 DE DICIEMBRE DE 1827",
+      "Número": "4155",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "El Jueves 20 se ejecutará a beneficio de la Sra. Ercolina Bressa, primera dama tiple de la compañía lírica, la ópera nueva titulada La Celmira, precedida de la obertura el Sitio de Corinto, música de Rossini. En el primer acto se estrenará una decoración del esterior de un antiguo mausoleo en una dilatada llanura pintada por D. Diego Maria del Valle."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Rossini",
+          "obra": {
+            "titulo": "La Celmira",
+            "genero": "ópera",
+            "actos": 1,
+            "autor_obra": "Rossini",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral a beneficio de una cantante"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "interprete": "Ercolina Bressa, Florinda Michelessi, Alejandro Mombeli, José Maria Ruiz, José Serafini Bettarelli, Antonio Garcia y Teodoro Bueno",
+          "lugar": "Teatro de Cádiz",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Representación operística con obertura de El Sitio de Corinto y la ópera La Celmira de Rossini"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Visita del Gobernador a una escuela de primera educación donde los alumnos demostraron sus conocimientos en gramática, ortografía, ortología y caligrafía",
+          "conexiones": [
+            "Vida social de las autoridades",
+            "Sistema educativo"
+          ]
+        },
+        {
+          "tema": "artes plásticas",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Mención a una decoración teatral pintada por D. Diego Maria del Valle representando un mausoleo antiguo",
+          "conexiones": [
+            "Escenografía teatral",
+            "Producción operística"
+          ]
+        },
+        {
+          "tema": "religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia de las Descalzas y celebración de San Nemesio Mártir",
+          "conexiones": [
+            "Vida religiosa de la ciudad"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "2533722.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "26 DE DICIEMBRE DE 1827",
+      "Número": "4162",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 3,
+          "periodico": 3,
+          "contenido": "DRAMATICOS ESPAÑOLESCopiamos de un periodico ingles el siguiente articulo. \\\"Se han publicado en Madrid seis numeros de una interesante coleccion de piezas dramaticas de autores españoles. Cada numero contiene dos piezas de un mismo autor. Lope de Vega, Calderon, Moreto, Tirso de Molina, Ruiz de Alarcon y Perez de Montalbán han suministrado las dos piezas publicadas. A cada pieza precede una critica habil sobre su mérito.\\\""
+        },
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO PRINCIPAL.=Un rasgo de generosidad de Federico II ó el mayor Palmer (comedia en 3 actos).=Intermedio de baile.=La burla del mesonero y figuras de movimiento (sainete).=A las 4.Tebaldo é Isolina (opera heroica en dos actos, musica del caballero Morlacchi, exornada segun previene su argumento.=A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Varios",
+          "obra": {
+            "titulo": "Colección de piezas dramáticas",
+            "genero": "Teatro",
+            "actos": null,
+            "autor_obra": "Varios autores del Siglo de Oro",
+            "lugar de representación": "Madrid"
+          },
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "citas": [],
+          "contexto": "Noticia sobre la publicación de una colección de obras dramáticas de autores clásicos españoles"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Un rasgo de generosidad de Federico II ó el mayor Palmer",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Parte de la programación teatral del día"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "obra": "Tebaldo é Isolina",
+          "interprete": null,
+          "compositor": "Morlacchi",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Ópera heroica programada para las 7 de la tarde"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro popular",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Representación de sainete 'La burla del mesonero y figuras de movimiento' con intermedio de baile",
+          "conexiones": [
+            "Forma parte de la programación teatral junto con la comedia y la ópera"
+          ]
+        },
+        {
+          "tema": "Crítica literaria",
+          "paginas": [
+            {
+              "pdf": 3,
+              "periodico": 3
+            }
+          ],
+          "descripcion": "Mención a críticas que acompañan las publicaciones dramáticas",
+          "conexiones": [
+            "Relacionado con la colección de obras del Siglo de Oro"
+          ]
+        }
+      ]
+    }
+  ]
 }
