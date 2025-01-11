@@ -1,0 +1,1522 @@
+{
+  "Año": 1830,
+  "datos": [
+    {
+      "PDF": "1830_2047242.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "21 DE ENERO DE 1830",
+      "Número": "4.920",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO DE SAN FERNANDO.= A beneficio de Juana Enrile y José Ponce, segundos boleros.= La persecucion de Margarita de Anjou, Reyna de Inglaterra, ó los ladrones de Escocia (melodrama en tres actos).— La agraciada bailará una polaca seria.= La gallega del zorongo (tonadilla nueva).= Los quin-tos imperfectos ó el sargento Marcos Bomba (baile pantomímico, el que concluirá con una operacion grotesca).— La cédula, ó el Jueces de Comadre en el Mundo nuevo (sainete nuevo, el que será adornado con el baile del chocolatito, el chorote y las mollares de Sevilla).= A las 4½.\n\nTEATRO PRINCIPAL.= La Donna del Lago (ópera seria en dos actos, música del maestro Rossini).= A las 7.\nEl argumento de dicha ópera, en español é italiano, se halla de venta en el despacho de boletines á 4 rvn."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La persecucion de Margarita de Anjou, Reyna de Inglaterra, ó los ladrones de Escocia",
+            "genero": "melodrama",
+            "actos": 3,
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra presentada como parte de una función teatral benéfica"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La gallega del zorongo",
+            "genero": "tonadilla nueva",
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Pieza musical-teatral presentada en la misma función"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "ópera",
+          "obra": "La Donna del Lago",
+          "compositor": "Rossini",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Ópera seria en dos actos presentada en el Teatro Principal"
+        },
+        {
+          "tipo": "danza",
+          "obras": [
+            "polaca seria",
+            "baile del chocolatito",
+            "chorote",
+            "mollares de Sevilla"
+          ],
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Diferentes piezas de baile presentadas como parte de la función benéfica"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "comercio",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Venta del libreto de la ópera La Donna del Lago en español e italiano",
+          "conexiones": [
+            "Se relaciona con la representación operística del Teatro Principal"
+          ]
+        },
+        {
+          "tema": "beneficencia",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Función benéfica para Juana Enrile y José Ponce, segundos boleros",
+          "conexiones": [
+            "Muestra el sistema de apoyo a artistas en la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047283.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "13 DE FEBRERO DE 1830",
+      "Número": "4,943",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO DE SAN FERNANDO.—A beneficio de José Castellanos y Vicente Santa Maria.—El castigo del Pensegue (comedia en tres actos, del célebre maestro Tirso de Molina).—Las seguidillas madrileñas, cantadas y bailadas por los Sres. Lazaro Quintana, José Lopez y Antonio Romero.—El triunfo de las mugeres (seguidilla).—Seguidillas murcianas.—Los tres novios imperfectos, sordo tartamudo y tuerto (sainete, en el que el gracioso cantará un aria al aria).—A las 4½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Tirso de Molina",
+          "obra": {
+            "titulo": "El castigo del Pensegue",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "Tirso de Molina",
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra representada como parte de una función teatral benéfica"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "seguidillas",
+          "interprete": "Lazaro Quintana, José Lopez y Antonio Romero",
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Actuación musical como parte de una función teatral benéfica"
+        },
+        {
+          "tipo": "ópera",
+          "interprete": "varios artistas incluyendo Sr. Vaccani, Sr. Pedroti, Sr. Cartagenova",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Función de beneficio para Sr. Estevan Ferrero incluyendo fragmentos de varias óperas"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Se anuncian funciones en dos teatros principales de Cádiz: Teatro de San Fernando y Teatro Principal, con programación variada que incluye comedia, música y danza",
+          "conexiones": [
+            "Combina elementos de teatro clásico español (Tirso de Molina) con formas populares (seguidillas) y ópera italiana"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047317.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "7 DE MARZO DE 1830",
+      "Número": "4.963",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "LETRILLA\nAun repicando en la torre\nNo hace la campana tan,\nSino dan? dan? dan?\n[...seguida de varios versos en forma de letrilla]"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Anónimo",
+          "obra": {
+            "titulo": "Letrilla",
+            "genero": "Poesía popular/satírica",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [
+            "Aun repicando en la torre",
+            "No hace la campana tan,",
+            "Sino dan? dan? dan?"
+          ],
+          "contexto": "Letrilla satírica que utiliza el recurso del repique de campanas como metáfora"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": 8
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Función teatral con baile",
+          "interprete": "compañía de volatines del intrépido Murciano",
+          "lugar": "TEATRO DE S. FERNANDO",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "contexto": "Anuncio de función compuesta de 'maroma tirante, equilibrios, saltos mortales, volteo y el gran baile general nombrado El mágico protector del amor, ó la cabaña encantada'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "descripcion": "Anuncio de Mr. Fourel, profesor de lenguas francesa e inglesa, que tiene academia en la calle Ahumada",
+          "conexiones": [
+            "Cultura francesa e inglesa en Cádiz de la época"
+          ]
+        },
+        {
+          "tema": "Ensayo filosófico",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Artículo 'EL CORAZON DE LA MUGER' que presenta una alegoría sobre la educación femenina comparándola con un jardín",
+          "conexiones": [
+            "Pensamiento social de la época",
+            "Educación femenina"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047347.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "29 DE MARZO DE 1830",
+      "Número": "4.987",
+      "LITERATURA": false,
+      "PAGINAS_LITERATURA": [],
+      "ARTICULOS_LITERATURA": [],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "Instrumentos musicales - Venta",
+          "interprete": "No especificado",
+          "lugar": "calle de S. José, numero 47, piso principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Aviso comercial sobre venta de instrumentos: 'Se venden por razon de marcha dos violoncelos y dos violines muy buenos, y una cantidad de cuartetos de los mejores compositores: se pueden ver todos los dias desde las 8 á las 9 de la mañana, y los Domingos hasta la una'"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia de Candelaria y mención a San Ciro",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y navegación",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Referencia a la 'Guia mercantil de España' con aranceles y reglamentos comerciales",
+          "conexiones": []
+        },
+        {
+          "tema": "Publicaciones científicas",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Mención a obras sobre electricidad de los meteoros y Diccionario geográfico universal",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047377.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "20 DE ABRIL DE 1830",
+      "Número": "5.009",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": 6,
+          "contenido": "Mañana Miercoles se ejecutará en el teatro Principal la comedia El entrometido ó la máscara; y en el de S. Fernando, el Jueves la Dama duende."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Calderón de la Barca",
+          "obra": {
+            "titulo": "La Dama duende",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": null,
+            "lugar de representación": "teatro de S. Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "citas": [],
+          "contexto": "Obra anunciada para su representación teatral el jueves"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Publicaciones académicas",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Aviso sobre recogida de cuadernos del Diccionario Geográfico Universal y obras sobre Electricidad de los Meteoros en la librería de Hortal y Compañía",
+          "conexiones": []
+        },
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Anuncio de un francés que ofrece enseñanza del arte de confitero y destilador, incluyendo elaboración de licores y jarabes",
+          "conexiones": []
+        },
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Anuncio de representaciones teatrales en dos teatros de la ciudad: Principal y S. Fernando",
+          "conexiones": [
+            "Referencia literaria a 'La Dama duende'"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047408.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "MIERCOLES 12 DE MAYO DE 1830",
+      "Número": "5.031",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "Mañana en celebridad al aniversario de la entrada del Rey N. S. en Madrid de vuelta de su cautiverio en Francia se ejecutará en el Teatro Principal la comedia nueva en verso, titulada El afan de figurar, acomodada al teatro español por D. J. M. Carnerero. Será desempeñada por las Sras. Peluffo y Francisconi, y por los Sres. Mate, Furnier, Crespo, Berenguel, Ortell &c. Intermedio de baile y sainete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El afan de figurar",
+            "genero": "comedia en verso",
+            "autor_obra": "D. J. M. Carnerero (adaptación)",
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Representación teatral por motivo de celebración del aniversario del regreso del Rey Fernando VII de su cautiverio en Francia"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile y sainete",
+          "interprete": "Compañía del Teatro Principal",
+          "lugar": "Teatro Principal",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Intermedio y cierre de la función teatral principal"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Función teatral completa que incluye comedia principal, baile y sainete como celebración de un acontecimiento histórico-político",
+          "conexiones": [
+            "Celebración política",
+            "Representación escénica",
+            "Entretenimiento público"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al Jubileo de las 40 horas en la iglesia de las Descalzas",
+          "conexiones": [
+            "Vida religiosa en Cádiz"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047443.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "3 DE JUNIO DE 1830",
+      "Número": "5.053",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "El Sabado se ejecutará en el teatro de S. Fernando la comedia Las profecias de Daniel y bruto de Babilonia. En el acto primero aparecerá un dragon que se transformará en una vistosa decoracion de Olimpo. En el segundo un obscuro subterraneo que desaparecerá descubriendo el Olimpo, cambiandose en el lago de los leones. Y en el tercero se verá el horno que se transformará en gloria. La decoracion de Olimpo del acto segundo es nueva, pintada por D. Diego Maria del Valle, y la maquinaria dirigida por D. Francisco Calmerino."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "Las profecias de Daniel y bruto de Babilonia",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": "No especificado",
+            "lugar de representación": "teatro de S. Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral con descripción detallada de la escenografía y efectos especiales"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Describe detalladamente las escuelas de caridad en Londres, específicamente la Escuela de S. Andrés y la Escuela gratuita de Bacon, incluyendo sus métodos educativos y objetivos",
+          "conexiones": [
+            "Reforma social",
+            "Industrialización",
+            "Alfabetización"
+          ]
+        },
+        {
+          "tema": "Teatro y escenografía",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Detalla la producción teatral con énfasis en los efectos escénicos y decorados, mencionando a los responsables técnicos",
+          "conexiones": [
+            "Artes visuales",
+            "Entretenimiento público"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2047474.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "25 DE JUNIO DE 1830",
+      "Número": "5.075",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "Aventuras de Gil Blas de Santillana robadas á España y adoptadas en Francia por Mr. Le Sage, restituidas á su patria y á su lengua nativas por un español zeloso que no sufre se burlen de su nacion. Esta obra, cuyo mérito no es necesario ponderar, ha sido impresa varias veces, pero ninguna de las ediciones que han precedido á la presente ofrece las ventajas de esta pudiendose llamar económicas por su módico precio y buena ejecucion en la parte tipográfica; constará de 4 tomos en 8º prolongado. Se suscribe en la librería de Hortal y Compañía, plazuela de S. Agustin, núm. 201."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Alain-René Lesage",
+          "obra": {
+            "titulo": "Gil Blas de Santillana",
+            "genero": "Novela picaresca",
+            "actos": null,
+            "autor_obra": "Le Sage (adaptación francesa)",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de venta de una edición española de la obra, destacando que es una restitución al español de la adaptación francesa de Le Sage"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 5
+            },
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Extensas tablas de importación que muestran el comercio internacional del puerto de Cádiz, incluyendo tipos de barcos, procedencias y mercancías",
+          "conexiones": [
+            "Refleja la importante actividad comercial de Cádiz como puerto internacional"
+          ]
+        },
+        {
+          "tema": "Política internacional",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            },
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Noticias sobre la situación política en Venezuela y Colombia, incluyendo referencias a Bolívar y la separación de Venezuela",
+          "conexiones": [
+            "Muestra el interés por los acontecimientos en las antiguas colonias españolas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2051853.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "17 DE JULIO DE 1830",
+      "Número": "5097",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "En la librería de Hortal y Compañía, plazuela de S. Agustin, se hallan las obras siguientes: POESIAS selectas castellanas desde el tiempo de Juan de Mena hasta nuestros dias, recogidas y ordenadas por D. Manuel José Quintana, nueva edicion aumentada y corregida, en cuatro tomos 8º"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Juan de Mena",
+          "obra": {
+            "titulo": "Poesías selectas castellanas desde el tiempo de Juan de Mena hasta nuestros días",
+            "genero": "Poesía - Antología",
+            "actos": null,
+            "autor_obra": "Manuel José Quintana (compilador)",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "citas": [],
+          "contexto": "Aparece en un anuncio de librería como obra disponible para su venta"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El májico y el cestero",
+            "genero": "Comedia",
+            "lugar de representación": "teatro de S. Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Anuncio de representación teatral para el día siguiente"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "obra": "La solitaria",
+          "lugar": "teatro de S. Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Parte de la programación teatral del día siguiente"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Programación completa del teatro que incluye comedia, tonadilla y sainete",
+          "conexiones": [
+            "Se relaciona con las obras literarias y musicales mencionadas"
+          ]
+        },
+        {
+          "tema": "Educación/Medicina",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Extenso artículo sobre avances médicos y su enseñanza en el Real Colegio de medicina y cirujía",
+          "conexiones": [
+            "Muestra el desarrollo científico y educativo de la época"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2051941.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "DOMINGO 8 DE AGOSTO DE 1830",
+      "Número": "5.019",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 1,
+          "periodico": 1,
+          "contenido": "AL SEÑOR GARCIA LUNA.\nSONETO.\nMil veces los amores de Edelmira\nY de un valiente moro veneciano\nQuiso admirar el pueblo gaditano,\nY de Otelo no vió ni aun la mentira:\nEmpero Luna, á quien Apolo inspira,\nCual el Dios de las musas soberano,\nHace el trágico fin del africano.\n¿Qué mucho, si del sol sus luces tira?\nAl presentarse con heroico brio\nAsí arrebata la atencion, en duelo,\nQue no se siente el rigoroso Estio,\nNi mas que su dolor y su desvelo.\n¿Y este un cómico es? ¡Qué desvario!\nEste no es Luna, no, este es Otelo!—M. Navas."
+        },
+        {
+          "pdf": 2,
+          "periodico": 2,
+          "contenido": "TEATRO.\nHace algun tiempo que tenia pensado poner cuatro letras sobre las representaciones que se han hecho en esta ciudad..."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Shakespeare",
+          "obra": {
+            "titulo": "Otelo",
+            "genero": "tragedia",
+            "actos": null,
+            "autor_obra": "Shakespeare (implícito)",
+            "lugar de representación": "Teatro de Cádiz"
+          },
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "citas": [
+            "Este no es Luna, no, este es Otelo!"
+          ],
+          "contexto": "Soneto dedicado al actor García Luna alabando su interpretación del papel de Otelo"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "descripcion": "Sección de 'DIVERSIONES PUBLICAS' que anuncia representaciones teatrales: 'Los carboneros de Olsbak' (comedia), 'El payo de centinela' (sainete) y 'Maria Estuarda' (tragedia en cinco actos)",
+          "conexiones": [
+            "Se relaciona con las críticas teatrales anteriores y la actividad cultural de la ciudad"
+          ]
+        },
+        {
+          "tema": "Crítica teatral",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Extensa crítica sobre las representaciones teatrales y el desempeño de los actores, especialmente García Luna",
+          "conexiones": [
+            "Vinculado al soneto inicial y las obras anunciadas en la cartelera"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2051997.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "30 DE AGOSTO DE 1830",
+      "Número": "5.041",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO DE SAN FERNANDO.—Ultima funcion que el Sr. Luna dará en este teatro.—Blanca y Montcasin (tragedia en cinco actos).—Intermedio de baile.—El tonto alcalde discreto (sainete).—A las 5."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Blanca y Montcasin",
+            "genero": "tragedia",
+            "actos": 5,
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Aparece como parte de la programación teatral del día"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El tonto alcalde discreto",
+            "genero": "sainete",
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Presentado como pieza final de la función teatral"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "baile",
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Intermedio de baile entre las obras teatrales"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Espectáculos públicos",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "PLAZA DEL BALON.—Se verificará hoy un capeo de becerros herales de los lidiados ayer, y ademas dos nuevos de Don Pedro Montañez, todos embolados...",
+          "conexiones": [
+            "Diversiones públicas",
+            "Cultura taurina"
+          ]
+        },
+        {
+          "tema": "Educación y Sanidad",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "VACUNA PUBLICA. La Real Academia médico-quirurgica de esta ciudad, contribuyendo á la propagacion de este preservativo, vacunará gratuitamente el dia 30 del corriente mes á la 5 de la tarde...",
+          "conexiones": [
+            "Salud pública",
+            "Instituciones académicas"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2052020.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "21 DE SETIEMBRE DE 1830",
+      "Número": "5.063",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": 6,
+          "contenido": "A la librería de Hortal y Compañía, plazuela de S. Agustin, se servirán pasar los Sres. suscritores al Diccionario historico enciclopedico que contiene por un orden alfabético los acontecimientos de alguna nombradía en la historia sagrada y profana, lo principal de la mitologia, la descripcion de los usos, leyes y costumbres de los pueblos célebres y el origen y época de las invenciones, descubrimientos y establecimientos importantes hechos hasta el dia, á recoger el cuaderno 1º del tomo 3º y abonar el 2º"
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Mr. Anquetil",
+          "obra": {
+            "titulo": "Compendio de la historia universal ó pintura historica de todas las naciones",
+            "genero": "Historia",
+            "actos": null,
+            "autor_obra": "Mr. Anquetil",
+            "lugar de representación": null
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de librería sobre obras disponibles para suscriptores"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Educación/Literatura",
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "descripcion": "Anuncio de venta de diccionarios y obras enciclopédicas, incluyendo un 'Diccionario de la Rima ó consonantes de la lengua castellana' con elementos de poética y versificación española",
+          "conexiones": [
+            "Relacionado con la difusión del conocimiento y la educación en la época"
+          ]
+        },
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencia al 'Jubileo de las 40 horas está en la iglesia del Carmen' y celebración de San Mateo",
+          "conexiones": [
+            "Integración de elementos religiosos en la vida cotidiana"
+          ]
+        },
+        {
+          "tema": "Comercio y Economía",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Extensa lista de precios corrientes en la plaza de Cádiz, mostrando la importancia comercial del puerto",
+          "conexiones": [
+            "Refleja la actividad mercantil de Cádiz como puerto principal"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2052042.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "13 DE OCTUBRE DE 1830",
+      "Número": "5.083",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO DE SAN FERNANDO.—El mágico de Servan y tirano de Astracan (comedia en tres actos, la que será adornada con cuanto previene su argumento, y desempeñada por las Sras. Peluffo, Francesconi y Alvarez, y por los Sres. Furnier, Balestroni, Quintan, Peinado, Illot, Moral, Diez menor &c.)—Un intermedio de baile y otro de cantado.—El médico poeta (sainete).—A las 4½.\n\nMañana habrá iluminacion en el teatro principal en celebridad del feliz cumpleaños del Rey N. S., y se ejecutará la comedia La real clemencia de Tito."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El mágico de Servan y tirano de Astracan",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral anunciada en la sección de diversiones públicas"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El médico poeta",
+            "genero": "sainete",
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Sainete anunciado como parte de la programación teatral"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La real clemencia de Tito",
+            "genero": "comedia",
+            "lugar de representación": "teatro principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra programada para el día siguiente en celebración del cumpleaños del Rey"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "intermedio cantado",
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Pieza musical programada entre actos teatrales"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "celebración real",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Iluminación especial del teatro principal por el cumpleaños del Rey",
+          "conexiones": [
+            "Representación de 'La real clemencia de Tito' como parte de la celebración"
+          ]
+        },
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 2,
+              "periodico": 2
+            }
+          ],
+          "descripcion": "Mención a la Real Academia de S. Fernando para aprobación de planos",
+          "conexiones": [
+            "Administración y gestión cultural institucional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2052064.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "4 DE NOVIEMBRE DE 1830",
+      "Número": "5.107",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 8,
+          "periodico": 8,
+          "contenido": "TEATRO DE SAN FERNANDO.—Funcion particular á beneficio de José Sarramian, tercer actor de la compañía.=La aparición del marido ó sea el tambor y la casa con duende (comedia nueva en tres actos).=El Sr. Dionisio Lopez cantará el aria de Figaro del Barbero de Sevilla.=Boleras á cuatro.=El referido Dionisio Lopez y el Sr. Furnier cantarán un duo bufo de la opera los Pretendientes, y seguirá el dicho Dionisio con un aria bufa de la misma ópera.=Los usias contrahechos (sainete).=A las 4½."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Rossini",
+          "obra": {
+            "titulo": "El Barbero de Sevilla",
+            "genero": "ópera",
+            "actos": null,
+            "autor_obra": "Rossini",
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "citas": [],
+          "contexto": "Aria de Fígaro interpretada en una función teatral benéfica"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "La aparición del marido ó sea el tambor y la casa con duende",
+            "genero": "comedia",
+            "actos": 3,
+            "autor_obra": null,
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "contexto": "Obra principal de una función benéfica"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 8,
+          "periodico": 8
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "aria operística",
+          "interprete": "Dionisio Lopez",
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "contexto": "Interpretación del aria de Fígaro del Barbero de Sevilla"
+        },
+        {
+          "tipo": "danza española",
+          "interprete": null,
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "contexto": "Boleras interpretadas por cuatro bailarines"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "teatro",
+          "paginas": [
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "descripcion": "Función benéfica en el Teatro de San Fernando a beneficio del tercer actor José Sarramian, incluyendo comedia, ópera, danza y sainete",
+          "conexiones": [
+            "música",
+            "literatura dramática",
+            "danza"
+          ]
+        },
+        {
+          "tema": "educación",
+          "paginas": [
+            {
+              "pdf": 7,
+              "periodico": 7
+            }
+          ],
+          "descripcion": "Anuncio de cátedras de pilotaje y navegación establecidas por el Ayuntamiento y Junta de Comercio",
+          "conexiones": [
+            "comercio",
+            "formación profesional"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2052102.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "26 DE NOVIEMBRE DE 1830",
+      "Número": "5.129",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 6,
+          "periodico": 6,
+          "contenido": "Mañana se ejecutará en el teatro principal la comedia El preguntón y el cadete."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "No especificado",
+          "obra": {
+            "titulo": "El preguntón y el cadete",
+            "genero": "comedia",
+            "actos": null,
+            "autor_obra": "No especificado",
+            "lugar de representación": "teatro principal"
+          },
+          "paginas": [
+            {
+              "pdf": 6,
+              "periodico": 6
+            }
+          ],
+          "citas": [],
+          "contexto": "Anuncio de representación teatral en la sección de avisos del periódico"
+        }
+      ],
+      "MUSICA": false,
+      "PAGINAS_MUSICA": [],
+      "ARTICULOS_MUSICA": [],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Religión",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Referencias religiosas en el encabezado: 'Los Desposorios de Nuestra Señora' y 'El Jubileo de las 40 horas está en la Sta. iglesia Catedral'",
+          "conexiones": []
+        },
+        {
+          "tema": "Comercio y economía",
+          "paginas": [
+            {
+              "pdf": 5,
+              "periodico": 5
+            },
+            {
+              "pdf": 7,
+              "periodico": 7
+            },
+            {
+              "pdf": 8,
+              "periodico": 8
+            }
+          ],
+          "descripcion": "Extensa sección de precios corrientes en la plaza de Cádiz, listados de importaciones y cambios monetarios",
+          "conexiones": []
+        },
+        {
+          "tema": "Noticias internacionales",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Sección 'NOTICIAS DE AMERICA' con información sobre México, Perú y otros territorios americanos",
+          "conexiones": []
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2052130.pdf",
+      "Título": "DIARIO MERCANTIL DE CADIZ",
+      "Fecha": "8 DE DICIEMBRE DE 1830",
+      "Número": "5.141",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "DIVERSIONES PUBLICAS.\nTEATRO DE SAN FERNANDO.—Cuidado con las novelas (comedia en 3 actos, la que será desempeñada por las Sras. Peluño, Carbajo é Illot, y por los Sres. Mate, Furnier, Crespo, Balcstroni, Diez, Garcia, Quintan, Diez menor &c.)—La venida del soldado (tonadilla á cuatro).—La fantasma del lugar (sainete).—A las 4½.\n\nTEATRO PRINCIPAL.—El bandido incognito ó la caverna invisible en las ruinas del convento de los Templarios (comedia en tres actos, la que será desempeñada por las Sras. Peluño y Carbajo, y por los Sres. Mate, Furnier, Crespo, Balcstroni, Torterol, Peinado &c.)—La Jota aragonesa (baile compuesto para la comedia La Pata de cabra).—Y se concluirá con un divertido sainete.—En celebridad del dia el teatro estará iluminado.—A las 7½.\n\nEl Jueves próximo 9 se ejecutará en el teatro de S. Fernando, á beneficio del Sr. Ramon Quintan, la gran comedia de espectaculo en tres actos Las ruinas de Babilonia; un baile general dirigido por el Sr. José Guillen, nominado Arlequin enamorado; la tonadilla á tres El torero y la maja; y el sainete La inocente picarilla."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "Cuidado con las novelas",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para representación"
+        },
+        {
+          "tipo": "referencia_directa",
+          "obra": {
+            "titulo": "El bandido incognito ó la caverna invisible",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para representación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "titulo": "La venida del soldado",
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Pieza musical programada como parte del espectáculo teatral"
+        },
+        {
+          "tipo": "baile",
+          "titulo": "La Jota aragonesa",
+          "lugar": "Teatro Principal",
+          "interprete": "sin especificar",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Baile incluido en la programación teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Teatro",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "El documento incluye una sección completa de 'DIVERSIONES PUBLICAS' con la programación detallada de dos teatros principales de Cádiz: Teatro de San Fernando y Teatro Principal",
+          "conexiones": [
+            "Incluye obras teatrales, piezas musicales, bailes y sainetes"
+          ]
+        },
+        {
+          "tema": "Celebraciones religiosas",
+          "paginas": [
+            {
+              "pdf": 1,
+              "periodico": 1
+            }
+          ],
+          "descripcion": "Menciona la festividad de 'La Purísima Concepcion de Nuestra Señora, patrona de España y de sus Indias'",
+          "conexiones": [
+            "Se relaciona con la iluminación especial del teatro mencionada en la sección de diversiones"
+          ]
+        }
+      ]
+    },
+    {
+      "PDF": "1830_2052155.pdf",
+      "Título": "DIARIO MERCANTIL DE CÁDIZ",
+      "Fecha": "25 DE DICIEMBRE DE 1830",
+      "Número": "5.158",
+      "LITERATURA": true,
+      "PAGINAS_LITERATURA": [
+        {
+          "pdf": 4,
+          "periodico": 4,
+          "contenido": "TEATRO DE SAN FERNANDO.—David perseguido y prudente Abigail (comedia en tres actos, la que será desempeñada por las Sras. Hernandez y Carbajo, y por los Sres. Furnier, Garcia, Quintan, Balestroni, Crespo, Peinado, Moral é Illot).—Intermedio de baile.—El tripili (tonadilla).—El engaño frustrado (sainete.—A las 4.\n\nTEATRO PRINCIPAL.—El médico Reveyero (comedia en tres actos, la que será desempeñada por las Sras. Pelufo y Alvarez, y por los Sres. Mate, Balestroni, Crespo, Sarramian, Diez, Ferrer, Peinado, Moral &c.)—Intermedio de baile.—El secreto del espejo (pieza en un acto).—A las 7."
+        }
+      ],
+      "ARTICULOS_LITERATURA": [
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "David perseguido y prudente Abigail",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro de San Fernando"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para representación"
+        },
+        {
+          "tipo": "referencia_directa",
+          "autor": "Desconocido",
+          "obra": {
+            "titulo": "El médico Reveyero",
+            "genero": "comedia",
+            "actos": 3,
+            "lugar de representación": "Teatro Principal"
+          },
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Obra teatral programada para representación"
+        }
+      ],
+      "MUSICA": true,
+      "PAGINAS_MUSICA": [
+        {
+          "pdf": 4,
+          "periodico": 4
+        }
+      ],
+      "ARTICULOS_MUSICA": [
+        {
+          "tipo": "tonadilla",
+          "titulo": "El tripili",
+          "lugar": "Teatro de San Fernando",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "contexto": "Pieza musical como intermedio teatral"
+        }
+      ],
+      "OTRAS_REFERENCIAS_CULTURALES": [
+        {
+          "tema": "Diversiones públicas",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Se anuncia un 'Nacimiento' con figuras corpóreas y 18 transformaciones de decoraciones, incluyendo vista de marina y juegos artificiales",
+          "conexiones": [
+            "Entretenimiento popular navideño"
+          ]
+        },
+        {
+          "tema": "Espectáculos de variedades",
+          "paginas": [
+            {
+              "pdf": 4,
+              "periodico": 4
+            }
+          ],
+          "descripcion": "Actuación de la compañía gimnástica de Juan Escalon con números de cuerda elástica, baile inglés y fandango",
+          "conexiones": [
+            "Entretenimiento popular",
+            "Danza tradicional española"
+          ]
+        }
+      ]
+    }
+  ]
+}
