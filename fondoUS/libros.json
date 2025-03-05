@@ -1,1 +1,314 @@
+{
+  "manuscritos": [
+    {
+      "autor": "Cornejo, Damián, O.F.M.",
+      "titulo": "Ramillete seráfico",
+      "año": "17??",
+      "procedencia": "Capuchinos / Biblioteca Provincial y de la Universidad de Sevilla",
+      "signatura": "A 331/003",
+      "estado": "Pergamino, buen estado",
+      "notas": "347 folios, copia de Chronica Seraphica. Signatura antigua: 'B 54'. Rotul.: Ramillete Seraphico"
+    },
+    {
+      "autor": "Anónimo",
+      "titulo": "Tesoro del Alma hallado, exercitado y aconsejado por los Santos en el exercicio práctico de la Oración mental",
+      "año": "16??",
+      "procedencia": "Capuchinos / Biblioteca Provincial y de la Universidad de Sevilla",
+      "signatura": "A 331/109",
+      "estado": "Pergamino, muy mal estado",
+      "notas": "Reglas de oración mental. Nombres de frailes en guarda: Fray Mariano de Ximena, Fray Joseph Castro, Manuel Bernardo de Cantillana, Fray Joseph de Catañas, Fray Rodrigo de Cabra, Fray Josef de Moguer, Fray Francisco de Cala Corista. Signatura en cabeza: 'CAPNOS. DE SEVI''"
+    },
+    {
+      "autor": "Antequera, Juan de",
+      "titulo": "El hijo de la verdad, predicador de Nínive y Missionario de Dios",
+      "año": "1684",
+      "procedencia": "Capuchinos / Biblioteca Provincial y de la Universidad de Sevilla",
+      "signatura": "A 331/184",
+      "estado": "Pergamino, casi desprendido",
+      "notas": "Tomo primero, ideas sobre Jonás. Signatura: R.1.5. Rotul.: El hijo de la verdad"
+    },
+    {
+      "autor": "Anónimo",
+      "titulo": "Poesías varias de los siglos 16o y 17o",
+      "año": "15??-16??",
+      "procedencia": "Biblioteca Provincial y de la Universidad de Sevilla / Donación Manuel Anderica Martinez",
+      "signatura": "A 331/248",
+      "estado": "Pergamino, con restos de correas",
+      "notas": "Tomo I. Rotul.: Poesias varias. T.I. M.S. Posible relación con Capuchinos"
+    },
+    {
+      "autor": "Anónimo",
+      "titulo": "Poesías varias de los siglos 16o y 17o",
+      "año": "15??-16??",
+      "procedencia": "Biblioteca Provincial y de la Universidad de Sevilla / Donación Manuel Anderica Martinez",
+      "signatura": "A 331/247",
+      "estado": "Pergamino, con restos de correas",
+      "notas": "Tomo II. Rotul.: Poesias varias. M.S. T.2. Posible relación con Capuchinos"
+    },
+    {
+      "autor": "Pedro de los Ángeles, O.C.D.",
+      "titulo": "Breve compendio del orden judicial para religiosos",
+      "año": "16??",
+      "procedencia": "Capuchinos / Biblioteca Provincial y de la Universidad de Sevilla",
+      "signatura": "A 333/023",
+      "estado": "Pergamino",
+      "notas": "Teoría y práctica para superiores religiosos"
+    },
+    {
+      "autor": "Antequera, Juan Francisco de",
+      "titulo": "[Obras de Fray Juan Francisco de Antequera]",
+      "año": "16??",
+      "procedencia": "Capuchinos / Biblioteca Provincial y de la Universidad de Sevilla",
+      "signatura": "A 331/090/99",
+      "estado": "Pergamino, excepto vol. 10 sin encuadernación",
+      "notas": "Ms. en guarda: 'z&#x45 ste libro esta asignado a este Conv.to de Seuilla por N.M.R.P. Antonio de Hondarroa Min. Provincial'. Autor falleció en 1687"
+    },
+    {
+      "autor": "Anónimo",
+      "titulo": "Cartas de Aristóteles dirigidas al D. Don Manuel Custodio",
+      "año": "1786-87",
+      "procedencia": "Capuchinos / Biblioteca Provincial y de la Universidad de Sevilla",
+      "signatura": "A 331/126",
+      "estado": "Pergamino, regular estado",
+      "notas": ""
+    }
+  ]
+,
 
+  "libros_impresos": [
+    {
+      "autor": "Petrus Lombardus",
+      "titulo": "Sententiarum libri quattuor",
+      "lugar_año": "Friburgi, ca. 1491",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A 336/096",
+      "estado": "Pergamino",
+      "notas": "Ex-libris ms. y tejuelo enmarcado en negro. Cuadrado SATOR en p. 524. Enlace digital: http://fama.us.es/record=b1517381~S5*spi (enlace roto: http://fondosdigitales.us.es/fondos/libros/154/14/sententiarum-libri-quattuor/). CCPB000111778-5"
+    },
+    {
+      "autor": "Pérez de Valencia, Jaime, O.S.A.",
+      "titulo": "Centum ac quinquaginta psalmi Dauidici cum diligentissima etiam titulorum expositione",
+      "lugar_año": "Parrhisijs, 1515",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 23/1/14",
+      "estado": "Pasta",
+      "notas": "Segundo en antigüedad de tres ejemplares en la biblioteca. CCPB000888862-0 (1+)"
+    },
+    {
+      "autor": "Lactancio, Lucio Celio Firmiano",
+      "titulo": "L. Coelii Lanctantii Firmiani Diuinarum institutionum libri VII",
+      "lugar_año": "Basileae, 1521",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 05/5/14",
+      "estado": "Pergamino",
+      "notas": "Ex-libris ms. en primera hoja. Ms.: 'No tiene que expurgar 27 de Diciembre de 1631' y 'No tiene que expurgar 1640'. http://fama.us.es/record=b1534842~S5*spi. CCPB000170717-5"
+    },
+    {
+      "autor": "Beda, Noel",
+      "titulo": "Annotationu[m] Natalis Bedae... in Iacobum Fabrum Stapulensem libri duo et in Desiderium Erasmum Roterodamum liber unus",
+      "lugar_año": "Parisiis?, 1526",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 65/4/12",
+      "estado": "Pergamino",
+      "notas": "Versión digital en Astrea: http://fama.us.es/record=b1546219~S1*spi. Signatura anterior: E.I.5"
+    },
+    {
+      "autor": "Jerónimo, Santo",
+      "titulo": "Epistolas de Sant Hieronimo",
+      "lugar_año": "Valencia, 1526",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 70/3/13",
+      "estado": "Pergamino",
+      "notas": "Cruz griega. Muchos ejemplares: CCPB000198985-5"
+    },
+    {
+      "autor": "Clichtove, Josse",
+      "titulo": "De Sacramento Eucharistiae contra Oecolampadium opusculum",
+      "lugar_año": "Coloniae, 1527",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 61/6/08",
+      "estado": "Pergamino sobre cartón",
+      "notas": "Nota ms. de procedencia en portada"
+    },
+    {
+      "autor": "Beda el Venerable, Santo",
+      "titulo": "Bedae presbyteri Anglosaxonis... de natura rerum et temporum ratione libri duo",
+      "lugar_año": "Basileae, 1529",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 52/4/25",
+      "estado": "Pergamino",
+      "notas": "Restos de tejuelo enmarcados en negro"
+    },
+    {
+      "autor": "Sabellico",
+      "titulo": "Rapsodiae historiarum Enneadum Marci Antonii Coccii Sabellici ab orbe co[n]dito pars prima",
+      "lugar_año": "Lugdun., 1535",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 42/3/20",
+      "estado": "Pergamino",
+      "notas": "Ms.: 'No tiene que expurgar año de 1640'. En corte: 'Cap. nos. de Seva.'"
+    },
+    {
+      "autor": "Theophylactus, Obispo de Acrida",
+      "titulo": "Theophylacti Bulgariae Archiepiscopi In omnes Diui Pauli Apostoli Epistolas Enarrationes",
+      "lugar_año": "Basileae, 1540",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 65/4/20",
+      "estado": "Pergamino",
+      "notas": ""
+    },
+    {
+      "autor": "Casiano, Juan",
+      "titulo": "Iohannis Cassiani libri XII",
+      "lugar_año": "Coloniae, 1540",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 74/2/08",
+      "estado": "Pergamino",
+      "notas": "Cruz griega. Ms.: 'Este tomo esta a el uso del P[adre] fr[ay] euseuio de Anteq[uer]a para el Conu[en]to donde muera'. CCPB000254154-8 (muchos ejemplares)"
+    },
+    {
+      "autor": "Royaerds, Jean, O.F.M.",
+      "titulo": "Homiliae in omnes epistolas feriales quadragesimae iuxta literam",
+      "lugar_año": "Antuerpiae, 1542",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 18/6/17",
+      "estado": "Pergamino sobre cartón",
+      "notas": ""
+    },
+    {
+      "autor": "Royaerds, Jean, O.F.M.",
+      "titulo": "Homiliae in euangelia dominicalia iuxta literam... Pars hyemalis",
+      "lugar_año": "Antuerpiae, 1542",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 18/6/12",
+      "estado": "Pergamino",
+      "notas": "Signatura en lomo: 3.S.2."
+    },
+    {
+      "autor": "Royaerds, Jean, O.F.M.",
+      "titulo": "Homiliae in epistolas dominicales iuxta literam... Pars aestiva",
+      "lugar_año": "Antuerpiae, 1543",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 18/6/15",
+      "estado": "Pergamino",
+      "notas": "Ms.: 'No tiene este libro que corregir segun el expurgatorio de 1707, Fr Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Ireneo, Santo, Obispo de Lyon",
+      "titulo": "Contra haereses, Diui Irenaei Episcopi Lugdunensis",
+      "lugar_año": "Parisiis, 1545",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 60/6/20 (1)",
+      "estado": "Pergamino",
+      "notas": "Cruz griega. Anotaciones mss. marginales. Notas de expurgo: 'esta expurgado en el año de 1640', 'he visto y corregido este libro segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Lippomano, Luigi",
+      "titulo": "Catena in Genesim ex authoribus ecclesiasticis",
+      "lugar_año": "Parisiis, 1546",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 66/1/05",
+      "estado": "Piel sobre madera",
+      "notas": "Nota de expurgo: 'No tiene este libro que corregir segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Anónimo",
+      "titulo": "Commentaria luculentissima vetustissimorum graecorum theologorum in omnes D. Pauli epistolas",
+      "lugar_año": "Parisiis, 1547",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 69/5/20",
+      "estado": "Pergamino",
+      "notas": "Cruz griega. Ms.: 'No tiene este libro que corregir segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Witzel, Georg",
+      "titulo": "Coaceruatio locorum vtriusque Testamenti de absoluta necessitate bonorum a fide operum",
+      "lugar_año": "Coloniae, 1548",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 61/6/17(1)",
+      "estado": "Pergamino",
+      "notas": "Nota ms. de procedencia en portada. Notas de expurgo: 'Vista ? por comision delos ss inquisidores ? 29 de nouiembre de 631 años', 'No tiene que expurgar año de 640'"
+    },
+    {
+      "autor": "Petrus Lombardus",
+      "titulo": "Petri Lombardi... Sententiarum lib. IIII",
+      "lugar_año": "Parisiis, 1548",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 64/6/09",
+      "estado": "Pergamino sobre cartón",
+      "notas": "Nota ms. de procedencia en portada"
+    },
+    {
+      "autor": "Guilliaud, Claude",
+      "titulo": "In canonicas apostolorum septem epistolas collatio",
+      "lugar_año": "Parisiis, 1548",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 69/5/19",
+      "estado": "Pergamino",
+      "notas": "Cruz griega. Ms.: 'No tiene este libro que corregir segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Royaerds, Jean, O.F.M.",
+      "titulo": "Homiliae in Euangelia dominicalia iuxta literam... Pars aestiva",
+      "lugar_año": "Antuerpiae, 1549",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 18/6/16",
+      "estado": "Pergamino sobre cartón",
+      "notas": ""
+    },
+    {
+      "autor": "Theophylactus, Obispo de Acrida",
+      "titulo": "Theophylacti... In quatuor Domini nostri Iesu Christi Euangelia enarrationes luculentissimae",
+      "lugar_año": "Parisiis, 1549",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 70/5/13",
+      "estado": "Pergamino",
+      "notas": "Cruz griega. Ms.: 'no tiene este libro que corregir segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Lippomano, Luigi",
+      "titulo": "Catena in Exodum",
+      "lugar_año": "Parisiis, 1550",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 67/1/05",
+      "estado": "Piel sobre madera",
+      "notas": "Nota de expurgo: 'No tiene este libro que corregir, segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Tittelmans, Franciscus, O.F.M.",
+      "titulo": "Paraphrastica elucidatio in librum D. Iob",
+      "lugar_año": "Parisiis, 1550",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 69/6/01",
+      "estado": "Pergamino",
+      "notas": "Ms.: 'No tiene este libro que corregir segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'"
+    },
+    {
+      "autor": "Catarino, Ambrogio, O.P.",
+      "titulo": "Enarrationes R.P.F. Ambrosii Catharini... in quinque priora capita libri Geneseos",
+      "lugar_año": "Romae, 1552 (1551)",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 67/4/10",
+      "estado": "Pergamino sobre cartón",
+      "notas": "Ms.: 'Por comiss[i]on de los ss[eño]res inquisidores del tribunal del ss[an]to officio de Seuilla he visto, y corregido este libro segun el expurgatorio del año de 1707, fr. Arcadio de Ossuna'. Cuadernillos desde p. 347 desordenados"
+    },
+    {
+      "autor": "Marcos de Lisboa, O.F.M.",
+      "titulo": "Primera parte de las Cronicas de la Orden de los Frayles Menores",
+      "lugar_año": "Alcala, 1562",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 11/4/19",
+      "estado": "Pergamino, regular estado, algo apolillado",
+      "notas": "Signatura antigua: Est. 176/ nº 144. Ms. en portada: 'Capp. de Sevilla'. Sello tapado con tinta, posible procedencia jesuita. Colofón en f. CCXLII"
+    },
+    {
+      "autor": "Vasari, Giorgio",
+      "titulo": "Le vite de' più eccellenti pittori, scultori e architettori",
+      "lugar_año": "Fiorenza, 1568",
+      "procedencia": "Capuchinos de Sevilla",
+      "signatura": "A Res. 41/4/19",
+      "estado": "Pergamino",
+      "notas": "Digitalización de otro ejemplar: http://fondosdigitales.us.es/fondos/libros/987/10/le-vite-de-piu-eccellenti-pittori-scultori-e-architettori/"
+    }
+  ]
+}

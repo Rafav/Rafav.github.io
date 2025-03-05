@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Manuscritos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .filters label {
+            white-space: nowrap;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #chart-container {
+            margin-top: 50px;
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista de Libros Impresos y Manuscritos</h2>
+    
+    <div class="filters">
+        <label for="tipo">Filtrar por Tipo:</label>
+        <select id="tipo" onchange="filtrarLibros()">
+            <option value="">Todos</option>
+            <option value="libros_impresos">Libros Impresos</option>
+            <option value="manuscritos">Manuscritos</option>
+        </select>
+        
+        <label for="siglo">Filtrar por Siglo:</label>
+        <select id="siglo" onchange="filtrarLibros()">
+            <option value="">Todos</option>
+        </select>
+        
+        <label for="decada">Filtrar por Década:</label>
+        <select id="decada" onchange="filtrarLibros()">
+            <option value="">Todas</option>
+        </select>
+        
+        <label for="autor">Filtrar por Autor:</label>
+        <select id="autor" onchange="filtrarLibros()">
+            <option value="">Todos</option>
+        </select>
+        
+        <label for="procedencia">Filtrar por Procedencia:</label>
+        <select id="procedencia" onchange="filtrarLibros()">
+            <option value="">Todas</option>
+        </select>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Autor</th>
+                <th>Título</th>
+                <th>Año / Lugar y Año</th>
+                <th>Procedencia</th>
+                <th>Signatura</th>
+                <th>Estado</th>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody id="libros-body"></tbody>
+    </table>
 
+    <div id="chart-container">
+        <canvas id="booksChart"></canvas>
+    </div>
+
+    <script>
+        let libros = [];
+        let chartInstance = null;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("libros.json")
+                .then(response => response.json())
+                .then(jsonData => {
+                    libros = [...jsonData.libros_impresos.map(libro => ({ ...libro, tipo: "libros_impresos" })),
+                              ...jsonData.manuscritos.map(libro => ({ ...libro, tipo: "manuscritos" }))];
+                    cargarOpcionesFiltros();
+                    mostrarLibros(libros);
+                    generarGrafica();
+                })
+                .catch(error => console.error("Error al cargar el JSON:", error));
+        });
+
+        function cargarOpcionesFiltros() {
+            const siglos = new Set();
+            const decadas = new Set();
+            const autores = new Set();
+            const procedencias = new Set();
+            
+            libros.forEach(libro => {
+                let año = libro.año || (libro.lugar_año ? libro.lugar_año.match(/\d{4}/) : null);
+                if (año) {
+                    año = parseInt(año);
+                    libro.siglo = Math.floor(año / 100) + 1;
+                    libro.decada = Math.floor(año / 10) * 10;
+                    siglos.add(libro.siglo);
+                    decadas.add(libro.decada);
+                }
+                if (libro.autor) autores.add(libro.autor);
+                if (libro.procedencia) procedencias.add(libro.procedencia);
+            });
+            
+            actualizarSelect("siglo", siglos);
+            actualizarSelect("decada", decadas);
+            actualizarSelect("autor", autores);
+            actualizarSelect("procedencia", procedencias);
+        }
+
+        function actualizarSelect(id, valores) {
+            const select = document.getElementById(id);
+            select.innerHTML = '<option value="">Todos</option>';
+            
+            [...valores].sort().forEach(valor => {
+                const option = document.createElement("option");
+                option.value = valor;
+                option.textContent = valor;
+                select.appendChild(option);
+            });
+        }
+
+        function mostrarLibros(lista) {
+            const tbody = document.getElementById("libros-body");
+            tbody.innerHTML = "";
+            lista.forEach(libro => {
+                let row = `<tr>
+                    <td>${libro.autor || "Anónimo"}</td>
+                    <td>${libro.titulo}</td>
+                    <td>${libro.año || libro.lugar_año}</td>
+                    <td>${libro.procedencia}</td>
+                    <td>${libro.signatura}</td>
+                    <td>${libro.estado}</td>
+                    <td>${libro.notas}</td>
+                </tr>`;
+                tbody.innerHTML += row;
+            });
+        }
+
+        function filtrarLibros() {
+            const tipoSeleccionado = document.getElementById("tipo").value;
+            const sigloSeleccionado = document.getElementById("siglo").value;
+            const decadaSeleccionada = document.getElementById("decada").value;
+            const autorSeleccionado = document.getElementById("autor").value;
+            const procedenciaSeleccionada = document.getElementById("procedencia").value;
+            
+            let librosFiltrados = libros.filter(libro => {
+                let cumpleTipo = tipoSeleccionado ? libro.tipo === tipoSeleccionado : true;
+                let cumpleSiglo = sigloSeleccionado ? libro.siglo == sigloSeleccionado : true;
+                let cumpleDecada = decadaSeleccionada ? libro.decada == decadaSeleccionada : true;
+                let cumpleAutor = autorSeleccionado ? libro.autor === autorSeleccionado : true;
+                let cumpleProcedencia = procedenciaSeleccionada ? libro.procedencia === procedenciaSeleccionada : true;
+                
+                return cumpleTipo && cumpleSiglo && cumpleDecada && cumpleAutor && cumpleProcedencia;
+            });
+            
+            mostrarLibros(librosFiltrados);
+        }
+    </script>
+</body>
+</html>
