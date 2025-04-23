@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Instrucciones para instalar Nginx y configurar el sitio
+
+echo "=== Instrucciones para instalar Nginx y configurar el sitio 'Madrid Musical XVIII' ==="
+echo ""
+echo "Para instalar Nginx, ejecuta:"
+echo "sudo apt update && sudo apt install -y nginx"
+echo ""
+echo "Para configurar el sitio, ejecuta:"
+echo "sudo cp /home/rafa/Descargas/madrid/madrid-nginx.conf /etc/nginx/sites-available/madrid"
+echo "sudo ln -s /etc/nginx/sites-available/madrid /etc/nginx/sites-enabled/"
+echo "sudo rm /etc/nginx/sites-enabled/default  # Opcional: quitar el sitio por defecto"
+echo ""
+echo "Para iniciar el servicio (o reiniciarlo si ya está en marcha):"
+echo "sudo systemctl restart nginx"
+echo ""
+echo "Luego podrás acceder al sitio en: http://localhost"
+echo ""
+echo "Nota: Este script no ejecuta los comandos automáticamente por seguridad."
+echo "      Copia y pega los comandos anteriores según sea necesario."
+echo ""
+echo "Si no deseas instalar Nginx, puedes seguir usando el servidor web Python:"
+echo "python3 -m http.server 8000"
+echo "Y acceder al sitio en: http://localhost:8000"

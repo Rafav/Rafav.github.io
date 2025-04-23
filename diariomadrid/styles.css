@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header personalizado */
+header {
+    background: linear-gradient(135deg, #1a3c70 0%, #4285f4 100%);
+}
+
+/* Ajustes de tipografía */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.lead {
+    font-weight: 300;
+}
+
+/* Tarjetas y contenedores */
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Resultados de búsqueda */
+.search-result {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background-color: #f0f7ff;
+}
+
+.search-result .badge {
+    font-size: 0.75rem;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+/* Gráficos y visualizaciones */
+canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .badge {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Personalización del modal */
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#modal-content {
+    line-height: 1.6;
+}
+
+/* Personalización de la navegación */
+.nav-link {
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Footer personalizado */
+footer {
+    background: linear-gradient(135deg, #32383e 0%, #212529 100%);
+}
+
+/* Tabla de estadísticas */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Estilo para términos musicales destacados */
+.musical-term {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Estilo para temas económicos */
+.economic-term {
+    color: #fd7e14;
+    font-weight: 600;
+}
+
+/* Estilo para espacios teatrales */
+.venue-term {
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* Animación de carga */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 123, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #007bff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

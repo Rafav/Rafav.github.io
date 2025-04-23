@@ -1,1 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Musical en el Madrid del Siglo XVIII</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-5">Vida Musical en el Madrid del Siglo XVIII</h1>
+                    <p class="lead">Archivo histórico de referencias musicales (1788)</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <span class="badge bg-light text-dark">DIDÁCTICA DE LA EXPRESIÓN MUSICAL, PLÁSTICA Y CORPORAL</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#" id="nav-buscar">Buscar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="nav-estadisticas">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="nav-terminologia">Terminología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="nav-marco">Marco Teórico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="nav-papers">Papers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <!-- Sección de Búsqueda -->
+        <section id="buscar" class="mb-5">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="h4 mb-0">Buscador de Referencias Musicales</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" id="search-term" class="form-control" placeholder="Buscar término (ej: ópera, tonadilla, violín...)">
+                                </div>
+                                <div class="col-md-3">
+                                    <select id="search-category" class="form-select">
+                                        <option value="all">Todas las categorías</option>
+                                        <option value="genero">Géneros musicales</option>
+                                        <option value="espacio">Espacios</option>
+                                        <option value="instrumento">Instrumentos</option>
+                                        <option value="interprete">Intérpretes</option>
+                                        <option value="economico">Económico</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <button id="search-button" class="btn btn-primary w-100">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="results-container">
+                        <div class="card mb-4">
+                            <div class="card-header bg-light">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="h5 mb-0">Resultados de la búsqueda</h3>
+                                    <span class="badge bg-primary" id="result-count">0 resultados</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="search-results" class="list-group">
+                                    <!-- Los resultados se cargarán aquí -->
+                                    <p class="text-center text-muted">Introduce un término de búsqueda para ver resultados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Estadísticas -->
+        <section id="estadisticas" class="mb-5 d-none">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h2 class="h4 mb-0">Análisis Estadístico del Corpus Musical</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="h5">Distribución de Términos Musicales</h3>
+                                    <canvas id="termsChart"></canvas>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5">Frecuencia por Categorías</h3>
+                                    <canvas id="categoriesChart"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive mt-4">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Término</th>
+                                            <th>Frecuencia</th>
+                                            <th>Porcentaje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Teatro/teatro/TEATRO</td>
+                                            <td>685</td>
+                                            <td>31.8%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coliseo/coliseo</td>
+                                            <td>570</td>
+                                            <td>26.5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tonadilla/tonadilla</td>
+                                            <td>517</td>
+                                            <td>24.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aria/aria/ARIA</td>
+                                            <td>256</td>
+                                            <td>11.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ópera/ópera</td>
+                                            <td>70</td>
+                                            <td>3.3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Concierto/concierto</td>
+                                            <td>54</td>
+                                            <td>2.5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Instrumento/instrumento</td>
+                                            <td>40</td>
+                                            <td>1.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Otros términos</td>
+                                            <td>43</td>
+                                            <td>2.1%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Terminología -->
+        <section id="terminologia" class="mb-5 d-none">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <h2 class="h4 mb-0">Corpus Terminológico del Lenguaje Musical</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-primary text-white">
+                                            <h3 class="h5 mb-0">Géneros y Formas Musicales</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="h6">Música Escénica</h4>
+                                            <ul class="list-group list-group-flush mb-3">
+                                                <li class="list-group-item"><strong>Ópera</strong>: Género predominantemente italiano (bufa, seria)</li>
+                                                <li class="list-group-item"><strong>Tonadilla</strong>: Género breve español, entre actos teatrales</li>
+                                                <li class="list-group-item"><strong>Saynete</strong>: Pieza teatral breve, con componente musical</li>
+                                            </ul>
+                                            
+                                            <h4 class="h6">Música Instrumental</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Concierto</strong>: Pieza para instrumento solista</li>
+                                                <li class="list-group-item"><strong>Obertura</strong>: Pieza instrumental introductoria</li>
+                                                <li class="list-group-item"><strong>Sonata</strong>: Pieza instrumental estructurada</li>
+                                                <li class="list-group-item"><strong>Baile</strong>: Minuetes, contradanzas, fandango</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-success text-white">
+                                            <h3 class="h5 mb-0">Espacios y Agentes Musicales</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="h6">Teatros y Coliseos</h4>
+                                            <ul class="list-group list-group-flush mb-3">
+                                                <li class="list-group-item"><strong>Coliseo de los Caños del Peral</strong>: Espacio operístico</li>
+                                                <li class="list-group-item"><strong>Teatro del Príncipe</strong>: Sede de la Compañía de Ribera</li>
+                                                <li class="list-group-item"><strong>Teatro de la Cruz</strong>: Sede de la Compañía de Martínez</li>
+                                            </ul>
+                                            
+                                            <h4 class="h6">Intérpretes</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Compañía</strong>: Conjunto estable de intérpretes</li>
+                                                <li class="list-group-item"><strong>Papeles</strong>: Roles (serios, bufos)</li>
+                                                <li class="list-group-item"><strong>Gestión</strong>: Impresario, empresa</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-warning text-dark">
+                                            <h3 class="h5 mb-0">Economía Musical</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="h6">Precios</h4>
+                                            <ul class="list-group list-group-flush mb-3">
+                                                <li class="list-group-item"><strong>Entradas</strong>: Luneta (20 rs.), Galerías (10-12 rs.)</li>
+                                                <li class="list-group-item"><strong>Partituras</strong>: 4-15 rs. según tipo</li>
+                                            </ul>
+                                            
+                                            <h4 class="h6">Salarios</h4>
+                                            <ul class="list-group list-group-flush mb-3">
+                                                <li class="list-group-item">Primera categoría: 60.000 rs. anuales</li>
+                                                <li class="list-group-item">Segunda categoría: 40.000 rs. anuales</li>
+                                                <li class="list-group-item">Tercera categoría: 30.000 rs. anuales</li>
+                                                <li class="list-group-item">Cuarta categoría: 25.000 rs. anuales</li>
+                                            </ul>
+                                            
+                                            <h4 class="h6">Recaudación</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><strong>Entrada</strong>: "La entrada de ayer fue de 7080 rs."</li>
+                                                <li class="list-group-item"><strong>Abono</strong>: Sistema con descuento del 25%</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Marco Teórico -->
+        <section id="marco" class="mb-5 d-none">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-danger text-white">
+                            <h2 class="h4 mb-0">Marco Teórico de la Investigación</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="h5">Objetivos de Investigación</h3>
+                                    <ul class="list-group list-group-flush mb-4">
+                                        <li class="list-group-item">Identificar y analizar el vocabulario técnico-musical</li>
+                                        <li class="list-group-item">Examinar las categorías y géneros musicales predominantes</li>
+                                        <li class="list-group-item">Investigar la valoración estética y crítica de las interpretaciones</li>
+                                        <li class="list-group-item">Documentar los espacios de representación musical</li>
+                                        <li class="list-group-item">Estudiar la relación entre música, economía y gestión cultural</li>
+                                    </ul>
+                                    
+                                    <h3 class="h5">Metodología de Análisis</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Corpus documental</strong>: Noticias, anuncios, cartas y textos críticos (1788)</li>
+                                        <li class="list-group-item"><strong>Análisis léxico-semántico</strong>: Categorización del vocabulario especializado</li>
+                                        <li class="list-group-item"><strong>Análisis socio-económico</strong>: Estudio de precios, asistencia y financiación</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h3 class="h5 mb-0">Contexto Histórico-Musical</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="h6">La ópera italiana en Madrid</h4>
+                                            <p>El Coliseo de los Caños del Peral funcionaba como centro neurálgico para la ópera italiana, con un sistema económico que incluía abonos, entradas diarias y estructuras de precios diferenciados. Los debates sobre su viabilidad económica quedaron registrados en la prensa de la época.</p>
+                                            
+                                            <h4 class="h6">Actividad teatral y su componente musical</h4>
+                                            <p>Las compañías de Ribera y Martínez dominaban la escena teatral madrileña, con representaciones regulares que incorporaban elementos musicales como tonadillas y saynetes, creando un modelo de espectáculo híbrido que combinaba teatro y música.</p>
+                                            
+                                            <h4 class="h6">Comercialización musical</h4>
+                                            <p>La venta de partituras y libretos complementaba la economía musical, con librerías especializadas que ofrecían desde adaptaciones para instrumentos domésticos hasta obras completas para orquesta.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Papers -->
+        <section id="papers" class="mb-5 d-none">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-purple text-white" style="background-color: #6f42c1;">
+                            <h2 class="h4 mb-0">Papers y Documentos de Investigación</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-primary text-white">
+                                            <h3 class="h5 mb-0">Análisis Estadísticos</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="analisis_estadistico.html" target="_blank" class="text-decoration-none">
+                                                        <strong>Análisis Estadístico Completo</strong>
+                                                    </a>
+                                                    <p class="small text-muted mb-0">Estudio cuantitativo de las referencias musicales en el corpus documental</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="modelo_analisis_datos.html" target="_blank" class="text-decoration-none">
+                                                        <strong>Modelo de Análisis de Datos</strong>
+                                                    </a>
+                                                    <p class="small text-muted mb-0">Metodología aplicada para el procesamiento y clasificación del corpus</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-success text-white">
+                                            <h3 class="h5 mb-0">Documentos de Investigación</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="ejemplo_analisis.html" target="_blank" class="text-decoration-none">
+                                                        <strong>Ejemplo de Análisis</strong>
+                                                    </a>
+                                                    <p class="small text-muted mb-0">Caso práctico de análisis léxico-semántico aplicado a textos seleccionados</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="corpus_terminologico.html" target="_blank" class="text-decoration-none">
+                                                        <strong>Corpus Terminológico Completo</strong>
+                                                    </a>
+                                                    <p class="small text-muted mb-0">Listado exhaustivo y categorizado de términos musicales identificados</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para visualizar entradas completas -->
+        <div class="modal fade" id="entryModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="entryModalTitle">Detalle de la entrada</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <h6 class="text-muted">Fecha</h6>
+                            <p id="modal-date">Cargando...</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted">Contenido</h6>
+                            <div id="modal-content" class="border rounded p-3 bg-light">Cargando...</div>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted">Referencias musicales</h6>
+                            <ul id="modal-references" class="list-group">
+                                <li class="list-group-item">Cargando...</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Vida Musical en el Madrid del Siglo XVIII</h5>
+                    <p class="small">Archivo digital de referencias musicales históricas (1788)</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="small">Departamento: DIDÁCTICA DE LA EXPRESIÓN MUSICAL, PLÁSTICA Y CORPORAL</p>
+                    <p class="small">Escuela de doctorado: HISTORIA DEL ARTE Y MUSICOLOGÍA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
