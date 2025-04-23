@@ -159,6 +159,11 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         showSection('marco');
     });
+    
+    document.getElementById('nav-papers').addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('papers');
+    });
 
     function showSection(sectionId) {
         // Ocultar todas las secciones
