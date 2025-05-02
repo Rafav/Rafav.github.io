@@ -1,26 +1,5 @@
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
     try {
-        // No es necesario registrar manualmente el plugin de anotaciones,
-        // se carga automáticamente con el script
-        // Cargar el contenido del markdown
-        const response = await fetch('articulo_literatura_aurea_completo.md');
-        if (!response.ok) throw new Error('Error al cargar el archivo JSON');
-        let markdownText = await response.text();
-        
-        // Eliminar los metadatos YAML/LaTeX del inicio
-        markdownText = markdownText.replace(/^---[\s\S]*?---\n/m, '');
-        
-        // Opciones para marked
-        marked.setOptions({
-            breaks: true,
-            gfm: true,
-            headerIds: true
-        });
-        
-        // Procesar el markdown y mostrarlo en el contenido principal
-        const content = document.getElementById('content');
-        content.innerHTML = marked.parse(markdownText);
-        
         // Generar tabla de contenidos
         generateTableOfContents();
         
@@ -33,10 +12,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 300);
         
     } catch(error) {
-        console.error('Error al cargar el contenido:', error);
-        document.getElementById('content').innerHTML = `
+        console.error('Error al inicializar la página:', error);
+        document.getElementById('content').innerHTML += `
             <div class="error">
-                <h2>Ha ocurrido un error al cargar el contenido</h2>
+                <h2>Ha ocurrido un error al cargar los gráficos</h2>
                 <p>${error.message}</p>
             </div>
         `;
@@ -47,12 +26,7 @@ function generateTableOfContents() {
     const headings = document.querySelectorAll('main h2');
     const tocElement = document.getElementById('table-of-contents');
     
-    headings.forEach((heading, index) => {
-        // Asignar un ID al encabezado si no tiene uno
-        if (!heading.id) {
-            heading.id = `section-${index}`;
-        }
-        
+    headings.forEach((heading) => {
         // Crear el elemento de la lista para la tabla de contenidos
         const listItem = document.createElement('li');
         const link = document.createElement('a');
@@ -64,167 +38,25 @@ function generateTableOfContents() {
 }
 
 function createCharts() {
-    // Buscar las tablas en el contenido y añadir gráficos después de ellas
-    const tables = document.querySelectorAll('table');
+    // Configuración global para todos los gráficos
+    Chart.defaults.responsive = true;
+    Chart.defaults.maintainAspectRatio = false;
     
-    // Buscar tablas por sus leyendas/títulos
-    const tableElems = Array.from(tables);
+    // Crear los cuatro gráficos principales
+    createEvolucionChart();
+    createAutoresChart();
+    createObrasChart();
+    createCorrelacionChart();
     
-    // Tabla 1: Evolución de la presencia de literatura áurea
-    const evolucionTable = findTableByCaption(tableElems, "Evolución de la presencia de literatura áurea");
-    if (evolucionTable) {
-        // Crear un contenedor para agrupar tabla y gráfico
-        const pairWrapper = document.createElement('div');
-        pairWrapper.className = 'table-chart-pair';
-        
-        // Crear contenedor para el gráfico
-        const chartDiv = createChartContainer('evolucionChart', 'Gráfico: Evolución temporal (1807-1830)');
-        
-        // Reemplazar la tabla con el contenedor y mover la tabla dentro
-        evolucionTable.parentNode.insertBefore(pairWrapper, evolucionTable);
-        pairWrapper.appendChild(evolucionTable);
-        pairWrapper.appendChild(chartDiv);
-        
-        // Crear el gráfico
-        setTimeout(() => createEvolucionChart(), 100); // Pequeño retraso para asegurar que el DOM esté listo
-    }
-    
-    // Tabla 2: Frecuencia de menciones por autor
-    const autoresTable = findTableByCaption(tableElems, "Frecuencia de menciones por autor");
-    if (autoresTable) {
-        // Crear un contenedor para agrupar tabla y gráfico
-        const pairWrapper = document.createElement('div');
-        pairWrapper.className = 'table-chart-pair';
-        
-        // Crear contenedor para el gráfico
-        const chartDiv = createChartContainer('autoresChart', 'Gráfico: Menciones por autor en años clave');
-        
-        // Reemplazar la tabla con el contenedor y mover la tabla dentro
-        autoresTable.parentNode.insertBefore(pairWrapper, autoresTable);
-        pairWrapper.appendChild(autoresTable);
-        pairWrapper.appendChild(chartDiv);
-        
-        // Crear el gráfico
-        setTimeout(() => createAutoresChart(), 200);
-    }
-    
-    // Tabla 3: Obras áureas más representadas
-    const obrasTable = findTableByCaption(tableElems, "Obras áureas más representadas");
-    if (obrasTable) {
-        // Crear un contenedor para agrupar tabla y gráfico
-        const pairWrapper = document.createElement('div');
-        pairWrapper.className = 'table-chart-pair';
-        
-        // Crear contenedor para el gráfico
-        const chartDiv = createChartContainer('obrasChart', 'Gráfico: Obras más representadas');
-        
-        // Reemplazar la tabla con el contenedor y mover la tabla dentro
-        obrasTable.parentNode.insertBefore(pairWrapper, obrasTable);
-        pairWrapper.appendChild(obrasTable);
-        pairWrapper.appendChild(chartDiv);
-        
-        // Crear el gráfico
-        setTimeout(() => createObrasChart(), 300);
-    }
-    
-    // Tabla 5: Correlación entre eventos políticos
-    const correlacionTable = findTableByCaption(tableElems, "Correlación entre eventos políticos");
-    if (correlacionTable) {
-        // Crear un contenedor para agrupar tabla y gráfico
-        const pairWrapper = document.createElement('div');
-        pairWrapper.className = 'table-chart-pair';
-        
-        // Crear contenedor para el gráfico
-        const chartDiv = createChartContainer('correlacionChart', 'Gráfico: Correlación con eventos políticos');
-        
-        // Reemplazar la tabla con el contenedor y mover la tabla dentro
-        correlacionTable.parentNode.insertBefore(pairWrapper, correlacionTable);
-        pairWrapper.appendChild(correlacionTable);
-        pairWrapper.appendChild(chartDiv);
-        
-        // Crear el gráfico
-        setTimeout(() => createCorrelacionChart(), 400);
-    } else if (tables.length >= 5) {
-        // Fallback: usar la quinta tabla si no encontramos por caption
-        const table = tables[4];
-        const pairWrapper = document.createElement('div');
-        pairWrapper.className = 'table-chart-pair';
-        
-        const chartDiv = createChartContainer('correlacionChart', 'Gráfico: Correlación con eventos políticos');
-        
-        table.parentNode.insertBefore(pairWrapper, table);
-        pairWrapper.appendChild(table);
-        pairWrapper.appendChild(chartDiv);
-        
-        setTimeout(() => createCorrelacionChart(), 400);
-    }
-}
-
-// Función para crear un contenedor de gráfico
-function createChartContainer(chartId, title) {
-    const chartWrapper = document.createElement('div');
-    chartWrapper.className = 'chart-wrapper';
-    
-    // Añadir título descriptivo
-    const chartTitle = document.createElement('h3');
-    chartTitle.textContent = title;
-    chartTitle.style.textAlign = 'center';
-    chartTitle.style.marginBottom = '1rem';
-    chartTitle.style.fontSize = '0.95rem';
-    chartTitle.style.color = '#555';
-    
-    // Contenedor con altura limitada para el canvas
-    const canvasContainer = document.createElement('div');
-    canvasContainer.style.height = '300px';
-    canvasContainer.style.width = '100%';
-    canvasContainer.style.position = 'relative';
-    
-    const canvas = document.createElement('canvas');
-    canvas.id = chartId;
-    canvas.style.maxHeight = '100%';
-    
-    canvasContainer.appendChild(canvas);
-    chartWrapper.appendChild(chartTitle);
-    chartWrapper.appendChild(canvasContainer);
-    return chartWrapper;
-}
-
-// Función para insertar un elemento después de otro
-function insertAfterElement(referenceNode, newNode) {
-    if (referenceNode.parentNode) {
-        // Insertar directamente el gráfico después de la tabla (sin espaciador)
-        // Ya que los márgenes se manejan con CSS
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-    }
-}
-
-// Función para encontrar una tabla por su texto de caption/título
-function findTableByCaption(tables, captionText) {
-    // Primero buscamos tablas que tengan un elemento caption con el texto
-    for (const table of tables) {
-        const prevElement = table.previousElementSibling;
-        if (prevElement && prevElement.tagName === 'STRONG' && 
-            prevElement.textContent.includes(captionText)) {
-            return table;
-        }
-    }
-    
-    // Si no encontramos por caption, buscamos por texto cercano (encabezados o párrafos previos)
-    for (const table of tables) {
-        let prevSibling = table.previousElementSibling;
-        let searchLimit = 3; // Buscar hasta 3 elementos hacia atrás
-        
-        while (prevSibling && searchLimit > 0) {
-            if (prevSibling.textContent && prevSibling.textContent.includes(captionText)) {
-                return table;
-            }
-            prevSibling = prevSibling.previousElementSibling;
-            searchLimit--;
-        }
-    }
-    
-    // Si todo falla, devolvemos null
-    return null;
+    // Asegurar que los gráficos se redimensionen correctamente
+    window.addEventListener('resize', function() {
+        setTimeout(function() {
+            // Actualizar todos los gráficos cuando cambie el tamaño de la ventana
+            Chart.instances.forEach(chart => {
+                chart.resize();
+            });
+        }, 100);
+    });
 }
 
 function createEvolucionChart() {
@@ -281,8 +113,8 @@ function createEvolucionChart() {
                 {
                     label: 'Referencias áureas',
                     data: references,
-                    borderColor: '#4d2b1f',
-                    backgroundColor: 'rgba(77, 43, 31, 0.1)',
+                    borderColor: '#1a3a5a', // Actualizado a la paleta azul
+                    backgroundColor: 'rgba(26, 58, 90, 0.1)',
                     tension: 0.3,
                     yAxisID: 'y',
                     borderWidth: 3,
@@ -293,8 +125,8 @@ function createEvolucionChart() {
                 {
                     label: 'Porcentaje (%)',
                     data: percentages,
-                    borderColor: '#a35638',
-                    backgroundColor: 'rgba(163, 86, 56, 0.1)',
+                    borderColor: '#3b6e9e', // Actualizado a la paleta azul
+                    backgroundColor: 'rgba(59, 110, 158, 0.1)',
                     tension: 0.3,
                     yAxisID: 'y1',
                     borderWidth: 3,
@@ -391,12 +223,9 @@ function createEvolucionChart() {
                         }
                     }
                 },
-                // Si el plugin de anotaciones está disponible, úsalo
-                ...(window.Chart && window.Chart.annotation ? {
-                    annotation: {
-                        annotations: annotationItems
-                    }
-                } : {})
+                annotation: {
+                    annotations: annotationItems
+                }
             }
         }
     });
@@ -418,9 +247,9 @@ function createAutoresChart() {
         [14, 0, 7, 3, 0, 12]    // Rojas
     ];
     
-    // Colores para cada autor
+    // Colores para cada autor (paleta azul)
     const colors = [
-        '#c87941', '#8a5a44', '#3c1518', '#d8b26e', '#6d597a', '#9c6644'
+        '#1a3a5a', '#3b6e9e', '#5f9ad1', '#8abcf2', '#6c8fb3', '#274b73'
     ];
     
     const chartDatasets = authors.map((author, i) => {
@@ -488,13 +317,13 @@ function createObrasChart() {
     
     const representaciones = [38, 31, 27, 26, 25, 23, 22, 22, 21, 18];
     
-    // Determinar el color basado en el autor
+    // Determinar el color basado en el autor (paleta azul)
     const getColorByAuthor = (obra) => {
-        if (obra.includes('Calderón')) return '#8a5a44';
-        if (obra.includes('Lope')) return '#c87941';
-        if (obra.includes('Tirso')) return '#6d597a';
-        if (obra.includes('Moreto')) return '#d8b26e';
-        return '#9c6644';
+        if (obra.includes('Calderón')) return '#1a3a5a';
+        if (obra.includes('Lope')) return '#3b6e9e';
+        if (obra.includes('Tirso')) return '#5f9ad1';
+        if (obra.includes('Moreto')) return '#8abcf2';
+        return '#274b73';
     };
     
     const colors = obras.map(getColorByAuthor);
@@ -570,16 +399,16 @@ function createCorrelacionChart() {
                 {
                     label: 'Mes anterior',
                     data: mesAnterior,
-                    backgroundColor: '#8a5a44',
-                    borderColor: '#8a5a44',
+                    backgroundColor: '#1a3a5a',
+                    borderColor: '#1a3a5a',
                     borderWidth: 1,
                     stack: 'Stack 0'
                 },
                 {
                     label: 'Mes posterior',
                     data: mesPosterior,
-                    backgroundColor: '#c87941',
-                    borderColor: '#c87941',
+                    backgroundColor: '#3b6e9e',
+                    borderColor: '#3b6e9e',
                     borderWidth: 1,
                     stack: 'Stack 0'
                 },
@@ -587,8 +416,8 @@ function createCorrelacionChart() {
                     label: 'Variación (%)',
                     data: variacion,
                     type: 'line',
-                    borderColor: '#3c1518',
-                    backgroundColor: 'rgba(60, 21, 24, 0.1)',
+                    borderColor: '#5f9ad1',
+                    backgroundColor: 'rgba(95, 154, 209, 0.1)',
                     yAxisID: 'y1',
                     tension: 0.1
                 }
