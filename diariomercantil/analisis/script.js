@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // se carga automáticamente con el script
         // Cargar el contenido del markdown
         const response = await fetch('articulo_literatura_aurea_completo.md');
+        if (!response.ok) throw new Error('Error al cargar el archivo JSON');
         let markdownText = await response.text();
         
         // Eliminar los metadatos YAML/LaTeX del inicio
