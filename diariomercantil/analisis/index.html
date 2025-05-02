@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>La literatura del Siglo de Oro como resistencia cultural</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <script>
+        // Garantizar que Chart.js esté disponible antes de usar el plugin
+        const registerAnnotationPlugin = () => {
+            if (typeof Chart !== 'undefined' && Chart.annotation) {
+                Chart.register(Chart.annotation);
+            }
+        };
+        
+        if (typeof Chart !== 'undefined') {
+            registerAnnotationPlugin();
+        } else {
+            window.addEventListener('chartjs:loaded', registerAnnotationPlugin);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>La literatura del Siglo de Oro como resistencia cultural</h1>
+        <h2>Análisis estadístico del Diario Mercantil de Cádiz (1807-1830)</h2>
+        <p class="author">Rafael Vidal Rodríguez-Sabio</p>
+    </header>
+
+    <nav>
+        <ul id="table-of-contents">
+            <!-- Se rellenará vía JavaScript -->
+        </ul>
+    </nav>
+
+    <main id="content">
+        <!-- El contenido se cargará vía JavaScript -->
+    </main>
+
+    <!-- Los gráficos se insertarán mediante JavaScript después de las tablas correspondientes -->
+
+    <footer>
+        <p>&copy; 2025 Rafael Vidal Rodríguez-Sabio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
