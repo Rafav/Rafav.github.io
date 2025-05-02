@@ -1,0 +1,352 @@
+:root {
+    /* Paleta principal - Inspirada en pergamino antiguo y tinta */
+    --primary-color: #2c1f19; /* Color principal más oscuro para mejor contraste */
+    --secondary-color: #a35638; /* Tono terroso más vibrante */
+    --background-color: #f9f5eb; /* Beige claro, como papel antiguo */
+    --text-color: #333333; /* Texto oscuro para mejor legibilidad */
+    --heading-color: #4d2b1f; /* Marrón para encabezados */
+    --link-color: #8b4513; /* Tono madera para enlaces */
+    --chart-bg: #f5f5f5; /* Fondo claro para gráficos */
+    
+    /* 
+    Otras paletas disponibles (descomentar para cambiar):
+    
+    Paleta Barroca:
+  */
+    --primary-color: #1d3557;
+    --secondary-color: #e63946;
+    --background-color: #f1faee;
+    --text-color: #293241;
+    --heading-color: #457b9d;
+    --link-color: #e63946;
+    --chart-bg: #f8f9fa;
+    /*
+    Paleta Siglo de Oro:
+    --primary-color: #5e3023;
+    --secondary-color: #d4af37;
+    --background-color: #f7f3e8;
+    --text-color: #2f2319;
+    --heading-color: #854836;
+    --link-color: #a67c00;
+    --chart-bg: #f7f7f2;
+    
+    Paleta Ilustración:
+    --primary-color: #2b2d42;
+    --secondary-color: #d90429;
+    --background-color: #edf2f4;
+    --text-color: #2b2d42;
+    --heading-color: #2b2d42;
+    --link-color: #d90429;
+    --chart-bg: #f8f9fa;
+    */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+::selection {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto; /* This centers the header */
+}
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #333333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.author {
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom, var(--secondary-color), #8a472e);
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin: 1.8rem 0 1.2rem 0;
+    font-weight: 700;
+    position: relative;
+}
+
+h2 {
+    padding-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.chart-wrapper {
+    width: 70%;
+    max-width: 70%;
+    margin: 0.5rem auto 3rem auto;
+    overflow: hidden;
+    background-color: var(--chart-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.chart-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chart-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to top, var(--primary-color), #150d0a);
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-image: linear-gradient(45deg, transparent 33.333%, var(--secondary-color) 33.333%, var(--secondary-color) 66.667%, transparent 66.667%);
+    background-size: 20px 20px;
+    opacity: 0.5;
+}
+
+/* Estilos del markdown */
+blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #666;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+ul, ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 2.5rem auto 0.5rem auto;
+    overflow-x: auto;
+    max-width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 4px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f5eb;
+}
+
+/* Estilo personalizado para agrupar visualmente tabla+gráfico */
+.table-chart-pair {
+    margin-bottom: 3.5rem;
+}
+
+/* Responsive */
+/* Estilo para mensajes de error */
+.error {
+    background-color: #fff5f5;
+    border-left: 4px solid #e53e3e;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error h2 {
+    color: #c53030;
+    margin-top: 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.chart-wrapper {
+    animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header h2 {
+        font-size: 1.2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main {
+        padding: 1rem;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    table, .chart-wrapper {
+        width: 95%;
+        max-width: 95%;
+        overflow: hidden;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .chart-wrapper {
+        padding: 1rem;
+    }
+    
+    header {
+        padding: 1.5rem 1rem;
+    }
+    
+    h1::after, h2::after {
+        width: 60px;
+    }
+}
