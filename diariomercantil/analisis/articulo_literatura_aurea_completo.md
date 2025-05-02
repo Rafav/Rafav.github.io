@@ -1,20 +1,3 @@
----
-title: "La literatura del Siglo de Oro como resistencia cultural durante la invasión napoleónica: Análisis estadístico del Diario Mercantil de Cádiz (1807-1830)"
-author: "Rafael Vidal Rodríguez-Sabio"
-date: "2025"
-documentclass: article
-classoption: [a4paper, 12pt]
-geometry: margin=2.5cm
-mainfont: Times New Roman
-header-includes:
-   - \usepackage{titling}
-   - \pretitle{\begin{center}\LARGE\bfseries}
-   - \posttitle{\end{center}}
-   - \preauthor{\begin{center}\large}
-   - \postauthor{\end{center}}
-   - \predate{\begin{center}\large}
-   - \postdate{\end{center}}
----
 # La literatura del Siglo de Oro como resistencia cultural durante la invasión napoleónica: Análisis estadístico del Diario Mercantil de Cádiz (1807-1830)
 
 ## Resumen
