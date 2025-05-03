@@ -1,18 +1,8 @@
 :root {
-    /* Paleta principal - Inspirada en pergamino antiguo y tinta */
-    --primary-color: #2c1f19; /* Color principal más oscuro para mejor contraste */
-    --secondary-color: #a35638; /* Tono terroso más vibrante */
-    --background-color: #f9f5eb; /* Beige claro, como papel antiguo */
-    --text-color: #333333; /* Texto oscuro para mejor legibilidad */
-    --heading-color: #4d2b1f; /* Marrón para encabezados */
-    --link-color: #8b4513; /* Tono madera para enlaces */
-    --chart-bg: #f5f5f5; /* Fondo claro para gráficos */
-    
-    /* 
-    Otras paletas disponibles (descomentar para cambiar):
-    
+  
+    /*
     Paleta Barroca:
-  */
+  
     --primary-color: #1d3557;
     --secondary-color: #e63946;
     --background-color: #f1faee;
@@ -20,15 +10,7 @@
     --heading-color: #457b9d;
     --link-color: #e63946;
     --chart-bg: #f8f9fa;
-    /*
-    Paleta Siglo de Oro:
-    --primary-color: #5e3023;
-    --secondary-color: #d4af37;
-    --background-color: #f7f3e8;
-    --text-color: #2f2319;
-    --heading-color: #854836;
-    --link-color: #a67c00;
-    --chart-bg: #f7f7f2;
+  */
     
     Paleta Ilustración:
     --primary-color: #2b2d42;
@@ -38,7 +20,7 @@
     --heading-color: #2b2d42;
     --link-color: #d90429;
     --chart-bg: #f8f9fa;
-    */
+    
 }
 
 * {
