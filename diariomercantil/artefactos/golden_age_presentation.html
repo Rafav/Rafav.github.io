@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Literatura del Siglo de Oro como Resistencia Cultural</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .presentation-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide.prev {
+            transform: translateX(-100%);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #f4d03f;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 25px;
+            color: #85c1e9;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #f8c471;
+        }
+
+        .content {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            text-align: left;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f4d03f;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .bar-chart {
+            display: flex;
+            align-items: end;
+            height: 200px;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .bar {
+            background: linear-gradient(to top, #f4d03f, #85c1e9);
+            border-radius: 5px 5px 0 0;
+            min-width: 40px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .bar:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border-left: 4px solid #f4d03f;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: #f4d03f;
+            margin-right: 20px;
+            min-width: 60px;
+        }
+
+        .author-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .author-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .author-name {
+            font-weight: bold;
+            color: #85c1e9;
+            margin-bottom: 10px;
+        }
+
+        .work-list {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .work-list li {
+            margin: 5px 0;
+            padding-left: 10px;
+            border-left: 2px solid #f8c471;
+        }
+
+        .invisibility-section {
+            background: rgba(220, 20, 60, 0.2);
+            border: 2px solid rgba(220, 20, 60, 0.5);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        .invisibility-section h3 {
+            color: #ff6b9d;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .slide-counter {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(244, 208, 63, 0.3) 0%, rgba(244, 208, 63, 0.3) 100%);
+            padding: 2px 8px;
+            border-radius: 5px;
+        }
+
+        .quote {
+            font-style: italic;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-left: 4px solid #f4d03f;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li:before {
+            content: "▶";
+            color: #f4d03f;
+            position: absolute;
+            left: 0;
+        }
+
+        .data-table {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .data-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th {
+            background: rgba(244, 208, 63, 0.3);
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .data-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">12</span>
+        </div>
+
+        <!-- Slide 1: Título -->
+        <div class="slide active">
+            <div class="content">
+                <h1>La Literatura del Siglo de Oro como Resistencia Cultural</h1>
+                <h2>Análisis del Diario Mercantil de Cádiz (1807-1830)</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Años analizados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">21</div>
+                        <div class="stat-label">Volúmenes del Diario</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Autores del Siglo de Oro</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Obras representadas</div>
+                    </div>
+                </div>
+                <p style="margin-top: 30px; font-size: 1.2rem;">
+                    <span class="highlight">Invasión Napoleónica (1808-1814)</span> • 
+                    <span class="highlight">Resistencia Cultural</span> • 
+                    <span class="highlight">Identidad Nacional</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Contexto Histórico -->
+        <div class="slide">
+            <div class="content">
+                <h2>Contexto Histórico: La Invasión Napoleónica</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1807</div>
+                        <div>Período pre-invasión: Literatura áurea al 15.2%</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1808</div>
+                        <div>Inicio de la invasión: Descenso a 14.6%</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1810</div>
+                        <div><strong>Máxima ocupación francesa: Mínimo histórico 4.7%</strong></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1812</div>
+                        <div><strong>Cortes de Cádiz: Resurgimiento al 16.0%</strong></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1814</div>
+                        <div>Fin de la ocupación: Regreso de Fernando VII</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1830</div>
+                        <div><strong>Consolidación romántica: Máximo histórico 25.4%</strong></div>
+                    </div>
+                </div>
+                <div class="quote">
+                    "En estas funciones teatrales hemos de encontrar el alivio que solo el arte y las tradiciones españolas pueden darnos" - Diario Mercantil, marzo 1812
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Evolución Estadística -->
+        <div class="slide">
+            <div class="content">
+                <h2>Evolución de la Presencia Literaria Áurea</h2>
+                <div class="chart-container">
+                    <div class="bar-chart">
+                        <div class="bar" style="height: 76%;">
+                            <div class="bar-label">1807</div>
+                            <div class="bar-value">15.2%</div>
+                        </div>
+                        <div class="bar" style="height: 73%;">
+                            <div class="bar-label">1808</div>
+                            <div class="bar-value">14.6%</div>
+                        </div>
+                        <div class="bar" style="height: 62%;">
+                            <div class="bar-label">1809</div>
+                            <div class="bar-value">12.4%</div>
+                        </div>
+                        <div class="bar" style="height: 24%; background: linear-gradient(to top, #dc143c, #ff6b9d);">
+                            <div class="bar-label">1810</div>
+                            <div class="bar-value">4.7%</div>
+                        </div>
+                        <div class="bar" style="height: 63%;">
+                            <div class="bar-label">1811</div>
+                            <div class="bar-value">12.6%</div>
+                        </div>
+                        <div class="bar" style="height: 80%; background: linear-gradient(to top, #2ecc71, #58d68d);">
+                            <div class="bar-label">1812</div>
+                            <div class="bar-value">16.0%</div>
+                        </div>
+                        <div class="bar" style="height: 69%;">
+                            <div class="bar-label">1816</div>
+                            <div class="bar-value">13.8%</div>
+                        </div>
+                        <div class="bar" style="height: 77%;">
+                            <div class="bar-label">1820</div>
+                            <div class="bar-value">15.4%</div>
+                        </div>
+                        <div class="bar" style="height: 24%; background: linear-gradient(to top, #dc143c, #ff6b9d);">
+                            <div class="bar-label">1825</div>
+                            <div class="bar-value">4.7%</div>
+                        </div>
+                        <div class="bar" style="height: 100%; background: linear-gradient(to top, #f39c12, #f4d03f);">
+                            <div class="bar-label">1830</div>
+                            <div class="bar-value">25.4%</div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Patrones Identificados:</h3>
+                <ul>
+                    <li><strong style="color: #dc143c;">Crisis de ocupación:</strong> Mínimos en 1810 y 1825</li>
+                    <li><strong style="color: #2ecc71;">Resistencia constitucional:</strong> Resurgimiento en 1812</li>
+                    <li><strong style="color: #f4d03f;">Consolidación romántica:</strong> Máximo en 1830</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4: Autores Canónicos -->
+        <div class="slide">
+            <div class="content">
+                <h2>Autores Canónicos del Siglo de Oro</h2>
+                <div class="data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Autor</th>
+                                <th>Total Menciones</th>
+                                <th>Año Pico</th>
+                                <th>Función Cultural</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Miguel de Cervantes</strong></td>
+                                <td>214</td>
+                                <td>1812 (39)</td>
+                                <td>Símbolo nacional durante resistencia</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tirso de Molina</strong></td>
+                                <td>214</td>
+                                <td>1830 (64)</td>
+                                <td>Consolidación romántica</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Agustín Moreto</strong></td>
+                                <td>129</td>
+                                <td>1807 (18)</td>
+                                <td>Repertorio pre-invasión</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lope de Vega</strong></td>
+                                <td>127</td>
+                                <td>1807 (39)</td>
+                                <td>Tradición teatral establecida</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Calderón de la Barca</strong></td>
+                                <td>80</td>
+                                <td>1818 (73)</td>
+                                <td>Reconstrucción post-bélica</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="quote">
+                    <strong>Instrumentalización estratégica:</strong> Cada autor cumple una función específica según el momento político. Cervantes como símbolo resistente, Calderón en la reconstrucción.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Autores Secundarios -->
+        <div class="slide">
+            <div class="content">
+                <h2>Autores Secundarios: Diversidad del Canon</h2>
+                <div class="author-grid">
+                    <div class="author-card">
+                        <div class="author-name">Francisco de Rojas Zorrilla</div>
+                        <div class="stat-number">62 menciones</div>
+                        <ul class="work-list">
+                            <li>"Del Rey abajo ninguno" (15)</li>
+                            <li>"Entre bobos anda el juego" (9)</li>
+                        </ul>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-name">Antonio de Zamora</div>
+                        <div class="stat-number">45 menciones</div>
+                        <ul class="work-list">
+                            <li>"El hechizado por fuerza" (13)</li>
+                            <li>"El convidado de piedra" (8)</li>
+                        </ul>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-name">Mira de Amescua</div>
+                        <div class="stat-number">14 menciones</div>
+                        <ul class="work-list">
+                            <li>"El esclavo del demonio" (4)</li>
+                            <li>"La rueda de la fortuna" (3)</li>
+                        </ul>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-name">Vélez de Guevara</div>
+                        <div class="stat-number">12 menciones</div>
+                        <ul class="work-list">
+                            <li>"Reinar después de morir" (7)</li>
+                            <li>"La Luna de la Sierra" (2)</li>
+                        </ul>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-name">Juan Ruiz de Alarcón</div>
+                        <div class="stat-number">3 menciones</div>
+                        <ul class="work-list">
+                            <li>"La verdad sospechosa" (2)</li>
+                        </ul>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-name">Guillén de Castro</div>
+                        <div class="stat-number">2 menciones</div>
+                        <ul class="work-list">
+                            <li>"Las mocedades del Cid" (2)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Obras Más Representadas -->
+        <div class="slide">
+            <div class="content">
+                <h2>Obras Más Representadas (1807-1830)</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Top 8 Obras Teatrales</h3>
+                        <div class="data-table">
+                            <table>
+                                <tr><td><strong>"La Dama Duende"</strong></td><td>38</td><td>Calderón</td></tr>
+                                <tr><td><strong>"Sancho Ortiz de las Roelas"</strong></td><td>31</td><td>Lope (adapt.)</td></tr>
+                                <tr><td><strong>"El Alcalde de Zalamea"</strong></td><td>27</td><td>Calderón</td></tr>
+                                <tr><td><strong>"Casa con dos puertas"</strong></td><td>26</td><td>Calderón</td></tr>
+                                <tr><td><strong>"El desdén con el desdén"</strong></td><td>25</td><td>Moreto</td></tr>
+                                <tr><td><strong>"La vida es sueño"</strong></td><td>23</td><td>Calderón</td></tr>
+                                <tr><td><strong>"El mejor Alcalde el Rey"</strong></td><td>22</td><td>Lope</td></tr>
+                                <tr><td><strong>"El vergonzoso en palacio"</strong></td><td>22</td><td>Tirso</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Temáticas de Resistencia</h3>
+                        <div class="stat-card">
+                            <div class="author-name">Justicia vs. Autoridad Ilegítima</div>
+                            <ul class="work-list">
+                                <li>"El Alcalde de Zalamea"</li>
+                                <li>"El mejor Alcalde el Rey"</li>
+                                <li>"Del Rey abajo ninguno"</li>
+                            </ul>
+                        </div>
+                        <div class="stat-card">
+                            <div class="author-name">Honor y Resistencia</div>
+                            <ul class="work-list">
+                                <li>"Fuenteovejuna" (referencias)</li>
+                                <li>"La Estrella de Sevilla"</li>
+                                <li>"El garrote más bien dado"</li>
+                            </ul>
+                        </div>
+                        <div class="quote">
+                            <strong>Programación selectiva:</strong> Obras con resonancia contemporánea durante la resistencia antinapoleónica
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Literatura No Dramática -->
+        <div class="slide">
+            <div class="content">
+                <h2>Más Allá del Teatro: Otras Manifestaciones</h2>
+                <div class="three-column">
+                    <div>
+                        <h3>Narrativa Cervantina</h3>
+                        <div class="stat-card">
+                            <div class="stat-number">14</div>
+                            <div class="stat-label">Referencias a Novelas Ejemplares</div>
+                        </div>
+                        <ul class="work-list">
+                            <li>"Rinconete y Cortadillo"</li>
+                            <li>"La Gitanilla"</li>
+                            <li>Adaptaciones del Quijote</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Poesía Áurea</h3>
+                        <div class="stat-card">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Menciones poéticas</div>
+                        </div>
+                        <ul class="work-list">
+                            <li>"La Gatomaquia" (Lope) - 3</li>
+                            <li>Sonetos de Quevedo - 2</li>
+                            <li>"Fábula de Polifemo" (Góngora) - 1</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Prosa Doctrinal</h3>
+                        <div class="stat-card">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Obra doctrinaria</div>
+                        </div>
+                        <ul class="work-list">
+                            <li>"Reloj de Príncipes" (Antonio de Guevara, 1826)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quote">
+                    <strong>Uso político del Quijote:</strong> "Se usa como referencia irónica para criticar a Napoleón, comparándolo con un Quijote fantasioso" - Diario Mercantil, 17 julio 1808
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: La Invisibilización Femenina -->
+        <div class="slide">
+            <div class="content">
+                <h2>La Gran Ausencia: Invisibilización de las Autoras</h2>
+                <div class="invisibility-section">
+                    <h3>Presencia Femenina Documentada</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" style="color: #ff6b9d;">2</div>
+                            <div class="stat-label">Total de menciones indirectas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" style="color: #ff6b9d;">0</div>
+                            <div class="stat-label">Autoras específicamente nombradas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" style="color: #ff6b9d;">0</div>
+                            <div class="stat-label">Obras femeninas representadas</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="two-column">
+                    <div>
+                        <h3>Referencias Encontradas</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1819</div>
+                            <div>"poesía de una dama de la época de Lope" (referencia anónima)</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1826</div>
+                            <div>"comedias escritas por ingenios femeninos del Siglo de Oro" (sin especificar autora)</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Autoras Completamente Invisibilizadas</h3>
+                        <ul class="work-list">
+                            <li><strong>Ana Caro Mallén de Soto</strong> - "Valor, agravio y mujer"</li>
+                            <li><strong>María de Zayas y Sotomayor</strong> - "Novelas amorosas y ejemplares"</li>
+                            <li><strong>Leonor de la Cueva y Silva</strong> - "La firmeza en la ausencia"</li>
+                            <li><strong>Ángela de Azevedo</strong> - "El muerto disimulado"</li>
+                            <li><strong>Feliciana Enríquez de Guzmán</strong> - "Los jardines y campos sabeos"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="quote" style="border-left-color: #ff6b9d;">
+                    <strong>Conclusión crítica:</strong> La invisibilización de la producción femenina áurea en la recepción decimonónica evidencia la construcción masculinizada del canon nacional durante la resistencia cultural.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Correlación Política -->
+        <div class="slide">
+            <div class="content">
+                <h2>Correlación con Eventos Políticos</h2>
+                <div class="data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Evento Político</th>
+                                <th>Fecha</th>
+                                <th>Mes Anterior</th>
+                                <th>Mes Posterior</th>
+                                <th>Variación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(46, 204, 113, 0.2);">
+                                <td><strong>Batalla de Bailén</strong></td>
+                                <td>Julio 1808</td>
+                                <td>2</td>
+                                <td>9</td>
+                                <td style="color: #2ecc71;">+350%</td>
+                            </tr>
+                            <tr style="background: rgba(46, 204, 113, 0.2);">
+                                <td><strong>Constitución 1812</strong></td>
+                                <td>Marzo 1812</td>
+                                <td>4</td>
+                                <td>11</td>
+                                <td style="color: #2ecc71;">+175%</td>
+                            </tr>
+                            <tr style="background: rgba(46, 204, 113, 0.2);">
+                                <td><strong>Fin del asedio</strong></td>
+                                <td>Agosto 1812</td>
+                                <td>6</td>
+                                <td>12</td>
+                                <td style="color: #2ecc71;">+100%</td>
+                            </tr>
+                            <tr style="background: rgba(220, 20, 60, 0.2);">
+                                <td><strong>Ocupación Sevilla</strong></td>
+                                <td>Febrero 1810</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td style="color: #dc143c;">-66.7%</td>
+                            </tr>
+                            <tr style="background: rgba(220, 20, 60, 0.2);">
+                                <td><strong>Asedio de Cádiz</strong></td>
+                                <td>Febrero 1810</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td style="color: #dc143c;">-100%</td>
+                            </tr>
+                            <tr style="background: rgba(220, 20, 60, 0.2);">
+                                <td><strong>Intervención "100.000 hijos"</strong></td>
+                                <td>Abril 1823</td>
+                                <td>8</td>
+                                <td>2</td>
+                                <td style="color: #dc143c;">-75%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Patrones de Resistencia Cultural</h3>
+                <ul>
+                    <li><strong style="color: #2ecc71;">Incrementos reactivos:</strong> Tras eventos de afirmación nacional</li>
+                    <li><strong style="color: #dc143c;">Represión cultural:</strong> Durante ocupación y represión política</li>
+                    <li><strong style="color: #f4d03f;">Función simbólica:</strong> Literatura como mecanismo de expresión patriótica indirecta</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 10: Espacios Teatrales -->
+        <div class="slide">
+            <div class="content">
+                <h2>Geografía Cultural: Espacios de Representación</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="author-name">Coliseo de Cádiz</div>
+                        <div class="stat-number">673</div>
+                        <div class="stat-label">menciones (1807-1812)</div>
+                        <div style="margin-top: 10px;">14.3% obras áureas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="author-name">Teatro de Cádiz</div>
+                        <div class="stat-number">742</div>
+                        <div class="stat-label">menciones (1807-1818)</div>
+                        <div style="margin-top: 10px;">15.6% obras áureas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="author-name">Teatro Principal</div>
+                        <div class="stat-number">143</div>
+                        <div class="stat-label">menciones (1818-1830)</div>
+                        <div style="margin-top: 10px;">17.5% obras áureas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="author-name">Teatro de San Fernando</div>
+                        <div class="stat-number">57</div>
+                        <div class="stat-label">menciones (1820-1830)</div>
+                        <div style="margin-top: 10px; color: #f4d03f;"><strong>22.8% obras áureas</strong></div>
+                    </div>
+                </div>
+                
+                <div class="two-column">
+                    <div>
+                        <h3>Evolución Institucional</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">1807-1812</div>
+                                <div><strong>Coliseo:</strong> Epicentro durante invasión</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1812-1818</div>
+                                <div><strong>Teatro de Cádiz:</strong> Reconstrucción post-bélica</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1818-1830</div>
+                                <div><strong>Teatro Principal:</strong> Institucionalización</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1820-1830</div>
+                                <div><strong>Teatro San Fernando:</strong> Especialización en repertorio áureo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Políticas Culturales</h3>
+                        <ul>
+                            <li><strong>Centralización inicial:</strong> Coliseo como único espacio principal</li>
+                            <li><strong>Diversificación post-guerra:</strong> Múltiples espacios teatrales</li>
+                            <li><strong>Especialización cultural:</strong> Teatro San Fernando con mayor concentración áurea</li>
+                            <li><strong>Institucionalización:</strong> Transición hacia denominaciones oficiales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Hipótesis Confirmadas -->
+        <div class="slide">
+            <div class="content">
+                <h2>Hipótesis de Investigación Confirmadas</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" style="border-left: 4px solid #2ecc71;">
+                        <h3 style="color: #2ecc71;">1. Resistencia Cultural Teatral</h3>
+                        <p>Caída drástica durante ocupación (4.7% en 1810) seguida de resurgimiento constitucional (16% en 1812)</p>
+                    </div>
+                    <div class="stat-card" style="border-left: 4px solid #f4d03f;">
+                        <h3 style="color: #f4d03f;">2. Cervantes como Símbolo</h3>
+                        <p>Incremento exponencial de referencias cervantinas durante 1812 (39 menciones) como símbolo identitario</p>
+                    </div>
+                    <div class="stat-card" style="border-left: 4px solid #85c1e9;">
+                        <h3 style="color: #85c1e9;">3. Programación Selectiva</h3>
+                        <p>Selección intencional de obras con temáticas de resistencia a autoridad ilegítima</p>
+                    </div>
+                    <div class="stat-card" style="border-left: 4px solid #f39c12;">
+                        <h3 style="color: #f39c12;">4. Resurgimiento Post-liberación</h3>
+                        <p>Máximo histórico en 1830 (25.4%) como reclamación cultural consolidada</p>
+                    </div>
+                </div>
+                
+                <div class="quote">
+                    <strong>Evidencia testimonial:</strong> "Elogio de los buenos Españoles que han muerto en esta guerra. Parece que no puede darse argumento mas grandioso ni mas interesante..." - Diario Mercantil, 20 agosto 1809
+                </div>
+                
+                <h3>Instrumentalización Estratégica del Canon</h3>
+                <ul>
+                    <li><strong>Lope de Vega:</strong> Tradición teatral pre-invasión</li>
+                    <li><strong>Cervantes:</strong> Símbolo de resistencia durante ocupación</li>
+                    <li><strong>Calderón:</strong> Reconstrucción cultural post-bélica</li>
+                    <li><strong>Autores secundarios:</strong> Diversificación romántica (1820-1830)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 12: Conclusiones -->
+        <div class="slide">
+            <div class="content">
+                <h2>Conclusiones: Literatura como Resistencia Cultural</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Principales Hallazgos</h3>
+                        <ul>
+                            <li><strong>Correlación política:</strong> Fluctuaciones literarias siguen eventos históricos</li>
+                            <li><strong>Función identitaria:</strong> Canon áureo como repositorio de valores nacionales</li>
+                            <li><strong>Selección temática:</strong> Predominio de narrativas de resistencia</li>
+                            <li><strong>Institucionalización:</strong> Consolidación hacia 1830 como patrimonio nacional</li>
+                            <li><strong>Diversificación progresiva:</strong> Ampliación del repertorio post-ocupación</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Ausencias Significativas</h3>
+                        <div class="invisibility-section">
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="color: #ff6b9d;">• <strong>Invisibilización femenina total</strong></li>
+                                <li style="color: #ff6b9d;">• Construcción masculinizada del canon</li>
+                                <li style="color: #ff6b9d;">• Pérdida de diversidad autoral de género</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <h3>Síntesis: La Literatura como Mecanismo de Resistencia</h3>
+                    <div class="quote">
+                        <p><strong>La literatura del Siglo de Oro funcionó como recurso cultural activo y estratégico en un momento crítico de definición identitaria, demostrando la capacidad del canon literario para actuar como repositorio de valores nacionales y vehículo de resistencia cultural frente a la ocupación extranjera.</strong></p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="author-name">Contribución Historiográfica</div>
+                    <p>Este estudio aporta la primera cuantificación sistemática de la presencia literaria áurea durante la invasión napoleónica, demostrando las dinámicas entre literatura, identidad nacional y resistencia cultural en períodos de crisis política.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn" onclick="previousSlide()">← Anterior</button>
+            <button class="nav-btn" onclick="nextSlide()">Siguiente →</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index === n) {
+                    slide.classList.add('active');
+                } else if (index < n) {
+                    slide.classList.add('prev');
+                }
+            });
+            document.getElementById('current-slide').textContent = n + 1;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Navegación con clic
+        document.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('nav-btn')) {
+                nextSlide();
+            }
+        });
+
+        // Inicializar
+        showSlide(0);
+    </script>
+</body>
+</html>
