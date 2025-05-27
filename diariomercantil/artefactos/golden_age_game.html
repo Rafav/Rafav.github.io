@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tesoro del Siglo de Oro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #fff;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Partículas flotantes */
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: gold;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            margin-bottom: 1rem;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5)); }
+            to { filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.8)); }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #b8c5d6;
+            margin-bottom: 2rem;
+        }
+
+        /* Game Container */
+        .game-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding: 2rem 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #ffd700, #ff6b6b, #4ecdc4);
+            transform: translateX(-50%);
+        }
+
+        .timeline-event {
+            position: relative;
+            margin: 2rem 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-event:hover {
+            transform: scale(1.05);
+        }
+
+        .timeline-event.left {
+            text-align: right;
+            padding-right: 3rem;
+        }
+
+        .timeline-event.right {
+            text-align: left;
+            padding-left: 3rem;
+            margin-left: 50%;
+        }
+
+        .event-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.5s ease;
+        }
+
+        .event-card:hover::before {
+            transform: scale(1);
+        }
+
+        .event-card:hover {
+            border-color: #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .event-year {
+            font-size: 1.5rem;
+            color: #ffd700;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .event-description {
+            color: #b8c5d6;
+            font-size: 0.9rem;
+        }
+
+        .event-dot {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ffd700;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+            50% { box-shadow: 0 0 30px rgba(255, 215, 0, 1); }
+            100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+        }
+
+        /* Quiz Section */
+        .quiz-section {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .quiz-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #ffd700;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .question {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .option {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .option:hover::before {
+            left: 100%;
+        }
+
+        .option:hover {
+            border-color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+        }
+
+        .option.correct {
+            background: rgba(46, 213, 115, 0.2);
+            border-color: #2ed573;
+            animation: correctAnswer 0.6s ease;
+        }
+
+        .option.incorrect {
+            background: rgba(255, 107, 107, 0.2);
+            border-color: #ff6b6b;
+            animation: incorrectAnswer 0.6s ease;
+        }
+
+        @keyframes correctAnswer {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes incorrectAnswer {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Score */
+        .score {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            color: #ffd700;
+        }
+
+        /* Authors Gallery */
+        .authors-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .author-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .author-card::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1), transparent);
+            transition: all 0.4s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        .author-card:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .author-card:hover {
+            transform: translateY(-10px);
+            border-color: #ffd700;
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.2);
+        }
+
+        .author-name {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .author-works {
+            color: #b8c5d6;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .author-stats {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #4ecdc4;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .timeline-event.right {
+                margin-left: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+            
+            .timeline-event.left {
+                text-align: center;
+                padding-right: 0;
+            }
+            
+            .timeline-line {
+                display: none;
+            }
+            
+            .event-dot {
+                display: none;
+            }
+        }
+
+        /* Interactive elements */
+        .interactive-btn {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #1a1a2e;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .interactive-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles"></div>
+
+    <div class="header">
+        <h1 class="title">El Tesoro del Siglo de Oro</h1>
+        <p class="subtitle">Descubre la resistencia cultural durante la invasión napoleónica</p>
+    </div>
+
+    <div class="game-container">
+        <!-- Timeline Section -->
+        <section id="timeline-section" class="timeline">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-event left">
+                <div class="event-dot"></div>
+                <div class="event-card" onclick="showEventDetails('1807')">
+                    <div class="event-year">1807</div>
+                    <div class="event-title">Preludio de la Invasión</div>
+                    <div class="event-description">59 referencias áureas en el Diario Mercantil (15.2%)</div>
+                </div>
+            </div>
+
+            <div class="timeline-event right">
+                <div class="event-dot"></div>
+                <div class="event-card" onclick="showEventDetails('1810')">
+                    <div class="event-year">1810</div>
+                    <div class="event-title">Máxima Ocupación</div>
+                    <div class="event-description">Solo 4 referencias áureas (4.7%) - Punto más bajo</div>
+                </div>
+            </div>
+
+            <div class="timeline-event left">
+                <div class="event-dot"></div>
+                <div class="event-card" onclick="showEventDetails('1812')">
+                    <div class="event-year">1812</div>
+                    <div class="event-title">Constitución de Cádiz</div>
+                    <div class="event-description">52 referencias áureas (16%) - Resurgimiento cervantino</div>
+                </div>
+            </div>
+
+            <div class="timeline-event right">
+                <div class="event-dot"></div>
+                <div class="event-card" onclick="showEventDetails('1830')">
+                    <div class="event-year">1830</div>
+                    <div class="event-title">Consolidación Romántica</div>
+                    <div class="event-description">119 referencias áureas (25.4%) - Máximo histórico</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="quiz-section hidden">
+            <h2 class="quiz-title">🎭 Quiz del Siglo de Oro</h2>
+            <div id="quiz-content">
+                <div class="question" id="question">¿Qué autor tuvo mayor presencia durante 1812, año de la Constitución de Cádiz?</div>
+                <div class="options">
+                    <div class="option" onclick="selectAnswer(this, false)">Lope de Vega</div>
+                    <div class="option" onclick="selectAnswer(this, true)">Miguel de Cervantes</div>
+                    <div class="option" onclick="selectAnswer(this, false)">Calderón de la Barca</div>
+                    <div class="option" onclick="selectAnswer(this, false)">Tirso de Molina</div>
+                </div>
+            </div>
+            <div class="score">Puntuación: <span id="score">0</span>/10</div>
+        </section>
+
+        <!-- Authors Gallery -->
+        <section id="authors-section" class="authors-gallery hidden">
+            <div class="author-card" onclick="showAuthorInfo('cervantes')">
+                <div class="author-name">Miguel de Cervantes</div>
+                <div class="author-works">"Don Quijote", Novelas Ejemplares</div>
+                <div class="author-stats">214 menciones totales | Pico en 1812 (39)</div>
+            </div>
+            
+            <div class="author-card" onclick="showAuthorInfo('lope')">
+                <div class="author-name">Lope de Vega</div>
+                <div class="author-works">"El mejor Alcalde el Rey", "Fuenteovejuna"</div>
+                <div class="author-stats">127 menciones totales | Dominancia pre-invasión</div>
+            </div>
+            
+            <div class="author-card" onclick="showAuthorInfo('calderon')">
+                <div class="author-name">Calderón de la Barca</div>
+                <div class="author-works">"La vida es sueño", "El Alcalde de Zalamea"</div>
+                <div class="author-stats">80 menciones totales | Pico en 1818 (73)</div>
+            </div>
+            
+            <div class="author-card" onclick="showAuthorInfo('tirso')">
+                <div class="author-name">Tirso de Molina</div>
+                <div class="author-works">"El burlador de Sevilla", "Don Gil de las calzas verdes"</div>
+                <div class="author-stats">214 menciones totales | Resurgimiento en 1830</div>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <button class="interactive-btn" onclick="showSection('timeline')">📜 Línea de Tiempo</button>
+            <button class="interactive-btn" onclick="showSection('quiz')">🎯 Quiz Literario</button>
+            <button class="interactive-btn" onclick="showSection('authors')">👥 Galería de Autores</button>
+        </div>
+    </div>
+
+    <script>
+        // Variables globales
+        let currentScore = 0;
+        let currentQuestionIndex = 0;
+
+        // Preguntas del quiz
+        const questions = [
+            {
+                question: "¿Qué autor tuvo mayor presencia durante 1812, año de la Constitución de Cádiz?",
+                options: ["Lope de Vega", "Miguel de Cervantes", "Calderón de la Barca", "Tirso de Molina"],
+                correct: 1
+            },
+            {
+                question: "¿Cuál fue el porcentaje más bajo de referencias áureas durante la ocupación?",
+                options: ["4.7% en 1810", "12.4% en 1809", "14.6% en 1808", "15.2% en 1807"],
+                correct: 0
+            },
+            {
+                question: "¿Qué obra fue la más representada durante todo el período estudiado?",
+                options: ["El Alcalde de Zalamea", "La vida es sueño", "La Dama Duende", "Fuenteovejuna"],
+                correct: 2
+            },
+            {
+                question: "¿En qué año se alcanzó el máximo histórico de representaciones áureas?",
+                options: ["1818", "1825", "1830", "1812"],
+                correct: 2
+            },
+            {
+                question: "¿Cuál de estas obras NO aparece entre las más representadas?",
+                options: ["Casa con dos puertas", "El desdén con el desdén", "La Celestina", "El vergonzoso en palacio"],
+                correct: 2
+            }
+        ];
+
+        // Crear partículas de fondo
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Mostrar secciones
+        function showSection(section) {
+            const sections = ['timeline-section', 'quiz-section', 'authors-section'];
+            sections.forEach(s => {
+                const element = document.getElementById(s);
+                if (s === section + '-section') {
+                    element.classList.remove('hidden');
+                    element.classList.add('fade-in');
+                } else {
+                    element.classList.add('hidden');
+                }
+            });
+
+            if (section === 'quiz') {
+                currentQuestionIndex = 0;
+                currentScore = 0;
+                updateScore();
+                loadQuestion();
+            }
+        }
+
+        // Mostrar detalles de eventos
+        function showEventDetails(year) {
+            const details = {
+                '1807': "Año de normalidad cultural antes de la invasión. 59 referencias áureas de un total de 387 menciones literarias.",
+                '1810': "Momento más crítico de la ocupación. Drástica reducción a solo 4 referencias áureas.",
+                '1812': "Año de la Constitución de Cádiz. Notable resurgimiento con predominio cervantino (39 menciones).",
+                '1830': "Consolidación del canon áureo. 119 referencias de 468 totales, máximo histórico del 25.4%."
+            };
+            
+            alert(`📅 ${year}\n\n${details[year]}`);
+        }
+
+        // Mostrar información de autores
+        function showAuthorInfo(author) {
+            const info = {
+                'cervantes': "Miguel de Cervantes se convirtió en símbolo de resistencia nacional durante 1812, con 39 menciones coincidiendo con la Constitución de Cádiz.",
+                'lope': "Lope de Vega dominó el período pre-invasión con 39 menciones en 1807, especialmente con obras de temática política como 'El mejor Alcalde el Rey'.",
+                'calderon': "Calderón experimentó un extraordinario resurgimiento post-bélico, alcanzando 73 menciones en 1818 con obras como 'La vida es sueño'.",
+                'tirso': "Tirso de Molina tuvo un notable resurgimiento en 1830 con 64 menciones, especialmente 'El burlador de Sevilla'."
+            };
+            
+            alert(`🎭 ${info[author]}`);
+        }
+
+        // Cargar pregunta del quiz
+        function loadQuestion() {
+            if (currentQuestionIndex < questions.length) {
+                const q = questions[currentQuestionIndex];
+                document.getElementById('question').textContent = q.question;
+                
+                const options = document.querySelectorAll('.option');
+                options.forEach((option, index) => {
+                    option.textContent = q.options[index];
+                    option.classList.remove('correct', 'incorrect');
+                    option.onclick = () => selectAnswer(option, index === q.correct);
+                });
+            } else {
+                // Quiz completado
+                document.getElementById('quiz-content').innerHTML = `
+                    <div style="text-align: center; font-size: 2rem; margin: 3rem 0;">
+                        🎉 ¡Quiz Completado! 🎉
+                        <br><br>
+                        Puntuación final: ${currentScore}/${questions.length}
+                        <br><br>
+                        <button class="interactive-btn" onclick="restartQuiz()">🔄 Reiniciar Quiz</button>
+                    </div>
+                `;
+            }
+        }
+
+        // Seleccionar respuesta
+        function selectAnswer(element, isCorrect) {
+            const options = document.querySelectorAll('.option');
+            options.forEach(opt => {
+                opt.onclick = null; // Desactivar clicks
+                if (opt === element) {
+                    opt.classList.add(isCorrect ? 'correct' : 'incorrect');
+                } else if (questions[currentQuestionIndex].options[Array.from(options).indexOf(opt)] === questions[currentQuestionIndex].options[questions[currentQuestionIndex].correct]) {
+                    opt.classList.add('correct');
+                }
+            });
+
+            if (isCorrect) {
+                currentScore++;
+                updateScore();
+            }
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                loadQuestion();
+            }, 2000);
+        }
+
+        // Actualizar puntuación
+        function updateScore() {
+            document.getElementById('score').textContent = currentScore;
+        }
+
+        // Reiniciar quiz
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            currentScore = 0;
+            updateScore();
+            document.getElementById('quiz-content').innerHTML = `
+                <div class="question" id="question"></div>
+                <div class="options">
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                    <div class="option"></div>
+                </div>
+            `;
+            loadQuestion();
+        }
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            
+            // Efecto de entrada para las tarjetas
+            const cards = document.querySelectorAll('.event-card, .author-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = (index * 0.2) + 's';
+                card.classList.add('fade-in');
+            });
+        });
+
+        // Mostrar timeline por defecto
+        showSection('timeline');
+    </script>
+</body>
+</html>
