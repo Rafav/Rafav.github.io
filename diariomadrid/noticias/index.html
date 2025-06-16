@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Musical Histórico - Buscador Anual</title>
+    <style>
+        /* Tu estilo original sin cambios */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 95%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #2a5298;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .main-content {
+            display: flex;
+            min-height: 80vh;
+        }
+        .left-panel {
+            width: 380px;
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .search-section {
+            margin-bottom: 30px;
+        }
+        .search-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px 40px 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .search-input:focus {
+            border-color: #2a5298;
+        }
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+        .year-selector {
+            margin-bottom: 20px;
+        }
+        .year-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .year-btn {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        .year-btn:hover {
+            background: #e9ecef;
+        }
+        .year-btn.active {
+            background: #2a5298;
+            color: white;
+            border-color: #2a5298;
+        }
+        .year-btn.all-years, .year-btn.none-years {
+            font-weight: bold;
+        }
+        .clear-btn {
+            width: 100%;
+            padding: 10px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        .clear-btn:hover {
+            background: #c82333;
+        }
+        .stats {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+        .stat-number {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2a5298;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .calendar-section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .calendar-header {
+            font-weight: bold;
+            color: #2a5298;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .year-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .nav-btn {
+            background: #2a5298;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .current-year-selector {
+            font-weight: bold;
+            color: #2a5298;
+        }
+        .calendar-container-annual {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .month-wrapper {
+            padding: 10px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+        }
+        .month-title {
+            text-align: center;
+            font-weight: bold;
+            color: #2a5298;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+        }
+        .calendar-day-header {
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            background: #e9ecef;
+            font-size: 11px;
+        }
+        .calendar-day {
+            text-align: center;
+            padding: 4px;
+            cursor: pointer;
+            position: relative;
+            min-height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            border-radius: 3px;
+        }
+        .calendar-day:hover {
+            background: #e9ecef;
+        }
+        .calendar-day.has-news {
+            background: #e3f2fd;
+            color: #1565c0;
+            font-weight: bold;
+        }
+        .calendar-day.has-news:hover {
+            background: #bbdefb;
+        }
+        .calendar-day.selected {
+            background: #2a5298 !important;
+            color: white !important;
+        }
+        .calendar-day.other-month {
+            color: #ccc;
+        }
+        .news-count {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            background: #ff4444;
+            color: white;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            font-size: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+        .results-section {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+        }
+        .results-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2a5298;
+        }
+        .results-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .result-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .result-item:hover {
+            transform: translateY(-2px);
+        }
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .result-date {
+            font-weight: bold;
+            color: #2a5298;
+            font-size: 1.1rem;
+        }
+        .result-meta {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+        }
+        .news-text {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .news-page {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+        }
+        .highlight {
+            background: #ffeb3b;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .no-results h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        @media (max-width: 1200px) {
+            .calendar-container-annual {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .left-panel {
+                width: 100%;
+                max-width: none;
+            }
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">📜 Archivo Musical Histórico</h1>
+            <p class="subtitle">Buscador Dinámico de Noticias Musicales Multi-años</p>
+        </header>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Cargando datos del archivo combined.json...</p>
+        </div>
+        <div id="mainContent" class="main-content" style="display: none;">
+            <div class="left-panel">
+                <div class="search-section">
+                    <h3 style="margin-bottom: 15px; color: #2a5298;">🔍 Búsqueda en Texto Completo</h3>
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            id="searchInput" 
+                            placeholder="Buscar... (ópera, teatro, música - busca con/sin acentos, mayús/minús)"
+                            autocomplete="off"
+                        >
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="year-selector">
+                        <h4 style="margin-bottom: 10px; color: #2a5298;">📅 Filtrar por Año</h4>
+                        <div class="year-buttons" id="yearButtons">
+                            </div>
+                    </div>
+                    <div class="filters" id="filters">
+                        <button class="clear-btn" onclick="clearSearch()">Limpiar Todo</button>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalDays">0</span>
+                            <span class="stat-label">Días con noticias</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalNews">0</span>
+                            <span class="stat-label">Noticias totales</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="filteredDays">0</span>
+                            <span class="stat-label">Días mostrados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="filteredNews">0</span>
+                            <span class="stat-label">Noticias mostradas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-section">
+                    <div class="calendar-header" id="calendarHeader">Calendario Anual</div>
+                    <div class="year-navigation">
+                        <button class="nav-btn" id="prevYearBtn" onclick="changeYear(-1)">‹</button>
+                        <div class="current-year-selector" id="currentYearSelector"></div>
+                        <button class="nav-btn" id="nextYearBtn" onclick="changeYear(1)">›</button>
+                    </div>
+                    <div id="calendarContainer">
+                        </div>
+                </div>
+            </div>
+            <div class="results-section">
+                <div class="results-header">
+                    <div class="results-title" id="resultsTitle">Todas las Noticias</div>
+                    <div class="results-count" id="resultsCount">Cargando...</div>
+                </div>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+
+<script>
+let allData = [];
+let currentResults = [];
+let selectedDay = null;
+let searchTerm = '';
+let selectedYears = [];
+let currentCalendarYear = null;
+let availableYears = [];
+
+document.addEventListener('DOMContentLoaded', loadData);
+
+async function loadData() {
+    try {
+        const response = await fetch('combined.json');
+        if (!response.ok) throw new Error(`Error al cargar el archivo: ${response.status}`);
+        allData = await response.json();
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'flex';
+        initializeApp();
+    } catch (error) {
+        document.getElementById('loading').innerHTML = `
+            <div style="color: #dc3545;"><h3>❌ Error al cargar el archivo</h3><p>No se pudo cargar 'combined.json'. Asegúrate de que el archivo esté en la misma carpeta.</p><p style="font-size: 0.9rem; margin-top: 10px;">Error: ${error.message}</p></div>`;
+    }
+}
+
+function initializeApp() {
+    availableYears = allData.map(yearData => parseInt(yearData.Año)).sort((a, b) => a - b);
+    selectedYears = [...availableYears];
+    currentCalendarYear = availableYears[0];
+    generateYearButtons();
+    generateCalendar();
+    updateStats();
+    displayAllResults();
+    setupEventListeners();
+}
+
+function setupEventListeners() {
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+        searchTerm = e.target.value;
+        performSearch();
+    });
+}
+
+function generateYearButtons() {
+    const yearButtonsContainer = document.getElementById('yearButtons');
+    yearButtonsContainer.innerHTML = '';
+    const allBtn = document.createElement('button');
+    allBtn.className = 'year-btn all-years active';
+    allBtn.textContent = 'Todos';
+    allBtn.onclick = () => selectAllYears();
+    yearButtonsContainer.appendChild(allBtn);
+    const noneBtn = document.createElement('button');
+    noneBtn.className = 'year-btn none-years';
+    noneBtn.textContent = 'Ninguno';
+    noneBtn.id = 'none-btn';
+    noneBtn.onclick = () => selectNoYears();
+    yearButtonsContainer.appendChild(noneBtn);
+    availableYears.forEach(year => {
+        const btn = document.createElement('button');
+        btn.className = 'year-btn active';
+        btn.textContent = year;
+        btn.id = `year-${year}`;
+        btn.onclick = () => toggleYear(year);
+        yearButtonsContainer.appendChild(btn);
+    });
+}
+
+function selectAllYears() {
+    selectedYears = [...availableYears];
+    updateYearButtons();
+    updateCalendarForSelectedYears();
+    performSearch();
+}
+
+function selectNoYears() {
+    selectedYears = [];
+    updateYearButtons();
+    updateCalendarForSelectedYears();
+    performSearch();
+}
+
+function toggleYear(year) {
+    const index = selectedYears.indexOf(year);
+    if (index > -1) selectedYears.splice(index, 1);
+    else selectedYears.push(year);
+    updateYearButtons();
+    updateCalendarForSelectedYears();
+    performSearch();
+}
+
+function updateYearButtons() {
+    document.querySelector('.year-btn.all-years').classList.toggle('active', selectedYears.length === availableYears.length);
+    document.querySelector('.year-btn.none-years').classList.toggle('active', selectedYears.length === 0);
+    availableYears.forEach(year => {
+        document.getElementById(`year-${year}`).classList.toggle('active', selectedYears.includes(year));
+    });
+}
+
+function updateCalendarForSelectedYears() {
+    if (selectedYears.length === 0) {
+        showNoYearsSelected();
+        return;
+    }
+    if (!selectedYears.includes(currentCalendarYear)) {
+        currentCalendarYear = Math.min(...selectedYears);
+    }
+    generateCalendar();
+}
+
+function showNoYearsSelected() {
+    const calendarContainer = document.getElementById('calendarContainer');
+    document.getElementById('currentYearSelector').innerHTML = '<span>Selecciona un año</span>';
+    document.getElementById('prevYearBtn').disabled = true;
+    document.getElementById('nextYearBtn').disabled = true;
+    calendarContainer.innerHTML = `<div class="no-results" style="grid-column: 1 / -1; padding: 40px 20px;">📅<br>Selecciona al menos un año para ver el calendario</div>`;
+}
+
+function changeYear(direction) {
+    if (selectedYears.length === 0) return;
+    const sortedSelectedYears = [...selectedYears].sort((a, b) => a - b);
+    const currentIndex = sortedSelectedYears.indexOf(currentCalendarYear);
+    const newIndex = currentIndex + direction;
+    if (newIndex >= 0 && newIndex < sortedSelectedYears.length) {
+        currentCalendarYear = sortedSelectedYears[newIndex];
+        generateCalendar();
+        if (!searchTerm) {
+            displayAllResults(); // Update results to match calendar view if not searching
+        }
+    }
+}
+
+function extractDateFromPDF(pdfName) {
+    const match = pdfName.match(/(\d{4})-(\d{2})-(\d{2})\.pdf$/);
+    if (match) {
+        const [, year, month, day] = match;
+        return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+    }
+    return null;
+}
+
+function getFirstPage(page) {
+    const match = page.toString().split(/[-\s]+/)[0];
+    return isNaN(parseInt(match)) ? 1 : parseInt(match);
+}
+
+function generateCalendar() {
+    const calendarContainer = document.getElementById('calendarContainer');
+    const yearSelectorContainer = document.getElementById('currentYearSelector');
+    const prevBtn = document.getElementById('prevYearBtn');
+    const nextBtn = document.getElementById('nextYearBtn');
+
+    if (selectedYears.length === 0) {
+        showNoYearsSelected();
+        return;
+    }
+
+    if (!selectedYears.includes(currentCalendarYear)) {
+        currentCalendarYear = selectedYears[0];
+    }
+
+    const sortedSelectedYears = [...selectedYears].sort((a, b) => a - b);
+    const currentIndex = sortedSelectedYears.indexOf(currentCalendarYear);
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === sortedSelectedYears.length - 1;
+
+    yearSelectorContainer.innerHTML = `
+        <select id="yearSelector" style="padding: 5px; border: 1px solid #2a5298; border-radius: 5px; cursor: pointer; font-size: 1rem;">
+            ${sortedSelectedYears.map(year => `<option value="${year}" ${year === currentCalendarYear ? 'selected' : ''}>${year}</option>`).join('')}
+        </select>
+    `;
+
+    document.getElementById('yearSelector').addEventListener('change', (e) => {
+        currentCalendarYear = parseInt(e.target.value);
+        generateCalendar();
+        if (!searchTerm) {
+            displayAllResults();
+        }
+    });
+
+    const yearData = allData.find(data => parseInt(data.Año) === currentCalendarYear);
+    const newsByDay = {}; // { 0: { 15: { count: 5, ejemplares: [] } } }
+
+    if (yearData && yearData.ejemplares) {
+        const searchTermsArray = searchTerm.trim() ? searchTerm.split(/\s+/).filter(Boolean) : null;
+        yearData.ejemplares.forEach(ejemplar => {
+            const pdfDate = extractDateFromPDF(ejemplar.PDF);
+            if (!pdfDate) return;
+            const month = pdfDate.getMonth();
+            const day = pdfDate.getDate();
+            const matchingNews = searchTermsArray 
+                ? ejemplar.noticias_musicales?.filter(noticia => matchesSearch(noticia.texto_completo, searchTermsArray)) || []
+                : ejemplar.noticias_musicales || [];
+            if (matchingNews.length > 0) {
+                if (!newsByDay[month]) newsByDay[month] = {};
+                if (!newsByDay[month][day]) newsByDay[month][day] = { count: 0, ejemplares: [] };
+                newsByDay[month][day].count += matchingNews.length;
+                const filteredEjemplar = { ...ejemplar, noticias_musicales: matchingNews };
+                newsByDay[month][day].ejemplares.push(filteredEjemplar);
+            }
+        });
+    }
+
+    calendarContainer.innerHTML = '';
+    calendarContainer.className = 'calendar-container-annual';
+
+    const monthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    const dayHeadersHTML = ['L', 'M', 'X', 'J', 'V', 'S', 'D'].map(d => `<div class="calendar-day-header">${d}</div>`).join('');
+
+    for (let month = 0; month < 12; month++) {
+        const monthWrapper = document.createElement('div');
+        monthWrapper.className = 'month-wrapper';
+        let monthHTML = `<h4 class="month-title">${monthNames[month]}</h4><div class="calendar-grid">${dayHeadersHTML}`;
+
+        const daysInMonth = new Date(currentCalendarYear, month + 1, 0).getDate();
+        const firstDayOfWeek = new Date(currentCalendarYear, month, 1).getDay();
+        const startDay = firstDayOfWeek === 0 ? 6 : firstDayOfWeek - 1;
+
+        for (let i = 0; i < startDay; i++) monthHTML += `<div class="calendar-day other-month"></div>`;
+
+        for (let day = 1; day <= daysInMonth; day++) {
+            const dayData = newsByDay[month] && newsByDay[month][day];
+            if (dayData) {
+                monthHTML += `<div class="calendar-day has-news" onclick='selectDay(${currentCalendarYear}, ${month}, ${day}, ${JSON.stringify(dayData.ejemplares)})' title="${dayData.count} noticia(s)">
+                                ${day}<div class="news-count">${dayData.count}</div>
+                              </div>`;
+            } else {
+                monthHTML += `<div class="calendar-day">${day}</div>`;
+            }
+        }
+
+        monthHTML += `</div>`;
+        monthWrapper.innerHTML = monthHTML;
+        calendarContainer.appendChild(monthWrapper);
+    }
+}
+
+function selectDay(year, month, day, ejemplares) {
+    document.querySelectorAll('.calendar-day.selected').forEach(el => el.classList.remove('selected'));
+
+    const monthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    const monthContainer = Array.from(document.querySelectorAll('.month-title')).find(el => el.textContent === monthNames[month]);
+    if (monthContainer) {
+        const dayElement = Array.from(monthContainer.nextElementSibling.querySelectorAll('.calendar-day')).find(d => parseInt(d.textContent) === day);
+        if (dayElement) dayElement.classList.add('selected');
+    }
+
+    selectedDay = { year, month, day };
+    currentResults = [];
+    ejemplares.forEach(ejemplar => {
+        ejemplar.noticias_musicales?.forEach(noticia => {
+            currentResults.push({
+                ...noticia,
+                fecha_periodico: ejemplar.fecha_periodico,
+                PDF: ejemplar.PDF,
+                año: year,
+                searchTerms: searchTerm ? searchTerm.split(/\s+/).filter(Boolean) : []
+            });
+        });
+    });
+
+    displayResults();
+    updateStats();
+
+    const monthName = monthNames[month];
+    const baseTitle = `Noticias del ${day} de ${monthName} de ${year}`;
+    document.getElementById('resultsTitle').textContent = searchTerm ? `${baseTitle} - Búsqueda: "${searchTerm}"` : baseTitle;
+}
+
+function normalizeText(text) {
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function matchesSearch(text, searchTerms) {
+    const normalizedText = normalizeText(text);
+    return searchTerms.every(term => normalizedText.includes(normalizeText(term)));
+}
+
+function performSearch() {
+    const searchTermsArray = searchTerm.trim() ? searchTerm.split(/\s+/).filter(Boolean) : null;
+    currentResults = [];
+    allData.forEach(yearData => {
+        const yearValue = parseInt(yearData.Año);
+        if (!selectedYears.includes(yearValue)) return;
+        yearData.ejemplares?.forEach(ejemplar => {
+            ejemplar.noticias_musicales?.forEach(noticia => {
+                if (!searchTermsArray || matchesSearch(noticia.texto_completo, searchTermsArray)) {
+                    currentResults.push({
+                        ...noticia,
+                        fecha_periodico: ejemplar.fecha_periodico,
+                        PDF: ejemplar.PDF,
+                        año: yearData.Año,
+                        searchTerms: searchTermsArray || []
+                    });
+                }
+            });
+        });
+    });
+    displayResults();
+    updateStats();
+    generateCalendar();
+    document.getElementById('resultsTitle').textContent = searchTerm ? `Resultados de búsqueda: "${searchTerm}"` : 'Todas las Noticias';
+    if (searchTerm) {
+        selectedDay = null;
+        document.querySelectorAll('.calendar-day.selected').forEach(el => el.classList.remove('selected'));
+    }
+}
+
+function displayAllResults() {
+    searchTerm = '';
+    document.getElementById('searchInput').value = '';
+    performSearch();
+}
+
+function displayResults() {
+    const resultsContainer = document.getElementById('results');
+    const resultsCount = document.getElementById('resultsCount');
+
+    if (currentResults.length === 0) {
+        resultsContainer.innerHTML = `<div class="no-results"><div class="no-results-icon">📰</div><h3>No se encontraron resultados</h3><p>Intenta con otros términos de búsqueda, selecciona diferentes años, o navega por el calendario</p></div>`;
+        resultsCount.textContent = 'Sin resultados';
+        return;
+    }
+
+    const groupedResults = {};
+    currentResults.forEach(result => {
+        if (!groupedResults[result.PDF]) {
+            groupedResults[result.PDF] = { año: result.año, fecha: result.fecha_periodico, pdf: result.PDF, pdfDate: extractDateFromPDF(result.PDF), noticias: [] };
+        }
+        groupedResults[result.PDF].noticias.push(result);
+    });
+
+    const sortedGroups = Object.values(groupedResults).sort((a, b) => (a.pdfDate && b.pdfDate) ? a.pdfDate - b.pdfDate : b.año - a.año);
+
+    let html = '';
+    sortedGroups.forEach(group => {
+        const displayDate = group.pdfDate ? group.pdfDate.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : `${group.fecha} (${group.año})`;
+        html += `
+            <div class="result-item">
+                <div class="result-header">
+                    <div class="result-date">${displayDate}</div>
+                    <div class="result-meta">${group.noticias.length} noticia${group.noticias.length > 1 ? 's' : ''}</div>
+                </div>
+                <div class="result-content">
+                    ${group.noticias.map(noticia => {
+                        const firstPage = getFirstPage(noticia.pagina);
+                        return `
+                            <div class="news-item">
+                                <div class="news-text">${highlightText(noticia.texto_completo, noticia.searchTerms)}</div>
+                                <div class="news-page">
+                                    <a href="${noticia.PDF}#page=${firstPage}" target="_blank">Página ${firstPage}</a>
+                                </div>
+                            </div>`;
+                    }).join('')}
+                </div>
+            </div>`;
+    });
+
+    resultsContainer.innerHTML = html;
+    resultsCount.textContent = `${currentResults.length} noticia${currentResults.length > 1 ? 's' : ''} encontrada${currentResults.length > 1 ? 's' : ''} en ${selectedYears.length} año${selectedYears.length > 1 ? 's' : ''}`;
+}
+
+function highlightText(text, searchTerms) {
+    if (!searchTerms || searchTerms.length === 0) return text;
+    let highlightedText = text;
+    const normalizedText = normalizeText(text);
+    searchTerms.forEach(term => {
+        const normalizedTerm = normalizeText(term);
+        if (normalizedTerm.length === 0) return;
+        const regex = new RegExp(normalizedTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+        let match;
+        while ((match = regex.exec(normalizedText)) !== null) {
+            const originalWord = text.substring(match.index, match.index + match[0].length);
+            highlightedText = highlightedText.split(originalWord).join(`<span class="highlight">${originalWord}</span>`);
+        }
+    });
+    return highlightedText;
+}
+
+function updateStats() {
+    let totalDaysInSelected = 0, totalNewsInSelected = 0;
+    allData.forEach(yearData => {
+        if (selectedYears.includes(parseInt(yearData.Año))) {
+            totalDaysInSelected += yearData.ejemplares?.length || 0;
+            totalNewsInSelected += yearData.ejemplares?.reduce((sum, ej) => sum + (ej.total_noticias || ej.noticias_musicales?.length || 0), 0) || 0;
+        }
+    });
+    const uniqueDates = new Set(currentResults.map(r => r.PDF));
+    document.getElementById('totalDays').textContent = totalDaysInSelected;
+    document.getElementById('totalNews').textContent = totalNewsInSelected;
+    document.getElementById('filteredDays').textContent = uniqueDates.size;
+    document.getElementById('filteredNews').textContent = currentResults.length;
+}
+
+function clearSearch() {
+    selectedDay = null;
+    document.querySelectorAll('.calendar-day.selected').forEach(el => el.classList.remove('selected'));
+    if (selectedYears.length !== availableYears.length) {
+        selectedYears = [...availableYears];
+        updateYearButtons();
+        updateCalendarForSelectedYears();
+    }
+    displayAllResults();
+}
+</script>
+</body>
+</html>
