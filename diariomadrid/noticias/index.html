@@ -94,6 +94,12 @@
             top: 50%;
             transform: translateY(-50%);
             color: #666;
+            cursor: pointer;
+            padding: 5px;
+            transition: color 0.3s;
+        }
+        .search-icon:hover {
+            color: #2a5298;
         }
         .year-selector {
             margin-bottom: 20px;
@@ -407,7 +413,7 @@
                             placeholder="Buscar... (ópera, teatro, música - busca con/sin acentos, mayús/minús)"
                             autocomplete="off"
                         >
-                        <span class="search-icon">🔍</span>
+                        <span class="search-icon" id="searchButton" title="Hacer búsqueda">🔍</span>
                     </div>
                     <div class="year-selector">
                         <h4 style="margin-bottom: 10px; color: #2a5298;">📅 Filtrar por Año</h4>
@@ -494,10 +500,20 @@ function initializeApp() {
 }
 
 function setupEventListeners() {
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-        searchTerm = e.target.value;
-        performSearch();
+    // Event listener para el botón de búsqueda
+    document.getElementById('searchButton').addEventListener('click', executeSearch);
+    
+    // Event listener para la tecla Enter en el input de búsqueda
+    document.getElementById('searchInput').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            executeSearch();
+        }
     });
+}
+
+function executeSearch() {
+    searchTerm = document.getElementById('searchInput').value;
+    performSearch();
 }
 
 function generateYearButtons() {
