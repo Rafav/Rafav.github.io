@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siglo de Oro: Duelo de Ingenios</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f4f1de 0%, #e6c46c 50%, #c4965b 100%);
+            color: #3d2914;
+        }
+        .min-h-screen { min-height: 100vh; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 1rem; }
+        .container-sm { max-width: 640px; margin: 0 auto; padding: 1rem; }
+        .container-lg { max-width: 1024px; margin: 0 auto; padding: 1rem; }
+        .grid { display: grid; gap: 1rem; }
+        .grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+        .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (min-width: 1024px) {
+            .lg\\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+            .lg\\:col-span-2 { grid-column: span 2 / span 2; }
+        }
+        @media (min-width: 768px) {
+            .md\\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+        }
+        .card { 
+            background: linear-gradient(135deg, #faf8f1 0%, #f0ead6 100%); 
+            border-radius: 0.75rem; 
+            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15); 
+            padding: 1.5rem; 
+            border: 2px solid #d4a574;
+        }
+        .btn { 
+            padding: 0.75rem 1.5rem; 
+            border: 2px solid #8b4513; 
+            border-radius: 0.5rem; 
+            font-weight: 600; 
+            cursor: pointer; 
+            transition: all 0.3s; 
+            font-family: inherit;
+            background: linear-gradient(135deg, #f4f1de 0%, #e6c46c 100%);
+            color: #3d2914;
+        }
+        .btn-primary { background: linear-gradient(135deg, #d4a574 0%, #b8956b 100%); color: #faf8f1; }
+        .btn-primary:hover { background: linear-gradient(135deg, #c49464 0%, #a8855b 100%); transform: translateY(-2px); }
+        .btn-secondary { background: linear-gradient(135deg, #8b4513 0%, #7a3e11 100%); color: #faf8f1; }
+        .btn-secondary:hover { background: linear-gradient(135deg, #7a3e11 0%, #6b350f 100%); }
+        .btn-success { background: linear-gradient(135deg, #556b2f 0%, #4a5a2a 100%); color: #faf8f1; }
+        .btn-success:hover { background: linear-gradient(135deg, #4a5a2a 0%, #3e4b23 100%); }
+        .btn-purple { background: linear-gradient(135deg, #663399 0%, #552288 100%); color: #faf8f1; }
+        .btn-purple:hover { background: linear-gradient(135deg, #552288 0%, #441177 100%); }
+        .btn-red { background: linear-gradient(135deg, #8b0000 0%, #660000 100%); color: #faf8f1; }
+        .btn-red:hover { background: linear-gradient(135deg, #660000 0%, #440000 100%); }
+        .btn-full { width: 100%; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .font-medium { font-weight: 500; }
+        .text-4xl { font-size: 2.5rem; line-height: 2.75rem; }
+        .text-3xl { font-size: 2rem; line-height: 2.5rem; }
+        .text-2xl { font-size: 1.75rem; line-height: 2rem; }
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+        .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .text-xs { font-size: 0.75rem; line-height: 1rem; }
+        .text-gold { color: #d4a574; }
+        .text-brown { color: #8b4513; }
+        .text-dark { color: #3d2914; }
+        .text-red { color: #8b0000; }
+        .text-green { color: #556b2f; }
+        .text-purple { color: #663399; }
+        .bg-gold-light { background-color: #f4f1de; }
+        .bg-gold { background-color: #d4a574; }
+        .bg-brown-light { background-color: #f0e6d2; }
+        .bg-brown { background-color: #8b4513; }
+        .bg-parchment { background-color: #faf8f1; }
+        .bg-red-light { background-color: #ffe4e1; }
+        .bg-green-light { background-color: #f0f8e6; }
+        .bg-purple-light { background-color: #f3e8ff; }
+        .border { border: 1px solid #d4a574; }
+        .border-2 { border: 2px solid #d4a574; }
+        .border-gold { border-color: #d4a574; }
+        .border-brown { border-color: #8b4513; }
+        .border-red { border-color: #8b0000; }
+        .border-green { border-color: #556b2f; }
+        .border-purple { border-color: #663399; }
+        .rounded { border-radius: 0.375rem; }
+        .rounded-lg { border-radius: 0.75rem; }
+        .rounded-full { border-radius: 9999px; }
+        .p-2 { padding: 0.5rem; }
+        .p-3 { padding: 0.75rem; }
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-3 { margin-bottom: 0.75rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mr-1 { margin-right: 0.25rem; }
+        .mr-4 { margin-right: 1rem; }
+        .ml-2 { margin-left: 0.5rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .flex { display: flex; }
+        .flex-1 { flex: 1 1 0%; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .justify-center { justify-content: center; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-3 { gap: 0.75rem; }
+        .gap-4 { gap: 1rem; }
+        .space-y-3 > * + * { margin-top: 0.75rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .w-4 { width: 1rem; }
+        .w-6 { width: 1.5rem; }
+        .w-8 { width: 2rem; }
+        .w-full { width: 100%; }
+        .h-2 { height: 0.5rem; }
+        .h-4 { height: 1rem; }
+        .h-6 { height: 1.5rem; }
+        .h-8 { height: 2rem; }
+        .h-96 { height: 24rem; }
+        .max-w-md { max-width: 28rem; }
+        .max-h-64 { max-height: 16rem; }
+        .overflow-y-auto { overflow-y: auto; }
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        .transform { transform: translateZ(0); }
+        .-translate-x-1\\/2 { transform: translateX(-50%); }
+        .-translate-y-1\\/2 { transform: translateY(-50%); }
+        .cursor-pointer { cursor: pointer; }
+        .transition-all { transition: all 0.3s ease-in-out; }
+        .duration-300 { transition-duration: 300ms; }
+        .hover\\:scale-110:hover { transform: scale(1.1); }
+        .hover\\:bg-gold-light:hover { background-color: #f4f1de; }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(139, 69, 19, 0.15); }
+        .animate-spin { animation: spin 1s linear infinite; }
+        .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        .italic { font-style: italic; }
+        input, select { 
+            padding: 0.75rem; 
+            border: 2px solid #d4a574; 
+            border-radius: 0.5rem; 
+            background: #faf8f1;
+            font-family: inherit;
+            color: #3d2914;
+        }
+        input:focus, select:focus { 
+            outline: none; 
+            border-color: #8b4513; 
+            box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1); 
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof React === 'undefined') {
+                console.error('React no está cargado');
+                document.getElementById('root').innerHTML = '<div style="padding: 20px; color: #8b0000;">Error: React no se cargó correctamente. Recarga la página.</div>';
+                return;
+            }
+            
+            const { useState, useEffect } = React;
+            const { createRoot } = ReactDOM;
+            
+            const SigloOroGame = () => {
+              // Ubicaciones del Madrid del Siglo de Oro
+              const locations = {
+                alcazar: { name: "Real Alcázar", icon: "👑", x: 50, y: 15, effect: "Favor Real (+2 Prestigio)" },
+                corrales: { name: "Corral de Comedias", icon: "🎭", x: 30, y: 40, effect: "Fama Teatral (+1 Ingenio)" },
+                mentidero: { name: "Mentidero", icon: "🗣️", x: 70, y: 35, effect: "Rumores y Chismes" },
+                universidad: { name: "Universidad", icon: "📚", x: 20, y: 60, effect: "Sabiduría (+1 Erudición)" },
+                iglesia: { name: "San Jerónimo", icon: "⛪", x: 80, y: 50, effect: "Piedad (+1 Virtud)" },
+                casa_campo: { name: "Casa de Campo", icon: "🌳", x: 15, y: 25, effect: "Inspiración Bucólica" },
+                palacio: { name: "Palacio del Duque", icon: "🏰", x: 75, y: 20, effect: "Mecenazgo Aristocrático" },
+                convento: { name: "Convento", icon: "📿", x: 25, y: 75, effect: "Retiro Espiritual" },
+                libreria: { name: "Librería", icon: "📖", x: 60, y: 65, effect: "Intercambio Literario" },
+                taberna: { name: "Taberna del Parnaso", icon: "🍷", x: 45, y: 80, effect: "Tertulias Bohemias" },
+                academia: { name: "Academia", icon: "🎨", x: 85, y: 70, effect: "Crítica Literaria" },
+                salon: { name: "Salón Noble", icon: "✨", x: 55, y: 30, effect: "Refinamiento Social" }
+              };
+
+              // Personajes del Siglo de Oro
+              const characters = {
+                gongora: { 
+                  name: "Luis de Góngora", 
+                  color: "#663399", 
+                  ability: "Culteranismo: +2 Erudición en Universidad",
+                  location: "universidad",
+                  period: "1561-1627"
+                },
+                quevedo: { 
+                  name: "Francisco de Quevedo", 
+                  color: "#8b0000", 
+                  ability: "Conceptismo: +2 Ingenio en Mentidero",
+                  location: "mentidero",
+                  period: "1580-1645"
+                },
+                lope: { 
+                  name: "Lope de Vega", 
+                  color: "#556b2f", 
+                  ability: "Fénix: +2 Prestigio en Corrales",
+                  location: "corrales",
+                  period: "1562-1635"
+                },
+                calderon: { 
+                  name: "Calderón de la Barca", 
+                  color: "#d4a574", 
+                  ability: "Dramaturgo Real: +2 en Alcázar",
+                  location: "alcazar",
+                  period: "1600-1681"
+                }
+              };
+
+              // Tipos de cartas del Siglo de Oro
+              const cardTypes = {
+                ingenio: [
+                  { name: "Agudeza Verbal", effect: "Desconcierta a rival con juego de palabras", target: "player" },
+                  { name: "Sátira Mordaz", effect: "Reduce Prestigio -2 a personaje específico", target: "player" },
+                  { name: "Epigrama Certero", effect: "Gana +1 Ingenio y rival pierde -1", target: "player" },
+                  { name: "Conceptos Sutiles", effect: "Inmune a próximo ataque verbal", target: "self" },
+                  { name: "Duelo Poético", effect: "Reto directo: ambos tiran dados", target: "player" }
+                ],
+                erudicion: [
+                  { name: "Cita Clásica", effect: "Demuestra sabiduría: +2 Prestigio", target: "self" },
+                  { name: "Alusión Mitológica", effect: "Confunde rivales menos cultos", target: "all" },
+                  { name: "Traducción Perfecta", effect: "Prestigio +1 por cada Erudición", target: "self" },
+                  { name: "Comentario Docto", effect: "Anula carta de Ingenio rival", target: "player" },
+                  { name: "Disputa Académica", effect: "Intercambia posiciones con rival", target: "player" }
+                ],
+                favor: [
+                  { name: "Mecenazgo Real", effect: "Todos en Palacio/Alcázar +1 Prestigio", target: "location" },
+                  { name: "Estreno Exitoso", effect: "Corrales: +2 Prestigio para presentes", target: "location" },
+                  { name: "Escándalo Literario", effect: "Menor Virtud pierde -2 Prestigio", target: "all" },
+                  { name: "Bendición Papal", effect: "Religiosos ganan +2 Virtud", target: "all" },
+                  { name: "Rivalidad Pública", effect: "Dos escritores se enfrentan", target: "two_players" }
+                ]
+              };
+
+              // Estado del juego
+              const [gameState, setGameState] = useState({
+                players: [],
+                currentPlayer: 0,
+                currentTurn: 1,
+                phase: 'setup',
+                selectedCharacters: [],
+                playerHands: {},
+                gameLog: [],
+                aiThinking: false,
+                maxTurns: 20,
+                processing: false
+              });
+
+              const [setupForm, setSetupForm] = useState({
+                numPlayers: 2,
+                playerNames: ['', ''],
+                playerTypes: ['human', 'ai'],
+                maxTurns: 20,
+                fastAI: false
+              });
+
+              const [gameActions, setGameActions] = useState({
+                showDice: false,
+                diceResult: null,
+                selectedCard: null,
+                targetPlayer: null,
+                showCards: false
+              });
+
+              // Obtener cartas aleatorias
+              const getRandomCards = (type, count) => {
+                const cards = [...cardTypes[type]];
+                const result = [];
+                for (let i = 0; i < count; i++) {
+                  if (cards.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * cards.length);
+                    result.push(cards.splice(randomIndex, 1)[0]);
+                  }
+                }
+                return result;
+              };
+
+              // Inicializar juego
+              const initializeGame = () => {
+                const selectedChars = Object.keys(characters).slice(0, setupForm.numPlayers);
+                const players = setupForm.playerNames.slice(0, setupForm.numPlayers).map((name, index) => ({
+                  id: index,
+                  name: name || (setupForm.playerTypes[index] === 'ai' ? `IA ${characters[selectedChars[index]].name}` : `Poeta ${index + 1}`),
+                  character: selectedChars[index],
+                  location: characters[selectedChars[index]].location,
+                  prestigio: 5,
+                  ingenio: 0,
+                  erudicion: 0,
+                  virtud: 5,
+                  movements: 0,
+                  isAI: setupForm.playerTypes[index] === 'ai'
+                }));
+                console.log('Players initialized:', players.map(p => `${p.name} at ${p.location} (${p.character})`));
+
+                // Repartir cartas iniciales
+                const hands = {};
+                players.forEach(player => {
+                  hands[player.id] = {
+                    ingenio: getRandomCards('ingenio', 2),
+                    erudicion: getRandomCards('erudicion', 2),
+                    favor: getRandomCards('favor', 1)
+                  };
+                });
+
+                const newGameState = {
+                  players,
+                  currentPlayer: 0,
+                  currentTurn: 1,
+                  phase: 'playing',
+                  selectedCharacters: selectedChars,
+                  playerHands: hands,
+                  gameLog: [`¡Comienza el duelo de ingenios! ${setupForm.maxTurns} turnos en el Madrid del Siglo de Oro. Turno 1: ${players[0].name}`],
+                  aiThinking: false,
+                  maxTurns: setupForm.maxTurns,
+                  fastAI: setupForm.fastAI,
+                  processing: false
+                };
+
+                setGameState(newGameState);
+              };
+
+              // Sistema de turnos
+              const advanceGame = () => {
+                setGameState(prev => {
+                  if (prev.phase !== 'playing' || prev.processing) {
+                    return prev;
+                  }
+
+                  // Verificar condiciones de final
+                  const defeatedPlayer = prev.players.find(p => p.prestigio <= 0);
+                  if (defeatedPlayer) {
+                    const finalScores = prev.players.map(player => ({
+                      ...player,
+                      finalScore: (player.prestigio * 3) + (player.ingenio * 2) + (player.erudicion * 2) + player.virtud
+                    })).sort((a, b) => b.finalScore - a.finalScore);
+
+                    return {
+                      ...prev,
+                      phase: 'ended',
+                      finalScores,
+                      endReason: `${defeatedPlayer.name} ha perdido todo su prestigio`,
+                      aiThinking: false,
+                      processing: false,
+                      gameLog: [
+                        ...prev.gameLog.slice(-7),
+                        `🏆 DUELO TERMINADO: ${defeatedPlayer.name} ha caído en desgracia`,
+                        `🥇 Vencedor: ${finalScores[0].name} (${finalScores[0].finalScore} puntos de gloria)`
+                      ]
+                    };
+                  }
+
+                  // Verificar fin por turnos
+                  if (prev.currentTurn >= prev.maxTurns) {
+                    const finalScores = prev.players.map(player => ({
+                      ...player,
+                      finalScore: (player.prestigio * 3) + (player.ingenio * 2) + (player.erudicion * 2) + player.virtud
+                    })).sort((a, b) => b.finalScore - a.finalScore);
+
+                    return {
+                      ...prev,
+                      phase: 'ended',
+                      finalScores,
+                      endReason: `${prev.maxTurns} turnos completados`,
+                      aiThinking: false,
+                      processing: false,
+                      gameLog: [
+                        ...prev.gameLog.slice(-7),
+                        `🏆 DUELO TERMINADO: ${prev.maxTurns} turnos de gloria literaria`,
+                        `🥇 El más laureado: ${finalScores[0].name} (${finalScores[0].finalScore} puntos)`
+                      ]
+                    };
+                  }
+
+                  // Siguiente jugador
+                  const nextPlayer = (prev.currentPlayer + 1) % prev.players.length;
+                  const nextTurn = prev.currentTurn + 1;
+
+                  return {
+                    ...prev,
+                    currentPlayer: nextPlayer,
+                    currentTurn: nextTurn,
+                    processing: false,
+                    gameLog: [...prev.gameLog.slice(-9), `Turno ${nextTurn} de ${prev.maxTurns}: ${prev.players[nextPlayer].name}`]
+                  };
+                });
+
+                setGameActions({ showDice: false, diceResult: null, selectedCard: null, targetPlayer: null, showCards: false });
+              };
+
+              // Mover personaje con efectos
+              const movePlayer = (locationKey) => {
+                setGameState(prev => {
+                  const currentPlayerData = prev.players[prev.currentPlayer];
+                  const playerId = prev.currentPlayer;
+                  
+                  const updatedPlayers = prev.players.map(player => 
+                    player.id === prev.currentPlayer 
+                      ? { ...player, location: locationKey, movements: player.movements + 1 }
+                      : player
+                  );
+
+                  const player = updatedPlayers[playerId];
+                  const location = locations[locationKey];
+                  let logMessage = `${player.name} visita ${location.name}`;
+                  
+                  // Aplicar efectos según ubicación y personaje
+                  switch(locationKey) {
+                    case 'alcazar':
+                      if (player.character === 'calderon') {
+                        updatedPlayers[playerId].prestigio += 2;
+                        updatedPlayers[playerId].virtud += 1;
+                        logMessage += ' (Dramaturgo Real: +2 Prestigio, +1 Virtud)';
+                      } else {
+                        updatedPlayers[playerId].prestigio += 1;
+                        logMessage += ' (+1 Prestigio real)';
+                      }
+                      break;
+                    case 'corrales':
+                      if (player.character === 'lope') {
+                        updatedPlayers[playerId].prestigio += 2;
+                        updatedPlayers[playerId].ingenio += 1;
+                        logMessage += ' (Fénix de los Ingenios: +2 Prestigio, +1 Ingenio)';
+                      } else {
+                        updatedPlayers[playerId].ingenio += 1;
+                        logMessage += ' (+1 Ingenio teatral)';
+                      }
+                      break;
+                    case 'mentidero':
+                      if (player.character === 'quevedo') {
+                        updatedPlayers[playerId].ingenio += 2;
+                        updatedPlayers[playerId].prestigio += 1;
+                        logMessage += ' (Maestro del Conceptismo: +2 Ingenio, +1 Prestigio)';
+                      } else {
+                        updatedPlayers[playerId].ingenio += 1;
+                        logMessage += ' (+1 Ingenio satírico)';
+                      }
+                      break;
+                    case 'universidad':
+                      if (player.character === 'gongora') {
+                        updatedPlayers[playerId].erudicion += 2;
+                        updatedPlayers[playerId].prestigio += 1;
+                        logMessage += ' (Príncipe del Culteranismo: +2 Erudición, +1 Prestigio)';
+                      } else {
+                        updatedPlayers[playerId].erudicion += 1;
+                        logMessage += ' (+1 Erudición académica)';
+                      }
+                      break;
+                    case 'iglesia':
+                    case 'convento':
+                      updatedPlayers[playerId].virtud += 1;
+                      logMessage += ' (+1 Virtud espiritual)';
+                      break;
+                    case 'palacio':
+                    case 'salon':
+                      updatedPlayers[playerId].prestigio += 1;
+                      logMessage += ' (+1 Prestigio aristocrático)';
+                      break;
+                    case 'libreria':
+                    case 'academia':
+                      updatedPlayers[playerId].erudicion += 1;
+                      logMessage += ' (+1 Erudición literaria)';
+                      break;
+                    case 'taberna':
+                      if (Math.random() > 0.5) {
+                        updatedPlayers[playerId].ingenio += 1;
+                        logMessage += ' (inspiración etílica: +1 Ingenio)';
+                      } else {
+                        updatedPlayers[playerId].virtud = Math.max(0, updatedPlayers[playerId].virtud - 1);
+                        logMessage += ' (excesos: -1 Virtud)';
+                      }
+                      break;
+                    case 'casa_campo':
+                      if (Math.random() > 0.7) {
+                        updatedPlayers[playerId].erudicion += 1;
+                        logMessage += ' (inspiración bucólica: +1 Erudición)';
+                      }
+                      break;
+                    default:
+                      break;
+                  }
+
+                  return {
+                    ...prev,
+                    players: updatedPlayers,
+                    gameLog: [...prev.gameLog.slice(-9), logMessage]
+                  };
+                });
+              };
+
+              // Ejecutar turno de IA
+              const executeAITurn = async () => {
+                await new Promise(resolve => {
+                  setGameState(prev => {
+                    resolve();
+                    return { ...prev, processing: true, aiThinking: true };
+                  });
+                });
+
+                try {
+                  const currentState = await new Promise(resolve => {
+                    setGameState(prev => {
+                      resolve(prev);
+                      return prev;
+                    });
+                  });
+                  
+                  if (!currentState.fastAI) {
+                    await new Promise(r => setTimeout(r, 1000));
+                  } else {
+                    await new Promise(r => setTimeout(r, 100));
+                  }
+
+                  // Tirar dados
+                  const dice = Math.floor(Math.random() * 6) + 1 + Math.floor(Math.random() * 6) + 1;
+                  setGameActions({ showDice: true, diceResult: dice });
+                  
+                  await new Promise(resolve => {
+                    setGameState(prev => {
+                      const player = prev.players[prev.currentPlayer];
+                      resolve();
+                      return {
+                        ...prev,
+                        gameLog: [...prev.gameLog.slice(-9), `${player.name} (IA) consulta los astros: ${dice}`]
+                      };
+                    });
+                  });
+
+                  if (!currentState.fastAI) {
+                    await new Promise(r => setTimeout(r, 1000));
+                  } else {
+                    await new Promise(r => setTimeout(r, 50));
+                  }
+
+                  // Estrategia de movimiento por personaje
+                  const locationKeys = Object.keys(locations);
+                  let targetLocation;
+                  
+                  await new Promise(resolve => {
+                    setGameState(prev => {
+                      const player = prev.players[prev.currentPlayer];
+                      const turn = prev.currentTurn;
+                      
+                      switch(player.character) {
+                        case 'gongora':
+                          if (player.erudicion < 3) {
+                            targetLocation = Math.random() > 0.3 ? 'universidad' : 'libreria';
+                          } else {
+                            targetLocation = ['salon', 'academia', 'palacio'][Math.floor(Math.random() * 3)];
+                          }
+                          break;
+                        case 'quevedo':
+                          if (player.ingenio < 3) {
+                            targetLocation = Math.random() > 0.3 ? 'mentidero' : 'taberna';
+                          } else {
+                            targetLocation = ['corrales', 'academia', 'salon'][Math.floor(Math.random() * 3)];
+                          }
+                          break;
+                        case 'lope':
+                          if (player.prestigio < 7) {
+                            targetLocation = Math.random() > 0.4 ? 'corrales' : 'alcazar';
+                          } else {
+                            targetLocation = ['palacio', 'salon', 'iglesia'][Math.floor(Math.random() * 3)];
+                          }
+                          break;
+                        case 'calderon':
+                          if (player.virtud < 6) {
+                            targetLocation = ['iglesia', 'convento', 'universidad'][Math.floor(Math.random() * 3)];
+                          } else {
+                            targetLocation = Math.random() > 0.5 ? 'alcazar' : 'palacio';
+                          }
+                          break;
+                        default:
+                          targetLocation = locationKeys[Math.floor(Math.random() * locationKeys.length)];
+                      }
+                      
+                      resolve();
+                      return prev;
+                    });
+                  });
+                  
+                  movePlayer(targetLocation);
+
+                  if (!currentState.fastAI) {
+                    await new Promise(r => setTimeout(r, 1500));
+                  } else {
+                    await new Promise(r => setTimeout(r, 50));
+                  }
+
+                  // Evento literario ocasional
+                  if (Math.random() < 0.25) {
+                    await new Promise(resolve => {
+                      setGameState(prev => {
+                        const player = prev.players[prev.currentPlayer];
+                        const events = [
+                          { effect: () => ({ prestigio: 1 }), message: 'Un verso memorable aumenta tu fama (+1 Prestigio)' },
+                          { effect: () => ({ ingenio: 1 }), message: 'Un juego de palabras brillante (+1 Ingenio)' },
+                          { effect: () => ({ erudicion: 1 }), message: 'Una cita clásica perfecta (+1 Erudición)' },
+                          { effect: () => ({ virtud: -1 }), message: 'Un escándalo afecta tu reputación (-1 Virtud)' },
+                        ];
+                        
+                        const randomEvent = events[Math.floor(Math.random() * events.length)];
+                        const effect = randomEvent.effect();
+                        
+                        const updatedPlayers = prev.players.map(p => 
+                          p.id === prev.currentPlayer 
+                            ? { 
+                                ...p, 
+                                prestigio: Math.max(0, Math.min(15, p.prestigio + (effect.prestigio || 0))),
+                                ingenio: Math.max(0, p.ingenio + (effect.ingenio || 0)),
+                                erudicion: Math.max(0, p.erudicion + (effect.erudicion || 0)),
+                                virtud: Math.max(0, Math.min(10, p.virtud + (effect.virtud || 0)))
+                              }
+                            : p
+                        );
+                        
+                        resolve();
+                        return {
+                          ...prev,
+                          players: updatedPlayers,
+                          gameLog: [...prev.gameLog.slice(-8), `⚡ ${player.name} - ${randomEvent.message}`]
+                        };
+                      });
+                    });
+                    
+                    if (!currentState.fastAI) {
+                      await new Promise(r => setTimeout(r, 1000));
+                    } else {
+                      await new Promise(r => setTimeout(r, 25));
+                    }
+                  }
+
+                } finally {
+                  await new Promise(resolve => {
+                    setGameState(prev => {
+                      resolve();
+                      return { ...prev, aiThinking: false, processing: false };
+                    });
+                  });
+                  
+                  setTimeout(advanceGame, 100);
+                }
+              };
+
+              // Detectar turno de IA
+              useEffect(() => {
+                if (gameState.phase !== 'playing' || 
+                    gameState.processing || 
+                    gameState.aiThinking ||
+                    gameState.players.length === 0) {
+                  return;
+                }
+
+                const currentPlayer = gameState.players[gameState.currentPlayer];
+                if (!currentPlayer || !currentPlayer.isAI) {
+                  return;
+                }
+
+                const timer = setTimeout(() => {
+                  executeAITurn();
+                }, 500);
+                
+                return () => clearTimeout(timer);
+              }, [gameState.currentPlayer, gameState.phase, gameState.processing, gameState.aiThinking]);
+
+              // Función para jugadores humanos
+              const nextTurn = () => {
+                advanceGame();
+              };
+
+              const rollDice = () => {
+                const result = Math.floor(Math.random() * 6) + 1 + Math.floor(Math.random() * 6) + 1;
+                setGameActions(prev => ({ ...prev, showDice: true, diceResult: result }));
+                
+                setGameState(prev => {
+                  const currentPlayerData = prev.players[prev.currentPlayer];
+                  return {
+                    ...prev,
+                    gameLog: [...prev.gameLog.slice(-9), `${currentPlayerData.name} consulta las musas: ${result} puntos de inspiración`]
+                  };
+                });
+                
+                return result;
+              };
+
+              const playCard = (card, cardType, targetPlayerId = null) => {
+                setGameState(prev => ({
+                  ...prev,
+                  playerHands: {
+                    ...prev.playerHands,
+                    [prev.currentPlayer]: {
+                      ...prev.playerHands[prev.currentPlayer],
+                      [cardType]: prev.playerHands[prev.currentPlayer][cardType].filter(c => c.name !== card.name)
+                    }
+                  },
+                  gameLog: [...prev.gameLog.slice(-9), `${prev.players[prev.currentPlayer].name} despliega "${card.name}"`]
+                }));
+              };
+
+              // Render del setup
+              if (gameState.phase === 'setup') {
+                return React.createElement('div', { className: 'min-h-screen' },
+                  React.createElement('div', { className: 'container-sm' },
+                    React.createElement('div', { className: 'text-center mb-8' },
+                      React.createElement('h1', { className: 'text-4xl font-bold text-gold mb-2' }, '✍️ Siglo de Oro ✍️'),
+                      React.createElement('h2', { className: 'text-2xl text-brown' }, 'Duelo de Ingenios'),
+                      React.createElement('p', { className: 'text-dark mt-2' }, 'Madrid, siglos XVI-XVII')
+                    ),
+                    React.createElement('div', { className: 'card' },
+                      React.createElement('h3', { className: 'text-xl font-semibold mb-4' }, 'Configuración del Duelo'),
+                      
+                      React.createElement('div', { className: 'mb-4 p-3 bg-brown-light rounded-lg border border-brown' },
+                        React.createElement('div', { className: 'text-sm text-brown' },
+                          React.createElement('h4', { className: 'font-bold mb-2' }, '📜 Reglas del Duelo'),
+                          React.createElement('div', { className: 'mb-2' }, 
+                            React.createElement('strong', null, 'Objetivo: '), 
+                            'Acumula gloria literaria combinando Prestigio, Ingenio, Erudición y Virtud.'
+                          ),
+                          React.createElement('div', { className: 'mb-2' }, 
+                            React.createElement('strong', null, 'Turnos: '), 
+                            'Muévete por el Madrid áureo visitando lugares que potencien tu genio.'
+                          ),
+                          React.createElement('div', { className: 'mb-2' }, 
+                            React.createElement('strong', null, 'Especialización: '), 
+                            'Cada escritor tiene habilidades únicas según su estilo.'
+                          ),
+                          React.createElement('div', { className: 'text-xs mt-2 italic' }, 
+                            'Gloria final: (Prestigio × 3) + (Ingenio × 2) + (Erudición × 2) + Virtud'
+                          )
+                        )
+                      ),
+                      
+                      React.createElement('div', { className: 'mb-4 p-3 bg-purple-light rounded-lg' },
+                        React.createElement('div', { className: 'text-sm text-purple' },
+                          React.createElement('strong', null, '🤖 Ingenios Artificiales: '),
+                          'Las IAs recrean el estilo y personalidad de cada gran escritor del Siglo de Oro, desde el culteranismo de Góngora hasta el conceptismo de Quevedo.'
+                        )
+                      ),
+                      
+                      React.createElement('div', { className: 'mb-4' },
+                        React.createElement('label', { className: 'text-sm font-medium mb-2' }, 'Número de participantes:'),
+                        React.createElement('select', {
+                          value: setupForm.numPlayers,
+                          onChange: (e) => {
+                            const num = parseInt(e.target.value);
+                            setSetupForm(prev => ({
+                              ...prev,
+                              numPlayers: num,
+                              playerNames: Array(num).fill('').map((_, i) => prev.playerNames[i] || ''),
+                              playerTypes: Array(num).fill('').map((_, i) => prev.playerTypes[i] || 'human')
+                            }));
+                          },
+                          className: 'w-full p-2 border rounded'
+                        },
+                          React.createElement('option', { value: 2 }, '2 ingenios'),
+                          React.createElement('option', { value: 3 }, '3 ingenios'),
+                          React.createElement('option', { value: 4 }, '4 ingenios')
+                        )
+                      ),
+
+                      React.createElement('div', { className: 'mb-6' },
+                        React.createElement('label', { className: 'text-sm font-medium mb-2' }, 'Configuración de participantes:'),
+                        Array(setupForm.numPlayers).fill(0).map((_, index) => 
+                          React.createElement('div', { key: index, className: 'mb-3 p-3 border rounded bg-parchment' },
+                            React.createElement('div', { className: 'flex items-center gap-2 mb-2' },
+                              React.createElement('span', { className: 'font-medium' }, `Escritor ${index + 1}:`),
+                              React.createElement('select', {
+                                value: setupForm.playerTypes[index] || 'human',
+                                onChange: (e) => {
+                                  const newTypes = [...setupForm.playerTypes];
+                                  newTypes[index] = e.target.value;
+                                  setSetupForm(prev => ({ ...prev, playerTypes: newTypes }));
+                                },
+                                className: 'px-2 py-1 border rounded text-sm'
+                              },
+                                React.createElement('option', { value: 'human' }, '🧑 Mortal'),
+                                React.createElement('option', { value: 'ai' }, '🤖 IA')
+                              )
+                            ),
+                            setupForm.playerTypes[index] === 'human' && React.createElement('input', {
+                              type: 'text',
+                              placeholder: `Nombre del escritor ${index + 1}`,
+                              value: setupForm.playerNames[index] || '',
+                              onChange: (e) => {
+                                const newNames = [...setupForm.playerNames];
+                                newNames[index] = e.target.value;
+                                setSetupForm(prev => ({ ...prev, playerNames: newNames }));
+                              },
+                              className: 'w-full p-2 border rounded text-sm'
+                            }),
+                            setupForm.playerTypes[index] === 'ai' && React.createElement('div', { className: 'text-sm text-dark italic' },
+                              `IA encarnará a ${Object.keys(characters)[index] ? characters[Object.keys(characters)[index]].name : 'Gran Escritor'}`
+                            )
+                          )
+                        )
+                      ),
+
+                      React.createElement('div', { className: 'mb-6 p-3 border rounded bg-gold-light' },
+                        React.createElement('h4', { className: 'font-medium mb-3' }, '⚙️ Configuración del Duelo'),
+                        React.createElement('div', { className: 'mb-3' },
+                          React.createElement('label', { className: 'text-sm font-medium mb-1' }, 'Duración del certamen:'),
+                          React.createElement('select', {
+                            value: setupForm.maxTurns,
+                            onChange: (e) => setSetupForm(prev => ({ ...prev, maxTurns: parseInt(e.target.value) })),
+                            className: 'w-full p-2 border rounded text-sm'
+                          },
+                            React.createElement('option', { value: 16 }, '16 turnos (Soneto ~20 min)'),
+                            React.createElement('option', { value: 20 }, '20 turnos (Romance ~25 min)'),
+                            React.createElement('option', { value: 24 }, '24 turnos (Comedia ~30 min)'),
+                            React.createElement('option', { value: 32 }, '32 turnos (Auto Sacramental ~40 min)')
+                          ),
+                          React.createElement('div', { className: 'text-xs text-dark mt-1' },
+                            `El certamen durará ${setupForm.maxTurns} turnos. Cada escritor participará aproximadamente ${Math.floor(setupForm.maxTurns / setupForm.numPlayers)} veces.`
+                          )
+                        )
+                      ),
+
+                      React.createElement('div', { className: 'mb-6' },
+                        React.createElement('h4', { className: 'font-medium mb-2' }, 'Ingenios disponibles:'),
+                        Object.keys(characters).slice(0, setupForm.numPlayers).map((charKey, index) =>
+                          React.createElement('div', { key: charKey, className: 'flex items-center gap-2 mb-2 p-2 bg-parchment rounded' },
+                            React.createElement('div', { 
+                              className: 'w-4 h-4 rounded-full', 
+                              style: { backgroundColor: characters[charKey].color }
+                            }),
+                            React.createElement('div', null,
+                              React.createElement('strong', null, characters[charKey].name),
+                              React.createElement('div', { className: 'text-sm text-dark' }, `${characters[charKey].period} - ${characters[charKey].ability}`)
+                            )
+                          )
+                        )
+                      ),
+
+                      React.createElement('button', {
+                        onClick: initializeGame,
+                        className: 'btn btn-primary btn-full'
+                      }, '⚔️ ¡Que Comience el Duelo!')
+                    )
+                  )
+                );
+              }
+
+              // Render de fin de juego
+              if (gameState.phase === 'ended') {
+                return React.createElement('div', { className: 'min-h-screen' },
+                  React.createElement('div', { className: 'container-lg' },
+                    React.createElement('div', { className: 'text-center mb-8' },
+                      React.createElement('h1', { className: 'text-4xl font-bold text-gold mb-2' }, '🏆 CERTAMEN CONCLUIDO'),
+                      React.createElement('h2', { className: 'text-2xl text-brown mb-4' }, gameState.endReason)
+                    ),
+
+                    React.createElement('div', { className: 'card mb-6' },
+                      React.createElement('h3', { className: 'text-2xl font-semibold mb-4 text-center' }, '🏅 Paladín de las Letras'),
+                      gameState.finalScores?.map((player, index) =>
+                        React.createElement('div', {
+                          key: player.id,
+                          className: `p-4 rounded border-2 mb-3 ${
+                            index === 0 ? 'border-gold bg-gold-light' :
+                            index === 1 ? 'border-brown bg-brown-light' :
+                            index === 2 ? 'border-red bg-red-light' : 'border-2'
+                          }`
+                        },
+                          React.createElement('div', { className: 'flex items-center justify-between' },
+                            React.createElement('div', { className: 'flex items-center gap-3' },
+                              React.createElement('div', { className: 'text-2xl' },
+                                index === 0 ? '🏆' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}°`
+                              ),
+                              React.createElement('div', {
+                                className: 'w-6 h-6 rounded-full',
+                                style: { backgroundColor: characters[player.character].color }
+                              }),
+                              React.createElement('div', null,
+                                React.createElement('div', { className: 'font-bold text-lg' },
+                                  player.name,
+                                  player.isAI && React.createElement('span', { className: 'text-sm bg-purple-light px-2 py-1 rounded ml-2' }, '🤖')
+                                ),
+                                React.createElement('div', { className: 'text-sm text-dark' }, characters[player.character].name)
+                              )
+                            ),
+                            React.createElement('div', { className: 'text-right' },
+                              React.createElement('div', { className: 'text-2xl font-bold text-gold' }, `${player.finalScore} pts`),
+                              React.createElement('div', { className: 'text-sm text-dark' },
+                                `P: ${player.prestigio} | I: ${player.ingenio} | E: ${player.erudicion} | V: ${player.virtud}`
+                              )
+                            )
+                          )
+                        )
+                      )
+                    ),
+
+                    React.createElement('div', { className: 'text-center space-y-3' },
+                      React.createElement('button', {
+                        onClick: () => setGameState(prev => ({ ...prev, phase: 'setup' })),
+                        className: 'btn btn-primary mr-4'
+                      }, '📜 Nuevo Certamen'),
+                      React.createElement('div', { className: 'text-sm text-dark mt-4' },
+                        React.createElement('p', null, '"Que de laurel corona el cielo honrado...'),
+                        React.createElement('p', { className: 'italic' }, 'a quien las musas dieron su cuidado."')
+                      )
+                    )
+                  )
+                );
+              }
+
+              // Render del juego principal
+              const currentPlayerData = gameState.players[gameState.currentPlayer];
+              const currentHand = gameState.playerHands[gameState.currentPlayer];
+
+              return React.createElement('div', { className: 'min-h-screen' },
+                React.createElement('div', { className: 'container' },
+                  // Header
+                  React.createElement('div', { className: 'text-center mb-4' },
+                    React.createElement('h1', { className: 'text-3xl font-bold text-gold' }, '✍️ Siglo de Oro: Duelo de Ingenios ✍️'),
+                    React.createElement('div', { className: 'flex justify-center gap-4 mt-2 text-sm' },
+                      React.createElement('span', { className: 'bg-parchment px-3 py-1 rounded font-semibold border border-gold' },
+                        `Turno ${gameState.currentTurn} de ${gameState.maxTurns}`
+                      ),
+                      React.createElement('span', { className: 'bg-gold-light px-3 py-1 rounded font-semibold border border-brown' },
+                        currentPlayerData?.name || 'Escritor'
+                      )
+                    ),
+                    React.createElement('div', { className: 'mt-2 max-w-md mx-auto' },
+                      React.createElement('div', { className: 'w-full bg-brown-light rounded-full h-2 border border-brown' },
+                        React.createElement('div', {
+                          className: 'bg-gold h-2 rounded-full transition-all duration-300',
+                          style: { width: `${(gameState.currentTurn / gameState.maxTurns) * 100}%` }
+                        })
+                      ),
+                      React.createElement('div', { className: 'text-xs text-dark text-center mt-1' },
+                        `Progreso: ${Math.round((gameState.currentTurn / gameState.maxTurns) * 100)}%`
+                      )
+                    )
+                  ),
+
+                  React.createElement('div', { className: 'grid grid-cols-1 lg:grid-cols-4 gap-4' },
+                    // Mapa de Madrid
+                    React.createElement('div', { className: 'lg:col-span-2' },
+                      React.createElement('div', { className: 'card' },
+                        React.createElement('h3', { className: 'text-lg font-semibold mb-4 text-center' }, 'Madrid del Siglo de Oro'),
+                        React.createElement('div', { className: 'relative bg-gold-light rounded-lg h-96 border-2 border-gold' },
+                          Object.entries(locations).map(([key, location]) => {
+                            const playersHere = gameState.players.filter(p => p.location === key);
+                            console.log(`Location ${key}: Players here:`, playersHere.map(p => `${p.name} (${p.character})`));
+                            if (key === 'universidad') console.log('Universidad debug:', playersHere, gameState.players);
+                            return React.createElement('div', {
+                              key,
+                              className: 'absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-110 transition-transform',
+                              style: { left: `${location.x}%`, top: `${location.y}%` },
+                              onClick: () => gameActions.diceResult && movePlayer(key),
+                              title: `${location.name}: ${location.effect}`
+                            },
+                              React.createElement('div', { className: 'text-center' },
+                                React.createElement('div', { className: 'text-2xl mb-1' }, location.icon),
+                                React.createElement('div', { className: 'text-xs font-medium bg-parchment px-2 py-1 rounded shadow border border-brown' }, location.name),
+                                playersHere.length > 0 ? React.createElement('div', { className: 'flex justify-center mt-1' },
+                                  ...playersHere.map(player =>
+                                    React.createElement('div', {
+                                      key: player.id,
+                                      className: 'w-4 h-4 rounded-full border-2 border-white mr-1 shadow-sm',
+                                      style: { backgroundColor: characters[player.character]?.color || '#666' },
+                                      title: player.name
+                                    })
+                                  )
+                                ) : null
+                              )
+                            );
+                          })
+                        )
+                      )
+                    ),
+
+                    // Panel de escritores
+                    React.createElement('div', { className: 'space-y-4' },
+                      React.createElement('div', { className: 'card' },
+                        React.createElement('h3', { className: 'text-lg font-semibold mb-3' }, 'Ingenios'),
+                        gameState.players.map(player =>
+                          React.createElement('div', {
+                            key: player.id,
+                            className: `p-3 rounded border-2 mb-2 ${
+                              player.id === gameState.currentPlayer ? 'border-gold bg-gold-light' : 'border-brown'
+                            } ${player.isAI ? 'bg-purple-light' : ''}`
+                          },
+                            React.createElement('div', { className: 'flex items-center gap-2 mb-2' },
+                              React.createElement('div', {
+                                className: 'w-4 h-4 rounded-full',
+                                style: { backgroundColor: characters[player.character].color }
+                              }),
+                              React.createElement('div', { className: 'flex-1' },
+                                React.createElement('div', { className: 'flex items-center gap-2' },
+                                  React.createElement('span', { className: 'font-medium' }, player.name),
+                                  player.isAI && React.createElement('span', { className: 'text-xs bg-purple px-2 py-1 rounded text-parchment' }, '🤖'),
+                                  player.id === gameState.currentPlayer && gameState.aiThinking && React.createElement('span', { className: 'text-xs bg-gold px-2 py-1 rounded animate-pulse' }, '✍️ Creando...')
+                                ),
+                                React.createElement('div', { className: 'text-sm text-dark' }, characters[player.character].name)
+                              )
+                            ),
+                            React.createElement('div', { className: 'text-sm space-y-1' },
+                              React.createElement('div', { className: 'flex justify-between' },
+                                React.createElement('span', null, 'Prestigio:'),
+                                React.createElement('span', { className: 'font-semibold text-gold' }, player.prestigio)
+                              ),
+                              React.createElement('div', { className: 'flex justify-between' },
+                                React.createElement('span', null, 'Ingenio:'),
+                                React.createElement('span', { className: 'font-semibold text-red' }, player.ingenio)
+                              ),
+                              React.createElement('div', { className: 'flex justify-between' },
+                                React.createElement('span', null, 'Erudición:'),
+                                React.createElement('span', { className: 'font-semibold text-purple' }, player.erudicion)
+                              ),
+                              React.createElement('div', { className: 'flex justify-between' },
+                                React.createElement('span', null, 'Virtud:'),
+                                React.createElement('span', { className: 'font-semibold text-green' }, player.virtud)
+                              ),
+                              React.createElement('div', { className: 'flex justify-between' },
+                                React.createElement('span', null, 'Lugar:'),
+                                React.createElement('span', null, locations[player.location].name)
+                              )
+                            )
+                          )
+                        )
+                      ),
+
+                      // Acciones del turno
+                      React.createElement('div', { className: 'card' },
+                        React.createElement('h3', { className: 'text-lg font-semibold mb-3' }, 'Acciones'),
+                        currentPlayerData && !currentPlayerData.isAI && React.createElement(React.Fragment, null,
+                          !gameActions.diceResult && React.createElement('button', {
+                            onClick: rollDice,
+                            className: 'btn btn-secondary btn-full mb-2 flex items-center justify-center gap-2'
+                          }, '🎲 Consultar Musas'),
+
+                          gameActions.diceResult && React.createElement('div', { className: 'mb-3 p-2 bg-brown-light rounded text-center border border-brown' },
+                            React.createElement('div', { className: 'text-lg font-bold text-brown' }, `🎲 ${gameActions.diceResult}`),
+                            React.createElement('div', { className: 'text-sm' }, 'Puntos de inspiración'),
+                            React.createElement('div', { className: 'text-xs text-dark mt-1' }, 'Elige tu destino en Madrid')
+                          ),
+
+                          React.createElement('button', {
+                            onClick: () => setGameActions(prev => ({ ...prev, showCards: !prev.showCards })),
+                            className: 'btn btn-purple btn-full mb-2'
+                          }, `${gameActions.showCards ? 'Ocultar' : 'Ver'} Cartas`),
+
+                          React.createElement('button', {
+                            onClick: nextTurn,
+                            className: 'btn btn-success btn-full'
+                          }, 'Concluir Turno')
+                        ),
+
+                        currentPlayerData && currentPlayerData.isAI && React.createElement('div', { className: 'text-center' },
+                          gameState.aiThinking ? React.createElement('div', { className: 'p-4' },
+                            React.createElement('div', { className: 'animate-spin rounded-full h-8 w-8 border-b-2 border-gold mx-auto mb-2' }),
+                            React.createElement('div', { className: 'text-sm text-dark' },
+                              `${currentPlayerData.name} está forjando versos...`
+                            )
+                          ) : React.createElement('div', { className: 'p-4 text-dark' },
+                            React.createElement('div', { className: 'mb-2' }, '🤖'),
+                            React.createElement('div', { className: 'text-sm' },
+                              `Turno de ${currentPlayerData.name}`
+                            )
+                          )
+                        )
+                      )
+                    ),
+
+                    // Cartas e Historial
+                    React.createElement('div', { className: 'space-y-4' },
+                      gameActions.showCards && currentHand && React.createElement('div', { className: 'card' },
+                        React.createElement('h3', { className: 'text-lg font-semibold mb-3' }, 'Tus Artes'),
+                        Object.entries(currentHand).map(([cardType, cards]) =>
+                          React.createElement('div', { key: cardType, className: 'mb-4' },
+                            React.createElement('h4', { className: 'font-medium mb-2' },
+                              `${cardType === 'ingenio' ? 'Ingenio' : cardType === 'erudicion' ? 'Erudición' : 'Favor'} (${cards.length})`
+                            ),
+                            cards.map((card, index) =>
+                              React.createElement('div', {
+                                key: index,
+                                className: 'border border-brown rounded p-2 mb-2 cursor-pointer hover:bg-gold-light transition-all',
+                                onClick: () => playCard(card, cardType)
+                              },
+                                React.createElement('div', { className: 'font-medium text-sm text-brown' }, card.name),
+                                React.createElement('div', { className: 'text-xs text-dark' }, card.effect)
+                              )
+                            )
+                          )
+                        )
+                      ),
+
+                      // Crónica del duelo
+                      React.createElement('div', { className: 'card' },
+                        React.createElement('h3', { className: 'text-lg font-semibold mb-3' }, 'Crónica del Duelo'),
+                        React.createElement('div', { className: 'max-h-64 overflow-y-auto space-y-1' },
+                          gameState.gameLog.map((message, index) =>
+                            React.createElement('div', { key: index, className: 'text-sm p-2 bg-parchment rounded border border-gold' }, message)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              );
+            };
+
+            const root = createRoot(document.getElementById('root'));
+            root.render(React.createElement(SigloOroGame));
+        });
+    </script>
+</body>
+</html>

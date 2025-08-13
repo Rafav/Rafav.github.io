@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Oca del Parnaso - Siglo de Oro</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2c1810 0%, #8B4513 50%, #D2691E 100%);
+            min-height: 100vh;
+            color: #2c1810;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #FFF8DC 0%, #F5E6D3 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            border: 3px solid #8B4513;
+            overflow: hidden;
+        }
+        
+        .board {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 4px;
+            padding: 20px;
+            background: linear-gradient(45deg, #DEB887 0%, #F4A460 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .board {
+                padding: 10px;
+                gap: 2px;
+            }
+            .cell {
+                font-size: 0.6rem;
+            }
+            .cell-icon {
+                font-size: 1rem;
+            }
+        }
+        
+        .cell {
+            aspect-ratio: 1;
+            border: 2px solid #8B4513;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .cell:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .cell-normal { background: linear-gradient(135deg, #FFF8DC 0%, #F5E6D3 100%); }
+        .cell-oca { background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); }
+        .cell-puente { background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%); }
+        .cell-posada { background: linear-gradient(135deg, #98FB98 0%, #32CD32 100%); }
+        .cell-carcel { background: linear-gradient(135deg, #696969 0%, #2F4F4F 100%); color: white; }
+        .cell-muerte { background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%); color: white; }
+        .cell-parnaso { background: linear-gradient(135deg, #9370DB 0%, #4B0082 100%); color: gold; }
+        .cell-laberinto { background: linear-gradient(135deg, #DDA0DD 0%, #8B008B 100%); color: white; }
+        
+        .cell-icon {
+            font-size: 1.2rem;
+            margin-bottom: 2px;
+        }
+        
+        .cell-number {
+            font-size: 0.6rem;
+            color: #8B4513;
+            font-weight: bold;
+        }
+        
+        .players-in-cell {
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1px;
+        }
+        
+        .player-token {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .game-panel {
+            background: linear-gradient(135deg, #FFF8DC 0%, #F5E6D3 100%);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 2px solid #8B4513;
+            margin-bottom: 20px;
+        }
+        
+        .dice {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
+            border: 3px solid #8B4513;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #8B4513;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px auto;
+        }
+        
+        .dice:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: Georgia, serif;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #A0522D 0%, #CD853F 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .player-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid;
+        }
+        
+        .current-player {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+        }
+        
+        .message-log {
+            height: min(30vh, 300px);
+            max-height: 400px;
+            min-height: 200px;
+            overflow-y: auto;
+            background: rgba(255,255,255,0.9);
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 0.9rem;
+            border: 2px solid #8B4513;
+        }
+        
+        .message {
+            margin-bottom: 8px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: rgba(139,69,19,0.1);
+        }
+        
+        .winner-celebration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        
+        .winner-content {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border: 4px solid #8B4513;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script>
+        const { useState, useEffect } = React;
+        const { createRoot } = ReactDOM;
+        
+        // Quiz del Siglo de Oro para estudiantes de ELE universitarios
+        const quizQuestions = [
+            {
+                question: "¿En qué siglos se desarrolló el Siglo de Oro español?",
+                options: ["XV-XVI", "XVI-XVII", "XVII-XVIII", "XIV-XV"],
+                correct: 1,
+                explanation: "El Siglo de Oro abarca los siglos XVI y XVII, desde el reinado de los Reyes Católicos hasta la muerte de Calderón (1681)."
+            },
+            {
+                question: "¿Cuál es la obra más famosa de Miguel de Cervantes?",
+                options: ["La Galatea", "Don Quijote de la Mancha", "Los trabajos de Persiles", "Novelas ejemplares"],
+                correct: 1,
+                explanation: "Don Quijote de la Mancha (1605-1615) es considerada la primera novela moderna y obra cumbre de la literatura española."
+            },
+            {
+                question: "¿Qué movimiento poético cultivó Luis de Góngora?",
+                options: ["Conceptismo", "Culteranismo", "Realismo", "Naturalismo"],
+                correct: 1,
+                explanation: "Góngora fue el máximo representante del culteranismo, caracterizado por la complejidad sintáctica y las referencias mitológicas."
+            },
+            {
+                question: "¿Cuál de estas obras pertenece a Lope de Vega?",
+                options: ["La vida es sueño", "Fuenteovejuna", "El Buscón", "Soledades"],
+                correct: 1,
+                explanation: "Fuenteovejuna es una de las obras más famosas de Lope de Vega, representante del teatro del Siglo de Oro."
+            },
+            {
+                question: "¿Cómo se llamaba la preceptiva teatral que rompió Lope de Vega?",
+                options: ["Las tres unidades", "La regla áurea", "El decoro poético", "La verosimilitud"],
+                correct: 0,
+                explanation: "Lope rompió con las tres unidades clásicas (acción, tiempo y lugar) en su 'Arte nuevo de hacer comedias'."
+            },
+            {
+                question: "¿Qué autor escribió 'La vida es sueño'?",
+                options: ["Lope de Vega", "Tirso de Molina", "Calderón de la Barca", "Francisco de Quevedo"],
+                correct: 2,
+                explanation: "Pedro Calderón de la Barca escribió este drama filosófico, una de las obras cumbre del teatro barroco."
+            },
+            {
+                question: "¿Cuál es el tema principal del Conceptismo?",
+                options: ["La belleza formal", "El juego de conceptos e ideas", "La mitología clásica", "La naturaleza"],
+                correct: 1,
+                explanation: "El Conceptismo, representado por Quevedo, se basa en el juego ingenioso de conceptos e ideas."
+            },
+            {
+                question: "¿Quién escribió 'El Buscón'?",
+                options: ["Mateo Alemán", "Francisco de Quevedo", "Vicente Espinel", "Luis de Góngora"],
+                correct: 1,
+                explanation: "Quevedo escribió 'Historia de la vida del Buscón llamado don Pablos', novela picaresca satírica."
+            },
+            {
+                question: "¿Cómo se llama el personaje creado por Tirso de Molina?",
+                options: ["Don Juan Tenorio", "Don Quijote", "Segismundo", "Pablos"],
+                correct: 0,
+                explanation: "Tirso de Molina creó el mito de Don Juan Tenorio en 'El burlador de Sevilla'."
+            },
+            {
+                question: "¿Cuál era el pseudónimo de Lope de Vega?",
+                options: ["El Divino", "Fénix de los ingenios", "El Príncipe de los poetas", "El Cisne de Mantua"],
+                correct: 1,
+                explanation: "Lope de Vega era conocido como el 'Fénix de los ingenios' por su extraordinaria capacidad creativa."
+            },
+            {
+                question: "¿En qué consiste la técnica del 'carpe diem'?",
+                options: ["Vivir el momento presente", "Recordar la muerte", "Alabar la belleza", "Criticar la sociedad"],
+                correct: 0,
+                explanation: "El 'carpe diem' ('aprovecha el día') es un tópico que invita a disfrutar del momento presente."
+            },
+            {
+                question: "¿Qué género literario NO cultivó Quevedo?",
+                options: ["Poesía", "Prosa satírica", "Teatro", "Ensayo"],
+                correct: 2,
+                explanation: "Aunque Quevedo fue un genio de la poesía y la prosa, no destacó como dramaturgo teatral."
+            },
+            {
+                question: "¿Cuál es el tema del 'Tempus fugit'?",
+                options: ["El amor cortés", "El paso del tiempo", "La crítica social", "La muerte"],
+                correct: 1,
+                explanation: "El 'tempus fugit' ('el tiempo huye') es un tópico sobre la fugacidad temporal y la brevedad de la vida."
+            },
+            {
+                question: "¿Qué autor escribió 'Soledades'?",
+                options: ["Luis de Góngora", "Francisco de Quevedo", "San Juan de la Cruz", "Garcilaso de la Vega"],
+                correct: 0,
+                explanation: "Las 'Soledades' son poemas mayores de Góngora, ejemplo máximo del culteranismo."
+            },
+            {
+                question: "¿Cuántos actos tenían las comedias de Lope?",
+                options: ["Dos", "Tres", "Cuatro", "Cinco"],
+                correct: 1,
+                explanation: "Lope estableció la comedia nueva de tres actos, rompiendo con la tradición clásica de cinco."
+            },
+            {
+                question: "¿Qué es un 'gracioso' en el teatro del Siglo de Oro?",
+                options: ["Un tipo de verso", "Un personaje cómico", "Una técnica narrativa", "Un tema poético"],
+                correct: 1,
+                explanation: "El gracioso es el personaje cómico que alivia la tensión dramática y representa al pueblo."
+            },
+            {
+                question: "¿Cuál fue la obra más extensa de Lope de Vega?",
+                options: ["La Dorotea", "La Arcadia", "El peregrino", "Jerusalén conquistada"],
+                correct: 0,
+                explanation: "'La Dorotea' es una extensa obra en prosa dialogada, considerada su obra más personal."
+            },
+            {
+                question: "¿Qué movimiento religioso influyó en la literatura del Siglo de Oro?",
+                options: ["La Reforma", "La Contrarreforma", "El Erasmismo", "El Luteranismo"],
+                correct: 1,
+                explanation: "La Contrarreforma católica marcó profundamente la literatura española del período barroco."
+            },
+            {
+                question: "¿Cuál es el nombre completo de Calderón?",
+                options: ["Pedro Calderón de la Barca", "Diego Calderón de la Vega", "Antonio Calderón del Rey", "Felipe Calderón de León"],
+                correct: 0,
+                explanation: "Pedro Calderón de la Barca y Henao fue el gran dramaturgo del Barroco español."
+            },
+            {
+                question: "¿Qué técnica usa Góngora en 'La fábula de Polifemo'?",
+                options: ["Octavas reales", "Sonetos", "Silva", "Romance"],
+                correct: 0,
+                explanation: "Góngora utiliza la octava real, estrofa de ocho versos endecasílabos, en sus poemas mayores."
+            },
+            {
+                question: "¿En qué ciudad nació Cervantes?",
+                options: ["Toledo", "Madrid", "Alcalá de Henares", "Sevilla"],
+                correct: 2,
+                explanation: "Miguel de Cervantes nació en Alcalá de Henares en 1547."
+            },
+            {
+                question: "¿Cuál es el tema del soneto 'En tanto que de rosa y azucena'?",
+                options: ["El amor no correspondido", "El carpe diem", "La crítica social", "La muerte"],
+                correct: 1,
+                explanation: "Este famoso soneto de Garcilaso desarrolla el tema del carpe diem dirigido a una dama joven."
+            },
+            {
+                question: "¿Qué significa 'desengaño' en el Barroco?",
+                options: ["Engaño amoroso", "Desilusión de la realidad", "Técnica poética", "Género teatral"],
+                correct: 1,
+                explanation: "El desengaño barroco es la desilusión ante las apariencias mundanas y la vanidad de lo terrenal."
+            },
+            {
+                question: "¿Cuál es la primera parte de Don Quijote?",
+                options: ["1605", "1615", "1600", "1610"],
+                correct: 0,
+                explanation: "La primera parte de Don Quijote se publicó en 1605, la segunda en 1615."
+            },
+            {
+                question: "¿Qué autor escribió autos sacramentales?",
+                options: ["Lope de Vega", "Tirso de Molina", "Calderón de la Barca", "Mira de Amescua"],
+                correct: 2,
+                explanation: "Calderón perfeccionó el auto sacramental, drama alegórico de tema religioso."
+            },
+            {
+                question: "¿Cuál es el tema del 'Beatus ille'?",
+                options: ["La vida cortesana", "La vida retirada del campo", "El amor pasional", "La guerra"],
+                correct: 1,
+                explanation: "El 'Beatus ille' alaba la vida retirada y sencilla del campo frente a la corte."
+            },
+            {
+                question: "¿Quién tradujo las 'Soledades' de Góngora al inglés?",
+                options: ["Esta pregunta es incorrecta", "John Donne", "Edmund Spenser", "Christopher Marlowe"],
+                correct: 0,
+                explanation: "Las 'Soledades' son poemas originales de Góngora, no traducciones."
+            },
+            {
+                question: "¿Cuál era el teatro popular en el Siglo de Oro?",
+                options: ["Auto sacramental", "Comedia", "Entremés", "Loa"],
+                correct: 1,
+                explanation: "La comedia nueva de Lope fue el género teatral más popular y representativo."
+            },
+            {
+                question: "¿Qué técnica caracteriza al hipérbaton gongorino?",
+                options: ["Orden natural", "Alteración del orden sintáctico", "Repetición", "Paradoja"],
+                correct: 1,
+                explanation: "El hipérbaton altera el orden lógico de las palabras, recurso típico de Góngora."
+            },
+            {
+                question: "¿Cuál es la obra póstuma de Quevedo?",
+                options: ["Los Sueños", "El Buscón", "La Hora de todos", "Política de Dios"],
+                correct: 2,
+                explanation: "'La Hora de todos' se publicó póstumamente y muestra la prosa satírica de Quevedo."
+            },
+            {
+                question: "¿Qué significa 'vanitas vanitatum'?",
+                options: ["Amor eterno", "Vanidad de vanidades", "Belleza perfecta", "Sabiduría divina"],
+                correct: 1,
+                explanation: "'Vanitas vanitatum' expresa la vanidad de las cosas terrenales, tema barroco fundamental."
+            },
+            {
+                question: "¿En qué batalla perdió Cervantes el uso de la mano izquierda?",
+                options: ["San Quintín", "Lepanto", "Ostende", "Flandes"],
+                correct: 1,
+                explanation: "En la batalla de Lepanto (1571), Cervantes fue herido y perdió el uso de la mano izquierda."
+            },
+            {
+                question: "¿Cuál es la métrica del romance?",
+                options: ["Octosílabos asonantes en pares", "Endecasílabos consonantes", "Alejandrinos", "Heptasílabos"],
+                correct: 0,
+                explanation: "El romance se compone de versos octosílabos con rima asonante en los pares."
+            },
+            {
+                question: "¿Qué personaje representa la locura cuerda?",
+                options: ["Sancho Panza", "Don Quijote", "Dulcinea", "El Cura"],
+                correct: 1,
+                explanation: "Don Quijote encarna la 'locura cuerda', con ideales nobles en un mundo prosaico."
+            },
+            {
+                question: "¿Cuál era el público del teatro del Siglo de Oro?",
+                options: ["Solo nobles", "Solo plebeyos", "Todas las clases sociales", "Solo clérigos"],
+                correct: 2,
+                explanation: "Los corrales de comedias acogían a todas las clases, desde nobles hasta artesanos."
+            },
+            {
+                question: "¿Quién escribió 'Los trabajos de Persiles y Sigismunda'?",
+                options: ["Miguel de Cervantes", "Lope de Vega", "Mateo Alemán", "Francisco de Quevedo"],
+                correct: 0,
+                explanation: "Esta novela bizantina fue la última obra de Cervantes, publicada póstumamente en 1617."
+            },
+            {
+                question: "¿Cuál es el tema central de 'El gran teatro del mundo'?",
+                options: ["El amor cortés", "La vida como representación teatral", "La crítica social", "La naturaleza"],
+                correct: 1,
+                explanation: "Calderón presenta la vida humana como una gran representación teatral dirigida por Dios."
+            },
+            {
+                question: "¿Qué significa 'memento mori' en la literatura barroca?",
+                options: ["Recuerda vivir", "Recuerda morir", "Ama y vive", "Tiempo perdido"],
+                correct: 1,
+                explanation: "El 'memento mori' ('recuerda que morirás') es un tópico barroco sobre la meditación de la muerte."
+            },
+            {
+                question: "¿Cuál fue el primer libro de caballerías español?",
+                options: ["Amadís de Gaula", "Tirant lo Blanch", "Palmerín de Oliva", "Las sergas de Esplandián"],
+                correct: 0,
+                explanation: "Amadís de Gaula, refundido por Garci Rodríguez de Montalvo, fue el modelo del género caballeresco."
+            },
+            {
+                question: "¿Qué autor creó el personaje de la Celestina?",
+                options: ["Fernando de Rojas", "Juan Ruiz", "Alfonso X", "Jorge Manrique"],
+                correct: 0,
+                explanation: "Fernando de Rojas escribió 'La Celestina' o 'Tragicomedia de Calisto y Melibea'."
+            },
+            {
+                question: "¿En qué consiste la técnica del 'in medias res'?",
+                options: ["Empezar por el final", "Empezar en medio de la acción", "Narrar cronológicamente", "Usar flashbacks"],
+                correct: 1,
+                explanation: "El 'in medias res' significa comenzar la narración en el punto medio de los acontecimientos."
+            },
+            {
+                question: "¿Cuál es la obra más importante de San Juan de la Cruz?",
+                options: ["Noche oscura del alma", "Subida del Monte Carmelo", "Cántico espiritual", "Llama de amor viva"],
+                correct: 2,
+                explanation: "El 'Cántico espiritual' es considerado la cumbre de la poesía mística de San Juan de la Cruz."
+            },
+            {
+                question: "¿Qué técnica poética usa Garcilaso en sus églogas?",
+                options: ["Octavas reales", "Tercetos", "Silva", "Liras"],
+                correct: 3,
+                explanation: "Garcilaso popularizó la lira, estrofa de cinco versos (7a-11B-7a-7b-11B) en sus églogas."
+            },
+            {
+                question: "¿Cuál es el tema del soneto 'Mientras por competir con tu cabello'?",
+                options: ["El tiempo destructor", "La belleza femenina", "El amor eterno", "La muerte"],
+                correct: 0,
+                explanation: "Este soneto de Góngora desarrolla el tema del tiempo que destruye la belleza juvenil."
+            },
+            {
+                question: "¿Qué es un 'entremés' en el teatro del Siglo de Oro?",
+                options: ["Un acto principal", "Una pieza cómica breve", "Un prólogo", "Una danza"],
+                correct: 1,
+                explanation: "El entremés es una pieza teatral cómica y breve que se representaba entre los actos de la comedia."
+            },
+            {
+                question: "¿Quién escribió 'Guzmán de Alfarache'?",
+                options: ["Francisco de Quevedo", "Mateo Alemán", "Vicente Espinel", "Luis Vélez de Guevara"],
+                correct: 1,
+                explanation: "Mateo Alemán escribió esta novela picaresca, considerada la segunda después del Lazarillo."
+            },
+            {
+                question: "¿Cuál es la diferencia entre culteranismo y conceptismo?",
+                options: ["Forma vs. contenido", "Prosa vs. verso", "Religioso vs. profano", "Clásico vs. popular"],
+                correct: 0,
+                explanation: "El culteranismo se centra en la forma y el lenguaje, el conceptismo en el contenido y las ideas."
+            },
+            {
+                question: "¿En qué ciudad se desarrolla principalmente 'La Celestina'?",
+                options: ["Salamanca", "Toledo", "Sevilla", "No se especifica"],
+                correct: 0,
+                explanation: "Aunque no se menciona explícitamente, los indicios apuntan a Salamanca como escenario."
+            },
+            {
+                question: "¿Cuál es el nombre completo de Don Juan Tenorio?",
+                options: ["Juan Tenorio de Ulloa", "Don Juan Tenorio", "Juan de Tenorio", "Juan Tenorio y Mañara"],
+                correct: 1,
+                explanation: "En la obra de Tirso, el personaje se llama simplemente Don Juan Tenorio."
+            },
+            {
+                question: "¿Qué significa 'collige, virgo, rosas'?",
+                options: ["Coge, doncella, las rosas", "Vive, muchacha, la vida", "Ama, joven, con pasión", "Goza, niña, el momento"],
+                correct: 0,
+                explanation: "Esta frase latina significa 'coge, doncella, las rosas' y expresa el tema del carpe diem."
+            },
+            {
+                question: "¿Cuántos sonetos escribió aproximadamente Quevedo?",
+                options: ["300", "500", "800", "1000"],
+                correct: 2,
+                explanation: "Quevedo escribió aproximadamente 800 sonetos, siendo uno de los sonetistas más prolíficos."
+            },
+            {
+                question: "¿Qué autor escribió 'El caballero de Olmedo'?",
+                options: ["Lope de Vega", "Tirso de Molina", "Calderón de la Barca", "Rojas Zorrilla"],
+                correct: 0,
+                explanation: "Lope de Vega escribió este drama basado en una cancioncilla popular castellana."
+            },
+            {
+                question: "¿Cuál es el tema principal de 'La vida es sueño'?",
+                options: ["El destino", "El libre albedrío", "El poder", "El amor"],
+                correct: 1,
+                explanation: "Calderón desarrolla el tema del libre albedrío frente al determinismo del destino."
+            },
+            {
+                question: "¿Qué técnica caracteriza los sonetos amorosos de Quevedo?",
+                options: ["Idealización platónica", "Pasión desgarrada", "Cortesía medieval", "Sensualidad renacentista"],
+                correct: 1,
+                explanation: "Los sonetos amorosos de Quevedo se caracterizan por una pasión intensa y desgarrada."
+            },
+            {
+                question: "¿En qué batalla naval participó Cervantes?",
+                options: ["Trafalgar", "Lepanto", "Cabo de San Vicente", "La Armada Invencible"],
+                correct: 1,
+                explanation: "Cervantes luchó en la batalla de Lepanto (1571) donde fue herido en la mano izquierda."
+            },
+            {
+                question: "¿Cuál es el subtítulo de 'Don Quijote'?",
+                options: ["El Ingenioso Hidalgo", "El Caballero de la Mancha", "Historia del famoso hidalgo", "El Ingenioso Hidalgo Don Quijote de la Mancha"],
+                correct: 3,
+                explanation: "El título completo es 'El ingenioso hidalgo don Quijote de la Mancha'."
+            },
+            {
+                question: "¿Qué es la 'disputatio' en el teatro calderoniano?",
+                options: ["Un debate teológico", "Una técnica dramática", "Un monólogo", "Una forma métrica"],
+                correct: 1,
+                explanation: "La disputatio es una técnica dramática donde los personajes debaten ideas filosóficas."
+            },
+            {
+                question: "¿Quién fue conocido como 'El Divino'?",
+                options: ["Luis de Góngora", "Francisco de Quevedo", "Lope de Vega", "Garcilaso de la Vega"],
+                correct: 0,
+                explanation: "Luis de Góngora era conocido como 'El Divino' por su extraordinaria maestría poética."
+            },
+            {
+                question: "¿Cuál es la primera novela picaresca española?",
+                options: ["El Buscón", "Guzmán de Alfarache", "La vida de Lazarillo de Tormes", "La pícara Justina"],
+                correct: 2,
+                explanation: "'La vida de Lazarillo de Tormes' (1554) inaugura el género picaresco en España."
+            },
+            {
+                question: "¿Qué significa 'ut pictura poesis'?",
+                options: ["Como la pintura, la poesía", "El arte imita la vida", "La belleza es verdad", "Todo arte es imitación"],
+                correct: 0,
+                explanation: "Esta frase de Horacio significa que la poesía debe parecerse a la pintura en su capacidad descriptiva."
+            },
+            {
+                question: "¿Cuál es el conflicto central en 'Fuenteovejuna'?",
+                options: ["Amor vs. honor", "Pueblo vs. tiranía", "Nobleza vs. burguesía", "Tradición vs. modernidad"],
+                correct: 1,
+                explanation: "El pueblo de Fuenteovejuna se rebela contra la tiranía del Comendador Mayor."
+            },
+            {
+                question: "¿Qué autor popularizó el teatro religioso en España?",
+                options: ["Lope de Vega", "Tirso de Molina", "Calderón de la Barca", "Mira de Amescua"],
+                correct: 2,
+                explanation: "Calderón de la Barca llevó el teatro religioso y los autos sacramentales a su máxima expresión."
+            },
+            {
+                question: "¿En qué consiste la técnica del 'correlato objetivo'?",
+                options: ["Describir objetivamente", "Expresar emociones mediante objetos", "Narrar en tercera persona", "Usar un lenguaje neutro"],
+                correct: 1,
+                explanation: "El correlato objetivo expresa estados emocionales a través de objetos y situaciones externas."
+            },
+            {
+                question: "¿Cuál es el tema del poema 'A una nariz' de Quevedo?",
+                options: ["La belleza física", "La sátira personal", "La fugacidad del tiempo", "El amor platónico"],
+                correct: 1,
+                explanation: "Este poema es una sátira burlesca dirigida contra Góngora y su prominente nariz."
+            },
+            {
+                question: "¿Qué técnica narrativa usa Cervantes en las Novelas Ejemplares?",
+                options: ["Narrador omnisciente", "Múltiples perspectivas", "Monólogo interior", "Epistolar"],
+                correct: 1,
+                explanation: "Cervantes emplea múltiples perspectivas narrativas para enriquecer la complejidad de sus relatos."
+            },
+            {
+                question: "¿Cuál es el conflicto principal en 'El alcalde de Zalamea'?",
+                options: ["Honor villano vs. honor noble", "Amor vs. deber", "Justicia vs. venganza", "Tradición vs. progreso"],
+                correct: 0,
+                explanation: "Calderón explora el conflicto entre el honor del villano rico y el del noble empobrecido."
+            },
+            {
+                question: "¿Qué significa 'ars moriendi' en la literatura del Siglo de Oro?",
+                options: ["Arte de amar", "Arte de morir", "Arte de vivir", "Arte de escribir"],
+                correct: 1,
+                explanation: "El 'ars moriendi' es el arte de bien morir, tema fundamental en la literatura religiosa barroca."
+            },
+            {
+                question: "¿Quién escribió 'El conde Lucanor'?",
+                options: ["Don Juan Manuel", "Alfonso X el Sabio", "Juan Ruiz", "Jorge Manrique"],
+                correct: 0,
+                explanation: "Don Juan Manuel escribió 'El conde Lucanor', obra didáctica del siglo XIV."
+            },
+            {
+                question: "¿Cuál es la métrica tradicional del villancico?",
+                options: ["Octosílabos", "Hexasílabos", "Arte menor variado", "Endecasílabos"],
+                correct: 2,
+                explanation: "El villancico emplea arte menor con métrica variada, típicamente hexasílabos y octosílabos."
+            }
+        ];
+        
+        function getRandomQuiz(usedQuestions = []) {
+            const availableQuestions = quizQuestions.filter((_, index) => !usedQuestions.includes(index));
+            
+            // Si no hay preguntas disponibles, reiniciar el pool
+            if (availableQuestions.length === 0) {
+                return {
+                    question: quizQuestions[0],
+                    index: 0,
+                    resetUsed: true
+                };
+            }
+            
+            const randomAvailableIndex = Math.floor(Math.random() * availableQuestions.length);
+            const selectedQuestion = availableQuestions[randomAvailableIndex];
+            const originalIndex = quizQuestions.indexOf(selectedQuestion);
+            
+            return {
+                question: selectedQuestion,
+                index: originalIndex,
+                resetUsed: false
+            };
+        }
+        
+        // Escritores del Siglo de Oro como jugadores
+        const players = [
+            { id: 0, name: "Luis de Góngora", color: "#663399", position: 0 },
+            { id: 1, name: "Francisco de Quevedo", color: "#8b0000", position: 0 },
+            { id: 2, name: "Lope de Vega", color: "#556b2f", position: 0 },
+            { id: 3, name: "Calderón de la Barca", color: "#d4a574", position: 0 }
+        ];
+        
+        // Definición del tablero (63 casillas + El Parnaso como meta)
+        const boardCells = [
+            { id: 0, type: 'inicio', icon: '🏠', name: 'Inicio', description: 'El viaje hacia el Parnaso comienza' },
+            { id: 1, type: 'normal', icon: '📜', name: 'Primera Obra' },
+            { id: 2, type: 'normal', icon: '✍️', name: 'Ejercicio Poético' },
+            { id: 3, type: 'normal', icon: '📚', name: 'Biblioteca' },
+            { id: 4, type: 'normal', icon: '🎭', name: 'Teatro' },
+            { id: 5, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 6, type: 'puente', icon: '🌉', name: 'Puente de los Versos' },
+            { id: 7, type: 'normal', icon: '🏛️', name: 'Academia' },
+            { id: 8, type: 'normal', icon: '👑', name: 'Corte Real' },
+            { id: 9, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 10, type: 'normal', icon: '⛪', name: 'Templo de Apolo' },
+            { id: 11, type: 'normal', icon: '🗣️', name: 'Declamación' },
+            { id: 12, type: 'puente', icon: '🌉', name: 'Puente del Ingenio' },
+            { id: 13, type: 'normal', icon: '🎨', name: 'Arte Poético' },
+            { id: 14, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 15, type: 'normal', icon: '📖', name: 'Manuscrito' },
+            { id: 16, type: 'normal', icon: '🏆', name: 'Certamen' },
+            { id: 17, type: 'normal', icon: '🌟', name: 'Inspiración' },
+            { id: 18, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 19, type: 'posada', icon: '🏨', name: 'Posada del Poeta' },
+            { id: 20, type: 'normal', icon: '💎', name: 'Piedra Preciosa' },
+            { id: 21, type: 'normal', icon: '🎼', name: 'Composición Musical' },
+            { id: 22, type: 'normal', icon: '🕊️', name: 'Paloma de Venus' },
+            { id: 23, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 24, type: 'normal', icon: '🌙', name: 'Luna de Plata' },
+            { id: 25, type: 'normal', icon: '⚔️', name: 'Duelo Literario' },
+            { id: 26, type: 'normal', icon: '🌸', name: 'Jardín de Flores' },
+            { id: 27, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 28, type: 'normal', icon: '🔥', name: 'Fuego Sagrado' },
+            { id: 29, type: 'normal', icon: '🎪', name: 'Representación' },
+            { id: 30, type: 'normal', icon: '💫', name: 'Estrella Polar' },
+            { id: 31, type: 'pozo', icon: '🕳️', name: 'Pozo del Olvido' },
+            { id: 32, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 33, type: 'normal', icon: '🦢', name: 'Cisne de Apolo' },
+            { id: 34, type: 'normal', icon: '🌺', name: 'Rosa de Pasión' },
+            { id: 35, type: 'normal', icon: '⚖️', name: 'Balanza de la Justicia' },
+            { id: 36, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 37, type: 'normal', icon: '🎯', name: 'Diana Cazadora' },
+            { id: 38, type: 'normal', icon: '🌊', name: 'Fuente Castalia' },
+            { id: 39, type: 'normal', icon: '🏺', name: 'Ánfora Sagrada' },
+            { id: 40, type: 'normal', icon: '🦅', name: 'Águila de Júpiter' },
+            { id: 41, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 42, type: 'laberinto', icon: '🌀', name: 'Laberinto de Versos' },
+            { id: 43, type: 'normal', icon: '🎭', name: 'Máscara Trágica' },
+            { id: 44, type: 'normal', icon: '🎨', name: 'Pincel de Oro' },
+            { id: 45, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 46, type: 'normal', icon: '🌈', name: 'Arco de Iris' },
+            { id: 47, type: 'normal', icon: '⚡', name: 'Rayo de Júpiter' },
+            { id: 48, type: 'normal', icon: '🍇', name: 'Racimo de Baco' },
+            { id: 49, type: 'normal', icon: '🌿', name: 'Laurel de Apolo' },
+            { id: 50, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 51, type: 'normal', icon: '🎺', name: 'Trompeta de la Fama' },
+            { id: 52, type: 'carcel', icon: '⛓️', name: 'Cárcel de la Crítica' },
+            { id: 53, type: 'normal', icon: '👸', name: 'Musa Calíope' },
+            { id: 54, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 55, type: 'normal', icon: '🌟', name: 'Constelación' },
+            { id: 56, type: 'normal', icon: '🏰', name: 'Castillo de Versos' },
+            { id: 57, type: 'normal', icon: '🔔', name: 'Campana de Oro' },
+            { id: 58, type: 'muerte', icon: '💀', name: 'Muerte del Poeta' },
+            { id: 59, type: 'oca', icon: '🪿', name: 'Oca Áurea' },
+            { id: 60, type: 'normal', icon: '🌞', name: 'Sol de Justicia' },
+            { id: 61, type: 'normal', icon: '🎪', name: 'Gran Teatro' },
+            { id: 62, type: 'normal', icon: '👑', name: 'Corona Poética' },
+            { id: 63, type: 'parnaso', icon: '🏔️', name: 'PARNASO', description: '¡La morada de las Musas te espera!' }
+        ];
+        
+        function OcaDelParnaso() {
+            const [gameState, setGameState] = useState({
+                players: [...players],
+                currentPlayerIndex: 0,
+                diceValue: 0,
+                canRollDice: true,
+                gameStarted: false,
+                winner: null,
+                showQuiz: false,
+                currentQuiz: null,
+                selectedAnswer: null,
+                quizAnswered: false,
+                usedQuestions: [],
+                messages: ['¡Bienvenidos a la Oca del Parnaso del Siglo de Oro!', 'Los grandes escritores compiten por llegar a la morada de las Musas']
+            });
+            
+            const addMessage = (message) => {
+                setGameState(prev => ({
+                    ...prev,
+                    messages: [...prev.messages.slice(-10), message]
+                }));
+                // Hacer scroll al final después de agregar mensaje
+                setTimeout(() => {
+                    const messageLog = document.querySelector('.message-log');
+                    if (messageLog) {
+                        messageLog.scrollTop = messageLog.scrollHeight;
+                    }
+                }, 100);
+            };
+            
+            const startQuiz = () => {
+                if (!gameState.canRollDice || gameState.winner) return;
+                
+                const quizResult = getRandomQuiz(gameState.usedQuestions);
+                setGameState(prev => ({
+                    ...prev,
+                    showQuiz: true,
+                    currentQuiz: quizResult.question,
+                    selectedAnswer: null,
+                    quizAnswered: false,
+                    usedQuestions: quizResult.resetUsed ? [quizResult.index] : [...prev.usedQuestions, quizResult.index]
+                }));
+                
+                const currentPlayer = gameState.players[gameState.currentPlayerIndex];
+                addMessage(`${currentPlayer.name} debe responder una pregunta para lanzar los dados`);
+            };
+            
+            const selectAnswer = (answerIndex) => {
+                setGameState(prev => ({
+                    ...prev,
+                    selectedAnswer: answerIndex
+                }));
+            };
+            
+            const submitAnswer = () => {
+                const isCorrect = gameState.selectedAnswer === gameState.currentQuiz.correct;
+                const currentPlayer = gameState.players[gameState.currentPlayerIndex];
+                
+                if (isCorrect) {
+                    addMessage(`🎉 ¡Correcto! ${currentPlayer.name} puede lanzar los dados`);
+                    setGameState(prev => ({
+                        ...prev,
+                        quizAnswered: true
+                    }));
+                    setTimeout(() => rollDice(), 1500);
+                } else {
+                    addMessage(`❌ Incorrecto. ${currentPlayer.name} pierde el turno`);
+                    addMessage(`💡 ${gameState.currentQuiz.explanation}`);
+                    setTimeout(() => {
+                        setGameState(prev => ({
+                            ...prev,
+                            showQuiz: false,
+                            currentQuiz: null,
+                            selectedAnswer: null,
+                            quizAnswered: false
+                        }));
+                        nextPlayerTurn();
+                    }, 3000);
+                }
+            };
+            
+            const rollDice = () => {
+                const newDiceValue = Math.floor(Math.random() * 6) + 1;
+                setGameState(prev => ({
+                    ...prev,
+                    diceValue: newDiceValue,
+                    canRollDice: false,
+                    showQuiz: false,
+                    currentQuiz: null,
+                    selectedAnswer: null,
+                    quizAnswered: false
+                }));
+                
+                const currentPlayer = gameState.players[gameState.currentPlayerIndex];
+                addMessage(`${currentPlayer.name} lanza los dados y obtiene: ${newDiceValue}`);
+                
+                setTimeout(() => movePlayer(newDiceValue), 1000);
+            };
+            
+            const movePlayer = (steps) => {
+                const currentPlayer = gameState.players[gameState.currentPlayerIndex];
+                const newPosition = Math.min(currentPlayer.position + steps, 63);
+                
+                setGameState(prev => {
+                    const updatedPlayers = [...prev.players];
+                    updatedPlayers[gameState.currentPlayerIndex] = {
+                        ...currentPlayer,
+                        position: newPosition
+                    };
+                    
+                    return {
+                        ...prev,
+                        players: updatedPlayers
+                    };
+                });
+                
+                setTimeout(() => {
+                    handleSpecialCells(newPosition, currentPlayer);
+                }, 500);
+            };
+            
+            const handleSpecialCells = (position, player) => {
+                const cell = boardCells[position];
+                let nextTurn = true;
+                let newPosition = position;
+                
+                switch(cell.type) {
+                    case 'oca':
+                        addMessage(`🪿 ${player.name} llega a una Oca Áurea: "De oca a oca y tiro porque me toca"`);
+                        const nextOca = boardCells.findIndex((c, i) => i > position && c.type === 'oca');
+                        if (nextOca !== -1 && nextOca < 63) {
+                            newPosition = nextOca;
+                            updatePlayerPosition(player.id, newPosition);
+                            addMessage(`${player.name} vuela hasta la casilla ${nextOca + 1}`);
+                        }
+                        nextTurn = false; // Repite turno
+                        break;
+                        
+                    case 'puente':
+                        addMessage(`🌉 ${player.name} cruza el puente: "De puente a puente y tiro porque me lleva la corriente"`);
+                        const nextBridge = boardCells.findIndex((c, i) => i > position && c.type === 'puente');
+                        if (nextBridge !== -1) {
+                            newPosition = nextBridge;
+                            updatePlayerPosition(player.id, newPosition);
+                            addMessage(`${player.name} cruza hasta la casilla ${nextBridge + 1}`);
+                        }
+                        nextTurn = false; // Repite turno
+                        break;
+                        
+                    case 'posada':
+                        addMessage(`🏨 ${player.name} se detiene en la Posada del Poeta y debe descansar un turno`);
+                        setGameState(prev => ({
+                            ...prev,
+                            players: prev.players.map(p => 
+                                p.id === player.id ? {...p, skipTurns: 1} : p
+                            )
+                        }));
+                        break;
+                        
+                    case 'carcel':
+                        addMessage(`⛓️ ${player.name} es encarcelado por la Crítica y debe esperar a ser liberado`);
+                        setGameState(prev => ({
+                            ...prev,
+                            players: prev.players.map(p => 
+                                p.id === player.id ? {...p, inPrison: true} : p
+                            )
+                        }));
+                        break;
+                        
+                    case 'muerte':
+                        addMessage(`💀 ${player.name} sufre la muerte del poeta y debe volver al inicio`);
+                        updatePlayerPosition(player.id, 0);
+                        newPosition = 0;
+                        break;
+                        
+                    case 'laberinto':
+                        addMessage(`🌀 ${player.name} se pierde en el Laberinto de Versos y retrocede 12 casillas`);
+                        newPosition = Math.max(0, position - 12);
+                        updatePlayerPosition(player.id, newPosition);
+                        break;
+                        
+                    case 'parnaso':
+                        setGameState(prev => ({
+                            ...prev,
+                            winner: player,
+                            canRollDice: false
+                        }));
+                        addMessage(`🏔️ ¡${player.name} ha alcanzado el PARNASO y es coronado como el poeta supremo!`);
+                        return;
+                        
+                    case 'pozo':
+                        addMessage(`🕳️ ${player.name} cae en el Pozo del Olvido y debe esperar a ser rescatado`);
+                        setGameState(prev => ({
+                            ...prev,
+                            players: prev.players.map(p => 
+                                p.id === player.id ? {...p, inWell: true} : p
+                            )
+                        }));
+                        break;
+                        
+                    default:
+                        addMessage(`${player.name} se detiene en: ${cell.name}`);
+                        break;
+                }
+                
+                if (nextTurn) {
+                    setTimeout(() => nextPlayerTurn(), 1500);
+                } else {
+                    setTimeout(() => {
+                        setGameState(prev => ({ ...prev, canRollDice: true }));
+                    }, 1500);
+                }
+            };
+            
+            const updatePlayerPosition = (playerId, newPosition) => {
+                setGameState(prev => ({
+                    ...prev,
+                    players: prev.players.map(p => 
+                        p.id === playerId ? {...p, position: newPosition} : p
+                    )
+                }));
+            };
+            
+            const nextPlayerTurn = () => {
+                setGameState(prev => {
+                    let nextIndex = (prev.currentPlayerIndex + 1) % prev.players.length;
+                    
+                    // Saltar jugadores que tienen penalizaciones
+                    let attempts = 0;
+                    while (attempts < 4) {
+                        const nextPlayer = prev.players[nextIndex];
+                        
+                        if (nextPlayer.skipTurns > 0) {
+                            // Reducir turnos a saltar
+                            const updatedPlayers = [...prev.players];
+                            updatedPlayers[nextIndex] = {
+                                ...nextPlayer,
+                                skipTurns: nextPlayer.skipTurns - 1
+                            };
+                            
+                            return {
+                                ...prev,
+                                players: updatedPlayers,
+                                currentPlayerIndex: (nextIndex + 1) % prev.players.length,
+                                canRollDice: true
+                            };
+                        }
+                        
+                        if (nextPlayer.inPrison) {
+                            // Intentar salir de prisión (50% probabilidad)
+                            if (Math.random() > 0.5) {
+                                addMessage(`${nextPlayer.name} es liberado de la Cárcel de la Crítica`);
+                                const updatedPlayers = [...prev.players];
+                                updatedPlayers[nextIndex] = {
+                                    ...nextPlayer,
+                                    inPrison: false
+                                };
+                                
+                                return {
+                                    ...prev,
+                                    players: updatedPlayers,
+                                    currentPlayerIndex: nextIndex,
+                                    canRollDice: true
+                                };
+                            } else {
+                                addMessage(`${nextPlayer.name} permanece en la Cárcel de la Crítica`);
+                                nextIndex = (nextIndex + 1) % prev.players.length;
+                                attempts++;
+                                continue;
+                            }
+                        }
+                        
+                        if (nextPlayer.inWell) {
+                            // Puede ser rescatado si otro jugador cae en el pozo
+                            addMessage(`${nextPlayer.name} sigue en el Pozo del Olvido`);
+                            nextIndex = (nextIndex + 1) % prev.players.length;
+                            attempts++;
+                            continue;
+                        }
+                        
+                        break;
+                    }
+                    
+                    return {
+                        ...prev,
+                        currentPlayerIndex: nextIndex,
+                        canRollDice: true
+                    };
+                });
+            };
+            
+            const startGame = () => {
+                setGameState(prev => ({
+                    ...prev,
+                    gameStarted: true
+                }));
+                addMessage('¡La carrera hacia el Parnaso ha comenzado!');
+            };
+            
+            const restartGame = () => {
+                setGameState({
+                    players: players.map(p => ({ ...p, position: 0, skipTurns: 0, inPrison: false, inWell: false })),
+                    currentPlayerIndex: 0,
+                    diceValue: 0,
+                    canRollDice: true,
+                    gameStarted: false,
+                    winner: null,
+                    showQuiz: false,
+                    currentQuiz: null,
+                    selectedAnswer: null,
+                    quizAnswered: false,
+                    usedQuestions: [],
+                    messages: ['¡Bienvenidos a la Oca del Parnaso del Siglo de Oro!']
+                });
+            };
+            
+            const renderBoard = () => {
+                return boardCells.map((cell, index) => {
+                    const playersInCell = gameState.players.filter(p => p.position === index);
+                    
+                    return React.createElement('div', {
+                        key: index,
+                        className: `cell cell-${cell.type}`,
+                        title: cell.description || cell.name
+                    },
+                        React.createElement('div', { className: 'cell-icon' }, cell.icon),
+                        React.createElement('div', { className: 'cell-number' }, index + 1),
+                        cell.type === 'parnaso' && React.createElement('div', { 
+                            style: { fontSize: '0.4rem', fontWeight: 'bold', color: 'gold' }
+                        }, 'PARNASO'),
+                        playersInCell.length > 0 && React.createElement('div', { className: 'players-in-cell' },
+                            playersInCell.map(player =>
+                                React.createElement('div', {
+                                    key: player.id,
+                                    className: 'player-token',
+                                    style: { backgroundColor: player.color },
+                                    title: player.name
+                                })
+                            )
+                        )
+                    );
+                });
+            };
+            
+            if (!gameState.gameStarted) {
+                return React.createElement('div', { className: 'container' },
+                    React.createElement('div', { className: 'card' },
+                        React.createElement('div', { style: { padding: '40px', textAlign: 'center' } },
+                            React.createElement('h1', { 
+                                style: { 
+                                    fontSize: '3rem', 
+                                    marginBottom: '20px', 
+                                    background: 'linear-gradient(135deg, #8B4513 0%, #D2691E 100%)',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent'
+                                }
+                            }, '🪿 La Oca del Parnaso'),
+                            React.createElement('h2', { 
+                                style: { fontSize: '1.5rem', marginBottom: '30px', color: '#8B4513' }
+                            }, 'Siglo de Oro Español'),
+                            React.createElement('p', { 
+                                style: { fontSize: '1.1rem', marginBottom: '30px', lineHeight: '1.6' }
+                            }, 
+                                'Los grandes escritores del Siglo de Oro español compiten por llegar al Parnaso, ',
+                                'la mítica morada de las Musas. Supera los obstáculos del camino poético y ',
+                                'alcanza la gloria literaria eterna.'
+                            ),
+                            React.createElement('div', { 
+                                style: { 
+                                    display: 'grid', 
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                                    gap: '15px',
+                                    marginBottom: '30px'
+                                }
+                            },
+                                gameState.players.map(player =>
+                                    React.createElement('div', {
+                                        key: player.id,
+                                        className: 'player-info',
+                                        style: { borderLeftColor: player.color }
+                                    },
+                                        React.createElement('div', {
+                                            style: {
+                                                width: '20px',
+                                                height: '20px',
+                                                borderRadius: '50%',
+                                                backgroundColor: player.color,
+                                                border: '2px solid white',
+                                                boxShadow: '0 2px 5px rgba(0,0,0,0.3)'
+                                            }
+                                        }),
+                                        React.createElement('strong', null, player.name)
+                                    )
+                                )
+                            ),
+                            React.createElement('button', {
+                                onClick: startGame,
+                                className: 'btn',
+                                style: { fontSize: '1.2rem', padding: '15px 30px' }
+                            }, '🚀 ¡Comenzar la Carrera al Parnaso!')
+                        )
+                    )
+                );
+            }
+            
+            return React.createElement('div', { className: 'container' },
+                gameState.showQuiz && React.createElement('div', { className: 'winner-celebration' },
+                    React.createElement('div', { 
+                        className: 'winner-content',
+                        style: { maxWidth: '600px', background: 'linear-gradient(135deg, #FFF8DC 0%, #F5E6D3 100%)' }
+                    },
+                        React.createElement('h2', { 
+                            style: { marginBottom: '20px', color: '#8B4513', fontSize: '1.5rem' }
+                        }, '📚 Quiz del Siglo de Oro'),
+                        React.createElement('div', {
+                            style: { 
+                                marginBottom: '20px', 
+                                padding: '20px',
+                                background: 'rgba(255,255,255,0.8)',
+                                borderRadius: '10px',
+                                textAlign: 'left'
+                            }
+                        },
+                            React.createElement('p', { 
+                                style: { fontSize: '1.1rem', marginBottom: '20px', fontWeight: 'bold' }
+                            }, gameState.currentQuiz?.question),
+                            gameState.currentQuiz?.options.map((option, index) =>
+                                React.createElement('div', {
+                                    key: index,
+                                    style: {
+                                        margin: '10px 0',
+                                        padding: '12px',
+                                        background: gameState.selectedAnswer === index ? 
+                                            'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)' : 
+                                            'linear-gradient(135deg, #F8F8FF 0%, #F0F8FF 100%)',
+                                        border: '2px solid ' + (gameState.selectedAnswer === index ? '#8B4513' : '#DDD'),
+                                        borderRadius: '8px',
+                                        cursor: gameState.quizAnswered ? 'not-allowed' : 'pointer',
+                                        transition: 'all 0.3s ease',
+                                        opacity: gameState.quizAnswered ? 0.7 : 1
+                                    },
+                                    onClick: () => !gameState.quizAnswered && selectAnswer(index)
+                                },
+                                    React.createElement('strong', { style: { marginRight: '10px' } }, 
+                                        String.fromCharCode(65 + index) + ')'),
+                                    option
+                                )
+                            )
+                        ),
+                        !gameState.quizAnswered && React.createElement('button', {
+                            onClick: submitAnswer,
+                            disabled: gameState.selectedAnswer === null,
+                            className: 'btn',
+                            style: { 
+                                fontSize: '1.1rem', 
+                                padding: '12px 24px',
+                                opacity: gameState.selectedAnswer === null ? 0.6 : 1
+                            }
+                        }, '✅ Confirmar Respuesta'),
+                        gameState.quizAnswered && React.createElement('div', {
+                            style: { 
+                                textAlign: 'center',
+                                fontSize: '1.1rem',
+                                color: '#2E8B57',
+                                fontWeight: 'bold'
+                            }
+                        }, '🎯 Lanzando dados...')
+                    )
+                ),
+                
+                gameState.winner && React.createElement('div', { className: 'winner-celebration' },
+                    React.createElement('div', { className: 'winner-content' },
+                        React.createElement('h1', { style: { fontSize: '3rem', marginBottom: '20px' } }, '🏆'),
+                        React.createElement('h2', { style: { marginBottom: '20px' } }, 
+                            `¡${gameState.winner.name} ha alcanzado el PARNASO!`
+                        ),
+                        React.createElement('p', { style: { fontSize: '1.2rem', marginBottom: '30px' } },
+                            'Las Musas te coronan como el poeta supremo del Siglo de Oro'
+                        ),
+                        React.createElement('button', {
+                            onClick: restartGame,
+                            className: 'btn',
+                            style: { fontSize: '1.1rem', padding: '12px 24px' }
+                        }, '🔄 Nueva Partida')
+                    )
+                ),
+                
+                React.createElement('div', { 
+                    style: { 
+                        display: 'grid', 
+                        gridTemplateColumns: window.innerWidth >= 1400 ? 
+                            'minmax(0, 1fr) minmax(280px, 320px) minmax(300px, 350px)' : 
+                            window.innerWidth >= 768 ? 'minmax(0, 1fr) minmax(320px, 400px)' :
+                            '1fr', 
+                        gap: window.innerWidth >= 768 ? '20px' : '10px', 
+                        alignItems: 'start', 
+                        height: '100%' 
+                    } 
+                },
+                    React.createElement('div', { className: 'card' },
+                        React.createElement('div', { style: { padding: '10px' } },
+                            React.createElement('h2', { 
+                                style: { 
+                                    textAlign: 'center', 
+                                    marginBottom: '20px',
+                                    fontSize: '1.5rem',
+                                    color: '#8B4513'
+                                }
+                            }, '🏔️ Camino al Parnaso'),
+                            React.createElement('div', { className: 'board' },
+                                ...renderBoard()
+                            )
+                        ),
+                        
+                        // Crónica del juego en móviles - después del tablero
+                        window.innerWidth < 768 ? React.createElement('div', { className: 'game-panel', style: { marginTop: '20px' } },
+                            React.createElement('h3', { 
+                                style: { marginBottom: '15px', color: '#8B4513' }
+                            }, '📰 Crónica del Juego'),
+                            React.createElement('div', { className: 'message-log', style: { height: '200px' } },
+                                gameState.messages.map((message, index) =>
+                                    React.createElement('div', { key: index, className: 'message' }, message)
+                                )
+                            )
+                        ) : null
+                    ),
+                    
+                    React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: '20px', height: '100%' } },
+                        React.createElement('div', { className: 'game-panel' },
+                            React.createElement('h3', { 
+                                style: { marginBottom: '15px', textAlign: 'center', color: '#8B4513' }
+                            }, '🎯 Panel de Juego'),
+                            
+                            React.createElement('div', { style: { marginBottom: '20px' } },
+                                React.createElement('h4', { style: { marginBottom: '10px' } }, 'Turno actual:'),
+                                React.createElement('div', {
+                                    className: `player-info current-player`,
+                                    style: { borderLeftColor: gameState.players[gameState.currentPlayerIndex].color }
+                                },
+                                    React.createElement('div', {
+                                        style: {
+                                            width: '20px',
+                                            height: '20px',
+                                            borderRadius: '50%',
+                                            backgroundColor: gameState.players[gameState.currentPlayerIndex].color,
+                                            border: '2px solid white'
+                                        }
+                                    }),
+                                    React.createElement('strong', null, gameState.players[gameState.currentPlayerIndex].name),
+                                    React.createElement('span', { style: { marginLeft: 'auto', fontSize: '0.9rem' } },
+                                        `Casilla ${gameState.players[gameState.currentPlayerIndex].position + 1}`
+                                    )
+                                )
+                            ),
+                            
+                            React.createElement('div', { style: { textAlign: 'center', marginBottom: '20px' } },
+                                React.createElement('div', { className: 'dice' }, gameState.diceValue || '🎲'),
+                                React.createElement('button', {
+                                    onClick: startQuiz,
+                                    disabled: !gameState.canRollDice || gameState.winner || gameState.showQuiz,
+                                    className: 'btn',
+                                    style: { marginTop: '10px' }
+                                }, gameState.showQuiz ? 'Respondiendo...' : '📚 Responder Quiz')
+                            )
+                        ),
+                        
+                        React.createElement('div', { className: 'game-panel' },
+                            React.createElement('h3', { 
+                                style: { marginBottom: '15px', color: '#8B4513' }
+                            }, '📜 Posiciones'),
+                            gameState.players
+                                .sort((a, b) => b.position - a.position)
+                                .map((player, index) =>
+                                    React.createElement('div', {
+                                        key: player.id,
+                                        className: 'player-info',
+                                        style: { borderLeftColor: player.color }
+                                    },
+                                        React.createElement('div', {
+                                            style: {
+                                                width: '16px',
+                                                height: '16px',
+                                                borderRadius: '50%',
+                                                backgroundColor: player.color,
+                                                border: '2px solid white'
+                                            }
+                                        }),
+                                        React.createElement('span', { style: { fontSize: '0.9rem' } }, player.name),
+                                        React.createElement('span', { 
+                                            style: { marginLeft: 'auto', fontWeight: 'bold' }
+                                        }, player.position + 1),
+                                        player.inPrison && React.createElement('span', { style: { color: 'red' } }, ' 🔒'),
+                                        player.inWell && React.createElement('span', { style: { color: 'blue' } }, ' 🕳️'),
+                                        player.skipTurns > 0 && React.createElement('span', { style: { color: 'orange' } }, ' 💤')
+                                    )
+                                )
+                        ),
+                        
+                        // Crónica del juego en pantallas pequeñas y medianas (no móviles muy pequeños)
+                        window.innerWidth < 1400 && window.innerWidth >= 768 ? React.createElement('div', { className: 'game-panel' },
+                            React.createElement('h3', { 
+                                style: { marginBottom: '15px', color: '#8B4513' }
+                            }, '📰 Crónica del Juego'),
+                            React.createElement('div', { className: 'message-log' },
+                                gameState.messages.map((message, index) =>
+                                    React.createElement('div', { key: index, className: 'message' }, message)
+                                )
+                            )
+                        ) : null
+                    ),
+                    
+                    // Tercera columna - Solo en pantallas grandes (Crónica del juego)
+                    window.innerWidth >= 1400 ? React.createElement('div', { className: 'game-panel' },
+                        React.createElement('h3', { 
+                            style: { marginBottom: '15px', color: '#8B4513' }
+                        }, '📰 Crónica del Juego'),
+                        React.createElement('div', { 
+                            className: 'message-log',
+                            style: { height: 'calc(100vh - 200px)', maxHeight: '600px', minHeight: '400px' }
+                        },
+                            gameState.messages.map((message, index) =>
+                                React.createElement('div', { key: index, className: 'message' }, message)
+                            )
+                        )
+                    ) : null
+                )
+            );
+        }
+        
+        const root = createRoot(document.getElementById('root'));
+        root.render(React.createElement(OcaDelParnaso));
+    </script>
+</body>
+</html>
