@@ -536,7 +536,7 @@
             const app = document.querySelector('.content-panel');
 
             try {
-                const response = await fetch('libros.json');
+                const response = await fetch('libros_v06_extendida.json');
                 if (!response.ok) throw new Error('Error al cargar el archivo JSON');
                 const data = await response.json();
 
