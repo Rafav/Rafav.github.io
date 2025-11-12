@@ -1,0 +1,204 @@
+{
+  "Año": 1827,
+  "datos": [
+    {
+      "PDF": "2530657.pdf",
+      "día_periódico": "21/05/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530679.pdf",
+      "día_periódico": "12/06/1827",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "manual del farmaceutico ó compendio elemental de farmacia",
+          "número_de_tomos": "segundo tomo",
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal ú Compañía, plazuela de S. Agustin núm. 201",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Los Sres. suscritores al manual del farmaceutico ó compendio elemental de farmacia se servirán pasar á recoger el segundo tomo de la obra, á la libreria de Hortal ú Compañía, plazuela de S. Agustin núm. 201, en donde se halla de venta."
+        },
+        {
+          "autor": "Almeida",
+          "traductor": null,
+          "título": "Recreacion filosofica",
+          "número_de_tomos": "segundo tomo",
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Navarro, plazuela de San Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Los Sres. suscritores á la Recreacion filosofica del Padre Almeida acudirán á recoger el segundo tomo y adelantar el importe del tercero, en la libreria de Navarro, plazuela de San Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2530701.pdf",
+      "día_periódico": "04/07/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530723.pdf",
+      "día_periódico": "26/07/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530745.pdf",
+      "día_periódico": "19/08/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531417.pdf",
+      "día_periódico": "09/01/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531460.pdf",
+      "día_periódico": "31/01/1827",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Argumento de la ópera Mahomet 2.º",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rvn.",
+          "lugares_de_venta": "despacho de boletines",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "El argumento de dicha ópera está de venta en el despacho de boletines á 4 rvn."
+        }
+      ]
+    },
+    {
+      "PDF": "2531482.pdf",
+      "día_periódico": "22/02/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531504.pdf",
+      "día_periódico": "16/03/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531618.pdf",
+      "día_periódico": "07/04/1827",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Noticia circunstanciada de todas las fiestas y actos religiosos con que se solemniza la Semana Santa en la ciudad de Sevilla, con varias noticias artísticas para conocimiento de los forasteros",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "un real de vellon",
+          "lugares_de_venta": "libreria de Navarro, frente á S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Noticia circunstanciada de todas las fiestas y actos religiosos con que se solemniza la Semana Santa en la ciudad de Sevilla, con varias noticias artísticas para conocimiento de los forasteros=Se hallará en la libreria de Navarro, frente á S. Agustin, á real de vellon."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "La muerte de Luis XVI",
+          "número_de_tomos": null,
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "La muerte de Luis XVI; tragedia original: un cuaderno en 8.º=Se hallará en la libreria de Hortal y Compañia, plazuela de S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2531640.pdf",
+      "día_periódico": "29/04/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533454.pdf",
+      "día_periódico": "21/09/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533525.pdf",
+      "día_periódico": "13/10/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533563.pdf",
+      "día_periódico": "04/11/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533634.pdf",
+      "día_periódico": "26/11/1827",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "El argumento de El Cruzado en Egipto",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rvn.",
+          "lugares_de_venta": "despacho de billetes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El argumento de dicha opera se hallará de venta en el despacho de billetes al precio de 4 rvn."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Epitome de la vida de Rossini",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "despacho de billetes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En el mismo despacho se hallara de venta el Epitome de la vida de Rossini."
+        }
+      ]
+    },
+    {
+      "PDF": "2533666.pdf",
+      "día_periódico": "08/12/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533700.pdf",
+      "día_periódico": "19/12/1827",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533722.pdf",
+      "día_periódico": "26/12/1827",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "El argumento de dicha ópera Tisbe ó la Irolina",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 tvn.",
+          "lugares_de_venta": "despacho de billetes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El argumento de dicha ópera se hallará de venta en el despacho de billetes al precio de 4 tvn."
+        }
+      ]
+    }
+  ]
+}
