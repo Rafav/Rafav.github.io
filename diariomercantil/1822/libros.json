@@ -1,0 +1,230 @@
+{
+  "Año": 1822,
+  "datos": [
+    {
+      "PDF": "2527989.pdf",
+      "día_periódico": "23/01/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528011.pdf",
+      "día_periódico": "14/02/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528033.pdf",
+      "día_periódico": "08/03/1822",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Derechos y deberes del Rey constitucional",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librerías de Hortal; Zaragoza y Carreño, y en los puestos de papeles públicos",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Derechos y deberes del Rey constitucional: se vende en las librerías de Hortal; Zaragoza y Carreño, y en los puestos de papeles públicos."
+        }
+      ]
+    },
+    {
+      "PDF": "2528055.pdf",
+      "día_periódico": "30/03/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528077.pdf",
+      "día_periódico": "21/04/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528099.pdf",
+      "día_periódico": "13/05/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528121.pdf",
+      "día_periódico": "04/06/1822",
+      "hallazgos": [
+        {
+          "autor": "Destutt-Tracy",
+          "traductor": "Juan Justo Garcia",
+          "título": "Elementos de ideologia del senador Destutt-Tracy",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º marquilla",
+          "encuadernación": "en pasta",
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía; plazuela de S. Agustín, núm. 2",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Elementos de ideologia del senador Destutt-Tracy, formado por el presbítero D. Juan Justo Garcia: un tomo en 8.º marquilla en pasta. Se hallarán en la librería de Hortal y compañía; plazuela de S. Agustín, núm. 2."
+        },
+        {
+          "autor": "Destutt, conde de Tracy",
+          "traductor": "Juan Angel Caamaño",
+          "título": "Gramática general comparada",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º marquilla",
+          "encuadernación": "en pasta",
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía; plazuela de S. Agustín, núm. 2",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Gramática general comparada por Mr. Destutt; conde de Tracy, par de Francia; traducida por Juan Angel Caamaño: un tomo en 8.º marquilla en pasta. Se hallarán en la librería de Hortal y compañía; plazuela de S. Agustín, núm. 2."
+        },
+        {
+          "autor": "Ana Radcliffe",
+          "traductor": "Morellet y D. T. H. y D. M=S",
+          "título": "El confesonario de los penitentes negros",
+          "número_de_tomos": "dos tomos",
+          "formato": "8.º",
+          "encuadernación": "en pasta",
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía; plazuela de S. Agustín, núm. 2",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "El confesonario de los penitentes negros: escrito por Ana Radcliffe, traducida en francés por Morellet y en castellano por D. T. H. y D. M=S: dos tomos en 8.º en pasta. Se hallarán en la librería de Hortal y compañía; plazuela de S. Agustín, núm. 2."
+        }
+      ]
+    },
+    {
+      "PDF": "2528143.pdf",
+      "día_periódico": "26/06/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530114.pdf",
+      "día_periódico": "18/07/1822",
+      "hallazgos": [
+        {
+          "autor": "Francisco Brotons",
+          "traductor": null,
+          "título": "Rafael del Riego, ó la España libre: historia de la gloriosa y feliz revolucion del año de 1820",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": "10 rs.",
+          "lugares_de_venta": "imprenta de la Sincera Union, en la de Picardo, plazuela de Oria, en las librerias de Hortal y Zaragoza y en los puestos de papeles publicos",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Rafael del Riego, ó la España libre: historia de la gloriosa y feliz revolucion del año de 1820: por el ciudadano Francisco Brotons: un tomo en 8.º Se hallará á 10 rs. en la imprenta de la Sincera Union, en la de Picardo, plazuela de Oria, en las librerias de Hortal y Zaragoza y en los puestos de papeles publicos."
+        }
+      ]
+    },
+    {
+      "PDF": "2530136.pdf",
+      "día_periódico": "09/08/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530158.pdf",
+      "día_periódico": "31/08/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533878.pdf",
+      "día_periódico": "22/09/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533916.pdf",
+      "día_periódico": "14/10/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533964.pdf",
+      "día_periódico": "05/11/1822",
+      "hallazgos": [
+        {
+          "autor": "Watel",
+          "traductor": null,
+          "título": "Derecho de gentes",
+          "número_de_tomos": "tres tomos",
+          "formato": "8.º",
+          "encuadernación": "pasta",
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía, plazuela de S. Agustín, núm. 261",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Watel: Derecho de gentes; nuevo edicion: 3 tomos en 8.º en pasta. Se hallarán en la librería de Hortal y compañía, plazuela de S. Agustín, núm. 261."
+        },
+        {
+          "autor": "Mabli",
+          "traductor": null,
+          "título": "Derechos y deberes del ciudadano",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": "pasta",
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía, plazuela de S. Agustín, núm. 261",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Mabli: Derechos y deberes del ciudadano un tomo en 8.º en pasta. Se hallarán en la librería de Hortal y compañía, plazuela de S. Agustín, núm. 261."
+        },
+        {
+          "autor": "Buriamaqui",
+          "traductor": null,
+          "título": "Derecho natural",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": "pasta",
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía, plazuela de S. Agustín, núm. 261",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Buriamaqui: Derecho natural: un tomo en 8.º en pasta. Se hallarán en la librería de Hortal y compañía, plazuela de S. Agustín, núm. 261."
+        }
+      ]
+    },
+    {
+      "PDF": "2533990.pdf",
+      "día_periódico": "27/11/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534002.pdf",
+      "día_periódico": "09/12/1822",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534013.pdf",
+      "día_periódico": "20/12/1822",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Cuadro histórico cronológico de los movimientos y principales acciones de los ejércitos beligerantes en la península durante la guerra de España contra Bonaparte",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "70 rvn, iluminado y acompañado de dos cuadernos",
+          "lugares_de_venta": "librería de Zaragoza, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Cuadro histórico cronológico de los movimientos y principales acciones de los ejércitos beligerantes en la península durante la guerra de España contra Bonaparte. Su precio 70 rvn, iluminado y acompañado de dos cuadernos, que contienen el uno la esplicacion y el otro 149 estados generales de la fuerza y organizacion de los espresados ejercitos. Se hallarán en la librería de Zaragoza, plazuela de S. Agustin"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Almanák para el año de 1823",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "un real de vellon",
+          "lugares_de_venta": "librería de Zaragoza, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Almanák para el año de 1823. Su precio un real de vellon. Se hallarán en la librería de Zaragoza, plazuela de S. Agustin"
+        }
+      ]
+    },
+    {
+      "PDF": "2534021.pdf",
+      "día_periódico": "28/12/1822",
+      "hallazgos": []
+    }
+  ]
+}
