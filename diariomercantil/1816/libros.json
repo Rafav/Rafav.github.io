@@ -1,0 +1,35 @@
+{
+  "Año": 1816,
+  "datos": [
+    {
+      "PDF": "2531653.pdf",
+      "día_periódico": "12/09/1816",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531675.pdf",
+      "día_periódico": "04/10/1816",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531698.pdf",
+      "día_periódico": "26/10/1816",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531742.pdf",
+      "día_periódico": "17/11/1816",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531778.pdf",
+      "día_periódico": "07/12/1816",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531794.pdf",
+      "día_periódico": "21/12/1816",
+      "hallazgos": []
+    }
+  ]
+}
