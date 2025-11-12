@@ -8,15 +8,41 @@
         {
           "autor": null,
           "traductor": null,
-          "título": "Todas las vidas",
+          "título": "Memorias",
           "número_de_tomos": null,
           "formato": null,
           "encuadernación": null,
           "precio": null,
           "lugares_de_venta": "Librería de Alonso, frente à las Gradas de San Felipe el Real",
-          "página_pdf": 1,
-          "página_periódico": 293,
-          "transcripción": "Todas las vidas están escritas con amenidad, sencillez y gusto: de un poeta se pasa á un escritor profundo: no se nota en ellas ni la vil adulacion, ni la sátira mordaz: la gravedad y moderacion del autor son una prueba de su imparcialidad; y al leer su obra se nos recuerda aquella institucion del antiguo Egipto que traia á los ciudadanos al tribunal de la opinion, con la diferencia de que allí no comparecían sino despues de muertos; y que en estas Memorias se exerce sobre los vivos el útil poder de la censura. Véndense en la Librería de Alonso, frente à las Gradas de San Felipe el Real."
+          "página_pdf": 2,
+          "página_periódico": 294,
+          "transcripción": "Todas las vidas están escritas con amenidad, sencillez y gusto: de un poeta se pasa á un escritor profundo : no se nota en ellas ni la vil adulacion, ni la sátira mordaz: la gravedad y moderacion del autor son una prueba de su imparcialidad; y al leer su obra se nos recuerda aquella institucion del antiguo Egipto que traia á los ciudadanos al tribunal de la opinion, con la diferencia de que allí no comparecían sino despues de muertos; y que en estas Memorias se exerce sobre los vivos el útil poder de la censura. Véndense en la Librería de Alonso, frente à las Gradas de San Felipe el Real."
+        },
+        {
+          "autor": "Manuel Ballesteros",
+          "traductor": null,
+          "título": "Exercicios de Religion, y Piedad, en que se consideran las siete palabras que habló pendiente de la Cruz y Nuestro Redentor Jesu-Christo en las tres horas antes de espirar",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "Librería de Carreño, calle Ancha frente á las Recogidas",
+          "página_pdf": 3,
+          "página_periódico": 295,
+          "transcripción": "Exercicios de Religion, y Piedad, en que se consideran las siete palabras que habló pendiente de la Cruz y Nuestro Redentor Jesu-Christo en las tres horas antes de espirar, dispuestos por el M. R. P. Fr. Manuel Ballesteros del Orden de Minimos de San Francisco de Paula. Se hallarán en la Librería de Carreño, calle Ancha frente á las Recogidas."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Devotos exercicios para visitar los Sagrarios el Jueves y Viernes Santo",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "Librería de Carreño, calle Ancha frente á las Recogidas",
+          "página_pdf": 3,
+          "página_periódico": 295,
+          "transcripción": "Devotos exercicios para visitar los Sagrarios el Jueves y Viernes Santo, en letra abultada para comodidad de los que los practican. Se hallarán en la Librería de Carreño, calle Ancha frente á las Recogidas."
         }
       ]
     },
@@ -30,43 +56,43 @@
       "día_periódico": "23/05/1807",
       "hallazgos": [
         {
-          "autor": "J. de la Tynna",
+          "autor": "J. de la Tyna",
           "traductor": null,
-          "título": "Almanak da commerce de Paris",
-          "número_de_tomos": "Un volúmen en 8.º",
-          "formato": "8.º",
-          "encuadernación": null,
-          "precio": "8 francos á la rústica",
-          "lugares_de_venta": "Paris, de los Departamentos y de las principales Plazas extrangeras",
+          "título": "Almanak del comercio de París, de los Departamentos y de las principales Plazas extrangeras, para el año de 1807",
+          "número_de_tomos": "Un volúmen",
+          "formato": "8.°",
+          "encuadernación": "rústica",
+          "precio": "8 francos",
+          "lugares_de_venta": null,
           "página_pdf": 1,
           "página_periódico": 569,
-          "transcripción": "Almanak da commerce de Paris &c. Almanak del comercio de Paris, de los Departamentos y de las principales Plazas extrangeras, para el año de 1807. Por J. de la Tynna, individuo de la Sociedad de fomento de la industria francesa. Un volúmen en 8.º: su precio 8 francos á la rústica. Esta obra contiene los fabricantes, negociantes, banqueros, misionistas, corredores y mercaderes principales de Paris: el Banco de Francia: los nuevos números de las Casas de Paris: las Cámaras de comercio: las Cámaras consultivas de fábricas, artes, y oficios: las Bolsas de comercio: las principales ferias de Francia y extrangeras: privilegios de invenciones y unas tablas de las monedas de cuenta de todos los peises del mundo, y del par en todos los cambios recíprocos de las Plazas calculados en oro y en plata, por la primera vez, segun el nuevo sistema monetario."
+          "transcripción": "Almanak da commerce de Paris &c. Almanak del comercio de París, de los Departamentos y de las principales Plazas extrangeras, para el año de 1807. Por J. de la Tyna, individuo de la Sociedad de fomento de la industria francesa. Un volúmen en 8.°: su precio 8 francos á la rústica."
         },
         {
           "autor": null,
           "traductor": null,
-          "título": "Almanak portatif des commercans de Paris",
-          "número_de_tomos": "Un volúmen en 24",
+          "título": "Almanak portátil de los comerciantes de París para el año de 1807",
+          "número_de_tomos": "Un volúmen",
           "formato": "24",
           "encuadernación": null,
           "precio": "2 francos",
-          "lugares_de_venta": "Paris, en el Despacho del Diario de comercio",
+          "lugares_de_venta": "París, en el Despacho del Diario de comercio",
           "página_pdf": 2,
           "página_periódico": 570,
-          "transcripción": "Almanak portatif des commercans de Paris &c. Almanak portatil de los comerciantes de Paris para el año de 1807, que contiene los nombres y habitaciones de los banqueros, negociantes y demás clases que que exercen el comercio. Un volúmen en 24: su precio 2 francos. Paris, en el Despacho del Diario de comercio."
+          "transcripción": "Almanak portatif des commercans de Paris &c. Almanak portátil de los comerciantes de París para el año de 1807, que contiene los nombres y habitaciones de los banqueros, negociantes y demás clases que que exercen el comercio. Un volúmen en 24: su precio 2 francos. París, en el Despacho del Diario de comercio."
         },
         {
-          "autor": "F. Goffaux",
+          "autor": "F. Gossiux",
           "traductor": null,
-          "título": "Epoques principales de l' histoire",
-          "número_de_tomos": "Un volúmen en 8.º con la Tabla Chronométrica",
-          "formato": "8.º",
+          "título": "Epocas principales de la historia",
+          "número_de_tomos": "Un volúmen",
+          "formato": "8.°",
           "encuadernación": null,
           "precio": "6 francos",
-          "lugares_de_venta": "Paris, en casa de Bertrand",
+          "lugares_de_venta": "París, en casa de Bertrand",
           "página_pdf": 2,
           "página_periódico": 570,
-          "transcripción": "Epoques principales de l' histoire &c. Epocas principales de la historia: obra que ha de servir de explicacion á la Tabla Chronométrica., que indica el origen, progresos, duracion y caida de los imperios, por F. Goffaux, Profesor en el Liceo imperial: segunda edicion revista y aumentada. Un volúmen en 8.º con la Tabla Chronométrica iluminada en papel Holanda: su precio 6 francos. Paris, en casa de Bertrand."
+          "transcripción": "Epoques principales de l'histoire &c. Epocas principales de la historia: obra que ha de servir de explicacion á la Tabla Chronométrica, que indica el origen, progresos, duracion y caida de los imperios, por F. Gossiux, Profesor en el Licéo imperial: segunda edicion revista y aumentada. Un volúmen en 8.° con la Tabla Chronométrica iluminada en papel Holanda: su precio 6 francos. París, en casa de Bertrand."
         }
       ]
     },
@@ -123,21 +149,7 @@
     {
       "PDF": "2045492.pdf",
       "día_periódico": "23/10/1807",
-      "hallazgos": [
-        {
-          "autor": null,
-          "traductor": null,
-          "título": "Estatuas de cera en la plazuela del Cañón en frente del Villar",
-          "número_de_tomos": null,
-          "formato": null,
-          "encuadernación": null,
-          "precio": "tres reales de vellón por persona",
-          "lugares_de_venta": "plazuela del Cañón en frente del Villar",
-          "página_pdf": 3,
-          "página_periódico": 2083,
-          "transcripción": "Continúa enseñándose las Estatuas de cera en la plazuela del Cañón en frente del Villar. Se pagará por la entrada tres reales de vellón por persona; y el gabinete estará abierto desde las diez de la mañana hasta la una, y desde las quatro de la tarde hasta las diez de la noche."
-        }
-      ]
+      "hallazgos": []
     },
     {
       "PDF": "2045503.pdf",
