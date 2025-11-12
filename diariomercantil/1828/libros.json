@@ -1,0 +1,427 @@
+{
+  "Año": 1828,
+  "datos": [
+    {
+      "PDF": "2532766.pdf",
+      "día_periódico": "23/01/1828",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Argumento de la ópera Julieta y Romeo",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rvn.",
+          "lugares_de_venta": "despacho de billetes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El argumento de dicha ópera se hallará de venta en el despacho de billetes al precio de 4 rvn."
+        }
+      ]
+    },
+    {
+      "PDF": "2532789.pdf",
+      "día_periódico": "14/02/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532811.pdf",
+      "día_periódico": "07/03/1828",
+      "hallazgos": [
+        {
+          "autor": "Rossini",
+          "traductor": null,
+          "título": "La flora de las óperas de Rossini reducidas para piano solo y á cuatro manos",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "La flora de las óperas de Rossini reducidas para piano solo y á cuatro manos, que sirve para la enseñanza en los conservatorios de Milan, Nápoles y. Bolonia. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        },
+        {
+          "autor": "Rossini",
+          "traductor": null,
+          "título": "Nuevos métodos de solfeo compuestos por Rossini espresamente para enseñar el canto segun el gusto moderno",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Nuevos métodos de solfeo compuestos por Rossini espresamente para enseñar el canto segun el gusto moderno, y sirve para el uso de los conservatorios de Francia é Italia, traducidos al castellano. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        },
+        {
+          "autor": "Adam",
+          "traductor": null,
+          "título": "Métodos de Adam para el piano que sirve para la enseñanza en el conservatorio de Paris",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Métodos de Adam para el piano que sirve para la enseñanza en el conservatorio de Paris, tambien en castellano. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        },
+        {
+          "autor": "Rossini",
+          "traductor": null,
+          "título": "Piezas escojidas de las óperas de Rossini arregladas por sabios profesores, para flauta y piano, dos violines y una flauta sola",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Piezas escojidas de las óperas de Rossini arregladas por sabios profesores, para flauta y piano, dos violines y una flauta sola. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        },
+        {
+          "autor": "Rossini",
+          "traductor": null,
+          "título": "El Coradino de Rossini arreglado en cuarteto para dos violines, alto y bajo ó flauta, violin alto y bajo, por Gambaro",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "El Coradino de Rossini arreglado en cuarteto para dos violines, alto y bajo ó flauta, violin alto y bajo, por Gambaro, á peticion de varios Sres. filarmonicos de Cadiz, Sevilla, Jerez y Barcelona &c. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        },
+        {
+          "autor": "Rossini y otros modernos autores",
+          "traductor": null,
+          "título": "Obras para guitarra de Rossini y otros modernos autores",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Obras para guitarra de Rossini y otros modernos autores. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        },
+        {
+          "autor": "Rossini",
+          "traductor": null,
+          "título": "Óperas compuestas por Rossini para piano solo, con una vista al principio de cada ópera, representando la escena mas interesante de cada argumento",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "precios cómodos",
+          "lugares_de_venta": "almacen de música del profesor D. G. Maya, calle Ancha, núm. 142",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Óperas compuestas por Rossini para piano solo, con una vista al principio de cada ópera, representando la escena mas interesante de cada argumento. Todas las referidas obras se venden á precios cómodos. En el almacen de música del profesor D. G. Maya, calle Ancha, núm. 142."
+        }
+      ]
+    },
+    {
+      "PDF": "2532840.pdf",
+      "día_periódico": "29/03/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532920.pdf",
+      "día_periódico": "31/03/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533059.pdf",
+      "día_periódico": "12/05/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533126.pdf",
+      "día_periódico": "03/06/1828",
+      "hallazgos": [
+        {
+          "autor": "Mariana y Minana",
+          "traductor": null,
+          "título": "historia de España del Padre Mariana con la continuacion del Padre Minana, y la narracion de los sucesos principales desde el año de 1600 hasta el año de 1808",
+          "número_de_tomos": "8 tomos",
+          "formato": "8.°",
+          "encuadernación": "rústica",
+          "precio": "20 rs. para Madrid, y 21 para las provincias en razon del porte",
+          "lugares_de_venta": "En Cadiz se suscribe en la librería de Zaragoza, plazuela de San Agustín",
+          "página_pdf": 7,
+          "página_periódico": 7,
+          "transcripción": "Suscricíon.=Acaba de publicarse en Madrid el prospecto de una nueva edicion de la historia de España del Padre Mariana con la continuacion del Padre Minana, y la narracion de los sucesos principales desde el año de 1600 hasta el año de 1808. En el nombre de Mariana está comprendido todo cuanto puede a decirse en elegio de esta obra. Al frente de esta nueva edicion se ha puesto un breve estracto de la vida del espresado Padre Mariana en que se da noticia de las ediciones antiguas y clásicas de su obra. Para la forma se ha elegido el 8.° comun por ser el mas facil y usual, y para una fundicion al intento: esta letra se considera la mas clara y análoga á los diferentes grados de vista. La obra constará de 8 tomos, que se entregarán sucesivamente uno cada mes, debiendo los suscritores anticipar siempre el importe de un tomo; cuyo precio será el de 20 rs. á la rústica para Madrid, y 21 para las provincias en razon del porte. Al fin del último tomo se imprimirá la lista de los suscritores. Esperan los editores que el público acogerá favorablemente una empresa necesaria por la escasez ó costo de las ediciones actuales del Mariana, gloriosa á nuestra literatura, útil para los estudiosos de nuestra historia, y capaz de escitar la atencion de los sábios estrangeros, cuya atencion llaman en el día nuestros autores clásicos. En Cadiz se suscribe en la librería de Zaragoza, plazuela de San Agustín."
+        }
+      ]
+    },
+    {
+      "PDF": "2533179.pdf",
+      "día_periódico": "25/06/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534275.pdf",
+      "día_periódico": "17/07/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534325.pdf",
+      "día_periódico": "08/08/1828",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Paso del Fluviá por S.M. el Sr. D. Fernando VII en 24 de Marzo de 1814",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "300 rs. cada juego",
+          "lugares_de_venta": "libreria de Zaragoza",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Dos estampas litograficas que representan, la primera el paso del Fluviá por S.M. el Sr. D. Fernando VII, en 24 de Marzo de 1814 de vuelta de su cautiverio en Francia; y la segunda la salida de S.M. de la Catedral de Gerona en 25 de Marzo de 1814, despues de haber tributado en ella las debidas gracias al Altisimo por su feliz regreso á sus dominios.—Se hallarán de venta en la libreria de Zaragoza, á 300 rs. cada juego."
+        },
+        {
+          "autor": "Mendoza",
+          "traductor": null,
+          "título": "Vida de la Virgen",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": "pasta o rústica",
+          "precio": "5 rvn. en pasta y 3 en rústica",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Vida de la Virgen, escrita en verso por Mendoza, un tomo en 8.º, á 5 rvn. en pasta y 3 en rústica. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": null,
+          "traductor": "Collada",
+          "título": "Caton en Utica, tragedia inglesa",
+          "número_de_tomos": "un cuaderno",
+          "formato": null,
+          "encuadernación": "rústica",
+          "precio": "2½ rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Caton en Utica, tragedia inglesa traducida por Collada, un cuaderno rústica á 2½ rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Blanca é Isabela, novela traducida del francés",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "3 rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Blanca é Isabela, novela traducida del francés, con una estampa á 3 rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": "doctor Lopez",
+          "traductor": null,
+          "título": "Verdadera idea de un Príncipe formada de las leyes del reino que tienen virtud y derecho público",
+          "número_de_tomos": "un tomo",
+          "formato": "4.º",
+          "encuadernación": "pergamino",
+          "precio": "10 rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Verdadera idea de un Príncipe formada de las leyes del reino que tienen virtud y derecho público, por el doctor Lopez, un tomo en 4.º, pergamino á 10 rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Avisos sobre el método de recetar, en que se contienen las reglas mas seguras para verificarlo con acierto",
+          "número_de_tomos": "un tomo",
+          "formato": "4.º",
+          "encuadernación": "holandesa",
+          "precio": "14 rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Avisos sobre el método de recetar, en que se contienen las reglas mas seguras para verificarlo con acierto, un tomo en 4.º á la holandesa á 14 rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "El sitio de la Rochela",
+          "número_de_tomos": "dos tomos",
+          "formato": "8.º",
+          "encuadernación": "pasta o rústica",
+          "precio": "23 rvn. pasta y 16 rústica",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "El sitio de la Rochela, dos tomos en 8.º á 23 rvn. pasta y 16 rústica. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Diccionario sagrado ó catalogo historico-alfabetico de las personas de que se hace mencion en los libros del Viejo y Nuevo Testamento",
+          "número_de_tomos": "un tomo",
+          "formato": "4.º",
+          "encuadernación": "rústica",
+          "precio": "8 rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Diccionario sagrado ó catalogo historico-alfabetico de las personas de que se hace mencion en los libros del Viejo y Nuevo Testamento, un tomo en 4.º rústica á 8 rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": "Lázaro Hortal",
+          "traductor": null,
+          "título": "Instruccion sobre la obligacion de rezar el oficio divino, asi eclesiastica como religiosas &c.",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": "rústica",
+          "precio": "6 rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Instruccion sobre la obligacion de rezar el oficio divino, asi eclesiastica como religiosas &c. por Lázaro Hortal, un tomo en 8.º rústica á 6 rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": "José del Campo Laso",
+          "traductor": null,
+          "título": "Elogio de nada dedicado á nadie con un ponfucio",
+          "número_de_tomos": "un cuaderno",
+          "formato": "8.º",
+          "encuadernación": "rústica",
+          "precio": "1½ rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Elogio de nada dedicado á nadie con un ponfucio por D. José del Campo Laso, un cuaderno en 8.º rústica á 1½ rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "El cordonazo de S. Francisco, respuesta de un minorista",
+          "número_de_tomos": "un cuaderno",
+          "formato": "8.º",
+          "encuadernación": "rústica",
+          "precio": "1½ rvn.",
+          "lugares_de_venta": "imprenta de Picardo, calle de D. Carlos, num. 69",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "El cordonazo de S. Francisco, respuesta de un minorista, un cuaderno en 8.º rústica á 1½ rvn. En la imprenta de Picardo, calle de D. Carlos, num. 69, se hallan de venta."
+        }
+      ]
+    },
+    {
+      "PDF": "2534356.pdf",
+      "día_periódico": "30/08/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534386.pdf",
+      "día_periódico": "21/09/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534416.pdf",
+      "día_periódico": "13/10/1823",
+      "hallazgos": [
+        {
+          "autor": "Tomas Alfageme",
+          "traductor": null,
+          "título": "Dia practico de retiro á los corazones de Jesus y de Maria para todos los meses; con un metodo de vida para las almas devotas",
+          "número_de_tomos": "un tomo",
+          "formato": "12.º",
+          "encuadernación": "en pasta",
+          "precio": "8 ron.",
+          "lugares_de_venta": "libreria de Zaragoza, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Dia practico de retiro á los corazones de Jesus y de Maria para todos los meses; con un metodo de vida para las almas devotas, compuesto por el Dr. D. Tomas Alfageme, doctoral de la Real capilla de la Encarnacion de Madrid: un tomo en 12.º en pasta á 8 ron. Se hallará en la libreria de Zaragoza, plazuela de S. Agustin."
+        },
+        {
+          "autor": "Juan de Mariana",
+          "traductor": null,
+          "título": "historia general de España del P. Juan de Mariana, á la cual se añade la continuacion del P. Miñana y la narracion de los sucesos principales desde el año de 1600 hasta el de 1808",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "21 rs. tomo",
+          "lugares_de_venta": "libreria de Zaragoza",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Los seses suscritores á la nueva edicion de la historia general de España del P. Juan de Mariana, á la cual se añade la continuacion del P. Miñana y la narracion de los sucesos principales desde el año de 1600 hasta el de 1808, pueden acudir á recoger el tercer tomo y adelantar el importe del 4.º á la libreria de Zaragoza, donde sigue abierta la suscripcion á 21 rs. tomo."
+        },
+        {
+          "autor": "Manuel Foy y Comes",
+          "traductor": null,
+          "título": "Tratado de cambios patricio, comercial, nacional y estrangero",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Tratado de cambios patricio, comercial, nacional y estrangero; obra póstuma de D. Manuel Foy y Comes.—Se suscribe en la libreria de Hortal y Compañia, plazuela de S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2534452.pdf",
+      "día_periódico": "04/11/1828",
+      "hallazgos": [
+        {
+          "autor": "Taveau",
+          "traductor": null,
+          "título": "Consejos á los fumadores sobre la conservacion de los dientes, seguidos de una esposicion de varias esperiencias que comprueban la eficacia del clorureto de cal para la desinfeccion del aliento sea cual fuere la causa de la exhalacion fétida",
+          "número_de_tomos": "un tomo",
+          "formato": "16.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Consejos á los fumadores sobre la conservacion de los dientes, seguidos de una esposicion de varias esperiencias que comprueban la eficacia del clorureto de cal para la desinfeccion del aliento sea cual fuere la causa de la exhalacion fétida, por Taveau, cirujano dentista, en un tomo en 16.º=Se hallará en la libreria de Hortal y Compañia, plazuela de S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2534490.pdf",
+      "día_periódico": "26/11/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534503.pdf",
+      "día_periódico": "08/12/1828",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Instrucciones para los comandantes de partidas ó destacamentos. Cuaderno necesario á los oficiales, sargentos y cabos encargados de tales comisiones, en el que están prevenidos cuantos lances pueden ocurrir y el modo de salir de ellos con facilidad; acompañado de modelos de recibos, cargos y cuentas, justificaciones de revista, relaciones de plus &c.",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": "rústica",
+          "precio": "3 rva.",
+          "lugares_de_venta": "libreria de Horla!, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Instrucciones para los comandantes de partidas ó destacamentos. Cuaderno necesario á los oficiales, sargentos y cabos encargados de tales comisiones, en el que están prevenidos cuantos lances pueden ocurrir y el modo de salir de ellos con facilidad; acompañado de modelos de recibos, cargos y cuentas, justificaciones de revista, relaciones de plus &c. Se vende en la libreria de Horla!, plazuela de S. Agustin, á 3 rva. con rústica."
+        }
+      ]
+    },
+    {
+      "PDF": "2534518.pdf",
+      "día_periódico": "19/12/1828",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534526.pdf",
+      "día_periódico": "27/12/1828",
+      "hallazgos": []
+    }
+  ]
+}
