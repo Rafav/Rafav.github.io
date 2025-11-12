@@ -1,0 +1,167 @@
+{
+  "Año": 1810,
+  "datos": [
+    {
+      "PDF": "2526472.pdf",
+      "día_periódico": "24/01/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526494.pdf",
+      "día_periódico": "21/02/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526516.pdf",
+      "día_periódico": "20/03/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526538.pdf",
+      "día_periódico": "16/04/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526561.pdf",
+      "día_periódico": "10/05/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526583.pdf",
+      "día_periódico": "11/06/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526936.pdf",
+      "día_periódico": "04/07/1810",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "EL OBSERVADOR",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "calle Ancha n.º 133",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "EL OBSERVADOR.— Periódico nuevo, cuyo primer número saldrá el viernes 6 del corriente. Se admiten suscripciones en el puesto de este periódico, calle Ancha n.º 133, en donde se hallará el prospecto."
+        }
+      ]
+    },
+    {
+      "PDF": "2526959.pdf",
+      "día_periódico": "27/07/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526983.pdf",
+      "día_periódico": "19/08/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527006.pdf",
+      "día_periódico": "10/09/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527029.pdf",
+      "día_periódico": "03/10/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527051.pdf",
+      "día_periódico": "29/10/1810",
+      "hallazgos": [
+        {
+          "autor": "J. A.",
+          "traductor": null,
+          "título": "Himno a las Cortes",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "imprenta de Don Manuel Carreño",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "HIMNO A LAS CORTES. Por J. A. para fortepiano y guitarra. Se hallará en la imprenta de Don Manuel Carreño."
+        }
+      ]
+    },
+    {
+      "PDF": "2527073.pdf",
+      "día_periódico": "22/11/1810",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527085.pdf",
+      "día_periódico": "04/12/1810",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Relacion circunstanciada del sitio de Ciudad-Rodrigo",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "despacho de la Gazeta, plazuela del Palillero",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En el despacho de la Gazeta, plazuela del Palillero, se venden la Relacion circunstanciada del sitio de Ciudad-Rodrigo"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Constitucion de España forjada en Bayona",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "despacho de la Gazeta, plazuela del Palillero",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En el despacho de la Gazeta, plazuela del Palillero, se venden la Constitucion de España forjada en Bayona; puesta en canciones de música conocida"
+        }
+      ]
+    },
+    {
+      "PDF": "2527096.pdf",
+      "día_periódico": "17/12/1810",
+      "hallazgos": [
+        {
+          "autor": "Julian de Diego Martin Garcia-Taso de la Vega",
+          "traductor": null,
+          "título": "Tratado de las diferencias de calenturas, su conocimiento, causas y método curativo, que conmunmente se hallan en España y las que suelen acaecer en el exército, para que no se confundan con la voz de tabardillo, y se curen bajo de una misma regla, causando muchos perjuicios á la nación",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Cerezo, junto al café del Correo",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "LIBRO -- Tratado de las diferencias de calenturas, su conocimiento, causas y método curativo, que conmunmente se hallan en España y las que suelen acaecer en el exército, para que no se confundan con la voz de tabardillo, y se curen bajo de una misma regla, causando muchos perjuicios á la nación. Por el doctor D. Julian de Diego Martin Garcia-Taso de la Vega. -- Se hallará en la librería de Cerezo, junto al café del Correo."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Don Juan Martin el Empecinado",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Cerezo, junto al café del Correo",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En la misma se vende la comedia nueva titulada Don Juan Martin el Empecinado."
+        }
+      ]
+    },
+    {
+      "PDF": "2527107.pdf",
+      "día_periódico": "28/12/1810",
+      "hallazgos": []
+    }
+  ]
+}
