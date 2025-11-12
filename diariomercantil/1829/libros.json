@@ -1,0 +1,327 @@
+{
+  "Año": 1829,
+  "datos": [
+    {
+      "PDF": "2530198.pdf",
+      "día_periódico": "22/07/1829",
+      "hallazgos": [
+        {
+          "autor": "Javier Bichat",
+          "traductor": "Boisseau",
+          "título": "Tratado de anatomia patologica, último curso de Javier Bichat, con un manuscrito autografo de Beclrad con una noticia sobre la vida y los trabajos de Bichat por Boisseau",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En la libreria de Hortal y Compañía, plazuela de S. Agustin, se suscribe al Tratado de anatomia patologica, último curso de Javier Bichat, con un manuscrito autografo de Beclrad con una noticia sobre la vida y los trabajos de Bichat por Boisseau, traducida al castellano y acompañará el retrato del autor"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "nuevo plan ignográfico de la ciudad de Valencia y parte de sus arrabales, con un pequeño mapa de sus cercanias",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En la libreria de Hortal y Compañía, plazuela de S. Agustin, se suscribe al nuevo plan ignográfico de la ciudad de Valencia y parte de sus arrabales, con un pequeño mapa de sus cercanias"
+        }
+      ]
+    },
+    {
+      "PDF": "2530220.pdf",
+      "día_periódico": "13/08/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530242.pdf",
+      "día_periódico": "04/09/1829",
+      "hallazgos": [
+        {
+          "autor": "Anquetil",
+          "traductor": null,
+          "título": "Compendio de Historia Universal",
+          "número_de_tomos": "12 tom.",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Orlat y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Compendio de Historia Universal de Mr. Anquetil, traducido, mejorado y aumentado con varias notas instructivas, y la descripcion historica de las naciones hasta nuestros dias; 12 tom. 8.º"
+        },
+        {
+          "autor": "A. J. L. Jourdan",
+          "traductor": "Justo Aguero y Juan Guilberte Avile",
+          "título": "Farmacopea universal",
+          "número_de_tomos": "4 tom.",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Orlat y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Farmacopea universal por A. J. L. Jourdan, doctor en medicina y miembro de varias sociedades literarias, traducida al castellano por D. Justo Aguero, profesor de medicina establecido en Madrid, y D. Juan Guilberte Avile, médico de la Real inclusa y colegio de la Paz y del Hospital de convalescencia de Madrid; 4 tom. 8.º"
+        }
+      ]
+    },
+    {
+      "PDF": "2530264.pdf",
+      "día_periódico": "26/09/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530286.pdf",
+      "día_periódico": "18/10/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530308.pdf",
+      "día_periódico": "09/11/1789",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Código de comercio",
+          "número_de_tomos": "un tomo",
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 3,
+          "página_periódico": 3,
+          "transcripción": "Código de comercio decretado, sancionado y promulgado en 30 de Mayo de 1829 de orden del Rey N. S.; en un tomo.—Se hallará en la libreria de Hortal y Compañía, plazuela de S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2530330.pdf",
+      "día_periódico": "01/12/1829",
+      "hallazgos": [
+        {
+          "autor": "Mr Anquetil",
+          "traductor": "traducido, reformado y aumentado",
+          "título": "Compendio de Historia universal de Mr Anquetil, traducido, reformado y aumentado con varias notas instructivas; y la pintura historica de todas las naciones hasta nuestros dias",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "A la librería de Hortal y Compañía, plazuela de S. Agustin, se servirán pasar los Sres. suscritores al Compendio de Historia universal de Mr Anquetil, traducido, reformado y aumentado con varias notas instructivas; y la pintura historica de todas las naciones hasta nuestros dias, á recoger el tomo primero y abonar el segundo"
+        },
+        {
+          "autor": "Juan Gottlieb Heineceo",
+          "traductor": null,
+          "título": "Recopilaciones del derecho civil",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "A la librería de Hortal y Compañía, plazuela de S. Agustin, se servirán pasar los Sres. suscritores á las Recopilaciones del derecho civil que escribió en latin Juan Gottlieb Heineceo, á recoger el tomo primero y abonar el segundo"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "D. Papis de Bobadillas",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "A la librería de Hortal y Compañía, plazuela de S. Agustin, se servirán pasar los Sres. suscritores á la Obra titulada D. Papis de Bobadillas á recoger el tomo quinto y abonar el cesto"
+        },
+        {
+          "autor": "Mr. Chansier",
+          "traductor": null,
+          "título": "Cuadros sinópticos de Zoonomia",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "A la librería de Hortal y Compañía, plazuela de S. Agustin, se servirán pasar los Sres. suscritores á los Cuadros sinópticos de Zoonomia, escrito en frances por Mr. Chansier, á recoger el cuaderno noveno y abonar el décimo"
+        }
+      ]
+    },
+    {
+      "PDF": "2530352.pdf",
+      "día_periódico": "23/12/1829",
+      "hallazgos": [
+        {
+          "autor": "Juan Eusebio Nieremberg",
+          "traductor": null,
+          "título": "Práctica del catecismo romano y doctrina cristiana",
+          "número_de_tomos": "un tomo",
+          "formato": "4.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "imprenta Gaditana",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Práctica del catecismo romano y doctrina cristiana, sacada principalmente de los catecismos de Pio V. Y. Clemente VIII, por el P. Juan Eusebio Nieremberg de la compañía de Jesus, un tomo en 4.º—Se hallará de venta en la imprenta Gaditana."
+        }
+      ]
+    },
+    {
+      "PDF": "2531991.pdf",
+      "día_periódico": "14/01/1829",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Tabla de lo útil para los escritorios",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 reales",
+          "lugares_de_venta": "imprenta Gaditana, calle de D. Carlos, y en las librerías de Hortal y Compañuela de S. Agustin, y de la viuda de Navarro, frente al Correo",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Tabla de lo útil para los escritorios, pues de una mirada se saben los dias del año y los de fiesta y misa. Se hallará á 4 reales. en la imprenta Gaditana, calle de D. Carlos, y en las librerías de Hortal y Compañuela de S. Agustin, y de la viuda de Navarro, frente al Correo."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Nuevo Ancián",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "20 rs. por el trimestre",
+          "lugares_de_venta": "imprenta Gaditana, calle de D. Carlos",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Habiéndose terminado en 31 de Diciembre próximo pasado la suscripcion al primer trimestre del periódico de música para guitarra, que se publica en Madrid titulado Nuevo Ancián, se previene á los suscriptores pasen á la imprenta Gaditana, calle de D. Carlos, á renovar la suscripcion al segundo trimestre para no cesar en las remesas. La suscripcion se sigue admitiendo á razon de 20 rs. por el trimestre."
+        }
+      ]
+    },
+    {
+      "PDF": "2532104.pdf",
+      "día_periódico": "05/02/1829",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Argumento de la ópera Elisa y Claudio",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rs.",
+          "lugares_de_venta": "despacho de billetes del Teatro Principal",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "TEATRO PRINCIPAL.= Elisa y Claudio (opera en 2 actos, música del maestro D. Saverin Mercadante). El argumento de dicha opera se halla de venta en el despacho de billetes á 4 rs."
+        }
+      ]
+    },
+    {
+      "PDF": "2532175.pdf",
+      "día_periódico": "27/02/1829",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Diario mercantil",
+          "número_de_tomos": null,
+          "formato": "medio pliego",
+          "encuadernación": null,
+          "precio": "20 rs. al mes, 57 por tres y 103 por medio año",
+          "lugares_de_venta": "libreria de Zaragoza en Cadiz",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "La utilidad que resulta al comercio de un periódico que reúna y convine los elementos que puedan dirigirlo y fomentarlo presentándole unas nociones precisas y exactas de la industria nacional y extrangera, es tan evidente y generalmente conocida, que seria agraviar al publico el tratar de comentarla ó ampliarla. Con esta verdad en vista, y bajo el prospecto de un periodico que empezará á salir el día 1.º de Marzo en la ciudad de Malaga con el título de Diario mercantil. Su objeto es el que indica en el primer párrafo de su prospecto. Constará de medio pliego, y el importe de la suscricion que se recibe en Cadiz en la libreria de Zaragoza, es de 20 rs. al mes, 57 por tres y 103 por medio año."
+        }
+      ]
+    },
+    {
+      "PDF": "2532230.pdf",
+      "día_periódico": "21/03/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532312.pdf",
+      "día_periódico": "12/04/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532441.pdf",
+      "día_periódico": "04/05/1829",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Real decreto para el establecimiento y organizacion del cuerpo de carabineros de costas y fronteras",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Horta y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "á la libreria de Horta y Compañia, plazuela de S. Agustin, donde tambien se vende el Real decreto para el establecimiento y organizacion del cuerpo de carabineros de costas y fronteras."
+        }
+      ]
+    },
+    {
+      "PDF": "2532493.pdf",
+      "día_periódico": "26/05/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532511.pdf",
+      "día_periódico": "07/06/1829",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532548.pdf",
+      "día_periódico": "18/06/1829",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Coleccion de los Reales Decretos y reglamentos, y de los acuerdos y disposiciones del Exmo. Ayuntamiento, y Real Tribunal del Consulado de esta ciudad, sobre la franquicia del puerto de Cadiz",
+          "número_de_tomos": null,
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "imprenta Gaditana",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Desde mañana se venderá en la imprenta Gaditana un cuadernito en 8.º con la coleccion de los Reales Decretos y reglamentos, y de los acuerdos y disposiciones del Exmo. Ayuntamiento, y Real Tribunal del Consulado de esta ciudad, sobre la franquicia del puerto de Cadiz."
+        }
+      ]
+    },
+    {
+      "PDF": "2532556.pdf",
+      "día_periódico": "26/06/1829",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Nuevo Añfion",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "20 rs. por cada trimestre",
+          "lugares_de_venta": "imprenta Gaditana, plazuela del Palillero",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Música.=Los suscritores al periodico de guitarra titulado el Nuevo Añfion pasarán á recoger el cuaderno num. 8, segundo del tercer trimestre, que contiene tema con variaciones sobre el motivo de una marcha del sitio de Corinto, del célebre maestro D. Fernando Rossini, y un tema nuevo con variaciones de D. Fernando Sor. Se suscribe á razon de 20 rs. por cada trimestre, en la imprenta Gaditana, plazuela del Palillero."
+        }
+      ]
+    }
+  ]
+}
