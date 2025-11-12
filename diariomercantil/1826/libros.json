@@ -1,0 +1,285 @@
+{
+  "Año": 1826,
+  "datos": [
+    {
+      "PDF": "2527556.pdf",
+      "día_periódico": "22/09/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527580.pdf",
+      "día_periódico": "14/10/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527603.pdf",
+      "día_periódico": "05/11/1826",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Argumento de Semiramis",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rvn",
+          "lugares_de_venta": "despacho de boletines",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El argumento de dicha ópera está de venta en el despacho de boletines á 4 rvn"
+        }
+      ]
+    },
+    {
+      "PDF": "2527646.pdf",
+      "día_periódico": "27/11/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527668.pdf",
+      "día_periódico": "19/12/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527720.pdf",
+      "día_periódico": "10/05/1826",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Real Arancel General de entrada de frutos, géneros y efectos del estrangero para Gobierno de las Aduanas del Reyno",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Navarro, frente á S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Real Arancel General de entrada de frutos, géneros y efectos del estrangero para Gobierno de las Aduanas del Reyno.—Se hallará en la librería de Navarro, frente á S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2527742.pdf",
+      "día_periódico": "01/06/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527766.pdf",
+      "día_periódico": "23/06/1826",
+      "hallazgos": [
+        {
+          "autor": "Dionisio Aguado",
+          "traductor": null,
+          "título": "Escuela de Guitarra teorica y practica",
+          "número_de_tomos": "un tomo",
+          "formato": "folio mayor",
+          "encuadernación": null,
+          "precio": "130 ron.",
+          "lugares_de_venta": "libreria de Zaragoza, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Escuela de Guitarra teorica y practica, puesta en lecciones por el célebre maestro D. Dionisio Aguado, con una estampa que representa el discipulo dando leccion: un tomo en folio mayor. Se hallará en la libreria de Zaragoza, plazuela de S. Agustin, á 130 ron."
+        },
+        {
+          "autor": "Sturm",
+          "traductor": null,
+          "título": "Reflexiones sobre la naturaleza",
+          "número_de_tomos": "seis tomos",
+          "formato": "dozavo de marca",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Reflexiones sobre la naturaleza, escritas en aleman por el célebre Sturm, y traducidas al castellano: cuarta edicion, en seis tomos en dozavo de marca; previniendo que los Sres. suscritores no abonarán interes alguno hasta no recibir toda la obra.—Se admiten sus criciones en la libreria de Hortal y Compañia, plazuela de S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2527797.pdf",
+      "día_periódico": "15/07/1896",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Argumento de Elisa y Claudio ó el amor protegido por la amistad",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rs.",
+          "lugares_de_venta": "despacho de boletines",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "El argumento de dicha ópera se hallará de venta en el despacho de boletines á 4 rs."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Epítome de la vida de Rossini acompañado de su retrato",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "6 rs.",
+          "lugares_de_venta": "despacho de boletines",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "igualmente el Epítome de la vida de Rossini acompañado de su retrato á 6 rs."
+        }
+      ]
+    },
+    {
+      "PDF": "2527819.pdf",
+      "día_periódico": "06/08/1826",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Blanca y Fallero",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rs.",
+          "lugares_de_venta": "despacho de billetes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El argumento de dicha ópera está de venta en el despacho de billetes á 4 rs."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Epítome de la vida de Rossini",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "6 rs.",
+          "lugares_de_venta": "despacho de billetes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "igualmente el Epítome de la vida de Rossini á 6 rs."
+        }
+      ]
+    },
+    {
+      "PDF": "2527841.pdf",
+      "día_periódico": "28/08/1826",
+      "hallazgos": [
+        {
+          "autor": "una española",
+          "traductor": null,
+          "título": "Teodoro ó el huerfano agradecido: novela original",
+          "número_de_tomos": "un tomo",
+          "formato": null,
+          "encuadernación": null,
+          "precio": "8 rs.",
+          "lugares_de_venta": "libreria de Navarro, frente á San Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Teodoro ó el huerfano agradecido: novela original en un tomo, escrita por una española. Esta obrita, donde está retratada la virtud con los colores mas interesantes, es la mejor leccion para una jóven que quiera conducirse en la sociedad con el debido acierto.—Se hallará en la libreria de Navarro, frente á San Agustin, á 8 rs."
+        }
+      ]
+    },
+    {
+      "PDF": "2534208.pdf",
+      "día_periódico": "19/01/1826",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "L'album militaire de Mr. Bériat",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "Mr. Tadieu officier d'administration à l'hôpital militaire de Cadis",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "M M les officiers de l'armée française qui desireraient souscrire á L'album militaire de Mr. Bériat Sous-Intendant militaire, peuvent s'adresser á Mr. Tadieu officier d'administration à l'hôpital militaire de Cadis, qui est chargé de recueillir les souscriptions pour cet ouvrage. Il donnera connaissance des conditions de la souscription."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Reglamento general para las escuelas de latinidad y los colegios de humanidades",
+          "número_de_tomos": null,
+          "formato": "4.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Reglamento general para las escuelas de latinidad y los colegios de humanidades: un cuaderno en 4.º Se hallará en la librería de Hortal y Compañía, plazuela de S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2534268.pdf",
+      "día_periódico": "10/02/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534371.pdf",
+      "día_periódico": "04/03/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534441.pdf",
+      "día_periódico": "26/03/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534465.pdf",
+      "día_periódico": "07/04/1826",
+      "hallazgos": [
+        {
+          "autor": "Felix María Samaniego",
+          "traductor": null,
+          "título": "Fábulas en verso castellano para uso de las escuelas",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": "pergamino o pasta",
+          "precio": "5 rvn. en pergamino, 6 en pasta",
+          "lugares_de_venta": "librería de Hortal y Compañía plazuela de Agustin núm. 201",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Fábulas en verso castellano para uso de las escuelas por D. Felix María Samaniego, un tomo 8.º pergamino á 5 rvn. y en pasta á 6: Se hallará en la librería de Hortal y Compañía plazuela de Agustin núm. 201."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Partida Doble",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "importe del 5.º cuaderno",
+          "lugares_de_venta": null,
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Los Sres. suscritores á la Partida Doble, se servirán recoger el 4.º cuaderno y satisfacer el importe del 5.º, último de la obra."
+        },
+        {
+          "autor": "Nuñez Taboada",
+          "traductor": null,
+          "título": "diccionario francés español, y español y francés",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "imprenta de este diario",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "El que quisiere vender un diccionario francés español, y español y francés de Nuñez Taboada, acudirá á la imprenta de este diario."
+        }
+      ]
+    },
+    {
+      "PDF": "2534504.pdf",
+      "día_periódico": "18/04/1826",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534534.pdf",
+      "día_periódico": "25/04/1826",
+      "hallazgos": []
+    }
+  ]
+}

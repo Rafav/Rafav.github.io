@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario Mercantil - Hallazgos Bibliográficos 1807</title>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #3182ce;
+            --text-color: #2d3748;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --highlight-bg: #ebf8ff;
+            --accent-color: #805ad5;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 0;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .container.with-pdf {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .content-panel {
+            min-width: 0;
+        }
+
+        .year-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .year-title {
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+
+        .year-subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        .stats-summary {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .entry-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .entry-card.no-findings {
+            opacity: 0.6;
+            border-left-color: #cbd5e0;
+        }
+
+        .entry-header {
+            padding: 25px;
+            background: linear-gradient(to right, #f7fafc 0%, white 100%);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .entry-date {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pdf-link {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 0.5em;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .pdf-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .pdf-name {
+            font-size: 0.9em;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+
+        .findings-count {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: 15px;
+        }
+
+        .findings-section {
+            padding: 0;
+        }
+
+        .finding-card {
+            padding: 25px;
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.2s;
+        }
+
+        .finding-card:hover {
+            background: var(--highlight-bg);
+        }
+
+        .finding-card:last-child {
+            border-bottom: none;
+        }
+
+        .finding-title {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin: 0 0 15px 0;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 12px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .metadata-item {
+            display: flex;
+            gap: 8px;
+        }
+
+        .metadata-label {
+            font-weight: 600;
+            color: var(--secondary-color);
+            min-width: 120px;
+        }
+
+        .metadata-value {
+            color: var(--text-color);
+        }
+
+        .page-reference {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-color);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+
+        .page-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .page-link:hover {
+            text-decoration: underline;
+        }
+
+        .transcription {
+            background: #fefefe;
+            border-left: 3px solid var(--accent-color);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 6px;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .transcription-label {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            display: block;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .no-findings-message {
+            padding: 30px;
+            text-align: center;
+            color: #718096;
+            font-style: italic;
+        }
+
+        .pdf-panel {
+            display: none;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 20px;
+            height: calc(100vh - 40px);
+            overflow: hidden;
+        }
+
+        .pdf-panel.expanded {
+            display: block;
+        }
+
+        .pdf-controls {
+            padding: 15px 25px;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pdf-info {
+            font-size: 0.95em;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: calc(100vh - 100px);
+            border: none;
+        }
+
+        .btn-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            transition: all 0.2s;
+        }
+
+        .btn-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 1.3em;
+            color: #666;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #c53030;
+        }
+
+        @media (max-width: 768px) {
+            .container.with-pdf {
+                grid-template-columns: 1fr;
+            }
+
+            .pdf-panel {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100vh;
+                z-index: 1000;
+                border-radius: 0;
+            }
+
+            .metadata-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div class="content-panel">
+            <div class="loading">📚 Cargando hallazgos bibliográficos...</div>
+        </div>
+    </div>
+
+    <script>
+        function showPdfPage(pdfName, pageNum) {
+            const container = document.querySelector('.container');
+            const existingPanel = document.getElementById('pdfPanel');
+
+            if (existingPanel) {
+                if (existingPanel.getAttribute('data-pdf') === pdfName && 
+                    existingPanel.getAttribute('data-page') === String(pageNum)) {
+                    container.classList.remove('with-pdf');
+                    existingPanel.remove();
+                    return;
+                }
+                existingPanel.remove();
+            }
+
+            const pdfPanel = document.createElement('div');
+            pdfPanel.id = 'pdfPanel';
+            pdfPanel.className = 'pdf-panel expanded';
+            pdfPanel.setAttribute('data-pdf', pdfName);
+            pdfPanel.setAttribute('data-page', pageNum);
+            
+            const pdfUrl = `${pdfName}#page=${pageNum}`;
+            pdfPanel.innerHTML = `
+                <div class="pdf-controls">
+                    <div class="pdf-info">
+                        <strong>${pdfName}</strong> - Página ${pageNum}
+                    </div>
+                    <button class="btn-close" onclick="closePdfViewer()">✕ Cerrar</button>
+                </div>
+                <embed class="pdf-frame" src="${pdfUrl}" type="application/pdf">
+            `;
+
+            container.classList.add('with-pdf');
+            container.appendChild(pdfPanel);
+        }
+
+        function closePdfViewer() {
+            const container = document.querySelector('.container');
+            const pdfPanel = document.getElementById('pdfPanel');
+
+            container.classList.remove('with-pdf');
+            if (pdfPanel) {
+                pdfPanel.remove();
+            }
+        }
+
+        function renderFinding(finding, pdfName) {
+            const hasContent = finding.título || finding.autor || finding.transcripción;
+            if (!hasContent) return '';
+
+            return `
+                <div class="finding-card">
+                    ${finding.título ? `
+                        <h3 class="finding-title">${finding.título}</h3>
+                    ` : ''}
+                    
+                    <div class="metadata-grid">
+                        ${finding.autor ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Autor:</span>
+                                <span class="metadata-value">${finding.autor}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${finding.traductor ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Traductor:</span>
+                                <span class="metadata-value">${finding.traductor}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${finding.número_de_tomos ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Tomos:</span>
+                                <span class="metadata-value">${finding.número_de_tomos}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${finding.formato ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Formato:</span>
+                                <span class="metadata-value">${finding.formato}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${finding.encuadernación ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Encuadernación:</span>
+                                <span class="metadata-value">${finding.encuadernación}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${finding.precio ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Precio:</span>
+                                <span class="metadata-value">${finding.precio}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${finding.lugares_de_venta ? `
+                            <div class="metadata-item">
+                                <span class="metadata-label">Lugares de venta:</span>
+                                <span class="metadata-value">${finding.lugares_de_venta}</span>
+                            </div>
+                        ` : ''}
+                    </div>
+
+                    ${finding.página_pdf || finding.página_periódico ? `
+                        <div style="margin: 15px 0;">
+                            ${finding.página_periódico ? `
+                                <span class="page-reference">
+                                    📄 Página periódico: ${finding.página_periódico}
+                                </span>
+                            ` : ''}
+                            ${finding.página_pdf ? `
+                                <span class="page-reference">
+                                    <a class="page-link" onclick="showPdfPage('${pdfName}', ${finding.página_pdf})">
+                                        🔍 Ver en PDF (pág. ${finding.página_pdf})
+                                    </a>
+                                </span>
+                            ` : ''}
+                        </div>
+                    ` : ''}
+
+                    ${finding.transcripción ? `
+                        <div class="transcription">
+                            <span class="transcription-label">📜 Transcripción:</span>
+                            ${finding.transcripción}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function renderEntry(entry) {
+            const hasFindings = entry.hallazgos && entry.hallazgos.length > 0;
+            
+            return `
+                <div class="entry-card ${!hasFindings ? 'no-findings' : ''}">
+                    <div class="entry-header">
+                        <h2 class="entry-date">
+                            <span>
+                                ${entry.día_periódico}
+                                ${hasFindings ? `
+                                    <span class="findings-count">
+                                        ${entry.hallazgos.length} hallazgo${entry.hallazgos.length !== 1 ? 's' : ''}
+                                    </span>
+                                ` : ''}
+                            </span>
+                            <a class="pdf-link" onclick="showPdfPage('${entry.PDF}', 1)">
+                                📄 Ver PDF
+                            </a>
+                        </h2>
+                        <div class="pdf-name">${entry.PDF}</div>
+                    </div>
+
+                    ${hasFindings ? `
+                        <div class="findings-section">
+                            ${entry.hallazgos.map(finding => 
+                                renderFinding(finding, entry.PDF)
+                            ).join('')}
+                        </div>
+                    ` : `
+                        <div class="no-findings-message">
+                            Sin hallazgos bibliográficos registrados para esta edición
+                        </div>
+                    `}
+                </div>
+            `;
+        }
+
+        function calculateStats(data) {
+            const totalEntries = data.datos.length;
+            const entriesWithFindings = data.datos.filter(e => e.hallazgos && e.hallazgos.length > 0).length;
+            const totalFindings = data.datos.reduce((sum, e) => sum + (e.hallazgos?.length || 0), 0);
+            const findingsWithAuthor = data.datos.reduce((sum, e) => 
+                sum + (e.hallazgos?.filter(f => f.autor).length || 0), 0
+            );
+
+            return { totalEntries, entriesWithFindings, totalFindings, findingsWithAuthor };
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const app = document.querySelector('.content-panel');
+
+            try {
+                const response = await fetch('libros.json');
+                if (!response.ok) throw new Error('Error al cargar el archivo JSON');
+                const data = await response.json();
+
+                const stats = calculateStats(data);
+
+                app.innerHTML = `
+                    <div class="year-header">
+                        <h1 class="year-title">📚 Diario Mercantil ${data.Año}</h1>
+                        <p class="year-subtitle">Hallazgos bibliográficos y referencias culturales</p>
+                    </div>
+
+                    <div class="stats-summary">
+                        <div class="stat-item">
+                            <div class="stat-number">${stats.totalEntries}</div>
+                            <div class="stat-label">Ediciones totales</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">${stats.entriesWithFindings}</div>
+                            <div class="stat-label">Con hallazgos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">${stats.totalFindings}</div>
+                            <div class="stat-label">Hallazgos totales</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">${stats.findingsWithAuthor}</div>
+                            <div class="stat-label">Con autor identificado</div>
+                        </div>
+                    </div>
+
+                    ${data.datos.map(entry => renderEntry(entry)).join('')}
+                `;
+
+            } catch (error) {
+                app.innerHTML = `
+                    <div class="error">
+                        <strong>❌ Error al cargar los datos</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
