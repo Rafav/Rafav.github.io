@@ -1,0 +1,216 @@
+{
+  "Año": 1818,
+  "datos": [
+    {
+      "PDF": "2528799.pdf",
+      "día_periódico": "22/07/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528872.pdf",
+      "día_periódico": "13/08/1818",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "La Lira de Apolo",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "20 rvn. por cuaderno franco de porte",
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Ha llegado el noveno número, perteneciente al mes de Julio próximo pasado, del periódico filarmónico La Lira de Apolo. Los señores suscriptores se servirán pasar á recogerle y adelantar el importe del décimo á la librería de Picardo, calle de la Carne núm. 186, donde se admiten suscripciones á razon de 20 rvn. por cuaderno franco de porte."
+        }
+      ]
+    },
+    {
+      "PDF": "2528902.pdf",
+      "día_periódico": "04/09/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528924.pdf",
+      "día_periódico": "26/09/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528946.pdf",
+      "día_periódico": "18/10/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528969.pdf",
+      "día_periódico": "10/11/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528991.pdf",
+      "día_periódico": "02/12/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2529016.pdf",
+      "día_periódico": "24/12/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532851.pdf",
+      "día_periódico": "15/01/1818",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "La Amelia ó desgraciados efectos de la extremada sensibilidad",
+          "número_de_tomos": "un tomo",
+          "formato": "dozavo",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "La Amelia ó desgraciados efectos de la extremada sensibilidad, un tomo en dozavo; Se hallarán en la librería de Picardo, calle de la Carne núm. 186."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Pablo y Virginia",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "Pablo y Virginia, con seis láminas, un tomo en 8.º; Se hallarán en la librería de Picardo, calle de la Carne núm. 186."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "La Matilde",
+          "número_de_tomos": "tres tomos",
+          "formato": "dozavo",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "La Matilde, tres tomos en dozavo; Se hallarán en la librería de Picardo, calle de la Carne núm. 186."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Memorias para la historia de la guerra de la revolucion española",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "Memorias para la historia de la guerra de la revolucion española, un tomo en 8.º; Se hallarán en la librería de Picardo, calle de la Carne núm. 186."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Curso de taquigrafía ó arte de escribir tan pronto como se habla",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "Curso de taquigrafía ó arte de escribir tan pronto como se habla.—Se hallarán en la librería de Picardo, calle de la Carne núm. 186."
+        }
+      ]
+    },
+    {
+      "PDF": "2532907.pdf",
+      "día_periódico": "06/02/1818",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Guia de Forasteros y de Comercio de esta Plaza",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": "rústica",
+          "precio": "12 rs. en rústica",
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186, y de Pont, calle de San Francisco",
+          "página_pdf": 8,
+          "página_periódico": 8,
+          "transcripción": "Se admiten suscripciones á la Guia de Forasteros y de Comercio de esta Plaza desde hoy hasta el dia 20 del corriente, en que probablemente estará concluida, á razon de 12 rs. en rústica en la librería de Picardo, calle de la Carne núm. 186, y de Pont, calle de San Francisco."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Diario Mercantil de Cádiz",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "10 rs. por los dias de correo, y á 20 por todo el mes",
+          "lugares_de_venta": "despachos de Picardo, calle de la Carne; de Pont, calle de S. Francisco; y de Nuñez, plazuela del Correó, y de Carreño, calle Ancha",
+          "página_pdf": 8,
+          "página_periódico": 8,
+          "transcripción": "Este Periódico consta de medio pliego diario y de uno en los dias que sale el correo, en los que se incluyen los precios, cambios y seguros de esta Plaza, y los buques que se hallan á la carga para los puertos de América y Europa. Se admiten suscripciones en los despachos de Picardo, calle de la Carne; de Pont, calle de S. Francisco; y de Nuñez, plazuela del Correó, y de Carreño, calle Ancha á razon de 10 rs. por los dias de correo, y á 20 por todo el mes."
+        }
+      ]
+    },
+    {
+      "PDF": "2532951.pdf",
+      "día_periódico": "28/02/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532982.pdf",
+      "día_periódico": "22/03/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533027.pdf",
+      "día_periódico": "13/04/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533067.pdf",
+      "día_periódico": "05/05/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533113.pdf",
+      "día_periódico": "27/05/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533144.pdf",
+      "día_periódico": "08/06/1818",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533171.pdf",
+      "día_periódico": "18/06/1818",
+      "hallazgos": [
+        {
+          "autor": "Augusto La-Fontaine",
+          "traductor": null,
+          "título": "Biblioteca universal de novelas, cuentos é historias instructivas y agradables",
+          "número_de_tomos": "Tomos 7 y 8",
+          "formato": null,
+          "encuadernación": "rústica o pasta",
+          "precio": "12 rs. en rústica y 15 rs. en pasta cada tomo, suscripciones á 10 rs. en rústica y 13 rs. en pasta para tomos sucesivos",
+          "lugares_de_venta": "libreria de Picardo, calle de la Carne",
+          "página_pdf": 8,
+          "página_periódico": 8,
+          "transcripción": "LIBROS.—Biblioteca universal de novelas, cuentos é historias instructivas y agradables. Tomos 7.° y 8.° contienen la Maria Menzikof y Fedor Dolgoruki, historia rusa sacada de la que escribió en aleman Augusto La-Fontaine. Hay pocas novelas que presenten una leccion moral mas importante, mayor interes, mas nobleza de sentimientos, mas grandeza de ánimo, caracteres mas heróicos, y mas bien sostenidos, mayor contraste, mas grande estrago; trastorno de fortunas, pasiones mas sublimes y fuertes, mayor fuerza de imaginacion y colorido mas vivo y natural. Se halla de venta con los anteriores en la libreria de Picardo, calle de la Carne á 12 rs. en rústica y 15 en pasta cada tomo, donde tambien se admiten suscripciones para los tomos sucesivos á 10 rs. en rústica y 13 en pasta."
+        }
+      ]
+    },
+    {
+      "PDF": "2533191.pdf",
+      "día_periódico": "26/06/1818",
+      "hallazgos": []
+    }
+  ]
+}
