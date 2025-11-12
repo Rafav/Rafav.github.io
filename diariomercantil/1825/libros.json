@@ -1,0 +1,123 @@
+{
+  "Año": 1825,
+  "datos": [
+    {
+      "PDF": "2527435.pdf",
+      "día_periódico": "23/09/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527457.pdf",
+      "día_periódico": "15/10/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527479.pdf",
+      "día_periódico": "06/11/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527501.pdf",
+      "día_periódico": "28/11/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527523.pdf",
+      "día_periódico": "20/12/1825",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Estudio de la anatomía de la cabeza del cuerpo humano",
+          "número_de_tomos": "Dos cuadernos",
+          "formato": "folio marquilla",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "Madrid en la librería de Escamilla; Sevilla en la de Hidalgo; Barcelona en la de Bergnes de Pfeferrer; en Valencia en la de Mompié; en la Coruña en la de Cardeza, y en Cadiz en la de Zaragoza",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Estudio de la anatomía de la cabeza del cuerpo humano. Dos cuadernos, folio marquilla con cuatro estampas del tamaño natural, grabadas á buril;iluminalas á mano y acompañadas del testo y e plicaciones correspondientes. La primera lámina representa las principales arterias de la parte esterior de la cabeza, cara y cuello. La segunda todas las venas de la cabeza, cara y cuello. La tercera mansfiesta una seccion vertical de la cabeza, por medio de la cual se perciben claramente los diferentes órganos contenidos en lo interior de la cabeza y cuello. La cuarta demuestra todos los nervios que cubren la cabeza, cara y cuello. Tanto los dibujos de estas anatomías, como las respectivas esplicaciones, se han tomido de los mas celebres anatómicos, Haller, Walter, Fife y Mokel.—Se hallan de venta en Madrid en la librería de Escamilla...; en Sevilla en la de Hidalgo; en Barcelona en la de Bergnes; en Pfeferrer; en Valencia en la de Mompié; en la Coruña en la de Cardeza, y en Cadiz en la de Zaragoza."
+        }
+      ]
+    },
+    {
+      "PDF": "2528281.pdf",
+      "día_periódico": "11/05/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528303.pdf",
+      "día_periódico": "02/06/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528325.pdf",
+      "día_periódico": "24/06/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528347.pdf",
+      "día_periódico": "16/07/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528369.pdf",
+      "día_periódico": "07/08/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528391.pdf",
+      "día_periódico": "29/08/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532619.pdf",
+      "día_periódico": "20/01/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532670.pdf",
+      "día_periódico": "11/02/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2532703.pdf",
+      "día_periódico": "05/03/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533112.pdf",
+      "día_periódico": "27/03/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533207.pdf",
+      "día_periódico": "08/04/1825",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Anuario universal ó almanak enciclopedico y prontuario universal general de noticias para el año de 1825",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "plazuela de San Agustin, librería de Hortal y Compañía, núm. 201",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Anuario universal ó almanak enciclopedico y prontuario universal general de noticias para el año de 1825: un tomo en 8.º—Se hallará en la plazuela de San Agustin, librería de Hortal y Compañía, núm. 201."
+        }
+      ]
+    },
+    {
+      "PDF": "2533224.pdf",
+      "día_periódico": "19/04/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2533246.pdf",
+      "día_periódico": "26/04/1825",
+      "hallazgos": []
+    }
+  ]
+}
