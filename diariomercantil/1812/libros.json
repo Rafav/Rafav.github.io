@@ -1,0 +1,153 @@
+{
+  "Año": 1812,
+  "datos": [
+    {
+      "PDF": "2525093.pdf",
+      "día_periódico": "23/01/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525115.pdf",
+      "día_periódico": "15/02/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525137.pdf",
+      "día_periódico": "12/03/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525159.pdf",
+      "día_periódico": "04/04/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525181.pdf",
+      "día_periódico": "26/04/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525203.pdf",
+      "día_periódico": "21/05/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525226.pdf",
+      "día_periódico": "14/06/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526625.pdf",
+      "día_periódico": "06/07/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526647.pdf",
+      "día_periódico": "28/07/1812",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Contestacion del autor del diccionario crítico-burlesco á la primera calificacion de esta obra, expedida por la Junta Censoria de la provincia marítima de Cádiz",
+          "número_de_tomos": null,
+          "formato": "quarto",
+          "encuadernación": null,
+          "precio": "12 rs.",
+          "lugares_de_venta": "librería de Salcedo y puestos de papeles públicos",
+          "página_pdf": 4,
+          "página_periódico": 112,
+          "transcripción": "Contestacion del autor del diccionario crítico-burlesco á la primera calificacion de esta obra, expedida por la Junta Censoria de la provincia marítima de Cádiz. Cuaderno en quarto, véndese á 12 rs. en la librería de Salcedo y puestos de papeles públicos."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Tratado sobre el órden y método que se necesita observar para la justa y legítima inversion de los caudales públicos en los exércitos; útil para las contadurías y tesorerías de campaña, comisarios de guerra y demas empleados en el ramo de hacienda de distribucion",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "imprenta real y demás puestos de papeles",
+          "página_pdf": 4,
+          "página_periódico": 112,
+          "transcripción": "OTRO. Tratado sobre el órden y método que se necesita observar para la justa y legítima inversion de los caudales públicos en los exércitos; útil para las contadurías y tesorerías de campaña, comisarios de guerra y demas empleados en el ramo de hacienda de distribucion: se hallará en la imprenta real y demás puestos de papeles."
+        }
+      ]
+    },
+    {
+      "PDF": "2526669.pdf",
+      "día_periódico": "21/08/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526691.pdf",
+      "día_periódico": "12/09/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526713.pdf",
+      "día_periódico": "05/10/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526735.pdf",
+      "día_periódico": "28/10/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526757.pdf",
+      "día_periódico": "23/11/1812",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526779.pdf",
+      "día_periódico": "19/12/1812",
+      "hallazgos": [
+        {
+          "autor": "José Maria de Miera Pacheco",
+          "traductor": null,
+          "título": "Discurso que en la villa de Estepa y en su jura de la Constitucion politica de la Monarquia pronunció el Dr. D. José Maria de Miera Pacheco, primer capellan de la real capilla de Aranjuez, el 18 de octubre de 1812: segunda edicion",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "los puestos de papeles públicos",
+          "página_pdf": 4,
+          "página_periódico": 314,
+          "transcripción": "Discurso que en la villa de Estepa y en su jura de la Constitucion politica de la Monarquia pronunció el Dr. D. José Maria de Miera Pacheco, primer capellan de la real capilla de Aranjuez, el 18 de octubre de 1812: segunda edicion. El publico, justo expectador del verdadero mérito, ha dado ya su dictamen sobre estos papeles interesantes, y el ansia con que los busca, hace su apologia. En ellos se ve la voz uniforme de la religion y la razon hablar á la par, y hermanadas de un modo admirable la sencillez y moderacion del evangelio, con los adornos y primores de la elocuencia. Seria de desear, que su digno autor tuviese muchos imitadores, y que solo subiesen á la Cátedra del Espíritu Santo los que estuviesen imbuidos de iguales ideas, gusto, ilustracion y patriotismo. Se hallan de venta en los puestos de papeles públicos."
+        },
+        {
+          "autor": "José Maria de Miera Pacheco",
+          "traductor": null,
+          "título": "La primera Apologia de la Patria",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "los puestos de papeles públicos",
+          "página_pdf": 4,
+          "página_periódico": 314,
+          "transcripción": "La primera Apologia de la Patria; discurso del mismo autor, pronunciado en la real capilla de Aranjuez, año 1805. El publico, justo expectador del verdadero mérito, ha dado ya su dictamen sobre estos papeles interesantes, y el ansia con que los busca, hace su apologia. En ellos se ve la voz uniforme de la religion y la razon hablar á la par, y hermanadas de un modo admirable la sencillez y moderacion del evangelio, con los adornos y primores de la elocuencia. Seria de desear, que su digno autor tuviese muchos imitadores, y que solo subiesen á la Cátedra del Espíritu Santo los que estuviesen imbuidos de iguales ideas, gusto, ilustracion y patriotismo. Se hallan de venta en los puestos de papeles públicos."
+        }
+      ]
+    },
+    {
+      "PDF": "2526784.pdf",
+      "día_periódico": "26/12/1812",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Historia filosofica de la sociedad humana",
+          "número_de_tomos": "Un tomo",
+          "formato": "8.º marquilla",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Salcedo, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 342,
+          "transcripción": "Historia filosofica de la sociedad humana, traducida del italiano al español, Un tomo en 8.º marquilla. Se hallará en la librería de Salcedo, plazuela de S. Agustin. Explícanse en dicha obrita los principios del derecho público mirados à la luz de la verdadera filosofía, y por tanto es muy útil y recomendable en el dia su lectura."
+        }
+      ]
+    }
+  ]
+}
