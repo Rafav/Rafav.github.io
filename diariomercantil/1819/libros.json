@@ -1,0 +1,136 @@
+{
+  "Año": 1819,
+  "datos": [
+    {
+      "PDF": "2525381.pdf",
+      "día_periódico": "21/01/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525407.pdf",
+      "día_periódico": "12/02/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525429.pdf",
+      "día_periódico": "06/03/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525451.pdf",
+      "día_periódico": "28/03/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525473.pdf",
+      "día_periódico": "19/04/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525495.pdf",
+      "día_periódico": "11/05/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525517.pdf",
+      "día_periódico": "02/06/1819",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Diario Mercantil de Cadiz",
+          "número_de_tomos": null,
+          "formato": "medio pliego diario y de uno en los días que sale el correo",
+          "encuadernación": null,
+          "precio": "10 rvn. por los dias de correo, y á 20 por todo el mes",
+          "lugares_de_venta": "librería de Picardo, calle de la Carne (Cádiz); en Madrid, en la de Marute, frente de la imprenta Real; en Sevilla, en la de Berard, calle de Génova; y en Málaga en la de Carrera",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Este Periódico consta de medio pliego diario y de uno en los días que sale el correo, en los que se incluyen los precios, cambios y seguros de esta Plaza, y los buques que se hallan á la carga para los puertos de America y Europa. Se admiten suscripciones en esta ciudad en la librería de Picardo, calle de la Carne; á razon de 10 rvn. por los dias de correo, y á 20 por todo el mes. A los mismos precios se admiten en Madrid, en la de Marute; frente de la imprenta Real; en Sevilla, en la de Berard; calle de Génova, y en Málaga en la de Carrera; siendo los portes de cuenta de los Señores suscritores."
+        }
+      ]
+    },
+    {
+      "PDF": "2525539.pdf",
+      "día_periódico": "24/06/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530920.pdf",
+      "día_periódico": "16/07/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530955.pdf",
+      "día_periódico": "07/08/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2530981.pdf",
+      "día_periódico": "29/08/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531003.pdf",
+      "día_periódico": "20/09/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531026.pdf",
+      "día_periódico": "12/10/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531048.pdf",
+      "día_periódico": "03/11/1819",
+      "hallazgos": [
+        {
+          "autor": "Real observatorio de la ciudad de S. Fernando",
+          "traductor": null,
+          "título": "Calendario del año de 1820 para la ciudad y obispado de Cádiz, Islas Canarias y demás posesiones de S. M. en Africa",
+          "número_de_tomos": null,
+          "formato": "dos pliegos",
+          "encuadernación": null,
+          "precio": "real de vellon",
+          "lugares_de_venta": "libreria de la viuda de Navarro junto á S. Agustin, y en la de Zaragoza frente á dicha Iglesia",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Calendario del año de 1820 para la ciudad y obispado de Cádiz, Islas Canarias y demás posesiones de S. M. en Africa, compuesto por el Real observatorio de la ciudad de S. Fernando con privilegio exclusivo de S. M.=El rendido en dos pliegos á real de vellon. Se hallará en la libreria de la viuda de Navarro junto á S. Agustin, y en la de Zaragoza frente á dicha Iglesia."
+        },
+        {
+          "autor": "Real observatorio de la ciudad de S. Fernando",
+          "traductor": null,
+          "título": "Calendario del año de 1820 para la ciudad y obispado de Cádiz, Islas Canarias y demás posesiones de S. M. en Africa",
+          "número_de_tomos": null,
+          "formato": "libro",
+          "encuadernación": null,
+          "precio": "tres reales vellon",
+          "lugares_de_venta": "libreria de la viuda de Navarro junto á S. Agustin, y en la de Zaragoza frente á dicha Iglesia",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Calendario del año de 1820 para la ciudad y obispado de Cádiz, Islas Canarias y demás posesiones de S. M. en Africa, compuesto por el Real observatorio de la ciudad de S. Fernando con privilegio exclusivo de S. M.=El libro que contiene ademas de los articulos generales y festividades, las horas verdaderas de salir y ponerse el sol en Cádiz, la hora que debe señalar el relox al ser medio dia verdadero, las horas de todas las mareas del año en bahia, y las mayores y menores mareas vivas, á tres reales vellon. Se hallará en la libreria de la viuda de Navarro junto á S. Agustin, y en la de Zaragoza frente á dicha Iglesia."
+        }
+      ]
+    },
+    {
+      "PDF": "2531070.pdf",
+      "día_periódico": "25/11/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531082.pdf",
+      "día_periódico": "07/12/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531094.pdf",
+      "día_periódico": "19/12/1819",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531102.pdf",
+      "día_periódico": "27/12/1819",
+      "hallazgos": []
+    }
+  ]
+}
