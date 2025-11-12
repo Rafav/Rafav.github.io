@@ -286,7 +286,7 @@
             pdfPanel.className = 'pdf-panel expanded';
             pdfPanel.setAttribute('data-pdf', pdfName);
             pdfPanel.setAttribute('data-page', pageNum);
-            const pdfUrl = `pdfs/${pdfName}#page=${pageNum}`;
+            const pdfUrl = `${pdfName}#page=${pageNum}`;
             pdfPanel.innerHTML = `
         <div class="pdf-controls">
             <span>${pdfName} - Página ${pageNum}</span>
