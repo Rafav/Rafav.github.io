@@ -1,0 +1,109 @@
+{
+  "Año": 1817,
+  "datos": [
+    {
+      "PDF": "2523464.pdf",
+      "día_periódico": "23/07/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523486.pdf",
+      "día_periódico": "15/08/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523508.pdf",
+      "día_periódico": "06/09/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523530.pdf",
+      "día_periódico": "28/09/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523553.pdf",
+      "día_periódico": "20/10/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523575.pdf",
+      "día_periódico": "11/11/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523597.pdf",
+      "día_periódico": "03/12/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523619.pdf",
+      "día_periódico": "25/12/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534586.pdf",
+      "día_periódico": "17/01/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534621.pdf",
+      "día_periódico": "09/02/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534659.pdf",
+      "día_periódico": "04/03/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534705.pdf",
+      "día_periódico": "26/03/1817",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Epidemiologia española ó historia cronológica de las pestes, contagios, epidemias y epizootias que han acaecido en España desde la venida de los Cartaginenses hasta el año de 1801, con noticia de algunas otras enfermedades de esta especie que han sufrido los españoles en otros reinos, y de los autores nacionales que han escrito sobre estas materias, así en la península como fuera de ella",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": "rústica",
+          "precio": "20 rs.",
+          "lugares_de_venta": "librería de Picardo, calle de la Carne núm. 186",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "LIBROS=Epidemiologia española ó historia cronológica de las pestes, contagios, epidemias y epizootias que han acaecido en España desde la venida de los Cartaginenses hasta el año de 1801, con noticia de algunas otras enfermedades de esta especie que han sufrido los españoles en otros reinos, y de los autores nacionales que han escrito sobre estas materias, así en la península como fuera de ella.=Se hallará á 20 rs. en rústica en la librería de Picardo, calle de la Carne núm. 186."
+        }
+      ]
+    },
+    {
+      "PDF": "2534739.pdf",
+      "día_periódico": "18/04/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534769.pdf",
+      "día_periódico": "10/05/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534784.pdf",
+      "día_periódico": "22/05/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534795.pdf",
+      "día_periódico": "02/06/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534806.pdf",
+      "día_periódico": "13/06/1817",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2534823.pdf",
+      "día_periódico": "24/06/1817",
+      "hallazgos": []
+    }
+  ]
+}
