@@ -1,0 +1,149 @@
+{
+  "Año": 1823,
+  "datos": [
+    {
+      "PDF": "2523648.pdf",
+      "día_periódico": "23/01/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523670.pdf",
+      "día_periódico": "14/02/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523692.pdf",
+      "día_periódico": "08/03/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523714.pdf",
+      "día_periódico": "30/03/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2523736.pdf",
+      "día_periódico": "22/04/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2529642.pdf",
+      "día_periódico": "14/05/1823",
+      "hallazgos": [
+        {
+          "autor": "Juan Antonio Llorente",
+          "traductor": null,
+          "título": "Juicio del retrato político de los papas",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "imprenta y librería de Roquero, en el gabinete de lectura, y en los puestos del Sol, en el de Font y Closás, en el de Fuentes y en el de Lozano",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Juicio del retrato político de los papas, compuesto por el Dr. D. Juan Antonio Llorente, é impreso en Madrid en el año de 1823. Lo escribía en carta familiar un eclesiástico secular, natural y vecino de Cádiz.—Se halla de venta en la imprenta y librería de Roquero, en el gabinete de lectura, y en los puestos del Sol, en el de Font y Closás, en el de Fuentes y en el de Lozano."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Memoria leída á las Córtes el 24 de Abril del presente año por el secretario del despacho de Estado",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Navarro, frente á S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Memoria leída á las Córtes el 24 de Abril del presente año por el secretario del despacho de Estado.—Se hallará en la librería de Navarro, frente á S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2529679.pdf",
+      "día_periódico": "05/06/1825",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2529725.pdf",
+      "día_periódico": "27/06/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2529761.pdf",
+      "día_periódico": "19/07/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2529783.pdf",
+      "día_periódico": "10/08/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531697.pdf",
+      "día_periódico": "01/09/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531741.pdf",
+      "día_periódico": "23/09/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531802.pdf",
+      "día_periódico": "15/10/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531829.pdf",
+      "día_periódico": "07/11/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531851.pdf",
+      "día_periódico": "29/11/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531895.pdf",
+      "día_periódico": "11/12/1823",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2531924.pdf",
+      "día_periódico": "22/12/1823",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "almanaque nautico para el año de 1826",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "22 rs. vn.",
+          "lugares_de_venta": "Deposito de Hidrografia, establecido en la casa titulada la Camorra",
+          "página_pdf": 3,
+          "página_periódico": 3,
+          "transcripción": "El almanaque nautico para el año de 1826 se halla de venta en el Deposito de Hidrografia, establecido en la casa titulada la Camorra, al precio de 22 rs. vn."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "carta numero primero del Mediterraneo, corregida y aumentada",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "18 rs. vn.",
+          "lugares_de_venta": "Deposito de Hidrografia, establecido en la casa titulada la Camorra",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Asimismo la carta numero primero del Mediterraneo, corregida y aumentada, al precio de 18 rs. vn. Deposito de Hidrografia, establecido en la casa titulada la Camorra."
+        }
+      ]
+    },
+    {
+      "PDF": "2531943.pdf",
+      "día_periódico": "28/12/1823",
+      "hallazgos": []
+    }
+  ]
+}
