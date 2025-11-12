@@ -1,0 +1,279 @@
+{
+  "Año": 1830,
+  "datos": [
+    {
+      "PDF": "2047242.pdf",
+      "día_periódico": "21/01/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2047283.pdf",
+      "día_periódico": "13/02/1830",
+      "hallazgos": [
+        {
+          "autor": "Estevan Ferrero",
+          "traductor": null,
+          "título": "D. Quijote en las bodas de Camacho (argumento de la ópera)",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "4 rvo.",
+          "lugares_de_venta": "despacho de boletines",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El argumento de dicha ópera, en español é italiano, se halla de venta en el despacho de boletines á 4 rvo."
+        }
+      ]
+    },
+    {
+      "PDF": "2047317.pdf",
+      "día_periódico": "07/03/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2047347.pdf",
+      "día_periódico": "29/03/1830",
+      "hallazgos": [
+        {
+          "autor": "Real Consulado de Madrid",
+          "traductor": null,
+          "título": "Guia mercantil de España, con los aranceles generales de entrada y salida, como asimismo el arancel, reglamento é instruccion para el comercio de America, aranceles generales vigentes en la isla de Cuba y Puerto Rico",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Guia mercantil de España, con los aranceles generales de entrada y salida, como asimismo el arancel, reglamento é instruccion para el comercio de America, aranceles generales vigentes en la isla de Cuba y Puerto Rico; publicada de órden del Rey N.S. el Real Consulado de Madrid, en un tomo 8.º marca: dichas obras se hallarán en la libreria de Hortal y Compañia, plazuela de S. Agustin"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Estado general de la Real Armada para el año de 1830",
+          "número_de_tomos": "un tomo",
+          "formato": "8.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Estado general de la Real Armada para el año de 1830, en un tomo 8.º; dichas obras se hallarán en la libreria de Hortal y Compañia, plazuela de S. Agustin"
+        },
+        {
+          "autor": "Manuel Nifo",
+          "traductor": null,
+          "título": "Lista de litigantes y pretendientes para el año de 1830",
+          "número_de_tomos": "un tomo",
+          "formato": "12.º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Lista de litigantes y pretendientes para el año de 1830, en un tomo 12.º por D. Manuel Nifo; dichas obras se hallarán en la libreria de Hortal y Compañia, plazuela de S. Agustin"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Diccionario geográfico universal",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "donde podrán pasar los Sres. suscritores al Diccionario geográfico universal para recoger los cuadernos 2.º y 3.º abonar este y el 4.º en la libreria de Hortal y Compañia, plazuela de S. Agustin"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Coleccion de las obras sobre la electricidad de los meteoros",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañia, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "los á la Coleccion de las obras sobre la electricidad de los meteoros, á recoger la primera entrega y abonar la segunda en la libreria de Hortal y Compañia, plazuela de S. Agustin"
+        }
+      ]
+    },
+    {
+      "PDF": "2047377.pdf",
+      "día_periódico": "20/04/1830",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Diccionario Geográfico Universal",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "A la librería de Hortal y Compañía, plazuela de S. Agustin, se podrán pasar los Sres. suscritores al Diccionario Geográfico Universal á recoger los cuadernos 2º y 3º abonar este y el 4º"
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Colección de las obras sobre la Electricidad de los Meteoros",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "los á la coleccion de las obras sobre la Electricidad de los Meteoros á recoger la primera entrega y abonar la segunda"
+        },
+        {
+          "autor": "Mr. Anquetil",
+          "traductor": null,
+          "título": "Compendio de Historia Universal",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "los á la del compendio de Historia Universal de Mr. Anquetil, traducido, reformado y aumentado con varias notas instructivas, y la pintura histórica de todas las naciones hasta nuestros dias, á recoger el tomo 2º y abonar el 3º"
+        }
+      ]
+    },
+    {
+      "PDF": "2047408.pdf",
+      "día_periódico": "12/05/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2047443.pdf",
+      "día_periódico": "03/06/1830",
+      "hallazgos": [
+        {
+          "autor": "Segur",
+          "traductor": "Alberto Lista",
+          "título": "historia universal",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Castillo, calle de S. Francisco",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Los suscritores á la historia universal de Segur, traducida por D. Alberto Lista acudirán á recoger el primer tomo y adelantar el importe del segundo. Continua abierta la suscricion en la libreria de Castillo, calle de S. Francisco."
+        }
+      ]
+    },
+    {
+      "PDF": "2047474.pdf",
+      "día_periódico": "25/06/1830",
+      "hallazgos": [
+        {
+          "autor": "Mr. Le Sage",
+          "traductor": null,
+          "título": "Aventuras de Gil Blas de Santillana",
+          "número_de_tomos": "45 tomos",
+          "formato": "8º prolongado",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de S. Agustin, núm. 201",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Aventuras de Gil Blas de Santillana robadas á España y adoptadas en Francia por Mr. Le Sage, restituidas á su patria y á su lengua nativas por un español zeloso que no sufre se burlen de su nacion. Esta obra, cuyo mérito no es necesario ponderar, ha sido impresa varias veces, pero ninguna de las ediciones que han precedido á la presente ofrece las ventajas de esta, pudiendose llamar económicas por el último precio y buena ejecucion en la parte tipográfica, constará de 45 tomos en 8º prolongado. Se suscribe en la libreria de Hortal y Compañía, plazuela de S. Agustin, núm. 201."
+        }
+      ]
+    },
+    {
+      "PDF": "2051853.pdf",
+      "día_periódico": "17/07/1830",
+      "hallazgos": [
+        {
+          "autor": "Manuel José Quintana",
+          "traductor": null,
+          "título": "POESIAS selectas castellanas desde el tiempo de Juan de Mena hasta nuestros dias",
+          "número_de_tomos": "cuatro tomos",
+          "formato": "8º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En la libreria de Hortal y Compañía, plazuela de S. Agustin, se hallan las obras siguientes: POESIAS selectas castellanas desde el tiempo de Juan de Mena hasta nuestros dias, recogidas y ordenadas por D. Manuel José Quintana, nueva edicion aumentada y corregida, en cuatro tomos 8º"
+        },
+        {
+          "autor": "madama Mallés de Beaulieu",
+          "traductor": null,
+          "título": "EL ROBINSON de doce años, historia interesante de un grumete frances abandonado en una isla desierta",
+          "número_de_tomos": "un tomo",
+          "formato": "8º",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y Compañía, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "En la libreria de Hortal y Compañía, plazuela de S. Agustin, se hallan las obras siguientes: EL ROBINSON de doce años, historia interesante de un grumete frances abandonado en una isla desierta, por madama Mallés de Beaulieu, traducida en castellano de la octava edicion, publicada en Paris en 1828, un tomo 8º"
+        }
+      ]
+    },
+    {
+      "PDF": "2051941.pdf",
+      "día_periódico": "08/08/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2051997.pdf",
+      "día_periódico": "30/08/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2052020.pdf",
+      "día_periódico": "21/09/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2052042.pdf",
+      "día_periódico": "13/10/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2052064.pdf",
+      "día_periódico": "04/11/1830",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "coleccion de libros diferentes",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": null,
+          "página_pdf": 8,
+          "página_periódico": 8,
+          "transcripción": "Hoy 4 á las 10½ se rematarán piezas, chales y fajas de capunilla; sarga negra arrasada; chalecos de piqué; brick; pelo de cabra y seda; zapatos; botas; camisas; encages; pantalones; chaquetas; medias de algodon y de seda; sombreros; pañuelos de seda y de coco; jabon de olor; paños; mantelerias; otra coleccion de libros diferentes á los anteriores; 4 medias pipas vino de estraccion; 2 cuarterolas de id. añejo; botellas vacias; tibores de china; cajones de cigarros de Manila, y otros efectos."
+        }
+      ]
+    },
+    {
+      "PDF": "2052102.pdf",
+      "día_periódico": "26/11/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2052130.pdf",
+      "día_periódico": "08/12/1830",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2052155.pdf",
+      "día_periódico": "25/12/1830",
+      "hallazgos": []
+    }
+  ]
+}
