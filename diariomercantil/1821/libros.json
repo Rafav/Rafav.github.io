@@ -1,0 +1,246 @@
+{
+  "Año": 1821,
+  "datos": [
+    {
+      "PDF": "2526878.pdf",
+      "día_periódico": null,
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526901.pdf",
+      "día_periódico": null,
+      "hallazgos": []
+    },
+    {
+      "PDF": "2526924.pdf",
+      "día_periódico": null,
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528404.pdf",
+      "día_periódico": "11/01/1821",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Sistema general de las aduanas de la monarquía española en ambos emisferios",
+          "número_de_tomos": "un tomo",
+          "formato": "folio",
+          "encuadernación": "rústica",
+          "precio": "150 rs. vn.",
+          "lugares_de_venta": "librería de Zaragoza, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El sábado 13 del presente se hallará de venta en la librería de Zaragoza, plazuela de S. Agustin, el sistema general de las aduanas de la monarquía española en ambos emisferios, aprobado por las Córtes ordinarias de 1820: un tomo en folio á la rústica, al que acompañarán los prontuarios geográficos al mismo sistema, los que se entregarán despues por no estar concluida su impresion, todo por el precio de 150 rs. vn."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Reglamento del resguardo de Hacienda",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "9 rs. vn.",
+          "lugares_de_venta": "librería de Zaragoza, plazuela de S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El sábado 13 del presente se hallará de venta en la librería de Zaragoza, plazuela de S. Agustin [...] Igualmente el reglamento del resguardo de Hacienda á 9 rs. vn."
+        }
+      ]
+    },
+    {
+      "PDF": "2528427.pdf",
+      "día_periódico": "04/02/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528451.pdf",
+      "día_periódico": "28/02/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528474.pdf",
+      "día_periódico": "27/03/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528497.pdf",
+      "día_periódico": "19/04/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528520.pdf",
+      "día_periódico": "16/05/1821",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Guide aux droits civils et commerciaux des étrangers en Espagne, ou recueil chronologique des traités, pactes, conventions et autres actes royaux et des Cortes, émanés du Cabinet de Madrid, depuis le commencement du XVII siecle jusqu'à la fin du mois Octobre 1819",
+          "número_de_tomos": "un tomo",
+          "formato": "8.°",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "libreria de Hortal y compañia plazuela de S. Agustin, y en la de Roquero calle Ancha",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Libros.—Guide aux droits civils et commerciaux des étrangers en Espagne, ou recueil chronologique des traités, pactes, conventions et autres actes royaux et des Cortes, émanés du Cabinet de Madrid, depuis le commencement du XVII siecle jusqu'à la fin du mois Octobre 1819: un tomo en 8.° de 32 hojas de impresion.= Esta obra se halla de venta en la libreria de Hortal y compañia plazuela de S. Agustin, y en la de Roquero calle Ancha."
+        }
+      ]
+    },
+    {
+      "PDF": "2528574.pdf",
+      "día_periódico": "13/06/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2538730.pdf",
+      "día_periódico": "06/07/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2538767.pdf",
+      "día_periódico": "29/07/1821",
+      "hallazgos": [
+        {
+          "autor": "Santiago Jonam i",
+          "traductor": null,
+          "título": "De la prueba por jurados, ó sea consejo de hombres buenos",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "gabinete de lectura, calle Ancha",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Libros.—De la prueba por jurados, ó sea consejo de hombres buenos; por D. Santiago Jonam i. Vèndese en el gabinete de lectura, calle Ancha"
+        }
+      ]
+    },
+    {
+      "PDF": "2538819.pdf",
+      "día_periódico": "21/08/1821",
+      "hallazgos": [
+        {
+          "autor": "Nicolas Uriz",
+          "traductor": null,
+          "título": "Llanto de la moribunda: Tiro ó lamentos sobre la ruina de Cádiz",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": "2 rs.",
+          "lugares_de_venta": "en las imprentas de la Sincera Union, y de Fruhlin, en los puestos de papeles públicos",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Llanto de la moribunda: Tiro ó lamentos sobre la ruina de Cádiz: por D. Nicolas Uriz, poema trágico, en que se presenta la antigua grandeza de Cádiz, y el estado de abatimiento, y las consecuencias funestas que producirá su caida. Se vende en las imprentas de la Sincera Union, y de Fruhlin, en los puestos de papeles públicos, á 2 rs."
+        },
+        {
+          "autor": "Pío VII",
+          "traductor": "Tomás Rodriguez Baron",
+          "título": "Homilía de N.SS.P. Pio VII, siendo cardenal y obispo de Imola",
+          "número_de_tomos": null,
+          "formato": "cuarto",
+          "encuadernación": null,
+          "precio": "25 rs.",
+          "lugares_de_venta": "imprenta Gaditana, calle de la Carne, número 21",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Homilía de N.SS.P. Pio VII, siendo cardenal y obispo de Imola: traducida del italiano, con vista de la versión francesa del célebre M. Gregorie, obispo que fué de Blois: por D. Tomás Rodriguez Baron, un cuaderno en cuarto á r.25 rs. Se hallarán en la imprenta Gaditana, calle de la Carne, número 21."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Lamentos de la Constitucion política de la Monarquía española; diálogo entre ella y el filósofo imparcial",
+          "número_de_tomos": null,
+          "formato": "octavo",
+          "encuadernación": null,
+          "precio": "dos rs.",
+          "lugares_de_venta": "imprenta Gaditana, calle de la Carne, número 21",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Lamentos de la Constitucion política de la Monarquía española; diálogo entre ella y el filósofo imparcial: un cuaderno en octavo á dos rs. Se hallarán en la imprenta Gaditana, calle de la Carne, número 21."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Catecismo crítico dogmático sobre varios puntos de los escritos del furioso D. José Joaquín de Urrarrosa",
+          "número_de_tomos": null,
+          "formato": "cuarto",
+          "encuadernación": null,
+          "precio": "dos rs. y medio",
+          "lugares_de_venta": "imprenta Gaditana, calle de la Carne, número 21",
+          "página_pdf": 6,
+          "página_periódico": 6,
+          "transcripción": "Catecismo crítico dogmático sobre varios puntos de los escritos del furioso D. José Joaquín de Urrarrosa: un cuaderno en cuarto á dos rs. y medio. Se hallarán en la imprenta Gaditana, calle de la Carne, número 21."
+        }
+      ]
+    },
+    {
+      "PDF": "2538842.pdf",
+      "día_periódico": "13/09/1821",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "El Telegrafo mejicano: segunda época: número primero",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Hortal y compañía, plazuela de S. Agustín",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "El Telegrafo mejicano: segunda época: número primero. Se hallará en la librería de Hortal y compañía, plazuela de S. Agustín."
+        }
+      ]
+    },
+    {
+      "PDF": "2538870.pdf",
+      "día_periódico": "06/10/1821",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Anto:cha española",
+          "número_de_tomos": null,
+          "formato": "16 páginas",
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "casa de D. Domingo Font y Closas; en donde se admiten suscripciones, y tambien se venden números sueltos",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Anto:cha española, Periódico que ha empezado á salir en Madrid el 28 de Setiembre, y seguirá los martes y viernes de cada semana: consta de 16 páginas del tamaño y letra del prospecto, que se halla en casa de D. Domingo Font y Closas; en donde se admiten suscripciones, y tambien se venden números sueltos."
+        }
+      ]
+    },
+    {
+      "PDF": "2538901.pdf",
+      "día_periódico": "29/10/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2538927.pdf",
+      "día_periódico": "11/11/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2538960.pdf",
+      "día_periódico": "24/11/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2539029.pdf",
+      "día_periódico": "07/12/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2539046.pdf",
+      "día_periódico": "20/12/1821",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2539059.pdf",
+      "día_periódico": "27/12/1821",
+      "hallazgos": []
+    }
+  ]
+}
