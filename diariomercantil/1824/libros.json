@@ -1,0 +1,136 @@
+{
+  "Año": 1824,
+  "datos": [
+    {
+      "PDF": "2525266.pdf",
+      "día_periódico": "24/09/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525288.pdf",
+      "día_periódico": "16/10/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525310.pdf",
+      "día_periódico": "07/11/1824",
+      "hallazgos": [
+        {
+          "autor": "Antonio Francisco Casals",
+          "traductor": null,
+          "título": "Curso teórico de aritmética mercantil",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Navarro, frente á S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "Curso teórico de aritmética mercantil por D. Antonio Francisco Casals, obra interesante para los que quieran emprender la carrera del comercio como para los que se hallan en ella, por contener la explicación y demostración de cuantas cuestiones puedan proponerse, y el cálculo de las operaciones. Se hallarán en la librería de Navarro, frente á S. Agustin."
+        },
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Seis meses en Londres",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "librería de Navarro, frente á S. Agustin",
+          "página_pdf": 4,
+          "página_periódico": null,
+          "transcripción": "Seis meses en Londres, continuación de la obra anteriormente publicada: quince días en Londres. Se hallarán en la librería de Navarro, frente á S. Agustin."
+        }
+      ]
+    },
+    {
+      "PDF": "2525333.pdf",
+      "día_periódico": "29/11/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2525366.pdf",
+      "día_periódico": "21/12/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527129.pdf",
+      "día_periódico": "12/01/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527160.pdf",
+      "día_periódico": "03/02/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527199.pdf",
+      "día_periódico": "25/02/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527369.pdf",
+      "día_periódico": "18/03/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2527391.pdf",
+      "día_periódico": "09/04/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528148.pdf",
+      "día_periódico": "01/05/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528170.pdf",
+      "día_periódico": "23/05/1824",
+      "hallazgos": [
+        {
+          "autor": null,
+          "traductor": null,
+          "título": "Periodico de la Sociedad medico-quirurgica de Cadiz. Tomo 4.° número 3.º",
+          "número_de_tomos": null,
+          "formato": null,
+          "encuadernación": null,
+          "precio": null,
+          "lugares_de_venta": "botica de D. Nicolas Maria Carmona, donde se admiten suscriciónes",
+          "página_pdf": 4,
+          "página_periódico": 4,
+          "transcripción": "Periodico de la Sociedad medico-quirurgica de Cadiz. Tomo 4.° número 3.º—Comprende una memoria sobre el no-contagio de la fiebre amarilla, la historia de una fiebre curada tratada por medio del arseniato de potasa, el extracto de las sesiones de este cuerpo en el mes de Febrero del presente año, y de las de la Academia medica practica de Barcelona en los meses de Noviembre y Diciembre del anterior, terminando con un anuncio biografico.—Se hallará de venta en la botica de D. Nicolas Maria Carmona, donde se admiten suscriciónes."
+        }
+      ]
+    },
+    {
+      "PDF": "2528192.pdf",
+      "día_periódico": "14/06/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528214.pdf",
+      "día_periódico": "06/07/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528236.pdf",
+      "día_periódico": "28/07/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528248.pdf",
+      "día_periódico": "09/08/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528259.pdf",
+      "día_periódico": "20/08/1824",
+      "hallazgos": []
+    },
+    {
+      "PDF": "2528267.pdf",
+      "día_periódico": "28/08/1824",
+      "hallazgos": []
+    }
+  ]
+}
