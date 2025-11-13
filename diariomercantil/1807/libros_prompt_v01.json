@@ -1,0 +1,117 @@
+{
+  "Año": 1807,
+  "datos": [
+    {
+      "PDF": "2043169.pdf",
+      "autor": "",
+      "traductor": "",
+      "título": "",
+      "número_de_tomos": "",
+      "formato": "",
+      "encuadernación": "",
+      "precio": "",
+      "lugares_de_venta": "Librería de Alonso, frente à las Gradas de San Felipe el Real",
+      "día_periódico": "Domingo 15 de Marzo de 1807",
+      "página_pdf": 1,
+      "números_página_periódico": "293",
+      "transcripción": "Vándense en la Librería de Alonso, frente à las Gradas de San Felipe el Real"
+    },
+    {
+      "autor": "",
+      "traductor": "",
+      "título": "",
+      "número_de_tomos": "",
+      "formato": "",
+      "encuadernación": "",
+      "precio": "",
+      "lugares_de_venta": "Librería de Carrera, calle Ancha frente à las Recogidas",
+      "día_periódico": "Domingo 15 de Marzo de 1807",
+      "página_pdf": 3,
+      "números_página_periódico": "295",
+      "transcripción": "Se hallarán en la Librería de Carrera, calle Ancha frente à las Recogidas."
+    },
+    {
+      "PDF": "2043220.pdf",
+      "registros_de_libros_y_publicaciones": []
+    },
+    {
+      "PDF": "2043236.pdf"
+    },
+    {
+      "PDF": "2043252.pdf"
+    },
+    {
+      "PDF": "2043263.pdf",
+      "anuncios_de_libros": []
+    },
+    {
+      "PDF": "2045325.pdf",
+      "anuncios_de_libros": []
+    },
+    {
+      "PDF": "2045343.pdf"
+    },
+    {
+      "PDF": "2045375.pdf",
+      "registros": []
+    },
+    {
+      "PDF": "2045412.pdf",
+      "autor": "",
+      "traductor": "",
+      "título": "Diario Mercantil de Cádiz",
+      "número_de_tomos": "",
+      "formato": "",
+      "encuadernación": "",
+      "precio": "",
+      "lugares_de_venta": "",
+      "día_periódico": "Domingo 9 de agosto de 1807",
+      "página_pdf": 1,
+      "número_página_periódico": "N. 220",
+      "transcripción": "DIARIO MERCANTIL DE CADIZ, DEL DOMINGO 9 DE AGOSTO DE 1807"
+    },
+    {
+      "PDF": "2045432.pdf",
+      "autor": "",
+      "traductor": "",
+      "título": "Diario Mercantil de Cádiz",
+      "número_de_tomos": "",
+      "formato": "",
+      "encuadernación": "",
+      "precio": "",
+      "lugares_de_venta": "",
+      "día_periódico": "24 de agosto de 1807",
+      "página_pdf": 1,
+      "números_página_periódico": "941",
+      "transcripción": "DIARIO MERCANTIL DE CADIZ, DEL LUNES 24 DE AGOSTO DE 1807."
+    },
+    {
+      "PDF": "2045447.pdf"
+    },
+    {
+      "PDF": "2045469.pdf",
+      "anuncios_de_libros": []
+    },
+    {
+      "PDF": "2045480.pdf",
+      "anuncios_de_libros": []
+    },
+    {
+      "PDF": "2045492.pdf"
+    },
+    {
+      "PDF": "2045503.pdf"
+    },
+    {
+      "PDF": "2045524.pdf",
+      "anuncios_de_libros": []
+    },
+    {
+      "PDF": "2045542.pdf",
+      "anuncios_de_libros": []
+    },
+    {
+      "PDF": "2045553.pdf"
+    }
+  ]
+}
