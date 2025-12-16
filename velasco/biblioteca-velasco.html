@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca de Fernando José de Velasco y Ceballos (1707-1788)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8b6914;
+            --primary-dark: #6d5110;
+            --secondary: #a67c2d;
+            --background: #f5f1e8;
+            --card-bg: #ffffff;
+            --text: #3a3a3a;
+            --text-light: #666;
+            --border: #d4c5a0;
+            --highlight: #fef5e7;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: #fff;
+            padding: 3rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .header-exlibris {
+            flex-shrink: 0;
+        }
+
+        .header-exlibris img {
+            width: 180px;
+            height: auto;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1,
+        .header-text .subtitle,
+        .header-text .header-stats {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .header-stats {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-exlibris img {
+                width: 150px;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--card-bg);
+            border-bottom: 3px solid var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover {
+            background-color: var(--highlight);
+            color: var(--primary);
+            border-bottom-color: var(--secondary);
+        }
+
+        /* Ex-libris Section */
+        .exlibris-section {
+            background-color: var(--card-bg);
+            padding: 3rem 2rem;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .exlibris-container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fafaf8;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .exlibris-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .exlibris-caption {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Sections */
+        .section {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Search Section */
+        .search-container {
+            background-color: #fafaf8;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        #catalogSearchInput {
+            flex: 1;
+            min-width: 300px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            height: 48px;
+            box-sizing: border-box;
+        }
+
+        #catalogSearchInput:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(166, 124, 45, 0.1);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 48px;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        .filter-group select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: white;
+            cursor: pointer;
+            min-width: 150px;
+            height: 48px;
+            box-sizing: border-box;
+        }
+
+        .filter-group select:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(166, 124, 45, 0.1);
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            background-color: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #results {
+            margin-top: 2rem;
+        }
+
+        .results-summary {
+            padding: 1rem;
+            background-color: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .results-summary strong {
+            color: var(--primary);
+        }
+
+        .result-item {
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: white;
+            border-left: 4px solid var(--secondary);
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .result-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateX(4px);
+        }
+
+        .result-item h4 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-meta {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .result-text {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .no-results {
+            text-align: center;
+            color: var(--text-light);
+            font-style: italic;
+            padding: 3rem;
+            background-color: var(--highlight);
+            border-radius: 4px;
+        }
+
+        /* Article Content */
+        .article-meta {
+            background-color: var(--highlight);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .article-meta p {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-meta strong {
+            color: var(--primary-dark);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafaf8;
+        }
+
+        tr:hover {
+            background-color: var(--highlight);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Highlights */
+        .highlight-box {
+            background-color: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3a3a3a;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading animation */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .loading {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        /* Image Viewer Styles - Full Screen Overlay */
+        .image-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            flex-direction: column;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .image-panel.expanded {
+            display: flex;
+        }
+
+        .image-controls {
+            padding: 20px 30px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-title {
+            font-weight: 600;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .btn-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+        }
+
+        .image-controls .btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .image-controls .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+        }
+
+        .image-container {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .image-link {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-left: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-link:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-group-header {
+            background: var(--highlight);
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .page-group-header strong {
+            color: var(--primary);
+            font-size: 1.05rem;
+        }
+
+        /* Estilos para el índice alfabético */
+        .index-link {
+            display: block;
+            text-align: center;
+            background-color: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .index-link:hover {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-exlibris">
+                <img src="exlibris.jpg" alt="Ex-libris de Fernando José de Velasco y Ceballos">
+            </div>
+            <div class="header-text">
+                <h1>La Biblioteca de Fernando José de Velasco y Ceballos</h1>
+                <p class="subtitle">Camarista de Castilla (1707-1788)</p>
+                <div class="header-stats">
+                    Análisis Bibliométrico de 7.323 Obras (1427-1799) • Tasación de 1791
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#indice">Índice</a></li>
+            <li><a href="#buscador">Buscador</a></li>
+            <li><a href="#articulo">Artículo Científico</a></li>
+            <li><a href="#estadisticas">Estadísticas</a></li>
+            <li><a href="#bibliografia">Bibliografía</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+                <!-- Íntroducción  Section -->
+                <section id="introduccion" class="section">
+                    <h2>Introducción</h2>
+                    <p>Esta página ofrece al investigador el resultado de analizar con técnicas de Inteligencia artificial el catálogo de la biblioteca de Fernando José de Velasco y Ceballos (1707-1788), Camarista de Castilla. Este catálogo contiene la referencia y tasación de más de 7.000 obras y se conserva en la Biblioteca Nacional de España (MSS/13601-13602). </p>
+                </section>
+        
+        <!-- Índice Alfabético Section -->
+        <section id="indice" class="section">
+            <h2>Índice Alfabético del Catálogo Manuscrito</h2>
+            <p>Acceso directo a las secciones alfabéticas del catálogo original conservado en la BNE (MSS/13601-13602).
+                Cada enlace le llevará a la página correspondiente del manuscrito digitalizado.</p>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); gap: 0.75rem; margin-top: 1.5rem;">
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=5"
+                    target="_blank" class="index-link">AB</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=6"
+                    target="_blank" class="index-link">AC</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=28"
+                    target="_blank" class="index-link">BA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=39"
+                    target="_blank" class="index-link">BI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=41"
+                    target="_blank" class="index-link">BO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=48"
+                    target="_blank" class="index-link">BU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=51"
+                    target="_blank" class="index-link">CA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=63"
+                    target="_blank" class="index-link">CE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=65"
+                    target="_blank" class="index-link">CH</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=67"
+                    target="_blank" class="index-link">CI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=69"
+                    target="_blank" class="index-link">CL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=70"
+                    target="_blank" class="index-link">CO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=79"
+                    target="_blank" class="index-link">CR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=81"
+                    target="_blank" class="index-link">CU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=81"
+                    target="_blank" class="index-link">CY</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=82"
+                    target="_blank" class="index-link">DOA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=83"
+                    target="_blank" class="index-link">DE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=86"
+                    target="_blank" class="index-link">DI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=90"
+                    target="_blank" class="index-link">DO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=91"
+                    target="_blank" class="index-link">DU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=92"
+                    target="_blank" class="index-link">EB</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=92"
+                    target="_blank" class="index-link">EC</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=93"
+                    target="_blank" class="index-link">ED</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=93"
+                    target="_blank" class="index-link">EL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=93"
+                    target="_blank" class="index-link">EF</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=93"
+                    target="_blank" class="index-link">EG</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=93"
+                    target="_blank" class="index-link">EI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=94"
+                    target="_blank" class="index-link">EN</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=94"
+                    target="_blank" class="index-link">EP</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=95"
+                    target="_blank" class="index-link">ER</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=96"
+                    target="_blank" class="index-link">ES</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=99"
+                    target="_blank" class="index-link">EJ</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=100"
+                    target="_blank" class="index-link">EX</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=101"
+                    target="_blank" class="index-link">EY</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=101"
+                    target="_blank" class="index-link">EZ</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=101"
+                    target="_blank" class="index-link">FA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=104"
+                    target="_blank" class="index-link">FL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=106"
+                    target="_blank" class="index-link">FI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=110"
+                    target="_blank" class="index-link">FO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=111"
+                    target="_blank" class="index-link">FR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=113"
+                    target="_blank" class="index-link">FU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=115"
+                    target="_blank" class="index-link">GA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=118"
+                    target="_blank" class="index-link">GE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=121"
+                    target="_blank" class="index-link">GI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=122"
+                    target="_blank" class="index-link">GL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=125"
+                    target="_blank" class="index-link">GR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=129"
+                    target="_blank" class="index-link">GU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=133"
+                    target="_blank" class="index-link">HA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=134"
+                    target="_blank" class="index-link">HE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=139"
+                    target="_blank" class="index-link">HI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=141"
+                    target="_blank" class="index-link">HO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=144"
+                    target="_blank" class="index-link">HU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=146"
+                    target="_blank" class="index-link">IA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=146"
+                    target="_blank" class="index-link">IM</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=147"
+                    target="_blank" class="index-link">IN</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=148"
+                    target="_blank" class="index-link">IE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=148"
+                    target="_blank" class="index-link">IO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=148"
+                    target="_blank" class="index-link">JA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=150"
+                    target="_blank" class="index-link">JO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=151"
+                    target="_blank" class="index-link">JU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=153"
+                    target="_blank" class="index-link">KA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=153"
+                    target="_blank" class="index-link">KE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=153"
+                    target="_blank" class="index-link">KL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=153"
+                    target="_blank" class="index-link">KN</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=154"
+                    target="_blank" class="index-link">KD</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=154"
+                    target="_blank" class="index-link">KR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=154"
+                    target="_blank" class="index-link">LA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=159"
+                    target="_blank" class="index-link">LE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=163"
+                    target="_blank" class="index-link">LI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=164"
+                    target="_blank" class="index-link">LL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=165"
+                    target="_blank" class="index-link">LO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=168"
+                    target="_blank" class="index-link">LU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=170"
+                    target="_blank" class="index-link">LY</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=177"
+                    target="_blank" class="index-link">MA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=191"
+                    target="_blank" class="index-link">ME</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=202"
+                    target="_blank" class="index-link">MI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=203"
+                    target="_blank" class="index-link">MO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=212"
+                    target="_blank" class="index-link">MU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=214"
+                    target="_blank" class="index-link">NA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=216"
+                    target="_blank" class="index-link">NE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=220"
+                    target="_blank" class="index-link">NI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=221"
+                    target="_blank" class="index-link">NO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=224"
+                    target="_blank" class="index-link">NU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=226"
+                    target="_blank" class="index-link">OB</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=227"
+                    target="_blank" class="index-link">OC</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=227"
+                    target="_blank" class="index-link">OF</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=227"
+                    target="_blank" class="index-link">OI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=228"
+                    target="_blank" class="index-link">OJ</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=228"
+                    target="_blank" class="index-link">OL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=229"
+                    target="_blank" class="index-link">OP</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=229"
+                    target="_blank" class="index-link">OR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=234"
+                    target="_blank" class="index-link">OS</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=235"
+                    target="_blank" class="index-link">OU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=235"
+                    target="_blank" class="index-link">OY</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=235"
+                    target="_blank" class="index-link">OZ</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=236"
+                    target="_blank" class="index-link">PA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=244"
+                    target="_blank" class="index-link">PE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=250"
+                    target="_blank" class="index-link">PH</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=251"
+                    target="_blank" class="index-link">PI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=254"
+                    target="_blank" class="index-link">PL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=256"
+                    target="_blank" class="index-link">PR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=258"
+                    target="_blank" class="index-link">PO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=261"
+                    target="_blank" class="index-link">PS</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=261"
+                    target="_blank" class="index-link">PT</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=262"
+                    target="_blank" class="index-link">PU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=264"
+                    target="_blank" class="index-link">Q</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=265"
+                    target="_blank" class="index-link">QUI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=266"
+                    target="_blank" class="index-link">RA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=269"
+                    target="_blank" class="index-link">RE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=275"
+                    target="_blank" class="index-link">RH</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=275"
+                    target="_blank" class="index-link">RI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=279"
+                    target="_blank" class="index-link">RO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=285"
+                    target="_blank" class="index-link">RU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=287"
+                    target="_blank" class="index-link">SA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=301"
+                    target="_blank" class="index-link">SC</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=304"
+                    target="_blank" class="index-link">SE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=308"
+                    target="_blank" class="index-link">SI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=311"
+                    target="_blank" class="index-link">SL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=311"
+                    target="_blank" class="index-link">SM</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=311"
+                    target="_blank" class="index-link">SO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=313"
+                    target="_blank" class="index-link">SP</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=314"
+                    target="_blank" class="index-link">SQ</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=314"
+                    target="_blank" class="index-link">SR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=317"
+                    target="_blank" class="index-link">SU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=318"
+                    target="_blank" class="index-link">SY</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=319"
+                    target="_blank" class="index-link">TA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=321"
+                    target="_blank" class="index-link">TE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=322"
+                    target="_blank" class="index-link">TH</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=324"
+                    target="_blank" class="index-link">TY</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=324"
+                    target="_blank" class="index-link">TO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=327"
+                    target="_blank" class="index-link">TR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=329"
+                    target="_blank" class="index-link">TU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=330"
+                    target="_blank" class="index-link">UA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=335"
+                    target="_blank" class="index-link">UB</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=335"
+                    target="_blank" class="index-link">UC</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=335"
+                    target="_blank" class="index-link">UE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=340"
+                    target="_blank" class="index-link">UH</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=340"
+                    target="_blank" class="index-link">YI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=347"
+                    target="_blank" class="index-link">VL</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=348"
+                    target="_blank" class="index-link">VM</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=349"
+                    target="_blank" class="index-link">VO</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=350"
+                    target="_blank" class="index-link">VS</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=353"
+                    target="_blank" class="index-link">VZ</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=353"
+                    target="_blank" class="index-link">XA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=353"
+                    target="_blank" class="index-link">XE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=353"
+                    target="_blank" class="index-link">XI</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=354"
+                    target="_blank" class="index-link">XU</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=354"
+                    target="_blank" class="index-link">YA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=355"
+                    target="_blank" class="index-link">YB</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=355"
+                    target="_blank" class="index-link">YC</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=355"
+                    target="_blank" class="index-link">YD</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=355"
+                    target="_blank" class="index-link">YE</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=355"
+                    target="_blank" class="index-link">YM</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=356"
+                    target="_blank" class="index-link">YN</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=356"
+                    target="_blank" class="index-link">YR</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=356"
+                    target="_blank" class="index-link">YS</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=357"
+                    target="_blank" class="index-link">YT</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=357"
+                    target="_blank" class="index-link">ZA</a>
+                <a href="https://bnedigital.bne.es/bd/es/viewer?id=09e8892a-93da-4dda-8e03-190378c061dd&page=359"
+                    target="_blank" class="index-link">ZY</a>
+            </div>
+        </section>
+
+        <!-- Buscador Section -->
+        <section id="buscador" class="section">
+            <h2>Buscador del Catálogo Histórico</h2>
+            <p>Explore la transcripción del catálogo. La búsqueda devuelve la localización del volumen, página, fila y tasación en reales de vellón de las entradas localizadas.</p>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="catalogSearchInput"
+                        placeholder="Buscar en el catálogo (autor, título, materia...)..." />
+
+                    <div class="filter-group">
+                        <label for="volumenFilter">Volumen:</label>
+                        <select id="volumenFilter" onchange="applyCatalogFilters()">
+                            <option value="">Todos</option>
+                            <option value="1">Volumen 1</option>
+                            <option value="2">Volumen 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="catalogResults">
+                    <p class="no-results">Escriba una palabra para buscar en el catálogo...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artículo Científico -->
+        <section id="articulo" class="section">
+            <h2>Artículo Científico: Análisis Bibliométrico Exhaustivo</h2>
+
+            <div class="article-meta">
+                <p><strong>Título:</strong> La Biblioteca del Camarista de Castilla Fernando José de Velasco y Ceballos
+                    (1707-1788): Análisis Bibliométrico de 7.323 Obras (1427-1799)</p>
+                <p><strong>Fuente:</strong> Catálogo manuscrito BNE MSS/13601-13602</p>
+                <p><strong>Tasador:</strong> Antonio Baylo (Junio de 1791)</p>
+                <p><strong>Fecha de análisis:</strong> Noviembre de 2025</p>
+            </div>
+
+            <h3>Resumen Ejecutivo</h3>
+            <p>
+                Este trabajo presenta un análisis bibliométrico exhaustivo de la biblioteca de Fernando José de Velasco
+                y Ceballos (1707-1788), Camarista de Castilla, a partir del catálogo manuscrito conservado en la
+                Biblioteca Nacional de España (MSS/13601-13602). La tasación realizada por Antonio Baylo en junio de
+                1791 documenta 7.323 obras impresas entre 1427 y 1799, proporcionando una ventana excepcional a la
+                cultura libraria de un alto funcionario de la monarquía borbónica durante la Ilustración española.
+            </p>
+
+            <div class="highlight-box">
+                <p><strong>Hallazgos principales:</strong></p>
+                <ul>
+                    <li>Madrid como centro editorial dominante: 18,84% de las obras identificadas</li>
+                    <li>Fuerte presencia de circuitos franceses (8,55%) e italianos (3,82%)</li>
+                    <li>Transición gradual del latín (10,34%) al castellano (70,46%)</li>
+                    <li>Biblioteca valorada en 290.515 reales de vellón (equivalente a 8.545 doblones de oro)</li>
+                    <li>Perfil de erudito jurista con concentración en derecho, historia y literatura clásica</li>
+                </ul>
+            </div>
+
+            <h3>1. Contexto Histórico y Biográfico</h3>
+
+            <h4>1.1 Fernando José de Velasco y Ceballos: El Camarista</h4>
+            <p>
+                Fernando José de Velasco y Ceballos (1707-1788) representa el arquetipo del funcionario ilustrado de la
+                administración borbónica. Nacido en Las Presillas (Cantabria) en el seno de una familia hidalga, su
+                trayectoria profesional ejemplifica el ascenso de los letrados en la España del siglo XVIII.
+            </p>
+
+            <p><strong>Carrera judicial y administrativa:</strong></p>
+            <ul>
+                <li>Alcalde del crimen de la Audiencia de Zaragoza</li>
+                <li>Oidor de la Chancillería de Valladolid</li>
+                <li>Fiscal de la Sala de Alcaldes de Casa y Corte</li>
+                <li>Presidente de la Chancillería de Granada (1766-1785)</li>
+                <li>Consejero del Consejo de Castilla (1785-1788)</li>
+            </ul>
+
+            <p>
+                Como Camarista de Castilla, Velasco ocupó uno de los cargos más elevados de la administración de
+                justicia española, formando parte de la Cámara de Castilla, órgano consultivo del rey en materias de
+                gracia y justicia. Este perfil profesional explica la naturaleza y composición de su biblioteca.
+            </p>
+
+            <h4>1.2 El Catálogo Manuscrito</h4>
+            <p>
+                El catálogo manuscrito (BNE MSS/13601-13602) consta de dos volúmenes con un total de 347 hojas. Fue
+                elaborado tres años después de la muerte del Camarista, probablemente con fines testamentarios. Antonio
+                Baylo, el tasador, era un profesional del mercado librario madrileño que conocía perfectamente los
+                precios y valores del libro antiguo en 1791.
+            </p>
+
+            <h3>2. Análisis Cuantitativo</h3>
+
+            <h4>2.1 Distribución Cronológica</h4>
+            <p>
+                La biblioteca abarca un período de 372 años, desde los incunables (1427) hasta finales del siglo XVIII
+                (1799). Esta amplitud temporal revela una estrategia de acumulación bibliográfica que combina herencia
+                familiar, compras en el mercado contemporáneo y adquisiciones anticuarias.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Período</th>
+                        <th>Obras</th>
+                        <th>Porcentaje</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Siglo XV (Incunables)</td>
+                        <td>25</td>
+                        <td>0,34%</td>
+                        <td>Coleccionismo bibliofílico</td>
+                    </tr>
+                    <tr>
+                        <td>Siglo XVI</td>
+                        <td>1.624</td>
+                        <td>22,18%</td>
+                        <td>Siglo de Oro español</td>
+                    </tr>
+                    <tr>
+                        <td>Siglo XVII</td>
+                        <td>2.666</td>
+                        <td>36,40%</td>
+                        <td>Mayor concentración</td>
+                    </tr>
+                    <tr>
+                        <td>Siglo XVIII</td>
+                        <td>2.348</td>
+                        <td>32,07%</td>
+                        <td>Actualización ilustrada</td>
+                    </tr>
+                    <tr>
+                        <td>Sin año identificado</td>
+                        <td>660</td>
+                        <td>9,01%</td>
+                        <td>Limitación OCR</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>2.2 Geografía Editorial</h4>
+            <p>
+                El análisis de los lugares de impresión revela las redes de circulación cultural del mundo hispánico
+                durante la Edad Moderna. Del total de 7.323 obras, se identificaron 3.595 lugares de impresión (49,1%
+                del catálogo).
+            </p>
+
+            <div class="highlight-box">
+                <p><strong>Centros editoriales principales:</strong></p>
+                <ul>
+                    <li><strong>Madrid (1.380 obras - 18,84%):</strong> Capital editorial de la monarquía borbónica</li>
+                    <li><strong>París (402 obras - 5,49%):</strong> Faro de la Ilustración francesa</li>
+                    <li><strong>Salamanca (182 obras - 2,49%):</strong> Tradición universitaria</li>
+                    <li><strong>Lyon (158 obras - 2,16%):</strong> Humanismo y clásicos</li>
+                    <li><strong>Valencia (140 obras - 1,91%):</strong> Corona de Aragón</li>
+                    <li><strong>Venecia (135 obras - 1,84%):</strong> Imprenta renacentista italiana</li>
+                    <li><strong>Roma (132 obras - 1,80%):</strong> Centro de la cristiandad</li>
+                </ul>
+            </div>
+
+            <h4>2.3 Distribución Lingüística</h4>
+            <p>
+                El análisis lingüístico documenta la transición del latín a las lenguas vernáculas, un proceso cultural
+                de larga duración característico de la Edad Moderna europea.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lengua</th>
+                        <th>Obras</th>
+                        <th>Porcentaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Castellano</td>
+                        <td>5.160</td>
+                        <td>70,46%</td>
+                    </tr>
+                    <tr>
+                        <td>Francés</td>
+                        <td>1.272</td>
+                        <td>17,37%</td>
+                    </tr>
+                    <tr>
+                        <td>Latín</td>
+                        <td>757</td>
+                        <td>10,34%</td>
+                    </tr>
+                    <tr>
+                        <td>Italiano</td>
+                        <td>96</td>
+                        <td>1,31%</td>
+                    </tr>
+                    <tr>
+                        <td>Otros</td>
+                        <td>38</td>
+                        <td>0,52%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3. Análisis Económico: El Valor de la Biblioteca</h3>
+
+            <h4>3.1 Tasación Global</h4>
+            <p>
+                La biblioteca de Velasco fue tasada en <strong>290.515 reales de vellón</strong>, una fortuna
+                extraordinaria para la época. Para contextualizar este valor:
+            </p>
+
+            <ul>
+                <li>Equivalente a 8.545 doblones de oro</li>
+                <li>Representa el salario de 73-97 años de un artesano cualificado</li>
+                <li>Precio comparable a 1-2 palacios urbanos en Madrid</li>
+                <li>Valor similar a 15-30 casas modestas</li>
+            </ul>
+
+            <h4>3.2 Estratificación del Mercado Librario</h4>
+            <p>
+                El análisis de precios revela una estructura piramidal característica del mercado del libro antiguo:
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rango de precio</th>
+                        <th>Obras</th>
+                        <th>% del total</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-10 reales</td>
+                        <td>2.171</td>
+                        <td>30,7%</td>
+                        <td>Obras populares</td>
+                    </tr>
+                    <tr>
+                        <td>10-25 reales</td>
+                        <td>3.085</td>
+                        <td>43,6%</td>
+                        <td>Obras estándar</td>
+                    </tr>
+                    <tr>
+                        <td>25-50 reales</td>
+                        <td>923</td>
+                        <td>13,0%</td>
+                        <td>Obras profesionales</td>
+                    </tr>
+                    <tr>
+                        <td>50-100 reales</td>
+                        <td>506</td>
+                        <td>7,2%</td>
+                        <td>Obras especializadas</td>
+                    </tr>
+                    <tr>
+                        <td>100-500 reales</td>
+                        <td>345</td>
+                        <td>4,9%</td>
+                        <td>Obras de lujo</td>
+                    </tr>
+                    <tr>
+                        <td>Más de 500 reales</td>
+                        <td>44</td>
+                        <td>0,6%</td>
+                        <td>Tesoros bibliográficos</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <strong>Observación clave:</strong> La mediana de precio (12 reales) es significativamente inferior a la
+                media (41,23 reales), lo que indica que unas pocas obras extraordinariamente caras elevan el promedio.
+                El 10% de las obras más caras concentra el 45% del valor total de la biblioteca.
+            </p>
+
+            <h3>4. Perfil Temático: La Biblioteca del Jurista</h3>
+
+            <p>
+                El análisis temático revela el perfil de un alto magistrado con formación humanística y necesidades
+                profesionales específicas:
+            </p>
+
+            <h4>Distribución por materias (obras clasificadas):</h4>
+            <ul>
+                <li><strong>Historia (613 obras - 8,4%):</strong> Crónicas, genealogías, historia diplomática</li>
+                <li><strong>Teología y religión (433 obras - 5,9%):</strong> Ortodoxia católica, patrística</li>
+                <li><strong>Derecho (272 obras - 3,7%):</strong> Romano, canónico, regio</li>
+                <li><strong>Política (156 obras - 2,1%):</strong> Teoría del Estado, razón de Estado</li>
+                <li><strong>Filosofía (150 obras - 2,0%):</strong> Escolástica e Ilustración</li>
+                <li><strong>Gramática y lenguas (111 obras - 1,5%):</strong> Humanismo filológico</li>
+                <li><strong>Ciencias (90 obras - 1,2%):</strong> Matemáticas, astronomía, medicina</li>
+                <li><strong>Literatura (78 obras - 1,1%):</strong> Clásicos grecolatinos, Siglo de Oro</li>
+            </ul>
+
+            <h3>5. Obras Prohibidas y Censura Inquisitorial</h3>
+
+            <p>
+                Un análisis detallado revela la presencia controlada de obras heterodoxas, lo que sugiere que Velasco
+                poseía licencias inquisitoriales especiales por su cargo:
+            </p>
+
+            <div class="highlight-box">
+                <p><strong>Autores prohibidos identificados:</strong></p>
+                <ul>
+                    <li><strong>Desiderio Erasmo (6 obras):</strong> Humanismo erasmista expurgado</li>
+                    <li><strong>Voltaire (2 obras):</strong> Filosofía ilustrada francesa</li>
+                    <li><strong>Jean Calvin (1 obra):</strong> Tratado jurídico, no teológico</li>
+                    <li><strong>Thomas Hobbes (1 obra):</strong> Filosofía política materialista</li>
+                </ul>
+            </div>
+
+            <p>
+                La presencia de apenas 18 obras formalmente prohibidas (0,25% del total) indica respeto general a la
+                censura inquisitorial, pero con acceso selectivo a autores heterodoxos mediante licencias oficiales.
+                Este patrón es característico de los altos funcionarios de la Cámara de Castilla.
+            </p>
+
+            <h3>6. Legado y Dispersión</h3>
+
+            <p>
+                Tras la muerte de Velasco (1788), su biblioteca siguió una trayectoria típica de las grandes colecciones
+                privadas españolas:
+            </p>
+
+            <ol>
+                <li><strong>Tasación (1791):</strong> Antonio Baylo elabora el inventario manuscrito</li>
+                <li><strong>Compra (1791):</strong> Pedro Caro y Sureda, III Marqués de la Romana, adquiere la colección
+                </li>
+                <li><strong>Traslado a Mallorca:</strong> El Marqués lleva los libros a su tierra natal</li>
+                <li><strong>Adquisición por la BNE (1865):</strong> La Biblioteca Nacional compra la biblioteca del
+                    Marqués</li>
+                <li><strong>Dispersión parcial:</strong> Muchos ejemplares permanecen dispersos en bibliotecas españolas
+                </li>
+            </ol>
+
+            <p>
+                El ex-libris de Velasco permite hoy identificar ejemplares dispersos en instituciones como la BNE,
+                bibliotecas universitarias y archivos provinciales.
+            </p>
+
+            <h3>7. Conclusiones</h3>
+
+            <h4>7.1 Principales hallazgos</h4>
+
+            <p>
+                Este análisis bibliométrico confirma que la biblioteca de Velasco y Ceballos:
+            </p>
+
+            <ol>
+                <li><strong>Es una de las mayores bibliotecas particulares documentadas del siglo XVIII
+                        español</strong>, comparable solo a las de Campomanes y Jovellanos</li>
+
+                <li><strong>Refleja el perfil de un alto magistrado ilustrado</strong> con necesidades profesionales
+                    específicas (derecho, historia, política) y formación humanística (clásicos, filosofía)</li>
+
+                <li><strong>Documenta las redes de circulación cultural europeas</strong>, con predominio del eje
+                    Madrid-París y persistencia de centros tradicionales (Lyon, Venecia, Roma)</li>
+
+                <li><strong>Muestra la transición lingüística</strong> del latín (lengua académica) al castellano
+                    (lengua administrativa) y el francés (lengua de la Ilustración)</li>
+
+                <li><strong>Representa un patrimonio extraordinario</strong>, valorado en 290.515 reales (equivalente a
+                    múltiples propiedades inmobiliarias)</li>
+
+                <li><strong>Ejemplifica el modelo magistral español</strong> de bibliofilia, distinto del modelo
+                    principesco (Italia, Alemania) o aristocrático (Inglaterra)</li>
+            </ol>
+
+            <h4>7.2 Contribución historiográfica</h4>
+
+            <p>
+                Este estudio aporta tres contribuciones principales a la historia del libro español:
+            </p>
+
+            <ul>
+                <li><strong>Metodológica:</strong> Aplica técnicas bibliométricas cuantitativas a un corpus histórico
+                    extenso</li>
+                <li><strong>Empírica:</strong> Proporciona datos inéditos sobre una biblioteca excepcional poco
+                    estudiada</li>
+                <li><strong>Teórica:</strong> Demuestra la utilidad del concepto de "capital cultural" para explicar la
+                    acumulación bibliográfica en las élites ilustradas</li>
+            </ul>
+
+            <h4>7.3 Líneas futuras de investigación</h4>
+
+            <p>
+                Este análisis abre varias líneas de investigación:
+            </p>
+
+            <ol>
+                <li>Biografía intelectual de Velasco basada en anotaciones manuscritas</li>
+                <li>Análisis temático exhaustivo mediante catalogación bibliográfica completa</li>
+                <li>Reconstrucción de las redes de libreros y tasadores del Madrid ilustrado</li>
+                <li>Estudios comparativos con bibliotecas contemporáneas europeas</li>
+                <li>Rastreo de ejemplares dispersos mediante el ex-libris</li>
+            </ol>
+        </section>
+
+        <!-- Estadísticas Section -->
+        <section id="estadisticas" class="section">
+            <h2>Estadísticas Clave</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">7.323</div>
+                    <div class="stat-label">Obras catalogadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">372</div>
+                    <div class="stat-label">Años de producción<br>(1427-1799)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">290.515</div>
+                    <div class="stat-label">Reales de vellón<br>(valor total)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">18,84%</div>
+                    <div class="stat-label">Obras impresas<br>en Madrid</div>
+                </div>
+            </div>
+
+            <h3>Completitud de los datos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Entradas con dato</th>
+                        <th>Completitud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Precio</td>
+                        <td>7.081</td>
+                        <td>96,7%</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>6.663</td>
+                        <td>91,0%</td>
+                    </tr>
+                    <tr>
+                        <td>Autor</td>
+                        <td>5.542</td>
+                        <td>75,7%</td>
+                    </tr>
+                    <tr>
+                        <td>Lugar</td>
+                        <td>3.870</td>
+                        <td>52,8%</td>
+                    </tr>
+                    <tr>
+                        <td>Formato</td>
+                        <td>1.745</td>
+                        <td>23,8%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Top 10 Autores más representados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Autor</th>
+                        <th>Obras</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Antonio de Nebrija</td>
+                        <td>28</td>
+                        <td>Humanista, primera gramática castellana (1492)</td>
+                    </tr>
+                    <tr>
+                        <td>Antonio Agustín</td>
+                        <td>23</td>
+                        <td>Humanista y arzobispo de Tarragona</td>
+                    </tr>
+                    <tr>
+                        <td>Juan Enríquez</td>
+                        <td>23</td>
+                        <td>Jurista y canonista</td>
+                    </tr>
+                    <tr>
+                        <td>Marco Tulio Cicerón</td>
+                        <td>20</td>
+                        <td>Filósofo y orador romano</td>
+                    </tr>
+                    <tr>
+                        <td>Jean-Baptiste Colbert</td>
+                        <td>17</td>
+                        <td>Ministro de Luis XIV</td>
+                    </tr>
+                    <tr>
+                        <td>Hugo Grocio</td>
+                        <td>15</td>
+                        <td>Padre del derecho internacional</td>
+                    </tr>
+                    <tr>
+                        <td>Juan de Mariana</td>
+                        <td>15</td>
+                        <td>Historiador jesuita</td>
+                    </tr>
+                    <tr>
+                        <td>Lope de Vega</td>
+                        <td>13</td>
+                        <td>Dramaturgo del Siglo de Oro</td>
+                    </tr>
+                    <tr>
+                        <td>Diego de Covarrubias</td>
+                        <td>12</td>
+                        <td>Jurista y obispo de Segovia</td>
+                    </tr>
+                    <tr>
+                        <td>Emperador Justiniano</td>
+                        <td>12</td>
+                        <td>Corpus Iuris Civilis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bibliografía Section -->
+        <section id="bibliografia" class="section">
+            <h2>Bibliografía y Fuentes</h2>
+
+            <h3>Fuentes primarias</h3>
+            <ul>
+                <li>Biblioteca Nacional de España. <em>Catálogo de la biblioteca de D. Fernando José de Velasco y
+                        Ceballos</em>. MSS/13601-13602. Manuscrito, junio de 1791.</li>
+            </ul>
+
+            <h3>Estudios sobre la biblioteca de Velasco</h3>
+            <ul>
+                <li>Escagedo Salmón, Mateo. <em>Biblioteca del Camarista de Castilla Don Fernando José de Velasco y
+                        Ceballos</em>. Santander, 1932.</li>
+                <li>Moreno Gallego, Valentín. "Burocracia y cultura libraria en el XVIII: el Camarista Velasco y su gran
+                    biblioteca". <em>Trabajos de la Asociación Española de Bibliografía</em>, II (1998), pp. 125-168.
+                </li>
+            </ul>
+
+            <h3>Historia del libro en España</h3>
+            <ul>
+                <li>Bouza, Fernando. <em>Corre manuscrito: Una historia cultural del Siglo de Oro</em>. Madrid: Marcial
+                    Pons, 2001.</li>
+                <li>Chartier, Roger. <em>El orden de los libros: Lectores, autores, bibliotecas en Europa entre los
+                        siglos XIV y XVIII</em>. Barcelona: Gedisa, 1994.</li>
+                <li>Griffin, Clive. <em>Los Cromberger: La historia de una imprenta del siglo XVI en Sevilla y
+                        Méjico</em>. Madrid: Ediciones de Cultura Hispánica, 1991.</li>
+                <li>Infantes, Víctor; López, François; Botrel, Jean-François (dirs.). <em>Historia de la edición y de la
+                        lectura en España, 1472-1914</em>. Madrid: Fundación Germán Sánchez Ruipérez, 2003.</li>
+                <li>Reyes Gómez, Fermín de los. <em>El libro en España y América: Legislación y censura (siglos
+                        XV-XVIII)</em>. Madrid: Arco Libros, 2000.</li>
+            </ul>
+
+            <h3>Fuentes digitales</h3>
+            <ul>
+                <li>CERL Thesaurus - Consortium of European Research Libraries: <a
+                        href="https://data.cerl.org/thesaurus/" target="_blank">https://data.cerl.org/thesaurus/</a>
+                </li>
+                <li>WorldCat - Base de datos bibliográfica mundial: <a href="https://www.worldcat.org/"
+                        target="_blank">https://www.worldcat.org/</a></li>
+                <li>VIAF - Virtual International Authority File: <a href="https://viaf.org/"
+                        target="_blank">https://viaf.org/</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 La Biblioteca de Fernando José de Velasco y Ceballos</p>
+        <p>Proyecto de investigación en Historia del Libro • Análisis Bibliométrico</p>
+        <p>Basado en el catálogo manuscrito BNE MSS/13601-13602 (1791)</p>
+    </footer>
+
+    <script>
+        // CONFIGURACIÓN: ID de BNE Digital
+        // Ambos volúmenes están en el mismo documento de BNE
+        const BNE_CONFIG = {
+            id: '09e8892a-93da-4dda-8e03-190378c061dd',
+            pagesPerVolume: 174  // Número de páginas del volumen 1 en BNE
+        };
+
+        // Variables para el catálogo real
+        let catalogData = [];
+        let filteredCatalogData = [];
+        let searchTimeout = null;
+
+        // --- VARIABLES GLOBALES DEL VISOR CORREGIDO ---
+        let currentScale = 1;
+        let currentX = 0;
+        let currentY = 0;
+        let isDragging = false;
+        let startX = 0;
+        let startY = 0;
+
+        // Función para parsear CSV
+        function parseCSV(text) {
+            const lines = text.trim().split('\n');
+            const headers = lines[0].split(',');
+            const data = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i];
+                const values = [];
+                let currentValue = '';
+                let inQuotes = false;
+
+                for (let char of line) {
+                    if (char === '"') {
+                        inQuotes = !inQuotes;
+                    } else if (char === ',' && !inQuotes) {
+                        values.push(currentValue.trim());
+                        currentValue = '';
+                    } else {
+                        currentValue += char;
+                    }
+                }
+                values.push(currentValue.trim());
+
+                if (values.length >= 6) {
+                    const entry = {
+                        volumen: values[0] || '1',
+                        filename: values[1],
+                        fila: parseInt(values[2]) || 0,
+                        transcripcion: values[3],
+                        precio: values[4],
+                        observaciones: values[5]
+                    };
+                    data.push(entry);
+                }
+            }
+
+            return data;
+        }
+
+        // Extraer número de página del filename
+        function getPageNumberFromFilename(filename) {
+            const match = filename.match(/pagina_(\d+)/);
+            return match ? parseInt(match[1]) : null;
+        }
+
+        // Obtener URL de BNE Digital
+        function getBNEUrl(filename, volumen) {
+            if (!BNE_CONFIG.id) {
+                return null;
+            }
+
+            const catalogPage = getPageNumberFromFilename(filename);
+            if (!catalogPage) return null;
+
+            // Algoritmo: ((volumen - 1) * 174) + ((pagina +1)/ 2)
+            // Ejemplo: Volumen 1, página 10 → 0 + 5 = página 5
+            // Ejemplo: Volumen 2, página 6 → 174 + 3 = página 177
+            const vol = parseInt(volumen);
+            const bnePage = ((vol - 1) * BNE_CONFIG.pagesPerVolume) + Math.floor((catalogPage + 1) / 2);
+
+            return `https://bnedigital.bne.es/bd/es/viewer?id=${BNE_CONFIG.id}&page=${bnePage}`;
+        }
+
+        // Mostrar visor de BNE embebido
+        function showBNEViewer(url, pageInfo) {
+            let imagePanel = document.getElementById('imagePanel');
+
+            if (imagePanel) {
+                if (imagePanel.getAttribute('data-url') === url) {
+                    closeImageViewer();
+                    return;
+                }
+                imagePanel.remove();
+            }
+
+            imagePanel = document.createElement('div');
+            imagePanel.id = 'imagePanel';
+            imagePanel.className = 'image-panel expanded';
+            imagePanel.setAttribute('data-url', url);
+
+            imagePanel.innerHTML = `
+                <div class="image-controls">
+                    <span class="image-title">📄 ${pageInfo} - BNE Digital</span>
+                    <button class="btn-close" onclick="closeImageViewer()">✕ Cerrar (ESC)</button>
+                </div>
+                <div class="image-container">
+                    <iframe src="${url}"
+                            style="width: 100%; height: 100%; border: none;"
+                            onload="console.log('Iframe cargado')"
+                            onerror="iframeError(this, '${url}')">
+                    </iframe>
+                </div>
+            `;
+
+            document.body.appendChild(imagePanel);
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Manejo de error de iframe
+        function iframeError(iframe, url) {
+            iframe.parentElement.innerHTML = `
+                <div style="padding: 40px; text-align: center; color: #fff;">
+                    <p style="font-size: 18px; margin-bottom: 20px;">⚠️ No se puede mostrar el visor embebido</p>
+                    <p style="margin-bottom: 20px;">La BNE puede bloquear la visualización en iframe por políticas de seguridad.</p>
+                    <a href="${url}" target="_blank" style="background: var(--secondary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
+                        🔗 Abrir en el visor de BNE Digital
+                    </a>
+                </div>
+            `;
+        }
+
+        // Cerrar visor de imágenes
+        function closeImageViewer() {
+            const imagePanel = document.getElementById('imagePanel');
+            if (imagePanel) {
+                imagePanel.remove();
+            }
+            document.body.style.overflow = '';
+        }
+
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' || e.key === 'Esc') {
+                closeImageViewer();
+            }
+        });
+
+        // Función de búsqueda con debounce
+        function handleCatalogSearch() {
+            if (searchTimeout) clearTimeout(searchTimeout);
+            const searchInput = document.getElementById('catalogSearchInput');
+            if (searchInput) searchInput.style.background = '#fff3cd';
+
+            searchTimeout = setTimeout(() => {
+                if (searchInput) searchInput.style.background = '';
+                applyCatalogFilters();
+            }, 800);
+        }
+
+        // Aplicar filtros
+        function applyCatalogFilters() {
+            const searchText = document.getElementById('catalogSearchInput').value.toLowerCase();
+            const volumenFilter = document.getElementById('volumenFilter').value;
+
+            if (!searchText && !volumenFilter) {
+                document.getElementById('catalogResults').innerHTML =
+                    '<p class="no-results">Escriba una palabra para buscar en el catálogo...</p>';
+                return;
+            }
+
+            filteredCatalogData = catalogData.filter(entry => {
+                const matchesSearch = !searchText ||
+                    entry.transcripcion.toLowerCase().includes(searchText) ||
+                    entry.observaciones.toLowerCase().includes(searchText);
+                const matchesVolumen = !volumenFilter || entry.volumen === volumenFilter;
+                return matchesSearch && matchesVolumen;
+            });
+
+            displayCatalogResults();
+        }
+
+        // Mostrar resultados
+        function displayCatalogResults() {
+            const resultsDiv = document.getElementById('catalogResults');
+
+            if (filteredCatalogData.length === 0) {
+                resultsDiv.innerHTML = '<p class="no-results">No se encontraron resultados para tu búsqueda.</p>';
+                return;
+            }
+
+            // Mostrar todos los resultados sin límite (para investigadores)
+            const displayData = filteredCatalogData;
+
+            let html = '<div class="results-summary">';
+            html += `Se encontraron <strong>${filteredCatalogData.length}</strong> resultado(s)`;
+            html += '</div>';
+
+            // Agrupar por volumen y página
+            const byVolume = {};
+            displayData.forEach(entry => {
+                if (!byVolume[entry.volumen]) {
+                    byVolume[entry.volumen] = {};
+                }
+                if (!byVolume[entry.volumen][entry.filename]) {
+                    byVolume[entry.volumen][entry.filename] = [];
+                }
+                byVolume[entry.volumen][entry.filename].push(entry);
+            });
+
+            Object.keys(byVolume).sort().forEach(volumen => {
+                const pages = byVolume[volumen];
+
+                html += `<div style="margin-top: 1.5rem; border-top: 2px solid var(--border); padding-top: 1rem;">`;
+                html += `<h4 style="color: var(--primary); margin-bottom: 1rem;">Volumen ${volumen}</h4>`;
+
+                Object.keys(pages).forEach(filename => {
+                    const entries = pages[filename];
+                    const pageMatch = filename.match(/pagina_(\d+)/);
+                    const pageNumber = pageMatch ? pageMatch[1] : filename;
+                    const bneUrl = getBNEUrl(filename, volumen);
+
+                    // Header de página con botón de imagen
+                    html += `<div class="page-group-header">`;
+                    html += `<strong>Página ${pageNumber} (${entries.length} entrada(s))</strong>`;
+                    if (bneUrl) {
+                        html += `<a class="image-link" onclick="event.preventDefault(); showBNEViewer('${bneUrl}', 'Volumen ${volumen} - Página ${pageNumber}')" title="Ver en visor embebido">🖼️ Ver en visor</a>`;
+                    }
+                    html += `</div>`;
+
+                    entries.forEach(entry => {
+                        html += `
+                            <div class="result-item">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
+                                    <span style="font-size: 0.9rem; color: var(--text-light);">
+                                        Vol. ${entry.volumen} • Pág. ${pageNumber} • Fila ${entry.fila}
+                                    </span>
+                                    ${entry.precio ? `<span style="background: #e8f5e9; color: #2e7d32; padding: 3px 10px; border-radius: 3px; font-size: 0.85rem; font-weight: 600;">${entry.precio}</span>` : ''}
+                                </div>
+                                <div class="result-text" style="font-family: 'Georgia', serif; line-height: 1.6;">
+                                    ${entry.transcripcion}
+                                </div>
+                                ${entry.observaciones ? `<div style="font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-top: 0.5rem;">Observaciones: ${entry.observaciones}</div>` : ''}
+                            </div>
+                        `;
+                    });
+                });
+
+                html += '</div>';
+            });
+
+            resultsDiv.innerHTML = html;
+        }
+
+        // Cargar CSV al iniciar
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('catalogo.csv');
+                if (!response.ok) {
+                    throw new Error('No se pudo cargar el archivo CSV');
+                }
+                const csvText = await response.text();
+                catalogData = parseCSV(csvText);
+                filteredCatalogData = catalogData;
+
+                console.log(`Catálogo cargado: ${catalogData.length} entradas`);
+
+                document.getElementById('catalogResults').innerHTML =
+                    `<p class="no-results">Catálogo cargado con éxito: ${catalogData.length} entradas disponibles.<br>Escriba una palabra para buscar...</p>`;
+            } catch (error) {
+                console.error('Error al cargar catálogo:', error);
+                document.getElementById('catalogResults').innerHTML =
+                    `<div class="no-results" style="color: #c00;">
+                        <strong>Error al cargar el catálogo:</strong><br>
+                        ${error.message}<br><br>
+                        Asegúrese de que el archivo 'catalogo.csv' esté en el mismo directorio que este HTML.
+                    </div>`;
+            }
+        });
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('catalogSearchInput');
+            if (searchInput) {
+                searchInput.addEventListener('keyup', handleCatalogSearch);
+                searchInput.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        if (searchTimeout) clearTimeout(searchTimeout);
+                        applyCatalogFilters();
+                    }
+                });
+            }
+        });
+
+        // Scroll suave para navegación
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
