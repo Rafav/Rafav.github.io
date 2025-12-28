@@ -1,8 +1,3 @@
----
-title: "Anexo II: Registro prosopográfico"
-author: "Rafael Vidal Rodríguez-Sabio"
-date: \today
----
 # ANEXO II: REGISTRO PROSOPOGRÁFICO EXHAUSTIVO DEL CORPUS TEATRAL (1788-1823)
 
 ## REGISTRO PROSOPOGRÁFICO EXHAUSTIVO - PROYECTO COMPLETADO 27/12/2025
