@@ -1,0 +1,1730 @@
+{
+  "ref_label": "A+B+S",
+  "eval_label": "D",
+  "also_tags": [
+    "A",
+    "B",
+    "S"
+  ],
+  "eval": [
+    {
+      "n": 458,
+      "y": null,
+      "tag": "D",
+      "inc": "No sois, aunque en edad de cuatro sietes,",
+      "ne": 14,
+      "dref": 5.25,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 9.34,
+        "B": 63.17,
+        "S": 5.86
+      },
+      "closer": "S"
+    },
+    {
+      "n": 456,
+      "y": null,
+      "tag": "D",
+      "inc": "Antes que alguna caja luterana",
+      "ne": 14,
+      "dref": 5.45,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 9.9,
+        "B": 66.12,
+        "S": 6.56
+      },
+      "closer": "S"
+    },
+    {
+      "n": 442,
+      "y": null,
+      "tag": "D",
+      "inc": "Anacreonte español, no hay quien os tope,",
+      "ne": 14,
+      "dref": 6.74,
+      "v": "ATIPICO",
+      "also": {
+        "A": 11.23,
+        "B": 70.49,
+        "S": 8.03
+      },
+      "closer": "S"
+    },
+    {
+      "n": 420,
+      "y": null,
+      "tag": "D",
+      "inc": "Cisne gentil, después que crespo el vado",
+      "ne": 14,
+      "dref": 6.14,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 10.85,
+        "B": 50.66,
+        "S": 7.13
+      },
+      "closer": "S"
+    },
+    {
+      "n": 428,
+      "y": null,
+      "tag": "D",
+      "inc": "Por tu vida, Lopillo, que me borres",
+      "ne": 14,
+      "dref": 5.18,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 6.02,
+        "B": 34.13,
+        "S": 8.11
+      },
+      "closer": "A"
+    },
+    {
+      "n": 433,
+      "y": null,
+      "tag": "D",
+      "inc": "Yace debajo de esta piedra fría",
+      "ne": 14,
+      "dref": 4.66,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 8.64,
+        "B": 52.49,
+        "S": 5.59
+      },
+      "closer": "S"
+    },
+    {
+      "n": 449,
+      "y": null,
+      "tag": "D",
+      "inc": "Con poca luz y menos disciplina",
+      "ne": 14,
+      "dref": 7.2,
+      "v": "ATIPICO",
+      "also": {
+        "A": 9.51,
+        "B": 49.38,
+        "S": 9.1
+      },
+      "closer": "S"
+    },
+    {
+      "n": 421,
+      "y": null,
+      "tag": "D",
+      "inc": "Generoso don Juan, sobre quien llueve",
+      "ne": 14,
+      "dref": 4.71,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 8.03,
+        "B": 31.51,
+        "S": 5.56
+      },
+      "closer": "S"
+    },
+    {
+      "n": 427,
+      "y": 1598,
+      "tag": "D",
+      "inc": "Señor, aquel Dragón de inglés veneno,",
+      "ne": 14,
+      "dref": 5.23,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 8.65,
+        "B": 47.64,
+        "S": 5.98
+      },
+      "closer": "S"
+    },
+    {
+      "n": 440,
+      "y": 1609,
+      "tag": "D",
+      "inc": "Vimo, señora Lopa, su Epopeya,",
+      "ne": 14,
+      "dref": 7.01,
+      "v": "ATIPICO",
+      "also": {
+        "A": 13.85,
+        "B": 61.13,
+        "S": 8.41
+      },
+      "closer": "S"
+    },
+    {
+      "n": 460,
+      "y": null,
+      "tag": "D",
+      "inc": "Cierto poeta, en forma peregrina",
+      "ne": 14,
+      "dref": 5.26,
+      "v": "COMPATIBLE",
+      "also": {
+        "A": 8.73,
+        "B": 37.41,
+        "S": 6.65
+      },
+      "closer": "S"
+    },
+    {
+      "n": 462,
+      "y": null,
+      "tag": "D",
+      "inc": "Doce sermones estampó Florencia,",
+      "ne": 14,
+      "dref": 6.67,
+      "v": "ATIPICO",
+      "also": {
+        "A": 9.32,
+        "B": 56.16,
+        "S": 7.88
+      },
+      "closer": "S"
+    },
+    {
+      "n": 439,
+      "y": null,
+      "tag": "D",
+      "inc": "Pálido sol en cielo encapotado,",
+      "ne": 14,
+      "dref": 11.08,
+      "v": "MUY ATIPICO",
+      "also": {
+        "A": 20.83,
+        "B": 80.15,
+        "S": 11.47
+      },
+      "closer": "S"
+    }
+  ],
+  "ref_dists": [
+    {
+      "n": 51,
+      "tag": "A",
+      "d": 4.93,
+      "inc": "Tres veces de Aquilón el soplo airado"
+    },
+    {
+      "n": 162,
+      "tag": "A",
+      "d": 5.27,
+      "inc": "Clarísimo Marqués, dos veces claro"
+    },
+    {
+      "n": 201,
+      "tag": "A",
+      "d": 4.33,
+      "inc": "Música le pidió ayer su albedrío"
+    },
+    {
+      "n": 17,
+      "tag": "A",
+      "d": 4.2,
+      "inc": "Raya, dorado Sol, orna y colora"
+    },
+    {
+      "n": 144,
+      "tag": "A",
+      "d": 4.4,
+      "inc": "La plaza, un jardín fresco; los tablados,"
+    },
+    {
+      "n": 16,
+      "tag": "A",
+      "d": 5.59,
+      "inc": "¡Oh claro honor del líquido elemento,"
+    },
+    {
+      "n": 196,
+      "tag": "A",
+      "d": 4.85,
+      "inc": "En el cristal de tu divina mano"
+    },
+    {
+      "n": 137,
+      "tag": "A",
+      "d": 6.79,
+      "inc": "Hermosas damas si la pasión ciega"
+    },
+    {
+      "n": 195,
+      "tag": "A",
+      "d": 4.71,
+      "inc": "Oh marinero, tú que, cortesano,"
+    },
+    {
+      "n": 15,
+      "tag": "A",
+      "d": 5.05,
+      "inc": "Al tramontar del sol, la ninfa mía,"
+    },
+    {
+      "n": 42,
+      "tag": "A",
+      "d": 5.06,
+      "inc": "No destrozada nave en roca dura"
+    },
+    {
+      "n": 18,
+      "tag": "A",
+      "d": 4.11,
+      "inc": "Cual parece al romper de la mañana"
+    },
+    {
+      "n": 19,
+      "tag": "A",
+      "d": 5.05,
+      "inc": "Suspiros tristes, lágrimas cansadas,"
+    },
+    {
+      "n": 24,
+      "tag": "A",
+      "d": 5.62,
+      "inc": "Mientras por competir con tu cabello,"
+    },
+    {
+      "n": 32,
+      "tag": "A",
+      "d": 4.99,
+      "inc": "Ni en este monte, este aire, ni este río"
+    },
+    {
+      "n": 41,
+      "tag": "A",
+      "d": 5.27,
+      "inc": "La dulce boca que a gustar convida"
+    },
+    {
+      "n": 50,
+      "tag": "A",
+      "d": 7.32,
+      "inc": "¡Oh excelso muro, oh torres coronadas"
+    },
+    {
+      "n": 116,
+      "tag": "A",
+      "d": 5.34,
+      "inc": "Pender de un leño, traspasado el pecho"
+    },
+    {
+      "n": 127,
+      "tag": "A",
+      "d": 5.1,
+      "inc": "Verdes juncos del Duero a mi pastora"
+    },
+    {
+      "n": 138,
+      "tag": "A",
+      "d": 4.86,
+      "inc": "Si Amor entre las plumas de su nido"
+    },
+    {
+      "n": 155,
+      "tag": "A",
+      "d": 5.08,
+      "inc": "Montaña inaccesible, opuesta en vano"
+    },
+    {
+      "n": 76,
+      "tag": "A",
+      "d": 4.84,
+      "inc": "Sacros, altos, dorados capiteles,"
+    },
+    {
+      "n": 180,
+      "tag": "A",
+      "d": 5.25,
+      "inc": "Mientras Corinto, en lágrimas deshecho,"
+    },
+    {
+      "n": 13,
+      "tag": "A",
+      "d": 4.74,
+      "inc": "De pura honestidad templo sagrado,"
+    },
+    {
+      "n": 40,
+      "tag": "A",
+      "d": 5.44,
+      "inc": "Con diferencia tal, con gracia tanta"
+    },
+    {
+      "n": 20,
+      "tag": "A",
+      "d": 6.07,
+      "inc": "Ya besando unas manos cristalinas,"
+    },
+    {
+      "n": 45,
+      "tag": "A",
+      "d": 6.27,
+      "inc": "Gallardas plantas que con voz doliente"
+    },
+    {
+      "n": 182,
+      "tag": "A",
+      "d": 5.81,
+      "inc": "-¿De dónde bueno, Juan, con pedorreras?"
+    },
+    {
+      "n": 69,
+      "tag": "A",
+      "d": 5.6,
+      "inc": "Grandes, más que elefantes y que abadas,"
+    },
+    {
+      "n": 193,
+      "tag": "A",
+      "d": 5.21,
+      "inc": "Este a Pomona, cuando ya no sea"
+    },
+    {
+      "n": 197,
+      "tag": "A",
+      "d": 5.51,
+      "inc": "Los blancos lilios que de ciento en ciento,"
+    },
+    {
+      "n": 71,
+      "tag": "A",
+      "d": 5.26,
+      "inc": "Duélete de esa puente, Manzanares,"
+    },
+    {
+      "n": 93,
+      "tag": "A",
+      "d": 4.96,
+      "inc": "Árbol de cuyos ramos fortunados,"
+    },
+    {
+      "n": 135,
+      "tag": "A",
+      "d": 4.67,
+      "inc": "Lilio siempre real, nací en Medina,"
+    },
+    {
+      "n": 112,
+      "tag": "A",
+      "d": 4.85,
+      "inc": "Este monte, de cruces coronado,"
+    },
+    {
+      "n": 68,
+      "tag": "A",
+      "d": 5.89,
+      "inc": "Por niñear un picarillo tierno,"
+    },
+    {
+      "n": 134,
+      "tag": "A",
+      "d": 6.34,
+      "inc": "¡Ayer deidad humana, hoy poca tierra;"
+    },
+    {
+      "n": 44,
+      "tag": "A",
+      "d": 4.53,
+      "inc": "No enfrene tu gallardo pensamiento"
+    },
+    {
+      "n": 285,
+      "tag": "B",
+      "d": 5.3,
+      "inc": "Un culto Risco en venas hoy süaves"
+    },
+    {
+      "n": 287,
+      "tag": "B",
+      "d": 3.99,
+      "inc": "No entre las flores, no, señor don Diego,"
+    },
+    {
+      "n": 221,
+      "tag": "B",
+      "d": 5.7,
+      "inc": "Señores corteggiantes, ¿quién sus días"
+    },
+    {
+      "n": 234,
+      "tag": "B",
+      "d": 4.29,
+      "inc": "El conde, mi señor, se fue a Nápoles;"
+    },
+    {
+      "n": 336,
+      "tag": "B",
+      "d": 5.08,
+      "inc": "Prisión del nácar era articulado"
+    },
+    {
+      "n": 355,
+      "tag": "B",
+      "d": 4.63,
+      "inc": "Las que a otros negó piedras Oriente,"
+    },
+    {
+      "n": 392,
+      "tag": "B",
+      "d": 5.04,
+      "inc": "Camina mi pensión con pie de plomo,"
+    },
+    {
+      "n": 361,
+      "tag": "B",
+      "d": 4.2,
+      "inc": "Al tronco Filis de un laurel sagrado"
+    },
+    {
+      "n": 374,
+      "tag": "B",
+      "d": 5.78,
+      "inc": "El Conde mi señor se va a Nápoles"
+    },
+    {
+      "n": 219,
+      "tag": "B",
+      "d": 5.49,
+      "inc": "Pálida restituye a su elemento"
+    },
+    {
+      "n": 253,
+      "tag": "B",
+      "d": 6.11,
+      "inc": "Poco después, que su cristal dilata"
+    },
+    {
+      "n": 237,
+      "tag": "B",
+      "d": 5.05,
+      "inc": "No de fino diamante, o rubí ardiente,"
+    },
+    {
+      "n": 218,
+      "tag": "B",
+      "d": 5.88,
+      "inc": "El cuarto Enrico yace mal herido,"
+    },
+    {
+      "n": 267,
+      "tag": "B",
+      "d": 5.71,
+      "inc": "Segundas plumas son ¡oh lector! cuantas"
+    },
+    {
+      "n": 358,
+      "tag": "B",
+      "d": 4.55,
+      "inc": "Sella el tronco sangriento, no le oprime"
+    },
+    {
+      "n": 900,
+      "tag": "S",
+      "d": 5.15,
+      "inc": "De vuestras ramas no la heroica lira"
+    },
+    {
+      "n": 901,
+      "tag": "S",
+      "d": 6.0,
+      "inc": "De chinches y de mulas voy comido;"
+    },
+    {
+      "n": 902,
+      "tag": "S",
+      "d": 5.94,
+      "inc": "Soror don Juan, ¿ayer silicio y jerga,"
+    },
+    {
+      "n": 903,
+      "tag": "S",
+      "d": 5.02,
+      "inc": "De humildes padres hija, en pobres paños"
+    },
+    {
+      "n": 904,
+      "tag": "S",
+      "d": 4.89,
+      "inc": "¿Las no piadosas martas ya te pones,"
+    },
+    {
+      "n": 905,
+      "tag": "S",
+      "d": 4.04,
+      "inc": "Hay entre Carrión y Tordesillas,"
+    },
+    {
+      "n": 906,
+      "tag": "S",
+      "d": 6.04,
+      "inc": "Comer salchichas y hallar sin gota"
+    },
+    {
+      "n": 907,
+      "tag": "S",
+      "d": 5.72,
+      "inc": "Esta forma elegante, oh peregrino,"
+    },
+    {
+      "n": 908,
+      "tag": "S",
+      "d": 4.87,
+      "inc": "Rey de los otros ríos caudaloso,"
+    },
+    {
+      "n": 909,
+      "tag": "S",
+      "d": 5.35,
+      "inc": "Con razón, gloria excelsa de Velada,"
+    },
+    {
+      "n": 910,
+      "tag": "S",
+      "d": 5.52,
+      "inc": "Llegué a Valladolid; registré luego"
+    },
+    {
+      "n": 911,
+      "tag": "S",
+      "d": 5.63,
+      "inc": "En la capilla estoy y condenado"
+    },
+    {
+      "n": 912,
+      "tag": "S",
+      "d": 4.02,
+      "inc": "Hermoso dueño de la vida mía,"
+    },
+    {
+      "n": 913,
+      "tag": "S",
+      "d": 5.97,
+      "inc": "Esta en forma elegante, o peregrino,"
+    },
+    {
+      "n": 914,
+      "tag": "S",
+      "d": 5.96,
+      "inc": "Mariposa, no sólo no cobarde,"
+    },
+    {
+      "n": 915,
+      "tag": "S",
+      "d": 5.24,
+      "inc": "Si ociosa no asistió naturaleza,"
+    },
+    {
+      "n": 916,
+      "tag": "S",
+      "d": 5.21,
+      "inc": "En tenebrosa noche, en mar airado,"
+    },
+    {
+      "n": 917,
+      "tag": "S",
+      "d": 4.37,
+      "inc": "Al sol peinaba Clori sus cabellos"
+    },
+    {
+      "n": 918,
+      "tag": "S",
+      "d": 5.22,
+      "inc": "Yacen aquí los hueso sepultados"
+    },
+    {
+      "n": 919,
+      "tag": "S",
+      "d": 4.81,
+      "inc": "Menos solícito veloz saeta"
+    },
+    {
+      "n": 920,
+      "tag": "S",
+      "d": 7.19,
+      "inc": "¡Oh niebla del estado más sereno,"
+    },
+    {
+      "n": 921,
+      "tag": "S",
+      "d": 5.71,
+      "inc": "Ayer naciste y morirás mañana;"
+    },
+    {
+      "n": 922,
+      "tag": "S",
+      "d": 6.17,
+      "inc": "-Rebelde y pertinaz entendimiento,"
+    },
+    {
+      "n": 923,
+      "tag": "S",
+      "d": 4.69,
+      "inc": "Bien dispuesta madera en nueva traza,"
+    },
+    {
+      "n": 924,
+      "tag": "S",
+      "d": 7.24,
+      "inc": "Dulce arroyuelo de la nieve fría"
+    },
+    {
+      "n": 925,
+      "tag": "S",
+      "d": 6.64,
+      "inc": "Embutiste Lopillo, a Sabaot"
+    },
+    {
+      "n": 926,
+      "tag": "S",
+      "d": 6.57,
+      "inc": "Tonante monseñor, ¿de cuándo acá"
+    },
+    {
+      "n": 927,
+      "tag": "S",
+      "d": 5.29,
+      "inc": "Valladolid, de lágrimas sois valle,"
+    },
+    {
+      "n": 928,
+      "tag": "S",
+      "d": 5.6,
+      "inc": "Es el Orfeo del señor don Juan"
+    },
+    {
+      "n": 929,
+      "tag": "S",
+      "d": 3.88,
+      "inc": "Generoso esplendor, sino luciente"
+    },
+    {
+      "n": 930,
+      "tag": "S",
+      "d": 6.03,
+      "inc": "En justa, injusta expuesto a la sentencia"
+    },
+    {
+      "n": 931,
+      "tag": "S",
+      "d": 5.91,
+      "inc": "Sin esperar la lucha picaril"
+    },
+    {
+      "n": 932,
+      "tag": "S",
+      "d": 5.17,
+      "inc": "¿Para qué dime Marcia, te perfumas,"
+    },
+    {
+      "n": 933,
+      "tag": "S",
+      "d": 5.1,
+      "inc": "Un Valentón de espátula, y gregesco,"
+    },
+    {
+      "n": 934,
+      "tag": "S",
+      "d": 5.0,
+      "inc": "«Aquí del Conde Claros», dijo, y luego,"
+    },
+    {
+      "n": 935,
+      "tag": "S",
+      "d": 5.44,
+      "inc": "Este, que en la fortuna más subida"
+    },
+    {
+      "n": 936,
+      "tag": "S",
+      "d": 4.55,
+      "inc": "Cosas, Celalva mía, he visto extrañas,"
+    },
+    {
+      "n": 937,
+      "tag": "S",
+      "d": 6.39,
+      "inc": "Celos de quien bien ama, amargo freno,"
+    },
+    {
+      "n": 938,
+      "tag": "S",
+      "d": 5.82,
+      "inc": "Este, que Babia al mundo hoy ha ofrecido"
+    },
+    {
+      "n": 939,
+      "tag": "S",
+      "d": 5.07,
+      "inc": "Patos del aguachirle castellana"
+    },
+    {
+      "n": 940,
+      "tag": "S",
+      "d": 4.99,
+      "inc": "Si ya el griego orador la edad presente,"
+    },
+    {
+      "n": 941,
+      "tag": "S",
+      "d": 6.65,
+      "inc": "Vive en este volumen el que yace"
+    },
+    {
+      "n": 942,
+      "tag": "S",
+      "d": 4.76,
+      "inc": "Pisó las calles de Madrid el fiero"
+    },
+    {
+      "n": 943,
+      "tag": "S",
+      "d": 4.0,
+      "inc": "Restituye a tu mundo horror divino,"
+    },
+    {
+      "n": 944,
+      "tag": "S",
+      "d": 4.97,
+      "inc": "En vez de las Helíades, ahora"
+    },
+    {
+      "n": 945,
+      "tag": "S",
+      "d": 5.28,
+      "inc": "Después que Apolo, tus coplones vido"
+    },
+    {
+      "n": 946,
+      "tag": "S",
+      "d": 5.28,
+      "inc": "«Aquí del Conde Claros», dijo, y luego"
+    },
+    {
+      "n": 947,
+      "tag": "S",
+      "d": 4.36,
+      "inc": "Sabe el cielo, Valdés, si me ha pesado"
+    },
+    {
+      "n": 948,
+      "tag": "S",
+      "d": 4.15,
+      "inc": "Deja las damas, cuyo flaco yerro"
+    },
+    {
+      "n": 949,
+      "tag": "S",
+      "d": 5.29,
+      "inc": "Orfeo, el que bajó de Andalucía,"
+    }
+  ],
+  "p95": 6.638362051358466,
+  "p99": 7.243126105563355,
+  "med": 5.220323627087882,
+  "ve": 59.1,
+  "ref_tags": [
+    "A",
+    "B",
+    "S"
+  ],
+  "eval_tags": [
+    "D"
+  ],
+  "nR": 103,
+  "nE": 13,
+  "counts": {
+    "A": 38,
+    "B": 15,
+    "S": 50,
+    "D": 13
+  },
+  "proj": {
+    "A": [
+      [
+        4.4194,
+        -6.1403
+      ],
+      [
+        5.103,
+        4.7221
+      ],
+      [
+        -9.8074,
+        -1.4782
+      ],
+      [
+        -3.7599,
+        0.3249
+      ],
+      [
+        -4.5585,
+        5.5465
+      ],
+      [
+        -3.1397,
+        2.6066
+      ],
+      [
+        2.7778,
+        2.2038
+      ],
+      [
+        0.4406,
+        -6.124
+      ],
+      [
+        -0.8772,
+        3.0781
+      ],
+      [
+        10.8087,
+        5.3117
+      ],
+      [
+        -5.6047,
+        3.0402
+      ],
+      [
+        4.3624,
+        6.839
+      ],
+      [
+        -3.0657,
+        -3.8445
+      ],
+      [
+        -3.3097,
+        -7.3486
+      ],
+      [
+        1.1993,
+        5.4316
+      ],
+      [
+        3.708,
+        -0.7703
+      ],
+      [
+        5.4584,
+        1.5445
+      ],
+      [
+        -0.4636,
+        2.7436
+      ],
+      [
+        -3.5383,
+        -2.3813
+      ],
+      [
+        0.7441,
+        -2.2672
+      ],
+      [
+        -1.6965,
+        -6.2048
+      ],
+      [
+        -1.1807,
+        6.2198
+      ],
+      [
+        -2.7262,
+        -2.8979
+      ],
+      [
+        -4.6708,
+        1.4628
+      ],
+      [
+        3.1197,
+        0.8548
+      ],
+      [
+        -0.8476,
+        2.1428
+      ],
+      [
+        -6.8572,
+        -6.3497
+      ],
+      [
+        1.3155,
+        -4.0049
+      ],
+      [
+        -0.1855,
+        -5.7681
+      ],
+      [
+        2.4099,
+        0.6939
+      ],
+      [
+        2.8334,
+        -16.1046
+      ],
+      [
+        4.9599,
+        -0.1133
+      ],
+      [
+        -9.4,
+        -3.3768
+      ],
+      [
+        9.4322,
+        1.7674
+      ],
+      [
+        3.0851,
+        6.7175
+      ],
+      [
+        1.6453,
+        4.6198
+      ],
+      [
+        10.6816,
+        1.729
+      ],
+      [
+        3.9908,
+        -7.5721
+      ]
+    ],
+    "B": [
+      [
+        0.0237,
+        -1.372
+      ],
+      [
+        -6.3298,
+        -0.9349
+      ],
+      [
+        -1.0019,
+        -0.4999
+      ],
+      [
+        1.1692,
+        3.1952
+      ],
+      [
+        -6.3252,
+        1.0961
+      ],
+      [
+        4.1885,
+        -5.0781
+      ],
+      [
+        -4.1298,
+        -4.0764
+      ],
+      [
+        7.6486,
+        0.7189
+      ],
+      [
+        0.4786,
+        6.0424
+      ],
+      [
+        -2.3037,
+        -6.8755
+      ],
+      [
+        -4.9415,
+        3.8435
+      ],
+      [
+        0.1342,
+        4.768
+      ],
+      [
+        -0.9431,
+        -2.6072
+      ],
+      [
+        -3.7312,
+        -4.416
+      ],
+      [
+        -1.0302,
+        1.5658
+      ]
+    ],
+    "S": [
+      [
+        8.2384,
+        7.1008
+      ],
+      [
+        0.5245,
+        2.3427
+      ],
+      [
+        2.8984,
+        -5.2869
+      ],
+      [
+        3.3308,
+        -1.4936
+      ],
+      [
+        -2.545,
+        -10.4966
+      ],
+      [
+        2.4357,
+        -4.1252
+      ],
+      [
+        -3.8348,
+        0.4677
+      ],
+      [
+        -6.5669,
+        -0.5458
+      ],
+      [
+        1.7707,
+        5.4191
+      ],
+      [
+        2.6798,
+        -9.6147
+      ],
+      [
+        -4.3457,
+        1.5009
+      ],
+      [
+        -8.8715,
+        1.6293
+      ],
+      [
+        -5.1956,
+        -3.3863
+      ],
+      [
+        -5.8657,
+        2.0283
+      ],
+      [
+        2.0298,
+        2.6409
+      ],
+      [
+        2.5956,
+        5.8399
+      ],
+      [
+        2.6535,
+        4.615
+      ],
+      [
+        -4.8042,
+        -0.6787
+      ],
+      [
+        -1.8505,
+        -9.1977
+      ],
+      [
+        -3.5483,
+        -0.9685
+      ],
+      [
+        1.6494,
+        1.4752
+      ],
+      [
+        5.9347,
+        1.6737
+      ],
+      [
+        3.9448,
+        0.0964
+      ],
+      [
+        -0.1401,
+        5.8686
+      ],
+      [
+        -13.5944,
+        8.2032
+      ],
+      [
+        -13.7519,
+        8.2925
+      ],
+      [
+        3.7418,
+        0.3107
+      ],
+      [
+        -2.9748,
+        -3.68
+      ],
+      [
+        -1.202,
+        4.6431
+      ],
+      [
+        0.1953,
+        -0.6343
+      ],
+      [
+        5.2815,
+        6.3455
+      ],
+      [
+        -3.0122,
+        2.6462
+      ],
+      [
+        -2.7697,
+        4.7264
+      ],
+      [
+        2.6191,
+        -2.134
+      ],
+      [
+        -0.2637,
+        -9.0917
+      ],
+      [
+        -5.0185,
+        6.8453
+      ],
+      [
+        0.3624,
+        3.3468
+      ],
+      [
+        2.8198,
+        0.9608
+      ],
+      [
+        10.8975,
+        -6.546
+      ],
+      [
+        -0.3307,
+        3.8471
+      ],
+      [
+        1.9607,
+        -3.0835
+      ],
+      [
+        4.1754,
+        3.9637
+      ],
+      [
+        0.9039,
+        -2.9154
+      ],
+      [
+        -3.5408,
+        1.2642
+      ],
+      [
+        8.1085,
+        -0.6519
+      ],
+      [
+        2.4659,
+        1.7292
+      ],
+      [
+        -0.2325,
+        -6.8493
+      ],
+      [
+        1.4394,
+        -5.8763
+      ],
+      [
+        -0.5635,
+        0.1842
+      ],
+      [
+        11.8707,
+        2.7061
+      ]
+    ],
+    "D": [
+      [
+        -3.2334,
+        5.0379
+      ],
+      [
+        1.4242,
+        -4.6144
+      ],
+      [
+        17.1849,
+        3.9811
+      ],
+      [
+        -5.4813,
+        -3.0127
+      ],
+      [
+        4.5338,
+        -1.5449
+      ],
+      [
+        0.8132,
+        -1.715
+      ],
+      [
+        1.861,
+        -5.9171
+      ],
+      [
+        0.9119,
+        -1.3467
+      ],
+      [
+        -1.4955,
+        6.2142
+      ],
+      [
+        -4.3766,
+        2.1877
+      ],
+      [
+        -4.1646,
+        6.8357
+      ],
+      [
+        -6.9728,
+        1.3272
+      ],
+      [
+        -3.4221,
+        -5.1135
+      ]
+    ]
+  },
+  "nums": {
+    "A": [
+      51,
+      162,
+      201,
+      17,
+      144,
+      16,
+      196,
+      137,
+      195,
+      15,
+      42,
+      18,
+      19,
+      24,
+      32,
+      41,
+      50,
+      116,
+      127,
+      138,
+      155,
+      76,
+      180,
+      13,
+      40,
+      20,
+      45,
+      182,
+      69,
+      193,
+      197,
+      71,
+      93,
+      135,
+      112,
+      68,
+      134,
+      44
+    ],
+    "B": [
+      285,
+      287,
+      221,
+      234,
+      336,
+      355,
+      392,
+      361,
+      374,
+      219,
+      253,
+      237,
+      218,
+      267,
+      358
+    ],
+    "S": [
+      900,
+      901,
+      902,
+      903,
+      904,
+      905,
+      906,
+      907,
+      908,
+      909,
+      910,
+      911,
+      912,
+      913,
+      914,
+      915,
+      916,
+      917,
+      918,
+      919,
+      920,
+      921,
+      922,
+      923,
+      924,
+      925,
+      926,
+      927,
+      928,
+      929,
+      930,
+      931,
+      932,
+      933,
+      934,
+      935,
+      936,
+      937,
+      938,
+      939,
+      940,
+      941,
+      942,
+      943,
+      944,
+      945,
+      946,
+      947,
+      948,
+      949
+    ],
+    "D": [
+      458,
+      456,
+      442,
+      420,
+      428,
+      433,
+      449,
+      421,
+      427,
+      440,
+      460,
+      462,
+      439
+    ]
+  },
+  "incs": {
+    "A": [
+      "Tres veces de Aquilón el soplo",
+      "Clarísimo Marqués, dos veces c",
+      "Música le pidió ayer su albedr",
+      "Raya, dorado Sol, orna y color",
+      "La plaza, un jardín fresco; lo",
+      "¡Oh claro honor del líquido el",
+      "En el cristal de tu divina man",
+      "Hermosas damas si la pasión ci",
+      "Oh marinero, tú que, cortesano",
+      "Al tramontar del sol, la ninfa",
+      "No destrozada nave en roca dur",
+      "Cual parece al romper de la ma",
+      "Suspiros tristes, lágrimas can",
+      "Mientras por competir con tu c",
+      "Ni en este monte, este aire, n",
+      "La dulce boca que a gustar con",
+      "¡Oh excelso muro, oh torres co",
+      "Pender de un leño, traspasado ",
+      "Verdes juncos del Duero a mi p",
+      "Si Amor entre las plumas de su",
+      "Montaña inaccesible, opuesta e",
+      "Sacros, altos, dorados capitel",
+      "Mientras Corinto, en lágrimas ",
+      "De pura honestidad templo sagr",
+      "Con diferencia tal, con gracia",
+      "Ya besando unas manos cristali",
+      "Gallardas plantas que con voz ",
+      "-¿De dónde bueno, Juan, con pe",
+      "Grandes, más que elefantes y q",
+      "Este a Pomona, cuando ya no se",
+      "Los blancos lilios que de cien",
+      "Duélete de esa puente, Manzana",
+      "Árbol de cuyos ramos fortunado",
+      "Lilio siempre real, nací en Me",
+      "Este monte, de cruces coronado",
+      "Por niñear un picarillo tierno",
+      "¡Ayer deidad humana, hoy poca ",
+      "No enfrene tu gallardo pensami"
+    ],
+    "B": [
+      "Un culto Risco en venas hoy sü",
+      "No entre las flores, no, señor",
+      "Señores corteggiantes, ¿quién ",
+      "El conde, mi señor, se fue a N",
+      "Prisión del nácar era articula",
+      "Las que a otros negó piedras O",
+      "Camina mi pensión con pie de p",
+      "Al tronco Filis de un laurel s",
+      "El Conde mi señor se va a Nápo",
+      "Pálida restituye a su elemento",
+      "Poco después, que su cristal d",
+      "No de fino diamante, o rubí ar",
+      "El cuarto Enrico yace mal heri",
+      "Segundas plumas son ¡oh lector",
+      "Sella el tronco sangriento, no"
+    ],
+    "S": [
+      "De vuestras ramas no la heroic",
+      "De chinches y de mulas voy com",
+      "Soror don Juan, ¿ayer silicio ",
+      "De humildes padres hija, en po",
+      "¿Las no piadosas martas ya te ",
+      "Hay entre Carrión y Tordesilla",
+      "Comer salchichas y hallar sin ",
+      "Esta forma elegante, oh peregr",
+      "Rey de los otros ríos caudalos",
+      "Con razón, gloria excelsa de V",
+      "Llegué a Valladolid; registré ",
+      "En la capilla estoy y condenad",
+      "Hermoso dueño de la vida mía,",
+      "Esta en forma elegante, o pere",
+      "Mariposa, no sólo no cobarde,",
+      "Si ociosa no asistió naturalez",
+      "En tenebrosa noche, en mar air",
+      "Al sol peinaba Clori sus cabel",
+      "Yacen aquí los hueso sepultado",
+      "Menos solícito veloz saeta",
+      "¡Oh niebla del estado más sere",
+      "Ayer naciste y morirás mañana;",
+      "-Rebelde y pertinaz entendimie",
+      "Bien dispuesta madera en nueva",
+      "Dulce arroyuelo de la nieve fr",
+      "Embutiste Lopillo, a Sabaot",
+      "Tonante monseñor, ¿de cuándo a",
+      "Valladolid, de lágrimas sois v",
+      "Es el Orfeo del señor don Juan",
+      "Generoso esplendor, sino lucie",
+      "En justa, injusta expuesto a l",
+      "Sin esperar la lucha picaril",
+      "¿Para qué dime Marcia, te perf",
+      "Un Valentón de espátula, y gre",
+      "«Aquí del Conde Claros», dijo,",
+      "Este, que en la fortuna más su",
+      "Cosas, Celalva mía, he visto e",
+      "Celos de quien bien ama, amarg",
+      "Este, que Babia al mundo hoy h",
+      "Patos del aguachirle castellan",
+      "Si ya el griego orador la edad",
+      "Vive en este volumen el que ya",
+      "Pisó las calles de Madrid el f",
+      "Restituye a tu mundo horror di",
+      "En vez de las Helíades, ahora",
+      "Después que Apolo, tus coplone",
+      "«Aquí del Conde Claros», dijo,",
+      "Sabe el cielo, Valdés, si me h",
+      "Deja las damas, cuyo flaco yer",
+      "Orfeo, el que bajó de Andalucí"
+    ],
+    "D": [
+      "No sois, aunque en edad de cua",
+      "Antes que alguna caja luterana",
+      "Anacreonte español, no hay qui",
+      "Cisne gentil, después que cres",
+      "Por tu vida, Lopillo, que me b",
+      "Yace debajo de esta piedra frí",
+      "Con poca luz y menos disciplin",
+      "Generoso don Juan, sobre quien",
+      "Señor, aquel Dragón de inglés ",
+      "Vimo, señora Lopa, su Epopeya,",
+      "Cierto poeta, en forma peregri",
+      "Doce sermones estampó Florenci",
+      "Pálido sol en cielo encapotado"
+    ]
+  },
+  "ap_ref": [
+    0.291,
+    0.449,
+    0.282,
+    0.526,
+    0.068,
+    0.798,
+    0.105,
+    0.485,
+    0.069,
+    1.0,
+    0.0
+  ],
+  "ac_ref": [
+    1.0,
+    -0.3623,
+    0.041,
+    -0.1587,
+    0.2216,
+    -0.1751,
+    0.0874,
+    -0.1511,
+    0.1934,
+    -0.1544,
+    0.0963,
+    -0.2265,
+    0.4032,
+    -0.2288
+  ],
+  "fft_ref": [
+    4.075,
+    0.835,
+    1.107,
+    1.555,
+    1.383
+  ],
+  "idREF": [
+    3.88,
+    3.99,
+    4.0,
+    4.02,
+    4.04,
+    4.11,
+    4.15,
+    4.2,
+    4.2,
+    4.29,
+    4.33,
+    4.36,
+    4.37,
+    4.4,
+    4.53,
+    4.55,
+    4.55,
+    4.63,
+    4.67,
+    4.69,
+    4.71,
+    4.74,
+    4.76,
+    4.81,
+    4.84,
+    4.85,
+    4.85,
+    4.86,
+    4.87,
+    4.89,
+    4.93,
+    4.96,
+    4.97,
+    4.99,
+    4.99,
+    5.0,
+    5.02,
+    5.04,
+    5.05,
+    5.05,
+    5.05,
+    5.06,
+    5.07,
+    5.08,
+    5.08,
+    5.1,
+    5.1,
+    5.15,
+    5.17,
+    5.21,
+    5.21,
+    5.22,
+    5.24,
+    5.25,
+    5.26,
+    5.27,
+    5.27,
+    5.28,
+    5.28,
+    5.29,
+    5.29,
+    5.3,
+    5.34,
+    5.35,
+    5.44,
+    5.44,
+    5.49,
+    5.51,
+    5.52,
+    5.59,
+    5.6,
+    5.6,
+    5.62,
+    5.63,
+    5.7,
+    5.71,
+    5.71,
+    5.72,
+    5.78,
+    5.81,
+    5.82,
+    5.88,
+    5.89,
+    5.91,
+    5.94,
+    5.96,
+    5.97,
+    6.0,
+    6.03,
+    6.04,
+    6.07,
+    6.11,
+    6.17,
+    6.27,
+    6.34,
+    6.39,
+    6.57,
+    6.64,
+    6.65,
+    6.79,
+    7.19,
+    7.24,
+    7.32
+  ],
+  "also_models": {
+    "A": {
+      "p95": 5.6212473851619515,
+      "p99": 5.887245258909184,
+      "med": 5.2534716694571175
+    },
+    "B": {
+      "p95": 3.7355827562940402,
+      "p99": 3.7355827562940402,
+      "med": 3.728188677547008
+    },
+    "S": {
+      "p95": 5.918176155501343,
+      "p99": 6.660551009852148,
+      "med": 5.32447536506326
+    }
+  }
+}
