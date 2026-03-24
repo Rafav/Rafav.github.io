@@ -311,7 +311,105 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ---
 
-## 9. Conclusiones
+## 9. Análisis de los 4-gramas de rima (dims 28-32)
+
+Las 5 dimensiones léxicas de rima capturan el hábito fonológico del poeta en posición
+de rima. Esta sección aísla esas dimensiones para valorar su aportación independiente.
+
+### 9.1. Perfil de referencia (corpus A+B+S, 103 sonetos)
+
+| Rasgo | Media | Std | Mín | Máx |
+|-------|------:|----:|----:|----:|
+| Diversidad (tipos/14) | 0.691 | 0.160 | 0.286 | 1.000 |
+| Entropía (bits) | 3.070 | 0.422 | 1.985 | 4.000 |
+| Longitud palabra-rima | 6.34 | 0.73 | 3.07 | 8.43 |
+| % participial (-ado/-ido) | 11.3% | 14.6% | 0% | 57.1% |
+| Base normalizada | 6.34 | 0.73 | 3.07 | 8.43 |
+
+### 9.2. Contraejemplos: perfil de 4-gramas
+
+| # | Autor | Div | Ent | LenR | %Ptc | Base | 4-gramas compartidos con REF |
+|--:|-------|----:|----:|-----:|-----:|-----:|----:|
+| 9001 | Quevedo | 0.929 | 3.664 | 5.79 | **42.9%** | 5.79 | 13/14 |
+| 9002 | Lope (Violante) | 0.500 | 2.557 | 7.21 | 0% | 7.21 | 10/14 |
+| 9003 | Fray Luis | 0.643 | 3.039 | 7.07 | 14.3% | 7.07 | 11/14 |
+| 9004 | Garcilaso | 0.714 | 3.093 | 6.79 | 14.3% | 6.79 | 6/14 |
+| 9005 | Cetina | **0.357** | **1.921** | 6.07 | 0% | 6.07 | 6/14 |
+| 9006 | Lope (Desmayarse) | 0.857 | 3.522 | 6.29 | 0% | 6.29 | 7/14 |
+| 9007 | Sor Juana | 0.786 | 3.325 | 6.86 | 0% | 6.86 | 6/14 |
+
+**Observaciones**:
+
+- **Quevedo** tiene el % participial más alto (42.9%): 6 de 14 rimas terminan en
+  -ado/-ido (*enamorado, traspasado, sido, dado, ardido, cuidado, sentido*). El corpus
+  gongorino promedia 11.3%. Esta sobrecarga de participios en rima es el marcador
+  más claro de distancia léxica.
+- **Cetina** tiene la diversidad más baja (0.357) y la entropía mínima (1.921): repite
+  el verso «ya que así me miráis, miradme al menos» 5 veces (artefacto del padding
+  del madrigal a 14 versos).
+- **Garcilaso y Sor Juana** solo comparten 6 de 14 terminaciones con el corpus
+  gongorino. Sus 4-gramas exclusivos (*anec* ← azucena, *otseg* ← gesto, *oviq* ← esquivo)
+  delatan un vocabulario de rima distinto.
+- **Lope (Violante)** es el más anómalo en longitud (7.21): rima con palabras
+  largas (*Violante, consonante, aprieto, cuarteto*) pero sin participios.
+
+### 9.3. Dudosos gongorinos: perfil de 4-gramas
+
+| # | Incipit | Div | Ent | LenR | %Ptc | Base | Compartidos |
+|--:|---------|----:|----:|-----:|-----:|-----:|----:|
+| 420 | *Cisne gentil* | 0.929 | 3.664 | 7.14 | 28.6% | 7.14 | 13/14 |
+| 421 | *Generoso don Juan* | 0.929 | 3.664 | 5.86 | 14.3% | 5.86 | 10/14 |
+| 427 | *Señor, aquel Dragón* | 0.714 | 3.182 | 5.50 | 0% | 5.50 | 10/14 |
+| 428 | *Por tu vida, Lopillo* | 0.714 | 3.093 | 6.00 | 14.3% | 6.00 | 2/14 |
+| 433 | *Yace debajo* | 0.571 | 2.807 | 7.50 | 0% | 7.50 | 4/14 |
+| 439 | *Pálido sol* | 0.857 | 3.522 | 7.43 | 28.6% | 7.43 | 8/14 |
+| 440 | *Vimo, señora Lopa* | 0.643 | 2.896 | 6.14 | 0% | 6.14 | 6/14 |
+| 442 | *Anacreonte español* | 0.643 | 3.039 | 5.43 | 0% | 5.43 | 8/14 |
+| 449 | *Con poca luz* | 0.786 | 3.325 | 6.36 | 0% | 6.36 | 11/14 |
+| 456 | *Antes que alguna caja* | 0.714 | 3.236 | 6.93 | 0% | 6.93 | 6/14 |
+| 458 | *No sois, aunque en edad* | 0.643 | 2.896 | 6.86 | 14.3% | 6.86 | 4/14 |
+| 460 | *Cierto poeta* | 0.929 | 3.664 | 6.36 | 0% | 6.36 | 6/14 |
+| 462 | *Doce sermones* | 0.571 | 2.807 | 7.50 | 14.3% | 7.50 | 10/14 |
+
+**Observaciones sobre los dudosos**:
+
+- **#449** (*Con poca luz y menos disciplina*): 0% de participios en rima y 11 de 14
+  terminaciones compartidas con el corpus. Por 4-gramas, su vocabulario de rima es
+  perfectamente gongorino (*disciplina, lego, luego, camina, Latina, griego...*).
+  Su clasificación como MUY ATÍPICO (d=7.39) se debe a las dimensiones prosódicas,
+  no a las léxicas.
+- **#428** (*Por tu vida, Lopillo*): solo 2 de 14 terminaciones compartidas con REF.
+  A pesar de ello sale COMPATIBLE (d=5.30), porque sus valores en las otras 4 dims
+  léxicas están dentro del rango normal.
+- **#439** (*Pálido sol*): 28.6% participial, por encima de la media (11.3%).
+  Refuerza la señal de atipicidad que ya daba la prosodia (d=11.19).
+- **#420** (*Cisne gentil*): 28.6% participial y diversidad máxima (0.929). Sale
+  MUY ATÍPICO (d=7.57). El alto % de participios (*vado/abrigado/encanecida/humedecida*)
+  contribuye a la distancia.
+
+### 9.4. Valoración del bloque de 4-gramas
+
+| Rasgo | Poder discriminante | Observaciones |
+|-------|:---:|---|
+| **Diversidad** (dim 28) | Medio | Distingue poemas con rimas repetidas (Cetina) pero el rango del corpus es amplio |
+| **Entropía** (dim 29) | Medio | Correlaciona con diversidad; aporta matiz sobre distribución |
+| **Longitud rima** (dim 30) | Bajo | Rango del corpus (3–8.4) muy amplio; pocos contraejemplos quedan fuera |
+| **% participial** (dim 31) | **Alto** | Quevedo (43%) queda muy lejos de la media gongorina (11%). El marcador más claro |
+| **Base normalizada** (dim 32) | Bajo | Redundante con dim 30 en este corpus |
+
+La dimensión más discriminante de las 5 es el **porcentaje de participios en rima** (dim 31).
+Un poeta que abusa de rimas participiales (-ado, -ido) se aleja significativamente del
+perfil gongorino. La diversidad y la entropía son útiles para detectar anomalías formales
+(como el padding del madrigal de Cetina) pero menos para distinguir entre sonetistas.
+
+Las dimensiones 30 y 32 (longitud de palabra-rima y base normalizada) resultan
+**redundantes** en este corpus porque la normalización apenas altera la longitud.
+En una futura versión podría sustituirse dim 32 por otra métrica más informativa
+(por ejemplo, % de rimas exclusivas del corpus REF).
+
+---
+
+## 10. Conclusiones
 
 | Capacidad | Resultado |
 |-----------|-----------|
