@@ -8,7 +8,8 @@ Lee dos CSVs con la misma estructura (escansión curada):
   - gongora_escansion_curada.csv (corpus gongorino)
   - contraejemplos.csv (sonetos de otros autores, revisados a mano)
 
-Usa gongora_v6.py para extract_features, build_model, mahalanobis_distance.
+Usa gongora_v7.py para extract_features, build_model, mahalanobis_distance.
+Vector de 33 rasgos: 28 prosódicos + 5 léxicos de rima (4-gramas).
 
 Uso:
   python3 test_contraejemplo.py gongora_escansion_curada.csv contraejemplos.csv
@@ -65,7 +66,10 @@ def load_contraejemplos(filepath):
             texto = v.get('texto', '').strip()
             lit = sum(1 for c in texto if c.isalpha())
             ent = 2 if '?' in texto or '¿' in texto else (1 if '!' in texto or '¡' in texto else 0)
-            verse_data.append({'pattern': pattern, 's': sil, 'sin': sin, 'lit': lit, 'ent': ent})
+            import re
+            words = [w for w in re.sub(r'[^a-záéíóúüñA-ZÁÉÍÓÚÜÑ\s]', ' ', texto).split() if w]
+            ultima = words[-1] if words else ''
+            verse_data.append({'pattern': pattern, 's': sil, 'sin': sin, 'lit': lit, 'ent': ent, 'rima': ultima})
 
         sonnets.append({
             'n': int(sn), 'y': None, 'inc': inc, 'tag': 'X',
@@ -94,7 +98,7 @@ def main():
 
     # ── Cargar corpus gongorino ──────────────────────────────────────────
     print("=" * 70)
-    print("  CONTRAEJEMPLOS vs corpus de Góngora (gongora_v6)")
+    print("  CONTRAEJEMPLOS vs corpus de Góngora (gongora_v7, 33 rasgos)")
     print("=" * 70)
 
     subcorpora = load_csv(csv_gongora)
@@ -156,10 +160,10 @@ def main():
     md.append("# Validación del método prosódico: contraejemplos no gongorinos")
     md.append("")
     md.append("**Objetivo**: comprobar si el sistema de atribución basado en distancia de")
-    md.append("Mahalanobis sobre 31 rasgos prosódicos es capaz de distinguir sonetos de")
+    md.append("Mahalanobis sobre 33 rasgos (28 prosódicos + 5 léxicos de rima) es capaz de distinguir sonetos de")
     md.append("Góngora de sonetos de otros autores del Siglo de Oro.")
     md.append("")
-    md.append("**Motor**: gongora_v6.py — escansión curada manualmente en ambos CSVs")
+    md.append("**Motor**: gongora_v7.py — 33 rasgos — escansión curada manualmente en ambos CSVs")
     md.append("")
     md.append("---")
     md.append("")
@@ -278,7 +282,7 @@ def main():
     md.append("")
     md.append("---")
     md.append("")
-    md.append("*Informe generado con `test_contraejemplo.py` — gongora_v6.py — escansión curada*")
+    md.append("*Informe generado con `test_contraejemplo.py` — gongora_v7.py — 33 rasgos (28 prosódicos + 5 léxicos)*")
 
     report = '\n'.join(md) + '\n'
     out_path = 'informe_contraejemplos.md'

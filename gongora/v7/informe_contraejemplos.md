@@ -1,10 +1,10 @@
 # Validación del método prosódico: contraejemplos no gongorinos
 
 **Objetivo**: comprobar si el sistema de atribución basado en distancia de
-Mahalanobis sobre 31 rasgos prosódicos es capaz de distinguir sonetos de
+Mahalanobis sobre 33 rasgos (28 prosódicos + 5 léxicos de rima) es capaz de distinguir sonetos de
 Góngora de sonetos de otros autores del Siglo de Oro.
 
-**Motor**: gongora_v6.py — escansión curada manualmente en ambos CSVs
+**Motor**: gongora_v7.py — 33 rasgos — escansión curada manualmente en ambos CSVs
 
 ---
 
@@ -36,13 +36,13 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 | # | Autor | End. | d(A+B+S) | Veredicto |
 |--:|-------|-----:|-------:|-----------|
-| 9001 | Quevedo | 14/14 | **32.35** | MUY ATÍPICO |
-| 9002 | Lope | 13/14 | **31.47** | MUY ATÍPICO |
-| 9003 | FrayLuis | 5/14 | **38.53** | MUY ATÍPICO |
-| 9004 | Garcilaso | 12/14 | **33.51** | MUY ATÍPICO |
-| 9005 | Cetina | 9/14 | **36.71** | MUY ATÍPICO |
-| 9006 | Lope2 | 12/14 | **32.13** | MUY ATÍPICO |
-| 9007 | SorJuana | 14/14 | **32.93** | MUY ATÍPICO |
+| 9001 | Quevedo | 14/14 | **6.12** | COMPATIBLE |
+| 9002 | Lope | 13/14 | **5.06** | COMPATIBLE |
+| 9003 | FrayLuis | 5/14 | **16.44** | MUY ATÍPICO |
+| 9004 | Garcilaso | 12/14 | **7.86** | MUY ATÍPICO |
+| 9005 | Cetina | 9/14 | **18.92** | MUY ATÍPICO |
+| 9006 | Lope2 | 12/14 | **8.35** | MUY ATÍPICO |
+| 9007 | SorJuana | 14/14 | **6.03** | COMPATIBLE |
 
 ---
 
@@ -50,13 +50,13 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 | # | Autor | End. | d(A+B) | Veredicto |
 |--:|-------|-----:|-------:|-----------|
-| 9001 | Quevedo | 14/14 | **50.27** | MUY ATÍPICO |
-| 9002 | Lope | 13/14 | **46.91** | MUY ATÍPICO |
-| 9003 | FrayLuis | 5/14 | **64.61** | MUY ATÍPICO |
-| 9004 | Garcilaso | 12/14 | **50.69** | MUY ATÍPICO |
-| 9005 | Cetina | 9/14 | **61.14** | MUY ATÍPICO |
-| 9006 | Lope2 | 12/14 | **48.73** | MUY ATÍPICO |
-| 9007 | SorJuana | 14/14 | **51.57** | MUY ATÍPICO |
+| 9001 | Quevedo | 14/14 | **7.42** | MUY ATÍPICO |
+| 9002 | Lope | 13/14 | **7.57** | MUY ATÍPICO |
+| 9003 | FrayLuis | 5/14 | **28.55** | MUY ATÍPICO |
+| 9004 | Garcilaso | 12/14 | **9.16** | MUY ATÍPICO |
+| 9005 | Cetina | 9/14 | **30.23** | MUY ATÍPICO |
+| 9006 | Lope2 | 12/14 | **12.30** | MUY ATÍPICO |
+| 9007 | SorJuana | 14/14 | **8.18** | MUY ATÍPICO |
 
 ---
 
@@ -64,13 +64,13 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 | # | Autor | End. | d(A+S) | Veredicto |
 |--:|-------|-----:|-------:|-----------|
-| 9001 | Quevedo | 14/14 | **34.03** | MUY ATÍPICO |
-| 9002 | Lope | 13/14 | **33.24** | MUY ATÍPICO |
-| 9003 | FrayLuis | 5/14 | **40.28** | MUY ATÍPICO |
-| 9004 | Garcilaso | 12/14 | **36.21** | MUY ATÍPICO |
-| 9005 | Cetina | 9/14 | **38.79** | MUY ATÍPICO |
-| 9006 | Lope2 | 12/14 | **33.66** | MUY ATÍPICO |
-| 9007 | SorJuana | 14/14 | **34.23** | MUY ATÍPICO |
+| 9001 | Quevedo | 14/14 | **6.07** | COMPATIBLE |
+| 9002 | Lope | 13/14 | **4.85** | COMPATIBLE |
+| 9003 | FrayLuis | 5/14 | **16.38** | MUY ATÍPICO |
+| 9004 | Garcilaso | 12/14 | **8.19** | MUY ATÍPICO |
+| 9005 | Cetina | 9/14 | **19.63** | MUY ATÍPICO |
+| 9006 | Lope2 | 12/14 | **8.66** | MUY ATÍPICO |
+| 9007 | SorJuana | 14/14 | **6.13** | COMPATIBLE |
 
 ---
 
@@ -78,13 +78,13 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 | # | Autor | d(A+B+S) | V. | d(A+B) | V. | d(A+S) | V. |
 |--:|-------|-------:|----|-------:|----|-------:|----|
-| 9001 | Quevedo | 32.35 | MUY ATÍPICO | 50.27 | MUY ATÍPICO | 34.03 | MUY ATÍPICO |
-| 9002 | Lope | 31.47 | MUY ATÍPICO | 46.91 | MUY ATÍPICO | 33.24 | MUY ATÍPICO |
-| 9003 | FrayLuis | 38.53 | MUY ATÍPICO | 64.61 | MUY ATÍPICO | 40.28 | MUY ATÍPICO |
-| 9004 | Garcilaso | 33.51 | MUY ATÍPICO | 50.69 | MUY ATÍPICO | 36.21 | MUY ATÍPICO |
-| 9005 | Cetina | 36.71 | MUY ATÍPICO | 61.14 | MUY ATÍPICO | 38.79 | MUY ATÍPICO |
-| 9006 | Lope2 | 32.13 | MUY ATÍPICO | 48.73 | MUY ATÍPICO | 33.66 | MUY ATÍPICO |
-| 9007 | SorJuana | 32.93 | MUY ATÍPICO | 51.57 | MUY ATÍPICO | 34.23 | MUY ATÍPICO |
+| 9001 | Quevedo | 6.12 | COMPATIBLE | 7.42 | MUY ATÍPICO | 6.07 | COMPATIBLE |
+| 9002 | Lope | 5.06 | COMPATIBLE | 7.57 | MUY ATÍPICO | 4.85 | COMPATIBLE |
+| 9003 | FrayLuis | 16.44 | MUY ATÍPICO | 28.55 | MUY ATÍPICO | 16.38 | MUY ATÍPICO |
+| 9004 | Garcilaso | 7.86 | MUY ATÍPICO | 9.16 | MUY ATÍPICO | 8.19 | MUY ATÍPICO |
+| 9005 | Cetina | 18.92 | MUY ATÍPICO | 30.23 | MUY ATÍPICO | 19.63 | MUY ATÍPICO |
+| 9006 | Lope2 | 8.35 | MUY ATÍPICO | 12.30 | MUY ATÍPICO | 8.66 | MUY ATÍPICO |
+| 9007 | SorJuana | 6.03 | COMPATIBLE | 8.18 | MUY ATÍPICO | 6.13 | COMPATIBLE |
 
 ---
 
@@ -150,9 +150,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9001. Quevedo
 
-- **d(A+B+S)**: 32.35 → MUY ATÍPICO
-- **d(A+B)**: 50.27 → MUY ATÍPICO
-- **d(A+S)**: 34.03 → MUY ATÍPICO
+- **d(A+B+S)**: 6.12 → COMPATIBLE
+- **d(A+B)**: 7.42 → MUY ATÍPICO
+- **d(A+S)**: 6.07 → COMPATIBLE
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -173,9 +173,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9002. Lope
 
-- **d(A+B+S)**: 31.47 → MUY ATÍPICO
-- **d(A+B)**: 46.91 → MUY ATÍPICO
-- **d(A+S)**: 33.24 → MUY ATÍPICO
+- **d(A+B+S)**: 5.06 → COMPATIBLE
+- **d(A+B)**: 7.57 → MUY ATÍPICO
+- **d(A+S)**: 4.85 → COMPATIBLE
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -196,9 +196,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9003. FrayLuis
 
-- **d(A+B+S)**: 38.53 → MUY ATÍPICO
-- **d(A+B)**: 64.61 → MUY ATÍPICO
-- **d(A+S)**: 40.28 → MUY ATÍPICO
+- **d(A+B+S)**: 16.44 → MUY ATÍPICO
+- **d(A+B)**: 28.55 → MUY ATÍPICO
+- **d(A+S)**: 16.38 → MUY ATÍPICO
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -219,9 +219,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9004. Garcilaso
 
-- **d(A+B+S)**: 33.51 → MUY ATÍPICO
-- **d(A+B)**: 50.69 → MUY ATÍPICO
-- **d(A+S)**: 36.21 → MUY ATÍPICO
+- **d(A+B+S)**: 7.86 → MUY ATÍPICO
+- **d(A+B)**: 9.16 → MUY ATÍPICO
+- **d(A+S)**: 8.19 → MUY ATÍPICO
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -242,9 +242,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9005. Cetina
 
-- **d(A+B+S)**: 36.71 → MUY ATÍPICO
-- **d(A+B)**: 61.14 → MUY ATÍPICO
-- **d(A+S)**: 38.79 → MUY ATÍPICO
+- **d(A+B+S)**: 18.92 → MUY ATÍPICO
+- **d(A+B)**: 30.23 → MUY ATÍPICO
+- **d(A+S)**: 19.63 → MUY ATÍPICO
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -265,9 +265,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9006. Lope2
 
-- **d(A+B+S)**: 32.13 → MUY ATÍPICO
-- **d(A+B)**: 48.73 → MUY ATÍPICO
-- **d(A+S)**: 33.66 → MUY ATÍPICO
+- **d(A+B+S)**: 8.35 → MUY ATÍPICO
+- **d(A+B)**: 12.30 → MUY ATÍPICO
+- **d(A+S)**: 8.66 → MUY ATÍPICO
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -288,9 +288,9 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ### 9007. SorJuana
 
-- **d(A+B+S)**: 32.93 → MUY ATÍPICO
-- **d(A+B)**: 51.57 → MUY ATÍPICO
-- **d(A+S)**: 34.23 → MUY ATÍPICO
+- **d(A+B+S)**: 6.03 → COMPATIBLE
+- **d(A+B)**: 8.18 → MUY ATÍPICO
+- **d(A+S)**: 6.13 → COMPATIBLE
 
 | V. | Sil | Patrón | Sin. | Texto |
 |---:|----:|--------|-----:|-------|
@@ -322,4 +322,4 @@ Góngora de sonetos de otros autores del Siglo de Oro.
 
 ---
 
-*Informe generado con `test_contraejemplo.py` — gongora_v6.py — escansión curada*
+*Informe generado con `test_contraejemplo.py` — gongora_v7.py — 33 rasgos (28 prosódicos + 5 léxicos)*
