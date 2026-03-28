@@ -93,12 +93,16 @@ CSV curado ──→ extract_features() ──→ vector 33d ──→ Mahalanob
 gongora_v7.py                    ← Script principal v7 (33 rasgos + HTML interactivo)
 test_contraejemplo.py            ← Validación con sonetos no gongorinos
 gongora_escansion_curada.csv     ← Corpus gongorino (escansión curada a mano)
+gongora_33_rasgos.csv            ← CSV con los 33 rasgos calculados de cada soneto
 contraejemplos.csv               ← Sonetos de otros autores (misma estructura, para curar)
 gongora_pendientes_escansion.csv ← Sonetos del TXT pendientes de curar (escansión automática)
 gongora_obra-poetica.txt         ← Edición OBVIL/Carreira (texto plano)
 gongora_attribution_v52.py       ← Motor de silabificación v5.2 (genera escansión automática)
 generar_pendientes.py            ← Genera CSV de sonetos pendientes desde el TXT
 fourgram_rima.py                 ← Análisis exploratorio de 4-gramas (independiente)
+gongora_3d.html                  ← Mapa prosódico 3D estereoscópico (PCA, anaglifo)
+gongora_4gram_3d.html            ← Espacio fonológico 3D de 4-gramas de rima
+fourgram_explicacion.html        ← Explicación visual de 4-gramas para filólogos
 ```
 
 #### Versiones anteriores (en salidas-3-categorias/)
@@ -217,6 +221,47 @@ Requiere `ultimas_palabras.csv`. Genera análisis de 4-gramas por corpus: top fr
 ### Columnas ordenables
 
 Clic en las cabeceras `#`, `Tag`, `Año`, `End.`, `d(REF)` para ordenar la tabla.
+
+## Visualizaciones 3D
+
+Dos HTMLs autónomos ofrecen visualizaciones tridimensionales interactivas del corpus. Se abren directamente en el navegador (requieren WebGL).
+
+### `gongora_3d.html` — Mapa prosódico estereoscópico
+
+Proyección PCA 3D de los 33 rasgos de cada soneto. Cada punto es un soneto; el color indica subcorpus (A=violeta, B=azul, S=cyan, D=naranja, contraejemplos=rojo). Incluye modo anaglifo (gafas rojo-cyan) y rotación automática.
+
+- **Controles**: separación ocular, anaglifo on/off, números, rotación
+- **Hover**: muestra número, incipit, distancia de Mahalanobis y veredicto
+- **Datos**: 123 sonetos (116 corpus + 7 contraejemplos), PCA sobre 33 dims estandarizadas
+
+### `gongora_4gram_3d.html` — Espacio fonológico de 4-gramas
+
+Visualización del espacio de rima: cada soneto se despliega en sus 14 versos, y cada verso se posiciona en el eje Z según su 4-grama de rima. Permite explorar qué terminaciones fonológicas comparten los sonetos y cuáles son exclusivas.
+
+- **Panel inferior**: lista de 4-gramas con filtro. Clic para resaltar todos los sonetos que usan esa terminación
+- **Datos**: 116 sonetos, 587 4-gramas únicos
+
+### Qué es PCA (para filólogos)
+
+PCA (Análisis de Componentes Principales) es una técnica que reduce la complejidad de un conjunto de datos. Cada soneto es un punto en un espacio de 33 dimensiones — una por cada rasgo que medimos. No podemos visualizar 33 dimensiones, pero PCA busca los "ángulos de cámara" desde los cuales los puntos se ven más separados entre sí.
+
+- **PC1** es la dirección del espacio donde los sonetos muestran más diferencias
+- **PC2** es la dirección perpendicular donde hay más diferencias restantes
+- **PC3** es la tercera dirección más informativa
+
+Proyectar 33 rasgos sobre 3 componentes es como fotografiar una escultura desde el ángulo más revelador: se pierde profundidad, pero se conserva la estructura.
+
+El **porcentaje de varianza explicada** (por ejemplo, 78.4%) indica cuánta información original se conserva en la proyección. El 21.6% restante son diferencias que solo veríamos desde ángulos que no caben en 3D.
+
+**Estandarización**: paso previo necesario. Consiste en reescalar cada rasgo para que todos tengan media 0 y desviación 1, de modo que un rasgo medido en caracteres (valores de 20–40) no aplaste a un rasgo medido en proporciones (valores de 0.0–1.0). Sin estandarizar, PCA confunde "varianza grande" con "importancia".
+
+### Qué miden los ejes del PCA 3D
+
+| Eje | Varianza | Qué separa | Rasgos dominantes |
+|-----|----------|------------|-------------------|
+| **PC1** (rojo, ~31%) | Periodicidad rítmica | Ritmo ternario vs. binario/irregular | Autocorrelación (lags 2-8), perfil acentual (pos 2-4) |
+| **PC2** (verde, ~27%) | Estructura cuaternaria | Heroicos canónicos (2-6-10) vs. enfáticos/melódicos | ac4, ac8, posición 1 del acento |
+| **PC3** (azul, ~20%) | Densidad material + rima | Sonetos densos (muchos acentos, sinalefas, versos largos) vs. ligeros | FFT acentual, sinalefas, longitud literal, 4-gramas |
 
 ## Añadir un soneto al corpus
 

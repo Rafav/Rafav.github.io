@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<title>Góngora 3D — Mapa prosódico estereoscópico</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;overflow:hidden;font-family:Georgia,serif;color:#e2e8f0}
+canvas{display:block}
+#hud{position:fixed;top:16px;left:16px;z-index:10;pointer-events:none}
+#hud h1{font-size:18px;color:#f97316;text-shadow:0 0 12px #f9731688;margin-bottom:4px}
+#hud .sub{font-size:11px;color:#94a3b8;line-height:1.5}
+#tooltip{position:fixed;z-index:20;display:none;background:#1e293bee;border:1px solid #f97316;
+  border-radius:8px;padding:10px 14px;font-size:12px;color:#e2e8f0;pointer-events:none;
+  max-width:320px;box-shadow:0 4px 24px #00000088;backdrop-filter:blur(8px)}
+#tooltip .num{color:#f97316;font-weight:700;font-size:14px}
+#tooltip .inc{color:#cbd5e1;font-style:italic;margin:4px 0}
+#tooltip .dist{font-size:11px;margin-top:4px}
+#tooltip .verdict{font-weight:700;margin-left:6px}
+.v-comp{color:#4ade80}.v-atip{color:#fb923c}.v-muy{color:#f87171}
+#controls{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:10;
+  display:flex;gap:10px;align-items:center}
+#controls label{font-size:11px;color:#94a3b8;display:flex;align-items:center;gap:5px;cursor:pointer}
+#controls input[type=range]{width:100px;accent-color:#f97316}
+#controls input[type=checkbox]{accent-color:#f97316}
+#legend{position:fixed;top:16px;right:16px;z-index:10;font-size:11px}
+#legend div{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+#legend .dot{width:10px;height:10px;border-radius:50%}
+#legend .tri{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:10px solid}
+</style>
+</head><body>
+<div id="hud">
+  <h1>Góngora 3D</h1>
+  <div class="sub" id="info"></div>
+</div>
+<div id="tooltip"></div>
+<div id="legend"></div>
+<div id="controls">
+  <label>Separación ocular <input type="range" id="eyeSep" min="0" max="3" step="0.1" value="0.8"></label>
+  <label><input type="checkbox" id="anaglyphOn" checked> Anaglifo</label>
+  <label><input type="checkbox" id="showLabels" checked> Números</label>
+  <label><input type="checkbox" id="autoRotate" checked> Rotar</label>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const DATA = {"sonnets": [{"n": 51, "tag": "A", "ne": 14, "inc": "Tres veces de Aquilón el soplo airado", "x": 5.337, "y": -4.3662, "z": 4.7368, "d": 5.22, "v": "COMPATIBLE", "autor": ""}, {"n": 162, "tag": "A", "ne": 14, "inc": "Clarísimo Marqués, dos veces claro", "x": 4.0437, "y": 5.5453, "z": -2.0414, "d": 5.77, "v": "COMPATIBLE", "autor": ""}, {"n": 201, "tag": "A", "ne": 14, "inc": "Música le pidió ayer su albedrío", "x": -9.1427, "y": -4.2088, "z": 0.4193, "d": 4.42, "v": "COMPATIBLE", "autor": ""}, {"n": 17, "tag": "A", "ne": 14, "inc": "Raya, dorado Sol, orna y colora", "x": -3.2907, "y": -1.0038, "z": -3.3675, "d": 4.68, "v": "COMPATIBLE", "autor": ""}, {"n": 144, "tag": "A", "ne": 14, "inc": "La plaza, un jardín fresco; los tablados,", "x": -5.3223, "y": 3.3351, "z": -0.4538, "d": 4.92, "v": "COMPATIBLE", "autor": ""}, {"n": 16, "tag": "A", "ne": 14, "inc": "¡Oh claro honor del líquido elemento,", "x": -4.5443, "y": 1.7892, "z": 6.5307, "d": 5.32, "v": "COMPATIBLE", "autor": ""}, {"n": 196, "tag": "A", "ne": 14, "inc": "En el cristal de tu divina mano", "x": 1.5355, "y": 3.1831, "z": 2.2777, "d": 4.65, "v": "COMPATIBLE", "autor": ""}, {"n": 137, "tag": "A", "ne": 14, "inc": "Hermosas damas si la pasión ciega", "x": 2.0848, "y": -5.7171, "z": 1.0923, "d": 5.61, "v": "COMPATIBLE", "autor": ""}, {"n": 195, "tag": "A", "ne": 14, "inc": "Oh marinero, tú que, cortesano,", "x": -1.6835, "y": 2.9614, "z": -5.1121, "d": 4.99, "v": "COMPATIBLE", "autor": ""}, {"n": 15, "tag": "A", "ne": 14, "inc": "Al tramontar del sol, la ninfa mía,", "x": 8.7962, "y": 8.2863, "z": -1.6416, "d": 5.34, "v": "COMPATIBLE", "autor": ""}, {"n": 42, "tag": "A", "ne": 14, "inc": "No destrozada nave en roca dura", "x": -6.6566, "y": 1.6179, "z": 0.1804, "d": 5.33, "v": "COMPATIBLE", "autor": ""}, {"n": 18, "tag": "A", "ne": 14, "inc": "Cual parece al romper de la mañana", "x": 2.4196, "y": 7.5424, "z": -0.6498, "d": 4.39, "v": "COMPATIBLE", "autor": ""}, {"n": 19, "tag": "A", "ne": 14, "inc": "Suspiros tristes, lágrimas cansadas,", "x": -2.1424, "y": -4.2381, "z": -2.6095, "d": 5.07, "v": "COMPATIBLE", "autor": ""}, {"n": 24, "tag": "A", "ne": 14, "inc": "Mientras por competir con tu cabello,", "x": -0.948, "y": -7.9958, "z": -3.8217, "d": 5.62, "v": "COMPATIBLE", "autor": ""}, {"n": 32, "tag": "A", "ne": 14, "inc": "Ni en este monte, este aire, ni este río", "x": -1.467, "y": 6.0796, "z": 5.3977, "d": 5.08, "v": "COMPATIBLE", "autor": ""}, {"n": 41, "tag": "A", "ne": 14, "inc": "La dulce boca que a gustar convida", "x": 2.4293, "y": 0.9829, "z": 8.3157, "d": 5.18, "v": "COMPATIBLE", "autor": ""}, {"n": 50, "tag": "A", "ne": 14, "inc": "¡Oh excelso muro, oh torres coronadas", "x": 4.6354, "y": 2.8477, "z": 4.3117, "d": 4.55, "v": "COMPATIBLE", "autor": ""}, {"n": 116, "tag": "A", "ne": 14, "inc": "Pender de un leño, traspasado el pecho", "x": -1.1865, "y": 2.2869, "z": 0.2562, "d": 5.57, "v": "COMPATIBLE", "autor": ""}, {"n": 127, "tag": "A", "ne": 14, "inc": "Verdes juncos del Duero a mi pastora", "x": -2.4235, "y": -3.3552, "z": -5.2245, "d": 5.73, "v": "COMPATIBLE", "autor": ""}, {"n": 138, "tag": "A", "ne": 14, "inc": "Si Amor entre las plumas de su nido", "x": 0.8993, "y": -1.7901, "z": 3.4755, "d": 4.77, "v": "COMPATIBLE", "autor": ""}, {"n": 155, "tag": "A", "ne": 14, "inc": "Montaña inaccesible, opuesta en vano", "x": -1.345, "y": -5.5909, "z": 8.6679, "d": 4.92, "v": "COMPATIBLE", "autor": ""}, {"n": 76, "tag": "A", "ne": 14, "inc": "Sacros, altos, dorados capiteles,", "x": -3.7876, "y": 5.9757, "z": 5.354, "d": 5.18, "v": "COMPATIBLE", "autor": ""}, {"n": 180, "tag": "A", "ne": 14, "inc": "Mientras Corinto, en lágrimas deshecho,", "x": -1.4627, "y": -3.6858, "z": -4.2327, "d": 5.05, "v": "COMPATIBLE", "autor": ""}, {"n": 13, "tag": "A", "ne": 14, "inc": "De pura honestidad templo sagrado,", "x": -5.1408, "y": 0.0808, "z": 2.0187, "d": 5.24, "v": "COMPATIBLE", "autor": ""}, {"n": 40, "tag": "A", "ne": 14, "inc": "Con diferencia tal, con gracia tanta", "x": 2.5635, "y": 1.9231, "z": -1.9316, "d": 5.51, "v": "COMPATIBLE", "autor": ""}, {"n": 20, "tag": "A", "ne": 14, "inc": "Ya besando unas manos cristalinas,", "x": -1.4522, "y": 2.074, "z": -5.3541, "d": 6.6, "v": "ATÍPICO", "autor": ""}, {"n": 45, "tag": "A", "ne": 14, "inc": "Gallardas plantas que con voz doliente", "x": -6.0187, "y": -7.2623, "z": 4.41, "d": 6.38, "v": "COMPATIBLE", "autor": ""}, {"n": 182, "tag": "A", "ne": 14, "inc": "-¿De dónde bueno, Juan, con pedorreras?", "x": 2.0811, "y": -3.3127, "z": 2.195, "d": 5.23, "v": "COMPATIBLE", "autor": ""}, {"n": 69, "tag": "A", "ne": 14, "inc": "Grandes, más que elefantes y que abadas,", "x": 1.8056, "y": -5.7431, "z": -2.8244, "d": 6.09, "v": "COMPATIBLE", "autor": ""}, {"n": 193, "tag": "A", "ne": 14, "inc": "Este a Pomona, cuando ya no sea", "x": 2.9854, "y": 1.0975, "z": -9.7776, "d": 4.7, "v": "COMPATIBLE", "autor": ""}, {"n": 197, "tag": "A", "ne": 14, "inc": "Los blancos lilios que de ciento en ciento,", "x": 6.3433, "y": -13.914, "z": 3.1595, "d": 5.66, "v": "COMPATIBLE", "autor": ""}, {"n": 71, "tag": "A", "ne": 14, "inc": "Duélete de esa puente, Manzanares,", "x": 4.29, "y": 1.3307, "z": 5.2881, "d": 5.13, "v": "COMPATIBLE", "autor": ""}, {"n": 93, "tag": "A", "ne": 14, "inc": "Árbol de cuyos ramos fortunados,", "x": -8.3713, "y": -5.7543, "z": 0.7097, "d": 5.22, "v": "COMPATIBLE", "autor": ""}, {"n": 135, "tag": "A", "ne": 14, "inc": "Lilio siempre real, nací en Medina,", "x": 7.7853, "y": 4.5902, "z": 7.2658, "d": 5.37, "v": "COMPATIBLE", "autor": ""}, {"n": 112, "tag": "A", "ne": 14, "inc": "Este monte, de cruces coronado,", "x": 1.3968, "y": 7.397, "z": -8.3681, "d": 4.99, "v": "COMPATIBLE", "autor": ""}, {"n": 68, "tag": "A", "ne": 14, "inc": "Por niñear un picarillo tierno,", "x": 1.4356, "y": 4.2361, "z": -9.3726, "d": 6.07, "v": "COMPATIBLE", "autor": ""}, {"n": 134, "tag": "A", "ne": 14, "inc": "¡Ayer deidad humana, hoy poca tierra;", "x": 9.452, "y": 4.7621, "z": 2.4816, "d": 6.2, "v": "COMPATIBLE", "autor": ""}, {"n": 44, "tag": "A", "ne": 14, "inc": "No enfrene tu gallardo pensamiento", "x": 5.8152, "y": -5.8508, "z": -1.8969, "d": 4.78, "v": "COMPATIBLE", "autor": ""}, {"n": 285, "tag": "B", "ne": 14, "inc": "Un culto Risco en venas hoy süaves", "x": 0.6081, "y": -1.2941, "z": -3.983, "d": 5.6, "v": "COMPATIBLE", "autor": ""}, {"n": 287, "tag": "B", "ne": 14, "inc": "No entre las flores, no, señor don Diego,", "x": -5.5924, "y": -2.7797, "z": -3.5286, "d": 4.39, "v": "COMPATIBLE", "autor": ""}, {"n": 221, "tag": "B", "ne": 14, "inc": "Señores corteggiantes, ¿quién sus días", "x": -0.1129, "y": -1.3457, "z": -2.114, "d": 5.16, "v": "COMPATIBLE", "autor": ""}, {"n": 234, "tag": "B", "ne": 14, "inc": "El conde, mi señor, se fue a Nápoles;", "x": -0.577, "y": 3.7117, "z": 5.5777, "d": 4.2, "v": "COMPATIBLE", "autor": ""}, {"n": 336, "tag": "B", "ne": 14, "inc": "Prisión del nácar era articulado", "x": -6.4708, "y": -0.8475, "z": 1.4421, "d": 5.72, "v": "COMPATIBLE", "autor": ""}, {"n": 355, "tag": "B", "ne": 14, "inc": "Las que a otros negó piedras Oriente,", "x": 4.2916, "y": -3.0862, "z": 7.8049, "d": 4.59, "v": "COMPATIBLE", "autor": ""}, {"n": 392, "tag": "B", "ne": 14, "inc": "Camina mi pensión con pie de plomo,", "x": -3.5261, "y": -4.6974, "z": 4.1358, "d": 4.56, "v": "COMPATIBLE", "autor": ""}, {"n": 361, "tag": "B", "ne": 14, "inc": "Al tronco Filis de un laurel sagrado", "x": 6.1934, "y": 3.4149, "z": 4.5263, "d": 4.08, "v": "COMPATIBLE", "autor": ""}, {"n": 374, "tag": "B", "ne": 14, "inc": "El Conde mi señor se va a Nápoles", "x": 0.4004, "y": 4.9283, "z": -10.2927, "d": 6.12, "v": "COMPATIBLE", "autor": ""}, {"n": 219, "tag": "B", "ne": 14, "inc": "Pálida restituye a su elemento", "x": 0.1301, "y": -7.7759, "z": 0.9239, "d": 5.49, "v": "COMPATIBLE", "autor": ""}, {"n": 253, "tag": "B", "ne": 14, "inc": "Poco después, que su cristal dilata", "x": -5.871, "y": 2.4054, "z": -3.4694, "d": 6.11, "v": "COMPATIBLE", "autor": ""}, {"n": 237, "tag": "B", "ne": 14, "inc": "No de fino diamante, o rubí ardiente,", "x": -1.7814, "y": 5.0492, "z": -0.542, "d": 5.76, "v": "COMPATIBLE", "autor": ""}, {"n": 218, "tag": "B", "ne": 14, "inc": "El cuarto Enrico yace mal herido,", "x": 1.9214, "y": -4.3749, "z": -6.4945, "d": 6.0, "v": "COMPATIBLE", "autor": ""}, {"n": 267, "tag": "B", "ne": 14, "inc": "Segundas plumas son ¡oh lector! cuantas", "x": -2.0285, "y": -5.7871, "z": 2.0667, "d": 5.31, "v": "COMPATIBLE", "autor": ""}, {"n": 358, "tag": "B", "ne": 14, "inc": "Sella el tronco sangriento, no le oprime", "x": -1.4288, "y": 0.8846, "z": 3.3587, "d": 4.83, "v": "COMPATIBLE", "autor": ""}, {"n": 900, "tag": "S", "ne": 14, "inc": "De vuestras ramas no la heroica lira", "x": 4.7717, "y": 9.6208, "z": 7.5758, "d": 5.19, "v": "COMPATIBLE", "autor": ""}, {"n": 901, "tag": "S", "ne": 14, "inc": "De chinches y de mulas voy comido;", "x": -0.0929, "y": 2.2549, "z": -0.3312, "d": 6.52, "v": "ATÍPICO", "autor": ""}, {"n": 902, "tag": "S", "ne": 14, "inc": "Soror don Juan, ¿ayer silicio y jerga,", "x": 3.3169, "y": -3.4955, "z": 1.7047, "d": 4.98, "v": "COMPATIBLE", "autor": ""}, {"n": 903, "tag": "S", "ne": 14, "inc": "De humildes padres hija, en pobres paños", "x": 2.964, "y": -0.2831, "z": 5.6175, "d": 5.14, "v": "COMPATIBLE", "autor": ""}, {"n": 904, "tag": "S", "ne": 14, "inc": "¿Las no piadosas martas ya te pones,", "x": -0.1378, "y": -10.3445, "z": 2.3548, "d": 4.83, "v": "COMPATIBLE", "autor": ""}, {"n": 905, "tag": "S", "ne": 14, "inc": "Hay entre Carrión y Tordesillas,", "x": 4.0303, "y": -3.5518, "z": -3.7327, "d": 4.29, "v": "COMPATIBLE", "autor": ""}, {"n": 906, "tag": "S", "ne": 14, "inc": "Comer salchichas y hallar sin gota", "x": -3.4357, "y": -0.8544, "z": -3.409, "d": 6.27, "v": "COMPATIBLE", "autor": ""}, {"n": 907, "tag": "S", "ne": 14, "inc": "Esta forma elegante, oh peregrino,", "x": -6.9918, "y": -1.772, "z": 1.4365, "d": 5.85, "v": "COMPATIBLE", "autor": ""}, {"n": 908, "tag": "S", "ne": 14, "inc": "Rey de los otros ríos caudaloso,", "x": -0.2213, "y": 6.0495, "z": -2.0416, "d": 5.24, "v": "COMPATIBLE", "autor": ""}, {"n": 909, "tag": "S", "ne": 14, "inc": "Con razón, gloria excelsa de Velada,", "x": 5.3871, "y": -8.3346, "z": -3.0689, "d": 5.46, "v": "COMPATIBLE", "autor": ""}, {"n": 910, "tag": "S", "ne": 14, "inc": "Llegué a Valladolid; registré luego", "x": -4.2881, "y": 0.0002, "z": -3.0656, "d": 5.72, "v": "COMPATIBLE", "autor": ""}, {"n": 911, "tag": "S", "ne": 14, "inc": "En la capilla estoy y condenado", "x": -8.901, "y": -1.1922, "z": 0.4553, "d": 5.9, "v": "COMPATIBLE", "autor": ""}, {"n": 912, "tag": "S", "ne": 14, "inc": "Hermoso dueño de la vida mía,", "x": -3.6734, "y": -4.9951, "z": -1.987, "d": 4.23, "v": "COMPATIBLE", "autor": ""}, {"n": 913, "tag": "S", "ne": 14, "inc": "Esta en forma elegante, o peregrino,", "x": -6.9536, "y": 0.7424, "z": 2.1929, "d": 5.98, "v": "COMPATIBLE", "autor": ""}, {"n": 914, "tag": "S", "ne": 14, "inc": "Mariposa, no sólo no cobarde,", "x": 1.2112, "y": 2.8456, "z": 3.2998, "d": 6.19, "v": "COMPATIBLE", "autor": ""}, {"n": 915, "tag": "S", "ne": 14, "inc": "Si ociosa no asistió naturaleza,", "x": 0.4575, "y": 6.585, "z": -0.0489, "d": 5.58, "v": "COMPATIBLE", "autor": ""}, {"n": 916, "tag": "S", "ne": 14, "inc": "En tenebrosa noche, en mar airado,", "x": 1.4151, "y": 5.1136, "z": -3.3526, "d": 5.5, "v": "COMPATIBLE", "autor": ""}, {"n": 917, "tag": "S", "ne": 14, "inc": "Al sol peinaba Clori sus cabellos", "x": -4.2362, "y": -2.2566, "z": -0.7844, "d": 4.63, "v": "COMPATIBLE", "autor": ""}, {"n": 918, "tag": "S", "ne": 14, "inc": "Yacen aquí los hueso sepultados", "x": 0.7613, "y": -9.2772, "z": -0.4059, "d": 5.23, "v": "COMPATIBLE", "autor": ""}, {"n": 919, "tag": "S", "ne": 14, "inc": "Menos solícito veloz saeta", "x": -3.2864, "y": -1.7539, "z": -1.1184, "d": 4.9, "v": "COMPATIBLE", "autor": ""}, {"n": 920, "tag": "S", "ne": 14, "inc": "¡Oh niebla del estado más sereno,", "x": 0.1908, "y": 2.3388, "z": 5.7565, "d": 5.59, "v": "COMPATIBLE", "autor": ""}, {"n": 921, "tag": "S", "ne": 14, "inc": "Ayer naciste y morirás mañana;", "x": 4.5976, "y": 3.5288, "z": 4.8938, "d": 5.69, "v": "COMPATIBLE", "autor": ""}, {"n": 922, "tag": "S", "ne": 14, "inc": "-Rebelde y pertinaz entendimiento,", "x": 4.2066, "y": 0.9086, "z": -3.7948, "d": 6.37, "v": "COMPATIBLE", "autor": ""}, {"n": 923, "tag": "S", "ne": 14, "inc": "Bien dispuesta madera en nueva traza,", "x": -2.1184, "y": 5.805, "z": -0.9271, "d": 5.13, "v": "COMPATIBLE", "autor": ""}, {"n": 924, "tag": "S", "ne": 15, "inc": "Dulce arroyuelo de la nieve fría", "x": -16.0055, "y": 4.378, "z": 1.3724, "d": 7.31, "v": "MUY ATÍPICO", "autor": ""}, {"n": 925, "tag": "S", "ne": 16, "inc": "Embutiste Lopillo, a Sabaot", "x": -16.159, "y": 4.4508, "z": 1.3483, "d": 6.38, "v": "COMPATIBLE", "autor": ""}, {"n": 926, "tag": "S", "ne": 14, "inc": "Tonante monseñor, ¿de cuándo acá", "x": 4.0187, "y": 1.2549, "z": -4.9324, "d": 7.25, "v": "ATÍPICO", "autor": ""}, {"n": 927, "tag": "S", "ne": 14, "inc": "Valladolid, de lágrimas sois valle,", "x": -3.2805, "y": -3.4341, "z": 5.5574, "d": 5.52, "v": "COMPATIBLE", "autor": ""}, {"n": 928, "tag": "S", "ne": 14, "inc": "Es el Orfeo del señor don Juan", "x": -2.0013, "y": 3.799, "z": -3.6958, "d": 5.5, "v": "COMPATIBLE", "autor": ""}, {"n": 929, "tag": "S", "ne": 14, "inc": "Generoso esplendor, sino luciente", "x": -0.7286, "y": 0.1494, "z": 4.6457, "d": 4.06, "v": "COMPATIBLE", "autor": ""}, {"n": 930, "tag": "S", "ne": 14, "inc": "En justa, injusta expuesto a la sentencia", "x": 3.2457, "y": 7.6081, "z": -1.6029, "d": 6.41, "v": "COMPATIBLE", "autor": ""}, {"n": 931, "tag": "S", "ne": 14, "inc": "Sin esperar la lucha picaril", "x": -3.92, "y": 1.9453, "z": -0.8381, "d": 6.06, "v": "COMPATIBLE", "autor": ""}, {"n": 932, "tag": "S", "ne": 14, "inc": "¿Para qué dime Marcia, te perfumas,", "x": -4.5781, "y": 4.203, "z": -0.0023, "d": 5.54, "v": "COMPATIBLE", "autor": ""}, {"n": 933, "tag": "S", "ne": 14, "inc": "Un Valentón de espátula, y gregesco,", "x": 2.9867, "y": -1.4107, "z": 2.8514, "d": 4.54, "v": "COMPATIBLE", "autor": ""}, {"n": 934, "tag": "S", "ne": 14, "inc": "«Aquí del Conde Claros», dijo, y luego,", "x": 2.5645, "y": -8.8784, "z": -2.2982, "d": 5.01, "v": "COMPATIBLE", "autor": ""}, {"n": 935, "tag": "S", "ne": 14, "inc": "Este, que en la fortuna más subida", "x": -6.7094, "y": 5.1396, "z": -3.1461, "d": 5.43, "v": "COMPATIBLE", "autor": ""}, {"n": 936, "tag": "S", "ne": 14, "inc": "Cosas, Celalva mía, he visto extrañas,", "x": -0.7049, "y": 3.2296, "z": 0.6812, "d": 4.87, "v": "COMPATIBLE", "autor": ""}, {"n": 937, "tag": "S", "ne": 14, "inc": "Celos de quien bien ama, amargo freno,", "x": 1.9504, "y": 1.6887, "z": 5.5739, "d": 5.68, "v": "COMPATIBLE", "autor": ""}, {"n": 938, "tag": "S", "ne": 14, "inc": "Este, que Babia al mundo hoy ha ofrecido", "x": 10.9641, "y": -2.1561, "z": 4.1051, "d": 6.35, "v": "COMPATIBLE", "autor": ""}, {"n": 939, "tag": "S", "ne": 14, "inc": "Patos del aguachirle castellana", "x": -1.823, "y": 3.7976, "z": 1.0994, "d": 5.36, "v": "COMPATIBLE", "autor": ""}, {"n": 940, "tag": "S", "ne": 14, "inc": "Si ya el griego orador la edad presente,", "x": 2.9396, "y": -2.7512, "z": 1.5959, "d": 5.19, "v": "COMPATIBLE", "autor": ""}, {"n": 941, "tag": "S", "ne": 14, "inc": "Vive en este volumen el que yace", "x": 2.4214, "y": 5.4053, "z": -1.5831, "d": 6.85, "v": "ATÍPICO", "autor": ""}, {"n": 942, "tag": "S", "ne": 14, "inc": "Pisó las calles de Madrid el fiero", "x": 2.9648, "y": -3.3143, "z": -7.129, "d": 5.07, "v": "COMPATIBLE", "autor": ""}, {"n": 943, "tag": "S", "ne": 14, "inc": "Restituye a tu mundo horror divino,", "x": -3.8577, "y": 0.3482, "z": -2.4993, "d": 4.05, "v": "COMPATIBLE", "autor": ""}, {"n": 944, "tag": "S", "ne": 14, "inc": "En vez de las Helíades, ahora", "x": 8.0964, "y": 1.5029, "z": 0.7737, "d": 4.91, "v": "COMPATIBLE", "autor": ""}, {"n": 945, "tag": "S", "ne": 14, "inc": "Después que Apolo, tus coplones vido", "x": 2.2469, "y": 2.438, "z": -7.7844, "d": 5.47, "v": "COMPATIBLE", "autor": ""}, {"n": 946, "tag": "S", "ne": 14, "inc": "«Aquí del Conde Claros», dijo, y luego", "x": 1.6914, "y": -6.4966, "z": -2.1879, "d": 5.39, "v": "COMPATIBLE", "autor": ""}, {"n": 947, "tag": "S", "ne": 14, "inc": "Sabe el cielo, Valdés, si me ha pesado", "x": 3.6013, "y": -5.7224, "z": -1.2303, "d": 4.31, "v": "COMPATIBLE", "autor": ""}, {"n": 948, "tag": "S", "ne": 14, "inc": "Deja las damas, cuyo flaco yerro", "x": -0.1019, "y": -0.2169, "z": -4.2473, "d": 5.17, "v": "COMPATIBLE", "autor": ""}, {"n": 949, "tag": "S", "ne": 14, "inc": "Orfeo, el que bajó de Andalucía,", "x": 10.6894, "y": 5.9903, "z": -1.1709, "d": 5.52, "v": "COMPATIBLE", "autor": ""}, {"n": 458, "tag": "D", "ne": 14, "inc": "No sois, aunque en edad de cuatro sietes,", "x": -4.8161, "y": 3.9044, "z": 1.9014, "d": 5.93, "v": "COMPATIBLE", "autor": ""}, {"n": 456, "tag": "D", "ne": 14, "inc": "Antes que alguna caja luterana", "x": 3.6333, "y": -4.5845, "z": -5.5401, "d": 6.38, "v": "COMPATIBLE", "autor": ""}, {"n": 442, "tag": "D", "ne": 14, "inc": "Anacreonte español, no hay quien os tope,", "x": 14.3154, "y": 9.3809, "z": 3.9478, "d": 8.06, "v": "MUY ATÍPICO", "autor": ""}, {"n": 420, "tag": "D", "ne": 14, "inc": "Cisne gentil, después que crespo el vado", "x": -4.3068, "y": -4.6493, "z": -0.4527, "d": 7.57, "v": "MUY ATÍPICO", "autor": ""}, {"n": 428, "tag": "D", "ne": 14, "inc": "Por tu vida, Lopillo, que me borres", "x": 3.9988, "y": 0.4458, "z": 0.9184, "d": 5.3, "v": "COMPATIBLE", "autor": ""}, {"n": 433, "tag": "D", "ne": 14, "inc": "Yace debajo de esta piedra fría", "x": 0.5949, "y": -0.8884, "z": 1.0074, "d": 5.0, "v": "COMPATIBLE", "autor": ""}, {"n": 449, "tag": "D", "ne": 14, "inc": "Con poca luz y menos disciplina", "x": 2.3733, "y": -4.5355, "z": 6.1214, "d": 7.39, "v": "MUY ATÍPICO", "autor": ""}, {"n": 421, "tag": "D", "ne": 14, "inc": "Generoso don Juan, sobre quien llueve", "x": 1.8745, "y": -1.5292, "z": -2.5068, "d": 5.53, "v": "COMPATIBLE", "autor": ""}, {"n": 427, "tag": "D", "ne": 14, "inc": "Señor, aquel Dragón de inglés veneno,", "x": -2.8327, "y": 5.337, "z": -4.0711, "d": 5.09, "v": "COMPATIBLE", "autor": ""}, {"n": 440, "tag": "D", "ne": 14, "inc": "Vimo, señora Lopa, su Epopeya,", "x": -5.3665, "y": 1.1346, "z": 3.1949, "d": 7.45, "v": "MUY ATÍPICO", "autor": ""}, {"n": 460, "tag": "D", "ne": 14, "inc": "Cierto poeta, en forma peregrina", "x": -6.1761, "y": 5.4322, "z": 0.7977, "d": 5.9, "v": "COMPATIBLE", "autor": ""}, {"n": 462, "tag": "D", "ne": 14, "inc": "Doce sermones estampó Florencia,", "x": -7.4324, "y": -0.4733, "z": -0.3853, "d": 6.66, "v": "ATÍPICO", "autor": ""}, {"n": 439, "tag": "D", "ne": 14, "inc": "Pálido sol en cielo encapotado,", "x": -2.2304, "y": -5.6882, "z": 2.1411, "d": 11.19, "v": "MUY ATÍPICO", "autor": ""}, {"n": 9001, "tag": "X", "ne": 14, "inc": "Cerrar podrá mis ojos la postrera", "x": 3.8829, "y": 7.1117, "z": -0.7415, "d": 6.12, "v": "COMPATIBLE", "autor": "Quevedo"}, {"n": 9002, "tag": "X", "ne": 13, "inc": "Un soneto me manda hacer Violante,", "x": -2.0401, "y": -4.2654, "z": 3.775, "d": 5.06, "v": "COMPATIBLE", "autor": "Lope"}, {"n": 9003, "tag": "X", "ne": 5, "inc": "¿Y dejas, Pastor santo,", "x": 3.3349, "y": 5.2056, "z": 2.5913, "d": 16.44, "v": "MUY ATÍPICO", "autor": "FrayLuis"}, {"n": 9004, "tag": "X", "ne": 12, "inc": "En tanto que de rosa y de azucena", "x": -2.3492, "y": 2.033, "z": -3.565, "d": 7.86, "v": "MUY ATÍPICO", "autor": "Garcilaso"}, {"n": 9005, "tag": "X", "ne": 9, "inc": "Ojos claros, serenos,", "x": 16.6033, "y": -6.0386, "z": -10.1439, "d": 18.92, "v": "MUY ATÍPICO", "autor": "Cetina"}, {"n": 9006, "tag": "X", "ne": 12, "inc": "Desmayarse, atreverse, estar furioso,", "x": 7.0722, "y": -10.6067, "z": 2.3869, "d": 8.35, "v": "MUY ATÍPICO", "autor": "Lope2"}, {"n": 9007, "tag": "X", "ne": 14, "inc": "Detente, sombra de mi bien esquivo,", "x": -7.523, "y": -1.8977, "z": -3.1288, "d": 6.03, "v": "COMPATIBLE", "autor": "SorJuana"}], "p95": 6.41, "p99": 7.25, "ve": 78.4, "ve1": 31.5, "ve2": 27.1, "ve3": 19.9};
+
+const COLORS = {A:0xc084fc, B:0x60a5fa, S:0x22d3ee, D:0xf97316, X:0xf87171};
+const COLOR_HEX = {A:'#c084fc', B:'#60a5fa', S:'#22d3ee', D:'#f97316', X:'#f87171'};
+const LABELS = {A:'Segura A (pre-1610)', B:'Segura B (post-1610)', S:'Sin asignar', D:'Dudoso', X:'Contraejemplo'};
+const SHAPES = {A:'circle', B:'circle', S:'rect', D:'triangle', X:'cross'};
+
+// Scene
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x000000, 0.015);
+
+const W = window.innerWidth, H = window.innerHeight;
+const camera = new THREE.PerspectiveCamera(55, W/H, 0.1, 500);
+camera.position.set(0, 0, 40);
+
+const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+renderer.setSize(W, H);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.autoClear = false;
+document.body.appendChild(renderer.domElement);
+
+// Stereo cameras
+const cameraL = camera.clone();
+const cameraR = camera.clone();
+
+// Info
+document.getElementById('info').innerHTML =
+  `PCA 3D: ${DATA.ve}% varianza (${DATA.ve1}% + ${DATA.ve2}% + ${DATA.ve3}%)<br>` +
+  `P95=${DATA.p95} · P99=${DATA.p99} · ${DATA.sonnets.length} sonetos`;
+
+// Legend
+const legendEl = document.getElementById('legend');
+for (const [tag, label] of Object.entries(LABELS)) {
+  const count = DATA.sonnets.filter(s => s.tag === tag).length;
+  if (count === 0) continue;
+  const shape = tag === 'D' ? 'tri' : 'dot';
+  const style = shape === 'tri'
+    ? `border-bottom-color:${COLOR_HEX[tag]}`
+    : `background:${COLOR_HEX[tag]}`;
+  legendEl.innerHTML += `<div><div class="${shape}" style="${style}"></div>${label} (${count})</div>`;
+}
+
+// Create points
+const sonnets = DATA.sonnets;
+const group = new THREE.Group();
+const meshes = [];
+const labelSprites = [];
+
+// Scale factor
+let maxR = 0;
+sonnets.forEach(s => { maxR = Math.max(maxR, Math.abs(s.x), Math.abs(s.y), Math.abs(s.z)); });
+const scale = 15 / maxR;
+
+sonnets.forEach((s, idx) => {
+  const x = s.x * scale, y = s.y * scale, z = s.z * scale;
+  const color = COLORS[s.tag] || 0xffffff;
+  let geo, mat, mesh;
+
+  if (s.tag === 'D') {
+    // Triangle (tetrahedron)
+    geo = new THREE.TetrahedronGeometry(0.55, 0);
+    mat = new THREE.MeshPhongMaterial({color, emissive: color, emissiveIntensity: 0.3, transparent: true, opacity: 0.9});
+    mesh = new THREE.Mesh(geo, mat);
+  } else if (s.tag === 'X') {
+    // Octahedron for contraejemplos
+    geo = new THREE.OctahedronGeometry(0.5, 0);
+    mat = new THREE.MeshPhongMaterial({color, emissive: color, emissiveIntensity: 0.4, transparent: true, opacity: 0.9});
+    mesh = new THREE.Mesh(geo, mat);
+  } else {
+    // Spheres for secure
+    const radius = s.tag === 'S' ? 0.3 : 0.35;
+    geo = new THREE.SphereGeometry(radius, 12, 8);
+    mat = new THREE.MeshPhongMaterial({color, emissive: color, emissiveIntensity: 0.15, transparent: true, opacity: 0.75});
+    mesh = new THREE.Mesh(geo, mat);
+  }
+
+  mesh.position.set(x, y, z);
+  mesh.userData = {idx, sonnet: s};
+  group.add(mesh);
+  meshes.push(mesh);
+
+  // Number label
+  const canvas = document.createElement('canvas');
+  canvas.width = 64; canvas.height = 32;
+  const ctx = canvas.getContext('2d');
+  ctx.font = 'bold 20px Georgia';
+  ctx.fillStyle = '#ffffff';
+  ctx.textAlign = 'center';
+  ctx.fillText(String(s.n), 32, 22);
+  const tex = new THREE.CanvasTexture(canvas);
+  const spriteMat = new THREE.SpriteMaterial({map: tex, transparent: true, opacity: 0.7, depthTest: false});
+  const sprite = new THREE.Sprite(spriteMat);
+  sprite.position.set(x, y + 0.7, z);
+  sprite.scale.set(1.8, 0.9, 1);
+  group.add(sprite);
+  labelSprites.push(sprite);
+});
+
+scene.add(group);
+
+// Axes
+const axLen = 18;
+const axMat = (c) => new THREE.LineBasicMaterial({color: c, transparent: true, opacity: 0.3});
+[{dir:[1,0,0],c:0xff4444,l:'PC1'},{dir:[0,1,0],c:0x44ff44,l:'PC2'},{dir:[0,0,1],c:0x4444ff,l:'PC3'}].forEach(a => {
+  const pts = [new THREE.Vector3(0,0,0), new THREE.Vector3(a.dir[0]*axLen, a.dir[1]*axLen, a.dir[2]*axLen)];
+  const geo = new THREE.BufferGeometry().setFromPoints(pts);
+  scene.add(new THREE.Line(geo, axMat(a.c)));
+  // Negative
+  const pts2 = [new THREE.Vector3(0,0,0), new THREE.Vector3(-a.dir[0]*axLen, -a.dir[1]*axLen, -a.dir[2]*axLen)];
+  const geo2 = new THREE.BufferGeometry().setFromPoints(pts2);
+  const m2 = axMat(a.c); m2.opacity = 0.1;
+  scene.add(new THREE.Line(geo2, m2));
+});
+
+// Grid
+const gridGeo = new THREE.BufferGeometry();
+const gridPts = [];
+for (let i = -axLen; i <= axLen; i += 3) {
+  gridPts.push(-axLen, 0, i, axLen, 0, i);
+  gridPts.push(i, 0, -axLen, i, 0, axLen);
+}
+gridGeo.setAttribute('position', new THREE.Float32BufferAttribute(gridPts, 3));
+scene.add(new THREE.LineSegments(gridGeo, new THREE.LineBasicMaterial({color: 0x334155, transparent: true, opacity: 0.15})));
+
+// Lights
+scene.add(new THREE.AmbientLight(0x444466, 0.6));
+const dLight = new THREE.DirectionalLight(0xffffff, 0.8);
+dLight.position.set(10, 20, 15);
+scene.add(dLight);
+const pLight = new THREE.PointLight(0xf97316, 0.4, 50);
+pLight.position.set(-5, 10, -5);
+scene.add(pLight);
+
+// Starfield
+const starGeo = new THREE.BufferGeometry();
+const starVerts = [];
+for (let i = 0; i < 800; i++) {
+  starVerts.push((Math.random()-0.5)*200, (Math.random()-0.5)*200, (Math.random()-0.5)*200);
+}
+starGeo.setAttribute('position', new THREE.Float32BufferAttribute(starVerts, 3));
+scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({color:0x667788, size:0.15})));
+
+// Controls
+let isDragging = false, prevX = 0, prevY = 0;
+let rotX = 0, rotY = 0;
+let autoRot = true;
+const eyeSepEl = document.getElementById('eyeSep');
+const anaglyphEl = document.getElementById('anaglyphOn');
+const labelsEl = document.getElementById('showLabels');
+const autoRotEl = document.getElementById('autoRotate');
+
+renderer.domElement.addEventListener('mousedown', e => { isDragging = true; prevX = e.clientX; prevY = e.clientY; });
+window.addEventListener('mouseup', () => isDragging = false);
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  rotY += (e.clientX - prevX) * 0.005;
+  rotX += (e.clientY - prevY) * 0.005;
+  rotX = Math.max(-Math.PI/2, Math.min(Math.PI/2, rotX));
+  prevX = e.clientX; prevY = e.clientY;
+});
+
+// Touch
+renderer.domElement.addEventListener('touchstart', e => { isDragging = true; prevX = e.touches[0].clientX; prevY = e.touches[0].clientY; });
+renderer.domElement.addEventListener('touchend', () => isDragging = false);
+renderer.domElement.addEventListener('touchmove', e => {
+  if (!isDragging) return;
+  rotY += (e.touches[0].clientX - prevX) * 0.005;
+  rotX += (e.touches[0].clientY - prevY) * 0.005;
+  rotX = Math.max(-Math.PI/2, Math.min(Math.PI/2, rotX));
+  prevX = e.touches[0].clientX; prevY = e.touches[0].clientY;
+  e.preventDefault();
+}, {passive: false});
+
+// Zoom
+let camDist = 40;
+window.addEventListener('wheel', e => {
+  camDist += e.deltaY * 0.03;
+  camDist = Math.max(10, Math.min(100, camDist));
+});
+
+// Raycaster for tooltip
+const raycaster = new THREE.Raycaster();
+raycaster.params.Points = {threshold: 1};
+const mouse = new THREE.Vector2();
+const tooltipEl = document.getElementById('tooltip');
+
+window.addEventListener('mousemove', e => {
+  mouse.x = (e.clientX / W) * 2 - 1;
+  mouse.y = -(e.clientY / H) * 2 + 1;
+
+  raycaster.setFromCamera(mouse, camera);
+  const hits = raycaster.intersectObjects(meshes);
+  if (hits.length > 0) {
+    const s = hits[0].object.userData.sonnet;
+    const vc = s.v === 'COMPATIBLE' ? 'v-comp' : (s.v === 'MUY ATÍPICO' ? 'v-muy' : 'v-atip');
+    const autorStr = s.autor ? `<br><span style="color:#94a3b8">${s.autor}</span>` : '';
+    tooltipEl.innerHTML =
+      `<span class="num">#${s.n}</span> <span style="color:${COLOR_HEX[s.tag]}">[${s.tag}]</span>${autorStr}` +
+      `<div class="inc">${s.inc}</div>` +
+      `<div class="dist">d(A+B+S) = <b>${s.d}</b> <span class="verdict ${vc}">${s.v}</span></div>` +
+      `<div style="font-size:10px;color:#64748b;margin-top:3px">End: ${s.ne}/14 · PC1=${s.x.toFixed(1)} PC2=${s.y.toFixed(1)} PC3=${s.z.toFixed(1)}</div>`;
+    tooltipEl.style.display = 'block';
+    tooltipEl.style.left = (e.clientX + 16) + 'px';
+    tooltipEl.style.top = (e.clientY - 10) + 'px';
+    // Highlight
+    hits[0].object.material.emissiveIntensity = 0.8;
+  } else {
+    tooltipEl.style.display = 'none';
+    meshes.forEach(m => m.material.emissiveIntensity = m.userData.sonnet.tag === 'X' ? 0.4 : (m.userData.sonnet.tag === 'D' ? 0.3 : 0.15));
+  }
+});
+
+autoRotEl.addEventListener('change', () => autoRot = autoRotEl.checked);
+
+// Animation
+function animate(time) {
+  requestAnimationFrame(animate);
+
+  // Labels visibility
+  const showLbl = labelsEl.checked;
+  labelSprites.forEach(sp => sp.visible = showLbl);
+
+  // Camera orbit
+  if (autoRot && !isDragging) rotY += 0.003;
+  const cx = Math.sin(rotY) * Math.cos(rotX) * camDist;
+  const cy = Math.sin(rotX) * camDist;
+  const cz = Math.cos(rotY) * Math.cos(rotX) * camDist;
+  camera.position.set(cx, cy, cz);
+  camera.lookAt(0, 0, 0);
+  camera.updateMatrixWorld();
+
+  const eyeSep = parseFloat(eyeSepEl.value);
+  const useAnaglyph = anaglyphEl.checked && eyeSep > 0;
+
+  if (useAnaglyph) {
+    // Anaglyph: render left eye (red) and right eye (cyan)
+    const halfSep = eyeSep * 0.5;
+
+    // Get camera right vector
+    const right = new THREE.Vector3();
+    camera.getWorldDirection(right);
+    const up = new THREE.Vector3(0, 1, 0);
+    right.crossVectors(camera.getWorldDirection(new THREE.Vector3()), up).normalize();
+
+    // Left eye
+    cameraL.copy(camera);
+    cameraL.position.add(right.clone().multiplyScalar(-halfSep));
+    cameraL.lookAt(0, 0, 0);
+    cameraL.updateMatrixWorld();
+
+    // Right eye
+    cameraR.copy(camera);
+    cameraR.position.add(right.clone().multiplyScalar(halfSep));
+    cameraR.lookAt(0, 0, 0);
+    cameraR.updateMatrixWorld();
+
+    const gl = renderer.getContext();
+
+    renderer.clear();
+
+    // Left eye → Red channel
+    gl.colorMask(true, false, false, true);
+    renderer.render(scene, cameraL);
+
+    // Clear depth only
+    renderer.clearDepth();
+
+    // Right eye → Cyan channels
+    gl.colorMask(false, true, true, true);
+    renderer.render(scene, cameraR);
+
+    // Reset
+    gl.colorMask(true, true, true, true);
+  } else {
+    renderer.clear();
+    renderer.render(scene, camera);
+  }
+}
+
+animate(0);
+
+window.addEventListener('resize', () => {
+  const w = window.innerWidth, h = window.innerHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+});
+</script>
+</body></html>
