@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bidiso · Visualizador v3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+SC:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:       #1c1008;
+  --parchment: #f5edd8;
+  --parch-mid: #ede0c4;
+  --parch-drk: #d9c9a8;
+  --burgundy:  #7a1e2e;
+  --gold:      #b8862a;
+  --gold-lt:   #d4a843;
+  --border:    #d8d0bc;
+  --border-lt: #eae4d8;
+  --chrome:    #ffffff;
+  --chrome-2:  #f7f4ee;
+  --chrome-3:  #f0ece2;
+  --muted:     #8a7860;
+  --picker-w:  220px;
+  --sidebar-w: 180px;
+  --toolbar-h: 52px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--chrome-3);
+  color: var(--ink);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── TOOLBAR ── */
+#toolbar {
+  height: var(--toolbar-h);
+  background: var(--chrome);
+  border-bottom: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+#toolbar-title {
+  padding: 0 16px;
+  color: var(--burgundy);
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  border-right: 1px solid var(--border);
+  flex-shrink: 0;
+  line-height: 1.3;
+  min-width: var(--picker-w);
+  max-width: var(--picker-w);
+}
+#toolbar-title span { display: block; color: var(--muted); font-size: 10px; font-weight: 300; letter-spacing: 0.12em; margin-top: 1px; }
+#toolbar-title strong { color: var(--burgundy); }
+
+#search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  border-right: 1px solid var(--border);
+  flex: 1;
+  max-width: 480px;
+}
+#search-mode-badge {
+  font-family: 'Cormorant SC', serif;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 1px solid;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+#search-mode-badge.global { color: var(--gold); border-color: var(--gold); background: rgba(184,134,42,0.08); }
+#search-mode-badge.local  { color: var(--burgundy); border-color: var(--burgundy); background: rgba(122,30,46,0.07); }
+#search-progress-bar { display: none; height: 2px; background: var(--parch-drk); flex-shrink: 0; }
+#search-progress-fill { height: 100%; background: var(--gold); width: 0%; transition: width 0.15s ease; }
+#search-progress-bar.active { display: block; }
+.doc-list-empty { padding: 16px 14px; font-family: 'Cormorant SC', serif; font-size: 11px; color: #a89878; letter-spacing: 0.08em; text-align: center; font-style: italic; }
+#search-icon { color: var(--muted); font-size: 14px; }
+#search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  caret-color: var(--gold);
+}
+#search-input::placeholder { color: #b0a898; }
+#search-count {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+  font-family: 'Cormorant Garamond', serif;
+}
+.search-nav-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 5px;
+  transition: color 0.2s;
+}
+.search-nav-btn:hover { color: var(--burgundy); }
+
+#toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 12px;
+  margin-left: auto;
+}
+.tb-btn {
+  background: none;
+  border: 1px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 9px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.05em;
+}
+.tb-btn:hover { color: var(--burgundy); border-color: var(--border); }
+.tb-btn.active { color: var(--burgundy); border-color: var(--gold); background: var(--parch-mid); }
+
+/* ── MAIN LAYOUT ── */
+#main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── DOC PICKER ── */
+#doc-picker {
+  width: var(--picker-w);
+  flex-shrink: 0;
+  background: var(--chrome-2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width 0.25s ease;
+}
+#doc-picker.collapsed {
+  width: 0;
+  border-right: none;
+}
+
+#doc-filter-wrap {
+  padding: 10px 10px 8px;
+  border-bottom: 1px solid var(--border-lt);
+  flex-shrink: 0;
+}
+#doc-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#doc-filter {
+  flex: 1;
+  background: var(--chrome);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  padding: 5px 8px;
+  outline: none;
+  caret-color: var(--gold);
+}
+#doc-filter::placeholder { color: #b0a898; }
+#doc-filter:focus { border-color: var(--gold); }
+#doc-filter-clear {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+#doc-filter-clear:hover { color: var(--burgundy); }
+#doc-filter-clear.visible { display: block; }
+#doc-count {
+  font-family: 'Cormorant SC', serif;
+  font-size: 9px;
+  color: #a89878;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#doc-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+#doc-list::-webkit-scrollbar { width: 3px; }
+#doc-list::-webkit-scrollbar-track { background: transparent; }
+#doc-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.doc-item {
+  padding: 6px 14px;
+  cursor: pointer;
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  color: #6a5838;
+  letter-spacing: 0.06em;
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.doc-item:hover { background: var(--parch-mid); color: var(--ink); }
+.doc-item.active {
+  background: var(--parchment);
+  color: var(--burgundy);
+  border-left-color: var(--gold);
+}
+.doc-item.loading { color: var(--muted); font-style: italic; }
+
+/* ── RESULTADOS POR PÁGINA ── */
+.page-result {
+  padding: 5px 10px 5px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid var(--border-lt);
+}
+.page-result:hover { background: var(--parch-mid); border-left-color: var(--gold-lt); }
+.page-result.active { background: var(--parchment); border-left-color: var(--gold); }
+.res-id {
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  color: #6a5838;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+.page-result.active .res-id { color: var(--burgundy); }
+.res-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.res-pag {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+.page-result.active .res-pag { color: var(--gold-lt); }
+.res-count {
+  font-family: monospace;
+  font-size: 9px;
+  background: var(--gold);
+  color: #fff;
+  border-radius: 8px;
+  padding: 1px 5px;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1.5;
+}
+.page-result.active .res-count { background: var(--gold-lt); }
+
+/* ── PAGE SIDEBAR ── */
+#sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: var(--chrome-3);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar::-webkit-scrollbar { width: 4px; }
+#sidebar::-webkit-scrollbar-track { background: transparent; }
+#sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.sidebar-thumb {
+  padding: 10px 8px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-lt);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+  position: relative;
+}
+.sidebar-thumb:hover { background: var(--parch-mid); }
+.sidebar-thumb.active { background: var(--parchment); }
+.sidebar-thumb.active::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--gold);
+}
+
+.thumb-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  filter: none;
+  transition: filter 0.2s;
+}
+.sidebar-thumb:hover .thumb-img,
+.sidebar-thumb.active .thumb-img { filter: none; }
+
+.thumb-label {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.sidebar-thumb.active .thumb-label { color: var(--burgundy); }
+
+/* ── WELCOME / EMPTY STATE ── */
+#welcome {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--muted);
+  font-family: 'Cormorant SC', serif;
+  letter-spacing: 0.12em;
+  background: var(--chrome);
+}
+#welcome .welcome-icon { font-size: 48px; opacity: 0.3; }
+#welcome .welcome-title { font-size: 18px; color: #6a5838; }
+#welcome .welcome-sub { font-size: 11px; color: #a89878; }
+
+/* ── VIEWER ── */
+#viewer {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  background: var(--chrome);
+}
+
+/* ── IMAGE PANEL ── */
+#img-panel {
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid var(--border);
+  background: var(--chrome-3);
+  position: relative;
+}
+
+#img-panel-inner {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+#img-panel-inner::-webkit-scrollbar { width: 6px; height: 6px; }
+#img-panel-inner::-webkit-scrollbar-track { background: transparent; }
+#img-panel-inner::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+#book-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+#book-img.zoomed { cursor: zoom-out; }
+
+#img-toolbar {
+  height: 36px;
+  background: var(--chrome);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.img-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  transition: color 0.2s;
+  font-family: 'Cormorant Garamond', serif;
+}
+.img-btn:hover { color: var(--burgundy); }
+#zoom-level { color: var(--muted); font-size: 11px; font-family: monospace; min-width: 38px; text-align: center; }
+
+#no-img-msg {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #b0a898;
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  height: 100%;
+}
+
+/* ── TEXT PANEL ── */
+#text-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--parchment);
+  background-image:
+    radial-gradient(ellipse at 20% 80%, rgba(180,140,80,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(160,120,60,0.04) 0%, transparent 50%);
+}
+#text-panel::-webkit-scrollbar { width: 8px; }
+#text-panel::-webkit-scrollbar-track { background: var(--parch-mid); }
+#text-panel::-webkit-scrollbar-thumb { background: var(--parch-drk); border-radius: 4px; }
+
+#text-header {
+  padding: 14px 24px 12px;
+  border-bottom: 1px solid var(--parch-drk);
+  background: var(--parch-mid);
+  flex-shrink: 0;
+}
+#text-page-id {
+  font-family: 'Cormorant SC', serif;
+  font-size: 10px;
+  color: #9a7850;
+  letter-spacing: 0.15em;
+  margin-bottom: 2px;
+}
+#text-page-label {
+  font-family: 'Cormorant SC', serif;
+  font-size: 13px;
+  color: var(--burgundy);
+  letter-spacing: 0.06em;
+}
+
+#text-content {
+  padding: 22px 32px 36px;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--ink);
+  flex: 1;
+}
+
+#text-content .page-num {
+  display: inline-block;
+  font-family: 'Cormorant SC', serif;
+  font-size: 11px;
+  color: #9a7850;
+  background: var(--parch-mid);
+  border: 1px solid var(--parch-drk);
+  padding: 1px 8px;
+  letter-spacing: 0.12em;
+  border-radius: 2px;
+}
+.page-num-wrap { text-align: center; margin: 12px 0 8px; }
+
+#text-content .section-title {
+  font-family: 'Cormorant SC', serif;
+  font-size: 14px;
+  color: var(--burgundy);
+  letter-spacing: 0.12em;
+  text-align: center;
+  margin: 18px 0 12px;
+  padding: 6px 0;
+  border-top: 1px solid var(--parch-drk);
+  border-bottom: 1px solid var(--parch-drk);
+}
+
+#text-content .doc-title {
+  font-family: 'Cormorant SC', serif;
+  font-size: 16px;
+  color: var(--burgundy);
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 10px 0 16px;
+  line-height: 1.5;
+}
+
+#text-content p {
+  margin-bottom: 0.9em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+#text-content .footnotes {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid var(--parch-drk);
+  font-size: 12px;
+  color: #6a5030;
+  line-height: 1.6;
+}
+#text-content .footnotes p { margin-bottom: 0.3em; font-style: italic; }
+
+#text-content .cat-label {
+  font-family: 'Cormorant SC', serif;
+  font-size: 9px;
+  color: #b09060;
+  letter-spacing: 0.1em;
+  background: var(--parch-drk);
+  padding: 1px 5px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* Badge de hits en sidebar */
+.thumb-hit-badge {
+  position: absolute;
+  top: 5px; right: 5px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 9px;
+  font-family: monospace;
+  border-radius: 8px;
+  padding: 1px 5px;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1.5;
+  pointer-events: none;
+}
+
+mark.hit {
+  background: rgba(185, 134, 42, 0.25);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+mark.hit.current {
+  background: rgba(185, 134, 42, 0.55);
+  outline: 1px solid var(--gold);
+}
+
+/* ── LOADING OVERLAY ── */
+#loading-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.82);
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant SC', serif;
+  font-size: 14px;
+  color: var(--burgundy);
+  letter-spacing: 0.15em;
+  pointer-events: none;
+}
+#loading-overlay.active { display: flex; }
+
+/* ── NAV BAR ── */
+#nav-bar {
+  height: 42px;
+  background: var(--chrome);
+  border-top: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.nav-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: #6a5838;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  padding: 3px 14px;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+  transition: all 0.2s;
+}
+.nav-btn:hover:not(:disabled) { color: var(--burgundy); border-color: var(--gold); }
+.nav-btn:disabled { opacity: 0.3; cursor: default; }
+#nav-counter {
+  font-family: 'Cormorant SC', serif;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  min-width: 90px;
+  text-align: center;
+}
+
+/* ── LIGHTBOX ── */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+#lightbox.open { display: flex; }
+#lightbox img { max-width: 95vw; max-height: 95vh; object-fit: contain; box-shadow: 0 20px 80px rgba(0,0,0,0.8); }
+
+/* scrollbar global */
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+</style>
+</head>
+<body>
+
+<!-- TOOLBAR -->
+<div id="toolbar">
+  <div id="toolbar-title">
+    <strong id="doc-id-label">Bidiso OCR</strong>
+    <span id="doc-subtitle">Selecciona un documento</span>
+  </div>
+  <div id="search-wrap">
+    <span id="search-icon">🔍</span>
+    <input id="search-input" type="text" placeholder="Buscar en todos los documentos…" autocomplete="off" spellcheck="false">
+    <span id="search-count"></span>
+    <button class="search-nav-btn" id="prev-hit" title="Anterior" style="display:none">▲</button>
+    <button class="search-nav-btn" id="next-hit" title="Siguiente" style="display:none">▼</button>
+    <span id="search-mode-badge" class="global">global</span>
+  </div>
+  <div id="toolbar-right">
+    <button class="tb-btn active" id="btn-split" title="Vista dividida">⬜⬜ Dividida</button>
+    <button class="tb-btn" id="btn-imgonly" title="Solo imagen">🖼 Imagen</button>
+    <button class="tb-btn" id="btn-txtonly" title="Solo texto">📜 Texto</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+  <!-- DOC PICKER -->
+  <div id="doc-picker">
+    <div id="doc-filter-wrap">
+      <div id="doc-filter-row">
+        <input id="doc-filter" type="text" placeholder="Filtrar por ID…" autocomplete="off" spellcheck="false">
+        <button id="doc-filter-clear" title="Mostrar todos">×</button>
+      </div>
+      <div id="doc-count"></div>
+    </div>
+    <div id="search-progress-bar"><div id="search-progress-fill"></div></div>
+    <div id="doc-list"></div>
+  </div>
+
+  <!-- PAGE SIDEBAR -->
+  <div id="sidebar"></div>
+
+  <!-- VIEWER -->
+  <div id="viewer" style="position:relative">
+    <div id="loading-overlay">Cargando…</div>
+
+    <!-- WELCOME -->
+    <div id="welcome">
+      <div class="welcome-icon">📜</div>
+      <div class="welcome-title">Bidiso · Visualizador</div>
+      <div class="welcome-sub">Selecciona un documento en el panel izquierdo</div>
+    </div>
+
+    <!-- IMAGE PANEL -->
+    <div id="img-panel" style="display:none">
+      <div id="img-panel-inner">
+        <img id="book-img" src="" alt="Página del libro">
+        <div id="no-img-msg">
+          <span style="font-size:32px;opacity:.3">📷</span>
+          Imagen no disponible
+        </div>
+      </div>
+      <div id="img-toolbar">
+        <button class="img-btn" id="zoom-out">− Reducir</button>
+        <span id="zoom-level">100%</span>
+        <button class="img-btn" id="zoom-in">+ Ampliar</button>
+        <button class="img-btn" id="zoom-fit">Ajustar</button>
+        <button class="img-btn" id="zoom-full">⤢ Pantalla completa</button>
+      </div>
+    </div>
+
+    <!-- TEXT PANEL -->
+    <div id="text-panel" style="display:none">
+      <div id="text-header">
+        <div id="text-page-id"></div>
+        <div id="text-page-label"></div>
+      </div>
+      <div id="text-content"></div>
+    </div>
+
+  </div><!-- /viewer -->
+
+</div><!-- /main -->
+
+<!-- NAV BAR -->
+<div id="nav-bar">
+  <button class="nav-btn" id="btn-prev">◂ Anterior</button>
+  <span id="nav-counter"></span>
+  <button class="nav-btn" id="btn-next">Siguiente ▸</button>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <img id="lb-img" src="" alt="Imagen ampliada">
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// CATÁLOGO DE DOCUMENTOS
+// ═══════════════════════════════════════════════════════════════
+const ALL_IDS = ["14", "51", "68", "74", "100", "103", "115", "116", "122", "124", "142", "144", "150", "167", "173", "181", "190", "198", "202", "254", "262", "284", "292", "293", "309", "316", "332", "354", "387", "395", "399", "412", "415", "459", "463", "465", "484", "514", "530", "576", "581", "583", "619", "624", "649", "651", "653", "654", "661", "664", "665", "666", "690", "697", "705", "717", "752", "779", "811", "812", "818", "824", "872", "874", "876", "879", "891", "902", "909", "910", "924", "931", "956", "973", "1016", "1025", "1026", "1128", "1130", "1135", "1142", "1149", "1172", "1202", "1205", "1207", "1208", "1226", "1229", "1230", "1234", "1253", "1254", "1271", "1280", "1282", "1286", "1288", "1309", "1313", "1323", "1324", "1344", "1345", "1347", "1348", "1350", "1351", "1374", "1387", "1393", "1395", "1402", "1404", "1406", "1407", "1408", "1410", "1411", "1424", "1430", "1445", "1471", "1476", "1512", "1515", "1530", "1535", "1538", "1539", "1542", "1543", "1544", "1547", "1552", "1555", "1579", "1581", "1584", "1591", "1592", "1598", "1599", "1610", "1611", "1612", "1618", "1619", "1621", "1652", "1659", "1674", "1687", "1689", "1697", "1720", "1754", "1768", "1772", "1778", "1779", "1787", "1788", "1789", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032", "2033", "2034", "2036", "2037", "2038", "2039", "2040", "2041", "2042", "2043", "2044", "2045", "2046", "2047", "2048", "2049", "2050", "2051", "2052", "2053", "2054", "2055", "2056", "2057", "2058", "2059", "2060", "2061", "2062", "2063", "2064", "2065", "2066", "2067", "2068", "2069", "2070", "2071", "2072", "2073", "2074", "2075", "2076", "2077", "2078", "2079", "2080", "2081", "2082", "2083", "2084", "2085", "2086", "2087", "2088", "2089", "2090", "2091", "2092", "2093", "2094", "2095", "2096", "2097", "2098", "2099", "2100", "2101", "2102", "2104", "2105", "2107", "2108", "2109", "2111", "2113", "2115", "2116", "2117", "2118", "2119", "2120", "2121", "2122", "2123", "2124", "2125", "2126", "2127", "2128", "2129", "2136", "2146", "2151", "2152", "2153", "2155", "2170", "2171", "2173", "2174", "2197", "2204", "2205", "2207", "2209", "2320", "2321", "2323", "2324", "2325", "2326", "2328", "2329", "2330", "2331", "2332", "2333", "2334", "2335", "2336", "2337", "2338", "2339", "2340", "2341", "2342", "2396", "2403", "2410", "2412", "2416", "2417", "2418", "2419", "2420", "2421", "2423", "2424", "2426", "2428", "2429", "2437", "2438", "2439", "2440", "2443", "2444", "2445", "2454", "2523", "2527", "2535", "2541", "2543", "2552", "2553", "2554", "2555", "2581", "2583", "2603", "2604", "2610", "2612", "2619", "2620", "2638", "2639", "2640", "2700", "2793", "2817", "2818", "2828", "2924", "3132", "3373", "3440", "3483", "3599", "3617", "3879", "4414", "4497", "4560", "4633", "4729", "4730", "4733", "4734", "4735", "4736", "4739", "4740", "4741", "4748", "4749", "4750", "4751", "4752", "4753", "4807", "4812", "4815", "4823", "4836", "4837", "4840", "4843", "4844", "4845", "4849", "4850", "4851", "4852", "4853", "4854", "4855", "4856", "4858", "4859", "4860", "4861", "4862", "4863", "4864", "4865", "4866", "4867", "4868", "4869", "4870", "4872", "4873", "4874", "4875", "4876", "4878", "4879", "4880", "4881", "4882", "4883", "4884", "4885", "4886", "4887", "4888", "4889", "4890", "4892", "4893", "4894", "4895", "4896", "4897", "4898", "4900", "4902", "4903", "4905", "4906", "4908", "4909", "4910", "4911", "4912", "4913", "4914", "4915", "4916", "4917", "4918", "4920", "4921", "4922", "4924", "4925", "4926", "4927", "4928", "4929", "4930", "4931", "4932", "4933", "4934", "4935", "4936", "4937", "4938", "4939", "4940", "4941", "4942", "4943", "4944", "4945", "4946", "4947", "4948", "4949", "4950", "4951", "4952", "4953", "4954", "4955", "4956", "4957", "4958", "4959", "4960", "4961", "4962", "4963", "4964", "4965", "4966", "4967", "4968", "4969", "4970", "4971", "4972", "4973", "4974", "4975", "4977", "4978", "4979", "4980", "4981", "4982", "4983", "4985", "4986", "4988", "4989", "4990", "4992", "4993", "4994", "4995", "4996", "4997", "5000", "5001", "5002", "5003", "5004", "5005", "5008", "5009", "5010", "5011", "5012", "5013", "5014", "5015", "5017", "5019", "5020", "5021", "5023", "5024", "5025", "5026", "5027", "5030", "5031", "5033", "5034", "5035", "5037", "5051", "5052", "5053", "5055", "5056", "5057", "5058", "5059", "5075", "5100", "5101", "5105", "5108", "5138", "5139", "5142", "5143", "5144", "5146", "5155", "5156", "5157", "5159", "5163", "5202", "5204", "5205", "5207", "5219", "5232", "5278", "5291", "5300", "5301", "5303", "5304", "5305", "5306", "5307", "5308", "5309", "5310", "5311", "5312", "5313", "5315", "5316", "5317", "5319", "5320", "5322", "5324", "5325", "5326", "5327", "5328", "5329", "5331", "5332", "5333", "5334", "5335", "5336", "5338", "5339", "5340", "5341", "5342", "5343", "5346", "5347", "5348", "5349", "5351", "5352", "5353", "5354", "5356", "5357", "5358", "5360", "5361", "5362", "5363", "5364", "5373", "5374", "5376", "5378", "5379", "5382", "5383", "5386", "5388", "5389", "5392", "5393", "5395", "5398", "5401", "5403", "5405", "5406", "5407", "5408", "5411", "5414", "5417", "5421", "5432", "5433", "5435", "5436", "5437", "5438", "5439", "5441", "5447", "5454", "5456", "5457", "5458", "5459", "5461", "5462", "5463", "5464", "5465", "5467", "5468", "5469", "5470", "5471", "5472", "5473", "5475", "5476", "5479", "5480", "5481", "5483", "5484", "5485", "5486", "5487", "5488", "5489", "5490", "5491", "5492", "5493", "5494", "5495", "5496", "5497", "5498", "5500", "5502", "5505", "5506", "5507", "5509", "5513", "5514", "5515", "5516", "5517", "5518", "5520", "5523", "5525", "5526", "5531", "5532", "5535", "5537", "5539", "5542", "5543", "5545", "5546", "5550", "5552", "5553", "5554", "5556", "5557", "5559", "5561", "5562", "5563", "5564", "5565", "5566", "5567", "5568", "5569", "5570", "5571", "5572", "5574", "5576", "5577", "5578", "5580", "5581", "5582", "5585", "5586", "5587", "5589", "5590", "5592", "5593", "5594", "5595", "5597", "5598", "5599", "5600", "5606", "5608", "5609", "5613", "5614", "5616", "5617", "5618", "5619", "5620", "5621", "5622", "5624", "5625", "5626", "5627", "5628", "5629", "5632", "5633", "5634", "5635", "5636", "5637", "5638", "5639", "5642", "5643", "5644", "5646", "5647", "5649", "5650", "5651", "5652", "5653", "5654", "5655", "5657", "5658", "5659", "5660", "5661", "5662", "5663", "5664", "5665", "5667", "5672", "5673", "5675", "5682", "5683", "5684", "5699", "5700", "5701", "5702", "5703", "5704", "5705", "5706", "5707", "5708", "5709", "5710", "5711", "5712", "5713", "5714", "5715", "5716", "5717", "5718", "5719", "5721", "5728", "5729", "5730", "5731", "5732", "5733", "5734", "5735", "5736", "5737", "5738", "5739", "5740", "5741", "5742", "5743", "5748", "5754", "5755", "5756", "5757", "5758", "5759", "5760", "5761", "5864", "5871", "5959", "5961", "5962", "5965", "5966", "5967", "5974", "5975", "5984", "5985", "6068", "6078", "6094", "6115", "6120", "6128", "6134", "6135", "6136", "6137", "6138", "6139", "6140", "6141", "6143", "6144", "6145", "6146", "6147", "6149", "6151", "6175", "6181", "6182", "6183", "6184", "6185", "6186", "6189", "6191", "6194", "6195", "6196", "6197", "6198", "6200", "6201", "6202", "6203", "6205", "6206", "6207", "6208", "6209", "6211", "6213", "6216", "6217", "6220", "6222", "6223", "6224", "6225", "6226", "6230", "6231", "6232", "6233", "6234", "6235", "6236", "6239", "6240", "6241", "6243", "6245", "6246", "6247", "6248", "6249", "6251", "6252", "6253", "6254", "6255", "6256", "6259", "6261", "6262", "6263", "6264", "6265", "6266", "6267", "6269", "6270", "6271", "6273", "6274", "6275", "6279", "6281", "6283", "6284", "6285", "6287", "6290", "6291", "6297", "6298", "6303", "6307", "6308", "6309", "6310", "6311", "6312", "6313", "6314", "6320", "6321", "6323", "6328", "6329", "6331", "6332", "6333", "6334", "6335", "6336", "6337", "6339", "6340", "6341", "6342", "6343", "6345", "6346", "6347", "6348", "6349", "6350", "6353", "6361", "6363", "6364", "6365", "6366", "6367", "6368", "6369", "6371", "6372", "6373", "6374", "6375", "6429", "6437", "6489", "6490", "6491", "6506", "6507", "6508", "6509", "6511", "6512", "6513", "6514", "6517", "6520", "6527", "6536", "6538", "6539", "6540", "6541", "6542", "6591", "6593", "6594", "6595", "6596", "6597", "6607", "6608", "6609", "6610", "6611", "6612", "6613", "6614", "6615", "6617", "6618", "6619", "6620", "6621", "6622", "6623", "6624", "6625", "6626", "6627", "6628", "6629", "6630", "6631", "6632", "6633", "6634", "6635", "6636", "6637", "6638", "6639", "6640", "6641", "6642", "6643", "6644", "6650", "6651", "6652", "6653", "6654", "6655", "6656", "6657", "6658", "6659", "6660", "6661", "6662", "6663", "6664", "6665", "6666", "6667", "6668", "6669", "6670", "6672", "6673", "6674", "6675", "6676", "6677", "6678", "6679", "6680", "6682", "6683", "6684", "6685", "6687", "6688", "6689", "6690", "6691", "6692", "6693", "6694", "6695", "6697", "6700", "6701", "6712", "6713", "6719", "6720", "6722", "6723", "6725", "6727", "6729", "6730", "6733", "6734", "6735", "6748", "6750", "6752", "6753", "6754", "6755", "6757", "6760", "6761", "6762", "6763", "6764", "6765", "6766", "6767", "6768", "6769", "6771", "6774", "6776", "6785", "6791", "6792", "6793", "6794", "6795", "6796", "6797", "6809", "6810", "6812", "6813", "6814", "6815", "6816", "6822", "6828", "6832", "6833", "6835", "6836", "6841", "6842", "6846", "6847", "6850", "6851", "6860", "6861", "6862", "6863", "6864", "6865", "6867", "6868", "6869", "6870", "6871", "6872", "6873", "6874", "6875", "6876", "6877", "6878", "6879", "6880", "6881", "6882", "6883", "6884", "6885", "6886", "6887", "6888", "6889", "6891", "6892", "6893", "6894", "6895", "6896", "6897", "6898", "6899", "6900", "6901", "6902", "6903", "6905", "6906", "6908", "6909", "6910", "6911", "6912", "6913", "6914", "6915", "6916", "6917", "6918", "6919", "6920", "6921", "6923", "6924", "6925", "6926", "6927", "6928", "6929", "6930", "6931", "6932", "6933", "6934", "6935", "6936", "6937", "6938", "6939", "6940", "6945", "6947", "6959", "6960", "6962", "6963", "6964", "6966", "6967", "6968", "6970", "6971", "6978", "6979", "6980", "7002", "7004", "7008", "7016", "7017", "7018", "7025", "7030", "7031", "7032", "7034", "7036", "7040", "7041", "7042", "7043", "7044", "7045", "7047", "7048", "7049", "7050", "7061", "7062", "7063", "7064", "7071", "7095", "7105", "7106", "7107", "7108", "7109", "7110", "7112", "7113", "7114", "7117", "7118", "7123", "7126", "7127", "7129", "7131", "7138", "7139", "7140", "7142", "7163", "7164", "7169", "7170", "7176", "7179", "7180", "7182", "7185", "7186", "7187", "7188", "7189", "7190", "7191", "7193", "7194", "7195", "7196", "7197", "7198", "7199", "7200", "7201", "7202", "7203", "7204", "7205", "7206", "7207", "7208", "7209", "7210", "7211", "7212", "7213", "7214", "7215", "7216", "7217", "7218", "7219", "7221", "7223", "7228", "7229", "7230", "7231", "7232", "7233", "7234", "7236", "7237", "7238", "7239", "7240", "7241", "7242", "7248", "7250", "7251", "7252", "7253", "7254", "7256", "7257", "7258", "7260", "7262", "7263", "7264", "7265", "7266", "7267", "7268", "7270", "7272", "7273", "7275", "7276", "7278", "7279", "7280", "7281", "7282", "7283", "7284", "7285", "7286", "7287", "7288", "7289", "7290", "7293", "7294", "7295", "7296", "7297", "7298", "7299", "7300", "7301", "7303", "7305", "7306", "7307", "7308", "7309", "7310", "7311", "7312", "7313", "7314", "7315", "7316", "7317", "7322", "7324", "7325", "7331", "7335", "7342", "7343", "7344", "7349", "7350", "7351", "7352", "7353", "7354", "7358", "7359", "7360", "7361", "7362", "7363", "7369", "7389", "7390", "7391", "7392", "7393", "7394", "7395", "7396", "7401", "7402", "7404", "7406", "7408", "7415", "7416", "7423", "7424", "7426", "7427", "7451", "7452", "7453", "7454", "7455", "7456", "7457", "7458", "7459", "7461", "7462", "7463", "7466", "7485", "7486", "7487", "7488", "7489", "7490", "7491", "7492", "7493", "7503", "7505", "7507", "7508", "7510", "7535", "7542", "7543", "7544", "7546", "7547", "7548", "7550", "7551", "7552", "7558", "7559", "7565", "7567", "7572", "7581", "7583", "7584", "7585", "7587", "7588", "7589", "7590", "7591", "7596", "7600", "7614", "7616", "7625", "7628", "7629", "7630", "7654", "7655", "7656", "7658", "7659", "7660", "7662", "7664", "7666", "7678", "7681", "7682", "7684", "7687", "7696", "7709", "7710", "7714", "7715", "7733", "7735", "7737", "7739", "7740", "7748", "7749", "7750", "7753", "7838", "7841", "7891", "7901", "7905", "7940", "7949", "8129", "8175", "8189", "8217", "8257", "8280", "8289", "8316", "8386", "8394", "8414", "8415", "8416", "8417", "8418", "8419", "8420", "8439", "8448", "8453", "8455", "8457", "8491", "8664", "8665", "8838", "8839", "9066", "9080", "9083", "9094", "9174", "9175", "9178", "9183", "9213", "9231", "9238", "9290", "9317", "9320", "9331", "9338", "9402", "9403", "9410", "9939", "9993", "9996", "10027", "10042", "10043", "10061", "10068", "10070", "10071", "10073", "10074", "10110", "10113", "10328", "10369", "10392", "10393", "10396", "10400", "10401", "10412", "10447", "10448", "10453", "10456", "10570", "10573", "10596", "10693", "10703", "10706", "10724", "10808", "12049", "12246", "12248", "12249", "12774", "12777", "13497", "13511", "13512", "13534", "13567", "13617"];
+
+// ═══════════════════════════════════════════════════════════════
+// ESTADO
+// ═══════════════════════════════════════════════════════════════
+let PAGES = [];
+let currentIdx = 0;
+let currentDocId = null;
+let zoomScale = 1;
+let hits = [];
+let hitIdx = 0;
+let rawHTML = '';
+let idFilteredIds = [...ALL_IDS];
+let pageHitsCount  = [];
+let pageHitsList   = [];
+let globalResults  = []; // [{docId, arrayIdx, pageNum, count}]
+let globalResultIdx = -1;
+
+// ═══════════════════════════════════════════════════════════════
+// ÍNDICE DE BÚSQUEDA POR PÁGINA
+// ═══════════════════════════════════════════════════════════════
+let pagesIndex = null;
+let pagesIndexPromise = null;
+
+function ensurePagesIndex() {
+  if (pagesIndex) return Promise.resolve(pagesIndex);
+  if (pagesIndexPromise) return pagesIndexPromise;
+  pagesIndexPromise = fetch('search_index_pages.json')
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(data => { pagesIndex = data; return data; })
+    .catch(e => { console.error('Índice de páginas no cargado:', e); pagesIndex = {}; return {}; });
+  return pagesIndexPromise;
+}
+ensurePagesIndex(); // precarga en segundo plano
+
+// ═══════════════════════════════════════════════════════════════
+// MODO DE BÚSQUEDA: global (>1 ID visible) vs local (exactamente 1)
+// ═══════════════════════════════════════════════════════════════
+function getSearchMode() {
+  return idFilteredIds.length === 1 ? 'local' : 'global';
+}
+
+function updateSearchModeBadge() {
+  const mode = getSearchMode();
+  const badge = document.getElementById('search-mode-badge');
+  badge.textContent = mode;
+  badge.className = mode;
+  document.getElementById('search-input').placeholder =
+    mode === 'local' ? 'Buscar en este documento…' : 'Buscar en todos los documentos…';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// BÚSQUEDA GLOBAL — resultados a nivel de página
+// ═══════════════════════════════════════════════════════════════
+async function globalTextSearch(q) {
+  const progressBar = document.getElementById('search-progress-bar');
+
+  if (!pagesIndex) {
+    progressBar.classList.add('active');
+    document.getElementById('search-progress-fill').style.width = '60%';
+    document.getElementById('doc-list').innerHTML = '<div class="doc-list-empty">Cargando índice…</div>';
+    document.getElementById('search-count').textContent = '';
+  }
+
+  const idx = await ensurePagesIndex();
+  progressBar.classList.remove('active');
+
+  const results = [];
+  const docsSeen = new Set();
+  const re = buildSearchRegex(q);
+
+  for (const id of idFilteredIds) {
+    const pages = idx[id];
+    if (!pages) continue;
+    for (let i = 0; i < pages.length; i++) {
+      const [pageNum, text] = pages[i];
+      if (!text) continue;
+      const m = text.match(re); // global regex: devuelve todas las ocurrencias
+      if (m) {
+        results.push({ docId: id, arrayIdx: i, pageNum, count: m.length });
+        docsSeen.add(id);
+      }
+    }
+  }
+
+  globalResults   = results;
+  globalResultIdx = -1;
+  buildPageResultsList(results, docsSeen.size);
+  updateNavButtons();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ABRIR DOCUMENTO EN UNA PÁGINA CONCRETA (desde resultado global)
+// ═══════════════════════════════════════════════════════════════
+async function openDocAtPage(docId, targetArrayIdx) {
+  // Marcar resultado activo en la lista
+  document.querySelectorAll('.page-result').forEach(el => {
+    el.classList.toggle('active',
+      el.dataset.docId === docId && parseInt(el.dataset.arrayIdx) === targetArrayIdx);
+  });
+
+  // Si el documento ya está cargado, solo navegar a la página
+  if (currentDocId === docId && PAGES.length > 0) {
+    renderPage(targetArrayIdx);
+    const activeQ = document.getElementById('search-input').value.trim();
+    if (activeQ) highlightCurrentPage(activeQ);
+    return;
+  }
+
+  // Cargar el documento sin entrar en modo local
+  document.getElementById('loading-overlay').classList.add('active');
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('img-panel').style.display = 'none';
+  document.getElementById('text-panel').style.display = 'none';
+
+  try {
+    const resp = await fetch(`bidiso_resultados_layout/${docId}.json`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    PAGES = parseJsonData(data);
+    currentDocId = docId;
+
+    // NO cambiamos idFilteredIds ni el modo — mantenemos modo global
+    document.getElementById('doc-id-label').textContent = `Doc. ${docId}`;
+    document.getElementById('doc-subtitle').textContent = `${PAGES.length} página${PAGES.length !== 1 ? 's' : ''}`;
+
+    buildSidebar();
+    showViewer();
+    renderPage(targetArrayIdx);
+
+    const activeQ = document.getElementById('search-input').value.trim();
+    if (activeQ) highlightCurrentPage(activeQ);
+
+  } catch (err) {
+    document.getElementById('loading-overlay').classList.remove('active');
+    document.getElementById('welcome').style.display = 'flex';
+    document.getElementById('welcome').innerHTML = `
+      <div class="welcome-icon">⚠️</div>
+      <div class="welcome-title">Error al cargar doc. ${docId}</div>
+      <div class="welcome-sub">${esc(err.message)}</div>
+    `;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PARSEO DE JSON
+// ═══════════════════════════════════════════════════════════════
+function parseJsonData(data) {
+  data.sort((a, b) => {
+    const na = parseInt((a.file || '').match(/-(\d+)\.\w+$/)?.[1] || 0);
+    const nb = parseInt((b.file || '').match(/-(\d+)\.\w+$/)?.[1] || 0);
+    return na - nb;
+  });
+
+  const pages = [];
+  for (const pageData of data) {
+    const imgPath = pageData.file || '';
+    const pageNum = imgPath.match(/-(\d+)\.\w+$/)?.[1] || '?';
+    const basename = imgPath.match(/([^/]+)\.\w+$/)?.[1] || pageNum;
+
+    let elements = [];
+    if (pageData.text) {
+      try {
+        const items = JSON.parse(pageData.text);
+        const content = items[0]?.choices?.[0]?.message?.content;
+        if (content) elements = JSON.parse(content);
+      } catch (_) {}
+    }
+
+    const parts = imgPath.split('/').filter(Boolean);
+    const relImg = parts.length >= 2 ? parts.slice(-2).join('/') : imgPath;
+
+    pages.push({
+      id: basename,
+      img: relImg,
+      label: 'Pág. ' + pageNum,
+      elements,
+      hasError: !!pageData.error
+    });
+  }
+  return pages;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// FORMATEO DE ELEMENTOS → HTML
+// ═══════════════════════════════════════════════════════════════
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatElements(elements) {
+  if (!elements || elements.length === 0) {
+    return '<p style="color:#9a7850;font-style:italic">Sin transcripción disponible para esta página.</p>';
+  }
+
+  let html = '';
+  let footnotes = [];
+
+  for (const el of elements) {
+    const cat = el.category || '';
+    const text = (el.text || '').trim();
+    if (!text) continue;
+
+    switch (cat) {
+      case 'Title':
+        html += `<div class="doc-title">${esc(text)}</div>\n`;
+        break;
+      case 'Section-header':
+        html += `<div class="section-title">${esc(text)}</div>\n`;
+        break;
+      case 'Page-header': {
+        const m = text.match(/^\(?\s*(\d+)\s*\)?$/);
+        if (m) {
+          html += `<div class="page-num-wrap"><span class="page-num">pág. ${m[1]}</span></div>\n`;
+        } else {
+          html += `<p><span class="cat-label">cab.</span>${esc(text)}</p>\n`;
+        }
+        break;
+      }
+      case 'Page-footer':
+        html += `<p><span class="cat-label">pie</span><em style="font-size:12px;color:#7a6040">${esc(text)}</em></p>\n`;
+        break;
+      case 'Footnote':
+        footnotes.push(text);
+        break;
+      case 'Picture':
+        break;
+      case 'Text':
+      default:
+        html += `<p>${esc(text)}</p>\n`;
+    }
+  }
+
+  if (footnotes.length > 0) {
+    html += `<div class="footnotes">`;
+    for (const fn of footnotes) html += `<p>${esc(fn)}</p>`;
+    html += `</div>\n`;
+  }
+
+  return html || '<p style="color:#9a7850;font-style:italic">Página sin texto extraíble.</p>';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CARGA DE DOCUMENTO (desde la lista de IDs, modo local)
+// ═══════════════════════════════════════════════════════════════
+async function loadDocument(id) {
+  document.querySelectorAll('.doc-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === id);
+  });
+
+  document.getElementById('loading-overlay').classList.add('active');
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('img-panel').style.display = 'none';
+  document.getElementById('text-panel').style.display = 'none';
+
+  try {
+    const resp = await fetch(`bidiso_resultados_layout/${id}.json`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    PAGES = parseJsonData(data);
+    currentDocId = id;
+
+    // Pasar a modo local
+    idFilteredIds = [id];
+    const docFilterEl2 = document.getElementById('doc-filter');
+    docFilterEl2.value = id;
+    document.getElementById('doc-filter-clear').classList.add('visible');
+    buildDocList([id]);
+    updateSearchModeBadge();
+
+    document.getElementById('doc-id-label').textContent = `Doc. ${id}`;
+    document.getElementById('doc-subtitle').textContent = `${PAGES.length} página${PAGES.length !== 1 ? 's' : ''}`;
+
+    buildSidebar();
+    showViewer();
+    renderPage(0);
+
+    const activeQ = document.getElementById('search-input').value.trim();
+    if (activeQ) {
+      applyLocalSearch(activeQ);
+      if (pageHitsList.length > 0 && pageHitsList[0] !== 0) renderPage(pageHitsList[0]);
+    }
+
+  } catch (err) {
+    document.getElementById('loading-overlay').classList.remove('active');
+    document.getElementById('welcome').style.display = 'flex';
+    document.getElementById('welcome').innerHTML = `
+      <div class="welcome-icon">⚠️</div>
+      <div class="welcome-title">Error al cargar doc. ${id}</div>
+      <div class="welcome-sub">${esc(err.message)}</div>
+    `;
+  }
+}
+
+function showViewer() {
+  const mode = getCurrentMode();
+  applyModeVisibility(mode);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// RENDER DE PÁGINA
+// ═══════════════════════════════════════════════════════════════
+function renderPage(idx) {
+  document.getElementById('loading-overlay').classList.remove('active');
+
+  const page = PAGES[idx];
+  if (!page) return;
+
+  document.querySelectorAll('.sidebar-thumb').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+
+  const imgEl = document.getElementById('book-img');
+  const noImgEl = document.getElementById('no-img-msg');
+  imgEl.style.display = 'block';
+  noImgEl.style.display = 'none';
+  imgEl.src = page.img;
+  imgEl.onerror = () => {
+    imgEl.style.display = 'none';
+    noImgEl.style.display = 'flex';
+  };
+  zoomScale = 1;
+  applyZoom();
+
+  document.getElementById('text-page-id').textContent = page.id;
+  document.getElementById('text-page-label').textContent = page.label +
+    (page.hasError ? ' ⚠ (error en procesado)' : '');
+
+  rawHTML = formatElements(page.elements);
+  document.getElementById('text-content').innerHTML = rawHTML;
+
+  document.getElementById('nav-counter').textContent = `${idx + 1} / ${PAGES.length}`;
+  document.getElementById('btn-prev').disabled = idx === 0;
+  document.getElementById('btn-next').disabled = idx === PAGES.length - 1;
+
+  const q = document.getElementById('search-input').value.trim();
+  if (q && getSearchMode() === 'local') {
+    highlightCurrentPage(q);
+    const docTotal = pageHitsCount.reduce((a, b) => a + b, 0);
+    if (docTotal > 0 && hits.length === 0) {
+      document.getElementById('search-count').textContent =
+        'Sin resultados  ·  ' + docTotal + ' en ' + pageHitsList.length + ' págs.';
+    }
+  } else if (q && getSearchMode() === 'global') {
+    // En modo global, solo resaltar sin escanear todo
+    highlightCurrentPage(q);
+  } else {
+    hits = [];
+  }
+
+  currentIdx = idx;
+
+  const activeThumb = document.querySelector('.sidebar-thumb.active');
+  if (activeThumb) activeThumb.scrollIntoView({ block: 'nearest' });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SIDEBAR DE PÁGINAS
+// ═══════════════════════════════════════════════════════════════
+function buildSidebar() {
+  const sb = document.getElementById('sidebar');
+  sb.innerHTML = '';
+  PAGES.forEach((page, i) => {
+    const div = document.createElement('div');
+    div.className = 'sidebar-thumb';
+    div.innerHTML = `
+      <img class="thumb-img" src="${esc(page.img)}" alt="${esc(page.id)}" loading="lazy"
+           onerror="this.style.opacity='0.15'">
+      <div class="thumb-label">${esc(page.label)}</div>
+    `;
+    div.addEventListener('click', () => renderPage(i));
+    sb.appendChild(div);
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PANEL SELECTOR DE DOCUMENTOS — lista de IDs
+// ═══════════════════════════════════════════════════════════════
+function buildDocList(ids, isSearchResult) {
+  const list = document.getElementById('doc-list');
+  list.innerHTML = '';
+  if (ids.length === 0) {
+    list.innerHTML = '<div class="doc-list-empty">Sin resultados</div>';
+    document.getElementById('doc-count').textContent = '0 de ' + ALL_IDS.length + ' documentos';
+    return;
+  }
+  for (const id of ids) {
+    const div = document.createElement('div');
+    div.className = 'doc-item' + (id === currentDocId ? ' active' : '');
+    div.dataset.id = id;
+    div.textContent = id;
+    div.addEventListener('click', () => loadDocument(id));
+    list.appendChild(div);
+  }
+  if (!isSearchResult) {
+    document.getElementById('doc-count').textContent = ids.length + ' de ' + ALL_IDS.length + ' documentos';
+  }
+  list.scrollTop = 0;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PANEL SELECTOR — resultados por página (modo global con query)
+// ═══════════════════════════════════════════════════════════════
+function buildPageResultsList(results, docsCount) {
+  const list = document.getElementById('doc-list');
+  const countEl = document.getElementById('doc-count');
+  list.innerHTML = '';
+
+  if (results.length === 0) {
+    list.innerHTML = '<div class="doc-list-empty">Sin resultados</div>';
+    document.getElementById('search-count').textContent = 'Sin resultados';
+    countEl.textContent = '0 páginas';
+    return;
+  }
+
+  results.forEach((r, ri) => {
+    const div = document.createElement('div');
+    div.className = 'page-result' +
+      (r.docId === currentDocId && r.arrayIdx === currentIdx ? ' active' : '');
+    div.dataset.docId = r.docId;
+    div.dataset.arrayIdx = r.arrayIdx;
+    div.innerHTML =
+      `<span class="res-id">${esc(r.docId)}</span>` +
+      `<span class="res-right"><span class="res-pag">pág.&nbsp;${r.pageNum}</span>` +
+      `<span class="res-count">${r.count}</span></span>`;
+    div.addEventListener('click', () => {
+      globalResultIdx = ri;
+      updateGlobalCounter();
+      openDocAtPage(r.docId, r.arrayIdx);
+    });
+    list.appendChild(div);
+  });
+
+  document.getElementById('search-count').textContent =
+    results.length + ' pág' + (results.length !== 1 ? 's.' : '.') +
+    '  ·  ' + docsCount + ' doc' + (docsCount !== 1 ? 's' : '');
+  countEl.textContent = results.length + ' págs. en ' + docsCount + ' docs';
+  list.scrollTop = 0;
+}
+
+function filterDocListById(q) {
+  idFilteredIds = q ? ALL_IDS.filter(id => id.includes(q)) : [...ALL_IDS];
+
+  if (!q && currentDocId !== null) closeCurrentDoc();
+
+  buildDocList(idFilteredIds);
+  updateSearchModeBadge();
+
+  const searchQ = document.getElementById('search-input').value.trim();
+  if (searchQ) {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => handleSearch(searchQ), 300);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// BÚSQUEDA LOCAL
+// ═══════════════════════════════════════════════════════════════
+function getPagePlainText(page) {
+  return (page.elements || []).map(el => el.text || '').join(' ');
+}
+
+function updateSidebarHitBadges(counts) {
+  document.querySelectorAll('.sidebar-thumb').forEach((el, i) => {
+    el.querySelector('.thumb-hit-badge')?.remove();
+    if (counts && counts[i] > 0) {
+      const b = document.createElement('span');
+      b.className = 'thumb-hit-badge';
+      b.textContent = counts[i];
+      el.appendChild(b);
+    }
+  });
+}
+
+// Construye regex con bordes de palabra (incluye acentuadas)
+function buildSearchRegex(q) {
+  const esc2 = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const L = 'a-zA-Z0-9\u00C0-\u024F\u1E00-\u1EFF';
+  return new RegExp('(?<![' + L + '])' + esc2 + '(?![' + L + '])', 'gi');
+}
+
+function scanAllPages(q) {
+  pageHitsCount = new Array(PAGES.length).fill(0);
+  pageHitsList  = [];
+  if (!q || !PAGES.length) { updateSidebarHitBadges([]); return 0; }
+
+  const re = buildSearchRegex(q);
+  let total = 0;
+  for (let i = 0; i < PAGES.length; i++) {
+    const n = (getPagePlainText(PAGES[i]).match(re) || []).length;
+    pageHitsCount[i] = n;
+    if (n > 0) { pageHitsList.push(i); total += n; }
+  }
+  updateSidebarHitBadges(pageHitsCount);
+  return total;
+}
+
+function highlightCurrentPage(q) {
+  const content = document.getElementById('text-content');
+  content.innerHTML = rawHTML;
+  hits = [];
+  hitIdx = 0;
+  if (!q) return;
+
+  const re = buildSearchRegex(q);
+  const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  let n;
+  while ((n = walker.nextNode())) nodes.push(n);
+
+  for (const node of nodes) {
+    const text = node.nodeValue;
+    if (!re.test(text)) continue;
+    re.lastIndex = 0;
+    const frag = document.createDocumentFragment();
+    let last = 0, m;
+    while ((m = re.exec(text)) !== null) {
+      if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+      const mark = document.createElement('mark');
+      mark.className = 'hit';
+      mark.textContent = m[0];
+      frag.appendChild(mark);
+      hits.push(mark);
+      last = re.lastIndex;
+    }
+    if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  }
+  if (hits.length) { hitIdx = 0; highlightCurrent(); }
+}
+
+function applyLocalSearch(q) {
+  if (!q) {
+    highlightCurrentPage('');
+    updateSidebarHitBadges([]);
+    document.getElementById('search-count').textContent = '';
+    updateNavButtons();
+    return;
+  }
+  const total = scanAllPages(q);
+  highlightCurrentPage(q);
+  updateNavButtons();
+
+  if (total === 0) {
+    document.getElementById('search-count').textContent = 'Sin resultados';
+  } else {
+    document.getElementById('search-count').textContent =
+      total + ' en ' + pageHitsList.length + ' pág' + (pageHitsList.length !== 1 ? 's.' : '.');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CERRAR DOCUMENTO ACTUAL
+// ═══════════════════════════════════════════════════════════════
+function closeCurrentDoc() {
+  currentDocId = null;
+  PAGES = [];
+  currentIdx = 0;
+  rawHTML = '';
+  hits = [];
+  pageHitsCount = [];
+  pageHitsList  = [];
+  document.getElementById('sidebar').innerHTML = '';
+  document.getElementById('img-panel').style.display  = 'none';
+  document.getElementById('text-panel').style.display = 'none';
+  const w = document.getElementById('welcome');
+  w.style.display = 'flex';
+  w.innerHTML = `
+    <div class="welcome-icon">📜</div>
+    <div class="welcome-title">Bidiso · Visualizador</div>
+    <div class="welcome-sub">Selecciona un documento en el panel izquierdo</div>`;
+  document.getElementById('doc-id-label').textContent  = 'Bidiso OCR';
+  document.getElementById('doc-subtitle').textContent  = 'Selecciona un documento';
+  document.getElementById('search-count').textContent  = '';
+  document.getElementById('nav-counter').textContent   = '';
+  document.getElementById('btn-prev').disabled = true;
+  document.getElementById('btn-next').disabled = true;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DESPACHADOR DE BÚSQUEDA
+// ═══════════════════════════════════════════════════════════════
+function handleSearch(q) {
+  if (!q) {
+    document.getElementById('search-count').textContent = '';
+    document.getElementById('search-progress-bar').classList.remove('active');
+    globalResults   = [];
+    globalResultIdx = -1;
+    if (getSearchMode() === 'local') {
+      applyLocalSearch('');
+    } else {
+      buildDocList(idFilteredIds);
+      document.getElementById('doc-count').textContent = idFilteredIds.length + ' de ' + ALL_IDS.length + ' documentos';
+      updateNavButtons();
+    }
+    return;
+  }
+  if (getSearchMode() === 'local') {
+    applyLocalSearch(q);
+  } else {
+    globalTextSearch(q);
+  }
+}
+
+function highlightCurrent() {
+  hits.forEach((h, i) => h.classList.toggle('current', i === hitIdx));
+  if (hits[hitIdx]) hits[hitIdx].scrollIntoView({ block: 'center', behavior: 'smooth' });
+  const docTotal = pageHitsCount.length ? pageHitsCount.reduce((a, b) => a + b, 0) : 0;
+  const label = (hitIdx + 1) + '/' + hits.length;
+  document.getElementById('search-count').textContent =
+    docTotal > hits.length
+      ? label + '  ·  ' + docTotal + ' en ' + pageHitsList.length + ' págs.'
+      : label;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// NAVEGACIÓN GLOBAL (prev/next entre resultados)
+// ═══════════════════════════════════════════════════════════════
+function updateNavButtons() {
+  const mode = getSearchMode();
+  const show = (mode === 'local' && pageHitsList.length > 0) ||
+               (mode === 'global' && globalResults.length > 0);
+  document.getElementById('prev-hit').style.display = show ? '' : 'none';
+  document.getElementById('next-hit').style.display = show ? '' : 'none';
+}
+
+function updateGlobalCounter() {
+  if (!globalResults.length) return;
+  const pos = globalResultIdx >= 0 ? globalResultIdx + 1 : '–';
+  const docCount = new Set(globalResults.map(r => r.docId)).size;
+  document.getElementById('search-count').textContent =
+    pos + '/' + globalResults.length + ' págs.  ·  ' + docCount + ' docs';
+}
+
+function navigateGlobal(delta) {
+  if (!globalResults.length) return;
+  if (globalResultIdx === -1) {
+    globalResultIdx = delta > 0 ? 0 : globalResults.length - 1;
+  } else {
+    globalResultIdx = (globalResultIdx + delta + globalResults.length) % globalResults.length;
+  }
+  const r = globalResults[globalResultIdx];
+  // Marcar activo en lista
+  document.querySelectorAll('.page-result').forEach((el, i) => {
+    el.classList.toggle('active', i === globalResultIdx);
+  });
+  const activeEl = document.querySelector('.page-result.active');
+  if (activeEl) activeEl.scrollIntoView({ block: 'nearest' });
+  updateGlobalCounter();
+  openDocAtPage(r.docId, r.arrayIdx);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ZOOM
+// ═══════════════════════════════════════════════════════════════
+function applyZoom() {
+  const img = document.getElementById('book-img');
+  img.style.transform = `scale(${zoomScale})`;
+  img.style.transformOrigin = 'center center';
+  document.getElementById('zoom-level').textContent = Math.round(zoomScale * 100) + '%';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// MODOS DE VISTA
+// ═══════════════════════════════════════════════════════════════
+let _currentMode = 'split';
+function getCurrentMode() { return _currentMode; }
+
+function applyModeVisibility(mode) {
+  const imgPanel = document.getElementById('img-panel');
+  const txtPanel = document.getElementById('text-panel');
+  if (mode === 'split') {
+    imgPanel.style.display = 'flex'; imgPanel.style.width = '50%';
+    txtPanel.style.display = 'flex';
+  } else if (mode === 'img') {
+    imgPanel.style.display = 'flex'; imgPanel.style.width = '100%';
+    txtPanel.style.display = 'none';
+  } else {
+    imgPanel.style.display = 'none';
+    txtPanel.style.display = 'flex';
+  }
+}
+
+function setMode(mode) {
+  if (!PAGES.length) return;
+  _currentMode = mode;
+  document.getElementById('btn-split').classList.toggle('active', mode === 'split');
+  document.getElementById('btn-imgonly').classList.toggle('active', mode === 'img');
+  document.getElementById('btn-txtonly').classList.toggle('active', mode === 'txt');
+  applyModeVisibility(mode);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════
+buildDocList(ALL_IDS);
+updateSearchModeBadge();
+updateNavButtons();
+
+document.getElementById('btn-prev').addEventListener('click', () => {
+  if (currentIdx > 0) renderPage(currentIdx - 1);
+});
+document.getElementById('btn-next').addEventListener('click', () => {
+  if (currentIdx < PAGES.length - 1) renderPage(currentIdx + 1);
+});
+
+document.addEventListener('keydown', e => {
+  const inInput = e.target.tagName === 'INPUT';
+  if (!inInput) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      if (currentIdx < PAGES.length - 1) renderPage(currentIdx + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      if (currentIdx > 0) renderPage(currentIdx - 1);
+    }
+  }
+  if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+});
+
+let searchTimer;
+document.getElementById('search-input').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  const q = e.target.value.trim();
+  searchTimer = setTimeout(() => handleSearch(q), getSearchMode() === 'global' ? 500 : 280);
+});
+document.getElementById('prev-hit').addEventListener('click', () => {
+  if (getSearchMode() === 'global') { navigateGlobal(-1); return; }
+  if (!pageHitsList.length) return;
+  if (hits.length && hitIdx > 0) { hitIdx--; highlightCurrent(); return; }
+  const pos = pageHitsList.indexOf(currentIdx);
+  const prev = pageHitsList[pos <= 0 ? pageHitsList.length - 1 : pos - 1];
+  renderPage(prev);
+  hitIdx = hits.length - 1;
+  highlightCurrent();
+});
+document.getElementById('next-hit').addEventListener('click', () => {
+  if (getSearchMode() === 'global') { navigateGlobal(1); return; }
+  if (!pageHitsList.length) return;
+  if (hits.length && hitIdx < hits.length - 1) { hitIdx++; highlightCurrent(); return; }
+  const pos = pageHitsList.indexOf(currentIdx);
+  renderPage(pageHitsList[(pos + 1) % pageHitsList.length]);
+});
+document.getElementById('search-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    if (e.shiftKey) document.getElementById('prev-hit').click();
+    else document.getElementById('next-hit').click();
+  }
+});
+
+const docFilterEl = document.getElementById('doc-filter');
+const docFilterClear = document.getElementById('doc-filter-clear');
+
+let filterTimer;
+docFilterEl.addEventListener('input', e => {
+  const q = e.target.value.trim();
+  docFilterClear.classList.toggle('visible', q.length > 0);
+  clearTimeout(filterTimer);
+  filterTimer = setTimeout(() => filterDocListById(q), 150);
+});
+docFilterEl.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    const first = document.querySelector('.doc-item');
+    if (first) loadDocument(first.dataset.id);
+  }
+  if (e.key === 'Escape') {
+    docFilterEl.value = '';
+    docFilterClear.classList.remove('visible');
+    filterDocListById('');
+    docFilterEl.blur();
+  }
+});
+docFilterClear.addEventListener('click', () => {
+  docFilterEl.value = '';
+  docFilterClear.classList.remove('visible');
+  filterDocListById('');
+  docFilterEl.focus();
+});
+
+document.getElementById('zoom-in').addEventListener('click', () => {
+  zoomScale = Math.min(zoomScale + 0.25, 5);
+  applyZoom();
+});
+document.getElementById('zoom-out').addEventListener('click', () => {
+  zoomScale = Math.max(zoomScale - 0.25, 0.2);
+  applyZoom();
+});
+document.getElementById('zoom-fit').addEventListener('click', () => { zoomScale = 1; applyZoom(); });
+document.getElementById('zoom-full').addEventListener('click', () => {
+  if (!PAGES.length) return;
+  document.getElementById('lb-img').src = PAGES[currentIdx].img;
+  document.getElementById('lightbox').classList.add('open');
+});
+document.getElementById('book-img').addEventListener('click', () => {
+  if (!PAGES.length) return;
+  document.getElementById('lb-img').src = PAGES[currentIdx].img;
+  document.getElementById('lightbox').classList.add('open');
+});
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').classList.remove('open');
+});
+
+document.getElementById('btn-split').addEventListener('click', () => setMode('split'));
+document.getElementById('btn-imgonly').addEventListener('click', () => setMode('img'));
+document.getElementById('btn-txtonly').addEventListener('click', () => setMode('txt'));
+</script>
+</body>
+</html>
