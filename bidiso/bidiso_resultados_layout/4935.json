@@ -1,0 +1,7 @@
+[
+  {
+    "file": "/media/rafa/aaa4af6d-5dbe-433d-9999-896c6b8931491/Bidiso-OCR/4935/4935-1.jpg",
+    "text": "[{\"choices\": [{\"finish_reason\": \"stop\", \"index\": 0, \"logprobs\": null, \"message\": {\"annotations\": null, \"audio\": null, \"content\": \"[{\\\"bbox\\\": [607, 71, 958, 375], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"RELACION\\\\nDE LOS RESO-\\\\nNAMIENTOS OVE\\\\nhan tenido el Code de Oli.\\\\nuares,yMarques delos Veles\\\\ny demas Generales del Rey\\\\nde Castilla,que han veni-\\\\ndo contra Caraluna.\\\"}, {\\\"bbox\\\": [607, 385, 954, 643], \\\"category\\\": \\\"Picture\\\"}, {\\\"bbox\\\": [607, 592, 954, 643], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"Con licencia; en Barcelona en cafe de Iayme Ma-\\\\nteyatano 1642,\\\"}, {\\\"bbox\\\": [1016, 54, 1041, 82], \\\"category\\\": \\\"Page-footer\\\", \\\"text\\\": \\\"26\\\"}, {\\\"bbox\\\": [643, 721, 664, 735], \\\"category\\\": \\\"Page-footer\\\", \\\"text\\\": \\\"112\\\"}]\", \"function_call\": null, \"reasoning\": null, \"refusal\": null, \"role\": \"assistant\", \"tool_calls\": []}, \"stop_reason\": 151673, \"token_ids\": null}], \"created\": 1775549071, \"id\": \"chatcmpl-addab400c6964044\", \"kv_transfer_params\": null, \"model\": \"davanstrien/dots.ocr-1.5\", \"object\": \"chat.completion\", \"prompt_logprobs\": null, \"prompt_token_ids\": null, \"service_tier\": null, \"system_fingerprint\": null, \"usage\": {\"completion_tokens\": 256, \"prompt_tokens\": 1421, \"prompt_tokens_details\": null, \"total_tokens\": 1677}}]",
+    "error": null
+  }
+]

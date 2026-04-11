@@ -1,0 +1,7 @@
+[
+  {
+    "file": "/media/rafa/aaa4af6d-5dbe-433d-9999-896c6b8931491/Bidiso-OCR/7901/7901-1.jpg",
+    "text": "[{\"choices\": [{\"finish_reason\": \"stop\", \"index\": 0, \"logprobs\": null, \"message\": {\"annotations\": null, \"audio\": null, \"content\": \"[{\\\"bbox\\\": [154, 158, 410, 476], \\\"category\\\": \\\"Picture\\\"}, {\\\"bbox\\\": [129, 480, 437, 507], \\\"category\\\": \\\"Section-header\\\", \\\"text\\\": \\\"Copia de una carta embiada\\\"}, {\\\"bbox\\\": [129, 508, 438, 578], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"dela Corte del Emperador Nuestro Señor; en la cual se basó murmurada relación de todas las cosas que allá ay de nuestro baila veynter vno de Abul del presente Año. Sira carta a escriuio Mosen Saluador Daut: estando en la ciudad de Lauris a su hermano Mosen Faume daui en Laller.\\\"}, {\\\"bbox\\\": [212, 577, 342, 603], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"AB. D. XXXVI.\\\"}]\", \"function_call\": null, \"reasoning\": null, \"refusal\": null, \"role\": \"assistant\", \"tool_calls\": []}, \"stop_reason\": 151673, \"token_ids\": null}], \"created\": 1775546285, \"id\": \"chatcmpl-9f6c00ee0a5bcb6b\", \"kv_transfer_params\": null, \"model\": \"davanstrien/dots.ocr-1.5\", \"object\": \"chat.completion\", \"prompt_logprobs\": null, \"prompt_token_ids\": null, \"service_tier\": null, \"system_fingerprint\": null, \"usage\": {\"completion_tokens\": 241, \"prompt_tokens\": 817, \"prompt_tokens_details\": null, \"total_tokens\": 1058}}]",
+    "error": null
+  }
+]

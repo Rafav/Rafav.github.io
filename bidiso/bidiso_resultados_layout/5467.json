@@ -1,0 +1,12 @@
+[
+  {
+    "file": "/media/rafa/aaa4af6d-5dbe-433d-9999-896c6b8931491/Bidiso-OCR/5467/5467-1.jpg",
+    "text": "[{\"choices\": [{\"finish_reason\": \"stop\", \"index\": 0, \"logprobs\": null, \"message\": {\"annotations\": null, \"audio\": null, \"content\": \"[{\\\"bbox\\\": [206, 117, 1473, 1021], \\\"category\\\": \\\"Picture\\\"}, {\\\"bbox\\\": [1389, 179, 1423, 202], \\\"category\\\": \\\"Page-footer\\\", \\\"text\\\": \\\"172\\\"}]\", \"function_call\": null, \"reasoning\": null, \"refusal\": null, \"role\": \"assistant\", \"tool_calls\": []}, \"stop_reason\": 151673, \"token_ids\": null}], \"created\": 1775518595, \"id\": \"chatcmpl-b5241c3fbdbf688d\", \"kv_transfer_params\": null, \"model\": \"davanstrien/dots.ocr-1.5\", \"object\": \"chat.completion\", \"prompt_logprobs\": null, \"prompt_token_ids\": null, \"service_tier\": null, \"system_fingerprint\": null, \"usage\": {\"completion_tokens\": 74, \"prompt_tokens\": 2668, \"prompt_tokens_details\": null, \"total_tokens\": 2742}}]",
+    "error": null
+  },
+  {
+    "file": "/media/rafa/aaa4af6d-5dbe-433d-9999-896c6b8931491/Bidiso-OCR/5467/5467-3.jpg",
+    "text": "[{\"choices\": [{\"finish_reason\": \"stop\", \"index\": 0, \"logprobs\": null, \"message\": {\"annotations\": null, \"audio\": null, \"content\": \"[{\\\"bbox\\\": [198, 116, 1497, 1015], \\\"category\\\": \\\"Picture\\\"}, {\\\"bbox\\\": [1435, 128, 1472, 153], \\\"category\\\": \\\"Page-footer\\\", \\\"text\\\": \\\"173\\\"}]\", \"function_call\": null, \"reasoning\": null, \"refusal\": null, \"role\": \"assistant\", \"tool_calls\": []}, \"stop_reason\": 151673, \"token_ids\": null}], \"created\": 1775518595, \"id\": \"chatcmpl-a1bb64c2c9f282ba\", \"kv_transfer_params\": null, \"model\": \"davanstrien/dots.ocr-1.5\", \"object\": \"chat.completion\", \"prompt_logprobs\": null, \"prompt_token_ids\": null, \"service_tier\": null, \"system_fingerprint\": null, \"usage\": {\"completion_tokens\": 74, \"prompt_tokens\": 2668, \"prompt_tokens_details\": null, \"total_tokens\": 2742}}]",
+    "error": null
+  }
+]

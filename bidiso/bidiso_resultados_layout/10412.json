@@ -1,0 +1,7 @@
+[
+  {
+    "file": "/media/rafa/aaa4af6d-5dbe-433d-9999-896c6b8931491/Bidiso-OCR/10412/10412-1.jpg",
+    "text": "[{\"choices\": [{\"finish_reason\": \"stop\", \"index\": 0, \"logprobs\": null, \"message\": {\"annotations\": null, \"audio\": null, \"content\": \"[{\\\"bbox\\\": [123, 123, 416, 170], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"El enterrameto y obsequi\\\\nas del y ilustrissimo senor marques del gallo.\\\"}, {\\\"bbox\\\": [125, 180, 410, 495], \\\"category\\\": \\\"Picture\\\"}, {\\\"bbox\\\": [123, 504, 416, 622], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"La orde que se tuvo en Abi\\\\nlan en el eterramiento del y ilustrissimo senor mar\\\\nques del gallo capita general de su magestad y en\\\\nacopanar su cuerpo de la el monasterio de sancto\\\\nEultillo de la orden del osprey dicados basta la\\\\nglelia mayor; y el dia siguiete las bonras galli\\\\nse hisieron: lunes a. ri. de Abril de AD. D. I. lvi.\\\"}]\", \"function_call\": null, \"reasoning\": null, \"refusal\": null, \"role\": \"assistant\", \"tool_calls\": []}, \"stop_reason\": 151673, \"token_ids\": null}], \"created\": 1775515427, \"id\": \"chatcmpl-8e192a06bea474f7\", \"kv_transfer_params\": null, \"model\": \"davanstrien/dots.ocr-1.5\", \"object\": \"chat.completion\", \"prompt_logprobs\": null, \"prompt_token_ids\": null, \"service_tier\": null, \"system_fingerprint\": null, \"usage\": {\"completion_tokens\": 240, \"prompt_tokens\": 817, \"prompt_tokens_details\": null, \"total_tokens\": 1057}}]",
+    "error": null
+  }
+]

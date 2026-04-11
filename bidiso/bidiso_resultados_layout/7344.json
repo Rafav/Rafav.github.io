@@ -1,0 +1,7 @@
+[
+  {
+    "file": "/media/rafa/aaa4af6d-5dbe-433d-9999-896c6b8931491/Bidiso-OCR/7344/7344-1.jpg",
+    "text": "[{\"choices\": [{\"finish_reason\": \"stop\", \"index\": 0, \"logprobs\": null, \"message\": {\"annotations\": null, \"audio\": null, \"content\": \"[{\\\"bbox\\\": [96, 232, 755, 387], \\\"category\\\": \\\"Section-header\\\", \\\"text\\\": \\\"RELACION VERDADERA\\\\nd'una famosa vitoria que alcançaron las\\\\narmas de Castilla en Portugal.\\\"}, {\\\"bbox\\\": [96, 448, 226, 580], \\\"category\\\": \\\"Picture\\\"}, {\\\"bbox\\\": [99, 449, 695, 821], \\\"category\\\": \\\"Text\\\", \\\"text\\\": \\\"Vanilla de Leganes\\\\nQuiere holgarse, que es muchacha,\\\\nPor burlar a un Portugues:\\\\nIunta el barrio, y en fin despacha\\\\nDies mil Maricas con tres.\\\\nVanse al ponton de un riote\\\\nDel vezino, y hazen fuego;\\\\nPero al humo, dan al trote,\\\\nPorque el hombre acude luego,\\\\nY han miedo que las açôte.\\\"}]\", \"function_call\": null, \"reasoning\": null, \"refusal\": null, \"role\": \"assistant\", \"tool_calls\": []}, \"stop_reason\": 151673, \"token_ids\": null}], \"created\": 1775545958, \"id\": \"chatcmpl-849d0088189c8ccf\", \"kv_transfer_params\": null, \"model\": \"davanstrien/dots.ocr-1.5\", \"object\": \"chat.completion\", \"prompt_logprobs\": null, \"prompt_token_ids\": null, \"service_tier\": null, \"system_fingerprint\": null, \"usage\": {\"completion_tokens\": 224, \"prompt_tokens\": 1464, \"prompt_tokens_details\": null, \"total_tokens\": 1688}}]",
+    "error": null
+  }
+]
