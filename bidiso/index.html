@@ -774,9 +774,13 @@ let pagesIndexPromise = null;
 function ensurePagesIndex() {
   if (pagesIndex) return Promise.resolve(pagesIndex);
   if (pagesIndexPromise) return pagesIndexPromise;
-  pagesIndexPromise = fetch('search_index_pages.json')
-    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(data => { pagesIndex = data; return data; })
+  const fetchPart = url => fetch(url)
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+  pagesIndexPromise = Promise.all([
+    fetchPart('search_index_pages_1.json'),
+    fetchPart('search_index_pages_2.json')
+  ])
+    .then(([p1, p2]) => { pagesIndex = Object.assign({}, p1, p2); return pagesIndex; })
     .catch(e => { console.error('Índice de páginas no cargado:', e); pagesIndex = {}; return {}; });
   return pagesIndexPromise;
 }
