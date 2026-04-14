@@ -916,7 +916,18 @@ function parseJsonData(data) {
       try {
         const items = JSON.parse(pageData.text);
         const content = items[0]?.choices?.[0]?.message?.content;
-        if (content) elements = JSON.parse(content);
+        if (content) {
+          try {
+            elements = JSON.parse(content);
+          } catch (_) {
+            // Fallback: extraer elementos via regex cuando el JSON está malformado
+            const re = /"category"\s*:\s*"([^"]+)"[^}]*"text"\s*:\s*"((?:[^"\\]|\\.)*)"/g;
+            let m;
+            while ((m = re.exec(content)) !== null) {
+              elements.push({ category: m[1], text: m[2].replace(/\\n/g, '\n') });
+            }
+          }
+        }
       } catch (_) {}
     }
 
