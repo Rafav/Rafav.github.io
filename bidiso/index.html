@@ -920,11 +920,36 @@ function parseJsonData(data) {
           try {
             elements = JSON.parse(content);
           } catch (_) {
-            // Fallback: extraer elementos via regex cuando el JSON está malformado
-            const re = /"category"\s*:\s*"([^"]+)"[^}]*"text"\s*:\s*"((?:[^"\\]|\\.)*)"/g;
+            const cn = content.replace(/\u201c|\u201d/g, '"');
+            const _skip = /too blurry|cannot read|can't read|not legible|illegible/i;
             let m;
-            while ((m = re.exec(content)) !== null) {
+            const re1 = /"category"\s*:\s*"([^"]+)"[^}]*"text"\s*:\s*"((?:[^"\\]|\\.)*)"/g;
+            while ((m = re1.exec(cn)) !== null)
               elements.push({ category: m[1], text: m[2].replace(/\\n/g, '\n') });
+            const re2 = /"bbox\)\):\s*(?:[,\[]*"?)([^"{}]{2,})"?\}/g;
+            while ((m = re2.exec(cn)) !== null) {
+              const t = m[1].replace(/^[ ,\[\]"]+|[ ,\[\]"]+$/g, '').trim();
+              if (t.length >= 2) elements.push({ category: 'Text', text: t });
+            }
+            const re3 = /"bbox\*\*:\s*"?\*\*([^*"{}]{2,})\*\*/g;
+            while ((m = re3.exec(cn)) !== null) {
+              const t = m[1].replace(/^[ .*]+|[ .*]+$/g, '').trim();
+              if (t.length >= 2 && !_skip.test(t)) elements.push({ category: 'Text', text: t });
+            }
+            const re4 = /"bbox\*\*:\s*-\s*([^*"{}]{3,}?)(?:\*\*)?["}]/g;
+            while ((m = re4.exec(cn)) !== null) {
+              const t = m[1].trim();
+              if (t.length >= 2 && !_skip.test(t)) elements.push({ category: 'Text', text: t });
+            }
+            const re5 = /"bbox\*\*:\s*\["(-?[^"{}]{2,})"/g;
+            while ((m = re5.exec(cn)) !== null) {
+              const t = m[1].trim();
+              if (t.length >= 2 && !_skip.test(t)) elements.push({ category: 'Text', text: t });
+            }
+            const re6 = /"category"\s*:\s*"Text"\s*,\s*"\*\*(-?[^*"{}]{2,})\*\*"/g;
+            while ((m = re6.exec(cn)) !== null) {
+              const t = m[1].trim();
+              if (t.length >= 2 && !_skip.test(t)) elements.push({ category: 'Text', text: t });
             }
           }
         }
