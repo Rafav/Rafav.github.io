@@ -1,1 +1,1690 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Bibliotheca Velasco</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Outfit:wght@200;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            overflow: hidden;
+            background: #f5f3ef;
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse at 20% 30%, rgba(200, 190, 175, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(180, 175, 165, 0.3) 0%, transparent 50%),
+                linear-gradient(135deg, #f8f6f2 0%, #e8e4dc 50%, #f0ece6 100%);
+        }
+
+        #background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        #background::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: min(78vw, 78vh);
+            height: min(78vw, 78vh);
+            transform: translate(-50%, -50%);
+            background-image: url("assets/exlibris_marca.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            pointer-events: none;
+        }
+
+        #canvas-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        /* Webcam */
+        .webcam-container {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .webcam-wrapper {
+            position: relative;
+            width: 240px;
+            height: 180px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+
+        #webcam {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scaleX(-1);
+        }
+
+        #gestureCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(-1);
+        }
+
+        .webcam-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.7rem;
+            color: #6a6560;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ccc;
+            transition: background 0.3s ease;
+        }
+
+        .status-dot.active {
+            background: #4ade80;
+            box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+        }
+
+        .status-dot.detecting {
+            background: #fbbf24;
+            animation: pulse-status 1s ease-in-out infinite;
+        }
+
+        @keyframes pulse-status {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Gesture indicator */
+        .gesture-indicator {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gesture-indicator.visible {
+            opacity: 1;
+        }
+
+        .gesture-ring {
+            width: 120px;
+            height: 120px;
+            border: 3px solid rgba(58, 54, 50, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .gesture-ring svg {
+            width: 50px;
+            height: 50px;
+            stroke: #3a3632;
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .gesture-progress {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 126px;
+            height: 126px;
+        }
+
+        .gesture-progress circle {
+            fill: none;
+            stroke: #3a3632;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-dasharray: 396;
+            stroke-dashoffset: 396;
+            transform: rotate(-90deg);
+            transform-origin: center;
+            transition: stroke-dashoffset 0.1s linear;
+        }
+
+        /* Direction indicators */
+        .direction-indicator {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 150;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none;
+        }
+
+        .direction-indicator.left {
+            left: 3rem;
+        }
+
+        .direction-indicator.right {
+            right: 3rem;
+        }
+
+        .direction-indicator.visible.left {
+            opacity: 1;
+            transform: translateY(-50%) translateX(-10px);
+        }
+
+        .direction-indicator.visible.right {
+            opacity: 1;
+            transform: translateY(-50%) translateX(10px);
+        }
+
+        .direction-indicator.top,
+        .direction-indicator.bottom {
+            left: 50%;
+            top: auto;
+            bottom: auto;
+            transform: translateX(-50%);
+        }
+
+        .direction-indicator.top {
+            top: 6rem;
+        }
+
+        .direction-indicator.bottom {
+            bottom: 3rem;
+        }
+
+        .direction-indicator.visible.top {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-10px);
+        }
+
+        .direction-indicator.visible.bottom {
+            opacity: 1;
+            transform: translateX(-50%) translateY(10px);
+        }
+
+        .direction-arrow {
+            width: 60px;
+            height: 60px;
+            background: rgba(58, 54, 50, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .direction-arrow svg {
+            width: 24px;
+            height: 24px;
+            stroke: #f5f3ef;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo-block {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+        }
+
+        .logo-seal {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(58, 54, 50, 0.4);
+        }
+
+        .logo-texts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: #3a3632;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        .logo-subtitulo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.62rem;
+            color: #8a8580;
+            letter-spacing: 0.08em;
+            margin-top: 0.2rem;
+        }
+
+        .gesture-hints {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.7rem;
+            color: #8a8580;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .hint-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hint-icon {
+            width: 24px;
+            height: 24px;
+            stroke: #8a8580;
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        /* Level indicator */
+        .level-indicator {
+            position: fixed;
+            top: 50%;
+            left: 3rem;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+
+        .level-indicator span {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.9rem;
+            color: #6a6560;
+            letter-spacing: 0.15em;
+        }
+
+        .level-indicator .current-level {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #3a3632;
+            display: block;
+            margin-top: 0.3rem;
+        }
+
+        /* Item info */
+        .item-info {
+            position: fixed;
+            top: 50%;
+            right: 3rem;
+            transform: translateY(-50%);
+            text-align: right;
+            z-index: 50;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            max-width: 300px;
+        }
+
+        .item-info.visible {
+            opacity: 1;
+        }
+
+        .item-info h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: #3a3632;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .item-info p {
+            font-size: 0.85rem;
+            color: #8a8580;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .gesture-hint-box {
+            margin-top: 2rem;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .gesture-hint-box svg {
+            width: 30px;
+            height: 30px;
+            stroke: #5a5550;
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .gesture-hint-box span {
+            font-size: 0.75rem;
+            color: #6a6560;
+            letter-spacing: 0.05em;
+        }
+
+        /* Buttons */
+        .camera-toggle,
+        .back-btn {
+            position: fixed;
+            z-index: 200;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid #d0cac2;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease, transform 0.2s ease;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            color: #5a5550;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .camera-toggle {
+            bottom: 2rem;
+            right: 3rem;
+        }
+
+        .back-btn {
+            top: 2rem;
+            left: 3rem;
+            display: none;
+        }
+
+        .camera-toggle:hover,
+        .back-btn:hover,
+        .back-btn.gesture-hover {
+            background: #3a3632;
+            color: #f5f3ef;
+            border-color: #3a3632;
+        }
+
+        .back-btn.gesture-hover {
+            transform: scale(1.05);
+        }
+
+        .camera-toggle svg,
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        /* Sala overlay (libros) */
+        .sala-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(245, 243, 239, 0.98);
+            z-index: 150;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .sala-overlay.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .sala-overlay.visible {
+            opacity: 1;
+        }
+
+        .sala-content {
+            text-align: center;
+            max-width: 1000px;
+            width: 100%;
+            padding: 5rem 2rem 4rem;
+            margin: auto 0;
+        }
+
+        .sala-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: #3a3632;
+            margin-bottom: 0.5rem;
+        }
+
+        .sala-content .subtitle {
+            font-size: 0.9rem;
+            color: #8a8580;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .sala-content .description {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #5a5550;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Libros grid */
+        .libros-grid {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .libro-item {
+            width: 160px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .libro-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-radius: 12px;
+            transition: border-color 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .libro-item.gesture-hover::before {
+            border-color: #3a3632;
+        }
+
+        .libro-item:hover,
+        .libro-item.gesture-hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .libro-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #e8e4dc;
+        }
+
+        .libro-item .libro-titulo {
+            padding: 1rem;
+            font-size: 0.8rem;
+            color: #3a3632;
+            text-align: center;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+
+        /* Iframe viewer */
+        .iframe-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 300;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .iframe-viewer.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .iframe-viewer.visible {
+            opacity: 1;
+        }
+
+
+        .iframe-header {
+            height: 60px;
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        .iframe-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: #f5f3ef;
+        }
+
+        .iframe-close {
+            /* Centrado horizontalmente en el header */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0.6rem 1.2rem;
+            background: transparent;
+            border: 1px solid #555;
+            border-radius: 20px;
+            color: #ccc;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .iframe-close:hover,
+        .iframe-close.gesture-hover {
+            background: #f5f3ef;
+            color: #1a1a1a;
+            border-color: #f5f3ef;
+        }
+
+        .iframe-close svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .iframe-close:hover,
+        .iframe-close.gesture-hover {
+            background: #f5f3ef;
+            color: #1a1a1a;
+            border-color: #f5f3ef;
+        }
+
+        .iframe-close svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .iframe-container {
+            flex: 1;
+            background: #000;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Loading */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f5f3ef;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            z-index: 1000;
+            transition: opacity 0.8s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: #8a8580;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #e0dcd6;
+            border-top-color: #3a3632;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Hand cursor */
+        .hand-cursor {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            background: rgba(58, 54, 50, 0.8);
+            border: 2px solid white;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease, opacity 0.3s ease, background 0.2s ease;
+            opacity: 0;
+        }
+
+        .hand-cursor.visible {
+            opacity: 1;
+        }
+
+        .hand-cursor.pinching {
+            transform: translate(-50%, -50%) scale(0.6);
+            background: #4ade80;
+        }
+
+        /* Error de carga de imagen */
+        .img-error {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e8e4dc, #d0cac2);
+            color: #8a8580;
+            font-size: 0.7rem;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <span class="loading-text">Abriendo la biblioteca de Velasco...</span>
+    </div>
+
+    <header class="header">
+        <div class="logo-block">
+            <img class="logo-seal" src="assets/favicon.png" alt="Ex-libris de Velasco">
+            <div class="logo-texts">
+                <div class="logo" id="appTitle">Biblioteca Digital</div>
+                <div class="logo-subtitulo" id="appSubtitulo"></div>
+            </div>
+        </div>
+        <div class="gesture-hints">
+            <div class="hint-item">
+                <svg class="hint-icon" viewBox="0 0 24 24">
+                    <path d="M14 8V6a2 2 0 0 0-4 0v7"></path>
+                    <path d="M10 8.5V6a2 2 0 0 0-4 0v7"></path>
+                    <path d="M18 12V9a2 2 0 0 0-4 0v3"></path>
+                    <path d="M6 15v-2a2 2 0 0 0-4 0v4a8 8 0 0 0 16 0v-4"></path>
+                </svg>
+                <span>Mover → Girar</span>
+            </div>
+            <div class="hint-item">
+                <svg class="hint-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                    </path>
+                </svg>
+                <span>Pinza → Seleccionar</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="level-indicator">
+        <span>Sala</span>
+        <span class="current-level" id="currentLevel">01</span>
+    </div>
+
+    <div class="item-info visible" id="itemInfo">
+        <h2 id="itemTitle">Título</h2>
+        <p id="itemSubtitle">Subtítulo</p>
+        <div class="gesture-hint-box">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                </path>
+            </svg>
+            <span>Pinza para entrar</span>
+        </div>
+    </div>
+
+    <div class="direction-indicator left" id="dirLeft">
+        <div class="direction-arrow">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+        </div>
+    </div>
+    <div class="direction-indicator right" id="dirRight">
+        <div class="direction-arrow">
+            <svg viewBox="0 0 24 24">
+                <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+        </div>
+    </div>
+    <div class="direction-indicator top" id="dirUp">
+        <div class="direction-arrow">
+            <svg viewBox="0 0 24 24">
+                <polyline points="6,15 12,9 18,15"></polyline>
+            </svg>
+        </div>
+    </div>
+    <div class="direction-indicator bottom" id="dirDown">
+        <div class="direction-arrow">
+            <svg viewBox="0 0 24 24">
+                <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+        </div>
+    </div>
+
+    <div class="gesture-indicator" id="gestureIndicator">
+        <svg class="gesture-progress" viewBox="0 0 126 126">
+            <circle cx="63" cy="63" r="60" id="progressCircle"></circle>
+        </svg>
+        <div class="gesture-ring">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="webcam-container" id="webcamContainer">
+        <div class="webcam-wrapper">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="gestureCanvas"></canvas>
+        </div>
+        <div class="webcam-status">
+            <div class="status-dot" id="statusDot"></div>
+            <span id="statusText">Iniciando cámara...</span>
+        </div>
+    </div>
+
+    <button class="camera-toggle" id="cameraToggle">
+        <svg viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+        <span id="toggleText">Ocultar</span>
+    </button>
+
+    <button class="back-btn" id="backBtn">
+        <svg viewBox="0 0 24 24">
+            <polyline points="15,18 9,12 15,6"></polyline>
+        </svg>
+        Volver
+    </button>
+
+    <!-- Sala overlay (libros) -->
+    <div class="sala-overlay" id="salaOverlay">
+        <div class="sala-content" id="salaContent"></div>
+    </div>
+
+    <!-- Iframe viewer -->
+    <div class="iframe-viewer" id="iframeViewer">
+        <div class="iframe-header">
+            <span class="iframe-title" id="iframeTitle">Documento</span>
+            <button class="iframe-close" id="iframeClose">
+                <svg viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+                Cerrar
+            </button>
+        </div>
+        <div class="iframe-container">
+            <iframe id="contentIframe" src="about:blank"></iframe>
+        </div>
+    </div>
+
+    <div class="hand-cursor" id="handCursor"></div>
+
+    <div id="canvas-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script>
+        // ============================================
+        // CONFIGURACIÓN - Se carga desde config.json
+        // ============================================
+        let CONFIG = { titulo: "Biblioteca", salas: [] };
+
+        // Cargar configuración
+        async function loadConfig() {
+            try {
+                const response = await fetch('config.json');
+                if (!response.ok) throw new Error('No se pudo cargar config.json');
+                CONFIG = await response.json();
+                document.getElementById('appTitle').textContent = CONFIG.titulo;
+                document.getElementById('appSubtitulo').textContent = CONFIG.subtitulo || '';
+                return CONFIG;
+            } catch (error) {
+                console.warn('Usando configuración de ejemplo:', error);
+                // Configuración de ejemplo si no existe config.json
+                CONFIG = {
+                    titulo: "Biblioteca Digital",
+                    salas: [
+                        {
+                            id: "ejemplo1",
+                            titulo: "Sala de Ejemplo",
+                            subtitulo: "Demostración",
+                            descripcion: "Esta es una sala de ejemplo. Edita config.json para personalizar.",
+                            portada: "https://picsum.photos/seed/sala1/400/500",
+                            libros: [
+                                { titulo: "Libro 1", imagen: "https://picsum.photos/seed/libro1/200/300", url: "https://example.com" },
+                                { titulo: "Libro 2", imagen: "https://picsum.photos/seed/libro2/200/300", url: "https://example.com" }
+                            ]
+                        },
+                        {
+                            id: "ejemplo2",
+                            titulo: "Segunda Sala",
+                            subtitulo: "Más contenido",
+                            descripcion: "Otra sala de ejemplo.",
+                            portada: "https://picsum.photos/seed/sala2/400/500",
+                            libros: [
+                                { titulo: "Documento A", imagen: "https://picsum.photos/seed/doc1/200/300", url: "https://example.com" }
+                            ]
+                        }
+                    ]
+                };
+                return CONFIG;
+            }
+        }
+
+        // ============================================
+        // GESTURE CONTROLLER
+        // ============================================
+        class GestureController {
+            constructor(onGesture) {
+                this.onGesture = onGesture;
+                this.video = document.getElementById('webcam');
+                this.canvas = document.getElementById('gestureCanvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.statusDot = document.getElementById('statusDot');
+                this.statusText = document.getElementById('statusText');
+                this.handCursor = document.getElementById('handCursor');
+
+                this.hands = null;
+                this.camera = null;
+                this.isRunning = false;
+
+                this.smoothedHandX = 0.5;
+                this.isPinching = false;
+                this.pinchStartTime = 0;
+                this.pinchHoldDuration = 0; // Instantáneo
+                this.lastPinchTime = 0;
+                this.pinchCooldown = 800;
+                this.lastNavigateTime = 0;
+                this.navigateCooldown = 700;
+
+                this.init();
+            }
+
+            async init() {
+                try {
+                    this.hands = new Hands({
+                        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`
+                    });
+
+                    this.hands.setOptions({
+                        maxNumHands: 1,
+                        modelComplexity: 1,
+                        minDetectionConfidence: 0.7,
+                        minTrackingConfidence: 0.5
+                    });
+
+                    this.hands.onResults((results) => this.onResults(results));
+
+                    this.camera = new Camera(this.video, {
+                        onFrame: async () => {
+                            if (this.isRunning) await this.hands.send({ image: this.video });
+                        },
+                        width: 320,
+                        height: 240
+                    });
+
+                    await this.camera.start();
+                    this.isRunning = true;
+                    this.canvas.width = 320;
+                    this.canvas.height = 240;
+                    this.updateStatus('active', 'Gestos activos');
+                } catch (error) {
+                    console.error('Error:', error);
+                    this.updateStatus('error', 'Error cámara');
+                }
+            }
+
+            updateStatus(state, text) {
+                this.statusDot.className = 'status-dot ' + state;
+                this.statusText.textContent = text;
+            }
+
+            onResults(results) {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+                if (results.multiHandLandmarks?.length > 0) {
+                    const landmarks = results.multiHandLandmarks[0];
+                    this.drawHand(landmarks);
+
+                    const indexTip = landmarks[8];
+                    const thumbTip = landmarks[4];
+
+                    const screenX = (1 - indexTip.x) * window.innerWidth;
+                    const screenY = indexTip.y * window.innerHeight;
+                    this.handCursor.style.left = screenX + 'px';
+                    this.handCursor.style.top = screenY + 'px';
+                    this.handCursor.classList.add('visible');
+
+                    this.smoothedHandX = this.smoothedHandX * 0.7 + indexTip.x * 0.3;
+
+                    const pinchDistance = Math.sqrt(
+                        Math.pow(indexTip.x - thumbTip.x, 2) +
+                        Math.pow(indexTip.y - thumbTip.y, 2) +
+                        Math.pow(indexTip.z - thumbTip.z, 2)
+                    );
+
+                    const wasPinching = this.isPinching;
+                    this.isPinching = pinchDistance < 0.06;
+
+                    this.handCursor.classList.toggle('pinching', this.isPinching);
+
+                    this.handleNavigation(indexTip.x);
+                    this.handlePinch(wasPinching, screenX, screenY);
+
+                    // Posición vertical de la mano, cada frame (sin cooldown):
+                    // usada para hacer scroll dentro de una sala con muchos libros.
+                    if (!this.isPinching) {
+                        this.onGesture({ type: 'handPos', y: indexTip.y });
+                    }
+
+                    this.updateStatus('active', 'Mano detectada');
+                } else {
+                    this.handCursor.classList.remove('visible');
+                    this.updateStatus('detecting', 'Buscando...');
+                    this.onGesture({ type: 'noHand' });
+                }
+            }
+
+            drawHand(landmarks) {
+                const connections = [
+                    [0, 1], [1, 2], [2, 3], [3, 4], [0, 5], [5, 6], [6, 7], [7, 8],
+                    [0, 9], [9, 10], [10, 11], [11, 12], [0, 13], [13, 14], [14, 15], [15, 16],
+                    [0, 17], [17, 18], [18, 19], [19, 20], [5, 9], [9, 13], [13, 17]
+                ];
+
+                this.ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+                this.ctx.lineWidth = 2;
+
+                connections.forEach(([i, j]) => {
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(landmarks[i].x * this.canvas.width, landmarks[i].y * this.canvas.height);
+                    this.ctx.lineTo(landmarks[j].x * this.canvas.width, landmarks[j].y * this.canvas.height);
+                    this.ctx.stroke();
+                });
+
+                [4, 8, 12, 16, 20].forEach(i => {
+                    this.ctx.beginPath();
+                    this.ctx.arc(landmarks[i].x * this.canvas.width, landmarks[i].y * this.canvas.height, 5, 0, Math.PI * 2);
+                    this.ctx.fillStyle = (i === 4 || i === 8) ? '#4ade80' : 'rgba(255,255,255,0.8)';
+                    this.ctx.fill();
+                });
+            }
+
+            handleNavigation(handX) {
+                const now = Date.now();
+                if (now - this.lastNavigateTime < this.navigateCooldown || this.isPinching) return;
+
+                if (handX > 0.75) {
+                    this.onGesture({ type: 'navigate', direction: -1 });
+                    this.lastNavigateTime = now;
+                } else if (handX < 0.25) {
+                    this.onGesture({ type: 'navigate', direction: 1 });
+                    this.lastNavigateTime = now;
+                }
+
+                this.onGesture({
+                    type: 'hover',
+                    direction: handX > 0.65 ? 'left' : handX < 0.35 ? 'right' : 'center'
+                });
+            }
+
+            handlePinch(wasPinching, screenX, screenY) {
+                const now = Date.now();
+
+                if (this.isPinching && !wasPinching) {
+                    this.pinchStartTime = now;
+                    this.onGesture({ type: 'pinchStart' });
+
+                    // Activar select instantáneamente si ha pasado el cooldown
+                    if (now - this.lastPinchTime > this.pinchCooldown) {
+                        this.onGesture({ type: 'select', x: screenX, y: screenY });
+                        this.lastPinchTime = now;
+                    }
+                }
+
+                if (this.isPinching) {
+                    // Mantener el progreso visual aunque sea instantáneo
+                    const progress = 1;
+                    this.onGesture({ type: 'pinchProgress', progress, x: screenX, y: screenY });
+                }
+
+                if (!this.isPinching && wasPinching) {
+                    this.onGesture({ type: 'pinchEnd' });
+                }
+            }
+        }
+
+        // ============================================
+        // CACHE MANAGER
+        // ============================================
+        class CacheManager {
+            constructor() {
+                this.imageCache = new Map();
+                this.textureCache = new Map();
+            }
+
+            preloadImage(url) {
+                if (this.imageCache.has(url)) {
+                    return Promise.resolve(this.imageCache.get(url));
+                }
+
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.onload = () => {
+                        this.imageCache.set(url, img);
+                        resolve(img);
+                    };
+                    img.onerror = reject;
+                    img.src = url;
+                });
+            }
+
+            preloadImages(urls) {
+                return Promise.all(urls.map(url => this.preloadImage(url).catch(() => null)));
+            }
+
+            hasTexture(url) {
+                return this.textureCache.has(url);
+            }
+
+            setTexture(url, texture) {
+                this.textureCache.set(url, texture);
+            }
+
+            getTexture(url) {
+                return this.textureCache.get(url);
+            }
+        }
+
+        // ============================================
+        // BIBLIOTECA APP
+        // ============================================
+        class BibliotecaApp {
+            constructor(salas) {
+                this.salas = salas;
+                this.container = document.getElementById('canvas-container');
+                this.scene = new THREE.Scene();
+                this.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+                this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+                this.raycaster = new THREE.Raycaster();
+                this.mouse = new THREE.Vector2();
+
+                this.cards = [];
+                this.currentIndex = 0;
+                this.targetRotation = 0;
+                this.currentRotation = 0;
+                this.isDragging = false;
+                this.previousMouseX = 0;
+                this.hoveredCard = null;
+
+                this.currentView = 'carousel'; // carousel | sala | iframe
+                this.currentSala = null;
+                this.lastSelectTime = 0;
+                this.selectCooldown = 600;
+
+                this.cacheManager = new CacheManager();
+
+                this.init();
+            }
+
+            init() {
+                this.renderer.setSize(window.innerWidth, window.innerHeight);
+                this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                this.renderer.setClearColor(0x000000, 0);
+                this.container.appendChild(this.renderer.domElement);
+
+                this.camera.position.z = 8;
+                this.camera.position.y = 0.5;
+
+                this.scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+                const dirLight = new THREE.DirectionalLight(0xffffff, 0.5);
+                dirLight.position.set(5, 5, 5);
+                this.scene.add(dirLight);
+
+                this.createCards();
+                this.gestureController = new GestureController((g) => this.handleGesture(g));
+                this.setupEvents();
+                this.animate();
+
+                setTimeout(() => document.getElementById('loading').classList.add('hidden'), 2000);
+            }
+
+            createCards() {
+                const textureLoader = new THREE.TextureLoader();
+                const radius = 5;
+                const angleStep = (Math.PI * 2) / this.salas.length;
+
+                // Precargar todas las portadas
+                const portadas = this.salas.map(s => s.portada);
+                this.cacheManager.preloadImages(portadas);
+
+                this.salas.forEach((sala, index) => {
+                    const angle = angleStep * index;
+                    const geometry = new THREE.PlaneGeometry(2.5, 3.2);
+
+                    const material = new THREE.MeshStandardMaterial({
+                        color: 0xe8e4dc,
+                        side: THREE.DoubleSide,
+                        transparent: true,
+                        opacity: 0.95
+                    });
+
+                    // Cargar textura (ahora con cache)
+                    if (this.cacheManager.hasTexture(sala.portada)) {
+                        material.map = this.cacheManager.getTexture(sala.portada);
+                        material.color.set(0xffffff);
+                        material.needsUpdate = true;
+                    } else {
+                        textureLoader.load(
+                            sala.portada,
+                            (texture) => {
+                                texture.encoding = THREE.sRGBEncoding;
+                                this.cacheManager.setTexture(sala.portada, texture);
+                                material.map = texture;
+                                material.color.set(0xffffff);
+                                material.needsUpdate = true;
+                            },
+                            undefined,
+                            (err) => console.warn(`No se pudo cargar: ${sala.portada}`)
+                        );
+                    }
+
+                    const card = new THREE.Mesh(geometry, material);
+
+                    card.position.x = Math.sin(angle) * radius;
+                    card.position.z = Math.cos(angle) * radius - radius;
+                    card.position.y = 0;
+                    card.rotation.y = angle;
+
+                    card.userData = { index, sala, angle };
+
+                    // Marco
+                    const frame = new THREE.Mesh(
+                        new THREE.PlaneGeometry(2.6, 3.3),
+                        new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide, transparent: true, opacity: 0.9 })
+                    );
+                    frame.position.z = -0.01;
+                    card.add(frame);
+
+                    this.scene.add(card);
+                    this.cards.push(card);
+                });
+
+                this.updateCardInfo();
+            }
+
+            handleGesture(gesture) {
+                const dirLeft = document.getElementById('dirLeft');
+                const dirRight = document.getElementById('dirRight');
+                const dirUp = document.getElementById('dirUp');
+                const dirDown = document.getElementById('dirDown');
+                const gestureIndicator = document.getElementById('gestureIndicator');
+                const progressCircle = document.getElementById('progressCircle');
+
+                switch (gesture.type) {
+                    case 'navigate':
+                        if (this.currentView === 'carousel') this.navigate(gesture.direction);
+                        break;
+
+                    case 'hover':
+                        if (this.currentView === 'carousel') {
+                            dirLeft.classList.toggle('visible', gesture.direction === 'left');
+                            dirRight.classList.toggle('visible', gesture.direction === 'right');
+                        }
+                        break;
+
+                    case 'handPos':
+                        if (this.currentView === 'sala') this.handleSalaScroll(gesture.y, dirUp, dirDown);
+                        break;
+
+                    case 'pinchStart':
+                        // No mostrar indicador con pinch instantáneo
+                        // gestureIndicator.classList.add('visible');
+                        break;
+
+                    case 'pinchProgress':
+                        // Mantener hover para feedback visual
+                        this.checkHoverElements(gesture.x, gesture.y);
+                        break;
+
+                    case 'pinchEnd':
+                        this.clearHoverElements();
+                        break;
+
+                    case 'select':
+                        this.handleSelect(gesture.x, gesture.y);
+                        break;
+
+                    case 'noHand':
+                        dirLeft.classList.remove('visible');
+                        dirRight.classList.remove('visible');
+                        dirUp.classList.remove('visible');
+                        dirDown.classList.remove('visible');
+                        gestureIndicator.classList.remove('visible');
+                        this.clearHoverElements();
+                        break;
+                }
+            }
+
+            handleSalaScroll(y, dirUp, dirDown) {
+                const overlay = document.getElementById('salaOverlay');
+                const SPEED = 16;
+                const ZONA = 0.22;
+                if (y < ZONA) {
+                    overlay.scrollTop -= SPEED;
+                    dirUp.classList.add('visible');
+                    dirDown.classList.remove('visible');
+                } else if (y > 1 - ZONA) {
+                    overlay.scrollTop += SPEED;
+                    dirDown.classList.add('visible');
+                    dirUp.classList.remove('visible');
+                } else {
+                    dirUp.classList.remove('visible');
+                    dirDown.classList.remove('visible');
+                }
+            }
+
+            checkHoverElements(x, y) {
+                // Libros
+                document.querySelectorAll('.libro-item').forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    item.classList.toggle('gesture-hover',
+                        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom);
+                });
+
+                // Botón Volver - solo visible en vista 'sala'
+                if (this.currentView === 'sala') {
+                    const backBtn = document.getElementById('backBtn');
+                    const rect = backBtn.getBoundingClientRect();
+                    backBtn.classList.toggle('gesture-hover',
+                        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom);
+                }
+
+                // Botón Cerrar iframe - solo visible en vista 'iframe'
+                if (this.currentView === 'iframe') {
+                    const iframeClose = document.getElementById('iframeClose');
+                    const rect = iframeClose.getBoundingClientRect();
+                    iframeClose.classList.toggle('gesture-hover',
+                        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom);
+                }
+            }
+
+            clearHoverElements() {
+                document.querySelectorAll('.libro-item, .back-btn, .iframe-close').forEach(el => {
+                    el.classList.remove('gesture-hover');
+                });
+            }
+
+            handleSelect(x, y) {
+                // Cooldown para evitar múltiples selects consecutivos
+                const now = Date.now();
+                if (now - this.lastSelectTime < this.selectCooldown) {
+                    return;
+                }
+                this.lastSelectTime = now;
+
+                // Cerrar iframe - solo en vista 'iframe'
+                if (this.currentView === 'iframe') {
+                    const iframeClose = document.getElementById('iframeClose');
+                    const rect = iframeClose.getBoundingClientRect();
+                    if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
+                        this.closeIframe();
+                        return;
+                    }
+                }
+
+                // Botón Volver - solo en vista 'sala'
+                if (this.currentView === 'sala') {
+                    const backBtn = document.getElementById('backBtn');
+                    const rect = backBtn.getBoundingClientRect();
+                    if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
+                        this.closeSala();
+                        return;
+                    }
+
+                    // Libros - también solo en vista 'sala'
+                    document.querySelectorAll('.libro-item').forEach(item => {
+                        const rect = item.getBoundingClientRect();
+                        if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
+                            this.openLibro(item.dataset.url, item.dataset.titulo);
+                        }
+                    });
+                    return;
+                }
+
+                // Abrir sala desde carrusel
+                if (this.currentView === 'carousel') {
+                    this.openSala(this.salas[this.currentIndex]);
+                }
+            }
+
+            setupEvents() {
+                this.container.addEventListener('mousedown', (e) => { this.isDragging = true; this.previousMouseX = e.clientX; });
+                window.addEventListener('mousemove', (e) => {
+                    this.mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+                    this.mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+                    if (this.isDragging) {
+                        this.targetRotation += (e.clientX - this.previousMouseX) * 0.003;
+                        this.previousMouseX = e.clientX;
+                    }
+                });
+                window.addEventListener('mouseup', () => {
+                    this.isDragging = false;
+                    this.snapToNearest();
+                });
+
+                this.container.addEventListener('click', () => {
+                    if (!this.isDragging && this.currentView === 'carousel') {
+                        this.openSala(this.salas[this.currentIndex]);
+                    }
+                });
+
+                document.getElementById('backBtn').addEventListener('click', () => this.closeSala());
+                document.getElementById('iframeClose').addEventListener('click', () => this.closeIframe());
+
+                const webcamContainer = document.getElementById('webcamContainer');
+                const toggleBtn = document.getElementById('cameraToggle');
+                let visible = true;
+                toggleBtn.addEventListener('click', () => {
+                    visible = !visible;
+                    webcamContainer.style.display = visible ? 'flex' : 'none';
+                    document.getElementById('toggleText').textContent = visible ? 'Ocultar' : 'Mostrar';
+                });
+
+                window.addEventListener('resize', () => {
+                    this.camera.aspect = window.innerWidth / window.innerHeight;
+                    this.camera.updateProjectionMatrix();
+                    this.renderer.setSize(window.innerWidth, window.innerHeight);
+                });
+
+                window.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') this.navigate(-1);
+                    if (e.key === 'ArrowRight') this.navigate(1);
+                    if (e.key === 'Enter' && this.currentView === 'carousel') this.openSala(this.salas[this.currentIndex]);
+                    if (e.key === 'Escape') {
+                        if (this.currentView === 'iframe') this.closeIframe();
+                        else if (this.currentView === 'sala') this.closeSala();
+                    }
+                });
+            }
+
+            snapToNearest() {
+                const angleStep = (Math.PI * 2) / this.salas.length;
+                const nearestIndex = Math.round(this.targetRotation / angleStep);
+                this.targetRotation = nearestIndex * angleStep;
+                this.currentIndex = (((-nearestIndex % this.salas.length) + this.salas.length) % this.salas.length);
+                this.updateCardInfo();
+            }
+
+            navigate(direction) {
+                const angleStep = (Math.PI * 2) / this.salas.length;
+                this.targetRotation -= direction * angleStep;
+                this.currentIndex = (this.currentIndex + direction + this.salas.length) % this.salas.length;
+                this.updateCardInfo();
+            }
+
+            updateCardInfo() {
+                const sala = this.salas[this.currentIndex];
+                document.getElementById('itemTitle').textContent = sala.titulo;
+                document.getElementById('itemSubtitle').textContent = sala.subtitulo;
+                document.getElementById('currentLevel').textContent = String(this.currentIndex + 1).padStart(2, '0');
+
+                // Precargar imágenes de libros de la sala actual
+                if (sala.libros && sala.libros.length > 0) {
+                    const imagenes = sala.libros.map(l => l.imagen).filter(Boolean);
+                    this.cacheManager.preloadImages(imagenes);
+                }
+
+                // Precargar también las salas adyacentes (anterior y siguiente)
+                const prevIndex = (this.currentIndex - 1 + this.salas.length) % this.salas.length;
+                const nextIndex = (this.currentIndex + 1) % this.salas.length;
+
+                [this.salas[prevIndex], this.salas[nextIndex]].forEach(adjSala => {
+                    if (adjSala.libros && adjSala.libros.length > 0) {
+                        const imgs = adjSala.libros.map(l => l.imagen).filter(Boolean);
+                        this.cacheManager.preloadImages(imgs);
+                    }
+                });
+            }
+
+            openSala(sala) {
+                this.currentView = 'sala';
+                this.currentSala = sala;
+
+                const overlay = document.getElementById('salaOverlay');
+                const content = document.getElementById('salaContent');
+
+                let librosHTML = '<div class="libros-grid">';
+                sala.libros.forEach(libro => {
+                    librosHTML += `
+                        <div class="libro-item" data-url="${libro.url}" data-titulo="${libro.titulo}">
+                            <img src="${libro.imagen}" alt="${libro.titulo}" 
+                                 onerror="this.outerHTML='<div class=\\'img-error\\'>Imagen no disponible</div>'">
+                            <div class="libro-titulo">${libro.titulo}</div>
+                        </div>
+                    `;
+                });
+                librosHTML += '</div>';
+
+                content.innerHTML = `
+                    <h1>${sala.titulo}</h1>
+                    <p class="subtitle">${sala.subtitulo}</p>
+                    <p class="description">${sala.descripcion}</p>
+                    ${librosHTML}
+                `;
+
+                // Eventos click en libros
+                content.querySelectorAll('.libro-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        this.openLibro(item.dataset.url, item.dataset.titulo);
+                    });
+                });
+
+                overlay.classList.add('active');
+                document.getElementById('backBtn').style.display = 'flex';
+                setTimeout(() => overlay.classList.add('visible'), 50);
+            }
+
+            closeSala() {
+                this.currentView = 'carousel';
+                this.currentSala = null;
+
+                const overlay = document.getElementById('salaOverlay');
+                overlay.classList.remove('visible');
+                setTimeout(() => {
+                    overlay.classList.remove('active');
+                    document.getElementById('backBtn').style.display = 'none';
+                }, 400);
+            }
+
+            openLibro(url, titulo) {
+                // Solo los recursos de datos.bne.es se muestran embebidos; los
+                // enlaces de búsqueda de respaldo (Google, para obras sin ID de
+                // BNE) rechazan explícitamente ser incrustados en iframe.
+                if (!url.startsWith('https://datos.bne.es/')) {
+                    window.open(url, '_blank', 'noopener');
+                    return;
+                }
+
+                this.currentView = 'iframe';
+
+                const viewer = document.getElementById('iframeViewer');
+                document.getElementById('iframeTitle').textContent = titulo;
+                document.getElementById('contentIframe').src = url;
+
+                viewer.classList.add('active');
+                setTimeout(() => viewer.classList.add('visible'), 50);
+            }
+
+            closeIframe() {
+                this.currentView = 'sala';
+
+                const viewer = document.getElementById('iframeViewer');
+                viewer.classList.remove('visible');
+                setTimeout(() => {
+                    viewer.classList.remove('active');
+                    document.getElementById('contentIframe').src = 'about:blank';
+                }, 400);
+            }
+
+            animate() {
+                requestAnimationFrame(() => this.animate());
+
+                this.currentRotation += (this.targetRotation - this.currentRotation) * 0.04;
+
+                const radius = 5;
+                const angleStep = (Math.PI * 2) / this.salas.length;
+
+                this.cards.forEach((card, index) => {
+                    const angle = angleStep * index + this.currentRotation;
+
+                    card.position.x = Math.sin(angle) * radius;
+                    card.position.z = Math.cos(angle) * radius - radius;
+
+                    const scale = THREE.MathUtils.mapLinear(card.position.z, -radius * 2, 0, 0.7, 1);
+                    card.scale.setScalar(scale);
+
+                    card.material.opacity = THREE.MathUtils.mapLinear(card.position.z, -radius * 2, 0, 0.3, 1);
+                    card.rotation.y = angle;
+                });
+
+                this.renderer.render(this.scene, this.camera);
+            }
+        }
+
+        // ============================================
+        // INICIALIZAR
+        // ============================================
+        loadConfig().then(config => {
+            new BibliotecaApp(config.salas);
+        });
+    </script>
+</body>
+
+</html>

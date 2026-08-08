@@ -1,0 +1,484 @@
+{
+  "titulo": "Ex Bibliotheca Velasco",
+  "subtitulo": "La biblioteca de Fernando José de Velasco y Ceballos (1707-1788)",
+  "salas": [
+    {
+      "id": "sala1",
+      "titulo": "Velasco, Bibliófilo y Autor",
+      "subtitulo": "De lector a escritor: los manuscritos de la BNE",
+      "descripcion": "Fernando José de Velasco y Ceballos no fue solo un coleccionista de libros. La Biblioteca Nacional conserva veintitrés manuscritos de su autoría, entre ellos la propia tasación de su biblioteca (1791), hilo conductor de esta exposición. «La biblioteca de Velasco no era un museo: era un laboratorio intelectual».",
+      "portada": "salas/sala1/portada.png",
+      "libros": [
+        {
+          "titulo": "El manuscrito de la tasación de su biblioteca",
+          "imagen": "salas/sala1/libros/libro1.png",
+          "url": "https://bnedigital.bne.es/bd/es/card?id=09e8892a-93da-4dda-8e03-190378c061dd"
+        },
+        {
+          "titulo": "Correspondencia con el principal ilustrado valenciano",
+          "imagen": "salas/sala1/libros/libro2.png",
+          "url": "https://www.google.com/search?q=Gregorio%20Mayans%20y%20Siscar%20/%20Velasco%20Correspondencia%20con%20el%20principal%20ilustrado%20valenciano%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Documentos y apuntes sobre numismática",
+          "imagen": "salas/sala1/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Fernando%20Jos%C3%A9%20de%20Velasco%20y%20Ceballos%20Documentos%20y%20apuntes%20sobre%20numism%C3%A1tica%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Papeles de la Chancillería de Granada",
+          "imagen": "salas/sala1/libros/libro4.png",
+          "url": "https://www.google.com/search?q=Fernando%20Jos%C3%A9%20de%20Velasco%20y%20Ceballos%20Papeles%20de%20la%20Chanciller%C3%ADa%20de%20Granada%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Noticia de los más grandes títulos de Castilla",
+          "imagen": "salas/sala1/libros/libro5.png",
+          "url": "https://www.google.com/search?q=Noticia%20de%20los%20m%C3%A1s%20grandes%20t%C3%ADtulos%20de%20Castilla%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Fuero de Sepúlveda",
+          "imagen": "salas/sala1/libros/libro6.png",
+          "url": "https://www.google.com/search?q=Fuero%20de%20Sep%C3%BAlveda%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala2",
+      "titulo": "El Libro Antiguo",
+      "subtitulo": "Incunables en la biblioteca de Velasco · Siglo XV",
+      "descripcion": "Treinta obras del siglo XV atestiguan el aprecio de Velasco por los orígenes de la imprenta. En su biblioteca, los incunables convivían con obras del siglo XVIII, creando un diálogo de tres siglos de producción bibliográfica.",
+      "portada": "salas/sala2/portada.png",
+      "libros": [
+        {
+          "titulo": "Concordantiae Bibliorum",
+          "imagen": "salas/sala2/libros/libro1.png",
+          "url": "https://www.google.com/search?q=Concordantiae%20Bibliorum%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Summario de los incunables",
+          "imagen": "salas/sala2/libros/libro2.png",
+          "url": "https://www.google.com/search?q=Summario%20de%20los%20incunables%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Tratado de penitencias",
+          "imagen": "salas/sala2/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Tratado%20de%20penitencias%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala3",
+      "titulo": "Arqueología y Numismática",
+      "subtitulo": "La pasión anticuaria del Camarista",
+      "descripcion": "Ciento seis obras sobre antigüedades, inscripciones, medallas y monedas reflejan el interés ilustrado por el mundo clásico. Para Velasco, las monedas y las inscripciones eran documentos históricos de primer orden.",
+      "portada": "salas/sala3/portada.png",
+      "libros": [
+        {
+          "titulo": "Diálogos de las medallas, inscripciones y otras antigüedades",
+          "imagen": "salas/sala3/libros/libro1.png",
+          "url": "https://www.google.com/search?q=Agust%C3%ADn%2C%20Antonio%20Di%C3%A1logos%20de%20las%20medallas%2C%20inscripciones%20y%20otras%20antig%C3%BCedades%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Imperatorum Romanorum numismata",
+          "imagen": "salas/sala3/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000079373"
+        },
+        {
+          "titulo": "Inscriptiones latinas a los retratos de los Reyes de Sobrarbe y Aragón",
+          "imagen": "salas/sala3/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Blanca%2C%20Jer%C3%B3nimo%20Inscriptiones%20latinas%20a%20los%20retratos%20de%20los%20Reyes%20de%20Sobrarbe%20y%20Arag%C3%B3n%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Obras sobre medallas griegas y romanas",
+          "imagen": "salas/sala3/libros/libro4.png",
+          "url": "https://www.google.com/search?q=Goltzius%2C%20Hubert%20Obras%20sobre%20medallas%20griegas%20y%20romanas%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala4",
+      "titulo": "Imprentas de España y América",
+      "subtitulo": "La geografía del libro hispánico",
+      "descripcion": "2.250 obras impresas en ciudades españolas y americanas testimonian la vitalidad de la industria editorial hispánica: desde Madrid hasta México, Lima y Manila.",
+      "portada": "salas/sala4/portada.png",
+      "libros": [
+        {
+          "titulo": "Historia de Segovia",
+          "imagen": "salas/sala4/libros/libro1.png",
+          "url": "https://datos.bne.es/resource/bima0000128644"
+        },
+        {
+          "titulo": "Discursos históricos de Murcia",
+          "imagen": "salas/sala4/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000128505"
+        },
+        {
+          "titulo": "Tratado de las virtudes y excelencias de los baños de Tiermas",
+          "imagen": "salas/sala4/libros/libro3.png",
+          "url": "https://datos.bne.es/resource/bima0000110856"
+        },
+        {
+          "titulo": "Historia de la Nueva México",
+          "imagen": "salas/sala4/libros/libro4.png",
+          "url": "https://datos.bne.es/resource/bima0000112239"
+        },
+        {
+          "titulo": "Adarga Catalana, Arte Heráldico",
+          "imagen": "salas/sala4/libros/libro5.png",
+          "url": "https://datos.bne.es/resource/bima0000046768"
+        }
+      ]
+    },
+    {
+      "id": "sala5",
+      "titulo": "Holanda, Potencia Editorial",
+      "subtitulo": "Amsterdam, Leiden, La Haya: el libro ilustrado",
+      "descripcion": "67 obras holandesas reflejan el aprecio de Velasco por la calidad tipográfica neerlandesa. Las Provincias Unidas se convirtieron en el siglo XVII en la principal potencia editorial de Europa.",
+      "portada": "salas/sala5/portada.png",
+      "libros": [
+        {
+          "titulo": "Atlas Maior",
+          "imagen": "salas/sala5/libros/libro1.png",
+          "url": "https://www.google.com/search?q=Blaeu%20Atlas%20Maior%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Obras completas",
+          "imagen": "salas/sala5/libros/libro2.png",
+          "url": "https://www.google.com/search?q=Grotius%2C%20Hugo%20Obras%20completas%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Monarchia Hispanica",
+          "imagen": "salas/sala5/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Campanella%2C%20Tommaso%20Monarchia%20Hispanica%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Mémoires du Règne de Catherine, Impératrice de Russie",
+          "imagen": "salas/sala5/libros/libro4.png",
+          "url": "https://datos.bne.es/resource/bima0000096083"
+        }
+      ]
+    },
+    {
+      "id": "sala6",
+      "titulo": "El Libro Portugués",
+      "subtitulo": "Hermandad ibérica en la República de las Letras",
+      "descripcion": "121 obras en portugués o impresas en Portugal. Pese a la separación política (1640-1668), la República de las Letras no conocía fronteras: castellano y portugués convivían en las bibliotecas hispánicas del siglo XVIII.",
+      "portada": "salas/sala6/portada.png",
+      "libros": [
+        {
+          "titulo": "Elogios dos Reis de Portugal com os mais verdadeiros retratos",
+          "imagen": "salas/sala6/libros/libro1.png",
+          "url": "https://datos.bne.es/resource/a5181634"
+        },
+        {
+          "titulo": "Décadas da Ásia",
+          "imagen": "salas/sala6/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000009794"
+        },
+        {
+          "titulo": "Europa Portuguesa",
+          "imagen": "salas/sala6/libros/libro3.png",
+          "url": "https://datos.bne.es/resource/bima0000002942"
+        },
+        {
+          "titulo": "Discursos de la jurídica y verdadera razón de Estado",
+          "imagen": "salas/sala6/libros/libro4.png",
+          "url": "https://www.google.com/search?q=Homem%20Barbosa%2C%20Pedro%20Discursos%20de%20la%20jur%C3%ADdica%20y%20verdadera%20raz%C3%B3n%20de%20Estado%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala7",
+      "titulo": "El Libro Francés",
+      "subtitulo": "París, Lyon: la Ilustración francesa",
+      "descripcion": "723 obras francesas constituyen el segundo fondo lingüístico de la biblioteca (17,37% del total). El francés era la lengua de la Ilustración europea.",
+      "portada": "salas/sala7/portada.png",
+      "libros": [
+        {
+          "titulo": "Obras de los philosophes",
+          "imagen": "salas/sala7/libros/libro1.png",
+          "url": "https://www.google.com/search?q=Voltaire%2C%20Montesquieu%2C%20Rousseau%20Obras%20de%20los%20philosophes%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Mémoires et instructions pour servir dans les négociations",
+          "imagen": "salas/sala7/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000048537"
+        },
+        {
+          "titulo": "Medallas de Luis XIV",
+          "imagen": "salas/sala7/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Medallas%20de%20Luis%20XIV%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "La morale de Tacite",
+          "imagen": "salas/sala7/libros/libro4.png",
+          "url": "https://www.google.com/search?q=Amelot%20de%20La%20Houssaye%20La%20morale%20de%20Tacite%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Corpus de derecho civil francés",
+          "imagen": "salas/sala7/libros/libro5.png",
+          "url": "https://www.google.com/search?q=Corpus%20de%20derecho%20civil%20franc%C3%A9s%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala8",
+      "titulo": "Nápoles y la Monarquía Borbónica",
+      "subtitulo": "El Reino de Nápoles en la órbita española",
+      "descripcion": "Virreinato español (1504-1714) y reino borbónico (1734-1860): para un funcionario real como Velasco, Nápoles representaba la conexión italiana de la corona española y el ejemplo de las reformas borbónicas en Italia.",
+      "portada": "salas/sala8/portada.png",
+      "libros": [
+        {
+          "titulo": "Vida del Gran Capitán",
+          "imagen": "salas/sala8/libros/libro1.png",
+          "url": "https://datos.bne.es/resource/a4639784"
+        },
+        {
+          "titulo": "Obras sobre los tribunales de Nápoles",
+          "imagen": "salas/sala8/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000106625"
+        },
+        {
+          "titulo": "Respublica jurisconsultorum",
+          "imagen": "salas/sala8/libros/libro3.png",
+          "url": "https://datos.bne.es/resource/bima0000047323"
+        }
+      ]
+    },
+    {
+      "id": "sala9",
+      "titulo": "Bibliografía Material",
+      "subtitulo": "Del gran folio al libro de bolsillo: formatos y encuadernaciones",
+      "descripcion": "El libro del siglo XVIII era mucho más que su contenido. El formato determinaba su función: los grandes folios eran libros de consulta; octavos y dozavos, libros portátiles. La encuadernación —rústica, pasta o tafilete— revelaba el valor que el propietario otorgaba a cada obra.",
+      "portada": "salas/sala9/portada.png",
+      "libros": [
+        {
+          "titulo": "Biblia Polyglotta",
+          "imagen": "salas/sala9/libros/libro1.png",
+          "url": "https://www.google.com/search?q=Walton%20%28ed.%29%20Biblia%20Polyglotta%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Biblia Sacra Hebraice et Graece",
+          "imagen": "salas/sala9/libros/libro2.png",
+          "url": "https://www.google.com/search?q=Arias%20Montano%2C%20Benito%20%28ed.%29%20Biblia%20Sacra%20Hebraice%20et%20Graece%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Crónica de España",
+          "imagen": "salas/sala9/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Morales%2C%20Ambrosio%20de%20Cr%C3%B3nica%20de%20Espa%C3%B1a%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "La Perpétuité de la Foi de l'Église Catholique",
+          "imagen": "salas/sala9/libros/libro4.png",
+          "url": "https://www.google.com/search?q=Arnaud%20La%20Perp%C3%A9tuit%C3%A9%20de%20la%20Foi%20de%20l%27%C3%89glise%20Catholique%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Idea de la Ley Agraria Española",
+          "imagen": "salas/sala9/libros/libro5.png",
+          "url": "https://www.google.com/search?q=Sistennet%20y%20Feliu%20Idea%20de%20la%20Ley%20Agraria%20Espa%C3%B1ola%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Le Journal des Savans",
+          "imagen": "salas/sala9/libros/libro6.png",
+          "url": "https://www.google.com/search?q=Hedouville%20%28ed.%29%20Le%20Journal%20des%20Savans%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Antichità di Ercolano",
+          "imagen": "salas/sala9/libros/libro7.png",
+          "url": "https://www.google.com/search?q=Antichit%C3%A0%20di%20Ercolano%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Scrutinium Scripturarum",
+          "imagen": "salas/sala9/libros/libro8.png",
+          "url": "https://www.google.com/search?q=Schafferi%20Scrutinium%20Scripturarum%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala10",
+      "titulo": "Los Últimos Libros en Latín",
+      "subtitulo": "El latín en el siglo de la Ilustración",
+      "descripcion": "1.165 obras del siglo XVIII en latín demuestran la pervivencia de la lengua universal de la erudición: derecho, teología, medicina e historia antigua seguían hablando latín cuando el francés ya se imponía en los salones.",
+      "portada": "salas/sala10/portada.png",
+      "libros": [
+        {
+          "titulo": "De iure belli ac pacis",
+          "imagen": "salas/sala10/libros/libro1.png",
+          "url": "https://datos.bne.es/resource/bima0000050565"
+        },
+        {
+          "titulo": "De officiis hominis et civis",
+          "imagen": "salas/sala10/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000088908"
+        },
+        {
+          "titulo": "Instituciones de Justiniano",
+          "imagen": "salas/sala10/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Instituciones%20de%20Justiniano%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Opera omnia",
+          "imagen": "salas/sala10/libros/libro4.png",
+          "url": "https://www.google.com/search?q=Guti%C3%A9rrez%2C%20Juan%20Opera%20omnia%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala11",
+      "titulo": "Sinodales, Ordenanzas y Pragmáticas",
+      "subtitulo": "El derecho real y eclesiástico",
+      "descripcion": "74 obras de legislación civil y eclesiástica reflejan la profesión de Velasco como Camarista: constituciones sinodales, ordenanzas reales, militares y gremiales, su instrumento de trabajo diario.",
+      "portada": "salas/sala11/portada.png",
+      "libros": [
+        {
+          "titulo": "Constituciones Sinodales",
+          "imagen": "salas/sala11/libros/libro1.png",
+          "url": "https://datos.bne.es/resource/bima0000120113"
+        },
+        {
+          "titulo": "Ordenanzas de la Real Chancillería de Valladolid",
+          "imagen": "salas/sala11/libros/libro2.png",
+          "url": "https://www.google.com/search?q=Ordenanzas%20de%20la%20Real%20Chanciller%C3%ADa%20de%20Valladolid%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Pragmáticas de Carlos II y Felipe V",
+          "imagen": "salas/sala11/libros/libro3.png",
+          "url": "https://www.google.com/search?q=Pragm%C3%A1ticas%20de%20Carlos%20II%20y%20Felipe%20V%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Ordenanzas de las Armadas Navales",
+          "imagen": "salas/sala11/libros/libro4.png",
+          "url": "https://datos.bne.es/resource/bima0000128298"
+        },
+        {
+          "titulo": "Ordenanzas militares",
+          "imagen": "salas/sala11/libros/libro5.png",
+          "url": "https://www.google.com/search?q=Conde%20de%20Montemar%20Ordenanzas%20militares%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    },
+    {
+      "id": "sala12",
+      "titulo": "Velasco en la BNE Hoy",
+      "subtitulo": "Los libros que hoy conserva la Biblioteca Nacional",
+      "descripcion": "De los 7.323 libros del catálogo de Velasco, hemos identificado obras que aparecen tanto en su inventario de 1791 como en los fondos actuales de la BNE. Estos libros fueron hojeados por Velasco hace más de 250 años: testimonios materiales de una biblioteca dispersada que, fragmentariamente, pervive hoy en Madrid.",
+      "portada": "salas/sala12/portada.png",
+      "libros": [
+        {
+          "titulo": "Imperatorum Romanorum numismata",
+          "imagen": "salas/sala12/libros/libro1.png",
+          "url": "https://datos.bne.es/resource/bima0000079373"
+        },
+        {
+          "titulo": "Historia de Segovia",
+          "imagen": "salas/sala12/libros/libro2.png",
+          "url": "https://datos.bne.es/resource/bima0000128644"
+        },
+        {
+          "titulo": "Discursos históricos de Murcia",
+          "imagen": "salas/sala12/libros/libro3.png",
+          "url": "https://datos.bne.es/resource/bima0000128505"
+        },
+        {
+          "titulo": "Baños de Tiermas",
+          "imagen": "salas/sala12/libros/libro4.png",
+          "url": "https://datos.bne.es/resource/bima0000110856"
+        },
+        {
+          "titulo": "Historia de la Nueva México",
+          "imagen": "salas/sala12/libros/libro5.png",
+          "url": "https://datos.bne.es/resource/bima0000112239"
+        },
+        {
+          "titulo": "Adarga Catalana",
+          "imagen": "salas/sala12/libros/libro6.png",
+          "url": "https://datos.bne.es/resource/bima0000046768"
+        },
+        {
+          "titulo": "Mémoires... Catherine de Russie",
+          "imagen": "salas/sala12/libros/libro7.png",
+          "url": "https://datos.bne.es/resource/bima0000096083"
+        },
+        {
+          "titulo": "Elogios dos Reis de Portugal",
+          "imagen": "salas/sala12/libros/libro8.png",
+          "url": "https://datos.bne.es/resource/a5181634"
+        },
+        {
+          "titulo": "Décadas da Ásia",
+          "imagen": "salas/sala12/libros/libro9.png",
+          "url": "https://datos.bne.es/resource/bima0000009794"
+        },
+        {
+          "titulo": "Europa Portuguesa, t. I",
+          "imagen": "salas/sala12/libros/libro10.png",
+          "url": "https://datos.bne.es/resource/bima0000002942"
+        },
+        {
+          "titulo": "Europa Portuguesa, t. II",
+          "imagen": "salas/sala12/libros/libro11.png",
+          "url": "https://datos.bne.es/resource/bima0000002943"
+        },
+        {
+          "titulo": "Mémoires et instructions...négociations",
+          "imagen": "salas/sala12/libros/libro12.png",
+          "url": "https://datos.bne.es/resource/bima0000048537"
+        },
+        {
+          "titulo": "Medallas de Luis XIV",
+          "imagen": "salas/sala12/libros/libro13.png",
+          "url": "https://www.google.com/search?q=Medallas%20de%20Luis%20XIV%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        },
+        {
+          "titulo": "Vida del Gran Capitán",
+          "imagen": "salas/sala12/libros/libro14.png",
+          "url": "https://datos.bne.es/resource/a4639784"
+        },
+        {
+          "titulo": "Tribunales de Nápoles, t. I",
+          "imagen": "salas/sala12/libros/libro15.png",
+          "url": "https://datos.bne.es/resource/bima0000106625"
+        },
+        {
+          "titulo": "Tribunales de Nápoles, t. II",
+          "imagen": "salas/sala12/libros/libro16.png",
+          "url": "https://datos.bne.es/resource/bima0000106626"
+        },
+        {
+          "titulo": "Respublica jurisconsultorum",
+          "imagen": "salas/sala12/libros/libro17.png",
+          "url": "https://datos.bne.es/resource/bima0000047323"
+        },
+        {
+          "titulo": "De iure belli ac pacis, ed. I",
+          "imagen": "salas/sala12/libros/libro18.png",
+          "url": "https://datos.bne.es/resource/bima0000050565"
+        },
+        {
+          "titulo": "De iure belli ac pacis, ed. II",
+          "imagen": "salas/sala12/libros/libro19.png",
+          "url": "https://datos.bne.es/resource/bima0000050568"
+        },
+        {
+          "titulo": "De officiis hominis et civis",
+          "imagen": "salas/sala12/libros/libro20.png",
+          "url": "https://datos.bne.es/resource/bima0000088908"
+        },
+        {
+          "titulo": "Constituciones Sinodales",
+          "imagen": "salas/sala12/libros/libro21.png",
+          "url": "https://datos.bne.es/resource/bima0000120113"
+        },
+        {
+          "titulo": "Ordenanzas de las Armadas Navales",
+          "imagen": "salas/sala12/libros/libro22.png",
+          "url": "https://datos.bne.es/resource/bima0000128298"
+        },
+        {
+          "titulo": "Ordenanzas militares",
+          "imagen": "salas/sala12/libros/libro23.png",
+          "url": "https://www.google.com/search?q=Conde%20de%20Montemar%20Ordenanzas%20militares%20Biblioteca%20Nacional%20de%20Espa%C3%B1a"
+        }
+      ]
+    }
+  ]
+}
