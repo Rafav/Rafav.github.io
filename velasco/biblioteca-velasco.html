@@ -303,6 +303,23 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        .meta-badge {
+            display: inline-block;
+            background: var(--highlight);
+            border: 1px solid var(--border);
+            color: var(--primary-dark);
+            font-size: 0.78rem;
+            padding: 2px 8px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+        .meta-badge.meta-num {
+            background: #eef3fb;
+            border-color: #b0c4de;
+            color: #2c4a7a;
+            font-weight: 600;
+        }
+
         #results {
             margin-top: 2rem;
         }
@@ -518,131 +535,6 @@
         }
 
         /* Image Viewer Styles - Full Screen Overlay */
-        .image-panel {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 9999;
-            flex-direction: column;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .image-panel.expanded {
-            display: flex;
-        }
-
-        .image-controls {
-            padding: 20px 30px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .image-title {
-            font-weight: 600;
-            font-size: 18px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-close {
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            color: white;
-            cursor: pointer;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 600;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-
-        .btn-close:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-        }
-
-        .image-controls .btn {
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            color: white;
-            cursor: pointer;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 600;
-            font-family: inherit;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .image-controls .btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-        }
-
-        .image-container {
-            flex: 1;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #1a1a1a;
-            padding: 0;
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .image-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .image-link {
-            display: inline-block;
-            background: var(--secondary);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            margin-left: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .image-link:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
 
         .page-group-header {
             background: var(--highlight);
@@ -682,12 +574,6 @@
             border-color: var(--secondary);
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 768px) {
-            .image-container {
-                padding: 0;
-            }
         }
     </style>
 </head>
@@ -1063,16 +949,7 @@
                 <div class="search-box">
                     <input type="text" id="catalogSearchInput"
                         placeholder="Buscar en el catálogo (autor, título, materia...)..." />
-
-                    <div class="filter-group">
-                        <label for="volumenFilter">Volumen:</label>
-                        <select id="volumenFilter" onchange="applyCatalogFilters()">
-                            <option value="">Todos</option>
-                            <option value="1">Volumen 1</option>
-                            <option value="2">Volumen 2</option>
-                        </select>
-                    </div>
-                </div>
+</div>
 
                 <div id="catalogResults">
                     <p class="no-results">Escriba una palabra para buscar en el catálogo...</p>
@@ -1647,49 +1524,91 @@
         let filteredCatalogData = [];
         let searchTimeout = null;
 
-        // --- VARIABLES GLOBALES DEL VISOR CORREGIDO ---
-        let currentScale = 1;
-        let currentX = 0;
-        let currentY = 0;
-        let isDragging = false;
-        let startX = 0;
-        let startY = 0;
-
         // Función para parsear CSV
+        // Estructura nueva (18 columnas):
+        // volumen,pagina,fila_original,autor,titulo,formato,tomos,figuras,pasta,lugar,año,atado,numero,precio,transcripcion_original,continua_en_pagina,ejemplar_de,misma_obra_que
         function parseCSV(text) {
             const lines = text.trim().split('\n');
-            const headers = lines[0].split(',');
             const data = [];
 
-            for (let i = 1; i < lines.length; i++) {
-                const line = lines[i];
+            // Parsear una línea CSV respetando comillas
+            function parseLine(line) {
                 const values = [];
-                let currentValue = '';
+                let cur = '';
                 let inQuotes = false;
-
                 for (let char of line) {
                     if (char === '"') {
                         inQuotes = !inQuotes;
                     } else if (char === ',' && !inQuotes) {
-                        values.push(currentValue.trim());
-                        currentValue = '';
+                        values.push(cur.trim());
+                        cur = '';
                     } else {
-                        currentValue += char;
+                        cur += char;
                     }
                 }
-                values.push(currentValue.trim());
+                values.push(cur.trim());
+                return values;
+            }
 
-                if (values.length >= 6) {
-                    const entry = {
-                        volumen: values[0] || '1',
-                        filename: values[1],
-                        fila: parseInt(values[2]) || 0,
-                        transcripcion: values[3],
-                        precio: values[4],
-                        observaciones: values[5]
+            const headers = parseLine(lines[0]);
+
+            // Detectar si es estructura nueva (>=14 cols con cabecera 'autor')
+            // o estructura antigua (6 cols)
+            const isNewFormat = headers.length >= 14 && headers.includes('autor');
+
+            for (let i = 1; i < lines.length; i++) {
+                if (!lines[i].trim()) continue;
+                const v = parseLine(lines[i]);
+
+                let entry;
+                if (isNewFormat) {
+                    // volumen,pagina,fila_original,autor,titulo,formato,tomos,figuras,pasta,lugar,año,atado,numero,precio,transcripcion_original,continua_en_pagina,ejemplar_de,misma_obra_que
+                    //    0      1        2          3      4       5      6      7       8     9   10   11    12     13         14                    15            16            17
+                    entry = {
+                        volumen:             v[0]  || '1',
+                        filename:            v[1]  || '',
+                        fila:                parseInt(v[2]) || 0,
+                        autor:               v[3]  || '',
+                        titulo:              v[4]  || '',
+                        formato:             v[5]  || '',
+                        tomos:               v[6]  || '',
+                        figuras:             v[7]  || '',
+                        pasta:               v[8]  || '',
+                        lugar:               v[9]  || '',
+                        anio:                v[10] || '',
+                        atado:               v[11] || '',
+                        numero:              v[12] || '',
+                        precio:              v[13] || '',
+                        transcripcion:       v[14] || '',
+                        continua_en_pagina:  v[15] || '',
+                        ejemplar_de:         v[16] || '',
+                        misma_obra_que:      v[17] || ''
                     };
-                    data.push(entry);
+                } else {
+                    // Formato antiguo: volumen,filename,fila,transcripcion,precio,observaciones
+                    if (v.length < 6) continue;
+                    entry = {
+                        volumen:       v[0] || '1',
+                        filename:      v[1],
+                        fila:          parseInt(v[2]) || 0,
+                        autor:         '',
+                        titulo:        '',
+                        formato:       '',
+                        tomos:         '',
+                        figuras:       '',
+                        pasta:         '',
+                        lugar:         '',
+                        anio:          '',
+                        atado:         '',
+                        numero:        '',
+                        precio:        v[4],
+                        transcripcion: v[3],
+                        continua_en_pagina: '',
+                        ejemplar_de:   '',
+                        misma_obra_que: ''
+                    };
                 }
+                data.push(entry);
             }
 
             return data;
@@ -1719,70 +1638,6 @@
             return `https://bnedigital.bne.es/bd/es/viewer?id=${BNE_CONFIG.id}&page=${bnePage}`;
         }
 
-        // Mostrar visor de BNE embebido
-        function showBNEViewer(url, pageInfo) {
-            let imagePanel = document.getElementById('imagePanel');
-
-            if (imagePanel) {
-                if (imagePanel.getAttribute('data-url') === url) {
-                    closeImageViewer();
-                    return;
-                }
-                imagePanel.remove();
-            }
-
-            imagePanel = document.createElement('div');
-            imagePanel.id = 'imagePanel';
-            imagePanel.className = 'image-panel expanded';
-            imagePanel.setAttribute('data-url', url);
-
-            imagePanel.innerHTML = `
-                <div class="image-controls">
-                    <span class="image-title">📄 ${pageInfo} - BNE Digital</span>
-                    <button class="btn-close" onclick="closeImageViewer()">✕ Cerrar (ESC)</button>
-                </div>
-                <div class="image-container">
-                    <iframe src="${url}"
-                            style="width: 100%; height: 100%; border: none;"
-                            onload="console.log('Iframe cargado')"
-                            onerror="iframeError(this, '${url}')">
-                    </iframe>
-                </div>
-            `;
-
-            document.body.appendChild(imagePanel);
-            document.body.style.overflow = 'hidden';
-        }
-
-        // Manejo de error de iframe
-        function iframeError(iframe, url) {
-            iframe.parentElement.innerHTML = `
-                <div style="padding: 40px; text-align: center; color: #fff;">
-                    <p style="font-size: 18px; margin-bottom: 20px;">⚠️ No se puede mostrar el visor embebido</p>
-                    <p style="margin-bottom: 20px;">La BNE puede bloquear la visualización en iframe por políticas de seguridad.</p>
-                    <a href="${url}" target="_blank" style="background: var(--secondary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block;">
-                        🔗 Abrir en el visor de BNE Digital
-                    </a>
-                </div>
-            `;
-        }
-
-        // Cerrar visor de imágenes
-        function closeImageViewer() {
-            const imagePanel = document.getElementById('imagePanel');
-            if (imagePanel) {
-                imagePanel.remove();
-            }
-            document.body.style.overflow = '';
-        }
-
-        // Cerrar con tecla ESC
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' || e.key === 'Esc') {
-                closeImageViewer();
-            }
-        });
-
         // Función de búsqueda con debounce
         function handleCatalogSearch() {
             if (searchTimeout) clearTimeout(searchTimeout);
@@ -1798,18 +1653,26 @@
         // Aplicar filtros
         function applyCatalogFilters() {
             const searchText = document.getElementById('catalogSearchInput').value.toLowerCase();
-            const volumenFilter = document.getElementById('volumenFilter').value;
+            const volumenFilter = '';
 
-            if (!searchText && !volumenFilter) {
+            if (!searchText) {
                 document.getElementById('catalogResults').innerHTML =
                     '<p class="no-results">Escriba una palabra para buscar en el catálogo...</p>';
                 return;
             }
 
             filteredCatalogData = catalogData.filter(entry => {
-                const matchesSearch = !searchText ||
-                    entry.transcripcion.toLowerCase().includes(searchText) ||
-                    entry.observaciones.toLowerCase().includes(searchText);
+                const matchesSearch = !searchText || [
+                    entry.transcripcion,
+                    entry.autor,
+                    entry.titulo,
+                    entry.lugar,
+                    entry.anio,
+                    entry.formato,
+                    entry.pasta,
+                    entry.tomos,
+                    entry.numero
+                ].some(field => (field || '').toLowerCase().includes(searchText));
                 const matchesVolumen = !volumenFilter || entry.volumen === volumenFilter;
                 return matchesSearch && matchesVolumen;
             });
@@ -1861,23 +1724,45 @@
                     html += `<div class="page-group-header">`;
                     html += `<strong>Página ${pageNumber} (${entries.length} entrada(s))</strong>`;
                     if (bneUrl) {
-                        html += `<a class="image-link" onclick="event.preventDefault(); showBNEViewer('${bneUrl}', 'Volumen ${volumen} - Página ${pageNumber}')" title="Ver en visor embebido">🖼️ Ver en visor</a>`;
+                        html += `<a class="index-link" href="${bneUrl}" target="_blank" title="Ver en BNE Digital">🖼️ Ver en BNE</a>`;
                     }
                     html += `</div>`;
 
                     entries.forEach(entry => {
+                        // Construir etiquetas de metadatos estructurados
+                        const meta = [];
+                        if (entry.formato)  meta.push(`<span class="meta-badge">${entry.formato}</span>`);
+                        if (entry.tomos)    meta.push(`<span class="meta-badge">${entry.tomos}</span>`);
+                        if (entry.lugar && entry.anio) meta.push(`<span class="meta-badge">${entry.lugar}, ${entry.anio}</span>`);
+                        else if (entry.lugar) meta.push(`<span class="meta-badge">${entry.lugar}</span>`);
+                        else if (entry.anio)  meta.push(`<span class="meta-badge">${entry.anio}</span>`);
+                        if (entry.pasta && entry.pasta !== 'no consta') meta.push(`<span class="meta-badge">${entry.pasta}</span>`);
+                        if (entry.numero)   meta.push(`<span class="meta-badge meta-num">Nº ${entry.numero}</span>`);
+
+                        // Notas adicionales
+                        const notas = [];
+                        if (entry.continua_en_pagina) notas.push(`Continúa en pág. ${entry.continua_en_pagina}`);
+                        if (entry.ejemplar_de)        notas.push(`Ej. de: ${entry.ejemplar_de}`);
+                        if (entry.misma_obra_que)     notas.push(`= ${entry.misma_obra_que}`);
+
                         html += `
                             <div class="result-item">
-                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
-                                    <span style="font-size: 0.9rem; color: var(--text-light);">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.4rem;">
+                                    <span style="font-size: 0.85rem; color: var(--text-light);">
                                         Vol. ${entry.volumen} • Pág. ${pageNumber} • Fila ${entry.fila}
                                     </span>
-                                    ${entry.precio ? `<span style="background: #e8f5e9; color: #2e7d32; padding: 3px 10px; border-radius: 3px; font-size: 0.85rem; font-weight: 600;">${entry.precio}</span>` : ''}
+                                    ${entry.precio ? `<span style="background: #e8f5e9; color: #2e7d32; padding: 3px 10px; border-radius: 3px; font-size: 0.85rem; font-weight: 600;">${entry.precio} rs.</span>` : ''}
                                 </div>
-                                <div class="result-text" style="font-family: 'Georgia', serif; line-height: 1.6;">
-                                    ${entry.transcripcion}
-                                </div>
-                                ${entry.observaciones ? `<div style="font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-top: 0.5rem;">Observaciones: ${entry.observaciones}</div>` : ''}
+                                ${entry.autor ? `<div style="font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem;">${entry.autor}</div>` : ''}
+                                ${entry.titulo ? `<div style="font-style: italic; margin-bottom: 0.4rem; line-height: 1.5;">${entry.titulo}</div>` : ''}
+                                ${meta.length ? `<div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.5rem;">${meta.join('')}</div>` : ''}
+                                <details style="margin-top: 0.4rem;">
+                                    <summary style="font-size: 0.82rem; color: var(--text-light); cursor: pointer;">Transcripción original</summary>
+                                    <div class="result-text" style="font-family: 'Georgia', serif; line-height: 1.6; margin-top: 0.4rem; font-size: 0.9rem; color: #555;">
+                                        ${entry.transcripcion || '—'}
+                                    </div>
+                                </details>
+                                ${notas.length ? `<div style="font-size: 0.82rem; color: var(--text-light); font-style: italic; margin-top: 0.4rem;">${notas.join(' · ')}</div>` : ''}
                             </div>
                         `;
                     });
