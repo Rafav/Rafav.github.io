@@ -1,1 +1,1000 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca del Conde del Águila (Sevilla, 1786)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8b6914;
+            --primary-dark: #6d5110;
+            --secondary: #a67c2d;
+            --background: #f5f1e8;
+            --card-bg: #ffffff;
+            --text: #3a3a3a;
+            --text-light: #666;
+            --border: #d4c5a0;
+            --highlight: #fef5e7;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: #fff;
+            padding: 3rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .header-exlibris {
+            flex-shrink: 0;
+        }
+
+        .header-exlibris img {
+            width: 180px;
+            height: auto;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1,
+        .header-text .subtitle,
+        .header-text .header-stats {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .header-stats {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-exlibris img {
+                width: 150px;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--card-bg);
+            border-bottom: 3px solid var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover {
+            background-color: var(--highlight);
+            color: var(--primary);
+            border-bottom-color: var(--secondary);
+        }
+
+        /* Ex-libris Section */
+        .exlibris-section {
+            background-color: var(--card-bg);
+            padding: 3rem 2rem;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .exlibris-container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fafaf8;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .exlibris-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .exlibris-caption {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Sections */
+        .section {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Search Section */
+        .search-container {
+            background-color: #fafaf8;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        #catalogSearchInput {
+            flex: 1;
+            min-width: 300px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            height: 48px;
+            box-sizing: border-box;
+        }
+
+        #catalogSearchInput:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(166, 124, 45, 0.1);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 48px;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            color: var(--text);
+            white-space: nowrap;
+        }
+
+        .filter-group select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            background-color: white;
+            cursor: pointer;
+            min-width: 150px;
+            height: 48px;
+            box-sizing: border-box;
+        }
+
+        .filter-group select:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(166, 124, 45, 0.1);
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            background-color: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #results {
+            margin-top: 2rem;
+        }
+
+        .results-summary {
+            padding: 1rem;
+            background-color: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .results-summary strong {
+            color: var(--primary);
+        }
+
+        .result-item {
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: white;
+            border-left: 4px solid var(--secondary);
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .result-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateX(4px);
+        }
+
+        .result-item h4 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-meta {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .result-text {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .no-results {
+            text-align: center;
+            color: var(--text-light);
+            font-style: italic;
+            padding: 3rem;
+            background-color: var(--highlight);
+            border-radius: 4px;
+        }
+
+        /* Article Content */
+        .article-meta {
+            background-color: var(--highlight);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .article-meta p {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-meta strong {
+            color: var(--primary-dark);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafaf8;
+        }
+
+        tr:hover {
+            background-color: var(--highlight);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Highlights */
+        .highlight-box {
+            background-color: var(--highlight);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3a3a3a;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading animation */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .loading {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        /* Image Viewer Styles - Full Screen Overlay */
+        .image-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            flex-direction: column;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .image-panel.expanded {
+            display: flex;
+        }
+
+        .image-controls {
+            padding: 20px 30px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-title {
+            font-weight: 600;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .btn-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+        }
+
+        .image-controls .btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .image-controls .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+        }
+
+        .image-container {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .image-link {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-left: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-link:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-group-header {
+            background: var(--highlight);
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .page-group-header strong {
+            color: var(--primary);
+            font-size: 1.05rem;
+        }
+
+        /* Estilos para el índice alfabético */
+        .index-link {
+            display: block;
+            text-align: center;
+            background-color: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .index-link:hover {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                padding: 0;
+            }
+        }
+    
+        .image-container { cursor: grab; touch-action: none; }
+        .image-container.dragging { cursor: grabbing; }
+        .image-container img {
+            max-width: 100%; max-height: 100%; user-select: none; -webkit-user-drag: none;
+            transform-origin: center center; transition: transform 0.08s ease-out;
+        }
+        .image-controls .controls-group { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+        .image-controls .btn { padding: 6px 14px; font-size: 15px; }
+        .tag {
+            display: inline-block; font-size: 0.78rem; padding: 2px 8px; border-radius: 3px;
+            margin-left: 6px; background: #f1ead8; color: var(--primary-dark); font-family: system-ui, sans-serif;
+        }
+        .tag.duda { background: #fff3cd; color: #7a5a00; }
+        .result-meta { font-size: 0.9rem; color: var(--text-light); }
+        .result-enc { font-size: 0.88rem; color: var(--text-light); font-style: italic; margin-top: 0.4rem; }
+        .result-text sup { font-size: 0.7em; }
+        mark { background: #fde8a8; padding: 0 1px; }
+        .aviso { background: var(--highlight); border-left: 4px solid var(--secondary); padding: 1rem 1.25rem; margin-top: 1rem; }
+        @media (max-width: 768px) {
+            .image-controls { flex-direction: column; gap: 10px; padding: 12px 16px; }
+            .image-title { font-size: 15px; }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>La Biblioteca del Conde del Águila</h1>
+                <p class="subtitle">Don Miguel de Espinosa Maldonado Tello de Guzmán · Sevilla</p>
+                <div class="header-stats">
+                    Catálogo manuscrito en dos volúmenes • 8.675 asientos • Tasación de Berard Hermanos y Compañía, 1786
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#buscador">Buscador</a></li>
+            <li><a href="#bibliografia">Bibliografía</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Introducción -->
+        <section id="introduccion" class="section">
+            <h2>Introducción</h2>
+            <p>Esta página ofrece al investigador el resultado de transcribir con técnicas de inteligencia
+                artificial el catálogo de la biblioteca de don Miguel de Espinosa Maldonado Tello de Guzmán,
+                Conde del Águila. El catálogo se divide en dos volúmenes: el primero describe los manuscritos
+                (4.050 asientos en 232 páginas) y el segundo los impresos (4.625 asientos en 153 páginas). La
+                última columna recoge la tasación de los libreros Berard Hermanos y Compañía, fechada en
+                Sevilla el 16 de mayo de 1786.</p>
+            <div class="aviso">
+                <p><strong>Sobre el texto.</strong> La transcripción es literal y conserva abreviaturas, volados
+                    (<em>D.<sup>n</sup></em>), grafías, puntos guía y las marcas <em>Yd.</em> y comillas que
+                    remiten al asiento superior, sin desarrollarlas. Las lecturas inseguras van señaladas con
+                    <em>[?]</em>. Corresponde a la versión v02, revisada frente a la imagen, y aún no se ha
+                    dividido en campos (autor, título, formato, precio).</p>
+                <p style="margin-top: 0.75rem;"><strong>Imágenes del manuscrito</strong> (Internet Archive):
+                    <a href="https://archive.org/details/A331198" target="_blank" rel="noopener">Volumen 1, manuscritos</a> •
+                    <a href="https://archive.org/details/A331199" target="_blank" rel="noopener">Volumen 2, impresos</a></p>
+            </div>
+        </section>
+
+        <!-- Buscador -->
+        <section id="buscador" class="section">
+            <h2>Buscador del Catálogo Histórico</h2>
+            <p>Explore la transcripción del catálogo. La búsqueda no distingue mayúsculas ni tildes y devuelve
+                el volumen, la página y la posición de cada asiento, junto con el último encabezado de ubicación
+                (estante, tabla, legajo…) que lo precede.</p>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="catalogSearchInput"
+                        placeholder="Buscar en el catálogo (autor, título, materia...)..." />
+
+                    <div class="filter-group">
+                        <label for="volumenFilter">Volumen:</label>
+                        <select id="volumenFilter" onchange="applyCatalogFilters()">
+                            <option value="">Todos</option>
+                            <option value="1">Volumen 1 (manuscritos)</option>
+                            <option value="2">Volumen 2 (impresos)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="catalogResults">
+                    <p class="no-results">Cargando el catálogo…</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bibliografía -->
+        <section id="bibliografia" class="section">
+            <h2>Bibliografía y Fuentes</h2>
+
+            <h3>Fuente primaria</h3>
+            <ul>
+                <li><em>Catálogo de la biblioteca de D. Miguel de Espinosa Maldonado Tello de Guzmán, Conde del
+                        Águila</em>, con tasación de Berard Hermanos y Compañía. Sevilla, 16 de mayo de 1786.
+                    Manuscrito, 2 vols. Imágenes en Internet Archive:
+                    <a href="https://archive.org/details/A331198" target="_blank" rel="noopener">vol. 1</a> y
+                    <a href="https://archive.org/details/A331199" target="_blank" rel="noopener">vol. 2</a>.</li>
+            </ul>
+
+            <h3>Historia del libro en España</h3>
+            <ul>
+                <li>Bouza, Fernando. <em>Corre manuscrito: Una historia cultural del Siglo de Oro</em>. Madrid: Marcial
+                    Pons, 2001.</li>
+                <li>Chartier, Roger. <em>El orden de los libros: Lectores, autores, bibliotecas en Europa entre los
+                        siglos XIV y XVIII</em>. Barcelona: Gedisa, 1994.</li>
+                <li>Infantes, Víctor; López, François; Botrel, Jean-François (dirs.). <em>Historia de la edición y de la
+                        lectura en España, 1472-1914</em>. Madrid: Fundación Germán Sánchez Ruipérez, 2003.</li>
+                <li>Reyes Gómez, Fermín de los. <em>El libro en España y América: Legislación y censura (siglos
+                        XV-XVIII)</em>. Madrid: Arco Libros, 2000.</li>
+            </ul>
+
+            <h3>Fuentes digitales</h3>
+            <ul>
+                <li>CERL Thesaurus - Consortium of European Research Libraries: <a
+                        href="https://data.cerl.org/thesaurus/" target="_blank">https://data.cerl.org/thesaurus/</a>
+                </li>
+                <li>WorldCat - Base de datos bibliográfica mundial: <a href="https://www.worldcat.org/"
+                        target="_blank">https://www.worldcat.org/</a></li>
+                <li>VIAF - Virtual International Authority File: <a href="https://viaf.org/"
+                        target="_blank">https://viaf.org/</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 La Biblioteca del Conde del Águila</p>
+        <p>Proyecto de investigación en Historia del Libro • Transcripción asistida por IA</p>
+        <p>Catálogo manuscrito con tasación de Berard Hermanos y Compañía (Sevilla, 1786) • Texto v02</p>
+    </footer>
+
+    <script>
+        let catalogData = [];
+        let filteredCatalogData = [];
+        let searchTimeout = null;
+
+        // CSV con comillas, comas y saltos de línea dentro de campo
+        function parseCSV(text) {
+            const rows = [];
+            let row = [], field = '', q = false;
+            for (let i = 0; i < text.length; i++) {
+                const c = text[i];
+                if (q) {
+                    if (c === '"') {
+                        if (text[i + 1] === '"') { field += '"'; i++; } else q = false;
+                    } else field += c;
+                } else if (c === '"') q = true;
+                else if (c === ',') { row.push(field); field = ''; }
+                else if (c === '\n' || c === '\r') {
+                    if (c === '\r' && text[i + 1] === '\n') i++;
+                    row.push(field); rows.push(row); row = []; field = '';
+                } else field += c;
+            }
+            if (field || row.length) { row.push(field); rows.push(row); }
+            const head = rows.shift();
+            return rows.filter(r => r.length === head.length).map(r => {
+                const o = {};
+                head.forEach((h, i) => o[h] = r[i]);
+                o.pagina = parseInt(o.pagina);
+                o.orden = parseInt(o.orden);
+                o.dudas = parseInt(o.dudas) || 0;
+                o.norm = normalizar(o.transcripcion + ' ' + o.encabezado);
+                return o;
+            });
+        }
+
+        // Minúsculas, sin tildes ni signos de volado
+        function normalizar(s) {
+            return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\^/g, '');
+        }
+
+        function escapeHTML(s) {
+            return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+        }
+
+        // Volados: D.^n → D.<sup>n</sup>
+        function formatear(s) {
+            return escapeHTML(s).replace(/\^([A-Za-zÀ-ÿªº]+)/g, '<sup>$1</sup>');
+        }
+
+
+        // Búsqueda con espera
+        function handleCatalogSearch() {
+            if (searchTimeout) clearTimeout(searchTimeout);
+            const searchInput = document.getElementById('catalogSearchInput');
+            if (searchInput) searchInput.style.background = '#fff3cd';
+            searchTimeout = setTimeout(() => {
+                if (searchInput) searchInput.style.background = '';
+                applyCatalogFilters();
+            }, 600);
+        }
+
+        function applyCatalogFilters() {
+            const raw = document.getElementById('catalogSearchInput').value.trim();
+            const volumenFilter = document.getElementById('volumenFilter').value;
+            if (!raw) {
+                document.getElementById('catalogResults').innerHTML =
+                    `<p class="no-results">Catálogo cargado: ${catalogData.length.toLocaleString('es-ES')} entradas.<br>Escriba una palabra para buscar...</p>`;
+                return;
+            }
+            const terms = normalizar(raw).split(/\s+/).filter(Boolean);
+            filteredCatalogData = catalogData.filter(e =>
+                (!volumenFilter || e.volumen === volumenFilter) && terms.every(t => e.norm.includes(t)));
+            displayCatalogResults(terms);
+        }
+
+        // Resalta los términos sobre el texto ya formateado (sin tocar etiquetas)
+        function resaltar(html, terms) {
+            return html.split(/(<[^>]+>)/).map(part => {
+                if (part.startsWith('<')) return part;
+                let out = '';
+                const n = normalizar(part);
+                let i = 0;
+                while (i < part.length) {
+                    let len = 0;
+                    for (const t of terms) if (n.startsWith(t, i) && t.length > len) len = t.length;
+                    if (len) { out += '<mark>' + part.substr(i, len) + '</mark>'; i += len; }
+                    else { out += part[i]; i++; }
+                }
+                return out;
+            }).join('');
+        }
+
+        function displayCatalogResults(terms) {
+            const resultsDiv = document.getElementById('catalogResults');
+            if (filteredCatalogData.length === 0) {
+                resultsDiv.innerHTML = '<p class="no-results">No se encontraron resultados para tu búsqueda.</p>';
+                return;
+            }
+            let html = `<div class="results-summary">Se encontraron <strong>${filteredCatalogData.length.toLocaleString('es-ES')}</strong> resultado(s)</div>`;
+
+            const byVolume = {};
+            filteredCatalogData.forEach(e => {
+                (byVolume[e.volumen] ??= {});
+                (byVolume[e.volumen][e.pagina] ??= []).push(e);
+            });
+
+            Object.keys(byVolume).sort().forEach(vol => {
+                const pages = byVolume[vol];
+                html += `<div style="margin-top: 1.5rem; border-top: 2px solid var(--border); padding-top: 1rem;">`;
+                html += `<h4 style="color: var(--primary); margin-bottom: 1rem;">Volumen ${vol} (${vol === '1' ? 'manuscritos' : 'impresos'})</h4>`;
+                Object.keys(pages).map(Number).sort((a, b) => a - b).forEach(page => {
+                    const entries = pages[page].sort((a, b) => a.orden - b.orden);
+                    html += `<div class="page-group-header">`;
+                    html += `<strong>Página ${page} (${entries.length} entrada(s))</strong>`;
+                    html += `</div>`;
+                    entries.forEach(e => {
+                        const tipo = e.tipo === 'asiento' ? '' : `<span class="tag">${e.tipo === 'encabezado' ? 'encabezado' : e.tipo === 'continuacion' ? 'continuación' : 'nota'}</span>`;
+                        const duda = e.dudas ? `<span class="tag duda" title="Lecturas inseguras marcadas con [?]">lectura dudosa</span>` : '';
+                        html += `
+                            <div class="result-item">
+                                <div style="margin-bottom: 0.5rem;">
+                                    <span class="result-meta">Vol. ${e.volumen} • Pág. ${page} • Posición ${e.orden}</span>${tipo}${duda}
+                                </div>
+                                <div class="result-text" style="font-family: 'Georgia', serif; line-height: 1.6;">
+                                    ${resaltar(formatear(e.transcripcion), terms)}
+                                </div>
+                                ${e.encabezado ? `<div class="result-enc">Bajo el encabezado: ${formatear(e.encabezado)}</div>` : ''}
+                            </div>`;
+                    });
+                });
+                html += '</div>';
+            });
+            resultsDiv.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('catalogo.csv');
+                if (!response.ok) throw new Error('No se pudo cargar el archivo CSV');
+                catalogData = parseCSV(await response.text());
+                applyCatalogFilters();
+            } catch (error) {
+                document.getElementById('catalogResults').innerHTML =
+                    `<div class="no-results" style="color: #c00;">
+                        <strong>Error al cargar el catálogo:</strong><br>${escapeHTML(error.message)}<br><br>
+                        Asegúrese de que el archivo 'catalogo.csv' esté en el mismo directorio que este HTML
+                        y de abrir la página desde un servidor web.
+                    </div>`;
+            }
+            const searchInput = document.getElementById('catalogSearchInput');
+            searchInput.addEventListener('input', handleCatalogSearch);
+            searchInput.addEventListener('keypress', e => {
+                if (e.key === 'Enter') { clearTimeout(searchTimeout); searchInput.style.background = ''; applyCatalogFilters(); }
+            });
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+
+</html>
